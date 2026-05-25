@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "0036b2e0-1676-ac06-bbe7-d7a596bb8ea9",
+    "Name": "Pgr.Top",
+    "ModifiedOnUtc": "\/Date(1779457163000)\/",
+    "Maintainer": "Customer",
+    "DependsOn": [
+      {
+        "UId": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
+        "Name": "Pgr.Core"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "0a27f994-95de-a815-464d-7d5e8e55ce39",
+    "Name": "Pgr.Base",
+    "ModifiedOnUtc": "\/Date(1779456771000)\/",
+    "Maintainer": "Customer",
+    "DependsOn": [
+      {
+        "UId": "3f299622-2079-4a62-ba18-6d32c1d0d6af",
+        "PackageVersion": "7.8.0",
+        "Name": "SalesEnterprise_Marketing_ServiceEnt"
+      }
+    ]
+  }
+}
