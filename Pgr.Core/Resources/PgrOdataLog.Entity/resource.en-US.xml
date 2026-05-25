@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Odata log" />
+			<Item Name="Columns.PgrDurationMs.Caption" Value="Duration ms" />
+			<Item Name="Columns.PgrError.Caption" Value="Error" />
+			<Item Name="Columns.PgrMethod.Caption" Value="Method" />
+			<Item Name="Columns.PgrRequestBody.Caption" Value="Request body" />
+			<Item Name="Columns.PgrResponseBody.Caption" Value="Response body" />
+			<Item Name="Columns.PgrStatusCode.Caption" Value="Status code" />
+			<Item Name="Columns.PgrUrl.Caption" Value="Url" />
+			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
+		</Items>
+	</Group>
+</Resources>
