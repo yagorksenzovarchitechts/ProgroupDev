@@ -1,234 +1,426 @@
 using System;
 using System.IO;
 using System.Net;
-using System.Text;
 using System.ServiceModel;
 using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
+using System.Text;
+using Common.Logging;
+using Terrasoft.Common;
 using Terrasoft.Core;
 using Terrasoft.Core.DB;
 using Terrasoft.Web.Common;
 
 namespace Terrasoft.Configuration
 {
-    // ============================================================================
-    // 1. КОНТРАКТ СЕРВИСА (UriTemplate = "odata/{*path}")
-    // ============================================================================
     [ServiceContract]
     public interface IODataProxyService
     {
         [OperationContract]
-        [WebInvoke(Method = "*", 
-                   UriTemplate = "odata/{*path}", 
-                   BodyStyle = WebMessageBodyStyle.Bare)]
+        [WebInvoke(Method = "*",
+            UriTemplate = "odata/{*path}",
+            BodyStyle = WebMessageBodyStyle.Bare)]
         Stream ProcessRequest(Stream requestBody, string path);
     }
 
-    // ============================================================================
-    // 2. РЕАЛИЗАЦИЯ ПРОКСИ-СЕРВИСА С ЛОГИРОВАНИЕМ
-    // ============================================================================
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
     public class ODataProxyService : BaseService, IODataProxyService
     {
         private const string SiteUrlSettingsCode = "SiteUrl";
 
+        public Stream ProcessRequest(Stream requestBody, string path)
+        {
+            var startTime = DateTime.UtcNow;
+            var context = WebOperationContext.Current ??
+                          throw new InvalidOperationException("WebOperationContext.Current is not available");
+            var incomingRequest = context.IncomingRequest;
+
+            var method = string.Empty;
+            var targetUrl = string.Empty;
+            var requestBodyString = string.Empty;
+            var responseBodyString = string.Empty;
+            var statusCode = 0;
+            var errorMessage = string.Empty;
+
+            try
+            {
+                method = incomingRequest.Method ?? string.Empty;
+
+                var requestBodyBytes = ReadRequestBody(requestBody, method);
+                requestBodyString = requestBodyBytes.Length > 0
+                    ? Encoding.UTF8.GetString(requestBodyBytes)
+                    : string.Empty;
+
+                if (UserConnection == null)
+                {
+                    throw new InvalidOperationException("UserConnection is not available");
+                }
+
+                targetUrl = BuildTargetUrl(UserConnection, incomingRequest, path);
+
+                var webRequest = CreateWebRequest(targetUrl, method, incomingRequest.ContentType);
+                CopyHeadersAndCookies(incomingRequest, webRequest);
+
+                WriteRequestBody(webRequest, requestBodyBytes);
+
+                var responseResult = GetWebResponseContent(webRequest);
+
+                statusCode = responseResult.statusCode;
+                responseBodyString = responseResult.body ?? string.Empty;
+
+                context.OutgoingResponse.StatusCode = (HttpStatusCode) responseResult.statusCode;
+                if (!string.IsNullOrEmpty(responseResult.contentType))
+                {
+                    context.OutgoingResponse.ContentType = responseResult.contentType;
+                }
+
+                var responseBytes = Encoding.UTF8.GetBytes(responseBodyString);
+                return CreateResponseStream(responseBytes);
+            }
+            catch (WebException ex)
+            {
+                return HandleWebException(ex, context, out statusCode, out responseBodyString, out errorMessage);
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex, context, out statusCode, out errorMessage);
+            }
+            finally
+            {
+                var durationMs = (int) (DateTime.UtcNow - startTime).TotalMilliseconds;
+                try
+                {
+                    var entry = new LogEntry
+                    {
+                        Method = method,
+                        TargetUrl = targetUrl ?? string.Empty,
+                        RequestBody = requestBodyString,
+                        ResponseBody = responseBodyString,
+                        StatusCode = statusCode,
+                        Error = errorMessage ?? string.Empty,
+                        DurationMs = durationMs
+                    };
+                    LogToDatabase(UserConnection, entry);
+                }
+                catch (Exception ex)
+                {
+                    try
+                    {
+                        LogManager.GetLogger("Error").Error(ex);
+                    }
+                    catch
+                    {
+                    }
+                }
+            }
+        }
+
+        private Stream HandleException(Exception ex, WebOperationContext context, out int statusCode,
+            out string errorMessage)
+        {
+            statusCode = 500;
+            errorMessage = ex.Message ?? string.Empty;
+
+            context.OutgoingResponse.StatusCode = HttpStatusCode.InternalServerError;
+            var errorBytes = Encoding.UTF8.GetBytes($"{{\"error\": \"{ex.Message ?? string.Empty}\"}}");
+            return CreateResponseStream(errorBytes);
+        }
+
+        private Stream HandleWebException(WebException ex, WebOperationContext context, out int statusCode,
+            out string responseBodyString, out string errorMessage)
+        {
+            var webExResult = ReadWebExceptionResponse(ex);
+            statusCode = webExResult.statusCode;
+            responseBodyString = webExResult.responseBody ?? string.Empty;
+            errorMessage = ex.Message ?? string.Empty;
+
+            context.OutgoingResponse.StatusCode = (HttpStatusCode) (webExResult.statusCode > 0
+                ? webExResult.statusCode
+                : (int) HttpStatusCode.InternalServerError);
+
+            var errorBytes = Encoding.UTF8.GetBytes(responseBodyString);
+            var errorResponseStream = CreateResponseStream(errorBytes);
+
+            return errorResponseStream;
+        }
+
+        #region Private methods
+
+        private byte[] ReadRequestBody(Stream requestBody, string method)
+        {
+            method = method ?? string.Empty;
+            if (requestBody == null || !(method == "POST" || method == "PATCH" || method == "PUT"))
+            {
+                return Array.Empty<byte>();
+            }
+
+            using (var ms = new MemoryStream())
+            {
+                requestBody.CopyTo(ms);
+                var bytes = ms.ToArray();
+                return bytes.Length > 0 ? bytes : Array.Empty<byte>();
+            }
+        }
+
+        private string BuildTargetUrl(UserConnection userConnection, IncomingWebRequestContext incomingRequest,
+            string path)
+        {
+            if (userConnection == null)
+            {
+                throw new ArgumentNullException(nameof(userConnection));
+            }
+
+            if (incomingRequest == null)
+            {
+                throw new ArgumentNullException(nameof(incomingRequest));
+            }
+
+            var baseUrl = GetODataBaseUrl(userConnection) ?? string.Empty;
+            baseUrl = baseUrl.TrimEnd('/');
+            path = path ?? string.Empty;
+            var result = baseUrl + "/" + path;
+            var query = incomingRequest.UriTemplateMatch?.RequestUri?.Query ?? string.Empty;
+            if (!string.IsNullOrEmpty(query))
+            {
+                result += query;
+            }
+
+            return result;
+        }
+
+        private HttpWebRequest CreateWebRequest(string targetUrl, string method, string contentType)
+        {
+            if (string.IsNullOrEmpty(targetUrl))
+            {
+                throw new ArgumentException("targetUrl is required", nameof(targetUrl));
+            }
+
+            method = method ?? string.Empty;
+
+            var webRequest = (HttpWebRequest) WebRequest.Create(targetUrl);
+            webRequest.Method = method;
+            webRequest.ContentType = contentType ?? string.Empty;
+            webRequest.Timeout = 30000;
+            webRequest.ReadWriteTimeout = 30000;
+            return webRequest;
+        }
+
+        private void CopyHeadersAndCookies(IncomingWebRequestContext incomingRequest, HttpWebRequest webRequest)
+        {
+            if (incomingRequest == null)
+            {
+                throw new ArgumentNullException(nameof(incomingRequest));
+            }
+
+            if (webRequest == null)
+            {
+                throw new ArgumentNullException(nameof(webRequest));
+            }
+
+            var headers = incomingRequest.Headers;
+
+            foreach (string headerKey in headers)
+            {
+                if (headerKey == null)
+                {
+                    continue;
+                }
+
+                if (string.Equals(headerKey, "Host", StringComparison.OrdinalIgnoreCase)
+                    || string.Equals(headerKey, "Connection", StringComparison.OrdinalIgnoreCase)
+                    || string.Equals(headerKey, "Content-Length", StringComparison.OrdinalIgnoreCase))
+                {
+                    continue;
+                }
+
+                try
+                {
+                    webRequest.Headers[headerKey] = headers[headerKey];
+                }
+                catch
+                {
+                }
+            }
+
+            var cookieHeader = headers["Cookie"];
+            if (!string.IsNullOrEmpty(cookieHeader))
+            {
+                try
+                {
+                    webRequest.Headers["Cookie"] = cookieHeader;
+                }
+                catch
+                {
+                }
+            }
+        }
+
+        private void WriteRequestBody(HttpWebRequest webRequest, byte[] requestBodyBytes)
+        {
+            if (webRequest == null)
+            {
+                throw new ArgumentNullException(nameof(webRequest));
+            }
+
+            var bytes = requestBodyBytes ?? Array.Empty<byte>();
+            if (bytes.Length == 0)
+            {
+                return;
+            }
+
+            webRequest.ContentLength = bytes.Length;
+            using (var requestStream = webRequest.GetRequestStream())
+            {
+                requestStream.Write(bytes, 0, bytes.Length);
+            }
+        }
+
+        private (int statusCode, string body, string contentType) GetWebResponseContent(HttpWebRequest webRequest)
+        {
+            if (webRequest == null)
+            {
+                throw new ArgumentNullException(nameof(webRequest));
+            }
+
+            using (var webResponse = (HttpWebResponse) webRequest.GetResponse())
+            using (var responseStream = webResponse.GetResponseStream())
+            {
+                var status = (int) webResponse.StatusCode;
+                var body = string.Empty;
+                if (responseStream != null)
+                {
+                    using (var reader = new StreamReader(responseStream, Encoding.UTF8))
+                    {
+                        body = reader.ReadToEnd();
+                    }
+                }
+
+                var contentType = webResponse.ContentType;
+                return (status, body, contentType);
+            }
+        }
+
+        private (int statusCode, string responseBody) ReadWebExceptionResponse(WebException ex)
+        {
+            if (ex == null)
+            {
+                throw new ArgumentNullException(nameof(ex));
+            }
+
+            var statusCode = (int) HttpStatusCode.InternalServerError;
+            var responseBody = string.Empty;
+            if (ex.Response is HttpWebResponse httpResp)
+            {
+                statusCode = (int) httpResp.StatusCode;
+                var respStream = httpResp.GetResponseStream();
+                if (respStream != null)
+                {
+                    using (var reader = new StreamReader(respStream, Encoding.UTF8))
+                    {
+                        responseBody = reader.ReadToEnd();
+                    }
+                }
+            }
+
+            if (string.IsNullOrEmpty(responseBody))
+            {
+                responseBody = $"{{\"error\":\"{ex.Message ?? string.Empty}\"}}";
+            }
+
+            return (statusCode, responseBody);
+        }
+
+        private Stream CreateResponseStream(byte[] responseBytes)
+        {
+            var bytes = responseBytes ?? Array.Empty<byte>();
+            var memoryStream = new MemoryStream(bytes);
+            memoryStream.Seek(0, SeekOrigin.Begin);
+            return memoryStream;
+        }
+
         private string GetODataBaseUrl(UserConnection userConnection)
         {
-            var siteUrlSetting = (string)Terrasoft.Core.Configuration.SysSettings.GetValue(
-                userConnection, SiteUrlSettingsCode);
+            if (userConnection == null)
+            {
+                throw new ArgumentNullException(nameof(userConnection));
+            }
+
+            var siteUrlSetting = (string) Core.Configuration.SysSettings.GetValue(userConnection, SiteUrlSettingsCode);
+            if (siteUrlSetting.IsNullOrEmpty())
+            {
+                throw new Exception($"System setting '{SiteUrlSettingsCode}' is not configured.");
+            }
+
             return siteUrlSetting.TrimEnd('/') + "/0/odata/";
         }
 
-        private void LogToDatabase(UserConnection userConnection, string method, string targetUrl, 
-            string requestBody, string responseBody, int statusCode, string error, int durationMs)
+        private void LogToDatabase(UserConnection userConnection, LogEntry entry)
         {
+            if (userConnection == null)
+            {
+                throw new ArgumentNullException(nameof(userConnection));
+            }
+
+            if (entry == null)
+            {
+                throw new ArgumentNullException(nameof(entry));
+            }
+
             try
             {
                 const int maxBodyLength = 10000;
-                string truncatedRequestBody = requestBody?.Length > maxBodyLength 
-                    ? requestBody.Substring(0, maxBodyLength) + "... [truncated]" 
-                    : requestBody;
-                string truncatedResponseBody = responseBody?.Length > maxBodyLength 
-                    ? responseBody.Substring(0, maxBodyLength) + "... [truncated]" 
-                    : responseBody;
+                var truncatedRequestBody = TruncateText(entry.RequestBody, maxBodyLength);
+                var truncatedResponseBody = TruncateText(entry.ResponseBody, maxBodyLength);
 
                 var insertQuery = new Insert(userConnection)
                     .Into("PgrOdataLog")
                     .Set("Id", Column.Parameter(Guid.NewGuid()))
-                    .Set("PgrMethod", Column.Parameter(method ?? ""))
-                    .Set("PgrUrl", Column.Parameter(targetUrl ?? ""))
-                    .Set("PgrRequestBody", Column.Parameter(truncatedRequestBody ?? ""))
-                    .Set("PgrResponseBody", Column.Parameter(truncatedResponseBody ?? ""))
-                    .Set("PgrStatusCode", Column.Parameter(statusCode > 0 ? statusCode : (object)DBNull.Value))
-                    .Set("PgrDurationMs", Column.Parameter(durationMs))
-                    .Set("PgrError", Column.Parameter(error ?? ""))
+                    .Set("PgrMethod", Column.Parameter(entry.Method ?? string.Empty))
+                    .Set("PgrUrl", Column.Parameter(entry.TargetUrl ?? string.Empty))
+                    .Set("PgrRequestBody", Column.Parameter(truncatedRequestBody))
+                    .Set("PgrResponseBody", Column.Parameter(truncatedResponseBody))
+                    .Set("PgrStatusCode",
+                        Column.Parameter(entry.StatusCode > 0 ? entry.StatusCode : (object) DBNull.Value))
+                    .Set("PgrDurationMs", Column.Parameter(entry.DurationMs))
+                    .Set("PgrError", Column.Parameter(entry.Error ?? string.Empty))
                     .Set("CreatedOn", Column.Parameter(DateTime.Now));
 
                 insertQuery.Execute();
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Failed to log OData request: {ex.Message}");
+                try
+                {
+                    LogManager.GetLogger("Error").Error(ex);
+                }
+                catch
+                {
+                }
             }
         }
 
-        private Stream CreateResponseStream(byte[] responseBytes)
+        private string TruncateText(string text, int maxBodyLength)
         {
-            var memoryStream = new MemoryStream(responseBytes);
-            memoryStream.Seek(0, SeekOrigin.Begin);
-            return memoryStream;
+            var s = text ?? string.Empty;
+            if (s.Length <= maxBodyLength)
+            {
+                return s;
+            }
+
+            return s.Substring(0, maxBodyLength) + "... [truncated]";
         }
 
-        public Stream ProcessRequest(Stream requestBody, string path)
-        {
-            var startTime = DateTime.UtcNow;
-            var context = WebOperationContext.Current;
-            var incomingRequest = context.IncomingRequest;
-            
-            string method = null;
-            string targetUrl = null;
-            string requestBodyString = null;
-            string responseBodyString = null;
-            int statusCode = 0;
-            string errorMessage = null;
-            UserConnection userConnection = null;
-            byte[] requestBodyBytes = null;
+        #endregion
+    }
 
-            try
-            {
-                userConnection = GetUserConnection();
-                if (userConnection == null)
-                {
-                    throw new Exception("UserConnection is not available");
-                }
-                
-                method = incomingRequest.Method;
-                
-                // Читаем тело запроса (только для методов с телом)
-                if (requestBody != null && (method == "POST" || method == "PATCH" || method == "PUT"))
-                {
-                    using (var memoryStream = new MemoryStream())
-                    {
-                        requestBody.CopyTo(memoryStream);
-                        requestBodyBytes = memoryStream.ToArray();
-                        requestBodyString = Encoding.UTF8.GetString(requestBodyBytes);
-                    }
-                }
-                
-                // Формируем целевой URL
-                targetUrl = GetODataBaseUrl(userConnection).TrimEnd('/') + "/" + path;
-                
-                // Добавляем query string, если есть
-                var queryString = incomingRequest.UriTemplateMatch.RequestUri.Query;
-                if (!string.IsNullOrEmpty(queryString))
-                {
-                    targetUrl += queryString;
-                }
-                
-                var webRequest = (HttpWebRequest)WebRequest.Create(targetUrl);
-                webRequest.Method = method;
-                webRequest.ContentType = incomingRequest.ContentType;
-                
-                // Копируем заголовки
-                foreach (string headerKey in incomingRequest.Headers)
-                {
-                    if (headerKey != "Host" && headerKey != "Connection" && headerKey != "Content-Length")
-                    {
-                        try { webRequest.Headers[headerKey] = incomingRequest.Headers[headerKey]; }
-                        catch { }
-                    }
-                }
-                
-                // Копируем Cookies
-                var cookieHeader = incomingRequest.Headers["Cookie"];
-                if (!string.IsNullOrEmpty(cookieHeader))
-                {
-                    webRequest.Headers["Cookie"] = cookieHeader;
-                }
-                
-                // Копируем тело запроса из сохранённого массива байтов
-                if (requestBodyBytes != null && requestBodyBytes.Length > 0)
-                {
-                    webRequest.ContentLength = requestBodyBytes.Length;
-                    using (var requestStream = webRequest.GetRequestStream())
-                    {
-                        requestStream.Write(requestBodyBytes, 0, requestBodyBytes.Length);
-                    }
-                }
-                
-                // Получаем ответ
-                using (var webResponse = (HttpWebResponse)webRequest.GetResponse())
-                using (var responseStream = webResponse.GetResponseStream())
-                {
-                    statusCode = (int)webResponse.StatusCode;
-                    
-                    if (responseStream != null)
-                    {
-                        using (var reader = new StreamReader(responseStream, Encoding.UTF8))
-                        {
-                            responseBodyString = reader.ReadToEnd();
-                        }
-                    }
-                    
-                    context.OutgoingResponse.StatusCode = webResponse.StatusCode;
-                    context.OutgoingResponse.ContentType = webResponse.ContentType;
-                    
-                    var responseBytes = Encoding.UTF8.GetBytes(responseBodyString ?? "");
-                    return CreateResponseStream(responseBytes);
-                }
-            }
-            catch (WebException ex)
-            {
-                using (var errorResponse = (HttpWebResponse)ex.Response)
-                {
-                    statusCode = (int)(errorResponse?.StatusCode ?? HttpStatusCode.InternalServerError);
-                    errorMessage = ex.Message;
-                    
-                    context.OutgoingResponse.StatusCode = (HttpStatusCode)statusCode;
-                    
-                    string errorBody = "";
-                    if (errorResponse != null && errorResponse.GetResponseStream() != null)
-                    {
-                        using (var reader = new StreamReader(errorResponse.GetResponseStream(), Encoding.UTF8))
-                        {
-                            errorBody = reader.ReadToEnd();
-                        }
-                    }
-                    
-                    string errorResponseString = string.IsNullOrEmpty(errorBody) 
-                        ? $"{{\"error\": \"{ex.Message}\"}}"
-                        : errorBody;
-                        
-                    var errorBytes = Encoding.UTF8.GetBytes(errorResponseString);
-                    return CreateResponseStream(errorBytes);
-                }
-            }
-            catch (Exception ex)
-            {
-                statusCode = 500;
-                errorMessage = ex.Message;
-                
-                context.OutgoingResponse.StatusCode = HttpStatusCode.InternalServerError;
-                var errorBytes = Encoding.UTF8.GetBytes($"{{\"error\": \"{ex.Message}\"}}");
-                return CreateResponseStream(errorBytes);
-            }
-            finally
-            {
-                // Логируем в БД синхронно
-                if (userConnection != null)
-                {
-                    var durationMs = (int)(DateTime.UtcNow - startTime).TotalMilliseconds;
-                    try
-                    {
-                        LogToDatabase(userConnection, method, targetUrl, requestBodyString, 
-                            responseBodyString, statusCode, errorMessage, durationMs);
-                    }
-                    catch (Exception ex)
-                    {
-                        System.Diagnostics.Debug.WriteLine($"Failed to log OData request: {ex.Message}");
-                    }
-                }
-            }
-        }
+    public class LogEntry
+    {
+        public string Method { get; set; }
+        public string TargetUrl { get; set; }
+        public string RequestBody { get; set; }
+        public string ResponseBody { get; set; }
+        public int StatusCode { get; set; }
+        public string Error { get; set; }
+        public int DurationMs { get; set; }
     }
 }
