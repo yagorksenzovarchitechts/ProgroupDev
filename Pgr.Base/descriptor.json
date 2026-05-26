@@ -2,8 +2,8 @@
   "Descriptor": {
     "UId": "0a27f994-95de-a815-464d-7d5e8e55ce39",
     "Name": "Pgr.Base",
-    "ModifiedOnUtc": "\/Date(1779456771000)\/",
-    "Maintainer": "Customer",
+    "ModifiedOnUtc": "\/Date(1779787955000)\/",
+    "Maintainer": "ProGroup",
     "DependsOn": [
       {
         "UId": "3f299622-2079-4a62-ba18-6d32c1d0d6af",
