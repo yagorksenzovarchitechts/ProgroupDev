@@ -5,6 +5,7 @@ using System.ServiceModel;
 using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
 using System.Text;
+using System.Web.SessionState;
 using Common.Logging;
 using Terrasoft.Common;
 using Terrasoft.Core;
@@ -24,9 +25,11 @@ namespace Terrasoft.Configuration
     }
 
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
-    public class ODataProxyService : BaseService, IODataProxyService
+    public class ODataProxyService : BaseService, IODataProxyService, IReadOnlySessionState
     {
         private const string SiteUrlSettingsCode = "SiteUrl";
+        private const string RequestTimeoutSettingsCode = "ODataProxyRequestTimeout";
+        private const int DefaultRequestTimeout = 30000;
 
         public Stream ProcessRequest(Stream requestBody, string path)
         {
@@ -58,7 +61,8 @@ namespace Terrasoft.Configuration
 
                 targetUrl = BuildTargetUrl(UserConnection, incomingRequest, path);
 
-                var webRequest = CreateWebRequest(targetUrl, method, incomingRequest.ContentType);
+                var timeout = GetRequestTimeout(UserConnection);
+                var webRequest = CreateWebRequest(targetUrl, method, incomingRequest.ContentType, timeout);
                 CopyHeadersAndCookies(incomingRequest, webRequest);
 
                 WriteRequestBody(webRequest, requestBodyBytes);
@@ -115,6 +119,8 @@ namespace Terrasoft.Configuration
             }
         }
 
+        #region Private methods
+
         private Stream HandleException(Exception ex, WebOperationContext context, out int statusCode,
             out string errorMessage)
         {
@@ -144,7 +150,29 @@ namespace Terrasoft.Configuration
             return errorResponseStream;
         }
 
-        #region Private methods
+        private int GetRequestTimeout(UserConnection userConnection)
+        {
+            if (userConnection == null)
+            {
+                return DefaultRequestTimeout;
+            }
+
+            try
+            {
+                var timeoutSetting =
+                    (int) Core.Configuration.SysSettings.GetValue(userConnection, RequestTimeoutSettingsCode);
+                if (timeoutSetting > 0)
+                {
+                    return timeoutSetting;
+                }
+            }
+            catch
+            {
+                // ignored
+            }
+
+            return DefaultRequestTimeout;
+        }
 
         private byte[] ReadRequestBody(Stream requestBody, string method)
         {
@@ -180,6 +208,7 @@ namespace Terrasoft.Configuration
             path = path ?? string.Empty;
             var result = baseUrl + "/" + path;
             var query = incomingRequest.UriTemplateMatch?.RequestUri?.Query ?? string.Empty;
+
             if (!string.IsNullOrEmpty(query))
             {
                 result += query;
@@ -188,7 +217,7 @@ namespace Terrasoft.Configuration
             return result;
         }
 
-        private HttpWebRequest CreateWebRequest(string targetUrl, string method, string contentType)
+        private HttpWebRequest CreateWebRequest(string targetUrl, string method, string contentType, int timeout)
         {
             if (string.IsNullOrEmpty(targetUrl))
             {
@@ -200,8 +229,9 @@ namespace Terrasoft.Configuration
             var webRequest = (HttpWebRequest) WebRequest.Create(targetUrl);
             webRequest.Method = method;
             webRequest.ContentType = contentType ?? string.Empty;
-            webRequest.Timeout = 30000;
-            webRequest.ReadWriteTimeout = 30000;
+            webRequest.Timeout = timeout;
+            webRequest.ReadWriteTimeout = timeout;
+            
             return webRequest;
         }
 
@@ -282,21 +312,30 @@ namespace Terrasoft.Configuration
                 throw new ArgumentNullException(nameof(webRequest));
             }
 
-            using (var webResponse = (HttpWebResponse) webRequest.GetResponse())
-            using (var responseStream = webResponse.GetResponseStream())
+            try
             {
-                var status = (int) webResponse.StatusCode;
-                var body = string.Empty;
-                if (responseStream != null)
+                using (var webResponse = (HttpWebResponse) webRequest.GetResponse())
                 {
-                    using (var reader = new StreamReader(responseStream, Encoding.UTF8))
+                    using (var responseStream = webResponse.GetResponseStream())
                     {
-                        body = reader.ReadToEnd();
+                        var status = (int) webResponse.StatusCode;
+                        var body = string.Empty;
+                        if (responseStream != null)
+                        {
+                            using (var reader = new StreamReader(responseStream, Encoding.UTF8))
+                            {
+                                body = reader.ReadToEnd();
+                            }
+                        }
+
+                        var contentType = webResponse.ContentType;
+                        return (status, body, contentType);
                     }
                 }
-
-                var contentType = webResponse.ContentType;
-                return (status, body, contentType);
+            }
+            finally
+            {
+                webRequest.Abort();
             }
         }
 
