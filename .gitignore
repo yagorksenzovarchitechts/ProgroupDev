@@ -10,3 +10,7 @@ data.*.json
 resource.*.xml
 !*resource.de-De.xml*
 !*resource.en-US.xml*
+
+**/[Bb]in/
+**/[Oo]bj/
+.idea/
