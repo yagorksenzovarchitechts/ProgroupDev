@@ -451,6 +451,11 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
+		<Reference Include="CrtChangeTrackingInTerritoryLeadOppMgmt">
+			<HintPath>$(RelativePkgFolderPath)/CrtChangeTrackingInTerritoryLeadOppMgmt/$(StandalonePackageAssemblyPath)/CrtChangeTrackingInTerritoryLeadOppMgmt.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
 		<Reference Include="CrtCloudIntegration">
 			<HintPath>$(RelativePkgFolderPath)/CrtCloudIntegration/$(StandalonePackageAssemblyPath)/CrtCloudIntegration.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
@@ -1053,6 +1058,26 @@
 		</Reference>
 		<Reference Include="CrtTechUserCreatioResKitUtility">
 			<HintPath>$(RelativePkgFolderPath)/CrtTechUserCreatioResKitUtility/$(StandalonePackageAssemblyPath)/CrtTechUserCreatioResKitUtility.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="CrtTerritoryInLeadOppMgmt">
+			<HintPath>$(RelativePkgFolderPath)/CrtTerritoryInLeadOppMgmt/$(StandalonePackageAssemblyPath)/CrtTerritoryInLeadOppMgmt.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="CrtTerritoryManagementApp">
+			<HintPath>$(RelativePkgFolderPath)/CrtTerritoryManagementApp/$(StandalonePackageAssemblyPath)/CrtTerritoryManagementApp.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="CrtTerritoryMgmtInC360">
+			<HintPath>$(RelativePkgFolderPath)/CrtTerritoryMgmtInC360/$(StandalonePackageAssemblyPath)/CrtTerritoryMgmtInC360.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="CrtTerritoryMgmtInSales">
+			<HintPath>$(RelativePkgFolderPath)/CrtTerritoryMgmtInSales/$(StandalonePackageAssemblyPath)/CrtTerritoryMgmtInSales.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
