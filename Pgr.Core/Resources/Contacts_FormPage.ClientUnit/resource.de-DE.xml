@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.ComboBox_268yz1f_placeholder.Value" Value="Quell-Auswahl" />
+			<Item Name="LocalizableStrings.ComboBox_3zub1m3_placeholder.Value" Value="Kanal auswählen" />
+			<Item Name="LocalizableStrings.CustomerNeed_placeholder.Value" Value="Kundenbedarf-Auswahl" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_8hnptnp_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_czhqpwi_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_f26nmj3_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_769sr56_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_weylxjf_caption.Value" Value="Aktionen" />
+			<Item Name="LocalizableStrings.LeadAddButton_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.LeadConversionScore_tooltip.Value" Value="Die Bewertung zeigt die Wahrscheinlichkeit an, dass ein Lead mit dem Kontakt erstellt wird. Der Wert wird durch das ML-Modell berechnet." />
+			<Item Name="LocalizableStrings.LeadExpansionPanel_title.Value" Value="MQL/SQL" />
+			<Item Name="LocalizableStrings.LeadExportDataButton_caption.Value" Value="Exportieren nach Excel" />
+			<Item Name="LocalizableStrings.LeadImportDataButton_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.LeadRefreshButton_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.LeadSearchFilter_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.LeadSettingsButton_caption.Value" Value="Aktionen" />
+			<Item Name="LocalizableStrings.MarketingTab_caption.Value" Value="Marketing" />
+			<Item Name="LocalizableStrings.MenuItem_tz82vh6_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.OpportunityAddButton_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.OpportunityExpansionPanel_title.Value" Value="Verkaufschancen" />
+			<Item Name="LocalizableStrings.OpportunityExportDataButton_caption.Value" Value="Exportieren nach Excel" />
+			<Item Name="LocalizableStrings.OpportunityImportDataButton_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.OpportunityRefreshButton_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.OpportunitySearchFilter_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.OpportunitySettingsButton_caption.Value" Value="Aktionen" />
+			<Item Name="LocalizableStrings.RecommendedProductExpansionPanel_title.Value" Value="Produktempfehlungen" />
+			<Item Name="LocalizableStrings.RecommendedProductExportDataButton_caption.Value" Value="Exportieren nach Excel" />
+			<Item Name="LocalizableStrings.RecommendedProductRefreshButton_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.RecommendedProductSearchFilter_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.RecommendedProductSettingsButton_caption.Value" Value="Aktionen" />
+			<Item Name="LocalizableStrings.RegisterMethod_placeholder.Value" Value="Registrierungsmethode auswählen" />
+			<Item Name="LocalizableStrings.SubmittedFormExpansionPanel_title.Value" Value="Übermittlungen" />
+			<Item Name="LocalizableStrings.SubmittedFormExportDataButton_caption.Value" Value="Exportieren nach Excel" />
+			<Item Name="LocalizableStrings.SubmittedFormRefreshButton_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.WebActionExpansionPanel_title.Value" Value="Web Aktionen" />
+			<Item Name="LocalizableStrings.WebActionExportDataButton_caption.Value" Value="Exportieren nach Excel" />
+			<Item Name="LocalizableStrings.WebActionImportDataButton_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.WebActionList_a9a6f0cb.Value" Value="Startdatum" />
+			<Item Name="LocalizableStrings.WebActionList_f312b329.Value" Value="URL Adresse der Seite" />
+			<Item Name="LocalizableStrings.WebActionRefreshButton_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.WebActionSearchFilter_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.WebActionSettingsButton_caption.Value" Value="Aktionen" />
+			<Item Name="LocalizableStrings.WebSessionExpansionPanel_title.Value" Value="Web-Sitzungen" />
+			<Item Name="LocalizableStrings.WebSessionExportDataButton_caption.Value" Value="Exportieren nach Excel" />
+			<Item Name="LocalizableStrings.WebSessionList_1259aaa8.Value" Value="Dauer, Sek" />
+			<Item Name="LocalizableStrings.WebSessionList_439c70ce.Value" Value="Stadt" />
+			<Item Name="LocalizableStrings.WebSessionList_50a6c11c.Value" Value="Startdatum" />
+			<Item Name="LocalizableStrings.WebSessionList_bb96b5ea.Value" Value="Land" />
+			<Item Name="LocalizableStrings.WebSessionRefreshButton_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.WebSessionSearchFilter_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.WebSessionSettingsButton_caption.Value" Value="Aktionen" />
+		</Items>
+	</Group>
+</Resources>
