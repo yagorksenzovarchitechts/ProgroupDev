@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.ServiceModel;
@@ -30,7 +31,17 @@ namespace Terrasoft.Configuration
         private const string SiteUrlSettingsCode = "SiteUrl";
         private const string RequestTimeoutSettingsCode = "ODataProxyRequestTimeout";
         private const int DefaultRequestTimeout = 30000;
+        private const int MaxBodyLength = 10000;
 
+        private static readonly HashSet<string> ExcludedHeaders = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        {
+            "Host",
+            "Connection",
+            "Content-Length"
+        };
+        
+        private static readonly ILog ErrorLogger = LogManager.GetLogger("Error");
+        
         public Stream ProcessRequest(Stream requestBody, string path)
         {
             var startTime = DateTime.UtcNow;
@@ -63,7 +74,7 @@ namespace Terrasoft.Configuration
 
                 var timeout = GetRequestTimeout(UserConnection);
                 var webRequest = CreateWebRequest(targetUrl, method, incomingRequest.ContentType, timeout);
-                CopyHeadersAndCookies(incomingRequest, webRequest);
+                CopyHeaders(incomingRequest, webRequest);
 
                 WriteRequestBody(webRequest, requestBodyBytes);
 
@@ -107,14 +118,8 @@ namespace Terrasoft.Configuration
                     LogToDatabase(UserConnection, entry);
                 }
                 catch (Exception ex)
-                {
-                    try
-                    {
-                        LogManager.GetLogger("Error").Error(ex);
-                    }
-                    catch
-                    {
-                    }
+                { 
+                    ErrorLogger.Error(ex);
                 }
             }
         }
@@ -124,11 +129,13 @@ namespace Terrasoft.Configuration
         private Stream HandleException(Exception ex, WebOperationContext context, out int statusCode,
             out string errorMessage)
         {
-            statusCode = 500;
+            statusCode = (int) HttpStatusCode.InternalServerError;
             errorMessage = ex.Message ?? string.Empty;
-
             context.OutgoingResponse.StatusCode = HttpStatusCode.InternalServerError;
-            var errorBytes = Encoding.UTF8.GetBytes($"{{\"error\": \"{ex.Message ?? string.Empty}\"}}");
+            var errorBytes = Encoding.UTF8.GetBytes($"{{\"error\": \"{errorMessage}\"}}");
+            
+            ErrorLogger.Error(ex);
+            
             return CreateResponseStream(errorBytes);
         }
 
@@ -139,7 +146,6 @@ namespace Terrasoft.Configuration
             statusCode = webExResult.statusCode;
             responseBodyString = webExResult.responseBody ?? string.Empty;
             errorMessage = ex.Message ?? string.Empty;
-
             context.OutgoingResponse.StatusCode = (HttpStatusCode) (webExResult.statusCode > 0
                 ? webExResult.statusCode
                 : (int) HttpStatusCode.InternalServerError);
@@ -152,10 +158,7 @@ namespace Terrasoft.Configuration
 
         private int GetRequestTimeout(UserConnection userConnection)
         {
-            if (userConnection == null)
-            {
-                return DefaultRequestTimeout;
-            }
+            userConnection.CheckArgumentNull(nameof(userConnection));
 
             try
             {
@@ -186,29 +189,21 @@ namespace Terrasoft.Configuration
             {
                 requestBody.CopyTo(ms);
                 var bytes = ms.ToArray();
-                return bytes.Length > 0 ? bytes : Array.Empty<byte>();
+                return bytes;
             }
         }
 
         private string BuildTargetUrl(UserConnection userConnection, IncomingWebRequestContext incomingRequest,
             string path)
         {
-            if (userConnection == null)
-            {
-                throw new ArgumentNullException(nameof(userConnection));
-            }
-
-            if (incomingRequest == null)
-            {
-                throw new ArgumentNullException(nameof(incomingRequest));
-            }
-
-            var baseUrl = GetODataBaseUrl(userConnection) ?? string.Empty;
+            userConnection.CheckArgumentNull(nameof(userConnection));
+            incomingRequest.CheckArgumentNull(nameof(incomingRequest));
+            
+            var baseUrl = GetODataBaseUrl(userConnection);
             baseUrl = baseUrl.TrimEnd('/');
             path = path ?? string.Empty;
             var result = baseUrl + "/" + path;
-            var query = incomingRequest.UriTemplateMatch?.RequestUri?.Query ?? string.Empty;
-
+            var query = incomingRequest.UriTemplateMatch?.RequestUri?.Query;
             if (!string.IsNullOrEmpty(query))
             {
                 result += query;
@@ -235,83 +230,46 @@ namespace Terrasoft.Configuration
             return webRequest;
         }
 
-        private void CopyHeadersAndCookies(IncomingWebRequestContext incomingRequest, HttpWebRequest webRequest)
+        private void CopyHeaders(IncomingWebRequestContext incomingRequest, HttpWebRequest webRequest)
         {
-            if (incomingRequest == null)
-            {
-                throw new ArgumentNullException(nameof(incomingRequest));
-            }
-
-            if (webRequest == null)
-            {
-                throw new ArgumentNullException(nameof(webRequest));
-            }
-
+            incomingRequest.CheckArgumentNull(nameof(incomingRequest));
+            webRequest.CheckArgumentNull(nameof(webRequest));
+            
             var headers = incomingRequest.Headers;
-
             foreach (string headerKey in headers)
             {
-                if (headerKey == null)
+                if (!ExcludedHeaders.Contains(headerKey))
                 {
-                    continue;
-                }
-
-                if (string.Equals(headerKey, "Host", StringComparison.OrdinalIgnoreCase)
-                    || string.Equals(headerKey, "Connection", StringComparison.OrdinalIgnoreCase)
-                    || string.Equals(headerKey, "Content-Length", StringComparison.OrdinalIgnoreCase))
-                {
-                    continue;
-                }
-
-                try
-                {
-                    webRequest.Headers[headerKey] = headers[headerKey];
-                }
-                catch
-                {
-                }
-            }
-
-            var cookieHeader = headers["Cookie"];
-            if (!string.IsNullOrEmpty(cookieHeader))
-            {
-                try
-                {
-                    webRequest.Headers["Cookie"] = cookieHeader;
-                }
-                catch
-                {
+                    try
+                    {
+                        webRequest.Headers[headerKey] = headers[headerKey];
+                    }
+                    catch (Exception e)
+                    {
+                        ErrorLogger.Error(e);
+                    }
                 }
             }
         }
-
+        
         private void WriteRequestBody(HttpWebRequest webRequest, byte[] requestBodyBytes)
         {
-            if (webRequest == null)
-            {
-                throw new ArgumentNullException(nameof(webRequest));
-            }
+            webRequest.CheckArgumentNull(nameof(webRequest));
 
-            var bytes = requestBodyBytes ?? Array.Empty<byte>();
-            if (bytes.Length == 0)
+            var bytes = requestBodyBytes;
+            if (bytes.IsNotEmpty())
             {
-                return;
-            }
-
-            webRequest.ContentLength = bytes.Length;
-            using (var requestStream = webRequest.GetRequestStream())
-            {
-                requestStream.Write(bytes, 0, bytes.Length);
+                webRequest.ContentLength = bytes.Length;
+                using (var requestStream = webRequest.GetRequestStream())
+                {
+                    requestStream.Write(bytes, 0, bytes.Length);
+                }
             }
         }
 
         private (int statusCode, string body, string contentType) GetWebResponseContent(HttpWebRequest webRequest)
         {
-            if (webRequest == null)
-            {
-                throw new ArgumentNullException(nameof(webRequest));
-            }
-
+            webRequest.CheckArgumentNull(nameof(webRequest));
             try
             {
                 using (var webResponse = (HttpWebResponse) webRequest.GetResponse())
@@ -379,37 +337,26 @@ namespace Terrasoft.Configuration
 
         private string GetODataBaseUrl(UserConnection userConnection)
         {
-            if (userConnection == null)
-            {
-                throw new ArgumentNullException(nameof(userConnection));
-            }
+            userConnection.CheckArgumentNull(nameof(userConnection));
 
             var siteUrlSetting = (string) Core.Configuration.SysSettings.GetValue(userConnection, SiteUrlSettingsCode);
             if (siteUrlSetting.IsNullOrEmpty())
             {
                 throw new Exception($"System setting '{SiteUrlSettingsCode}' is not configured.");
             }
-
-            return siteUrlSetting.TrimEnd('/') + "/0/odata/";
+            var baseUrl = new Uri(siteUrlSetting).GetLeftPart(UriPartial.Authority);
+    
+            return $"{baseUrl}/0/odata/";
         }
 
         private void LogToDatabase(UserConnection userConnection, LogEntry entry)
         {
-            if (userConnection == null)
-            {
-                throw new ArgumentNullException(nameof(userConnection));
-            }
-
-            if (entry == null)
-            {
-                throw new ArgumentNullException(nameof(entry));
-            }
-
-            try
-            {
-                const int maxBodyLength = 10000;
-                var truncatedRequestBody = TruncateText(entry.RequestBody, maxBodyLength);
-                var truncatedResponseBody = TruncateText(entry.ResponseBody, maxBodyLength);
+            userConnection.CheckArgumentNull(nameof(userConnection));
+            entry.CheckArgumentNull(nameof(entry));
+            
+            
+                var truncatedRequestBody = TruncateText(entry.RequestBody, MaxBodyLength);
+                var truncatedResponseBody = TruncateText(entry.ResponseBody, MaxBodyLength);
 
                 var insertQuery = new Insert(userConnection)
                     .Into("PgrOdataLog")
@@ -422,20 +369,11 @@ namespace Terrasoft.Configuration
                         Column.Parameter(entry.StatusCode > 0 ? entry.StatusCode : (object) DBNull.Value))
                     .Set("PgrDurationMs", Column.Parameter(entry.DurationMs))
                     .Set("PgrError", Column.Parameter(entry.Error ?? string.Empty))
-                    .Set("CreatedOn", Column.Parameter(DateTime.Now));
+                    .Set("CreatedOn", Column.Parameter(DateTime.Now))
+                    .Set("CreatedById", Column.Parameter(userConnection.CurrentUser.Id));
 
                 insertQuery.Execute();
-            }
-            catch (Exception ex)
-            {
-                try
-                {
-                    LogManager.GetLogger("Error").Error(ex);
-                }
-                catch
-                {
-                }
-            }
+            
         }
 
         private string TruncateText(string text, int maxBodyLength)
@@ -446,7 +384,7 @@ namespace Terrasoft.Configuration
                 return s;
             }
 
-            return s.Substring(0, maxBodyLength) + "... [truncated]";
+            return s.Substring(0, maxBodyLength);
         }
 
         #endregion
