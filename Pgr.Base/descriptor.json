@@ -2,13 +2,25 @@
   "Descriptor": {
     "UId": "0a27f994-95de-a815-464d-7d5e8e55ce39",
     "Name": "Pgr.Base",
-    "ModifiedOnUtc": "\/Date(1779787955000)\/",
+    "ModifiedOnUtc": "\/Date(1780315284000)\/",
     "Maintainer": "ProGroup",
     "DependsOn": [
+      {
+        "UId": "3a24fce5-19ee-7092-c813-20377ec74a5d",
+        "Name": "CrtChangeTrackingInTerritoryLeadOppMgmt",
+        "Type": 1,
+        "InstallBehavior": 1
+      },
       {
         "UId": "3f299622-2079-4a62-ba18-6d32c1d0d6af",
         "PackageVersion": "7.8.0",
         "Name": "SalesEnterprise_Marketing_ServiceEnt"
+      },
+      {
+        "UId": "c710cb3a-22be-d6e0-d392-6f2e69e8109e",
+        "Name": "CrtTerritoryMgmtInSales",
+        "Type": 1,
+        "InstallBehavior": 1
       }
     ]
   }

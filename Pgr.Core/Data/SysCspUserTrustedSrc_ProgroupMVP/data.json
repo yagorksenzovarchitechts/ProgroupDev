@@ -1,0 +1,52 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "0e1286ce-0d8d-4343-90da-4c47a1e9f811"
+        },
+        {
+          "SchemaColumnUId": "5d3a4b62-1fe1-91d2-9d12-ea6fed370cea",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "7a333c2d-03b1-3969-cb9d-8e9218e71c7b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "8ce3c720-3800-3340-ab7f-3709bc15adfe",
+          "Value": "https://app.powerbi.com"
+        },
+        {
+          "SchemaColumnUId": "ef07c4d0-0753-5986-a748-951a6c1ee937",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "b1ba5093-846c-4cdd-b0bc-2900737b4ac9"
+        },
+        {
+          "SchemaColumnUId": "5d3a4b62-1fe1-91d2-9d12-ea6fed370cea",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "7a333c2d-03b1-3969-cb9d-8e9218e71c7b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "8ce3c720-3800-3340-ab7f-3709bc15adfe",
+          "Value": "https://*.powerbi.com"
+        },
+        {
+          "SchemaColumnUId": "ef07c4d0-0753-5986-a748-951a6c1ee937",
+          "Value": ""
+        }
+      ]
+    }
+  ]
+}

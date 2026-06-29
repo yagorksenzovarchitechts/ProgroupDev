@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.AccountCategory.Caption" Value="Kategorie" />
+			<Item Name="Columns.AdditionalPhone.Caption" Value="Mobiltelefonnummer" />
+			<Item Name="Columns.Code.Caption" Value="Code" />
+			<Item Name="Columns.Country.Caption" Value="Land" />
+			<Item Name="Columns.EmployeesNumber.Caption" Value="Anzahl Mitarbeiter" />
+			<Item Name="Columns.Name.Caption" Value="Name" />
+			<Item Name="Columns.Notes.Caption" Value="Beschreibung" />
+			<Item Name="Columns.Owner.Caption" Value="Verkaufsleiter" />
+			<Item Name="Columns.Parent.Caption" Value="Parent Account" />
+			<Item Name="Columns.Pgr369ThresholdAbsolute.Caption" Value="Absoluter 369 Schwellwert" />
+			<Item Name="Columns.Pgr369ThresholdPercentage.Caption" Value="Prozentuale 369 Schwellwert" />
+			<Item Name="Columns.PgrAccountClassification.Caption" Value="Klassifizierung" />
+			<Item Name="Columns.PgrAccountLevel.Caption" Value="Stufe" />
+			<Item Name="Columns.PgrAccountManagerCode.Caption" Value="VKL Kürzel" />
+			<Item Name="Columns.PgrBestPlantLinked.Caption" Value="Bestwerk" />
+			<Item Name="Columns.PgrBoardConnect.Caption" Value="Board Connect" />
+			<Item Name="Columns.PgrCompetitorNotes.Caption" Value="Notiz" />
+			<Item Name="Columns.PgrCustomerServiceName.Caption" Value="Innendienstmitarbeiter" />
+			<Item Name="Columns.PgrCustomerlabel.Caption" Value="Kundenkennzeichen" />
+			<Item Name="Columns.PgrDateBl.Caption" Value="Sperrdatum" />
+			<Item Name="Columns.PgrDeliveryBl.Caption" Value="SAP Liefersperre" />
+			<Item Name="Columns.PgrDeliveryShare.Caption" Value="Lieferanteil" />
+			<Item Name="Columns.PgrDuns.Caption" Value="DUNS" />
+			<Item Name="Columns.PgrEBox.Caption" Value="E-Box" />
+			<Item Name="Columns.PgrEmail.Caption" Value="E-Mail" />
+			<Item Name="Columns.PgrEori.Caption" Value="EORI" />
+			<Item Name="Columns.PgrErpSystem.Caption" Value="ERP system provider" />
+			<Item Name="Columns.PgrExceedingCapacity.Caption" Value="Kapazitätsüberschreitung" />
+			<Item Name="Columns.PgrGroupAffiliation.Caption" Value="Gruppe" />
+			<Item Name="Columns.PgrHasEInvoicing.Caption" Value="E-invocing Prozess" />
+			<Item Name="Columns.PgrHasInvoiceMailprocess.Caption" Value="PDF Rechnung Prozess" />
+			<Item Name="Columns.PgrInvoiceMailAddress.Caption" Value="Rechnungs-E-Mail-Adresse" />
+			<Item Name="Columns.PgrIsActive.Caption" Value="Aktiv" />
+			<Item Name="Columns.PgrIsFsc.Caption" Value="FSC" />
+			<Item Name="Columns.PgrIsTestCustomer.Caption" Value="Testkunde" />
+			<Item Name="Columns.PgrIsVertIntegrated.Caption" Value="Integriert" />
+			<Item Name="Columns.PgrLastVisit.Caption" Value="Letzter Besuche" />
+			<Item Name="Columns.PgrMainPlantLinked.Caption" Value="Stammwerk" />
+			<Item Name="Columns.PgrMaxOverDelivery.Caption" Value="Max. Überlieferung" />
+			<Item Name="Columns.PgrMaxUnderDelivery.Caption" Value="Max. Unterlieferung" />
+			<Item Name="Columns.PgrOrderBl.Caption" Value="SAP Auftragssperre" />
+			<Item Name="Columns.PgrOverDeliveryPercentage1.Caption" Value="Überlieferung Prozent 1" />
+			<Item Name="Columns.PgrOverDeliveryPercentage2.Caption" Value="Überlieferung Prozent 2" />
+			<Item Name="Columns.PgrOverDeliveryQuantity1.Caption" Value="Überlieferung ab Menge 1" />
+			<Item Name="Columns.PgrOverDeliveryQuantity2.Caption" Value="Überlieferung ab Menge 2" />
+			<Item Name="Columns.PgrPlanningBl.Caption" Value="SAP Planungssperre" />
+			<Item Name="Columns.PgrProductionCapacity.Caption" Value="Produktionskapazität" />
+			<Item Name="Columns.PgrSalesDirector.Caption" Value="Sales Director" />
+			<Item Name="Columns.PgrSapCustomerNumber.Caption" Value="SAP Kundennummer" />
+			<Item Name="Columns.PgrSensitiveToOverDelivery.Caption" Value="Überlieferungssensibel" />
+			<Item Name="Columns.PgrServiceTeamLead.Caption" Value="ID Teamleiter" />
+			<Item Name="Columns.PgrSpecialFeatures.Caption" Value="Besonderheiten" />
+			<Item Name="Columns.PgrVatNumber.Caption" Value="Umsatzsteuernummer" />
+			<Item Name="Columns.PgrWFName.Caption" Value="WF Name" />
+			<Item Name="Columns.PgrWepaformCustomerId.Caption" Value="Wepaform Kundennummer" />
+			<Item Name="Columns.PgrWepaformCustomerId2.Caption" Value="Wepaform Kundennummer" />
+			<Item Name="Columns.PgrWorkingWidth.Caption" Value="Arbeitsbreite" />
+			<Item Name="Columns.PgrYearOfCommissioning.Caption" Value="Inbetriebnahme" />
+			<Item Name="Columns.Phone.Caption" Value="Telefonnumer" />
+			<Item Name="Columns.Type.Caption" Value="Accountart" />
+			<Item Name="Columns.Web.Caption" Value="Webseites" />
+		</Items>
+	</Group>
+</Resources>

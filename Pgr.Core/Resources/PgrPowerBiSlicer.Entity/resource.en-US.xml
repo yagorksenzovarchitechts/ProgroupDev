@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Power Bi slicer" />
+			<Item Name="Columns.PgrColumn.Caption" Value="Column" />
+			<Item Name="Columns.PgrTable.Caption" Value="Table" />
+			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
+		</Items>
+	</Group>
+</Resources>

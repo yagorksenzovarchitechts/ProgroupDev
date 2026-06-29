@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "ce9a3c65-0752-4946-8f4e-49a9ee00f416",
+    "Name": "PgrPowerBIRelatedPage",
+    "ModifiedOnUtc": "\/Date(1781861986000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Power BI (Page settings)",
+    "DependsOn": []
+  }
+}

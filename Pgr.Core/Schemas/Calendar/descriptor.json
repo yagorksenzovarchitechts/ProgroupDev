@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "94d5c919-f537-4984-80ae-282533562e14",
+    "Name": "Calendar",
+    "ModifiedOnUtc": "\/Date(1781073930000)\/",
+    "Parent": {
+      "UId": "3788dc9f-10e3-41a1-ac1b-bccc768afb64",
+      "Name": "Calendar"
+    },
+    "ExtendParent": true,
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Calendar",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.DayOffsDetailCaption.Value" Value="Freie Tage" />
+			<Item Name="LocalizableStrings.DaysOffTabCaption.Value" Value="Freie Tage" />
+			<Item Name="LocalizableStrings.WorkingWeekDetailCaption.Value" Value="Arbeitswoche" />
+			<Item Name="LocalizableStrings.WorkingWeekTabCaption.Value" Value="Parameter der Arbeitswoche" />
+		</Items>
+	</Group>
+</Resources>

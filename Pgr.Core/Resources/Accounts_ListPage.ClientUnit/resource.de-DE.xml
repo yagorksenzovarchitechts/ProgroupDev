@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value="Excel-Export" />
+			<Item Name="LocalizableStrings.QuickFilter_0yd6qle_config_caption.Value" Value="Vertriebsregion" />
+			<Item Name="LocalizableStrings.QuickFilter_5bm0ul6_config_caption.Value" Value="Vertriebsregion" />
+			<Item Name="LocalizableStrings.QuickFilter_iihiiel_config_caption.Value" Value="Vertriebsregion" />
+			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Suche..." />
+			<Item Name="LocalizableStrings.TerritoryQuickFilter_config_caption.Value" Value="Vertriebsregion" />
+		</Items>
+	</Group>
+</Resources>

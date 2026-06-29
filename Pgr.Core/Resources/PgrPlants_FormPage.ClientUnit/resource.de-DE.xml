@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Plants form page" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.ExpansionPanel_c87buvw_title.Value" Value="Notizen" />
+			<Item Name="LocalizableStrings.ExpansionPanel_d77p5tn_title.Value" Value="Adresse" />
+			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="Allgemeine Info" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,472 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "1187512b-da22-4879-9209-da57d99f43c7"
+        },
+        {
+          "SchemaColumnUId": "03a27b75-6d7f-4be4-b0fd-f03ffd8a7aab",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "216b38f5-e2c3-462b-ae2e-1df80fc21b33",
+          "Value": "720b771c-e7a7-4f31-9cfb-52cd21c3739f",
+          "DisplayValue": "All external users"
+        },
+        {
+          "SchemaColumnUId": "3bb9d182-ad73-4379-9d51-2003c862a90c",
+          "Value": "Contacts_ListPage__DataTable"
+        },
+        {
+          "SchemaColumnUId": "6851587b-0b7a-45cb-a5a5-31994420d81b",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "986fc9ee-72b2-4cc9-af5e-ed64af54d30f",
+          "Value": "eyJjb2x1bW5zIjpbeyJtb2RlbE1ldGFkYXRhIjp7Im5hbWUiOiJJZCIsInBhdGgiOiJJZCJ9LCJ2aWV3TW9kZWxNZXRhZGF0YSI6eyJhdHRyaWJ1dGVOYW1lIjoiUERTX0lkIn19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiZjI1MmY1ODEtMGNjZi00NGFjLWI3YzktYzAwZGYyYWQ5OTE5IiwiY29kZSI6IlBEU19OYW1lIiwiY2FwdGlvbiI6IiNSZXNvdXJjZVN0cmluZyhQRFNfTmFtZSkjIiwiZGF0YVZhbHVlVHlwZSI6MSwic3RpY2t5Ijp0cnVlfSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJOYW1lIiwibmFtZSI6Ik5hbWUifX0seyJ2aWV3TWV0YWRhdGEiOnsiaWQiOiI0Mzg1MDViOC00YTg3LTBhYzYtZDFjMy0xMzgyNzgwODA2Y2IiLCJjb2RlIjoiUERTX1R5cGUiLCJjYXB0aW9uIjoiI1Jlc291cmNlU3RyaW5nKFBEU19UeXBlKSMiLCJkYXRhVmFsdWVUeXBlIjoxMCwid2lkdGgiOjE4Nn0sIm1vZGVsTWV0YWRhdGEiOnsidHlwZSI6ImRlZmF1bHQiLCJwYXRoIjoiVHlwZSIsIm5hbWUiOiJUeXBlIn19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiNWVkMzhiYTYtYmE3Mi0wMmRjLTlhMjAtMTYwNjE4NThiNDNjIiwiY29kZSI6IlBEU19BY2NvdW50IiwiY2FwdGlvbiI6IiNSZXNvdXJjZVN0cmluZyhQRFNfQWNjb3VudCkjIiwiZGF0YVZhbHVlVHlwZSI6MTB9LCJtb2RlbE1ldGFkYXRhIjp7InR5cGUiOiJkZWZhdWx0IiwicGF0aCI6IkFjY291bnQiLCJuYW1lIjoiQWNjb3VudCJ9fV0sInNvcnRpbmciOlt7ImRpcmVjdGlvbiI6ImFzYyIsImNvbHVtbkNvZGUiOiJQRFNfTmFtZSJ9XSwicmVzb3VyY2VzIjp7ImxvY2FsaXphYmxlU3RyaW5ncyI6e319fQ=="
+        },
+        {
+          "SchemaColumnUId": "99d21524-ccad-45c1-998d-e9de6a6412af",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "fd26b95c-06ba-4595-915e-bc5657d10842",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "308ed8e4-464f-449c-807e-455b82ce79b3"
+        },
+        {
+          "SchemaColumnUId": "03a27b75-6d7f-4be4-b0fd-f03ffd8a7aab",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "216b38f5-e2c3-462b-ae2e-1df80fc21b33",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        },
+        {
+          "SchemaColumnUId": "3bb9d182-ad73-4379-9d51-2003c862a90c",
+          "Value": "Opportunities_ListPage__DataTable"
+        },
+        {
+          "SchemaColumnUId": "6851587b-0b7a-45cb-a5a5-31994420d81b",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "986fc9ee-72b2-4cc9-af5e-ed64af54d30f",
+          "Value": "eyJzb3J0aW5nIjpbXSwiY29sdW1ucyI6W3sidmlld01vZGVsTWV0YWRhdGEiOnsiYXR0cmlidXRlTmFtZSI6IlBEU19JZCJ9LCJtb2RlbE1ldGFkYXRhIjp7Im5hbWUiOiJJZCIsInBhdGgiOiJJZCJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6ImYyNTJmNTgxLTBjY2YtNDRhYy1iN2M5LWMwMGRmMmFkOTkxOSIsImNvZGUiOiJQRFNfVGl0bGUiLCJjYXB0aW9uIjoiI1Jlc291cmNlU3RyaW5nKFBEU19UaXRsZSkjIiwiZGF0YVZhbHVlVHlwZSI6MSwic3RpY2t5Ijp0cnVlLCJ3aWR0aCI6MzY5fSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJUaXRsZSIsIm5hbWUiOiJUaXRsZSJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6ImUxZWVjMWY4LWEzZDgtZDdiYS1iOGY4LTZhYTQ4NzdhNjA2YiIsImNvZGUiOiJQRFNfU3RhZ2UiLCJjYXB0aW9uIjoiI1Jlc291cmNlU3RyaW5nKFBEU19TdGFnZSkjIiwiZGF0YVZhbHVlVHlwZSI6MTAsIndpZHRoIjoyNjZ9LCJtb2RlbE1ldGFkYXRhIjp7InR5cGUiOiJkZWZhdWx0IiwicGF0aCI6IlN0YWdlIiwibmFtZSI6IlN0YWdlIn19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiN2UyNmM5MjItYWRmOS00Y2UyLTY1NzUtODZiNTBlN2QzY2U1IiwiY29kZSI6IlBEU19Db250YWN0IiwiY2FwdGlvbiI6IiNSZXNvdXJjZVN0cmluZyhQRFNfQ29udGFjdCkjIiwiZGF0YVZhbHVlVHlwZSI6MTAsIndpZHRoIjoyMjV9LCJtb2RlbE1ldGFkYXRhIjp7InR5cGUiOiJkZWZhdWx0IiwicGF0aCI6IkNvbnRhY3QiLCJuYW1lIjoiQ29udGFjdCJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6Ijc1N2YxNjM0LTY5NDYtNWIzZi0zOTVjLTA2OWYxZDIxMzc5NSIsImNvZGUiOiJQRFNfQWNjb3VudCIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX0FjY291bnQpIyIsImRhdGFWYWx1ZVR5cGUiOjEwLCJ3aWR0aCI6MjIyfSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJBY2NvdW50IiwibmFtZSI6IkFjY291bnQifX0seyJ2aWV3TWV0YWRhdGEiOnsiaWQiOiIzZDcyYTk5ZS0yNDliLWMwYmEtOTgzMi1jZWQ0YzRhNjU2NzMiLCJjb2RlIjoiUERTX0R1ZURhdGUiLCJjYXB0aW9uIjoiI1Jlc291cmNlU3RyaW5nKFBEU19EdWVEYXRlKSMiLCJkYXRhVmFsdWVUeXBlIjo4LCJ3aWR0aCI6MTc4fSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJEdWVEYXRlIiwibmFtZSI6IkR1ZURhdGUifX1dLCJyZXNvdXJjZXMiOnsibG9jYWxpemFibGVTdHJpbmdzIjp7IlBEU19EdWVEYXRlIjp7ImVuLVVTIjoiQ2xvc2UgZGF0ZSIsImRlLURFIjoiQWJzY2hsdXNzZGF0dW0ifX19fQ=="
+        },
+        {
+          "SchemaColumnUId": "99d21524-ccad-45c1-998d-e9de6a6412af",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "fd26b95c-06ba-4595-915e-bc5657d10842",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "36e03c7f-b8d8-46ab-b1df-774426350a0d"
+        },
+        {
+          "SchemaColumnUId": "03a27b75-6d7f-4be4-b0fd-f03ffd8a7aab",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "216b38f5-e2c3-462b-ae2e-1df80fc21b33",
+          "Value": "720b771c-e7a7-4f31-9cfb-52cd21c3739f",
+          "DisplayValue": "All external users"
+        },
+        {
+          "SchemaColumnUId": "3bb9d182-ad73-4379-9d51-2003c862a90c",
+          "Value": "Tasks_ListPage__DataTable"
+        },
+        {
+          "SchemaColumnUId": "6851587b-0b7a-45cb-a5a5-31994420d81b",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "986fc9ee-72b2-4cc9-af5e-ed64af54d30f",
+          "Value": "eyJjb2x1bW5zIjpbeyJtb2RlbE1ldGFkYXRhIjp7Im5hbWUiOiJJZCIsInBhdGgiOiJJZCJ9LCJ2aWV3TW9kZWxNZXRhZGF0YSI6eyJhdHRyaWJ1dGVOYW1lIjoiUERTX0lkIn19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiZjI1MmY1ODEtMGNjZi00NGFjLWI3YzktYzAwZGYyYWQ5OTE5IiwiY29kZSI6IlBEU19UaXRsZSIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX1RpdGxlKSMiLCJkYXRhVmFsdWVUeXBlIjoxLCJ3aWR0aCI6NDE4fSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJUaXRsZSIsIm5hbWUiOiJUaXRsZSJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6ImVmZjViYzkyLTcyNzQtOTUwZi1jY2NiLWI5YjM5MTljYzE5MSIsImNvZGUiOiJQRFNfQWN0aXZpdHlDYXRlZ29yeSIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX0FjdGl2aXR5Q2F0ZWdvcnkpIyIsImRhdGFWYWx1ZVR5cGUiOjEwLCJ3aWR0aCI6MjE3fSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJBY3Rpdml0eUNhdGVnb3J5IiwibmFtZSI6IkFjdGl2aXR5Q2F0ZWdvcnkifX0seyJ2aWV3TWV0YWRhdGEiOnsiaWQiOiJhZWEyNzk5Yi1hNzcyLTU2MWItODU5Yi1kYTQzY2I2NjkxN2MiLCJjb2RlIjoiUERTX093bmVyIiwiY2FwdGlvbiI6IiNSZXNvdXJjZVN0cmluZyhQRFNfT3duZXIpIyIsImRhdGFWYWx1ZVR5cGUiOjEwLCJ3aWR0aCI6MTk5fSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJPd25lciIsIm5hbWUiOiJPd25lciJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6IjM3MDM5MmE2LTUyMGItMWZhYi0zYjU3LWNlNzhmZWQ2ZDNjNyIsImNvZGUiOiJQRFNfQWNjb3VudCIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX0FjY291bnQpIyIsImRhdGFWYWx1ZVR5cGUiOjEwfSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJBY2NvdW50IiwibmFtZSI6IkFjY291bnQifX0seyJ2aWV3TWV0YWRhdGEiOnsiaWQiOiJlYjA3MzJiMi1mMzdiLTA4NjAtMWZhZC1mMjhlNDA3OGZjOTMiLCJjb2RlIjoiUERTX1N0YXJ0RGF0ZSIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX1N0YXJ0RGF0ZSkjIiwiZGF0YVZhbHVlVHlwZSI6N30sIm1vZGVsTWV0YWRhdGEiOnsidHlwZSI6ImRlZmF1bHQiLCJwYXRoIjoiU3RhcnREYXRlIiwibmFtZSI6IlN0YXJ0RGF0ZSJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6ImNjNGYwNDhjLWVjYWEtYTgwNy00M2YzLTdlNjVhMjcxYjMxMyIsImNvZGUiOiJQRFNfRHVlRGF0ZSIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX0R1ZURhdGUpIyIsImRhdGFWYWx1ZVR5cGUiOjcsIndpZHRoIjoyNDZ9LCJtb2RlbE1ldGFkYXRhIjp7InR5cGUiOiJkZWZhdWx0IiwicGF0aCI6IkR1ZURhdGUiLCJuYW1lIjoiRHVlRGF0ZSJ9fV0sInNvcnRpbmciOltdLCJyZXNvdXJjZXMiOnsibG9jYWxpemFibGVTdHJpbmdzIjp7IlBEU19UaXRsZSI6eyJlbi1VUyI6IlN1YmplY3QifSwiUERTX0FjdGl2aXR5Q2F0ZWdvcnkiOnsiZW4tVVMiOiJDYXRlZ29yeSJ9LCJQRFNfT3duZXIiOnsiZW4tVVMiOiJPd25lciJ9LCJQRFNfQWNjb3VudCI6eyJlbi1VUyI6IkFjY291bnQifSwiUERTX1N0YXJ0RGF0ZSI6eyJlbi1VUyI6IlN0YXJ0In0sIlBEU19EdWVEYXRlIjp7ImVuLVVTIjoiRW5kIn19fX0="
+        },
+        {
+          "SchemaColumnUId": "99d21524-ccad-45c1-998d-e9de6a6412af",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "fd26b95c-06ba-4595-915e-bc5657d10842",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "7071392c-d369-4a8f-bbc8-58fc33059628"
+        },
+        {
+          "SchemaColumnUId": "03a27b75-6d7f-4be4-b0fd-f03ffd8a7aab",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "216b38f5-e2c3-462b-ae2e-1df80fc21b33",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        },
+        {
+          "SchemaColumnUId": "3bb9d182-ad73-4379-9d51-2003c862a90c",
+          "Value": "Tasks_ListPage__DataTable"
+        },
+        {
+          "SchemaColumnUId": "6851587b-0b7a-45cb-a5a5-31994420d81b",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "986fc9ee-72b2-4cc9-af5e-ed64af54d30f",
+          "Value": "eyJjb2x1bW5zIjpbeyJtb2RlbE1ldGFkYXRhIjp7Im5hbWUiOiJJZCIsInBhdGgiOiJJZCJ9LCJ2aWV3TW9kZWxNZXRhZGF0YSI6eyJhdHRyaWJ1dGVOYW1lIjoiUERTX0lkIn19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiZjI1MmY1ODEtMGNjZi00NGFjLWI3YzktYzAwZGYyYWQ5OTE5IiwiY29kZSI6IlBEU19UaXRsZSIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX1RpdGxlKSMiLCJkYXRhVmFsdWVUeXBlIjoxLCJ3aWR0aCI6NDE4fSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJUaXRsZSIsIm5hbWUiOiJUaXRsZSJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6ImVmZjViYzkyLTcyNzQtOTUwZi1jY2NiLWI5YjM5MTljYzE5MSIsImNvZGUiOiJQRFNfQWN0aXZpdHlDYXRlZ29yeSIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX0FjdGl2aXR5Q2F0ZWdvcnkpIyIsImRhdGFWYWx1ZVR5cGUiOjEwLCJ3aWR0aCI6MjE3fSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJBY3Rpdml0eUNhdGVnb3J5IiwibmFtZSI6IkFjdGl2aXR5Q2F0ZWdvcnkifX0seyJ2aWV3TWV0YWRhdGEiOnsiaWQiOiJhZWEyNzk5Yi1hNzcyLTU2MWItODU5Yi1kYTQzY2I2NjkxN2MiLCJjb2RlIjoiUERTX093bmVyIiwiY2FwdGlvbiI6IiNSZXNvdXJjZVN0cmluZyhQRFNfT3duZXIpIyIsImRhdGFWYWx1ZVR5cGUiOjEwLCJ3aWR0aCI6MTk5fSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJPd25lciIsIm5hbWUiOiJPd25lciJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6IjM3MDM5MmE2LTUyMGItMWZhYi0zYjU3LWNlNzhmZWQ2ZDNjNyIsImNvZGUiOiJQRFNfQWNjb3VudCIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX0FjY291bnQpIyIsImRhdGFWYWx1ZVR5cGUiOjEwfSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJBY2NvdW50IiwibmFtZSI6IkFjY291bnQifX0seyJ2aWV3TWV0YWRhdGEiOnsiaWQiOiJlYjA3MzJiMi1mMzdiLTA4NjAtMWZhZC1mMjhlNDA3OGZjOTMiLCJjb2RlIjoiUERTX1N0YXJ0RGF0ZSIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX1N0YXJ0RGF0ZSkjIiwiZGF0YVZhbHVlVHlwZSI6N30sIm1vZGVsTWV0YWRhdGEiOnsidHlwZSI6ImRlZmF1bHQiLCJwYXRoIjoiU3RhcnREYXRlIiwibmFtZSI6IlN0YXJ0RGF0ZSJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6ImNjNGYwNDhjLWVjYWEtYTgwNy00M2YzLTdlNjVhMjcxYjMxMyIsImNvZGUiOiJQRFNfRHVlRGF0ZSIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX0R1ZURhdGUpIyIsImRhdGFWYWx1ZVR5cGUiOjcsIndpZHRoIjoyNDZ9LCJtb2RlbE1ldGFkYXRhIjp7InR5cGUiOiJkZWZhdWx0IiwicGF0aCI6IkR1ZURhdGUiLCJuYW1lIjoiRHVlRGF0ZSJ9fV0sInNvcnRpbmciOltdLCJyZXNvdXJjZXMiOnsibG9jYWxpemFibGVTdHJpbmdzIjp7IlBEU19UaXRsZSI6eyJlbi1VUyI6IlN1YmplY3QifSwiUERTX0FjdGl2aXR5Q2F0ZWdvcnkiOnsiZW4tVVMiOiJDYXRlZ29yeSJ9LCJQRFNfT3duZXIiOnsiZW4tVVMiOiJPd25lciJ9LCJQRFNfQWNjb3VudCI6eyJlbi1VUyI6IkFjY291bnQifSwiUERTX1N0YXJ0RGF0ZSI6eyJlbi1VUyI6IlN0YXJ0In0sIlBEU19EdWVEYXRlIjp7ImVuLVVTIjoiRW5kIn19fX0="
+        },
+        {
+          "SchemaColumnUId": "99d21524-ccad-45c1-998d-e9de6a6412af",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "fd26b95c-06ba-4595-915e-bc5657d10842",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "7abe869d-ff50-4a52-86d1-0172a39c7435"
+        },
+        {
+          "SchemaColumnUId": "03a27b75-6d7f-4be4-b0fd-f03ffd8a7aab",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "216b38f5-e2c3-462b-ae2e-1df80fc21b33",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        },
+        {
+          "SchemaColumnUId": "3bb9d182-ad73-4379-9d51-2003c862a90c",
+          "Value": "Opportunities_FormPage__CompetitorsList"
+        },
+        {
+          "SchemaColumnUId": "6851587b-0b7a-45cb-a5a5-31994420d81b",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "986fc9ee-72b2-4cc9-af5e-ed64af54d30f",
+          "Value": "eyJzb3J0aW5nIjpbXSwiY29sdW1ucyI6W3sidmlld01vZGVsTWV0YWRhdGEiOnsiYXR0cmlidXRlTmFtZSI6IkNvbXBldGl0b3JzTGlzdERTX0lkIn0sIm1vZGVsTWV0YWRhdGEiOnsibmFtZSI6IklkIiwicGF0aCI6IklkIn19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiYjQ5NTVmMmUtZjcwZi00MDQwLTE4ZDYtMjgzZTBmMDkxYTI2IiwiY29kZSI6IkNvbXBldGl0b3JzTGlzdERTX0NvbXBldGl0b3IiLCJjYXB0aW9uIjoiI1Jlc291cmNlU3RyaW5nKENvbXBldGl0b3JzTGlzdERTX0NvbXBldGl0b3IpIyIsImRhdGFWYWx1ZVR5cGUiOjEwLCJ3aWR0aCI6NTg1fSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJDb21wZXRpdG9yIiwibmFtZSI6IkNvbXBldGl0b3IifX0seyJ2aWV3TWV0YWRhdGEiOnsiaWQiOiIyZDZhNTkwOC0zOTM2LTViMDctOGFlZi0wMGVjNWE2ZDk1YWEiLCJjb2RlIjoiQ29tcGV0aXRvcnNMaXN0RFNfQ29tcGV0aXRvclByb2R1Y3QiLCJjYXB0aW9uIjoiI1Jlc291cmNlU3RyaW5nKENvbXBldGl0b3JzTGlzdERTX0NvbXBldGl0b3JQcm9kdWN0KSMiLCJkYXRhVmFsdWVUeXBlIjoxMCwid2lkdGgiOjU5NX0sIm1vZGVsTWV0YWRhdGEiOnsidHlwZSI6ImRlZmF1bHQiLCJwYXRoIjoiQ29tcGV0aXRvclByb2R1Y3QiLCJuYW1lIjoiQ29tcGV0aXRvclByb2R1Y3QifX1dLCJyZXNvdXJjZXMiOnsibG9jYWxpemFibGVTdHJpbmdzIjp7IkNvbXBldGl0b3JzTGlzdERTX0NvbXBldGl0b3IiOnsiZW4tVVMiOiJDb21wZXRpdG9yIn19fX0="
+        },
+        {
+          "SchemaColumnUId": "99d21524-ccad-45c1-998d-e9de6a6412af",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "fd26b95c-06ba-4595-915e-bc5657d10842",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "8aa821be-708a-4623-bdf5-bea59387e258"
+        },
+        {
+          "SchemaColumnUId": "03a27b75-6d7f-4be4-b0fd-f03ffd8a7aab",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "216b38f5-e2c3-462b-ae2e-1df80fc21b33",
+          "Value": "720b771c-e7a7-4f31-9cfb-52cd21c3739f",
+          "DisplayValue": "All external users"
+        },
+        {
+          "SchemaColumnUId": "3bb9d182-ad73-4379-9d51-2003c862a90c",
+          "Value": "Leads_ListPage__DataTable"
+        },
+        {
+          "SchemaColumnUId": "6851587b-0b7a-45cb-a5a5-31994420d81b",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "986fc9ee-72b2-4cc9-af5e-ed64af54d30f",
+          "Value": "eyJjb2x1bW5zIjpbeyJtb2RlbE1ldGFkYXRhIjp7Im5hbWUiOiJJZCIsInBhdGgiOiJJZCJ9LCJ2aWV3TW9kZWxNZXRhZGF0YSI6eyJhdHRyaWJ1dGVOYW1lIjoiUERTX0lkIn19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiZjI1MmY1ODEtMGNjZi00NGFjLWI3YzktYzAwZGYyYWQ5OTE5IiwiY29kZSI6IlBEU19MZWFkTmFtZSIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX0xlYWROYW1lKSMiLCJkYXRhVmFsdWVUeXBlIjoxLCJzdGlja3kiOnRydWUsIndpZHRoIjozODN9LCJtb2RlbE1ldGFkYXRhIjp7InR5cGUiOiJkZWZhdWx0IiwicGF0aCI6IkxlYWROYW1lIiwibmFtZSI6IkxlYWROYW1lIn19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiNmUxM2Y2ODItMTdjYy1jZGJmLTNmZjktOTA2MmJiODJiNzMxIiwiY29kZSI6IlBEU19RdWFsaWZ5U3RhdHVzIiwiY2FwdGlvbiI6IiNSZXNvdXJjZVN0cmluZyhQRFNfUXVhbGlmeVN0YXR1cykjIiwiZGF0YVZhbHVlVHlwZSI6MTAsIndpZHRoIjoyNTl9LCJtb2RlbE1ldGFkYXRhIjp7InR5cGUiOiJkZWZhdWx0IiwicGF0aCI6IlF1YWxpZnlTdGF0dXMiLCJuYW1lIjoiUXVhbGlmeVN0YXR1cyJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6IjliM2FmOGVjLTQ0N2ItODhiNC0yMWYyLWU0NzMzNzY5NTAzMSIsImNvZGUiOiJQRFNfUXVhbGlmaWVkQ29udGFjdCIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX1F1YWxpZmllZENvbnRhY3QpIyIsImRhdGFWYWx1ZVR5cGUiOjEwLCJ3aWR0aCI6MjE5fSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJRdWFsaWZpZWRDb250YWN0IiwibmFtZSI6IlF1YWxpZmllZENvbnRhY3QifX0seyJ2aWV3TWV0YWRhdGEiOnsiaWQiOiI5MDM5ODBhYi0zNDUyLTZmNzgtNzA4My0xMWE2MWE3YzI5OTQiLCJjb2RlIjoiUERTX1F1YWxpZmllZEFjY291bnQiLCJjYXB0aW9uIjoiI1Jlc291cmNlU3RyaW5nKFBEU19RdWFsaWZpZWRBY2NvdW50KSMiLCJkYXRhVmFsdWVUeXBlIjoxMCwid2lkdGgiOjIwN30sIm1vZGVsTWV0YWRhdGEiOnsidHlwZSI6ImRlZmF1bHQiLCJwYXRoIjoiUXVhbGlmaWVkQWNjb3VudCIsIm5hbWUiOiJRdWFsaWZpZWRBY2NvdW50In19XSwic29ydGluZyI6W10sInJlc291cmNlcyI6eyJsb2NhbGl6YWJsZVN0cmluZ3MiOnsiUERTX0xlYWROYW1lIjp7ImVuLVVTIjoiTmFtZSJ9LCJQRFNfUXVhbGlmeVN0YXR1cyI6eyJlbi1VUyI6IlN0YWdlIn19fX0="
+        },
+        {
+          "SchemaColumnUId": "99d21524-ccad-45c1-998d-e9de6a6412af",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "fd26b95c-06ba-4595-915e-bc5657d10842",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "94d0c988-d102-4f6b-bdca-1572dca421f6"
+        },
+        {
+          "SchemaColumnUId": "03a27b75-6d7f-4be4-b0fd-f03ffd8a7aab",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "216b38f5-e2c3-462b-ae2e-1df80fc21b33",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        },
+        {
+          "SchemaColumnUId": "3bb9d182-ad73-4379-9d51-2003c862a90c",
+          "Value": "Opportunities_FormPage__ProductsList"
+        },
+        {
+          "SchemaColumnUId": "6851587b-0b7a-45cb-a5a5-31994420d81b",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "986fc9ee-72b2-4cc9-af5e-ed64af54d30f",
+          "Value": "eyJzb3J0aW5nIjpbeyJjb2x1bW5Db2RlIjoiUHJvZHVjdHNMaXN0RFNfUGdyRGlzY291bnQiLCJkaXJlY3Rpb24iOiJhc2MifV0sImNvbHVtbnMiOlt7InZpZXdNb2RlbE1ldGFkYXRhIjp7ImF0dHJpYnV0ZU5hbWUiOiJQcm9kdWN0c0xpc3REU19JZCJ9LCJtb2RlbE1ldGFkYXRhIjp7Im5hbWUiOiJJZCIsInBhdGgiOiJJZCJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6IjMyZjYwYjVjLTg5MjEtMDRkMy1lNDFhLWNhYmQ3ODcwOTMwZCIsImNvZGUiOiJQcm9kdWN0c0xpc3REU19Qcm9kdWN0IiwiY2FwdGlvbiI6IiNSZXNvdXJjZVN0cmluZyhQcm9kdWN0c0xpc3REU19Qcm9kdWN0KSMiLCJkYXRhVmFsdWVUeXBlIjoxMCwid2lkdGgiOjUxMH0sIm1vZGVsTWV0YWRhdGEiOnsidHlwZSI6ImRlZmF1bHQiLCJuYW1lIjoiUHJvZHVjdCIsInBhdGgiOiJQcm9kdWN0In19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiNTU3MDUxODctMTU0MS1hNjVhLTQ3ODctMjU3NjllZmE0YzIwIiwiY29kZSI6IlByb2R1Y3RzTGlzdERTX1BnckRpc2NvdW50IiwiY2FwdGlvbiI6IiNSZXNvdXJjZVN0cmluZyhQcm9kdWN0c0xpc3REU19QZ3JEaXNjb3VudCkjIiwiZGF0YVZhbHVlVHlwZSI6MzIsIndpZHRoIjoxNDV9LCJtb2RlbE1ldGFkYXRhIjp7InR5cGUiOiJkZWZhdWx0IiwibmFtZSI6IlBnckRpc2NvdW50IiwicGF0aCI6IlBnckRpc2NvdW50In19XSwicmVzb3VyY2VzIjp7ImxvY2FsaXphYmxlU3RyaW5ncyI6e319fQ=="
+        },
+        {
+          "SchemaColumnUId": "99d21524-ccad-45c1-998d-e9de6a6412af",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "fd26b95c-06ba-4595-915e-bc5657d10842",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "9e4a5931-4af7-4033-a3dc-0c64df8e1c75"
+        },
+        {
+          "SchemaColumnUId": "03a27b75-6d7f-4be4-b0fd-f03ffd8a7aab",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "216b38f5-e2c3-462b-ae2e-1df80fc21b33",
+          "Value": "720b771c-e7a7-4f31-9cfb-52cd21c3739f",
+          "DisplayValue": "All external users"
+        },
+        {
+          "SchemaColumnUId": "3bb9d182-ad73-4379-9d51-2003c862a90c",
+          "Value": "Opportunities_ListPage__DataTable"
+        },
+        {
+          "SchemaColumnUId": "6851587b-0b7a-45cb-a5a5-31994420d81b",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "986fc9ee-72b2-4cc9-af5e-ed64af54d30f",
+          "Value": "eyJzb3J0aW5nIjpbXSwiY29sdW1ucyI6W3sidmlld01vZGVsTWV0YWRhdGEiOnsiYXR0cmlidXRlTmFtZSI6IlBEU19JZCJ9LCJtb2RlbE1ldGFkYXRhIjp7Im5hbWUiOiJJZCIsInBhdGgiOiJJZCJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6ImYyNTJmNTgxLTBjY2YtNDRhYy1iN2M5LWMwMGRmMmFkOTkxOSIsImNvZGUiOiJQRFNfVGl0bGUiLCJjYXB0aW9uIjoiI1Jlc291cmNlU3RyaW5nKFBEU19UaXRsZSkjIiwiZGF0YVZhbHVlVHlwZSI6MSwic3RpY2t5Ijp0cnVlLCJ3aWR0aCI6MzY5fSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJUaXRsZSIsIm5hbWUiOiJUaXRsZSJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6ImUxZWVjMWY4LWEzZDgtZDdiYS1iOGY4LTZhYTQ4NzdhNjA2YiIsImNvZGUiOiJQRFNfU3RhZ2UiLCJjYXB0aW9uIjoiI1Jlc291cmNlU3RyaW5nKFBEU19TdGFnZSkjIiwiZGF0YVZhbHVlVHlwZSI6MTAsIndpZHRoIjoyNjZ9LCJtb2RlbE1ldGFkYXRhIjp7InR5cGUiOiJkZWZhdWx0IiwicGF0aCI6IlN0YWdlIiwibmFtZSI6IlN0YWdlIn19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiN2UyNmM5MjItYWRmOS00Y2UyLTY1NzUtODZiNTBlN2QzY2U1IiwiY29kZSI6IlBEU19Db250YWN0IiwiY2FwdGlvbiI6IiNSZXNvdXJjZVN0cmluZyhQRFNfQ29udGFjdCkjIiwiZGF0YVZhbHVlVHlwZSI6MTAsIndpZHRoIjoyMjV9LCJtb2RlbE1ldGFkYXRhIjp7InR5cGUiOiJkZWZhdWx0IiwicGF0aCI6IkNvbnRhY3QiLCJuYW1lIjoiQ29udGFjdCJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6Ijc1N2YxNjM0LTY5NDYtNWIzZi0zOTVjLTA2OWYxZDIxMzc5NSIsImNvZGUiOiJQRFNfQWNjb3VudCIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX0FjY291bnQpIyIsImRhdGFWYWx1ZVR5cGUiOjEwLCJ3aWR0aCI6MjIyfSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJBY2NvdW50IiwibmFtZSI6IkFjY291bnQifX0seyJ2aWV3TWV0YWRhdGEiOnsiaWQiOiIzZDcyYTk5ZS0yNDliLWMwYmEtOTgzMi1jZWQ0YzRhNjU2NzMiLCJjb2RlIjoiUERTX0R1ZURhdGUiLCJjYXB0aW9uIjoiI1Jlc291cmNlU3RyaW5nKFBEU19EdWVEYXRlKSMiLCJkYXRhVmFsdWVUeXBlIjo4LCJ3aWR0aCI6MTc4fSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJEdWVEYXRlIiwibmFtZSI6IkR1ZURhdGUifX1dLCJyZXNvdXJjZXMiOnsibG9jYWxpemFibGVTdHJpbmdzIjp7IlBEU19EdWVEYXRlIjp7ImVuLVVTIjoiQ2xvc2UgZGF0ZSIsImRlLURFIjoiQWJzY2hsdXNzZGF0dW0ifX19fQ=="
+        },
+        {
+          "SchemaColumnUId": "99d21524-ccad-45c1-998d-e9de6a6412af",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "fd26b95c-06ba-4595-915e-bc5657d10842",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "a9429fdb-37ff-43b2-a3e3-a61cde5f959b"
+        },
+        {
+          "SchemaColumnUId": "03a27b75-6d7f-4be4-b0fd-f03ffd8a7aab",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "216b38f5-e2c3-462b-ae2e-1df80fc21b33",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        },
+        {
+          "SchemaColumnUId": "3bb9d182-ad73-4379-9d51-2003c862a90c",
+          "Value": "Contacts_ListPage__DataTable"
+        },
+        {
+          "SchemaColumnUId": "6851587b-0b7a-45cb-a5a5-31994420d81b",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "986fc9ee-72b2-4cc9-af5e-ed64af54d30f",
+          "Value": "eyJjb2x1bW5zIjpbeyJtb2RlbE1ldGFkYXRhIjp7Im5hbWUiOiJJZCIsInBhdGgiOiJJZCJ9LCJ2aWV3TW9kZWxNZXRhZGF0YSI6eyJhdHRyaWJ1dGVOYW1lIjoiUERTX0lkIn19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiZjI1MmY1ODEtMGNjZi00NGFjLWI3YzktYzAwZGYyYWQ5OTE5IiwiY29kZSI6IlBEU19OYW1lIiwiY2FwdGlvbiI6IiNSZXNvdXJjZVN0cmluZyhQRFNfTmFtZSkjIiwiZGF0YVZhbHVlVHlwZSI6MSwic3RpY2t5Ijp0cnVlfSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJOYW1lIiwibmFtZSI6Ik5hbWUifX0seyJ2aWV3TWV0YWRhdGEiOnsiaWQiOiI0Mzg1MDViOC00YTg3LTBhYzYtZDFjMy0xMzgyNzgwODA2Y2IiLCJjb2RlIjoiUERTX1R5cGUiLCJjYXB0aW9uIjoiI1Jlc291cmNlU3RyaW5nKFBEU19UeXBlKSMiLCJkYXRhVmFsdWVUeXBlIjoxMCwid2lkdGgiOjE4Nn0sIm1vZGVsTWV0YWRhdGEiOnsidHlwZSI6ImRlZmF1bHQiLCJwYXRoIjoiVHlwZSIsIm5hbWUiOiJUeXBlIn19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiNWVkMzhiYTYtYmE3Mi0wMmRjLTlhMjAtMTYwNjE4NThiNDNjIiwiY29kZSI6IlBEU19BY2NvdW50IiwiY2FwdGlvbiI6IiNSZXNvdXJjZVN0cmluZyhQRFNfQWNjb3VudCkjIiwiZGF0YVZhbHVlVHlwZSI6MTB9LCJtb2RlbE1ldGFkYXRhIjp7InR5cGUiOiJkZWZhdWx0IiwicGF0aCI6IkFjY291bnQiLCJuYW1lIjoiQWNjb3VudCJ9fV0sInNvcnRpbmciOlt7ImRpcmVjdGlvbiI6ImFzYyIsImNvbHVtbkNvZGUiOiJQRFNfTmFtZSJ9XSwicmVzb3VyY2VzIjp7ImxvY2FsaXphYmxlU3RyaW5ncyI6e319fQ=="
+        },
+        {
+          "SchemaColumnUId": "99d21524-ccad-45c1-998d-e9de6a6412af",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "fd26b95c-06ba-4595-915e-bc5657d10842",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "ba26da77-adb9-4938-b1ab-48eb2613761c"
+        },
+        {
+          "SchemaColumnUId": "03a27b75-6d7f-4be4-b0fd-f03ffd8a7aab",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "216b38f5-e2c3-462b-ae2e-1df80fc21b33",
+          "Value": "720b771c-e7a7-4f31-9cfb-52cd21c3739f",
+          "DisplayValue": "All external users"
+        },
+        {
+          "SchemaColumnUId": "3bb9d182-ad73-4379-9d51-2003c862a90c",
+          "Value": "Opportunities_FormPage__ProductsList"
+        },
+        {
+          "SchemaColumnUId": "6851587b-0b7a-45cb-a5a5-31994420d81b",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "986fc9ee-72b2-4cc9-af5e-ed64af54d30f",
+          "Value": "eyJzb3J0aW5nIjpbeyJjb2x1bW5Db2RlIjoiUHJvZHVjdHNMaXN0RFNfUGdyRGlzY291bnQiLCJkaXJlY3Rpb24iOiJhc2MifV0sImNvbHVtbnMiOlt7InZpZXdNb2RlbE1ldGFkYXRhIjp7ImF0dHJpYnV0ZU5hbWUiOiJQcm9kdWN0c0xpc3REU19JZCJ9LCJtb2RlbE1ldGFkYXRhIjp7Im5hbWUiOiJJZCIsInBhdGgiOiJJZCJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6IjMyZjYwYjVjLTg5MjEtMDRkMy1lNDFhLWNhYmQ3ODcwOTMwZCIsImNvZGUiOiJQcm9kdWN0c0xpc3REU19Qcm9kdWN0IiwiY2FwdGlvbiI6IiNSZXNvdXJjZVN0cmluZyhQcm9kdWN0c0xpc3REU19Qcm9kdWN0KSMiLCJkYXRhVmFsdWVUeXBlIjoxMCwid2lkdGgiOjUxMH0sIm1vZGVsTWV0YWRhdGEiOnsidHlwZSI6ImRlZmF1bHQiLCJuYW1lIjoiUHJvZHVjdCIsInBhdGgiOiJQcm9kdWN0In19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiNTU3MDUxODctMTU0MS1hNjVhLTQ3ODctMjU3NjllZmE0YzIwIiwiY29kZSI6IlByb2R1Y3RzTGlzdERTX1BnckRpc2NvdW50IiwiY2FwdGlvbiI6IiNSZXNvdXJjZVN0cmluZyhQcm9kdWN0c0xpc3REU19QZ3JEaXNjb3VudCkjIiwiZGF0YVZhbHVlVHlwZSI6MzIsIndpZHRoIjoxNDV9LCJtb2RlbE1ldGFkYXRhIjp7InR5cGUiOiJkZWZhdWx0IiwibmFtZSI6IlBnckRpc2NvdW50IiwicGF0aCI6IlBnckRpc2NvdW50In19XSwicmVzb3VyY2VzIjp7ImxvY2FsaXphYmxlU3RyaW5ncyI6e319fQ=="
+        },
+        {
+          "SchemaColumnUId": "99d21524-ccad-45c1-998d-e9de6a6412af",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "fd26b95c-06ba-4595-915e-bc5657d10842",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "bc79adbb-0d1d-4ef7-bb13-af761cafc69f"
+        },
+        {
+          "SchemaColumnUId": "03a27b75-6d7f-4be4-b0fd-f03ffd8a7aab",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "216b38f5-e2c3-462b-ae2e-1df80fc21b33",
+          "Value": "720b771c-e7a7-4f31-9cfb-52cd21c3739f",
+          "DisplayValue": "All external users"
+        },
+        {
+          "SchemaColumnUId": "3bb9d182-ad73-4379-9d51-2003c862a90c",
+          "Value": "Opportunities_FormPage__CompetitorsList"
+        },
+        {
+          "SchemaColumnUId": "6851587b-0b7a-45cb-a5a5-31994420d81b",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "986fc9ee-72b2-4cc9-af5e-ed64af54d30f",
+          "Value": "eyJzb3J0aW5nIjpbXSwiY29sdW1ucyI6W3sidmlld01vZGVsTWV0YWRhdGEiOnsiYXR0cmlidXRlTmFtZSI6IkNvbXBldGl0b3JzTGlzdERTX0lkIn0sIm1vZGVsTWV0YWRhdGEiOnsibmFtZSI6IklkIiwicGF0aCI6IklkIn19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiYjQ5NTVmMmUtZjcwZi00MDQwLTE4ZDYtMjgzZTBmMDkxYTI2IiwiY29kZSI6IkNvbXBldGl0b3JzTGlzdERTX0NvbXBldGl0b3IiLCJjYXB0aW9uIjoiI1Jlc291cmNlU3RyaW5nKENvbXBldGl0b3JzTGlzdERTX0NvbXBldGl0b3IpIyIsImRhdGFWYWx1ZVR5cGUiOjEwLCJ3aWR0aCI6NTg1fSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJDb21wZXRpdG9yIiwibmFtZSI6IkNvbXBldGl0b3IifX0seyJ2aWV3TWV0YWRhdGEiOnsiaWQiOiIyZDZhNTkwOC0zOTM2LTViMDctOGFlZi0wMGVjNWE2ZDk1YWEiLCJjb2RlIjoiQ29tcGV0aXRvcnNMaXN0RFNfQ29tcGV0aXRvclByb2R1Y3QiLCJjYXB0aW9uIjoiI1Jlc291cmNlU3RyaW5nKENvbXBldGl0b3JzTGlzdERTX0NvbXBldGl0b3JQcm9kdWN0KSMiLCJkYXRhVmFsdWVUeXBlIjoxMCwid2lkdGgiOjU5NX0sIm1vZGVsTWV0YWRhdGEiOnsidHlwZSI6ImRlZmF1bHQiLCJwYXRoIjoiQ29tcGV0aXRvclByb2R1Y3QiLCJuYW1lIjoiQ29tcGV0aXRvclByb2R1Y3QifX1dLCJyZXNvdXJjZXMiOnsibG9jYWxpemFibGVTdHJpbmdzIjp7IkNvbXBldGl0b3JzTGlzdERTX0NvbXBldGl0b3IiOnsiZW4tVVMiOiJDb21wZXRpdG9yIn19fX0="
+        },
+        {
+          "SchemaColumnUId": "99d21524-ccad-45c1-998d-e9de6a6412af",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "fd26b95c-06ba-4595-915e-bc5657d10842",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "fa09ca76-102b-4fe8-b36b-3dd910250e05"
+        },
+        {
+          "SchemaColumnUId": "03a27b75-6d7f-4be4-b0fd-f03ffd8a7aab",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "216b38f5-e2c3-462b-ae2e-1df80fc21b33",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        },
+        {
+          "SchemaColumnUId": "3bb9d182-ad73-4379-9d51-2003c862a90c",
+          "Value": "Leads_ListPage__DataTable"
+        },
+        {
+          "SchemaColumnUId": "6851587b-0b7a-45cb-a5a5-31994420d81b",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "986fc9ee-72b2-4cc9-af5e-ed64af54d30f",
+          "Value": "eyJjb2x1bW5zIjpbeyJtb2RlbE1ldGFkYXRhIjp7Im5hbWUiOiJJZCIsInBhdGgiOiJJZCJ9LCJ2aWV3TW9kZWxNZXRhZGF0YSI6eyJhdHRyaWJ1dGVOYW1lIjoiUERTX0lkIn19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiZjI1MmY1ODEtMGNjZi00NGFjLWI3YzktYzAwZGYyYWQ5OTE5IiwiY29kZSI6IlBEU19MZWFkTmFtZSIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX0xlYWROYW1lKSMiLCJkYXRhVmFsdWVUeXBlIjoxLCJzdGlja3kiOnRydWUsIndpZHRoIjozODN9LCJtb2RlbE1ldGFkYXRhIjp7InR5cGUiOiJkZWZhdWx0IiwicGF0aCI6IkxlYWROYW1lIiwibmFtZSI6IkxlYWROYW1lIn19LHsidmlld01ldGFkYXRhIjp7ImlkIjoiNmUxM2Y2ODItMTdjYy1jZGJmLTNmZjktOTA2MmJiODJiNzMxIiwiY29kZSI6IlBEU19RdWFsaWZ5U3RhdHVzIiwiY2FwdGlvbiI6IiNSZXNvdXJjZVN0cmluZyhQRFNfUXVhbGlmeVN0YXR1cykjIiwiZGF0YVZhbHVlVHlwZSI6MTAsIndpZHRoIjoyNTl9LCJtb2RlbE1ldGFkYXRhIjp7InR5cGUiOiJkZWZhdWx0IiwicGF0aCI6IlF1YWxpZnlTdGF0dXMiLCJuYW1lIjoiUXVhbGlmeVN0YXR1cyJ9fSx7InZpZXdNZXRhZGF0YSI6eyJpZCI6IjliM2FmOGVjLTQ0N2ItODhiNC0yMWYyLWU0NzMzNzY5NTAzMSIsImNvZGUiOiJQRFNfUXVhbGlmaWVkQ29udGFjdCIsImNhcHRpb24iOiIjUmVzb3VyY2VTdHJpbmcoUERTX1F1YWxpZmllZENvbnRhY3QpIyIsImRhdGFWYWx1ZVR5cGUiOjEwLCJ3aWR0aCI6MjE5fSwibW9kZWxNZXRhZGF0YSI6eyJ0eXBlIjoiZGVmYXVsdCIsInBhdGgiOiJRdWFsaWZpZWRDb250YWN0IiwibmFtZSI6IlF1YWxpZmllZENvbnRhY3QifX0seyJ2aWV3TWV0YWRhdGEiOnsiaWQiOiI5MDM5ODBhYi0zNDUyLTZmNzgtNzA4My0xMWE2MWE3YzI5OTQiLCJjb2RlIjoiUERTX1F1YWxpZmllZEFjY291bnQiLCJjYXB0aW9uIjoiI1Jlc291cmNlU3RyaW5nKFBEU19RdWFsaWZpZWRBY2NvdW50KSMiLCJkYXRhVmFsdWVUeXBlIjoxMCwid2lkdGgiOjIwN30sIm1vZGVsTWV0YWRhdGEiOnsidHlwZSI6ImRlZmF1bHQiLCJwYXRoIjoiUXVhbGlmaWVkQWNjb3VudCIsIm5hbWUiOiJRdWFsaWZpZWRBY2NvdW50In19XSwic29ydGluZyI6W10sInJlc291cmNlcyI6eyJsb2NhbGl6YWJsZVN0cmluZ3MiOnsiUERTX0xlYWROYW1lIjp7ImVuLVVTIjoiTmFtZSJ9LCJQRFNfUXVhbGlmeVN0YXR1cyI6eyJlbi1VUyI6IlN0YWdlIn19fX0="
+        },
+        {
+          "SchemaColumnUId": "99d21524-ccad-45c1-998d-e9de6a6412af",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "fd26b95c-06ba-4595-915e-bc5657d10842",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    }
+  ]
+}

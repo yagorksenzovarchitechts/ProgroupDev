@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "9f52eb40-aaa1-4012-a430-422ec3c42710",
+    "Name": "PgrExecuteSQLErrorLog",
+    "ModifiedOnUtc": "\/Date(1782202831000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Execute SQL Error Log ",
+    "DependsOn": []
+  }
+}

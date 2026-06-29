@@ -1,0 +1,98 @@
+﻿{
+  "Descriptor": {
+    "UId": "f30c409a-9dc0-00b5-e446-af12d6bc3bda",
+    "Name": "OpportunityStage",
+    "ModifiedOnUtc": "\/Date(1781180497000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "ccf7d813-fc83-47ad-be61-8f3b3b98a54f",
+      "Name": "OpportunityStage"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "146e7f2e-a20d-4cc2-9c5c-bcc8dde6ed63",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "End",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+      },
+      {
+        "ColumnUId": "388070cb-b942-4af8-a6fb-4b722d30847e",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "MaxProbability",
+        "DataTypeValueUId": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+      },
+      {
+        "ColumnUId": "5112d458-569f-445a-90a9-a4c8e0041b28",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "NextStepTerm",
+        "DataTypeValueUId": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+      },
+      {
+        "ColumnUId": "5cff1d37-c039-46ce-ac3e-a4d7abe49c5f",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Number",
+        "DataTypeValueUId": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+      },
+      {
+        "ColumnUId": "67304155-cee3-58a8-9820-dca8e4aba8fb",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ForecastCategory",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "875d786d-74b6-4f1c-b885-5fb7da04453b",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ShowInFunnel",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+      },
+      {
+        "ColumnUId": "9d36f697-56db-4539-9809-b07f01dfe9a0",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Successful",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+      },
+      {
+        "ColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Description",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "ce321ce4-c2fd-43e9-b4ca-26a3aca754c4",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ShowInProgressBar",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+      },
+      {
+        "ColumnUId": "d463f315-b9c9-41ee-a625-60669d205559",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Color",
+        "DataTypeValueUId": "325a73b8-0f47-44a0-8412-7606f78003ac"
+      }
+    ]
+  }
+}

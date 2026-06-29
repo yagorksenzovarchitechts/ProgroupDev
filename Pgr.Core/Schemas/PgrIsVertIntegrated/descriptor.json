@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "cff9ad68-51d8-4cce-951e-2f93e5c4c59c",
+    "Name": "PgrIsVertIntegrated",
+    "ModifiedOnUtc": "\/Date(1780434002000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Account Vertical integrated",
+    "DependsOn": []
+  }
+}

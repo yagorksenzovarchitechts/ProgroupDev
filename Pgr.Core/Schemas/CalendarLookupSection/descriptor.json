@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "26512cf9-61bf-41e5-839b-e4669f77a0c4",
+    "Name": "CalendarLookupSection",
+    "ModifiedOnUtc": "\/Date(1781011222000)\/",
+    "Parent": {
+      "UId": "40b6261f-471b-4175-9a74-5ede774158e6",
+      "Name": "CalendarLookupSection"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "\"Calendar\" lookup section schema",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,532 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "09e4bda6-cfcb-df11-9b2a-001d60e938c6"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "skype"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "pr3kCcvPEd+bKgAdYOk4xg=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "57ea3426-ca41-e0fe-748a-2d9a60a44ffa",
+          "DisplayValue": "Skype.svg"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "0da6a26b-d7bc-df11-b00f-001d60e938c6"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "phone"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "a6KmDbzXEd+wDwAdYOk4xg=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "21c0d693-9a52-43fa-b7f1-c6d8b53975d4"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "phone"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "k9bAIVKa+kO38cbYtTl11A=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "2795dd03-bacf-e011-92c3-00155d04c01d"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "facebook"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "A92VJ8+6EeCSwwAVXQTAHQ=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "c1cc046d-7c6f-335e-7170-d262be104d9c",
+          "DisplayValue": "Icon_facebook-16x16_universal.svg"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "2b387201-67cc-df11-9b2a-001d60e938c6"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "phone"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "AXI4K8xnEd+bKgAdYOk4xg=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "3dddb3cc-53ee-49c4-a71f-e9e257f59e49"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "phone"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "zLPdPe5TxEmnH+niV/WeSQ=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "6a3fb10c-67cc-df11-9b2a-001d60e938c6"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "phone"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "DLE/asxnEd+bKgAdYOk4xg=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "6a717947-1e3c-478f-bb33-4e3947efda27"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "web"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "6a8ba927-67cc-df11-9b2a-001d60e938c6"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "web"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "J6mLasxnEd+bKgAdYOk4xg=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "2856e949-d6a6-7ef3-86b6-3fe07229cd38",
+          "DisplayValue": "Web.svg"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "9a7ab41b-67cc-df11-9b2a-001d60e938c6"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "phone"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "G7R6msxnEd+bKgAdYOk4xg=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "d4a2dc80-30ca-df11-9b2a-001d60e938c6"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "phone"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "gNyi1MowEd+bKgAdYOk4xg=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "e7139487-bad3-e011-92c3-00155d04c01d"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "twitter"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "h5QT59O6EeCSwwAVXQTAHQ=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "aded099d-6f5e-8ffd-4bcf-ba8c136dd241",
+          "DisplayValue": "Icon_Twitter-16x16_universal.svg"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "e9d91e45-8d92-4e38-95a0-ef8aa28c9e7a"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "phone"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "RR7Z6ZKNOE6VoO+Kooyeeg=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "ea0f3b0a-bacf-e011-92c3-00155d04c01d"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "linkedin"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "CjsP6s+6EeCSwwAVXQTAHQ=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "51ad776d-68a1-524f-6a41-4f3beea7a498",
+          "DisplayValue": "Icon_Linkedin-16x16_universal.svg"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "ee1c85c3-cfcb-df11-9b2a-001d60e938c6"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "email"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "w4Uc7svPEd+bKgAdYOk4xg=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "4e285593-be85-0610-c2e4-eadaa2abc5fe",
+          "DisplayValue": "Mail.svg"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "efe5d7a2-5f38-e111-851e-00155d04c01d"
+        },
+        {
+          "SchemaColumnUId": "07748e81-b1d1-4cdb-9e41-d5e0be2e13d9",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "0da3b0de-9d19-47e8-89e4-e113dde44a8c",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "3fb6cbe6-a28d-058b-c946-bc899d193fc2",
+          "Value": "google"
+        },
+        {
+          "SchemaColumnUId": "7a8944fa-b3f0-46dc-8f51-f6b0706106f8",
+          "Value": "otfl7zhfEeGFHgAVXQTAHQ=="
+        },
+        {
+          "SchemaColumnUId": "9583d17a-064d-402d-bdb1-7d377628d64b",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "a292e328-3ae0-5f4b-aa43-2cac81b9f2a7",
+          "Value": "87ca5756-0ed6-d7df-d88b-762169403120",
+          "DisplayValue": "Icon_Google-16x16_universal.svg"
+        }
+      ]
+    }
+  ]
+}

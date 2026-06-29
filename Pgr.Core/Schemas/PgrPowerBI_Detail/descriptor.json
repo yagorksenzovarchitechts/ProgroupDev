@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "25cf3332-8b2a-485f-aa52-52592d15da13",
+    "Name": "PgrPowerBI_Detail",
+    "ModifiedOnUtc": "\/Date(1781861986000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Power BI detail",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AccountLabel_caption.Value" Value="Account info" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.CloseReason_label.Value" Value="Abschlussgrund" />
+			<Item Name="LocalizableStrings.CompetitorsExpansionPanel_title.Value" Value="Wettbewerber" />
+			<Item Name="LocalizableStrings.CompetitorsListDS_Competitor.Value" Value="Wettbewerber" />
+			<Item Name="LocalizableStrings.ContactLabel_caption.Value" Value="Ansprechpartner" />
+			<Item Name="LocalizableStrings.DaysAtCurrentStageNewMetric_title.Value" Value="Tage in Phase" />
+			<Item Name="LocalizableStrings.DaysInFunnelNewMetric_title.Value" Value="Tage im Trichter" />
+			<Item Name="LocalizableStrings.EmailsSentNewMetric_title.Value" Value="Gesendete E-Mails" />
+			<Item Name="LocalizableStrings.HistoryTab_caption.Value" Value="Verlauf" />
+			<Item Name="LocalizableStrings.NextStepsTabContainerHeaderLabel_caption.Value" Value="Nächste Schritte" />
+			<Item Name="LocalizableStrings.NextStepsTabContainer_caption.Value" Value="Nächste Schritte" />
+			<Item Name="LocalizableStrings.OpportunityHistoryExpansionPanel_title.Value" Value="Änderungshistorie" />
+			<Item Name="LocalizableStrings.OutgoingCallsNewMetric_title.Value" Value="Ausgehende Anrufe" />
+			<Item Name="LocalizableStrings.OverviewTab_caption.Value" Value="Übersicht" />
+			<Item Name="LocalizableStrings.PredictiveProbabilityMetric_title.Value" Value="Wahrscheinlichkeit" />
+			<Item Name="LocalizableStrings.ProcessingTab_caption.Value" Value="In Bearbeitung" />
+			<Item Name="LocalizableStrings.ProductSuggestions_placeholder.Value" Value="Geben Sie die Produkte an, die dem Kunden angeboten werden können." />
+			<Item Name="LocalizableStrings.ProductsExpansionPanel_title.Value" Value="Produkte" />
+			<Item Name="LocalizableStrings.ProductsTab_caption.Value" Value="Produkte" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
+			<Item Name="LocalizableStrings.StageHistoryExpansionPanel_title.Value" Value="Phasenverlauf" />
+		</Items>
+	</Group>
+</Resources>

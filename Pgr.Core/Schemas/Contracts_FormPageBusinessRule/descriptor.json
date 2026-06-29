@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "addfcd92-ade7-4f7d-84fb-bbf0a04f95b0",
+    "Name": "Contracts_FormPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1782304817000)\/",
+    "Parent": {
+      "UId": "2f90d513-9c77-496f-935a-83227a83addd",
+      "Name": "Contracts_FormPageBusinessRule"
+    },
+    "ExtendParent": true,
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Contracts form page (Business rules)",
+    "DependsOn": []
+  }
+}

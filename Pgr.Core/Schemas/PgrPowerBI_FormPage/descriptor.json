@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "96a7d630-4818-4fd4-b062-95ae5610e074",
+    "Name": "PgrPowerBI_FormPage",
+    "ModifiedOnUtc": "\/Date(1781861986000)\/",
+    "Parent": {
+      "UId": "3b2e117f-8c6b-4ca5-80a2-7ebb497cddf9",
+      "Name": "PageWithTabsFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Power BI form page",
+    "DependsOn": []
+  }
+}

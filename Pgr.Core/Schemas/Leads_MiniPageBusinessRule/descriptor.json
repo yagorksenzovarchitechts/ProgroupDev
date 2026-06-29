@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "5d5a41a0-ceac-469c-a568-0bc4bc4e7f0d",
+    "Name": "Leads_MiniPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1781014214000)\/",
+    "Parent": {
+      "UId": "48c56178-c98a-49a8-a462-c7849eb5f485",
+      "Name": "Leads_MiniPageBusinessRule"
+    },
+    "ExtendParent": true,
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Leads mini page (Business rules)",
+    "DependsOn": []
+  }
+}

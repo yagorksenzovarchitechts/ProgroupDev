@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "a75b548b-6fd8-4eb5-8d46-1b505925fb51",
+    "Name": "PgrCalendars_Detail",
+    "ModifiedOnUtc": "\/Date(1780559907000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Calendars detail",
+    "DependsOn": []
+  }
+}

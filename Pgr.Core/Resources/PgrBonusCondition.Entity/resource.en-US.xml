@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Bonus conditions" />
+			<Item Name="Columns.PgrBonus.Caption" Value="Bonus ID" />
+			<Item Name="Columns.PgrBonusConditionGroup.Caption" Value="Condition group" />
+			<Item Name="Columns.PgrCondition.Caption" Value="Condition" />
+			<Item Name="Columns.PgrOperator.Caption" Value="Operator sign" />
+			<Item Name="Columns.PgrValue.Caption" Value="Value" />
+			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
+		</Items>
+	</Group>
+</Resources>

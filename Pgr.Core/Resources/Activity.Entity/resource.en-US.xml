@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Account.Caption" Value="Customer" />
+			<Item Name="Columns.ActivityCategory.Caption" Value="Categories" />
+			<Item Name="Columns.DueDate.Caption" Value="Due date and time" />
+			<Item Name="Columns.Notes.Caption" Value="Description" />
+			<Item Name="Columns.PgrIsOverdue.Caption" Value="Is overdue" />
+			<Item Name="Columns.PgrOverdueDays.Caption" Value="Overdue days" />
+			<Item Name="Columns.StartDate.Caption" Value="Start date and time" />
+		</Items>
+	</Group>
+</Resources>

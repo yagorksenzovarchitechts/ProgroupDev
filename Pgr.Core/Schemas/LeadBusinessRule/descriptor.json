@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "9ba065aa-21de-448b-bf50-e7211d84e096",
+    "Name": "LeadBusinessRule",
+    "ModifiedOnUtc": "\/Date(1781014192000)\/",
+    "Parent": {
+      "UId": "73bbcfa3-969e-4344-a680-d0f3284bcfb4",
+      "Name": "LeadBusinessRule"
+    },
+    "ExtendParent": true,
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Lead (Business rules)",
+    "DependsOn": []
+  }
+}

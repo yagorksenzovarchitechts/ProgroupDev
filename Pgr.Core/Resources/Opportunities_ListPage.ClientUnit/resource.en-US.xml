@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.AmountDecreaseLabel_caption.Value" Value="• Amount Decrease:" />
+			<Item Name="LocalizableStrings.AmountDecreaseTextLabel_caption.Value" Value="Opportunities still closing in the selected close date period where the Amount decreased in the change period." />
+			<Item Name="LocalizableStrings.AmountIncreaseLabel_caption.Value" Value="• Amount Increase:" />
+			<Item Name="LocalizableStrings.AmountIncreaseTextLabel_caption.Value" Value="Opportunities still closing in the selected close date period where the Amount increased in the change period." />
+			<Item Name="LocalizableStrings.ChangePeriodHelpLabel_caption.Value" Value="• Change Period" />
+			<Item Name="LocalizableStrings.ChangePeriodHelpTextLabel_caption.Value" Value="Defines the time window during which changes are tracked (e.g. last 7 days)." />
+			<Item Name="LocalizableStrings.ChangePeriodLabel_caption.Value" Value="How did my pipeline change for the selected date range?" />
+			<Item Name="LocalizableStrings.ChangesPeriodQuickFilter_config_caption.Value" Value="Change period" />
+			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Import" />
+			<Item Name="LocalizableStrings.FiscalPeriodLabel_caption.Value" Value="• Fiscal Period" />
+			<Item Name="LocalizableStrings.FiscalPeriodTextLabel_caption.Value" Value="Defines the close date period you are analyzing (e.g. June or Current Quarter). Can be selected at the top of the page." />
+			<Item Name="LocalizableStrings.HelpTabContainer_caption.Value" Value="Help" />
+			<Item Name="LocalizableStrings.HelpToggleContentDescriptionLabel1_caption.Value" Value="Waterfall chart shows how your pipeline value changes over time." />
+			<Item Name="LocalizableStrings.HelpToggleContentDescriptionLabel2_caption.Value" Value="It explains what increased or decreased the pipeline between two points in time by breaking the total change into key contributing factors." />
+			<Item Name="LocalizableStrings.HelpToggleContentDescriptionLabel3_caption.Value" Value="Below is an explanation of each column in the Waterfall chart:" />
+			<Item Name="LocalizableStrings.HelpToggleContentDescriptionLabel4_caption.Value" Value="To ensure the Waterfall chart is calculated correctly, Opportunity filters on Close Date and Stage applied through quick filters or folders are ignored." />
+			<Item Name="LocalizableStrings.HelpToggleHeaderLabel_caption.Value" Value="Help" />
+			<Item Name="LocalizableStrings.ImportantLabel_caption.Value" Value="Important" />
+			<Item Name="LocalizableStrings.ImportantTextLabel_caption.Value" Value="For the chart to work correctly, both date range filters must be filled in:" />
+			<Item Name="LocalizableStrings.LostLabel_caption.Value" Value="• Lost:" />
+			<Item Name="LocalizableStrings.LostTextLabel_caption.Value" Value="Opportunities in the selected close date period that were marked Closed Lost in the change period, so they drop out of open pipeline." />
+			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.NewLabel_caption.Value" Value="• New:" />
+			<Item Name="LocalizableStrings.NewTextLabel_caption.Value" Value="Opportunities created during change period with a Close Date in the selected close date period." />
+			<Item Name="LocalizableStrings.PDS_DueDate.Value" Value="Close date" />
+			<Item Name="LocalizableStrings.PipelineAnalyticsTabContainer_caption.Value" Value="Pipeline analytics" />
+			<Item Name="LocalizableStrings.PulledInLabel_caption.Value" Value="• Pulled In:" />
+			<Item Name="LocalizableStrings.PulledInTextLabel_caption.Value" Value="Opportunities that entered the selected close date period from a later period during the change period. (Eg Viewing June | change period last 7 days: Jul → Jun)." />
+			<Item Name="LocalizableStrings.PushedInLabel_caption.Value" Value="• Pushed In:" />
+			<Item Name="LocalizableStrings.PushedInTextLabel_caption.Value" Value="During the change period, opportunities whose Close Date moved into the selected close date period from an earlier period - often from cleanup of overdue deals from a prior period. (Eg Viewing June | change period last 7 days: May → Jun after pipeline hygiene)." />
+			<Item Name="LocalizableStrings.QuickFilter_a3irnn8_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.SalesWaterfallWidget_title.Value" Value="Sales waterfall pipeline" />
+			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.SlippedLabel_caption.Value" Value="• Slipped:" />
+			<Item Name="LocalizableStrings.SlippedTextLabel_caption.Value" Value="Opportunities that were in the selected close date period, but their Close Date moved to a out of this period during the change period. (Eg Viewing June | change window last 7 days: Jun → Jul)." />
+			<Item Name="LocalizableStrings.TerritoryQuickFilter_caption.Value" Value="Territory" />
+			<Item Name="LocalizableStrings.TerritoryQuickFilter_config_caption.Value" Value="Territory" />
+			<Item Name="LocalizableStrings.WonLabel_caption.Value" Value="• Won:" />
+			<Item Name="LocalizableStrings.WonTextLabel_caption.Value" Value="Opportunities in the selected close date period that were marked Closed Won in the change period (they exit open pipeline as booked)." />
+		</Items>
+	</Group>
+</Resources>

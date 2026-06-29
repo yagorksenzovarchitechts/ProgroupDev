@@ -1,0 +1,35 @@
+﻿{
+  "Descriptor": {
+    "UId": "adb6dd1d-d87c-9a77-00ab-fda24afc9a15",
+    "Name": "SysCspUsrSrcInDirectv_ProgroupMVP",
+    "ModifiedOnUtc": "\/Date(1781864187000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "0c11bdf1-22aa-431a-90db-cf6e2d34ba0d",
+      "Name": "SysCspUsrSrcInDirectv"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "6450bb25-1f34-aa31-0a4d-a3312837e2eb",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "CspUserTrustedSource",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "c7328a14-e19f-b711-1b16-8b6776f7e3d1",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "CspDirectiveName",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      }
+    ]
+  }
+}

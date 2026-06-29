@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "65f91ace-7b80-42c3-89cc-fdc0c3387a24",
+    "Name": "PgrPowerBiReport",
+    "ModifiedOnUtc": "\/Date(1782394128000)\/",
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Power Bi report",
+    "DependsOn": []
+  }
+}

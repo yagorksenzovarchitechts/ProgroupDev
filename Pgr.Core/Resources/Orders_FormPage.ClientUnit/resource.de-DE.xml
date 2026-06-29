@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.CustomerProfileLabel_caption.Value" Value="Das Kundenprofil" />
+			<Item Name="LocalizableStrings.CustomerProfileTabContainer_caption.Value" Value="Das Kundenprofil" />
+			<Item Name="LocalizableStrings.GridDetail_tviz7gfDS_DiscountPercent.Value" Value="Rabatt, %" />
+			<Item Name="LocalizableStrings.MenuItemCreateContract_caption.Value" Value="Neuen Vertrag erstellen" />
+			<Item Name="LocalizableStrings.MenuItemCreateInvoice_caption.Value" Value="Neue Rechnung erstellen" />
+			<Item Name="LocalizableStrings.OrderInfoLabel_caption.Value" Value="Bestellung info" />
+			<Item Name="LocalizableStrings.PaymentDeliveryTab_caption.Value" Value="Zahlung &amp; Lieferung" />
+			<Item Name="LocalizableStrings.ProductsExpansionPanel_title.Value" Value="Produkte" />
+			<Item Name="LocalizableStrings.ProductsTab_caption.Value" Value="Produkte" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
+			<Item Name="LocalizableStrings.SendForApprovalButton_caption.Value" Value="Zur Freigabe senden" />
+			<Item Name="LocalizableStrings.TabContainer_3dmysyn_caption.Value" Value="Beschreibung" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.Button_4v2hyhs_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.Button_h41prxx_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.Button_wzoi3mp_caption.Value" Value="Aktionen" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.CompetitorsExpansionPanel_title.Value" Value="Wettbewerber" />
+			<Item Name="LocalizableStrings.ExpansionPanel_1mbln9s_title.Value" Value="Adressen" />
+			<Item Name="LocalizableStrings.ExpansionPanel_3jtu7p2_title.Value" Value="&#xA;SAP" />
+			<Item Name="LocalizableStrings.ExpansionPanel_4r2mr5k_title.Value" Value="Besuchsberichte" />
+			<Item Name="LocalizableStrings.ExpansionPanel_ilw1gpx_title.Value" Value="Rechnung" />
+			<Item Name="LocalizableStrings.ExpansionPanel_pa1hlbi_title.Value" Value="Überlieferung" />
+			<Item Name="LocalizableStrings.MenuItem_5sivz5r_caption.Value" Value="Exportieren nach Excel" />
+			<Item Name="LocalizableStrings.MenuItem_hgmncrh_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
+			<Item Name="LocalizableStrings.SearchFilter_2pozl4n_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.TabContainer_0nkic4p_caption.Value" Value="Besuchsberichte" />
+			<Item Name="LocalizableStrings.TabContainer_Competitor_caption.Value" Value="Mitbewerber info" />
+			<Item Name="LocalizableStrings.TabContainer_Customer_caption.Value" Value="Kundennummer info" />
+		</Items>
+	</Group>
+</Resources>

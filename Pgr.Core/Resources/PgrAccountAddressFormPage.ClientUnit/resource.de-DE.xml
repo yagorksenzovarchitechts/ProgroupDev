@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Account Address form page" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.ExpansionPanel_jd5h7os_title.Value" Value="Lieferzeiten" />
+			<Item Name="LocalizableStrings.ExpansionPanel_s9yk8er_title.Value" Value="Progroup plants" />
+			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="Allgemeine info" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
+			<Item Name="LocalizableStrings.TabContainer_wuleg2y_caption.Value" Value="Lieferadresse" />
+		</Items>
+	</Group>
+</Resources>

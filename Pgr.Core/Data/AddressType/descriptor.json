@@ -1,0 +1,56 @@
+﻿{
+  "Descriptor": {
+    "UId": "a66b0efe-5391-c2b3-fcd4-82ca544ca317",
+    "Name": "AddressType",
+    "ModifiedOnUtc": "\/Date(1781182971000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "50837bfc-43ff-466b-94bb-de0847eecd1b",
+      "Name": "AddressType"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "4c02f622-12ca-4649-a1bf-17cf7a94b168",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ForAccount",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+      },
+      {
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "7421096a-1fe8-477b-b718-8d66554c0f97",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ForContact",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+      },
+      {
+        "ColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Description",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "ff40cd49-76cb-c51a-6fa9-0021d25e544e",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Color",
+        "DataTypeValueUId": "dafb71f9-ee9f-4e0b-a4d7-37aa15987155"
+      }
+    ]
+  }
+}

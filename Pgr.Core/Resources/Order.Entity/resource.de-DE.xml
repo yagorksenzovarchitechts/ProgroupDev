@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Account.Caption" Value="Kunde" />
+			<Item Name="Columns.Amount.Caption" Value="Gesamtpreis" />
+			<Item Name="Columns.Contact.Caption" Value="Kontakt" />
+			<Item Name="Columns.CreatedOn.Caption" Value="Erstellungsdatum" />
+			<Item Name="Columns.Currency.Caption" Value="Währung" />
+			<Item Name="Columns.Date.Caption" Value="Bestelldatum" />
+			<Item Name="Columns.DeliveryAddress.Caption" Value="Versandadresse" />
+			<Item Name="Columns.DeliveryType.Caption" Value="Versandart" />
+			<Item Name="Columns.ModifiedOn.Caption" Value="Letzte Änderung" />
+			<Item Name="Columns.Notes.Caption" Value="Beschreibung" />
+			<Item Name="Columns.Number.Caption" Value="Auftragsnummer" />
+			<Item Name="Columns.Owner.Caption" Value="Verantwortlicher" />
+			<Item Name="Columns.PaymentType.Caption" Value="Zahlungsart" />
+			<Item Name="Columns.PgrAmountInEuro.Caption" Value="Gesamtpreis in Euro" />
+			<Item Name="Columns.PgrCurrencyRate.Caption" Value="Umrechnungskurs" />
+			<Item Name="Columns.PgrCustomerOrderId.Caption" Value="Bestellnummer" />
+			<Item Name="Columns.PgrIsCancelled.Caption" Value="Storniert" />
+			<Item Name="Columns.PgrTotalPrice.Caption" Value="Gesamtpreis" />
+			<Item Name="Columns.PgrWorkingDayDate.Caption" Value="Arbeitstag" />
+			<Item Name="Columns.Status.Caption" Value="Bestellstatus" />
+		</Items>
+	</Group>
+</Resources>

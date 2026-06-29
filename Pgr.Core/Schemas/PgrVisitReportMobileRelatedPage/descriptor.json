@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "5dd69fc4-6eef-4593-a254-985c6d46ea1c",
+    "Name": "PgrVisitReportMobileRelatedPage",
+    "ModifiedOnUtc": "\/Date(1781877869000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Visit report (Mobile page settings)",
+    "DependsOn": []
+  }
+}

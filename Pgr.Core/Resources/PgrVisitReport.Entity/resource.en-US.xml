@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Visit report" />
+			<Item Name="Columns.PgrAccount.Caption" Value="Account (Customer)" />
+			<Item Name="Columns.PgrCompetition.Caption" Value="Competition" />
+			<Item Name="Columns.PgrCompetitionText.Caption" Value="Competition remarks" />
+			<Item Name="Columns.PgrDeliveryShare.Caption" Value="Progroup delivery share (auto)" />
+			<Item Name="Columns.PgrIsRelevantForWeeklyReport.Caption" Value="Relevant for weekly report" />
+			<Item Name="Columns.PgrKeyTopics.Caption" Value="Key topics" />
+			<Item Name="Columns.PgrLastVisit.Caption" Value="Last visit (auto)" />
+			<Item Name="Columns.PgrMeasuresRequired.Caption" Value="Measures required" />
+			<Item Name="Columns.PgrNineDayAvg.Caption" Value="9-day avg order intake (auto)" />
+			<Item Name="Columns.PgrNoVisitReason.Caption" Value="Reason (no visit)" />
+			<Item Name="Columns.PgrNumber.Caption" Value="Number" />
+			<Item Name="Columns.PgrOwner.Caption" Value="Sales person" />
+			<Item Name="Columns.PgrPerformance.Caption" Value="Performance" />
+			<Item Name="Columns.PgrPerformanceText.Caption" Value="Performance remarks" />
+			<Item Name="Columns.PgrSummary.Caption" Value="Miscellaneous / private remarks" />
+			<Item Name="Columns.PgrTask.Caption" Value="Task" />
+			<Item Name="Columns.PgrTaskContent.Caption" Value="Task content" />
+			<Item Name="Columns.PgrTaskDepartment.Caption" Value="Department" />
+			<Item Name="Columns.PgrTaskOwner.Caption" Value="Person in charge" />
+			<Item Name="Columns.PgrTaskSubject.Caption" Value="Task subject" />
+			<Item Name="Columns.PgrVisitBudget.Caption" Value="Budget (auto)" />
+			<Item Name="Columns.PgrVisitDate.Caption" Value="Visit date" />
+			<Item Name="Columns.PgrVisitDeviation.Caption" Value="Deviation % (auto)" />
+			<Item Name="Columns.PgrVisitDidNotTakePlace.Caption" Value="Visit did not take place" />
+			<Item Name="Columns.PgrVisitReason.Caption" Value="Reason / Purpose" />
+			<Item Name="Columns.PgrVisitReasonText.Caption" Value="Reason remarks" />
+			<Item Name="Columns.PgrVisitType.Caption" Value="Visit type" />
+		</Items>
+	</Group>
+</Resources>

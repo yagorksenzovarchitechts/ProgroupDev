@@ -8,8 +8,68 @@
     "ProjectPath": "Files/Pgr.Core.csproj",
     "DependsOn": [
       {
+        "UId": "008185c6-24d3-4bd5-a757-06a52159fe83",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtMeetingInsights",
+        "Type": 1
+      },
+      {
+        "UId": "012e2e14-082b-ac2b-da5a-2fc87bad41d4",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtCore",
+        "Type": 1
+      },
+      {
         "UId": "0a27f994-95de-a815-464d-7d5e8e55ce39",
         "Name": "Pgr.Base"
+      },
+      {
+        "UId": "0a3cf440-a7af-a37f-98e9-e16f919f572e",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtTouchPointInLead",
+        "Type": 1,
+        "InstallBehavior": 1
+      },
+      {
+        "UId": "3f8d4a5e-a1cd-625a-8143-d26ec18bb188",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtLeadOppMgmtInC360",
+        "Type": 1,
+        "InstallBehavior": 1
+      },
+      {
+        "UId": "70dba663-02da-75c9-d7cd-7c0590bb4591",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtDigitalAdsInLeadGen",
+        "Type": 1,
+        "InstallBehavior": 1
+      },
+      {
+        "UId": "99158cb9-b1b4-3a1d-beb0-7157e0414e73",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtC360InUiV2",
+        "Type": 1,
+        "InstallBehavior": 1
+      },
+      {
+        "UId": "b8b21e51-9f46-5ec8-7c53-32cbd8b5c6c1",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtCasesInC360",
+        "Type": 1,
+        "InstallBehavior": 1
+      },
+      {
+        "UId": "e498e645-566b-e9d8-2d15-6f1c60025401",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtOrderContractCopilot",
+        "Type": 1
+      },
+      {
+        "UId": "e7ebb62c-3c17-6f81-a467-8103566679ee",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtTouchInWebForm",
+        "Type": 1,
+        "InstallBehavior": 1
       }
     ]
   }

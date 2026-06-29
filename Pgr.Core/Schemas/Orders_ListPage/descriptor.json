@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "dd52a574-86bb-4374-9754-7248f20c15d4",
+    "Name": "Orders_ListPage",
+    "ModifiedOnUtc": "\/Date(1781808484000)\/",
+    "Parent": {
+      "UId": "56ae9204-7a84-4d40-bc9e-db2157404d02",
+      "Name": "Orders_ListPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Orders list page",
+    "DependsOn": []
+  }
+}

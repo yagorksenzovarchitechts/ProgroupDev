@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Address.Caption" Value="Street address" />
+			<Item Name="Columns.PgrLoadingSillHeight.Caption" Value="Loading sill height" />
+			<Item Name="Columns.PgrMaxStackHeight.Caption" Value="Maximum stack height" />
+			<Item Name="Columns.PgrMaxStackWeight.Caption" Value="Maximum stack weight" />
+			<Item Name="Columns.PgrPalletManagementContact.Caption" Value="Pallet management contact" />
+			<Item Name="Columns.PgrReverseUnloading.Caption" Value="Reverse unloading" />
+			<Item Name="Columns.PgrSapAddressID.Caption" Value="SAP Address ID" />
+			<Item Name="Columns.PgrSapAddressId2.Caption" Value="SAP address ID (delete)" />
+			<Item Name="Columns.PgrValidFrom.Caption" Value="Valid from" />
+			<Item Name="Columns.PgrValidTo.Caption" Value="Valid to" />
+			<Item Name="Columns.PgrWepaformAddressId.Caption" Value="Wepaform address ID" />
+			<Item Name="Columns.PgrWepaformAddressName.Caption" Value="Wepaform address name" />
+			<Item Name="Columns.PgrWfAddressId.Caption" Value="WF address id (delete)" />
+			<Item Name="Columns.PgrWfAddressName.Caption" Value="WF address name (delete)" />
+			<Item Name="Columns.Primary.Caption" Value="Primary customer address ID" />
+		</Items>
+	</Group>
+</Resources>

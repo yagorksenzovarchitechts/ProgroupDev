@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Competitor.Caption" Value="Wettbewerber" />
+			<Item Name="Columns.CompetitorProduct.Caption" Value="Wettbewerberprodukt" />
+		</Items>
+	</Group>
+</Resources>

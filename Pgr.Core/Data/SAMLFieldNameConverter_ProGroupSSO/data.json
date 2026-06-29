@@ -1,0 +1,264 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "04763b29-d614-47d9-aba6-f51ef64e0ef2"
+        },
+        {
+          "SchemaColumnUId": "1cca6142-7ef1-4d7b-b068-9f180e6a3ce7",
+          "Value": "department"
+        },
+        {
+          "SchemaColumnUId": "30e7fb61-c0a7-4f3a-9b56-4f3f980b7b05",
+          "Value": "Department"
+        },
+        {
+          "SchemaColumnUId": "f758a26f-dbaf-409f-a617-6a75e720fb27",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "3d9f6a4d-d586-406e-aaf7-6edad8879120"
+        },
+        {
+          "SchemaColumnUId": "1cca6142-7ef1-4d7b-b068-9f180e6a3ce7",
+          "Value": "telephonenumber"
+        },
+        {
+          "SchemaColumnUId": "30e7fb61-c0a7-4f3a-9b56-4f3f980b7b05",
+          "Value": "Phone"
+        },
+        {
+          "SchemaColumnUId": "f758a26f-dbaf-409f-a617-6a75e720fb27",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "46c056a6-6501-47e2-a59d-5eef09446e80"
+        },
+        {
+          "SchemaColumnUId": "1cca6142-7ef1-4d7b-b068-9f180e6a3ce7",
+          "Value": "Mobile Phone"
+        },
+        {
+          "SchemaColumnUId": "30e7fb61-c0a7-4f3a-9b56-4f3f980b7b05",
+          "Value": "MobilePhone"
+        },
+        {
+          "SchemaColumnUId": "f758a26f-dbaf-409f-a617-6a75e720fb27",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "69a77c90-841a-4340-b54b-c991eee2b438"
+        },
+        {
+          "SchemaColumnUId": "1cca6142-7ef1-4d7b-b068-9f180e6a3ce7",
+          "Value": "companyname"
+        },
+        {
+          "SchemaColumnUId": "30e7fb61-c0a7-4f3a-9b56-4f3f980b7b05",
+          "Value": "Account"
+        },
+        {
+          "SchemaColumnUId": "f758a26f-dbaf-409f-a617-6a75e720fb27",
+          "Value": "Firma"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "7354ff11-9413-4318-9453-4ff134e9f07e"
+        },
+        {
+          "SchemaColumnUId": "1cca6142-7ef1-4d7b-b068-9f180e6a3ce7",
+          "Value": "x"
+        },
+        {
+          "SchemaColumnUId": "30e7fb61-c0a7-4f3a-9b56-4f3f980b7b05",
+          "Value": "AddressType"
+        },
+        {
+          "SchemaColumnUId": "f758a26f-dbaf-409f-a617-6a75e720fb27",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "96e71ddc-c4fd-4f1f-9e03-528270fcb566"
+        },
+        {
+          "SchemaColumnUId": "1cca6142-7ef1-4d7b-b068-9f180e6a3ce7",
+          "Value": "city"
+        },
+        {
+          "SchemaColumnUId": "30e7fb61-c0a7-4f3a-9b56-4f3f980b7b05",
+          "Value": "City"
+        },
+        {
+          "SchemaColumnUId": "f758a26f-dbaf-409f-a617-6a75e720fb27",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "9f7322ee-2e0f-49f6-8304-88156184c5fc"
+        },
+        {
+          "SchemaColumnUId": "1cca6142-7ef1-4d7b-b068-9f180e6a3ce7",
+          "Value": "jobtitle"
+        },
+        {
+          "SchemaColumnUId": "30e7fb61-c0a7-4f3a-9b56-4f3f980b7b05",
+          "Value": "JobTitle"
+        },
+        {
+          "SchemaColumnUId": "f758a26f-dbaf-409f-a617-6a75e720fb27",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "a0459027-2c66-4203-98f4-6308c1761f67"
+        },
+        {
+          "SchemaColumnUId": "1cca6142-7ef1-4d7b-b068-9f180e6a3ce7",
+          "Value": "name"
+        },
+        {
+          "SchemaColumnUId": "30e7fb61-c0a7-4f3a-9b56-4f3f980b7b05",
+          "Value": "Email"
+        },
+        {
+          "SchemaColumnUId": "f758a26f-dbaf-409f-a617-6a75e720fb27",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "bc1f80c0-3cab-400d-96fe-5bf8ff73ae5a"
+        },
+        {
+          "SchemaColumnUId": "1cca6142-7ef1-4d7b-b068-9f180e6a3ce7",
+          "Value": "mobilephone"
+        },
+        {
+          "SchemaColumnUId": "30e7fb61-c0a7-4f3a-9b56-4f3f980b7b05",
+          "Value": "MobilePhone"
+        },
+        {
+          "SchemaColumnUId": "f758a26f-dbaf-409f-a617-6a75e720fb27",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "c2835164-dd61-4f45-ae1a-505b850e72fa"
+        },
+        {
+          "SchemaColumnUId": "1cca6142-7ef1-4d7b-b068-9f180e6a3ce7",
+          "Value": "y"
+        },
+        {
+          "SchemaColumnUId": "30e7fb61-c0a7-4f3a-9b56-4f3f980b7b05",
+          "Value": "Type"
+        },
+        {
+          "SchemaColumnUId": "f758a26f-dbaf-409f-a617-6a75e720fb27",
+          "Value": "Angestellter"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "d9d3aaf1-95fd-4765-befc-b49d57c79560"
+        },
+        {
+          "SchemaColumnUId": "1cca6142-7ef1-4d7b-b068-9f180e6a3ce7",
+          "Value": "surname"
+        },
+        {
+          "SchemaColumnUId": "30e7fb61-c0a7-4f3a-9b56-4f3f980b7b05",
+          "Value": "Surname"
+        },
+        {
+          "SchemaColumnUId": "f758a26f-dbaf-409f-a617-6a75e720fb27",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "de3b85a1-2ef2-42d4-b254-8c7f21d3f560"
+        },
+        {
+          "SchemaColumnUId": "1cca6142-7ef1-4d7b-b068-9f180e6a3ce7",
+          "Value": "streetaddress"
+        },
+        {
+          "SchemaColumnUId": "30e7fb61-c0a7-4f3a-9b56-4f3f980b7b05",
+          "Value": "Address"
+        },
+        {
+          "SchemaColumnUId": "f758a26f-dbaf-409f-a617-6a75e720fb27",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "ed43812f-4454-49b0-a851-c58eabb4d728"
+        },
+        {
+          "SchemaColumnUId": "1cca6142-7ef1-4d7b-b068-9f180e6a3ce7",
+          "Value": "postalcode"
+        },
+        {
+          "SchemaColumnUId": "30e7fb61-c0a7-4f3a-9b56-4f3f980b7b05",
+          "Value": "Zip"
+        },
+        {
+          "SchemaColumnUId": "f758a26f-dbaf-409f-a617-6a75e720fb27",
+          "Value": ""
+        }
+      ]
+    }
+  ]
+}

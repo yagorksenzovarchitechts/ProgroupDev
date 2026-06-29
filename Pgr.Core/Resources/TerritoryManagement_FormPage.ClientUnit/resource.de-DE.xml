@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AccountsExpansionPanel_title.Value" Value="Unternehmen" />
+			<Item Name="LocalizableStrings.AccountsWithOpenPipelineOverviewWidget_title.Value" Value="Unternehmen mit offener Pipeline" />
+			<Item Name="LocalizableStrings.AccountsWithOpenPipelineWidget_title.Value" Value="Unternehmen mit offener Pipeline" />
+			<Item Name="LocalizableStrings.AssignedAccountsByIndustryWidget_title.Value" Value="Zugeordnete Unternehmen nach Branche" />
+			<Item Name="LocalizableStrings.AssignedAccountsByTierWidget_title.Value" Value="Zugeordnete Unternehmen nach Kategorie" />
+			<Item Name="LocalizableStrings.AssignedAccountsByTypeWidget_title.Value" Value="Zugeordnete Unternehmen nach Typ" />
+			<Item Name="LocalizableStrings.AssignedAccountsOverviewWidget_title.Value" Value="Zugewiesen Unternehmen" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.ConnectionsTab_caption.Value" Value="Unternehmen &amp; Verbindungen" />
+			<Item Name="LocalizableStrings.ContactInfoLabel_caption.Value" Value="Inhaber info" />
+			<Item Name="LocalizableStrings.CustomersOverviewWidget_title.Value" Value="Kundennummer" />
+			<Item Name="LocalizableStrings.DashboardTab_caption.Value" Value="Dashboard" />
+			<Item Name="LocalizableStrings.LookupQuickFilterCountry_config_caption.Value" Value="Land" />
+			<Item Name="LocalizableStrings.LookupQuickFilterIndustry_config_caption.Value" Value="Branche" />
+			<Item Name="LocalizableStrings.LookupQuickFilterTier_config_caption.Value" Value="Kategorie" />
+			<Item Name="LocalizableStrings.LookupQuickFilterType_config_caption.Value" Value="Typ" />
+			<Item Name="LocalizableStrings.MembersExpansionPanel_title.Value" Value="Mitglieder" />
+			<Item Name="LocalizableStrings.OpenLeadsOverviewWidget_title.Value" Value="Offene Leads" />
+			<Item Name="LocalizableStrings.OpenLeadsWidget_title.Value" Value="Offene Leads" />
+			<Item Name="LocalizableStrings.OpenOpportunitiesOverviewWidget_title.Value" Value="Offene opportunities" />
+			<Item Name="LocalizableStrings.OpenOpportunitiesWidget_title.Value" Value="Offene opportunities" />
+			<Item Name="LocalizableStrings.OpenPipelineOverviewWidget_title.Value" Value="Offene Pipeline" />
+			<Item Name="LocalizableStrings.OpenPipelineWidget_title.Value" Value="Offene Pipeline" />
+			<Item Name="LocalizableStrings.OpportunitiesExpansionPanel_title.Value" Value="Opportunities" />
+			<Item Name="LocalizableStrings.OverviewTab_caption.Value" Value="Übersicht" />
+			<Item Name="LocalizableStrings.RepTerritoriesOverviewWidget_title.Value" Value="Gebiete der Vertriebsmitarbeiter" />
+			<Item Name="LocalizableStrings.RepTerritoriesWidget_title.Value" Value="Gebiete der Vertriebsmitarbeiter" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
+			<Item Name="LocalizableStrings.SubordinateTerritoriesExpansionPanel_title.Value" Value="Untergeordnete Gebiete" />
+			<Item Name="LocalizableStrings.TeamTab_caption.Value" Value="Team" />
+			<Item Name="LocalizableStrings.TotalAccountsWidget_title.Value" Value="Unternehmen gesamt" />
+			<Item Name="LocalizableStrings.UnallottedAccountsOverviewWidget_title.Value" Value="Nicht zugewiesene Unternehmen" />
+			<Item Name="LocalizableStrings.UnallottedAccountsWidget_title.Value" Value="Nicht zugewiesene Unternehmen" />
+		</Items>
+	</Group>
+</Resources>

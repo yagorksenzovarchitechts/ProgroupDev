@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Account.Caption" Value="Hauptkunde" />
+			<Item Name="Columns.BirthDate.Caption" Value="Geburtsdatum" />
+			<Item Name="Columns.Department.Caption" Value="Abteilung" />
+			<Item Name="Columns.DoNotUseCall.Caption" Value="Nicht anrufen" />
+			<Item Name="Columns.DoNotUseEmail.Caption" Value="Nicht über E-Mail kontaktieren" />
+			<Item Name="Columns.DoNotUseMail.Caption" Value="Nicht über E-Mail kontaktieren" />
+			<Item Name="Columns.Email.Caption" Value="E-Mail" />
+			<Item Name="Columns.Gender.Caption" Value="Geschlecht" />
+			<Item Name="Columns.GivenName.Caption" Value="Vorname" />
+			<Item Name="Columns.JobTitle.Caption" Value="Berufsbezeichnung" />
+			<Item Name="Columns.Language.Caption" Value="Sprache" />
+			<Item Name="Columns.LinkedIn.Caption" Value="LinkedIn" />
+			<Item Name="Columns.MiddleName.Caption" Value="Zwischenname" />
+			<Item Name="Columns.MobilePhone.Caption" Value="Handynummer" />
+			<Item Name="Columns.Name.Caption" Value="Name" />
+			<Item Name="Columns.Notes.Caption" Value="Notiz" />
+			<Item Name="Columns.Owner.Caption" Value="Verkaufsleiter" />
+			<Item Name="Columns.PgrCreatioUser.Caption" Value="Creatio user" />
+			<Item Name="Columns.PgrIsActive.Caption" Value="aktiv" />
+			<Item Name="Columns.PgrProGroupSalesPerson.Caption" Value="Mitarbeiter Kürzel" />
+			<Item Name="Columns.PgrReportsTo.Caption" Value="Vorgesetzter" />
+			<Item Name="Columns.PgrWepaformContactId.Caption" Value="Wepaform Kontaktnummer" />
+			<Item Name="Columns.Phone.Caption" Value="Geschäftliche Nummer" />
+			<Item Name="Columns.SalutationType.Caption" Value="Anrede" />
+			<Item Name="Columns.Surname.Caption" Value="Nachname" />
+			<Item Name="Columns.Type.Caption" Value="Kontaktart" />
+		</Items>
+	</Group>
+</Resources>

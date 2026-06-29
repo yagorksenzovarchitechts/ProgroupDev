@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "f877c84d-8217-4a0f-9a08-9fb4a4d1b42f",
+    "Name": "Products_MiniPage",
+    "ModifiedOnUtc": "\/Date(1781170816000)\/",
+    "Parent": {
+      "UId": "5ee82f54-9b86-4a5b-8820-afe8c266a109",
+      "Name": "Products_MiniPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Products mini page",
+    "DependsOn": []
+  }
+}

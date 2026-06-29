@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "8dc03bd4-5385-41fd-8c2e-a6b77f0e1424",
+    "Name": "PgrPowerBiSlicerValue",
+    "ModifiedOnUtc": "\/Date(1782393010000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Power Bi Slicer Value",
+    "DependsOn": []
+  }
+}

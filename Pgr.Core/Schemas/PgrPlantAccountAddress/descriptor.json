@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "f5fb5aa6-90cd-49ca-898d-302a9c13dd5e",
+    "Name": "PgrPlantAccountAddress",
+    "ModifiedOnUtc": "\/Date(1780411030000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Plants in Account address",
+    "DependsOn": []
+  }
+}

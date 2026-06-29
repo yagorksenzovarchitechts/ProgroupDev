@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.DueDate.Caption" Value="Close date" />
+			<Item Name="Columns.PgrCompetitor.Caption" Value="Competitor" />
+			<Item Name="Columns.PgrDiscount.Caption" Value="Discount, %" />
+			<Item Name="Columns.PgrEstimatedVolume.Caption" Value="Estimated volume" />
+			<Item Name="Columns.PgrFollowUpDate.Caption" Value="Follow up date" />
+		</Items>
+	</Group>
+</Resources>

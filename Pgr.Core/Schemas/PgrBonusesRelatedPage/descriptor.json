@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "101a1dac-cc7a-452e-8905-e9a6dba594d3",
+    "Name": "PgrBonusesRelatedPage",
+    "ModifiedOnUtc": "\/Date(1781784237000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Bonuses (Page settings)",
+    "DependsOn": []
+  }
+}

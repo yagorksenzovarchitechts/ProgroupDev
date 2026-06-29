@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "c57b48e1-a0f1-4d0a-ad8f-10961ae986f6",
+    "Name": "PgrPowerBiService",
+    "ModifiedOnUtc": "\/Date(1782394420000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "Power Bi service",
+    "DependsOn": []
+  }
+}

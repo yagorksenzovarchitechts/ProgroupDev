@@ -1,0 +1,80 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "a5420246-0a8e-e111-84a3-00155d054c03"
+        },
+        {
+          "SchemaColumnUId": "08419b1c-0aec-49ab-9229-ecc7c42b6279",
+          "Value": "6ebc31fa-ee6c-48e9-81bf-8003ac03b019",
+          "DisplayValue": "English (United States)"
+        },
+        {
+          "SchemaColumnUId": "3902b321-877b-464f-a0a9-563b9eec78ed",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "46bd9122-9f52-4b8a-930b-f1b9d5b21b1a",
+          "Value": 0
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "Value": "en-US"
+        },
+        {
+          "SchemaColumnUId": "88a9958c-6878-4adb-b534-d894dda3c7e8",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "cb8ceccd-8515-47d9-87ed-5dcb1249571d",
+          "Value": "a88f92fc-c16d-4a1b-980c-a25933609d80",
+          "DisplayValue": "en-US_CultureFlagsss.png"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "e90dc055-5d44-426b-b6fe-f7f4db93ebd6"
+        },
+        {
+          "SchemaColumnUId": "08419b1c-0aec-49ab-9229-ecc7c42b6279",
+          "Value": "fd6f5675-37a1-4182-a5e9-7c77beed56b1",
+          "DisplayValue": "German (Germany)"
+        },
+        {
+          "SchemaColumnUId": "3902b321-877b-464f-a0a9-563b9eec78ed",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "46bd9122-9f52-4b8a-930b-f1b9d5b21b1a",
+          "Value": 1
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "Value": "de-DE"
+        },
+        {
+          "SchemaColumnUId": "88a9958c-6878-4adb-b534-d894dda3c7e8",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "cb8ceccd-8515-47d9-87ed-5dcb1249571d",
+          "Value": "null",
+          "DisplayValue": ""
+        }
+      ]
+    }
+  ]
+}

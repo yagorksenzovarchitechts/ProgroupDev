@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.f5214ba8-5799-b576-f8de-124734475aee.Caption" Value="Show elements: Disqualification reason, Make elements required: Disqualification reason" />
+		</Items>
+	</Group>
+</Resources>

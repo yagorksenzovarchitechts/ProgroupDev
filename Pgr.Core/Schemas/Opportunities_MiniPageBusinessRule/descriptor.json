@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "0c645a8c-09fe-427d-912b-9a45b31dbe36",
+    "Name": "Opportunities_MiniPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1781184236000)\/",
+    "Parent": {
+      "UId": "b785b9cc-537a-43e9-857c-dd532ec7e870",
+      "Name": "Opportunities_MiniPageBusinessRule"
+    },
+    "ExtendParent": true,
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Opportunities mini page (Business rules)",
+    "DependsOn": []
+  }
+}

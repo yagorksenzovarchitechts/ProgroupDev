@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Visit report form page" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.Input_1j86543_tooltip.Value" Value="Optionaler zusätzlicher Hinweis" />
+			<Item Name="LocalizableStrings.Input_1snwgmj_tooltip.Value" Value="Was wurde besprochen? Ergebnis? Chancen/Risiken?" />
+			<Item Name="LocalizableStrings.Input_az70u84_tooltip.Value" Value="Verwenden, wenn 'Sonstiges' ausgewählt ist" />
+			<Item Name="LocalizableStrings.Input_s875dfr_tooltip.Value" Value="Optionaler zusätzlicher Hinweis" />
+			<Item Name="LocalizableStrings.Label_qoozpze_caption.Value" Value="Besuchsbericht-Info" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
+			<Item Name="LocalizableStrings.TabContainer_widjyyt_caption.Value" Value="Grund &amp; Zweck" />
+		</Items>
+	</Group>
+</Resources>

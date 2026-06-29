@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Account.Caption" Value="Firma" />
+			<Item Name="Columns.Address.Caption" Value="Straße" />
+			<Item Name="Columns.AddressType.Caption" Value="Addressart" />
+			<Item Name="Columns.City.Caption" Value="Stadt" />
+			<Item Name="Columns.Country.Caption" Value="Land" />
+			<Item Name="Columns.PgrLoadingSillHeight.Caption" Value="Ladekantenhöhe" />
+			<Item Name="Columns.PgrMaxStackHeight.Caption" Value="Max. Stapelhöhe" />
+			<Item Name="Columns.PgrMaxStackWeight.Caption" Value="Max. Stapelgewicht" />
+			<Item Name="Columns.PgrPalletManagementContact.Caption" Value="Kontakt Palettenmanagement" />
+			<Item Name="Columns.PgrReverseUnloading.Caption" Value="Rückwärtsentladung" />
+			<Item Name="Columns.PgrSapAddressID.Caption" Value="SAP Adressnummer" />
+			<Item Name="Columns.PgrSapAddressId2.Caption" Value="SAP Adressnummer" />
+			<Item Name="Columns.PgrValidFrom.Caption" Value="Gültig ab" />
+			<Item Name="Columns.PgrValidTo.Caption" Value="Gültig bis" />
+			<Item Name="Columns.PgrWfAddressId.Caption" Value="WF Adressnummer" />
+			<Item Name="Columns.PgrWfAddressName.Caption" Value="Adressbezeichnung" />
+			<Item Name="Columns.Primary.Caption" Value="Korrespondenzadresse" />
+			<Item Name="Columns.Region.Caption" Value="Bundesstaat/Provinz" />
+			<Item Name="Columns.Zip.Caption" Value="Postleitzahl" />
+		</Items>
+	</Group>
+</Resources>

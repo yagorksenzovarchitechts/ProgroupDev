@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "e1c01046-697a-4e88-b7a8-91e40e68d9d7",
+    "Name": "PgrPerformance",
+    "ModifiedOnUtc": "\/Date(1781867697000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Performance lookup",
+    "DependsOn": []
+  }
+}

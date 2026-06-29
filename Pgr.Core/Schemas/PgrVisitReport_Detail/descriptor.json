@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "c11c2693-75ba-46ef-8039-ce047ce1a9a9",
+    "Name": "PgrVisitReport_Detail",
+    "ModifiedOnUtc": "\/Date(1781877869000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Visit report detail",
+    "DependsOn": []
+  }
+}

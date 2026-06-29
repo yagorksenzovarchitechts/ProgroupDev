@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "2b53ced8-88f3-424c-ac55-be31be76a70b",
+    "Name": "TerritoryManagement_ListPage",
+    "ModifiedOnUtc": "\/Date(1780781204000)\/",
+    "Parent": {
+      "UId": "1e99fa5d-9f8b-438c-8eb5-50d67532740a",
+      "Name": "TerritoryManagement_ListPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Territory management list page",
+    "DependsOn": []
+  }
+}

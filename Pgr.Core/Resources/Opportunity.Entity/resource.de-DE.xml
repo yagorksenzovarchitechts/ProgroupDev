@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Account.Caption" Value="Firma" />
+			<Item Name="Columns.Category.Caption" Value="Kategorie" />
+			<Item Name="Columns.CloseReason.Caption" Value="Abschlussgrund" />
+			<Item Name="Columns.Contact.Caption" Value="Kontakt" />
+			<Item Name="Columns.CreatedOn.Caption" Value="Erstellt am" />
+			<Item Name="Columns.DecisionMaker.Caption" Value="Zuständiger" />
+			<Item Name="Columns.DueDate.Caption" Value="Abschlussdatum" />
+			<Item Name="Columns.Notes.Caption" Value="Notizen" />
+			<Item Name="Columns.Owner.Caption" Value="Verantwortlicher" />
+			<Item Name="Columns.PgrCompetitor.Caption" Value="Wettbewerber" />
+			<Item Name="Columns.PgrDiscount.Caption" Value="Rabatt, %" />
+			<Item Name="Columns.PgrEstimatedVolume.Caption" Value="Gesch. Volumen" />
+			<Item Name="Columns.PgrFollowUpDate.Caption" Value="Follow up Datum" />
+			<Item Name="Columns.Probability.Caption" Value="Wahrscheinlichkeit, %" />
+			<Item Name="Columns.Stage.Caption" Value="Phase" />
+			<Item Name="Columns.Title.Caption" Value="Name" />
+			<Item Name="Columns.Winner.Caption" Value="Gewinner" />
+		</Items>
+	</Group>
+</Resources>

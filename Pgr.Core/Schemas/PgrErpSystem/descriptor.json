@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "cb062154-16ae-4bcf-9dd0-0b7a5e9c5938",
+    "Name": "PgrErpSystem",
+    "ModifiedOnUtc": "\/Date(1780434180000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Account ERP system provider",
+    "DependsOn": []
+  }
+}

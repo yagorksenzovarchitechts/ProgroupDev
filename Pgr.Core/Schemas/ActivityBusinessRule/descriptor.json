@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "9847ef6f-d4f7-4530-8968-680233e79231",
+    "Name": "ActivityBusinessRule",
+    "ModifiedOnUtc": "\/Date(1782395497000)\/",
+    "Parent": {
+      "UId": "9d44ed48-ca00-4b6a-abdb-1d87be112bff",
+      "Name": "ActivityBusinessRule"
+    },
+    "ExtendParent": true,
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Activity (Business rules)",
+    "DependsOn": []
+  }
+}

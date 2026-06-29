@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "3f1e945e-93e2-41c7-a9ec-091fb88f0a32",
+    "Name": "PgrTeam",
+    "ModifiedOnUtc": "\/Date(1781099404000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "PG Team",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "cef5a942-f218-42ae-b9f6-210d43bcaaa6",
+    "Name": "PgrYear",
+    "ModifiedOnUtc": "\/Date(1781682553000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Year lookup",
+    "DependsOn": []
+  }
+}

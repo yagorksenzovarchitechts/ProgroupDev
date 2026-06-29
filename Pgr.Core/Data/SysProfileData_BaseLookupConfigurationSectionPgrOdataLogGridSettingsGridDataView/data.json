@@ -1,0 +1,43 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "5cf0c3f8-7731-4acb-b934-16fd253b0f71"
+        },
+        {
+          "SchemaColumnUId": "03a27b75-6d7f-4be4-b0fd-f03ffd8a7aab",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "216b38f5-e2c3-462b-ae2e-1df80fc21b33",
+          "Value": "null",
+          "DisplayValue": ""
+        },
+        {
+          "SchemaColumnUId": "3bb9d182-ad73-4379-9d51-2003c862a90c",
+          "Value": "BaseLookupConfigurationSectionPgrOdataLogGridSettingsGridDataView"
+        },
+        {
+          "SchemaColumnUId": "6851587b-0b7a-45cb-a5a5-31994420d81b",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "986fc9ee-72b2-4cc9-af5e-ed64af54d30f",
+          "Value": "eyJ0aWxlZENvbHVtbnNDb25maWciOiJ7fSIsImxpc3RlZENvbHVtbnNDb25maWciOiJ7fSIsIkRhdGFHcmlkIjp7InRpbGVkQ29uZmlnIjoie1wiZ3JpZFwiOntcInJvd3NcIjowLFwiY29sdW1uc1wiOjI0fSxcIml0ZW1zXCI6W119IiwibGlzdGVkQ29uZmlnIjoie1wiaXRlbXNcIjpbe1wiY29sdW1uXCI6MCxcImNhcHRpb25cIjpcIk1ldGhvZFwiLFwibWV0YVBhdGhcIjpcIlBnck1ldGhvZFwiLFwiaXNUaXRsZVRleHRcIjpmYWxzZSxcIndpZHRoXCI6MixcImRhdGFWYWx1ZVR5cGVcIjoxLFwiYmluZFRvXCI6XCJQZ3JNZXRob2RcIixcImlzQmFja3dhcmRcIjpmYWxzZSxcInBvc2l0aW9uXCI6e1wiY29sdW1uXCI6MCxcImNvbFNwYW5cIjoyLFwicm93XCI6MX19LHtcImNvbHVtblwiOjIsXCJjYXB0aW9uXCI6XCJVcmxcIixcIm1ldGFQYXRoXCI6XCJQZ3JVcmxcIixcImlzVGl0bGVUZXh0XCI6ZmFsc2UsXCJ3aWR0aFwiOjQsXCJkYXRhVmFsdWVUeXBlXCI6MSxcImJpbmRUb1wiOlwiUGdyVXJsXCIsXCJpc0JhY2t3YXJkXCI6ZmFsc2UsXCJwb3NpdGlvblwiOntcImNvbHVtblwiOjIsXCJjb2xTcGFuXCI6NCxcInJvd1wiOjF9fSx7XCJjb2x1bW5cIjo2LFwiY2FwdGlvblwiOlwiU3RhdHVzIGNvZGVcIixcIm1ldGFQYXRoXCI6XCJQZ3JTdGF0dXNDb2RlXCIsXCJpc1RpdGxlVGV4dFwiOmZhbHNlLFwid2lkdGhcIjozLFwiZGF0YVZhbHVlVHlwZVwiOjQsXCJiaW5kVG9cIjpcIlBnclN0YXR1c0NvZGVcIixcImlzQmFja3dhcmRcIjpmYWxzZSxcInBvc2l0aW9uXCI6e1wiY29sdW1uXCI6NixcImNvbFNwYW5cIjozLFwicm93XCI6MX19LHtcImNvbHVtblwiOjksXCJjYXB0aW9uXCI6XCJSZXF1ZXN0IGJvZHlcIixcIm1ldGFQYXRoXCI6XCJQZ3JSZXF1ZXN0Qm9keVwiLFwiaXNUaXRsZVRleHRcIjpmYWxzZSxcIndpZHRoXCI6NCxcImRhdGFWYWx1ZVR5cGVcIjoxLFwiYmluZFRvXCI6XCJQZ3JSZXF1ZXN0Qm9keVwiLFwiaXNCYWNrd2FyZFwiOmZhbHNlLFwicG9zaXRpb25cIjp7XCJjb2x1bW5cIjo5LFwiY29sU3BhblwiOjQsXCJyb3dcIjoxfX0se1wiY29sdW1uXCI6MTMsXCJjYXB0aW9uXCI6XCJSZXNwb25zZSBib2R5XCIsXCJtZXRhUGF0aFwiOlwiUGdyUmVzcG9uc2VCb2R5XCIsXCJpc1RpdGxlVGV4dFwiOmZhbHNlLFwid2lkdGhcIjo0LFwiZGF0YVZhbHVlVHlwZVwiOjEsXCJiaW5kVG9cIjpcIlBnclJlc3BvbnNlQm9keVwiLFwiaXNCYWNrd2FyZFwiOmZhbHNlLFwicG9zaXRpb25cIjp7XCJjb2x1bW5cIjoxMyxcImNvbFNwYW5cIjo0LFwicm93XCI6MX19LHtcImNvbHVtblwiOjE3LFwiY2FwdGlvblwiOlwiQ3JlYXRlZCBvblwiLFwibWV0YVBhdGhcIjpcIkNyZWF0ZWRPblwiLFwiaXNUaXRsZVRleHRcIjpmYWxzZSxcIndpZHRoXCI6NCxcImRhdGFWYWx1ZVR5cGVcIjo3LFwiYmluZFRvXCI6XCJDcmVhdGVkT25cIixcImlzQmFja3dhcmRcIjpmYWxzZSxcInBvc2l0aW9uXCI6e1wiY29sdW1uXCI6MTcsXCJjb2xTcGFuXCI6NCxcInJvd1wiOjF9LFwib3JkZXJEaXJlY3Rpb25cIjoyLFwib3JkZXJQb3NpdGlvblwiOjF9LHtcImNvbHVtblwiOjIxLFwiY2FwdGlvblwiOlwiRXJyb3JcIixcIm1ldGFQYXRoXCI6XCJQZ3JFcnJvclwiLFwiaXNUaXRsZVRleHRcIjpmYWxzZSxcIndpZHRoXCI6MixcImRhdGFWYWx1ZVR5cGVcIjoxLFwiYmluZFRvXCI6XCJQZ3JFcnJvclwiLFwiaXNCYWNrd2FyZFwiOmZhbHNlLFwicG9zaXRpb25cIjp7XCJjb2x1bW5cIjoyMSxcImNvbFNwYW5cIjoyLFwicm93XCI6MX19LHtcImNvbHVtblwiOjIzLFwiY2FwdGlvblwiOlwiRHVyYXRpb24gbXNcIixcIm1ldGFQYXRoXCI6XCJQZ3JEdXJhdGlvbk1zXCIsXCJpc1RpdGxlVGV4dFwiOmZhbHNlLFwid2lkdGhcIjoxLFwiZGF0YVZhbHVlVHlwZVwiOjQsXCJiaW5kVG9cIjpcIlBnckR1cmF0aW9uTXNcIixcImlzQmFja3dhcmRcIjpmYWxzZSxcInBvc2l0aW9uXCI6e1wiY29sdW1uXCI6MjMsXCJjb2xTcGFuXCI6MSxcInJvd1wiOjF9fV19Iiwia2V5IjoiQmFzZUxvb2t1cENvbmZpZ3VyYXRpb25TZWN0aW9uUGdyT2RhdGFMb2dHcmlkU2V0dGluZ3NHcmlkRGF0YVZpZXciLCJpc1RpbGVkIjpmYWxzZSwidHlwZSI6Imxpc3RlZCJ9LCJrZXkiOiJCYXNlTG9va3VwQ29uZmlndXJhdGlvblNlY3Rpb25QZ3JPZGF0YUxvZ0dyaWRTZXR0aW5nc0dyaWREYXRhVmlldyIsInByb2ZpbGVDdWx0dXJlSWQiOiJhNTQyMDI0Ni0wYThlLWUxMTEtODRhMy0wMDE1NWQwNTRjMDMifQ=="
+        },
+        {
+          "SchemaColumnUId": "99d21524-ccad-45c1-998d-e9de6a6412af",
+          "Value": "null"
+        },
+        {
+          "SchemaColumnUId": "fd26b95c-06ba-4595-915e-bc5657d10842",
+          "Value": "a5420246-0a8e-e111-84a3-00155d054c03",
+          "DisplayValue": "en-US"
+        }
+      ]
+    }
+  ]
+}

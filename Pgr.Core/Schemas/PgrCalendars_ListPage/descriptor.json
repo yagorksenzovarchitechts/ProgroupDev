@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "bb6dedd7-08a0-47c3-8c95-48e3cfe647ad",
+    "Name": "PgrCalendars_ListPage",
+    "ModifiedOnUtc": "\/Date(1781808184000)\/",
+    "Parent": {
+      "UId": "b7b898d0-8c77-4953-c097-23fa6800da02",
+      "Name": "ListPageV3Template"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Calendars list page",
+    "DependsOn": []
+  }
+}

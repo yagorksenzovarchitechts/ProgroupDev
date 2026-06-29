@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "87ac03c7-5d06-4139-9b9c-8bc029b5a10a",
+    "Name": "Leads_FormPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1782373032000)\/",
+    "Parent": {
+      "UId": "44889c4a-2c8a-401e-a159-d12c90fbbc7e",
+      "Name": "Leads_FormPageBusinessRule"
+    },
+    "ExtendParent": true,
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Leads form page (Business rules)",
+    "DependsOn": []
+  }
+}

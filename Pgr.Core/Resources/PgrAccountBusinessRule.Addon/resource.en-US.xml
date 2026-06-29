@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.2b606d6c-d568-206f-5fe9-c9d9254718f0.Caption" Value="Set values: Also known as" />
+			<Item Name="Caption" Value="Account (Business rules)" />
+		</Items>
+	</Group>
+</Resources>

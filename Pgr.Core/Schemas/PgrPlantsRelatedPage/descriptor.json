@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "f6189ae2-5ddd-4fc3-96eb-1d96b5db4a07",
+    "Name": "PgrPlantsRelatedPage",
+    "ModifiedOnUtc": "\/Date(1780646137000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Plants (Page settings)",
+    "DependsOn": []
+  }
+}

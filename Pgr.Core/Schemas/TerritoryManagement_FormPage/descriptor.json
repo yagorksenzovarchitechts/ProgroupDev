@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "f32eb0ac-4fa3-468e-92e4-cf43717b74c5",
+    "Name": "TerritoryManagement_FormPage",
+    "ModifiedOnUtc": "\/Date(1781101780000)\/",
+    "Parent": {
+      "UId": "5a30d17f-d3a7-48a5-8ea7-7f98392d1c97",
+      "Name": "TerritoryManagement_FormPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Territory management form page",
+    "DependsOn": []
+  }
+}

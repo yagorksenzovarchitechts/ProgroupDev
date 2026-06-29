@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "745c7094-e924-4c66-9eb0-ce6706d28c48",
+    "Name": "PgrBonusThreshold",
+    "ModifiedOnUtc": "\/Date(1781783232000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Bonus thresholds",
+    "DependsOn": []
+  }
+}

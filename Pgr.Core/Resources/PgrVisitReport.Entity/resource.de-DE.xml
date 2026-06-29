@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Visit report" />
+			<Item Name="Columns.PgrAccount.Caption" Value="Kunde&#xA;&#xA;Kunde&#xA;&#xA;&#xA;Kunde&#xA;&#xA;Kunde" />
+			<Item Name="Columns.PgrCompetition.Caption" Value="Wettbewerb" />
+			<Item Name="Columns.PgrCompetitionText.Caption" Value="Freitext Wettbewerb" />
+			<Item Name="Columns.PgrDeliveryShare.Caption" Value="PG Lieferanteil" />
+			<Item Name="Columns.PgrIsRelevantForWeeklyReport.Caption" Value="&#xA;Relevant für Wochenbericht&#xA;&#xA;&#xA;Relevant für Wochenbericht&#xA;&#xA;Relevant für Wochenbericht" />
+			<Item Name="Columns.PgrKeyTopics.Caption" Value="Kernthemen" />
+			<Item Name="Columns.PgrLastVisit.Caption" Value="Letzter Besuch" />
+			<Item Name="Columns.PgrMeasuresRequired.Caption" Value="Maßnahmen erforderlich" />
+			<Item Name="Columns.PgrNineDayAvg.Caption" Value="Auftragseingang 9 AT" />
+			<Item Name="Columns.PgrNoVisitReason.Caption" Value="Grund (kein Besuch)" />
+			<Item Name="Columns.PgrOwner.Caption" Value="Vertriebsmitarbeiter" />
+			<Item Name="Columns.PgrPerformance.Caption" Value="Performance" />
+			<Item Name="Columns.PgrPerformanceText.Caption" Value="Freitext Performance" />
+			<Item Name="Columns.PgrSummary.Caption" Value="Sonstiges / private Anmerkungen" />
+			<Item Name="Columns.PgrTaskContent.Caption" Value="Aufgabeninhalt" />
+			<Item Name="Columns.PgrTaskDepartment.Caption" Value="Abteilung" />
+			<Item Name="Columns.PgrTaskOwner.Caption" Value="Verantwortliche Person" />
+			<Item Name="Columns.PgrTaskSubject.Caption" Value="Aufgabenbetreff" />
+			<Item Name="Columns.PgrVisitBudget.Caption" Value="Budget" />
+			<Item Name="Columns.PgrVisitDate.Caption" Value="Besuchsdatum" />
+			<Item Name="Columns.PgrVisitDeviation.Caption" Value="Abweichung %" />
+			<Item Name="Columns.PgrVisitDidNotTakePlace.Caption" Value="Besuch fand nicht statt" />
+			<Item Name="Columns.PgrVisitReason.Caption" Value="Grund / Zweck" />
+			<Item Name="Columns.PgrVisitReasonText.Caption" Value="Freitext Grund" />
+			<Item Name="Columns.PgrVisitType.Caption" Value="Besuchsart" />
+		</Items>
+	</Group>
+</Resources>

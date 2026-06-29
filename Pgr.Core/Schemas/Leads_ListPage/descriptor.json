@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "2360aea9-5268-4d8e-bd10-e5d2919d2747",
+    "Name": "Leads_ListPage",
+    "ModifiedOnUtc": "\/Date(1782373074000)\/",
+    "Parent": {
+      "UId": "c787571c-c8ca-4c9b-b05b-7ccbe0271a76",
+      "Name": "Leads_ListPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Leads list page",
+    "DependsOn": []
+  }
+}

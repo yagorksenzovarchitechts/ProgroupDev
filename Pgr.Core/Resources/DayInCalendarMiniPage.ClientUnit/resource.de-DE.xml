@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.CancelEditButtonCaption.Value" Value="Stornieren" />
+			<Item Name="LocalizableStrings.FromCaption.Value" Value="aus" />
+			<Item Name="LocalizableStrings.SaveEditButtonCaption.Value" Value="Speichern" />
+			<Item Name="LocalizableStrings.ToCaption.Value" Value="Zu" />
+			<Item Name="LocalizableStrings.WorkingHoursCaption.Value" Value="Arbeitszeiten für {0} festlegen" />
+		</Items>
+	</Group>
+</Resources>

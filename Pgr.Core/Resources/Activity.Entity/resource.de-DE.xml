@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Account.Caption" Value="Kunde" />
+			<Item Name="Columns.ActivityCategory.Caption" Value="Kategorie" />
+			<Item Name="Columns.Contact.Caption" Value="Kontakte" />
+			<Item Name="Columns.CreatedOn.Caption" Value="Erstellt am" />
+			<Item Name="Columns.DueDate.Caption" Value="Enddatum und Endzeitpunkt" />
+			<Item Name="Columns.Notes.Caption" Value="Beschreibung" />
+			<Item Name="Columns.Owner.Caption" Value="Verantwortlicher" />
+			<Item Name="Columns.PgrIsOverdue.Caption" Value="Überfällig" />
+			<Item Name="Columns.PgrOverdueDays.Caption" Value="Überfällige Tage" />
+			<Item Name="Columns.Priority.Caption" Value="Priorität" />
+			<Item Name="Columns.ShowInScheduler.Caption" Value="Im Kalender anzeigen" />
+			<Item Name="Columns.StartDate.Caption" Value="Startdatum und Startzeitpunkt" />
+			<Item Name="Columns.Status.Caption" Value="Status" />
+			<Item Name="Columns.Title.Caption" Value="Titel" />
+		</Items>
+	</Group>
+</Resources>

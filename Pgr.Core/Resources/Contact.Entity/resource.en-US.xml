@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Account.Caption" Value="Primary Account" />
+			<Item Name="Columns.JobTitle.Caption" Value="Job title" />
+			<Item Name="Columns.Language.Caption" Value="Language" />
+			<Item Name="Columns.PgrCreatioUser.Caption" Value="Creatio user" />
+			<Item Name="Columns.PgrIsActive.Caption" Value="Active" />
+			<Item Name="Columns.PgrProGroupSalesPerson.Caption" Value="Progroup employee code" />
+			<Item Name="Columns.PgrReportsTo.Caption" Value="Manager / Reports to" />
+			<Item Name="Columns.PgrTeam.Caption" Value="Team" />
+			<Item Name="Columns.PgrTerritory.Caption" Value="Territory" />
+			<Item Name="Columns.PgrWepaformContactId.Caption" Value="Wepaform Contact ID" />
+			<Item Name="Columns.SalutationType.Caption" Value="Salutation" />
+		</Items>
+	</Group>
+</Resources>

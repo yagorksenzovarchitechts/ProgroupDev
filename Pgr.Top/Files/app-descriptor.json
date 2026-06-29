@@ -1,0 +1,18 @@
+{
+  "Name": "Pgr.Top",
+  "Description": "",
+  "Maintainer": "Creatio",
+  "IconName": "",
+  "Color": "",
+  "Version": "",
+  "RequiredPlatformVersion": "8.3.4",
+  "MarketplaceLink": "",
+  "DependsOn": [],
+  "Code": "Pgr.Top",
+  "Packages": [
+    {
+      "UId": "0036b2e0-1676-ac06-bbe7-d7a596bb8ea9",
+      "Name": "Pgr.Top"
+    }
+  ]
+}

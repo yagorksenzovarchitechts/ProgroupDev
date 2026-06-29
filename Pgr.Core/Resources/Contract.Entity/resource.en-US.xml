@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.EndDate.Caption" Value="Valid to" />
+			<Item Name="Columns.Notes.Caption" Value="Description" />
+			<Item Name="Columns.Number.Caption" Value="Title" />
+			<Item Name="Columns.PgrContractRenewalReminderDate.Caption" Value="Contract renewal reminder date" />
+			<Item Name="Columns.PgrNoticePeriodDays.Caption" Value="Notice period (days)" />
+			<Item Name="Columns.StartDate.Caption" Value="Valid from" />
+			<Item Name="Columns.Type.Caption" Value="Contract type" />
+		</Items>
+	</Group>
+</Resources>

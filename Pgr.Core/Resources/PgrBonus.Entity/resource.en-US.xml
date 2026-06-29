@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Bonus" />
+			<Item Name="Columns.PgrAccount.Caption" Value="Account" />
+			<Item Name="Columns.PgrBaseValueType.Caption" Value="Base value type" />
+			<Item Name="Columns.PgrBonusId.Caption" Value="Bonus ID" />
+			<Item Name="Columns.PgrBonusType.Caption" Value="Bonus type" />
+			<Item Name="Columns.PgrDescription.Caption" Value="Description" />
+			<Item Name="Columns.PgrEndDate.Caption" Value="End date" />
+			<Item Name="Columns.PgrName.Caption" Value="Name" />
+			<Item Name="Columns.PgrSapId.Caption" Value="SAP Customer ID" />
+			<Item Name="Columns.PgrStartDate.Caption" Value="Start date" />
+		</Items>
+	</Group>
+</Resources>

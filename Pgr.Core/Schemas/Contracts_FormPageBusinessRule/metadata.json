@@ -1,0 +1,16 @@
+= MetaData.Schema.UId "addfcd92-ade7-4f7d-84fb-bbf0a04f95b0"
+= MetaData.Schema.A5 "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+= MetaData.Schema.B6 "655ac62c-1e4a-cc32-6e65-323f197c68e0"
++ MetaData.Schema.B7 true
+= MetaData.Schema.B8 "8.3.4.2753"
+- MetaData.Schema.AD4.BRS1.["85aebd2e-cc5b-1e72-0a9f-3bf2966492e7"].BR2.["3c94203c-238e-ad06-8c7f-4ca1ddf0ae8e"].BRT1
+- MetaData.Schema.AD4.BRS1.["85aebd2e-cc5b-1e72-0a9f-3bf2966492e7"].BR2.["3c94203c-238e-ad06-8c7f-4ca1ddf0ae8e"].BRT3
+- MetaData.Schema.AD4.BRS1.["85aebd2e-cc5b-1e72-0a9f-3bf2966492e7"].BR2.["8ec31295-e307-b805-c671-d9b5f0f1643b"].BRT3
+- MetaData.Schema.AD4.BRS1.["85aebd2e-cc5b-1e72-0a9f-3bf2966492e7"].BR2.["28d43fe6-7b4c-c5b7-5ebd-d97017ad67a6"].BRT3
++ MetaData.Schema.AD4.BRS1.["85aebd2e-cc5b-1e72-0a9f-3bf2966492e7"].BR4 false
+- MetaData.Schema.AD4.BRS1.["2bd817b3-e667-8839-f66f-a89114f8ea05"]
+~ MetaData.Schema.AD4.BRS1 [
+  "85aebd2e-cc5b-1e72-0a9f-3bf2966492e7"
+]
++ MetaData.Schema.B7 true
+= MetaData.Schema.AD5 "2f90d513-9c77-496f-935a-83227a83addd"

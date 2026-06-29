@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "70a432f6-828e-4986-8237-49531138a375",
+    "Name": "PgrAccountAddressRelatedPage",
+    "ModifiedOnUtc": "\/Date(1780426994000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Account address (Page settings)",
+    "DependsOn": []
+  }
+}

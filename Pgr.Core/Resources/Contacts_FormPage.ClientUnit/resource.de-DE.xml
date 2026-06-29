@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.BulkEmailSubscriptionExpansionPanel_title.Value" Value="Massen-E-Mail-Abonnements" />
+			<Item Name="LocalizableStrings.BulkEmailSubscriptionNote_caption.Value" Value="Passen Sie die Abonnements des Kontakts nach Massen-E-Mail-Typ an." />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.Department_placeholder.Value" Value="Abteilungs-Auswahl" />
+			<Item Name="LocalizableStrings.NotesLabel.Value" Value="Notiz" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
+			<Item Name="LocalizableStrings.SubscribeButton_caption.Value" Value="Kontakt anmelden" />
+			<Item Name="LocalizableStrings.SubscribeInfoLargeText_caption.Value" Value="Dieser Kontakt hat derzeit Marketing-E-Mails abonniert." />
+			<Item Name="LocalizableStrings.SubscribeInfoText_caption.Value" Value="Sie können diesen Kontakt zur Massen-E-Mail-Zielgruppe hinzufügen." />
+			<Item Name="LocalizableStrings.UnsubscribeButton_caption.Value" Value="Kontakt abmelden" />
+			<Item Name="LocalizableStrings.UnsubscribeInfoLargeText_caption.Value" Value="Dieser Kontakt hat derzeit keine Marketing-E-Mails abonniert." />
+			<Item Name="LocalizableStrings.UnsubscribeInfoText_caption.Value" Value="Creatio schließt diesen Kontakt automatisch aus der Massen-E-Mail-Zielgruppe aus." />
+		</Items>
+	</Group>
+</Resources>

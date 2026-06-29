@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "6a2e8b52-57cf-41d7-97a5-3c6bd1dbb06e",
+    "Name": "PgrPlants_MobileFormPage",
+    "ModifiedOnUtc": "\/Date(1780646137000)\/",
+    "Parent": {
+      "UId": "019c694a-1a3b-4812-b2e5-219b326061ae",
+      "Name": "MobilePageWithTabsFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Plants mobile form page",
+    "DependsOn": []
+  }
+}

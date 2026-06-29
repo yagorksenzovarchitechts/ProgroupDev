@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Amount.Caption" Value="Amount" />
+			<Item Name="Columns.CreatedOn.Caption" Value="Creation date" />
+			<Item Name="Columns.Date.Caption" Value="Order date" />
+			<Item Name="Columns.ModifiedOn.Caption" Value="Last change date" />
+			<Item Name="Columns.Notes.Caption" Value="Description" />
+			<Item Name="Columns.Number.Caption" Value="Progroup purchase order id" />
+			<Item Name="Columns.PgrAmountInEuro.Caption" Value="Amount in Euro" />
+			<Item Name="Columns.PgrCurrencyRate.Caption" Value="Currency rate" />
+			<Item Name="Columns.PgrCustomerOrderId.Caption" Value="Customer order id" />
+			<Item Name="Columns.PgrIsCancelled.Caption" Value="Cancelled" />
+			<Item Name="Columns.PgrTotalPrice.Caption" Value="Total price" />
+			<Item Name="Columns.PgrWorkingDayDate.Caption" Value="Working day date" />
+			<Item Name="Columns.Status.Caption" Value="Order status" />
+		</Items>
+	</Group>
+</Resources>

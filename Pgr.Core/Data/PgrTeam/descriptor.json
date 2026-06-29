@@ -1,0 +1,49 @@
+﻿{
+  "Descriptor": {
+    "UId": "24c87439-88a5-52ef-5eee-388afd683d9d",
+    "Name": "PgrTeam",
+    "ModifiedOnUtc": "\/Date(1781101331000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "3f1e945e-93e2-41c7-a9ec-091fb88f0a32",
+      "Name": "PgrTeam"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "2a49756b-f77f-6abf-4084-ec8c6108b863",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "PgrColor",
+        "DataTypeValueUId": "dafb71f9-ee9f-4e0b-a4d7-37aa15987155"
+      },
+      {
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Description",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "eb4430bd-a8a0-13db-6597-75680f6a4ca2",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "PgrSystemRole",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      }
+    ]
+  }
+}

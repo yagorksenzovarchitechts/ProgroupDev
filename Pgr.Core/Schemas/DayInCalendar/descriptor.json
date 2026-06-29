@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "1e071d07-8838-4610-a279-55fa2373f691",
+    "Name": "DayInCalendar",
+    "ModifiedOnUtc": "\/Date(1781185904000)\/",
+    "Parent": {
+      "UId": "13665ad9-ac50-479b-b43c-765d03988626",
+      "Name": "DayInCalendar"
+    },
+    "ExtendParent": true,
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Day in calendar",
+    "DependsOn": []
+  }
+}

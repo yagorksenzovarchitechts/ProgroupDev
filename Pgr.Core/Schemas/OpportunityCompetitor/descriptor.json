@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "8967893d-9f3c-41bf-b021-3af037e24497",
+    "Name": "OpportunityCompetitor",
+    "ModifiedOnUtc": "\/Date(1780914358000)\/",
+    "Parent": {
+      "UId": "60631073-00cf-469f-b99b-8078eceb345b",
+      "Name": "OpportunityCompetitor"
+    },
+    "ExtendParent": true,
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Competitor",
+    "DependsOn": []
+  }
+}

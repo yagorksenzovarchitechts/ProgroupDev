@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.ConnectionsTabContainerHeaderLabel_caption.Value" Value="Beziehungen" />
+			<Item Name="LocalizableStrings.ConnectionsTabContainer_caption.Value" Value="Beziehungen" />
+			<Item Name="LocalizableStrings.ExpansionPanel_wki6rii_title.Value" Value="Info" />
+			<Item Name="LocalizableStrings.Label_k843hzt_caption.Value" Value="Details" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
+			<Item Name="LocalizableStrings.TabContainer_6uff3ez_caption.Value" Value="Besuchsberichte" />
+			<Item Name="LocalizableStrings.TabContainer_w3tsrln_caption.Value" Value="Allgemeine Info" />
+			<Item Name="LocalizableStrings.addRecord_1g27yyy_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.addRecord_d7tgh1o_caption.Value" Value="Neu" />
+		</Items>
+	</Group>
+</Resources>

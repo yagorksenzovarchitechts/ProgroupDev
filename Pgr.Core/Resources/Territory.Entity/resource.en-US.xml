@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Name.Caption" Value="Territory name" />
+			<Item Name="Columns.PgrIsInactive.Caption" Value="Inactive" />
+			<Item Name="Columns.TerritoryType.Caption" Value="Territory type" />
+		</Items>
+	</Group>
+</Resources>

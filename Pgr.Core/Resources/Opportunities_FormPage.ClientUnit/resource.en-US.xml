@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Attachments" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Attachments" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancel" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Close" />
+			<Item Name="LocalizableStrings.CloseReason_label.Value" Value="Closing reason" />
+			<Item Name="LocalizableStrings.CreateOrderButton_caption.Value" Value="Create new order" />
+			<Item Name="LocalizableStrings.DocumentsAddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.DocumentsExpansionPanel_title.Value" Value="Documents" />
+			<Item Name="LocalizableStrings.DocumentsExportDataButton_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.DocumentsImportDataButton_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.DocumentsRefreshButton_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.DocumentsSearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.DocumentsSettingsButton_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.ExpansionPanel_lmmvc10_title.Value" Value="Tasks" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_dxaug4j_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_gp84e5g_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_bcm6a9x_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_vkje95b_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_9iu9e6b_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_g8nrvem_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.InvoicesAddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.InvoicesExpansionPanel_title.Value" Value="Invoices" />
+			<Item Name="LocalizableStrings.InvoicesExportDataButton_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.InvoicesImportDataButton_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.InvoicesRefreshButton_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.InvoicesSearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.InvoicesSettingsButton_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.OpportunityHistoryDS_EntityChangeType.Value" Value="Change Type" />
+			<Item Name="LocalizableStrings.OpportunityHistoryExpansionPanel_title.Value" Value="History of changes" />
+			<Item Name="LocalizableStrings.OpportunityHistoryExportDataBtn_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.OpportunityHistoryRefreshBtn_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.OpportunityHistorySearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.OpportunityHistorySettingsBtn_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.OrdersAddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.OrdersExpansionPanel_title.Value" Value="Orders" />
+			<Item Name="LocalizableStrings.OrdersExportDataButton_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.OrdersImportDataButton_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.OrdersRefreshButton_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.OrdersSearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.OrdersSettingsButton_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.QuickFilterShowAllDocuments_config_caption.Value" Value="Show all documents by customer" />
+			<Item Name="LocalizableStrings.QuickFilterShowAllInvoices_config_caption.Value" Value="Show all invoices by customer" />
+			<Item Name="LocalizableStrings.QuickFilterShowAllOrders_config_caption.Value" Value="Show all orders by customer" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
+			<Item Name="LocalizableStrings.addRecord_c4z34vo_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_ih4zcqj_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_mu4m9oi_caption.Value" Value="Add new" />
+		</Items>
+	</Group>
+</Resources>

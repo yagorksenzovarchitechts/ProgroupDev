@@ -39,9 +39,9 @@ namespace Terrasoft.Configuration
             "Connection",
             "Content-Length"
         };
-        
+
         private static readonly ILog ErrorLogger = LogManager.GetLogger("Error");
-        
+
         public Stream ProcessRequest(Stream requestBody, string path)
         {
             var startTime = DateTime.UtcNow;
@@ -118,7 +118,7 @@ namespace Terrasoft.Configuration
                     LogToDatabase(UserConnection, entry);
                 }
                 catch (Exception ex)
-                { 
+                {
                     ErrorLogger.Error(ex);
                 }
             }
@@ -133,9 +133,9 @@ namespace Terrasoft.Configuration
             errorMessage = ex.Message ?? string.Empty;
             context.OutgoingResponse.StatusCode = HttpStatusCode.InternalServerError;
             var errorBytes = Encoding.UTF8.GetBytes($"{{\"error\": \"{errorMessage}\"}}");
-            
+
             ErrorLogger.Error(ex);
-            
+
             return CreateResponseStream(errorBytes);
         }
 
@@ -198,7 +198,7 @@ namespace Terrasoft.Configuration
         {
             userConnection.CheckArgumentNull(nameof(userConnection));
             incomingRequest.CheckArgumentNull(nameof(incomingRequest));
-            
+
             var baseUrl = GetODataBaseUrl(userConnection);
             baseUrl = baseUrl.TrimEnd('/');
             path = path ?? string.Empty;
@@ -226,7 +226,7 @@ namespace Terrasoft.Configuration
             webRequest.ContentType = contentType ?? string.Empty;
             webRequest.Timeout = timeout;
             webRequest.ReadWriteTimeout = timeout;
-            
+
             return webRequest;
         }
 
@@ -234,7 +234,7 @@ namespace Terrasoft.Configuration
         {
             incomingRequest.CheckArgumentNull(nameof(incomingRequest));
             webRequest.CheckArgumentNull(nameof(webRequest));
-            
+
             var headers = incomingRequest.Headers;
             foreach (string headerKey in headers)
             {
@@ -251,7 +251,7 @@ namespace Terrasoft.Configuration
                 }
             }
         }
-        
+
         private void WriteRequestBody(HttpWebRequest webRequest, byte[] requestBodyBytes)
         {
             webRequest.CheckArgumentNull(nameof(webRequest));
@@ -344,8 +344,9 @@ namespace Terrasoft.Configuration
             {
                 throw new Exception($"System setting '{SiteUrlSettingsCode}' is not configured.");
             }
+
             var baseUrl = new Uri(siteUrlSetting).GetLeftPart(UriPartial.Authority);
-    
+
             return $"{baseUrl}/0/odata/";
         }
 
@@ -353,27 +354,26 @@ namespace Terrasoft.Configuration
         {
             userConnection.CheckArgumentNull(nameof(userConnection));
             entry.CheckArgumentNull(nameof(entry));
-            
-            
-                var truncatedRequestBody = TruncateText(entry.RequestBody, MaxBodyLength);
-                var truncatedResponseBody = TruncateText(entry.ResponseBody, MaxBodyLength);
 
-                var insertQuery = new Insert(userConnection)
-                    .Into("PgrOdataLog")
-                    .Set("Id", Column.Parameter(Guid.NewGuid()))
-                    .Set("PgrMethod", Column.Parameter(entry.Method ?? string.Empty))
-                    .Set("PgrUrl", Column.Parameter(entry.TargetUrl ?? string.Empty))
-                    .Set("PgrRequestBody", Column.Parameter(truncatedRequestBody))
-                    .Set("PgrResponseBody", Column.Parameter(truncatedResponseBody))
-                    .Set("PgrStatusCode",
-                        Column.Parameter(entry.StatusCode > 0 ? entry.StatusCode : (object) DBNull.Value))
-                    .Set("PgrDurationMs", Column.Parameter(entry.DurationMs))
-                    .Set("PgrError", Column.Parameter(entry.Error ?? string.Empty))
-                    .Set("CreatedOn", Column.Parameter(DateTime.Now))
-                    .Set("CreatedById", Column.Parameter(userConnection.CurrentUser.Id));
 
-                insertQuery.Execute();
-            
+            var truncatedRequestBody = TruncateText(entry.RequestBody, MaxBodyLength);
+            var truncatedResponseBody = TruncateText(entry.ResponseBody, MaxBodyLength);
+
+            var insertQuery = new Insert(userConnection)
+                .Into("PgrOdataLog")
+                .Set("Id", Column.Parameter(Guid.NewGuid()))
+                .Set("PgrMethod", Column.Parameter(entry.Method ?? string.Empty))
+                .Set("PgrUrl", Column.Parameter(entry.TargetUrl ?? string.Empty))
+                .Set("PgrRequestBody", Column.Parameter(truncatedRequestBody))
+                .Set("PgrResponseBody", Column.Parameter(truncatedResponseBody))
+                .Set("PgrStatusCode",
+                    Column.Parameter(entry.StatusCode > 0 ? entry.StatusCode : (object) DBNull.Value))
+                .Set("PgrDurationMs", Column.Parameter(entry.DurationMs))
+                .Set("PgrError", Column.Parameter(entry.Error ?? string.Empty))
+                .Set("CreatedOn", Column.Parameter(DateTime.Now))
+                .Set("CreatedById", Column.Parameter(userConnection.CurrentUser.Id));
+
+            insertQuery.Execute();
         }
 
         private string TruncateText(string text, int maxBodyLength)

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "67824ccd-ff82-4d87-8775-50878b15a14e",
+    "Name": "PgrExecuteSQL",
+    "ModifiedOnUtc": "\/Date(1782202964000)\/",
+    "ManagerName": "ProcessUserTaskSchemaManager",
+    "Caption": "Execute SQL",
+    "DependsOn": []
+  }
+}

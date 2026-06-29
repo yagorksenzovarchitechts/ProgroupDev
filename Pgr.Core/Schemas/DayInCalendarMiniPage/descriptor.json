@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "3015e96c-f975-42c6-9876-53999513f3d0",
+    "Name": "DayInCalendarMiniPage",
+    "ModifiedOnUtc": "\/Date(1781075982000)\/",
+    "Parent": {
+      "UId": "fbe0b266-7efa-4389-a312-acabbfa76cb3",
+      "Name": "DayInCalendarMiniPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Schema of day in calendar mini page",
+    "DependsOn": []
+  }
+}

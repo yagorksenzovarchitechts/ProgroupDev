@@ -1,0 +1,85 @@
+= MetaData.Schema.UId "e5082686-4225-455e-8a19-154ab77af6e6"
+= MetaData.Schema.A5 "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+= MetaData.Schema.B6 "655ac62c-1e4a-cc32-6e65-323f197c68e0"
++ MetaData.Schema.B7 true
+= MetaData.Schema.B8 "8.3.4.2753"
+= MetaData.Schema.AD4.BRS1.["659b6084-03cb-a723-80e7-981ee1846936"].BR1.["b0261e2c-053c-0a92-9df7-b241a1d9871c"].BRC1.BGC1 2
++ MetaData.Schema.AD4.BRS1.["659b6084-03cb-a723-80e7-981ee1846936"].BR1.["b0261e2c-053c-0a92-9df7-b241a1d9871c"].BRC1.BGC2.["c0e76d44-3a4f-2de8-d7ec-ecc334d0af2d"].BCO1.BRE1 "Lookup"
++ MetaData.Schema.AD4.BRS1.["659b6084-03cb-a723-80e7-981ee1846936"].BR1.["b0261e2c-053c-0a92-9df7-b241a1d9871c"].BRC1.BGC2 {
+  "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+  "UId": "e3302b30-657e-5e8b-f797-a1c0a77a4e03",
+  "BCO1": {
+    "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+    "UId": "908c5d77-5eaf-4fd0-729e-3c0cd9f27523",
+    "BRE1": "Lookup",
+    "BRE2": "AttributeValue",
+    "BRX1": "CloseReason",
+    "BRX2": "PDS"
+  },
+  "BCO2": {
+    "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+    "UId": "4ac8b85d-7c3d-2cb5-56db-f72cb9cf3abc",
+    "BRE1": "Lookup",
+    "BRE3": "OpportunityCloseReason",
+    "BVE1": "133ab81f-b40f-46d8-9ff0-7c8b542a4a7b"
+  },
+  "BCO3": 2
+}
++ MetaData.Schema.AD4.BRS1.["659b6084-03cb-a723-80e7-981ee1846936"].BR1.["b0261e2c-053c-0a92-9df7-b241a1d9871c"].BRC1.BGC2 {
+  "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+  "UId": "7ee49e11-b7d9-e35c-aa47-e84970899b88",
+  "BCO1": {
+    "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+    "UId": "7265267b-5615-a7cc-6258-a9c716ce4776",
+    "BRE1": "Lookup",
+    "BRE2": "AttributeValue",
+    "BRX1": "CloseReason",
+    "BRX2": "PDS"
+  },
+  "BCO2": {
+    "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+    "UId": "46739ab9-8159-6880-00b9-83cfb69bfa2c",
+    "BRE1": "Lookup",
+    "BRE3": "OpportunityCloseReason",
+    "BVE1": "6bf676d7-a4b7-41ec-a60d-c88dc8c3c042"
+  },
+  "BCO3": 2
+}
+~ MetaData.Schema.AD4.BRS1.["659b6084-03cb-a723-80e7-981ee1846936"].BR1.["b0261e2c-053c-0a92-9df7-b241a1d9871c"].BRC1.BGC2 [
+  "c0e76d44-3a4f-2de8-d7ec-ecc334d0af2d",
+  "e3302b30-657e-5e8b-f797-a1c0a77a4e03",
+  "7ee49e11-b7d9-e35c-aa47-e84970899b88"
+]
+- MetaData.Schema.AD4.BRS1.["659b6084-03cb-a723-80e7-981ee1846936"].BR2.["64eedcd4-8aec-e8bd-d909-3784a1de4dd3"].BRT3
++ MetaData.Schema.AD4.BRS1.["659b6084-03cb-a723-80e7-981ee1846936"].BR2 {
+  "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+  "UId": "2ba0790a-9022-5535-0d25-a9979725adeb",
+  "BRT1": "CloseReason",
+  "BRT3": "PDS"
+}
+- MetaData.Schema.AD4.BRS1.["659b6084-03cb-a723-80e7-981ee1846936"].BR2.["46780f43-db78-3aee-1f33-baed6efdd261"]
+- MetaData.Schema.AD4.BRS1.["659b6084-03cb-a723-80e7-981ee1846936"].BR2.["8c11ba31-0677-2ddd-9601-5f0ac29aaa64"]
+~ MetaData.Schema.AD4.BRS1.["659b6084-03cb-a723-80e7-981ee1846936"].BR2 [
+  "64eedcd4-8aec-e8bd-d909-3784a1de4dd3",
+  "2ba0790a-9022-5535-0d25-a9979725adeb"
+]
+- MetaData.Schema.AD4.BRS1.["a762e5dd-3914-e693-4d34-b834271ff76d"].BR2.["5b8ff454-7bc7-9657-b817-69c263e82684"].BRT3
+= MetaData.Schema.AD4.BRS1.["da745d48-905e-adaf-0bfa-dd334affdd5a"].BR1.["855f7f88-7fdc-b6a7-972a-abf166323d17"].BRC2.["3de6bd9c-8c10-acad-91b9-e5a0d673726d"].BRA4 "CloseReason"
+- MetaData.Schema.AD4.BRS1.["da745d48-905e-adaf-0bfa-dd334affdd5a"].BR2.["8a620aa7-26a6-10cf-e856-e0a429f87caa"].BRT3
+- MetaData.Schema.AD4.BRS1.["da745d48-905e-adaf-0bfa-dd334affdd5a"].BR2.["a59fa1d0-863b-ed5a-7ed9-988622ad1b89"]
+~ MetaData.Schema.AD4.BRS1.["da745d48-905e-adaf-0bfa-dd334affdd5a"].BR2 [
+  "8a620aa7-26a6-10cf-e856-e0a429f87caa",
+  "6afcb64f-6642-e68b-66ca-74073ad2e007"
+]
+- MetaData.Schema.AD4.BRS1.["6244feb7-57c7-b257-8b72-ca68fe9fbece"]
+- MetaData.Schema.AD4.BRS1.["cfcf7108-6733-78d2-1534-1c6dc3333533"]
+- MetaData.Schema.AD4.BRS1.["ff327e8a-8b56-1593-bb53-0b2cfee7b17b"]
+- MetaData.Schema.AD4.BRS1.["84f9aebd-e4d9-a458-154c-01cb1e1113be"]
+- MetaData.Schema.AD4.BRS1.["1cd0dd64-d59a-4bf4-c1d3-b2a8da93d71a"]
+~ MetaData.Schema.AD4.BRS1 [
+  "659b6084-03cb-a723-80e7-981ee1846936",
+  "a762e5dd-3914-e693-4d34-b834271ff76d",
+  "da745d48-905e-adaf-0bfa-dd334affdd5a"
+]
++ MetaData.Schema.B7 true
+= MetaData.Schema.AD5 "b19581f2-9891-45c3-8545-284bf4d3ff75"

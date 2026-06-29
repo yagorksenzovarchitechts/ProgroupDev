@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Amount.Caption" Value="Gesamtpreis" />
+			<Item Name="Columns.DiscountPercent.Caption" Value="Rabatt, %" />
+			<Item Name="Columns.PgrChopLength.Caption" Value="Haulänge" />
+			<Item Name="Columns.PgrConfirmedDeliveryDate.Caption" Value="Bestätigtes Lieferdatum" />
+			<Item Name="Columns.PgrCustomerProjectId.Caption" Value="Kundenprojekt Id" />
+			<Item Name="Columns.PgrIsCancelled.Caption" Value="Storniert" />
+			<Item Name="Columns.PgrOrderVolumeSqm.Caption" Value="Bestellmenge (Quadratmeter)" />
+			<Item Name="Columns.PgrProjectPriceId.Caption" Value="Projekt Id" />
+			<Item Name="Columns.PgrQuantityOrigin.Caption" Value="Stückzahl - Original" />
+			<Item Name="Columns.PgrReqDeliveryDate.Caption" Value="Wunschtermin" />
+			<Item Name="Columns.PgrWidth.Caption" Value="Breite" />
+			<Item Name="Columns.Price.Caption" Value="Gesamtpreis pro HQM" />
+			<Item Name="Columns.Product.Caption" Value="Qualität" />
+			<Item Name="Columns.Quantity.Caption" Value="Stückzahl" />
+			<Item Name="Columns.Unit.Caption" Value="Einheit" />
+		</Items>
+	</Group>
+</Resources>

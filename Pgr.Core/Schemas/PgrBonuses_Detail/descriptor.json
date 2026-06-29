@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "b6b22e87-4225-4805-94ba-4b4ab4a1bcc3",
+    "Name": "PgrBonuses_Detail",
+    "ModifiedOnUtc": "\/Date(1781784237000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Bonuses detail",
+    "DependsOn": []
+  }
+}

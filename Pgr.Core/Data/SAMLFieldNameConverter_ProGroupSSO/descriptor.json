@@ -1,0 +1,42 @@
+﻿{
+  "Descriptor": {
+    "UId": "3f62f0ea-f536-1418-4867-5d0ba2cc959d",
+    "Name": "SAMLFieldNameConverter_ProGroupSSO",
+    "ModifiedOnUtc": "\/Date(1780929902000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "50489d87-286f-420c-a306-ae2bdd7356fc",
+      "Name": "SAMLFieldNameConverter"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "1cca6142-7ef1-4d7b-b068-9f180e6a3ce7",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "SAMLFieldName",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "30e7fb61-c0a7-4f3a-9b56-4f3f980b7b05",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ContactFieldName",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "f758a26f-dbaf-409f-a617-6a75e720fb27",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "ColumnDefaultValue",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      }
+    ]
+  }
+}

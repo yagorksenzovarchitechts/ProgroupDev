@@ -1,0 +1,30 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "0baed5ac-e73d-4622-bd94-39c941066695"
+        },
+        {
+          "SchemaColumnUId": "56f69500-7667-4d74-9b5f-631c0158d1d3",
+          "Value": "6ca7e3b9-509a-42b8-afe4-95f72597bcf5",
+          "DisplayValue": "Lead processing"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "568893ff-9128-4be1-8bad-0c16495e5107"
+        },
+        {
+          "SchemaColumnUId": "56f69500-7667-4d74-9b5f-631c0158d1d3",
+          "Value": "7fae9977-ced9-4f76-b643-4305876ad026",
+          "DisplayValue": "Converting the lead into an opportunity"
+        }
+      ]
+    }
+  ]
+}

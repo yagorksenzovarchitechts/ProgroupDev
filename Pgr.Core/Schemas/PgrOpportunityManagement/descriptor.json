@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "4914766b-5938-438f-ac9a-dce6cdcf43a1",
+    "Name": "PgrOpportunityManagement",
+    "ModifiedOnUtc": "\/Date(1781187451000)\/",
+    "ManagerName": "DcmSchemaManager",
+    "Caption": "Opportunity Case",
+    "DependsOn": []
+  }
+}

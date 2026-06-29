@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.AdditionalPhone.Caption" Value="Mobile phone" />
+			<Item Name="Columns.EmployeesNumber.Caption" Value="Employee count" />
+			<Item Name="Columns.Notes.Caption" Value="Description" />
+			<Item Name="Columns.Owner.Caption" Value="Account owner" />
+			<Item Name="Columns.Pgr369ThresholdAbsolute.Caption" Value="369 trehshold absolute" />
+			<Item Name="Columns.Pgr369ThresholdPercentage.Caption" Value="369 treshold percentage" />
+			<Item Name="Columns.PgrAccountClassification.Caption" Value="Classification" />
+			<Item Name="Columns.PgrAccountLevel.Caption" Value="Level (Remove)" />
+			<Item Name="Columns.PgrAccountManagerCode.Caption" Value="Account owner code (delete)" />
+			<Item Name="Columns.PgrBestPlantLinked.Caption" Value="Best plant" />
+			<Item Name="Columns.PgrBoardConnect.Caption" Value="Board connect" />
+			<Item Name="Columns.PgrCompetitorNotes.Caption" Value="Notes" />
+			<Item Name="Columns.PgrCustomerServiceName.Caption" Value="Customer service name" />
+			<Item Name="Columns.PgrCustomerlabel.Caption" Value="Customer label" />
+			<Item Name="Columns.PgrDateBl.Caption" Value="Blocking date" />
+			<Item Name="Columns.PgrDeliveryBl.Caption" Value="Delivery blocked" />
+			<Item Name="Columns.PgrDeliveryShare.Caption" Value="Share %" />
+			<Item Name="Columns.PgrDuns.Caption" Value="DUNS" />
+			<Item Name="Columns.PgrEBox.Caption" Value="E-Box" />
+			<Item Name="Columns.PgrEmail.Caption" Value="Email" />
+			<Item Name="Columns.PgrEori.Caption" Value="EORI" />
+			<Item Name="Columns.PgrErpSystem.Caption" Value="ERP system provider" />
+			<Item Name="Columns.PgrExceedingCapacity.Caption" Value="Exceeding capacity" />
+			<Item Name="Columns.PgrGroupAffiliation.Caption" Value="Group affiliation" />
+			<Item Name="Columns.PgrHasEInvoicing.Caption" Value="E-invoicing process" />
+			<Item Name="Columns.PgrHasInvoiceMailprocess.Caption" Value="PDF invoice process" />
+			<Item Name="Columns.PgrInvoiceMailAddress.Caption" Value="Invoice mail-address" />
+			<Item Name="Columns.PgrIsActive.Caption" Value="Active" />
+			<Item Name="Columns.PgrIsFsc.Caption" Value="FSC" />
+			<Item Name="Columns.PgrIsTestCustomer.Caption" Value="Test customer" />
+			<Item Name="Columns.PgrIsVertIntegrated.Caption" Value="Vertical integrated" />
+			<Item Name="Columns.PgrLastVisit.Caption" Value="Last visit" />
+			<Item Name="Columns.PgrMainPlantLinked.Caption" Value="Main plant" />
+			<Item Name="Columns.PgrMaxOverDelivery.Caption" Value="Maximum over-delivery" />
+			<Item Name="Columns.PgrMaxUnderDelivery.Caption" Value="Maximum under-delivery" />
+			<Item Name="Columns.PgrOrderBl.Caption" Value="Order blocked" />
+			<Item Name="Columns.PgrOverDeliveryPercentage1.Caption" Value="Over-delivery from quantity % 1" />
+			<Item Name="Columns.PgrOverDeliveryPercentage2.Caption" Value="Over-delivery from quantity % 2" />
+			<Item Name="Columns.PgrOverDeliveryQuantity1.Caption" Value="Over-delivery from quantity quantity 1" />
+			<Item Name="Columns.PgrOverDeliveryQuantity2.Caption" Value="Over-delivery from quantity quantity 2" />
+			<Item Name="Columns.PgrPlanningBl.Caption" Value="Planning blocked" />
+			<Item Name="Columns.PgrProductionCapacity.Caption" Value="Production capacity" />
+			<Item Name="Columns.PgrSalesDirector.Caption" Value="Sales director" />
+			<Item Name="Columns.PgrSalesManager.Caption" Value="Sales Manager" />
+			<Item Name="Columns.PgrSapCustomerId.Caption" Value="SAP Customer ID" />
+			<Item Name="Columns.PgrSapCustomerNumber.Caption" Value="SAP customer number (delete)" />
+			<Item Name="Columns.PgrSensitiveToOverDelivery.Caption" Value="Sensitive to over-delivery" />
+			<Item Name="Columns.PgrServiceTeamLead.Caption" Value="Customer service team lead name" />
+			<Item Name="Columns.PgrSpecialFeatures.Caption" Value="Special features" />
+			<Item Name="Columns.PgrVatNumber.Caption" Value="VAT number" />
+			<Item Name="Columns.PgrWFName.Caption" Value="WF name (delete)" />
+			<Item Name="Columns.PgrWepaformCustomerId.Caption" Value="Wepaform Customer ID" />
+			<Item Name="Columns.PgrWepaformCustomerId2.Caption" Value="Wepaform customer ID (delete)" />
+			<Item Name="Columns.PgrWepaformName.Caption" Value="Wepaform name" />
+			<Item Name="Columns.PgrWorkingWidth.Caption" Value="Working width" />
+			<Item Name="Columns.PgrYearOfCommissioning.Caption" Value="Year of commissioning " />
+			<Item Name="Columns.Phone.Caption" Value="Phone" />
+		</Items>
+	</Group>
+</Resources>

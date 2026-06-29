@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.0d03236f-2e19-aa33-630f-4c83cbf02769.Caption" Value="Make elements read-only: Full address" />
+			<Item Name="AddonConfig.Rules.d506989a-a648-7b1d-cc33-dc17e8d994c3.Caption" Value="Apply static filter: Address type" />
+		</Items>
+	</Group>
+</Resources>

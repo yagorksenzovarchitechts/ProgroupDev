@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AccountsSearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.DataGrid_ak1t7lzDS_OpportunityAccountAmountSum6bd08472.Value" Value="Open pipeline" />
+			<Item Name="LocalizableStrings.DataGrid_ak1t7lzDS_OpportunityAccountIdCount3843c9d2.Value" Value="Open opportunities count" />
+			<Item Name="LocalizableStrings.DataGrid_l4ch9hmDS_OpportunityAccountAmountSum52a09b7d.Value" Value="Open pipeline" />
+			<Item Name="LocalizableStrings.DataGrid_l4ch9hmDS_OpportunityAccountAmountSumada421c6.Value" Value="Open pipeline" />
+			<Item Name="LocalizableStrings.DataGrid_l4ch9hmDS_OpportunityAccountAmountSumde28e57c.Value" Value="Open pipeline" />
+			<Item Name="LocalizableStrings.DataGrid_l4ch9hmDS_OpportunityAccountIdCount604949d9.Value" Value="Open opportunities count" />
+			<Item Name="LocalizableStrings.DataGrid_l4ch9hmDS_OpportunityAccountIdCount745180c0.Value" Value="Open opportunities count" />
+			<Item Name="LocalizableStrings.DataGrid_l4ch9hmDS_OpportunityAccountIdCountc99ca3eb.Value" Value="Open opportunities count" />
+			<Item Name="LocalizableStrings.DataGrid_p2vurd4DS_OpportunityAccountAmountSum23a80b55.Value" Value="Open pipeline" />
+			<Item Name="LocalizableStrings.DataGrid_p2vurd4DS_OpportunityAccountAmountSuma3f7d911.Value" Value="Opportunity amount Sum of values" />
+			<Item Name="LocalizableStrings.DataGrid_p2vurd4DS_OpportunityAccountIdCount74188cf8.Value" Value="Open opportunities count" />
+			<Item Name="LocalizableStrings.DataTableAccountList_caption.Value" Value="Accounts" />
+			<Item Name="LocalizableStrings.LookupQuickFilterAccountsByTag_caption.Value" Value="Tag" />
+			<Item Name="LocalizableStrings.LookupQuickFilterAccountsByTag_config_caption.Value" Value="Tag" />
+			<Item Name="LocalizableStrings.LookupQuickFilterAccountsByTag_config_hint.Value" Value="Select tag" />
+			<Item Name="LocalizableStrings.LookupQuickFilterAccountsByTag_hint.Value" Value="Select tag" />
+			<Item Name="LocalizableStrings.LookupQuickFilterAccountsCountry_caption.Value" Value="Country" />
+			<Item Name="LocalizableStrings.LookupQuickFilterAccountsCountry_hint.Value" Value="Select country" />
+			<Item Name="LocalizableStrings.LookupQuickFilterAccountsIndusrty_caption.Value" Value="Industry" />
+			<Item Name="LocalizableStrings.LookupQuickFilterAccountsIndusrty_hint.Value" Value="Select industry" />
+			<Item Name="LocalizableStrings.LookupQuickFilterAccountsTier_caption.Value" Value="Tier" />
+			<Item Name="LocalizableStrings.LookupQuickFilterAccountsTier_hint.Value" Value="Select tier" />
+			<Item Name="LocalizableStrings.LookupQuickFilterAccountsType_caption.Value" Value="Type" />
+			<Item Name="LocalizableStrings.LookupQuickFilterAccountsType_hint.Value" Value="Select type" />
+			<Item Name="LocalizableStrings.LookupQuickFilterByAccountsTag_caption.Value" Value="Tag" />
+			<Item Name="LocalizableStrings.LookupQuickFilterByAccountsTag_hint.Value" Value="Select tag" />
+			<Item Name="LocalizableStrings.LookupQuickFilterCountry_caption.Value" Value="Country" />
+			<Item Name="LocalizableStrings.LookupQuickFilterIndustry_caption.Value" Value="Industry" />
+			<Item Name="LocalizableStrings.LookupQuickFilterTier_caption.Value" Value="Tier" />
+			<Item Name="LocalizableStrings.LookupQuickFilterType_caption.Value" Value="Type" />
+			<Item Name="LocalizableStrings.LookupQuickFilterType_config_caption.Value" Value="Type" />
+			<Item Name="LocalizableStrings.PDS_AccountTerritoryIdCount337ef925.Value" Value="Unallotted accounts" />
+			<Item Name="LocalizableStrings.PDS_AccountTerritoryIdCount594829ef.Value" Value="Accounts with open pipeline" />
+			<Item Name="LocalizableStrings.PDS_AccountTerritoryIdCount607167d3.Value" Value="Assigned accounts" />
+			<Item Name="LocalizableStrings.PDS_AccountTerritoryIdCounta0b5b5a3.Value" Value="Customers" />
+			<Item Name="LocalizableStrings.PDS_AccountTerritoryLeadQualifiedAccountIdCountd89ab8b6.Value" Value="Lead (by column Account) Number of records" />
+			<Item Name="LocalizableStrings.PDS_AccountTerritory_OpportunityAccount_Amount_6ts2x0t.Value" Value="Open pipeline" />
+			<Item Name="LocalizableStrings.PDS_LeadTerritoryIdCount090da798.Value" Value="Open leads" />
+			<Item Name="LocalizableStrings.PDS_OpportunityTerritoryIdCount924a2cc5.Value" Value="Open opportunities" />
+			<Item Name="LocalizableStrings.PDS_TerritoryParentTerritoryIdCount1a912953.Value" Value="Territory (where Territory is Parent territory) Number of records" />
+			<Item Name="LocalizableStrings.PDS_TerritoryParentTerritory_Id_n0sood5.Value" Value="Rep territories" />
+			<Item Name="LocalizableStrings.QuickFilter_1emnj1h_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_37sgtks_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_3k5p9bi_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_rknngsx_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_vkdywtl_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.SummaryItem_jjurm03_label.Value" Value="Count" />
+		</Items>
+	</Group>
+</Resources>

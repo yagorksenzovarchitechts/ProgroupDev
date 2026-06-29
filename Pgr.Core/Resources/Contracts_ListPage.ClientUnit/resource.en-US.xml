@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AccountQuickFilter_config_caption.Value" Value="Account" />
+			<Item Name="LocalizableStrings.DurationQuickFilter_config_caption.Value" Value="Valid from" />
+			<Item Name="LocalizableStrings.ValidFromQuickFilter_config_caption.Value" Value="Valid from" />
+			<Item Name="LocalizableStrings.ValidToQuickFilter_config_caption.Value" Value="Valid to" />
+		</Items>
+	</Group>
+</Resources>

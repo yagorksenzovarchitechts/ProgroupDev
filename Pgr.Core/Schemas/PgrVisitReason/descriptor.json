@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "cf86af8a-2197-4f48-9ff7-3c57665c15d4",
+    "Name": "PgrVisitReason",
+    "ModifiedOnUtc": "\/Date(1781867567000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Visit reason lookup",
+    "DependsOn": []
+  }
+}

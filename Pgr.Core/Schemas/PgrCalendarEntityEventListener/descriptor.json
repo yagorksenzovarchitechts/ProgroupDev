@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "229b2217-bef6-4cc3-bafa-374657f9d2a6",
+    "Name": "PgrCalendarEntityEventListener",
+    "ModifiedOnUtc": "\/Date(1781095723000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "PgrCalendarEntityEventListener",
+    "DependsOn": []
+  }
+}

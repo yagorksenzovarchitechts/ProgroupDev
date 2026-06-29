@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.0f2029f6-dc72-8309-73a7-c573b600b239.Caption" Value="Make elements read-only" />
+			<Item Name="AddonConfig.Rules.4164c114-4f92-c6e2-0686-967ce1d4180b.Caption" Value="Make elements required: Reason (no visit)" />
+			<Item Name="Caption" Value="Visit report (Business rules)" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "f25488da-a1ed-43e9-bfb9-1dbfd7f05d3b",
+    "Name": "Orders_FormPage",
+    "ModifiedOnUtc": "\/Date(1782736397000)\/",
+    "Parent": {
+      "UId": "8e64ffe9-e8dd-4e2e-8330-2c0dc05bc704",
+      "Name": "Orders_FormPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Orders form page",
+    "DependsOn": []
+  }
+}

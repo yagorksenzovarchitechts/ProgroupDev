@@ -1,0 +1,10 @@
+= MetaData.Schema.UId "6a2e8b52-57cf-41d7-97a5-3c6bd1dbb06e"
+= MetaData.Schema.A2 "PgrPlants_MobileFormPage"
+= MetaData.Schema.A5 "d484d861-d8e5-4a3f-84ad-1d9256189431"
+~ MetaData.Schema.B2 ["663c3c8e-68a3-499b-a691-e29c9b521ed2","f89b4047-bbf8-49bd-9404-9e438a35acb9","110e206c-e7ff-4139-b0fd-39e9b0184bc0","1be3735e-6e86-486a-a502-0f44e3939e80"]
+= MetaData.Schema.B6 "a00051f4-cde3-4f3f-b08e-c5ad1a5c735a"
+= MetaData.Schema.HD1 "019c694a-1a3b-4812-b2e5-219b326061ae"
+= MetaData.Schema.HD6 "null"
+- MetaData.Schema.B7
+- MetaData.Schema.HD12
++ MetaData.Schema.B7 false

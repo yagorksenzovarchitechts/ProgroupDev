@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "43ded3c4-ccbb-4a5e-acda-cd3ec4af95a9",
     "Name": "PgrODataProxyService",
-    "ModifiedOnUtc": "\/Date(1779439493000)\/",
+    "ModifiedOnUtc": "\/Date(1780661202000)\/",
     "ManagerName": "SourceCodeSchemaManager",
     "Caption": "ODataProxyService",
     "DependsOn": []

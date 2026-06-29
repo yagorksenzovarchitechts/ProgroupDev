@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "3d9e80d0-4807-4683-b755-2833a0aa2391",
+    "Name": "WorkingWeekDetail",
+    "ModifiedOnUtc": "\/Date(1781075770000)\/",
+    "Parent": {
+      "UId": "b96f3028-71c8-4227-a8a3-6d02ad1238da",
+      "Name": "WorkingWeekDetail"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "WorkingWeekDetail",
+    "DependsOn": []
+  }
+}

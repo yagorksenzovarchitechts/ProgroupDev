@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Importieren" />
+			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value=" Excel-Export" />
+			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Suche..." />
+		</Items>
+	</Group>
+</Resources>

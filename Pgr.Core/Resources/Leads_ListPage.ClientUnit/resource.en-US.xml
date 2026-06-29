@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Import" />
+			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_caption.Value" Value="Tag" />
+			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.QuickFilter_b8cul2d_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_zked60v_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_zked60v_config_caption.Value" Value="Status" />
+			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.TerritoryQuickFilter_caption.Value" Value="Territory" />
+			<Item Name="LocalizableStrings.TerritoryQuickFilter_config_caption.Value" Value="Territory" />
+		</Items>
+	</Group>
+</Resources>

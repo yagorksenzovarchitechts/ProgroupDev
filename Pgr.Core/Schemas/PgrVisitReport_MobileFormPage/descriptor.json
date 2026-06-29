@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "13edcfe3-ad01-42f1-87b9-7717454f9081",
+    "Name": "PgrVisitReport_MobileFormPage",
+    "ModifiedOnUtc": "\/Date(1781877869000)\/",
+    "Parent": {
+      "UId": "019c694a-1a3b-4812-b2e5-219b326061ae",
+      "Name": "MobilePageWithTabsFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Visit report mobile form page",
+    "DependsOn": []
+  }
+}

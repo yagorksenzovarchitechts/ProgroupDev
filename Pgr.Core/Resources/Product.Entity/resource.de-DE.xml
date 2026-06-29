@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Code.Caption" Value="Code" />
+			<Item Name="Columns.Name.Caption" Value="Qualität" />
+			<Item Name="Columns.PgrWepaFormProductId.Caption" Value="Wepaform Product ID" />
+		</Items>
+	</Group>
+</Resources>

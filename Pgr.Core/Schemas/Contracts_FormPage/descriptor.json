@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "363edd25-c649-48ad-bec8-2bacf865762a",
+    "Name": "Contracts_FormPage",
+    "ModifiedOnUtc": "\/Date(1782304804000)\/",
+    "Parent": {
+      "UId": "631a1a1e-6c4e-478f-ad88-c32c479e615d",
+      "Name": "Contracts_FormPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Contracts form page",
+    "DependsOn": []
+  }
+}

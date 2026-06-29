@@ -1,0 +1,49 @@
+= MetaData.Schema.UId "02314a08-27dd-4092-af2a-7043ad111e29"
+= MetaData.Schema.A5 "a5d0b070-816f-4efc-b203-8dfdf57ae654"
++ MetaData.Schema.B2 {
+  "UId": "1ff3a816-e981-9f69-eb40-ed1e24855c6c",
+  "A2": "SaveButton_caption",
+  "A3": "02314a08-27dd-4092-af2a-7043ad111e29",
+  "A4": "02314a08-27dd-4092-af2a-7043ad111e29",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "b7efe4ac-7ec3-0fa1-65bf-8d213f80ae00",
+  "A2": "CancelButton_caption",
+  "A3": "02314a08-27dd-4092-af2a-7043ad111e29",
+  "A4": "02314a08-27dd-4092-af2a-7043ad111e29",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
+= MetaData.Schema.B2.["3e977072-67fa-588e-d554-1d5c45e71ae9"].A4 "02314a08-27dd-4092-af2a-7043ad111e29"
+= MetaData.Schema.B2.["231defdf-a768-e23a-fb30-1af82d65f9f9"].A4 "02314a08-27dd-4092-af2a-7043ad111e29"
+= MetaData.Schema.B2.["ab25e39b-426f-a0e7-993d-a260a5df4ff2"].A4 "02314a08-27dd-4092-af2a-7043ad111e29"
+= MetaData.Schema.B2.["ec6cab03-1f08-4d53-9ca9-7a76f4b90b87"].A4 "02314a08-27dd-4092-af2a-7043ad111e29"
+= MetaData.Schema.B2.["7ef16282-5424-f01b-7256-9b04a007dc3b"].A4 "02314a08-27dd-4092-af2a-7043ad111e29"
+= MetaData.Schema.B2.["87fe0096-dd70-79d6-95f6-4c9075c969fd"].A4 "02314a08-27dd-4092-af2a-7043ad111e29"
+= MetaData.Schema.B2.["0011a5bb-3302-742c-a621-c833f2ec8174"].A4 "02314a08-27dd-4092-af2a-7043ad111e29"
+= MetaData.Schema.B2.["67995f5e-d70a-e2a3-5494-a22737ff9c44"].A4 "02314a08-27dd-4092-af2a-7043ad111e29"
+= MetaData.Schema.B2.["be578da5-5d7d-ab2f-1e20-3e60b2942dd8"].A4 "02314a08-27dd-4092-af2a-7043ad111e29"
+~ MetaData.Schema.B2 [
+  "1ff3a816-e981-9f69-eb40-ed1e24855c6c",
+  "b7efe4ac-7ec3-0fa1-65bf-8d213f80ae00",
+  "3e977072-67fa-588e-d554-1d5c45e71ae9",
+  "231defdf-a768-e23a-fb30-1af82d65f9f9",
+  "ab25e39b-426f-a0e7-993d-a260a5df4ff2",
+  "ec6cab03-1f08-4d53-9ca9-7a76f4b90b87",
+  "7ef16282-5424-f01b-7256-9b04a007dc3b",
+  "87fe0096-dd70-79d6-95f6-4c9075c969fd",
+  "0011a5bb-3302-742c-a621-c833f2ec8174",
+  "67995f5e-d70a-e2a3-5494-a22737ff9c44",
+  "be578da5-5d7d-ab2f-1e20-3e60b2942dd8"
+]
+= MetaData.Schema.B6 "655ac62c-1e4a-cc32-6e65-323f197c68e0"
+= MetaData.Schema.B7 true
+= MetaData.Schema.B8 "8.3.4.2753"
+= MetaData.Schema.HD1 "ba86eb14-20fc-4321-bdee-4b9323dfd4e8"
++ MetaData.Schema.HD15 1
+= MetaData.Schema.HD6 "define('{0}Structure', ['{0}Resources'], function(resources) {{return {{schemaUId:'{2}',schemaName:'{3}',parentSchemaUId:'{4}',extendParent:{5},type:Terrasoft.SchemaType.ANGULAR_SCHEMA,entitySchema:'',name:'',extend:'Terrasoft.model.BaseViewModel',schema:{{leftPanel:[],rightPanel:[],actions:[],analytics:[]}},methods:{{}},controlsConfig:{{}},customBindings:{{}},bindings:{{}},parameters:{{}},schemaVersion:1,optionalProperties:{{}},schemaDifferences:function(){{\n{1}\n}}}};}});"
+- MetaData.Schema.HD2
+- MetaData.Schema.HD9
+- MetaData.Schema.HD10
+- MetaData.Schema.HD12
++ MetaData.Schema.B7 true

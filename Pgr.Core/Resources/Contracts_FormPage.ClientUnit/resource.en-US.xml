@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.ExpansionPanel_c1gtxz5_title.Value" Value="Documents" />
+			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="Contract information" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_qqua8e5_caption.Value" Value="Upload" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_z28jaog_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_7h57lrd_placeholder.Value" Value="Search" />
+		</Items>
+	</Group>
+</Resources>

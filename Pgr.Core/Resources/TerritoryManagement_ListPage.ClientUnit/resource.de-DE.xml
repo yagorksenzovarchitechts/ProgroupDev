@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.DashboardsTabContainer_caption.Value" Value="Analysen" />
+			<Item Name="LocalizableStrings.DataTableAccountList_caption.Value" Value="Unternehmen" />
+			<Item Name="LocalizableStrings.ListTabContainer_caption.Value" Value="Vertriebsregionen" />
+			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value="Excel-Export" />
+			<Item Name="LocalizableStrings.MenuItem_ImportFromExcel_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Suche..." />
+			<Item Name="LocalizableStrings.SummaryItem_dpazqqk_label.Value" Value="Anzahl" />
+		</Items>
+	</Group>
+</Resources>

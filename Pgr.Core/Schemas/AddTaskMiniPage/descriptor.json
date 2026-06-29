@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "733240e3-d862-4bd6-bc0d-3b78991cd4c9",
+    "Name": "AddTaskMiniPage",
+    "ModifiedOnUtc": "\/Date(1782395766000)\/",
+    "Parent": {
+      "UId": "306fff85-4a1c-4cb1-ae5b-133c6d8b0be9",
+      "Name": "AddTaskMiniPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Tasks mini page",
+    "DependsOn": []
+  }
+}

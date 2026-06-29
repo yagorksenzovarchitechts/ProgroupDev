@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "d26e5666-e607-4a0a-b4d8-9acd2b67b798",
+    "Name": "PgrCalendarsRelatedPage",
+    "ModifiedOnUtc": "\/Date(1780559907000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Calendars (Page settings)",
+    "DependsOn": []
+  }
+}

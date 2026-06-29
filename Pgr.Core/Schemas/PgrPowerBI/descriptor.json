@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "a0cbee05-bf21-46ef-b02b-b64d5273cdeb",
+    "Name": "PgrPowerBI",
+    "ModifiedOnUtc": "\/Date(1781861986000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Power BI",
+    "DependsOn": []
+  }
+}

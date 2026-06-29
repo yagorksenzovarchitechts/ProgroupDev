@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.DateCaption.Value" Value="Datum" />
+			<Item Name="LocalizableStrings.DayTypeCaption.Value" Value="Tagestyp" />
+			<Item Name="LocalizableStrings.DuplicateDateErrorMessage.Value" Value="Das gewählte Datum wurde bereits vergeben. Bitte wählen Sie ein anderes." />
+			<Item Name="LocalizableStrings.EmptyDateOrDateTypeErrorMessage.Value" Value="Bitte geben Sie ein Datum und eine Wochentagskategorie ein." />
+			<Item Name="LocalizableStrings.ErrorOnRemove.Value" Value="Datensätze mit einem Datum vor dem aktuellen Datum können nicht gelöscht werden." />
+			<Item Name="LocalizableStrings.ErrorOnSave.Value" Value="Sie können keinen Datensatz mit einem Datum hinzufügen, das vor dem aktuellen Datum liegt." />
+			<Item Name="LocalizableStrings.SetWorkingHourCaption.Value" Value="Feste Arbeitszeiten" />
+			<Item Name="LocalizableStrings.WorkingIntervalsCaption.Value" Value="Arbeitszeit" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.DayOfWeekCaption.Value" Value="Wochentag" />
+			<Item Name="LocalizableStrings.DayTypeCaption.Value" Value="Tagestyp" />
+			<Item Name="LocalizableStrings.SetWorkingHourCaption.Value" Value="Feste Arbeitszeiten" />
+			<Item Name="LocalizableStrings.WorkingIntervalsCaption.Value" Value="Arbeitszeit" />
+		</Items>
+	</Group>
+</Resources>

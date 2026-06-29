@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Visit report list page" />
+			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Import" />
+			<Item Name="LocalizableStrings.PDS_PgrAccount.Value" Value="Account" />
+			<Item Name="LocalizableStrings.QuickFilter_847b6lj_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_847b6lj_config_caption.Value" Value="Sales Manager" />
+			<Item Name="LocalizableStrings.QuickFilter_xcy77p3_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_xcy77p3_config_caption.Value" Value="Account" />
+		</Items>
+	</Group>
+</Resources>

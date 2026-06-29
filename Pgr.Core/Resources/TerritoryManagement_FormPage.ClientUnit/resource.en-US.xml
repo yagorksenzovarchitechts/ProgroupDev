@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AccountsExpansionPanel_title.Value" Value="Accounts" />
+			<Item Name="LocalizableStrings.AccountsList_AssignTerritoryBulkAction_caption.Value" Value="Assign territory" />
+			<Item Name="LocalizableStrings.AccountsWithOpenPipelineOverviewWidget_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.AccountsWithOpenPipelineOverviewWidget_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.AccountsWithOpenPipelineOverviewWidget_title.Value" Value="Accounts with open pipeline" />
+			<Item Name="LocalizableStrings.AccountsWithOpenPipelineWidget_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.AccountsWithOpenPipelineWidget_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.AccountsWithOpenPipelineWidget_title.Value" Value="Accounts with open pipeline" />
+			<Item Name="LocalizableStrings.AssignedAccountsOverviewWidget_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancel" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Close" />
+			<Item Name="LocalizableStrings.ConnectionsTab_caption.Value" Value="Accounts &amp; Connections" />
+			<Item Name="LocalizableStrings.CustomersOverviewWidget_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.ExpansionPanel_086h6au_title.Value" Value="Accounts" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_0mlckzs_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_7k6y3eg_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_a9pocks_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_a45jvka_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_i2zbc1x_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_pophcyz_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.GridDetail_215hdfbDS_LeadName.Value" Value="Name" />
+			<Item Name="LocalizableStrings.GridDetail_215hdfbDS_QualifyStatus.Value" Value="Stage" />
+			<Item Name="LocalizableStrings.GridDetail_215hdfbDS_QualifyStatusNameTopOne1c0c833f.Value" Value="Name (the first record value)" />
+			<Item Name="LocalizableStrings.GridDetail_215hdfb_AddTagsBulkAction_caption.Value" Value="Add tag" />
+			<Item Name="LocalizableStrings.GridDetail_215hdfb_RemoveTagsBulkAction_caption.Value" Value="Remove tag" />
+			<Item Name="LocalizableStrings.GridDetail_ml0stczDS_Amount.Value" Value="Total contract value" />
+			<Item Name="LocalizableStrings.GridDetail_ml0stczDS_DueDate.Value" Value="Expected close date" />
+			<Item Name="LocalizableStrings.GridDetail_ml0stczDS_Type.Value" Value="Sales channel" />
+			<Item Name="LocalizableStrings.GridDetail_ml0stcz_AddTagsBulkAction_caption.Value" Value="Add tag" />
+			<Item Name="LocalizableStrings.GridDetail_ml0stcz_RemoveTagsBulkAction_caption.Value" Value="Remove tag" />
+			<Item Name="LocalizableStrings.GridDetail_ob4ognwDS_OpportunityAccountAmountSum8622d20a.Value" Value="Open pipeline" />
+			<Item Name="LocalizableStrings.GridDetail_ob4ognwDS_OpportunityAccountAmountSumdf534c41.Value" Value="Open Pipeline" />
+			<Item Name="LocalizableStrings.GridDetail_ob4ognwDS_OpportunityAccountIdCount6ce9a520.Value" Value="Open Opportunities" />
+			<Item Name="LocalizableStrings.GridDetail_ob4ognwDS_OpportunityAccountIdCounta1c0001c.Value" Value="Open opportunities" />
+			<Item Name="LocalizableStrings.GridDetail_t44cjbxDS_AccountTerritoryIdCount3d7e7c97.Value" Value="Customers" />
+			<Item Name="LocalizableStrings.GridDetail_t44cjbxDS_AccountTerritoryIdCount7cbe0cac.Value" Value="Unallotted accounts" />
+			<Item Name="LocalizableStrings.GridDetail_t44cjbxDS_AccountTerritoryIdCount8c8d2401.Value" Value="Accounts with open pipeline" />
+			<Item Name="LocalizableStrings.GridDetail_t44cjbxDS_AccountTerritoryIdCountc0fe1a74.Value" Value="Assigned accounts" />
+			<Item Name="LocalizableStrings.GridDetail_t44cjbxDS_AccountTerritory_OpportunityAccount_Amount_bd1usjd.Value" Value="Open pipeline" />
+			<Item Name="LocalizableStrings.GridDetail_t44cjbxDS_LeadTerritoryIdCount53bb14e4.Value" Value="Open leads" />
+			<Item Name="LocalizableStrings.GridDetail_t44cjbxDS_OpportunityTerritoryAmountSum63bea865.Value" Value="Open pipeline" />
+			<Item Name="LocalizableStrings.GridDetail_t44cjbxDS_OpportunityTerritoryIdCounte781f86e.Value" Value="Open opportunities" />
+			<Item Name="LocalizableStrings.LeadsAssignButton_caption.Value" Value="Assign" />
+			<Item Name="LocalizableStrings.LeadsExpansionPanel_title.Value" Value="Leads" />
+			<Item Name="LocalizableStrings.LeadsExportDataButton_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.LeadsRefreshButton_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.LeadsSearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.LeadsSettingsButton_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.LookupQuickFilterCountry_config_caption.Value" Value="Country" />
+			<Item Name="LocalizableStrings.LookupQuickFilterIndustry_config_caption.Value" Value="Industry" />
+			<Item Name="LocalizableStrings.LookupQuickFilterTier_config_caption.Value" Value="Tier" />
+			<Item Name="LocalizableStrings.LookupQuickFilterType_config_caption.Value" Value="Type" />
+			<Item Name="LocalizableStrings.MenuItem_1cs8hzj_caption.Value" Value="Menu item" />
+			<Item Name="LocalizableStrings.MenuItem_7wymbz4_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.OpenLeadsOverviewWidget_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.OpenLeadsOverviewWidget_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.OpenLeadsOverviewWidget_title.Value" Value="Open leads" />
+			<Item Name="LocalizableStrings.OpenLeadsWidget_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.OpenLeadsWidget_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.OpenLeadsWidget_title.Value" Value="Open leads" />
+			<Item Name="LocalizableStrings.OpenOpportunitiesOverviewWidget_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.OpenOpportunitiesOverviewWidget_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.OpenOpportunitiesOverviewWidget_title.Value" Value="Open opportunities" />
+			<Item Name="LocalizableStrings.OpenOpportunitiesWidget_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.OpenOpportunitiesWidget_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.OpenOpportunitiesWidget_title.Value" Value="Open opportunities" />
+			<Item Name="LocalizableStrings.OpenPipelineOverviewWidget_config_text_template.Value" Value="$ {0}" />
+			<Item Name="LocalizableStrings.OpenPipelineOverviewWidget_template.Value" Value="$ {0}" />
+			<Item Name="LocalizableStrings.OpenPipelineOverviewWidget_title.Value" Value="Open pipeline" />
+			<Item Name="LocalizableStrings.OpenPipelineWidget_config_text_template.Value" Value="$ {0}" />
+			<Item Name="LocalizableStrings.OpenPipelineWidget_template.Value" Value="$ {0}" />
+			<Item Name="LocalizableStrings.OpenPipelineWidget_title.Value" Value="Open pipeline" />
+			<Item Name="LocalizableStrings.OpportunitiesAssignButton_caption.Value" Value="Assign" />
+			<Item Name="LocalizableStrings.OpportunitiesExpansionPanel_title.Value" Value="Opportunities" />
+			<Item Name="LocalizableStrings.OpportunitiesLeadsExportDataButton_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.OpportunitiesLeadsSettingsButton_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.OpportunitiesRefreshButton_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.OpportunitiesSearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.RepTerritoriesOverviewWidget_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.RepTerritoriesWidget_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
+			<Item Name="LocalizableStrings.TotalAccountsWidget_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.UnallottedAccountsOverviewWidget_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.UnallottedAccountsWidget_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.UnassignedRecordsByCityWidget_title.Value" Value="Unassigned records  by city" />
+			<Item Name="LocalizableStrings.UnassignedRecordsByCountryWidget_series_1.Value" Value="Lead" />
+			<Item Name="LocalizableStrings.UnassignedRecordsByCountryWidget_series_2.Value" Value="Opportunity" />
+			<Item Name="LocalizableStrings.UnassignedRecordsByCountryWidget_title.Value" Value="Unassigned records  by country" />
+			<Item Name="LocalizableStrings.UnassignedRecordsByStateWidget_title.Value" Value="Unassigned records by region" />
+		</Items>
+	</Group>
+</Resources>

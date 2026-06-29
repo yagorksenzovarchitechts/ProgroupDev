@@ -1,0 +1,246 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "2457f4cc-9ab6-4b94-aa21-20e26f759f11"
+        },
+        {
+          "SchemaColumnUId": "0e3d3857-2203-40e4-b1ec-8e972007650e",
+          "Value": "74128997-5f37-4ee3-ab17-29dbd5680a49",
+          "DisplayValue": "Progroup MVP"
+        },
+        {
+          "SchemaColumnUId": "991cf5ef-ffb8-49a5-add3-074a595f6c43",
+          "Value": "24e07446-3a40-49f5-81d1-c20cb4c0cdc4",
+          "DisplayValue": "Contacts"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 1
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "2df4c549-f6ad-4b25-9e1f-f315288b3506"
+        },
+        {
+          "SchemaColumnUId": "0e3d3857-2203-40e4-b1ec-8e972007650e",
+          "Value": "74128997-5f37-4ee3-ab17-29dbd5680a49",
+          "DisplayValue": "Progroup MVP"
+        },
+        {
+          "SchemaColumnUId": "991cf5ef-ffb8-49a5-add3-074a595f6c43",
+          "Value": "ee586f85-5e21-4247-9ab2-1d906f0f0b46",
+          "DisplayValue": "Accounts"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 0
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "366504ae-b4b9-436b-b2f6-e45c1c86d30d"
+        },
+        {
+          "SchemaColumnUId": "0e3d3857-2203-40e4-b1ec-8e972007650e",
+          "Value": "74128997-5f37-4ee3-ab17-29dbd5680a49",
+          "DisplayValue": "Progroup MVP"
+        },
+        {
+          "SchemaColumnUId": "991cf5ef-ffb8-49a5-add3-074a595f6c43",
+          "Value": "f3512721-0712-47ee-a507-9116f90449cf",
+          "DisplayValue": "Plants"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 7
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "59e73f79-c220-4643-a02e-b3de931019fb"
+        },
+        {
+          "SchemaColumnUId": "0e3d3857-2203-40e4-b1ec-8e972007650e",
+          "Value": "74128997-5f37-4ee3-ab17-29dbd5680a49",
+          "DisplayValue": "Progroup MVP"
+        },
+        {
+          "SchemaColumnUId": "991cf5ef-ffb8-49a5-add3-074a595f6c43",
+          "Value": "36591c8e-449f-45e8-9c42-8ce9a71743b7",
+          "DisplayValue": "Leads"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 5
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "78c23467-2aba-4a66-928b-1a7191ec3d6c"
+        },
+        {
+          "SchemaColumnUId": "0e3d3857-2203-40e4-b1ec-8e972007650e",
+          "Value": "74128997-5f37-4ee3-ab17-29dbd5680a49",
+          "DisplayValue": "Progroup MVP"
+        },
+        {
+          "SchemaColumnUId": "991cf5ef-ffb8-49a5-add3-074a595f6c43",
+          "Value": "682961f2-b572-4cca-8500-eb23befc87db",
+          "DisplayValue": "Contracts"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 117
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "8409573b-4bd7-4cc8-a25d-0d5e82450d85"
+        },
+        {
+          "SchemaColumnUId": "0e3d3857-2203-40e4-b1ec-8e972007650e",
+          "Value": "74128997-5f37-4ee3-ab17-29dbd5680a49",
+          "DisplayValue": "Progroup MVP"
+        },
+        {
+          "SchemaColumnUId": "991cf5ef-ffb8-49a5-add3-074a595f6c43",
+          "Value": "c1688fb8-d07c-4922-b43a-3e03aa25d85b",
+          "DisplayValue": "Territory management"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 8
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "975d68fc-c62a-4469-96b0-f7bf9441de6c"
+        },
+        {
+          "SchemaColumnUId": "0e3d3857-2203-40e4-b1ec-8e972007650e",
+          "Value": "74128997-5f37-4ee3-ab17-29dbd5680a49",
+          "DisplayValue": "Progroup MVP"
+        },
+        {
+          "SchemaColumnUId": "991cf5ef-ffb8-49a5-add3-074a595f6c43",
+          "Value": "021d26b9-c326-4795-9b95-fbed6fa41e83",
+          "DisplayValue": "Tasks"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 2
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "cd82f38d-50ea-4a75-a9fd-963f053097d6"
+        },
+        {
+          "SchemaColumnUId": "0e3d3857-2203-40e4-b1ec-8e972007650e",
+          "Value": "74128997-5f37-4ee3-ab17-29dbd5680a49",
+          "DisplayValue": "Progroup MVP"
+        },
+        {
+          "SchemaColumnUId": "991cf5ef-ffb8-49a5-add3-074a595f6c43",
+          "Value": "d641d42f-739e-441e-aad5-aff7891dddf9",
+          "DisplayValue": "Opportunities"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 6
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "cda85256-b3c3-47ea-ad11-922fcc97e2ce"
+        },
+        {
+          "SchemaColumnUId": "0e3d3857-2203-40e4-b1ec-8e972007650e",
+          "Value": "74128997-5f37-4ee3-ab17-29dbd5680a49",
+          "DisplayValue": "Progroup MVP"
+        },
+        {
+          "SchemaColumnUId": "991cf5ef-ffb8-49a5-add3-074a595f6c43",
+          "Value": "cded354a-aef7-495a-a82e-823ba0986ee3",
+          "DisplayValue": "Orders"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 116
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "e7b67934-d3ec-4aa5-94ac-3ee50067fdb7"
+        },
+        {
+          "SchemaColumnUId": "0e3d3857-2203-40e4-b1ec-8e972007650e",
+          "Value": "74128997-5f37-4ee3-ab17-29dbd5680a49",
+          "DisplayValue": "Progroup MVP"
+        },
+        {
+          "SchemaColumnUId": "991cf5ef-ffb8-49a5-add3-074a595f6c43",
+          "Value": "299ada26-a05a-4ed4-96b8-cfdc72ae81dc",
+          "DisplayValue": "Calendars configuration"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 9
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "fcff5999-7aa5-43b2-846c-6f2c996897ed"
+        },
+        {
+          "SchemaColumnUId": "0e3d3857-2203-40e4-b1ec-8e972007650e",
+          "Value": "74128997-5f37-4ee3-ab17-29dbd5680a49",
+          "DisplayValue": "Progroup MVP"
+        },
+        {
+          "SchemaColumnUId": "991cf5ef-ffb8-49a5-add3-074a595f6c43",
+          "Value": "e8590ec1-7071-4e4a-a23a-e35dff467349",
+          "DisplayValue": "Products"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Commentary.Caption" Value="Notizen" />
+			<Item Name="Columns.Contact.Caption" Value="Kontaktname" />
+			<Item Name="Columns.EmployeesNumber.Caption" Value="Mitarbeiteranzahl" />
+			<Item Name="Columns.LeadName.Caption" Value="Lead name" />
+			<Item Name="Columns.Notes.Caption" Value="Notizen" />
+			<Item Name="Columns.Owner.Caption" Value="Verantwortlicher" />
+			<Item Name="Columns.PgrEstimatedVolume.Caption" Value="Jahresvolumen" />
+			<Item Name="Columns.PgrPGPotential.Caption" Value="PG Potential" />
+			<Item Name="Columns.PgrSalesRegion.Caption" Value="Vertriebsregion" />
+			<Item Name="Columns.QualifiedAccount.Caption" Value="Firma" />
+			<Item Name="Columns.QualifiedContact.Caption" Value="Kontaktname" />
+			<Item Name="Columns.QualifyStatus.Caption" Value="Lead-Phase" />
+		</Items>
+	</Group>
+</Resources>

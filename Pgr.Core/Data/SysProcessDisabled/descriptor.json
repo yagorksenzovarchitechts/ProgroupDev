@@ -1,0 +1,42 @@
+﻿{
+  "Descriptor": {
+    "UId": "866638d4-a8bd-203a-2abd-aca70fd9dfe6",
+    "Name": "SysProcessDisabled",
+    "ModifiedOnUtc": "\/Date(1782373308000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "c27393c6-3bb9-47aa-a492-30d76109031f",
+      "Name": "SysProcessDisabled"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "56f69500-7667-4d74-9b5f-631c0158d1d3",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "SysSchema",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Description",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      }
+    ]
+  }
+}

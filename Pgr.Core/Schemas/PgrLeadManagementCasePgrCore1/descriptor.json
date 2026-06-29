@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "d209cbbb-162e-446f-ac4f-de46e9cae73b",
+    "Name": "PgrLeadManagementCasePgrCore1",
+    "ModifiedOnUtc": "\/Date(1782371870000)\/",
+    "Parent": {
+      "UId": "9e128ff9-0bb8-4bbe-85ba-e43e86e9c7c8",
+      "Name": "LeadManagementCase"
+    },
+    "ManagerName": "DcmSchemaManager",
+    "Caption": "Lead management",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.ActionsButton_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Attachments" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Attachments" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancel" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Close" />
+			<Item Name="LocalizableStrings.ComboBox_4ivy3njAddress_label.Value" Value="Account address" />
+			<Item Name="LocalizableStrings.ComboBox_4ivy3njCategory_ariaLabel.Value" Value="Dropdown" />
+			<Item Name="LocalizableStrings.ComboBox_4ivy3njIndustry_ariaLabel.Value" Value="Dropdown" />
+			<Item Name="LocalizableStrings.ComboBox_4ivy3njLabel_caption.Value" Value="Account info" />
+			<Item Name="LocalizableStrings.ComboBox_4ivy3njWeb_caption.Value" Value="Web link" />
+			<Item Name="LocalizableStrings.ContractsAddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.ContractsExpansionPanel_title.Value" Value="Contracts" />
+			<Item Name="LocalizableStrings.ContractsExportDataButton_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.ContractsImportDataButton_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.ContractsRefreshButton_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.ContractsSearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.ContractsSettingsButton_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.CustomerProfileLabel_caption.Value" Value="Customer profile" />
+			<Item Name="LocalizableStrings.DocumentsExpansionPanel_title.Value" Value="Documents" />
+			<Item Name="LocalizableStrings.DocumentsExportDataButton_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.DocumentsImportDataButton_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.DocumentsRefreshButton_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.DocumentsSearch_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.ExpansionPanel_dbtaxlc_title.Value" Value="Expanded list" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_n0rv6tu_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_0hsufeh_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_thhv3as_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_pu57mnb_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_0of7x3y_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_v38rkqs_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_i02a9fi_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.GridDetail_tviz7gfDS_DiscountPercent.Value" Value="Discount, %" />
+			<Item Name="LocalizableStrings.InstallmentPlanAddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.InstallmentPlanExpansionPanel_title.Value" Value="Installment plan" />
+			<Item Name="LocalizableStrings.InstallmentPlanRefreshButton_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.InstallmentPlanSearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.InvoicesAddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.InvoicesExpansionPanel_title.Value" Value="Invoices" />
+			<Item Name="LocalizableStrings.InvoicesExportDataButton_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.InvoicesImportDataButton_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.InvoicesRefreshButton_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.InvoicesSearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.InvoicesSettingsButton_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.MenuItemCreateContract_caption.Value" Value="Create new contract" />
+			<Item Name="LocalizableStrings.MenuItemCreateInvoice_caption.Value" Value="Create new invoice" />
+			<Item Name="LocalizableStrings.ProductsTab_caption.Value" Value="Products" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
+			<Item Name="LocalizableStrings.TabContainer_3dmysyn_caption.Value" Value="Description" />
+			<Item Name="LocalizableStrings.addRecord_086g0vs_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_fqbv4qt_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_jewh8o2_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_s5zzlta_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_uwc6wje_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_x2pismq_caption.Value" Value="Add new" />
+		</Items>
+	</Group>
+</Resources>

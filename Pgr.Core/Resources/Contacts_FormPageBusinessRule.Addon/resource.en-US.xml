@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.5ee38a88-f4c4-35e2-49a5-f68d87f91755.Caption" Value="Hide: Type &lt;&gt; Employee" />
+			<Item Name="AddonConfig.Rules.b0776421-935f-24dd-db66-0ab83cde9472.Caption" Value="Hide: Type = Employee" />
+		</Items>
+	</Group>
+</Resources>

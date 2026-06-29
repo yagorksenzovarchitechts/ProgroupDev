@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "698ecf8a-96b7-4258-9bd1-dc09ac5b1a4f",
+    "Name": "PgrAccountTypesInAccount",
+    "ModifiedOnUtc": "\/Date(1782379963000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Account types in Account",
+    "DependsOn": []
+  }
+}

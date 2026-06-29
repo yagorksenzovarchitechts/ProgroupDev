@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="PG Team" />
+			<Item Name="Columns.PgrColor.Caption" Value="Color" />
+			<Item Name="Columns.PgrSystemRole.Caption" Value="System role" />
+		</Items>
+	</Group>
+</Resources>

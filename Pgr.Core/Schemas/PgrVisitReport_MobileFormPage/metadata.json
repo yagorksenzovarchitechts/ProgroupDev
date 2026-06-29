@@ -1,0 +1,10 @@
+= MetaData.Schema.UId "13edcfe3-ad01-42f1-87b9-7717454f9081"
+= MetaData.Schema.A2 "PgrVisitReport_MobileFormPage"
+= MetaData.Schema.A5 "d484d861-d8e5-4a3f-84ad-1d9256189431"
+~ MetaData.Schema.B2 ["75eaa7ac-03db-4881-8cda-c085ed5e24f6","7fff73c3-711f-45bb-a425-81d6e18e97e3","ec731b13-9c20-414e-af49-796fc1b52cfd","d356ffe6-f91b-4a7a-961c-ecd9d16df939"]
+= MetaData.Schema.B6 "a00051f4-cde3-4f3f-b08e-c5ad1a5c735a"
+= MetaData.Schema.HD1 "019c694a-1a3b-4812-b2e5-219b326061ae"
+= MetaData.Schema.HD6 "null"
+- MetaData.Schema.B7
+- MetaData.Schema.HD12
++ MetaData.Schema.B7 false

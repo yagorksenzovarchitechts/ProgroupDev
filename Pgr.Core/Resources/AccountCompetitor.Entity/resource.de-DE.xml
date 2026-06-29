@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Description.Caption" Value="Notiz" />
+			<Item Name="Columns.PgrCompetitor.Caption" Value="Wettbewerber" />
+			<Item Name="Columns.PgrShare.Caption" Value="Lieferanteil" />
+			<Item Name="Columns.PgrValidFrom.Caption" Value="Gültig ab" />
+			<Item Name="Columns.PgrValidTo.Caption" Value="Gültig bis" />
+		</Items>
+	</Group>
+</Resources>

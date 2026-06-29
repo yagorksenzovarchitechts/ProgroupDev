@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Country.Caption" Value="Land" />
+			<Item Name="Columns.Description.Caption" Value="Beschreibung" />
+			<Item Name="Columns.Name.Caption" Value="Gebietsname" />
+			<Item Name="Columns.ParentTerritory.Caption" Value="Übergeordnetes Gebiet" />
+			<Item Name="Columns.TerritoryType.Caption" Value="Gebietsart" />
+		</Items>
+	</Group>
+</Resources>

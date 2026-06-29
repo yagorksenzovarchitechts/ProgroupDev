@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.CreatedOn.Caption" Value="Erstellt am" />
+			<Item Name="Columns.Depth.Caption" Value="EbeneEbene&#xA;Ebene" />
+			<Item Name="Columns.Description.Caption" Value="Beschreibung" />
+			<Item Name="Columns.Name.Caption" Value="Name" />
+			<Item Name="Columns.TimeZone.Caption" Value="Zeitzone" />
+		</Items>
+	</Group>
+</Resources>

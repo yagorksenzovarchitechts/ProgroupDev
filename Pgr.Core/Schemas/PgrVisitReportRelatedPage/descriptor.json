@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "b841ee04-5f6e-4e43-b1a7-aedcf7fecfce",
+    "Name": "PgrVisitReportRelatedPage",
+    "ModifiedOnUtc": "\/Date(1781877869000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Visit report (Page settings)",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.271d5679-7109-37df-1eae-ca0999b3c15f.Caption" Value="Show elements: Competitor info" />
+			<Item Name="AddonConfig.Rules.3a7de010-c53c-d16b-d537-a4acd9e31ae5.Caption" Value="Visibility for NBOContainer" />
+			<Item Name="AddonConfig.Rules.aa28548a-884f-c296-efa3-183daf547797.Caption" Value="Visibility for LeadConversionScore" />
+			<Item Name="AddonConfig.Rules.dc9a82b4-9b93-7aa6-5404-203f62aa2b23.Caption" Value="Show elements: Group overview" />
+			<Item Name="AddonConfig.Rules.ec47cebe-634e-c597-77ba-0752c52b8011.Caption" Value="Show elements: Customer info" />
+		</Items>
+	</Group>
+</Resources>

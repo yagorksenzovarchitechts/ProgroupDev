@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "d13d7944-2575-4d6a-aeba-b4adb491caa8",
+    "Name": "Contracts_ListPage",
+    "ModifiedOnUtc": "\/Date(1782306675000)\/",
+    "Parent": {
+      "UId": "045d9669-d55c-4029-9a29-9c4f8ca9bab4",
+      "Name": "Contracts_ListPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Contracts list page",
+    "DependsOn": []
+  }
+}

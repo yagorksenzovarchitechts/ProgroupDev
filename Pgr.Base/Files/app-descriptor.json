@@ -1,0 +1,18 @@
+{
+  "Name": "Pgr.Base_2026-05-26_19.16.36",
+  "Description": "",
+  "Maintainer": "Creatio",
+  "IconName": "",
+  "Color": "",
+  "Version": "",
+  "RequiredPlatformVersion": "8.3.4",
+  "MarketplaceLink": "",
+  "DependsOn": [],
+  "Code": "Pgr.Base_2026-05-26_19.16.36",
+  "Packages": [
+    {
+      "UId": "0a27f994-95de-a815-464d-7d5e8e55ce39",
+      "Name": "Pgr.Base"
+    }
+  ]
+}

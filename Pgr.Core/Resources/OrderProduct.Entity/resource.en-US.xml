@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Amount.Caption" Value="Total amount" />
+			<Item Name="Columns.PgrChopLength.Caption" Value="Chop length" />
+			<Item Name="Columns.PgrConfirmedDeliveryDate.Caption" Value="Confirmed delivery date" />
+			<Item Name="Columns.PgrCustomerProjectId.Caption" Value="Customer project id" />
+			<Item Name="Columns.PgrIsCancelled.Caption" Value="Cancelled" />
+			<Item Name="Columns.PgrOrderVolumeSqm.Caption" Value="Order volume (SQM)" />
+			<Item Name="Columns.PgrProjectPriceId.Caption" Value="Project price id" />
+			<Item Name="Columns.PgrQuantityOrigin.Caption" Value="Origin Quantity " />
+			<Item Name="Columns.PgrReqDeliveryDate.Caption" Value="Requested delivery date" />
+			<Item Name="Columns.PgrWidth.Caption" Value="Width" />
+			<Item Name="Columns.Price.Caption" Value="Total price per hsqm" />
+		</Items>
+	</Group>
+</Resources>

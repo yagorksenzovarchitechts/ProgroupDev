@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.Account.Caption" Value="Kunde" />
+			<Item Name="Columns.EndDate.Caption" Value="Gülltig bis" />
+			<Item Name="Columns.Notes.Caption" Value="Beschreibung" />
+			<Item Name="Columns.Number.Caption" Value="Titel" />
+			<Item Name="Columns.StartDate.Caption" Value="Gültig ab" />
+			<Item Name="Columns.Type.Caption" Value="Vertragsart" />
+		</Items>
+	</Group>
+</Resources>

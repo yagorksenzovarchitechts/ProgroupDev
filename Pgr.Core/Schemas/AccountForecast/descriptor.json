@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "a72a088e-9b18-4e01-abb1-efb70f380d85",
+    "Name": "AccountForecast",
+    "ModifiedOnUtc": "\/Date(1779968779000)\/",
+    "Parent": {
+      "UId": "74900c50-b7e7-452a-83d9-f98707756d6c",
+      "Name": "AccountForecast"
+    },
+    "ExtendParent": true,
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Forecast by account",
+    "DependsOn": []
+  }
+}

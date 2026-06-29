@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Objekt" />
+			<Item Name="Columns.PgrBonus.Caption" Value="Bonus Id" />
+			<Item Name="Columns.PgrBonusConditionGroup.Caption" Value="Regelgruppe" />
+			<Item Name="Columns.PgrCondition.Caption" Value="Kondition" />
+			<Item Name="Columns.PgrOperator.Caption" Value="Operator" />
+			<Item Name="Columns.PgrValue.Caption" Value="Wert" />
+		</Items>
+	</Group>
+</Resources>
