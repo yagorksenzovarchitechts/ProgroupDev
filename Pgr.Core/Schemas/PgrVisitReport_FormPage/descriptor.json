@@ -2,13 +2,12 @@
   "Descriptor": {
     "UId": "dca3be9d-e1a0-448b-9b9f-fef594412715",
     "Name": "PgrVisitReport_FormPage",
-    "ModifiedOnUtc": "\/Date(1782311382000)\/",
+    "ModifiedOnUtc": "\/Date(1782825110000)\/",
     "Parent": {
       "UId": "3b2e117f-8c6b-4ca5-80a2-7ebb497cddf9",
       "Name": "PageWithTabsFreedomTemplate"
     },
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Visit report form page",
-    "DependsOn": []
+    "Caption": "Visit report form page"
   }
 }

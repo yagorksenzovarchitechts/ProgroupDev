@@ -1204,7 +1204,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"title": "#ResourceString(ExpansionPanel_qygdbl8_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": false,
+					"expanded": true,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -1215,7 +1215,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 						"right": "none"
 					},
 					"fitContent": true,
-					"visible": true,
+					"visible": false,
 					"alignItems": "stretch"
 				},
 				"parentName": "TabContainer_widjyyt",

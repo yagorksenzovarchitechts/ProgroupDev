@@ -12,7 +12,7 @@
 			<Item Name="Columns.PgrName.Caption" Value="Werksname" />
 			<Item Name="Columns.PgrNotes.Caption" Value="Notizen" />
 			<Item Name="Columns.PgrNumberOfWalls.Caption" Value="Wellpappenart" />
-			<Item Name="Columns.PgrSpecialFeatures.Caption" Value="Marsamaidier" />
+			<Item Name="Columns.PgrSpecialFeatures.Caption" Value="Besonderheiten" />
 			<Item Name="Columns.PgrStateProvince.Caption" Value="Bundesland/Provinz" />
 			<Item Name="Columns.PgrTargetNumberOfEmployees.Caption" Value="Sollmitarbeiter" />
 			<Item Name="Columns.PgrWorkingWidth.Caption" Value="Arbeitsbreite" />
