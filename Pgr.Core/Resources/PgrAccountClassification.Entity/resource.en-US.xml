@@ -3,7 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Account classification" />
-			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
+			<Item Name="Columns.PgrVisitThresholdDays.Caption" Value="Visit threshold days" />
 		</Items>
 	</Group>
 </Resources>

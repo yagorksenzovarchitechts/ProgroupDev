@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "090f0346-fa08-d6ee-7e33-a793bc77f82a",
     "Name": "PgrAccountClassification",
-    "ModifiedOnUtc": "\/Date(1782380668000)\/",
+    "ModifiedOnUtc": "\/Date(1782806759000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "66758043-04bf-49a5-af00-bf21e72cb26d",
@@ -29,6 +29,13 @@
         "IsKey": true,
         "ColumnName": "Id",
         "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "efa5cd83-37e4-bd4a-ed85-e2b51aece5e8",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "PgrVisitThresholdDays",
+        "DataTypeValueUId": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
       }
     ]
   }

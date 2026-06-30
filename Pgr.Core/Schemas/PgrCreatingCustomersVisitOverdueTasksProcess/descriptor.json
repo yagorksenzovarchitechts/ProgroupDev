@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "8c708092-98b3-44f8-b82d-9f257bd01956",
+    "Name": "PgrCreatingCustomersVisitOverdueTasksProcess",
+    "ModifiedOnUtc": "\/Date(1782822679000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Creating customers visit overdue tasks",
+    "DependsOn": []
+  }
+}
