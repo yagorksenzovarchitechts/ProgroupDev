@@ -87,15 +87,6 @@
   "E18": "PgrAccountName"
 }
 + MetaData.Schema.D2 {
-  "UId": "bb1e62d3-1c44-fd75-a1c8-184362fa6f84",
-  "A2": "PgrSapId",
-  "A3": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
-  "A4": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0",
-  "E2": 1
-}
-+ MetaData.Schema.D2 {
   "UId": "502c925f-cf43-77a5-2e67-b95ffd1c6d97",
   "A2": "PgrDescription",
   "A3": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
@@ -124,7 +115,6 @@
   "b9f19f47-3657-6c1a-ba64-07c9438f4e5f",
   "09aa5eea-c59e-5303-f49e-42d64787e91c",
   "08dd8853-37ef-5146-c4d7-66e4ce3333d7",
-  "bb1e62d3-1c44-fd75-a1c8-184362fa6f84",
   "502c925f-cf43-77a5-2e67-b95ffd1c6d97",
   "09b52714-d46f-3828-7a7c-3dc27affe808"
 ]

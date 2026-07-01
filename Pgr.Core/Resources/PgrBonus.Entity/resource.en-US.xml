@@ -10,7 +10,6 @@
 			<Item Name="Columns.PgrDescription.Caption" Value="Description" />
 			<Item Name="Columns.PgrEndDate.Caption" Value="End date" />
 			<Item Name="Columns.PgrName.Caption" Value="Name" />
-			<Item Name="Columns.PgrSapId.Caption" Value="SAP Customer ID" />
 			<Item Name="Columns.PgrStartDate.Caption" Value="Start date" />
 		</Items>
 	</Group>

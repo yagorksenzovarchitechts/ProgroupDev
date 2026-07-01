@@ -221,7 +221,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
-				"name": "NumberInput_xbvi8ux",
+				"name": "DateTimePicker_450wtbi",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
@@ -229,13 +229,14 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						"row": 2,
 						"rowSpan": 1
 					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_PgrSapId_joqrp15",
-					"control": "$PDS_PgrSapId_joqrp15",
-					"readonly": false,
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_PgrEndDate_uqhmj5m",
 					"placeholder": "",
+					"readonly": false,
 					"labelPosition": "auto",
-					"tooltip": ""
+					"tooltip": "",
+					"pickerType": "date",
+					"control": "$PDS_PgrEndDate_uqhmj5m"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -266,7 +267,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
-				"name": "DateTimePicker_450wtbi",
+				"name": "Input_y630h5k",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
@@ -274,14 +275,14 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						"row": 3,
 						"rowSpan": 1
 					},
-					"type": "crt.DateTimePicker",
-					"label": "$Resources.Strings.PDS_PgrEndDate_uqhmj5m",
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrBaseValueType_1my862m",
+					"control": "$PDS_PgrBaseValueType_1my862m",
 					"placeholder": "",
-					"readonly": false,
-					"labelPosition": "auto",
 					"tooltip": "",
-					"pickerType": "date",
-					"control": "$PDS_PgrEndDate_uqhmj5m"
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -309,29 +310,6 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 6
-			},
-			{
-				"operation": "insert",
-				"name": "Input_y630h5k",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 4,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrBaseValueType_1my862m",
-					"control": "$PDS_PgrBaseValueType_1my862m",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -1131,11 +1109,6 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"PDS_PgrBonusId_dk8wwid": {
 						"modelConfig": {
 							"path": "PDS.PgrBonusId"
-						}
-					},
-					"PDS_PgrSapId_joqrp15": {
-						"modelConfig": {
-							"path": "PDS.PgrSapId"
 						}
 					},
 					"PDS_PgrStartDate_n0qastw": {
