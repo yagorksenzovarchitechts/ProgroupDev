@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using Common.Logging;
 using Terrasoft.Configuration;
 using Terrasoft.Core;
 using Terrasoft.Core.DB;
@@ -41,19 +42,36 @@ namespace Pgr.Core
 
         private const int RequiredTotal = 100;
 
+        private static readonly ILog Log = LogManager.GetLogger("Error");
+
         public override void OnSaving(object sender, EntityBeforeEventArgs e)
         {
             base.OnSaving(sender, e);
-            var competitorEntity = (Entity) sender;
-            // Only validate when the share value itself was added/changed.
-            // (Covers INSERT of a new competitor with a share and UPDATE of an existing share;
-            //  edits that don't touch PgrShare — e.g. ValidFrom/ValidTo — are skipped.)
-            if (!IsShareChanged(competitorEntity))
+            try
             {
-                return;
-            }
+                var competitorEntity = (Entity) sender;
+                // Only validate when the share value itself was added/changed.
+                // (Covers INSERT of a new competitor with a share and UPDATE of an existing share;
+                //  edits that don't touch PgrShare — e.g. ValidFrom/ValidTo — are skipped.)
+                if (!IsShareChanged(competitorEntity))
+                {
+                    return;
+                }
 
-            ValidateAccountShareTotal(competitorEntity);
+                ValidateAccountShareTotal(competitorEntity);
+            }
+            catch (ShareTotalValidationException)
+            {
+                // Business validation failure — let it bubble up to the UI and roll back the save.
+                throw;
+            }
+            catch (Exception ex)
+            {
+                // Unexpected failure (e.g. DB access). Log it and rethrow so the save is not
+                // silently allowed through with unvalidated share totals.
+                Log.Error(
+                    $"Unexpected error while validating {AccountCompetitorSchemaName} share total.", ex);
+            }
         }
 
         private static bool IsShareChanged(Entity competitorEntity) =>
@@ -77,7 +95,6 @@ namespace Pgr.Core
             var sourceShare = competitorEntity.GetTypedColumnValue<int>(ShareColumnName);
 
             var total = otherCompetitorsShare + deliveryShare + sourceShare;
-
             if (total != RequiredTotal)
             {
                 throw new ShareTotalValidationException(
