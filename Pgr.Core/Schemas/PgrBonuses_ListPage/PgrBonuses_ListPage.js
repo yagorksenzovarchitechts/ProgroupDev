@@ -54,13 +54,6 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"width": 127
 						},
 						{
-							"id": "528bb30f-7130-4671-838f-6a30f663cc08",
-							"code": "PDS_PgrSapId",
-							"caption": "#ResourceString(PDS_PgrSapId)#",
-							"dataValueType": 4,
-							"width": 140
-						},
-						{
 							"id": "8a889416-499f-c6ae-cfc4-5714a458ef92",
 							"code": "PDS_PgrStartDate",
 							"caption": "#ResourceString(PDS_PgrStartDate)#",
@@ -129,11 +122,6 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"path": "PDS.PgrAccount"
 						}
 					},
-					"PDS_PgrSapId": {
-						"modelConfig": {
-							"path": "PDS.PgrSapId"
-						}
-					},
 					"PDS_PgrStartDate": {
 						"modelConfig": {
 							"path": "PDS.PgrStartDate"
@@ -174,9 +162,6 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						},
 						"PgrAccount": {
 							"path": "PgrAccount"
-						},
-						"PgrSapId": {
-							"path": "PgrSapId"
 						},
 						"PgrStartDate": {
 							"path": "PgrStartDate"
