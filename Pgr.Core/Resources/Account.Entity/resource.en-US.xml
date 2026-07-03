@@ -47,14 +47,11 @@
 			<Item Name="Columns.PgrSalesDirector.Caption" Value="Sales director" />
 			<Item Name="Columns.PgrSalesManager.Caption" Value="Sales Manager" />
 			<Item Name="Columns.PgrSapCustomerId.Caption" Value="SAP Customer ID" />
-			<Item Name="Columns.PgrSapCustomerNumber.Caption" Value="SAP customer number (delete)" />
 			<Item Name="Columns.PgrSensitiveToOverDelivery.Caption" Value="Sensitive to over-delivery" />
 			<Item Name="Columns.PgrServiceTeamLead.Caption" Value="Customer service team lead name" />
 			<Item Name="Columns.PgrSpecialFeatures.Caption" Value="Special features" />
 			<Item Name="Columns.PgrVatNumber.Caption" Value="VAT number" />
-			<Item Name="Columns.PgrWFName.Caption" Value="WF name (delete)" />
 			<Item Name="Columns.PgrWepaformCustomerId.Caption" Value="Wepaform Customer ID" />
-			<Item Name="Columns.PgrWepaformCustomerId2.Caption" Value="Wepaform customer ID (delete)" />
 			<Item Name="Columns.PgrWepaformName.Caption" Value="Wepaform name" />
 			<Item Name="Columns.PgrWorkingWidth.Caption" Value="Working width" />
 			<Item Name="Columns.PgrYearOfCommissioning.Caption" Value="Year of commissioning " />

@@ -2,12 +2,13 @@
   "Descriptor": {
     "UId": "078db7f7-c0ce-4617-a5d9-9487f5d6c144",
     "Name": "PgrPlants_FormPage",
-    "ModifiedOnUtc": "\/Date(1782825089000)\/",
+    "ModifiedOnUtc": "\/Date(1782975464000)\/",
     "Parent": {
       "UId": "3b2e117f-8c6b-4ca5-80a2-7ebb497cddf9",
       "Name": "PageWithTabsFreedomTemplate"
     },
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Plants form page"
+    "Caption": "Plants form page",
+    "DependsOn": []
   }
 }

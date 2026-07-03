@@ -4,6 +4,7 @@
     "Name": "PgrAccountCompetitorShareValidationEventListener",
     "ModifiedOnUtc": "\/Date(1782803090000)\/",
     "ManagerName": "SourceCodeSchemaManager",
-    "Caption": "PgrAccountCompetitorShareValidationEventListener"
+    "Caption": "PgrAccountCompetitorShareValidationEventListener",
+    "DependsOn": []
   }
 }

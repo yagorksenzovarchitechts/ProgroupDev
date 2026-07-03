@@ -61,7 +61,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"bodyBackgroundColor": "primary-contrast-500",
 					"selectedTabTitleColor": "auto",
 					"tabTitleColor": "auto",
-					"underlineSelectedTabColor": "auto",
+					"underlineSelectedTabColor": "crt-color-coral",
 					"headerBackgroundColor": "auto",
 					"allowToggleClose": true,
 					"layoutConfig": {
@@ -69,7 +69,9 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						"colSpan": 2,
 						"row": 1,
 						"rowSpan": 1
-					}
+					},
+					"visible": true,
+					"stretch": true
 				}
 			},
 			{
@@ -140,16 +142,16 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				"operation": "insert",
 				"name": "PgrName",
 				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PgrName",
+					"control": "$PgrName",
+					"labelPosition": "auto",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 1,
 						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PgrName",
-					"control": "$PgrName",
-					"labelPosition": "auto"
+					}
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -157,12 +159,34 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_z3bbkp0",
+				"name": "NumberInput_o1da14p",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
 						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_PgrBonusId_dk8wwid",
+					"control": "$PDS_PgrBonusId_dk8wwid",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_z3bbkp0",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -178,7 +202,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -199,44 +223,23 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
-				"name": "NumberInput_o1da14p",
+				"name": "Input_pwn8c59",
 				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_PgrBonusId_dk8wwid",
-					"control": "$PDS_PgrBonusId_dk8wwid",
-					"readonly": false,
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrDescription_33q24ha",
+					"control": "$PDS_PgrDescription_33q24ha",
 					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": true,
 					"labelPosition": "auto",
-					"tooltip": ""
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "DateTimePicker_450wtbi",
-				"values": {
+					"visible": true,
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
 						"row": 2,
 						"rowSpan": 1
-					},
-					"type": "crt.DateTimePicker",
-					"label": "$Resources.Strings.PDS_PgrEndDate_uqhmj5m",
-					"placeholder": "",
-					"readonly": false,
-					"labelPosition": "auto",
-					"tooltip": "",
-					"pickerType": "date",
-					"control": "$PDS_PgrEndDate_uqhmj5m"
+					}
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -244,22 +247,22 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
-				"name": "DateTimePicker_3iaj2w9",
+				"name": "Input_nm323ly",
 				"values": {
-					"type": "crt.DateTimePicker",
-					"label": "$Resources.Strings.PDS_PgrStartDate_n0qastw",
-					"placeholder": "",
-					"readonly": false,
-					"labelPosition": "auto",
-					"tooltip": "",
-					"pickerType": "date",
-					"control": "$PDS_PgrStartDate_n0qastw",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 3,
 						"rowSpan": 1
-					}
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrBonusType_q6rhxr9",
+					"control": "$PDS_PgrBonusType_q6rhxr9",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -290,22 +293,22 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
-				"name": "Input_nm323ly",
+				"name": "DateTimePicker_3iaj2w9",
 				"values": {
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_PgrStartDate_n0qastw",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "date",
+					"control": "$PDS_PgrStartDate_n0qastw",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 4,
 						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrBonusType_q6rhxr9",
-					"control": "$PDS_PgrBonusType_q6rhxr9",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
+					}
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -313,21 +316,26 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
-				"name": "Input_pwn8c59",
+				"name": "DateTimePicker_450wtbi",
 				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrDescription_33q24ha",
-					"control": "$PDS_PgrDescription_33q24ha",
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_PgrEndDate_uqhmj5m",
 					"placeholder": "",
-					"tooltip": "",
 					"readonly": false,
-					"multiline": true,
 					"labelPosition": "auto",
-					"visible": true
+					"tooltip": "",
+					"pickerType": "date",
+					"control": "$PDS_PgrEndDate_uqhmj5m"
 				},
-				"parentName": "GeneralInfoTab",
+				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 1
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -337,7 +345,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"tools": [],
 					"items": [],
 					"title": "#ResourceString(ExpansionPanel_nggrqb0_title)#",
-					"toggleType": "default",
+					"toggleType": "material",
 					"togglePosition": "before",
 					"expanded": true,
 					"labelColor": "auto",
@@ -349,11 +357,13 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						"left": "none",
 						"right": "none"
 					},
-					"fitContent": true
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch"
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 2
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -586,19 +596,22 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"id": "8b0f1749-5994-b6a5-9221-7ba2b2066782",
 							"code": "GridDetail_gyzdejbDS_PgrBonus",
 							"caption": "#ResourceString(GridDetail_gyzdejbDS_PgrBonus)#",
-							"dataValueType": 10
+							"dataValueType": 10,
+							"sticky": true
 						},
 						{
 							"id": "741004a2-2a17-972b-0581-af95634cd07c",
 							"code": "GridDetail_gyzdejbDS_PgrBonusPercentage",
 							"caption": "#ResourceString(GridDetail_gyzdejbDS_PgrBonusPercentage)#",
-							"dataValueType": 31
+							"dataValueType": 31,
+							"width": 320
 						},
 						{
 							"id": "7e8bb51b-b70c-a014-5942-0b4b5c4165f2",
 							"code": "GridDetail_gyzdejbDS_PgrTierThreshold",
 							"caption": "#ResourceString(GridDetail_gyzdejbDS_PgrTierThreshold)#",
-							"dataValueType": 33
+							"dataValueType": 33,
+							"width": 331
 						}
 					],
 					"placeholder": false,
@@ -712,7 +725,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"tools": [],
 					"items": [],
 					"title": "#ResourceString(ExpansionPanel_2ii744k_title)#",
-					"toggleType": "default",
+					"toggleType": "material",
 					"togglePosition": "before",
 					"expanded": true,
 					"labelColor": "auto",
@@ -724,11 +737,13 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						"left": "none",
 						"right": "none"
 					},
-					"fitContent": true
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch"
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 3
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -956,18 +971,18 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"primaryColumnName": "GridDetail_pbgwc5rDS_Id",
 					"columns": [
 						{
+							"id": "7afa255b-0aec-0c63-665f-639f77a2dc53",
+							"code": "GridDetail_pbgwc5rDS_PgrBonus",
+							"caption": "#ResourceString(GridDetail_pbgwc5rDS_PgrBonus)#",
+							"dataValueType": 10,
+							"sticky": true
+						},
+						{
 							"id": "11268585-b28c-e501-5ff1-0aa81a3c52ee",
 							"code": "GridDetail_pbgwc5rDS_PgrCondition",
 							"caption": "#ResourceString(GridDetail_pbgwc5rDS_PgrCondition)#",
 							"dataValueType": 27,
 							"width": 165
-						},
-						{
-							"id": "0a3644a7-0b1b-7f06-a556-1dc23b5fc7de",
-							"code": "GridDetail_pbgwc5rDS_PgrCondition",
-							"caption": "#ResourceString(GridDetail_pbgwc5rDS_PgrCondition)#",
-							"dataValueType": 27,
-							"width": 183
 						},
 						{
 							"id": "3d62e0f3-4aea-37ae-d951-cac2e8d342b8",
@@ -1203,6 +1218,11 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						},
 						"viewModelConfig": {
 							"attributes": {
+								"GridDetail_pbgwc5rDS_PgrBonus": {
+									"modelConfig": {
+										"path": "GridDetail_pbgwc5rDS.PgrBonus"
+									}
+								},
 								"GridDetail_pbgwc5rDS_PgrCondition": {
 									"modelConfig": {
 										"path": "GridDetail_pbgwc5rDS.PgrCondition"
@@ -1314,6 +1334,9 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						"config": {
 							"entitySchemaName": "PgrBonusCondition",
 							"attributes": {
+								"PgrBonus": {
+									"path": "PgrBonus"
+								},
 								"PgrCondition": {
 									"path": "PgrCondition"
 								},

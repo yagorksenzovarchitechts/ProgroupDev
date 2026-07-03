@@ -58,6 +58,22 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "merge",
+				"name": "Tabs",
+				"values": {
+					"visible": true,
+					"styleType": "default",
+					"mode": "tab",
+					"bodyBackgroundColor": "primary-contrast-500",
+					"selectedTabTitleColor": "auto",
+					"tabTitleColor": "auto",
+					"underlineSelectedTabColor": "crt-color-coral",
+					"headerBackgroundColor": "auto",
+					"stretch": true,
+					"allowToggleClose": true
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "GeneralInfoTab",
 				"values": {
 					"iconPosition": "only-text",
@@ -145,34 +161,12 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
-				"name": "NumberInput_lrtbyxv",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_PgrOrderNumber_rrjwssp",
-					"control": "$PDS_PgrOrderNumber_rrjwssp",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": ""
-				},
-				"parentName": "SideAreaProfileContainer",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
 				"name": "Checkbox_wn5rt2b",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 3,
+						"row": 2,
 						"rowSpan": 1
 					},
 					"type": "crt.Checkbox",
@@ -190,7 +184,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 2
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -263,7 +257,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
-				"name": "Checkbox_oz74ok7",
+				"name": "ComboBox_ibf37b3",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
@@ -271,19 +265,37 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						"row": 2,
 						"rowSpan": 1
 					},
-					"type": "crt.Checkbox",
-					"value": true,
-					"disabled": false,
-					"inversed": false,
-					"label": "$Resources.Strings.PDS_PgrHighRack_a4o7hr3",
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrYear_9zmxmlb",
 					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
 					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_PgrHighRack_a4o7hr3"
+					"control": "$PDS_PgrYear_9zmxmlb"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_rrt5y2s",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_rrt5y2s_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_ibf37b3",
+				"propertyName": "listActions",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -310,12 +322,36 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
-				"name": "Input_yb2mlxw",
+				"name": "Checkbox_oz74ok7",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
 						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.Checkbox",
+					"value": true,
+					"disabled": false,
+					"inversed": false,
+					"label": "$Resources.Strings.PDS_PgrHighRack_a4o7hr3",
+					"ariaLabel": "",
+					"labelPosition": "auto",
+					"tooltip": "",
+					"control": "$PDS_PgrHighRack_a4o7hr3"
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "Input_yb2mlxw",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 4,
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
@@ -329,62 +365,20 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 5
-			},
-			{
-				"operation": "insert",
-				"name": "ComboBox_p8rkvpf",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 4,
-						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_PgrAccount_0hq726p",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_PgrAccount_0hq726p"
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
 				"index": 6
 			},
 			{
 				"operation": "insert",
-				"name": "addRecord_qmtmtfq",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_qmtmtfq_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_p8rkvpf",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "ComboBox_ibf37b3",
+				"name": "ComboBox_bok3yc8",
 				"values": {
 					"layoutConfig": {
-						"column": 2,
+						"column": 1,
 						"colSpan": 1,
-						"row": 4,
+						"row": 5,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_PgrYear_9zmxmlb",
+					"label": "$Resources.Strings.PDS_PgrPackagingParkCustomer1_kl4fb45",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
@@ -392,7 +386,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_PgrYear_9zmxmlb"
+					"control": "$PDS_PgrPackagingParkCustomer1_kl4fb45"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -400,18 +394,60 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
-				"name": "addRecord_rrt5y2s",
+				"name": "addRecord_xaflvy3",
 				"values": {
 					"code": "addRecord",
 					"type": "crt.ComboboxSearchTextAction",
 					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_rrt5y2s_caption)#",
+					"caption": "#ResourceString(addRecord_xaflvy3_caption)#",
 					"clicked": {
 						"request": "crt.CreateRecordFromLookupRequest",
 						"params": {}
 					}
 				},
-				"parentName": "ComboBox_ibf37b3",
+				"parentName": "ComboBox_bok3yc8",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_a00zb9w",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrPackagingParkCustomer2_j0p4ms4",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrPackagingParkCustomer2_j0p4ms4"
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_alr2672",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_alr2672_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_a00zb9w",
 				"propertyName": "listActions",
 				"index": 0
 			},
@@ -423,7 +459,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"tools": [],
 					"items": [],
 					"title": "#ResourceString(ExpansionPanel_d77p5tn_title)#",
-					"toggleType": "default",
+					"toggleType": "material",
 					"togglePosition": "before",
 					"expanded": true,
 					"labelColor": "auto",
@@ -664,7 +700,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"tools": [],
 					"items": [],
 					"title": "#ResourceString(ExpansionPanel_c87buvw_title)#",
-					"toggleType": "default",
+					"toggleType": "material",
 					"togglePosition": "before",
 					"expanded": true,
 					"labelColor": "auto",
@@ -765,7 +801,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"placeholder": "",
 					"tooltip": "",
 					"readonly": false,
-					"multiline": true,
+					"multiline": false,
 					"labelPosition": "above",
 					"visible": true
 				},
@@ -882,17 +918,30 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							}
 						}
 					},
-					"PDS_PgrOrderNumber_rrjwssp": {
+					"PDS_PgrPackagingParkCustomer1_kl4fb45": {
 						"modelConfig": {
-							"path": "PDS.PgrOrderNumber"
+							"path": "PDS.PgrPackagingParkCustomer1"
 						}
 					},
-					"PDS_PgrAccount_0hq726p": {
+					"PDS_PgrPackagingParkCustomer1_kl4fb45_List": {
+						"isCollection": true,
 						"modelConfig": {
-							"path": "PDS.PgrAccount"
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
 						}
 					},
-					"PDS_PgrAccount_0hq726p_List": {
+					"PDS_PgrPackagingParkCustomer2_j0p4ms4": {
+						"modelConfig": {
+							"path": "PDS.PgrPackagingParkCustomer2"
+						}
+					},
+					"PDS_PgrPackagingParkCustomer2_j0p4ms4_List": {
 						"isCollection": true,
 						"modelConfig": {
 							"sortingConfig": {

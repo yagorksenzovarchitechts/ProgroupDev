@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "5a594e11-937d-4253-add8-3ede19115025",
     "Name": "SysModule_Contact",
-    "ModifiedOnUtc": "\/Date(1780559712000)\/",
+    "ModifiedOnUtc": "\/Date(1782916999000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "2b2ed767-0b4b-4a7b-9de2-d48e14a2c0c5",
@@ -116,7 +116,7 @@
       },
       {
         "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
-        "IsForceUpdate": false,
+        "IsForceUpdate": true,
         "IsKey": true,
         "ColumnName": "Id",
         "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"

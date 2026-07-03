@@ -24,6 +24,7 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonusCondition/PgrBonusCondition.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonusCondition/PgrBonusCondition.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrCountryTerritory/PgrCountryTerritory.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrCountryTerritory/PgrCountryTerritory.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrCustomerlabel/PgrCustomerlabel.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrCustomerlabel/PgrCustomerlabel.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrDeliveryTimesAccountAddress/PgrDeliveryTimesAccountAddress.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrDeliveryTimesAccountAddress/PgrDeliveryTimesAccountAddress.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrEBox/PgrEBox.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrEBox/PgrEBox.cs')" />

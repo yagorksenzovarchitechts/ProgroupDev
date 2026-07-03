@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.MenuItem_AddSyncAccount_caption.Value" Value="Neues Konto für die Synchronisierung hinzufügen" />
+			<Item Name="LocalizableStrings.MenuItem_CalendarScale10min_caption.Value" Value="10 minuten" />
+			<Item Name="LocalizableStrings.MenuItem_CalendarScale15min_caption.Value" Value="15 minuten" />
+			<Item Name="LocalizableStrings.MenuItem_CalendarScale1hour_caption.Value" Value="1 stunde" />
+			<Item Name="LocalizableStrings.MenuItem_CalendarScale30min_caption.Value" Value="30 minuten" />
+			<Item Name="LocalizableStrings.MenuItem_CalendarScale5min_caption.Value" Value="5 minuten" />
+			<Item Name="LocalizableStrings.MenuItem_CalendarShowWeekends_caption.Value" Value="Wochenenden ein-/ausblenden" />
+			<Item Name="LocalizableStrings.MenuItem_CalendarTimescale1_caption.Value" Value="Kalender-Zeitskala" />
+			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value=" Excel-Export" />
+			<Item Name="LocalizableStrings.MenuItem_ImportFromExcel_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.QuickFilter_CanceledTasks_config_caption.Value" Value="Abgebrochene aufgaben anzeigen" />
+			<Item Name="LocalizableStrings.QuickFilter_Date_config_caption.Value" Value="Datum" />
+			<Item Name="LocalizableStrings.QuickFilter_Employee_config_caption.Value" Value="Mitarbeiter" />
+			<Item Name="LocalizableStrings.QuickFilter_MyTasks_config_caption.Value" Value="Nur meine Aufgaben" />
+			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Suche..." />
+		</Items>
+	</Group>
+</Resources>

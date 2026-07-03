@@ -56,15 +56,14 @@
                           "UId": "f67a63a8-0822-975c-ff78-485ee8da2b8b",
                           "BRE1": "MediumText",
                           "BRE2": "AttributeValue",
-                          "BRX1": "AlternativeName",
-                          "BRX2": "null"
+                          "BRX1": "AlternativeName"
                         },
                         "BRA3": {
                           "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
-                          "UId": "bb4dd044-f191-b25b-55ca-8b40a30e161a",
+                          "UId": "592706c8-21bc-686b-986d-97ba35f5e243",
                           "BRE1": "MediumText",
                           "BRE2": "AttributeValue",
-                          "BRX1": "PgrWFName"
+                          "BRX1": "PgrWepaformName"
                         }
                       }
                     ]
@@ -85,8 +84,8 @@
               },
               {
                 "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
-                "UId": "929f0a41-88e3-640b-b33a-988e1de68cbf",
-                "BRT1": "PgrWFName"
+                "UId": "0395b84b-b8ce-80df-b471-3c47c352bd60",
+                "BRT1": "PgrWepaformName"
               }
             ],
             "BR3": "BusinessRule_9070014"

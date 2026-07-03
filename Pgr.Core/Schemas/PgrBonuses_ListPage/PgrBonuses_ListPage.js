@@ -33,46 +33,62 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"width": 146
 						},
 						{
-							"id": "b7e4cb62-ced7-16d7-a263-4c1d1c365483",
-							"code": "PDS_PgrBaseValueType",
-							"caption": "#ResourceString(PDS_PgrBaseValueType)#",
-							"dataValueType": 27,
-							"width": 151
-						},
-						{
-							"id": "9f1a9408-fab9-2343-7345-585e8628c1ef",
-							"code": "PDS_PgrBonusType",
-							"caption": "#ResourceString(PDS_PgrBonusType)#",
-							"dataValueType": 27,
-							"width": 154
+							"id": "6dce1c21-001f-4697-d0dd-5de74627d7f5",
+							"code": "PDS_PgrBonusId",
+							"caption": "#ResourceString(PDS_PgrBonusId)#",
+							"dataValueType": 4,
+							"width": 128
 						},
 						{
 							"id": "b900873a-3cb3-809d-1cde-0571978dd2ef",
 							"code": "PDS_PgrAccount",
 							"caption": "#ResourceString(PDS_PgrAccount)#",
 							"dataValueType": 10,
-							"width": 127
+							"width": 233
+						},
+						{
+							"id": "b7e4cb62-ced7-16d7-a263-4c1d1c365483",
+							"code": "PDS_PgrBaseValueType",
+							"caption": "#ResourceString(PDS_PgrBaseValueType)#",
+							"dataValueType": 27,
+							"width": 244
+						},
+						{
+							"id": "9f1a9408-fab9-2343-7345-585e8628c1ef",
+							"code": "PDS_PgrBonusType",
+							"caption": "#ResourceString(PDS_PgrBonusType)#",
+							"dataValueType": 27,
+							"width": 199
 						},
 						{
 							"id": "8a889416-499f-c6ae-cfc4-5714a458ef92",
 							"code": "PDS_PgrStartDate",
 							"caption": "#ResourceString(PDS_PgrStartDate)#",
-							"dataValueType": 8
+							"dataValueType": 8,
+							"width": 178
 						},
 						{
 							"id": "297fd202-142a-22ca-d348-852e50450aef",
 							"code": "PDS_PgrEndDate",
 							"caption": "#ResourceString(PDS_PgrEndDate)#",
-							"dataValueType": 8
-						},
-						{
-							"id": "6dce1c21-001f-4697-d0dd-5de74627d7f5",
-							"code": "PDS_PgrBonusId",
-							"caption": "#ResourceString(PDS_PgrBonusId)#",
-							"dataValueType": 4,
-							"width": 128
+							"dataValueType": 8,
+							"width": 154
 						}
-					]
+					],
+					"features": {
+						"rows": {
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
+						},
+						"editable": {
+							"enable": false,
+							"itemsCreation": false,
+							"floatingEditPanel": false
+						}
+					},
+					"visible": true
 				}
 			},
 			{
@@ -107,6 +123,16 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"path": "PDS.PgrName"
 						}
 					},
+					"PDS_PgrBonusId": {
+						"modelConfig": {
+							"path": "PDS.PgrBonusId"
+						}
+					},
+					"PDS_PgrAccount": {
+						"modelConfig": {
+							"path": "PDS.PgrAccount"
+						}
+					},
 					"PDS_PgrBaseValueType": {
 						"modelConfig": {
 							"path": "PDS.PgrBaseValueType"
@@ -117,11 +143,6 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"path": "PDS.PgrBonusType"
 						}
 					},
-					"PDS_PgrAccount": {
-						"modelConfig": {
-							"path": "PDS.PgrAccount"
-						}
-					},
 					"PDS_PgrStartDate": {
 						"modelConfig": {
 							"path": "PDS.PgrStartDate"
@@ -130,11 +151,6 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"PDS_PgrEndDate": {
 						"modelConfig": {
 							"path": "PDS.PgrEndDate"
-						}
-					},
-					"PDS_PgrBonusId": {
-						"modelConfig": {
-							"path": "PDS.PgrBonusId"
 						}
 					}
 				}
@@ -154,23 +170,23 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						"PgrName": {
 							"path": "PgrName"
 						},
+						"PgrBonusId": {
+							"path": "PgrBonusId"
+						},
+						"PgrAccount": {
+							"path": "PgrAccount"
+						},
 						"PgrBaseValueType": {
 							"path": "PgrBaseValueType"
 						},
 						"PgrBonusType": {
 							"path": "PgrBonusType"
 						},
-						"PgrAccount": {
-							"path": "PgrAccount"
-						},
 						"PgrStartDate": {
 							"path": "PgrStartDate"
 						},
 						"PgrEndDate": {
 							"path": "PgrEndDate"
-						},
-						"PgrBonusId": {
-							"path": "PgrBonusId"
 						}
 					}
 				}

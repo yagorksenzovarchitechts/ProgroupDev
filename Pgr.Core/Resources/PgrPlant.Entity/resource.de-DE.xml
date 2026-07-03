@@ -2,7 +2,6 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Objekt" />
 			<Item Name="Columns.PgrAddress.Caption" Value="Adresse" />
 			<Item Name="Columns.PgrCity.Caption" Value="Stadt" />
 			<Item Name="Columns.PgrCountry.Caption" Value="Land" />

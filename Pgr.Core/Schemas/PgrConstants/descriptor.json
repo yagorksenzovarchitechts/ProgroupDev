@@ -4,6 +4,7 @@
     "Name": "PgrConstants",
     "ModifiedOnUtc": "\/Date(1782814814000)\/",
     "ManagerName": "SourceCodeSchemaManager",
-    "Caption": "PgrConstants"
+    "Caption": "PgrConstants",
+    "DependsOn": []
   }
 }

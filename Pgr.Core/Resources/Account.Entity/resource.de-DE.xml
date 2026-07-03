@@ -50,14 +50,11 @@
 			<Item Name="Columns.PgrPlanningBl.Caption" Value="SAP Planungssperre" />
 			<Item Name="Columns.PgrProductionCapacity.Caption" Value="Produktionskapazität" />
 			<Item Name="Columns.PgrSalesDirector.Caption" Value="Sales Director" />
-			<Item Name="Columns.PgrSapCustomerNumber.Caption" Value="SAP Kundennummer" />
 			<Item Name="Columns.PgrSensitiveToOverDelivery.Caption" Value="Überlieferungssensibel" />
 			<Item Name="Columns.PgrServiceTeamLead.Caption" Value="ID Teamleiter" />
 			<Item Name="Columns.PgrSpecialFeatures.Caption" Value="Besonderheiten" />
 			<Item Name="Columns.PgrVatNumber.Caption" Value="Umsatzsteuernummer" />
-			<Item Name="Columns.PgrWFName.Caption" Value="WF Name" />
 			<Item Name="Columns.PgrWepaformCustomerId.Caption" Value="Wepaform Kundennummer" />
-			<Item Name="Columns.PgrWepaformCustomerId2.Caption" Value="Wepaform Kundennummer" />
 			<Item Name="Columns.PgrWorkingWidth.Caption" Value="Arbeitsbreite" />
 			<Item Name="Columns.PgrYearOfCommissioning.Caption" Value="Inbetriebnahme" />
 			<Item Name="Columns.Phone.Caption" Value="Telefonnumer" />

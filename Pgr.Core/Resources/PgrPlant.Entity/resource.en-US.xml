@@ -3,23 +3,25 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Plant" />
-			<Item Name="Columns.PgrAccount.Caption" Value="Packaging park customer" />
+			<Item Name="Columns.PgrAccount.Caption" Value="Packaging park customer (delete)" />
 			<Item Name="Columns.PgrAddress.Caption" Value="Street address" />
 			<Item Name="Columns.PgrCity.Caption" Value="City" />
 			<Item Name="Columns.PgrCountry.Caption" Value="Country" />
 			<Item Name="Columns.PgrFlute.Caption" Value="Flute" />
-			<Item Name="Columns.PgrHighRack.Caption" Value="High rack" />
+			<Item Name="Columns.PgrHighRack.Caption" Value="High rack storage" />
 			<Item Name="Columns.PgrIsActive.Caption" Value="Active" />
 			<Item Name="Columns.PgrName.Caption" Value="Plant name" />
-			<Item Name="Columns.PgrNotes.Caption" Value="Note" />
+			<Item Name="Columns.PgrNotes.Caption" Value="Notes" />
 			<Item Name="Columns.PgrNumberOfWalls.Caption" Value="Number of walls" />
 			<Item Name="Columns.PgrOrderNumber.Caption" Value="Order" />
+			<Item Name="Columns.PgrPackagingParkCustomer1.Caption" Value="Packaging park customer (1)" />
+			<Item Name="Columns.PgrPackagingParkCustomer2.Caption" Value="Packaging park customer (2)" />
 			<Item Name="Columns.PgrPlantNumber.Caption" Value="Plant number" />
 			<Item Name="Columns.PgrSpecialFeatures.Caption" Value="Special features" />
 			<Item Name="Columns.PgrStateProvince.Caption" Value="State/province" />
 			<Item Name="Columns.PgrTargetNumberOfEmployees.Caption" Value="Target number of employes" />
 			<Item Name="Columns.PgrWorkingWidth.Caption" Value="Working width" />
-			<Item Name="Columns.PgrYear.Caption" Value="Year" />
+			<Item Name="Columns.PgrYear.Caption" Value="Year of commissioning" />
 			<Item Name="Columns.PgrZip.Caption" Value="ZIP/Postal code" />
 		</Items>
 	</Group>

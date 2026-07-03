@@ -8,6 +8,7 @@
       "Name": "PageWithTabsFreedomTemplate"
     },
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Visit report form page"
+    "Caption": "Visit report form page",
+    "DependsOn": []
   }
 }
