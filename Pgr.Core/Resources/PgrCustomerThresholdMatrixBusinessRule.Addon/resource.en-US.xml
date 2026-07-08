@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.71db0637-74fe-4d09-800b-b60275cb182e.Caption" Value="Make elements read-only: 2" />
+			<Item Name="AddonConfig.Rules.7c482b91-7bd4-42c1-0561-c6336486df10.Caption" Value="Apply static filter: Region" />
+			<Item Name="AddonConfig.Rules.c5f93505-3e48-4db2-2f9c-75de3c51195d.Caption" Value="Make elements read-only: Customer" />
+			<Item Name="AddonConfig.Rules.e4457495-4f9a-5030-be7c-c2e9d7fab213.Caption" Value="Make elements required: Region" />
+			<Item Name="AddonConfig.Rules.f448980c-655e-cd38-8f2d-62be366e142f.Caption" Value="Make elements required: Category" />
+			<Item Name="Caption" Value="Customer threshold matrix (Business rules)" />
+		</Items>
+	</Group>
+</Resources>

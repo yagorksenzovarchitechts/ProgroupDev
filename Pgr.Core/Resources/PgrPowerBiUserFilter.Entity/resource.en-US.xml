@@ -3,9 +3,8 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Power Bi User Filter" />
-			<Item Name="Columns.PgrFilterValue.Caption" Value="Filter value" />
+			<Item Name="Columns.PgrSlicerValue.Caption" Value="Slicer Value" />
 			<Item Name="Columns.PgrUser.Caption" Value="User" />
-			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
 		</Items>
 	</Group>
 </Resources>

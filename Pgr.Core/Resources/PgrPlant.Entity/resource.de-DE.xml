@@ -2,6 +2,7 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
+			<Item Name="Caption" Value="Plant" />
 			<Item Name="Columns.PgrAddress.Caption" Value="Adresse" />
 			<Item Name="Columns.PgrCity.Caption" Value="Stadt" />
 			<Item Name="Columns.PgrCountry.Caption" Value="Land" />
@@ -15,6 +16,7 @@
 			<Item Name="Columns.PgrStateProvince.Caption" Value="Bundesland/Provinz" />
 			<Item Name="Columns.PgrTargetNumberOfEmployees.Caption" Value="Sollmitarbeiter" />
 			<Item Name="Columns.PgrWorkingWidth.Caption" Value="Arbeitsbreite" />
+			<Item Name="Columns.PgrYear.Caption" Value="Jahr der Inbetriebnahme" />
 			<Item Name="Columns.PgrZip.Caption" Value="Postleitzahl" />
 		</Items>
 	</Group>

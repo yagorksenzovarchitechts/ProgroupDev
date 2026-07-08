@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Customer threshold matrix" />
+			<Item Name="Columns.PgrAbsolute.Caption" Value="Absolute" />
+			<Item Name="Columns.PgrCategory.Caption" Value="Category" />
+			<Item Name="Columns.PgrCustomer.Caption" Value="Customer" />
+			<Item Name="Columns.PgrNote.Caption" Value="Note" />
+			<Item Name="Columns.PgrNumber.Caption" Value="Number" />
+			<Item Name="Columns.PgrPercentage.Caption" Value="Percentage" />
+			<Item Name="Columns.PgrRegion.Caption" Value="Region" />
+		</Items>
+	</Group>
+</Resources>

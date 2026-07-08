@@ -1,0 +1,8 @@
+= MetaData.Schema.UId "f8617399-ae9e-40b4-b44e-82c17fdd021f"
+= MetaData.Schema.A2 "PgrCustomerThresholdMa_FormPage"
+= MetaData.Schema.A5 "6f71e54c-1960-40c9-94f6-073fd67699ab"
+~ MetaData.Schema.B2 ["81d50263-4e06-4aaa-aac6-31a840d33f7f","54012e11-12c0-46e5-94aa-c358f0729c69","fa891f8d-f958-4b58-a955-8e47158aff4d","6db26bba-f940-4ed5-be9a-ba097319755e"]
+= MetaData.Schema.B6 "5530927f-22ea-e7c9-4ccf-506d3a6c2ed2"
+= MetaData.Schema.HD1 "3b2e117f-8c6b-4ca5-80a2-7ebb497cddf9"
+- MetaData.Schema.B7
++ MetaData.Schema.B7 false

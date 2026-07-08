@@ -8,6 +8,7 @@
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
 			<Item Name="LocalizableStrings.ConnectionsTabContainerHeaderLabel_caption.Value" Value="Beziehungen" />
 			<Item Name="LocalizableStrings.ConnectionsTabContainer_caption.Value" Value="Beziehungen" />
+			<Item Name="LocalizableStrings.ExpansionPanel_luhcskb_title.Value" Value="Untergeordnete Aufgaben" />
 			<Item Name="LocalizableStrings.ExpansionPanel_wki6rii_title.Value" Value="Info" />
 			<Item Name="LocalizableStrings.Label_k843hzt_caption.Value" Value="Details" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />

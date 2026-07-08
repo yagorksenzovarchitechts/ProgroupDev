@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Kundenschwellenwert-Matrix" />
+			<Item Name="Columns.PgrAbsolute.Caption" Value="Absolut" />
+			<Item Name="Columns.PgrCategory.Caption" Value="Kategorie" />
+			<Item Name="Columns.PgrCustomer.Caption" Value="Kunde" />
+			<Item Name="Columns.PgrNote.Caption" Value="Notiz" />
+			<Item Name="Columns.PgrNumber.Caption" Value="Nummer" />
+		</Items>
+	</Group>
+</Resources>

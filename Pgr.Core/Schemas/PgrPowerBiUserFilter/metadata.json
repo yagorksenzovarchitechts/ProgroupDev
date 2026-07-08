@@ -64,14 +64,6 @@
 - MetaData.Schema.D2.["3015559e-cbc6-406a-88af-07f7930be832"].E16
 - MetaData.Schema.D2.["3fabd836-6a53-4d8d-9069-6df88d9dae1e"].E16
 + MetaData.Schema.D2 {
-  "UId": "0211b894-e1a6-f62c-5889-847a1c3e6a66",
-  "A2": "PgrFilterValue",
-  "A3": "97b578ce-c721-4409-9ce5-86590a900c1b",
-  "A4": "97b578ce-c721-4409-9ce5-86590a900c1b",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "5ca35f10-a101-4c67-a96a-383da6afacfc"
-}
-+ MetaData.Schema.D2 {
   "UId": "35cc1ca1-2e48-21a5-9901-b664572bdc04",
   "A2": "PgrUser",
   "A3": "97b578ce-c721-4409-9ce5-86590a900c1b",
@@ -84,6 +76,18 @@
   "E17": "PgrUserId",
   "E18": "PgrUserName"
 }
++ MetaData.Schema.D2 {
+  "UId": "cc49265d-de75-14c1-46f4-7885725a797a",
+  "A2": "PgrSlicerValue",
+  "A3": "97b578ce-c721-4409-9ce5-86590a900c1b",
+  "A4": "97b578ce-c721-4409-9ce5-86590a900c1b",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "8dc03bd4-5385-41fd-8c2e-a6b77f0e1424",
+  "E6": true,
+  "E17": "PgrSlicerValueId",
+  "E18": "PgrSlicerValueName"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -93,8 +97,8 @@
   "736c30a7-c0ec-4fa9-b034-2552b319b633",
   "9e53fd7c-dde4-4502-a64c-b9e34148108b",
   "3fabd836-6a53-4d8d-9069-6df88d9dae1e",
-  "0211b894-e1a6-f62c-5889-847a1c3e6a66",
-  "35cc1ca1-2e48-21a5-9901-b664572bdc04"
+  "35cc1ca1-2e48-21a5-9901-b664572bdc04",
+  "cc49265d-de75-14c1-46f4-7885725a797a"
 ]
 = MetaData.Schema.D20.A2 "PgrPowerBiUserFilterEvents"
 + MetaData.Schema.D20.FA1 false

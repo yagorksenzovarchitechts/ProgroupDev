@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "c8c32f18-58c8-465c-a026-d73ebffb84c2",
+    "Name": "PgrCustomerThresholdMa_ListPage",
+    "ModifiedOnUtc": "\/Date(1783510646000)\/",
+    "Parent": {
+      "UId": "b7b898d0-8c77-4953-c097-23fa6800da02",
+      "Name": "ListPageV3Template"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Customer threshold matrix list page",
+    "DependsOn": []
+  }
+}

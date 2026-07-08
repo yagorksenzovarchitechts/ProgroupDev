@@ -15,23 +15,23 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
 + MetaData.Schema.B2 {
-  "UId": "af96a998-a623-02f9-8e8f-fe6cfb652c45",
+  "UId": "e4787142-5b79-ba75-8318-a0b4cefc3a6a",
   "A2": "SearchFilter_placeholder",
-  "A3": "2593a12e-895e-4284-8459-536ddd312535",
+  "A3": "b7b898d0-8c77-4953-c097-23fa6800da02",
   "A4": "2593a12e-895e-4284-8459-536ddd312535",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
 + MetaData.Schema.B2 {
-  "UId": "6d70b62a-3ca8-679e-4b6b-62656cfd539b",
+  "UId": "07de7fa0-e1c9-b6f7-8997-df0d8633aeb0",
   "A2": "MenuItem_ImportFromExcel_caption",
-  "A3": "2593a12e-895e-4284-8459-536ddd312535",
+  "A3": "b7b898d0-8c77-4953-c097-23fa6800da02",
   "A4": "2593a12e-895e-4284-8459-536ddd312535",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
 + MetaData.Schema.B2 {
-  "UId": "1f70d2d7-7b9a-35bc-42ab-a4e29d6c1032",
+  "UId": "9bb24451-adaf-b526-92e6-041f92162a9d",
   "A2": "MenuItem_ExportToExcel_caption",
-  "A3": "2593a12e-895e-4284-8459-536ddd312535",
+  "A3": "b7b898d0-8c77-4953-c097-23fa6800da02",
   "A4": "2593a12e-895e-4284-8459-536ddd312535",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
@@ -65,9 +65,9 @@
 ~ MetaData.Schema.B2 [
   "e1021853-09d7-ab4f-fdb3-51d891d09374",
   "2fd16bc0-109e-b49b-32fd-473f3b8e6daf",
-  "af96a998-a623-02f9-8e8f-fe6cfb652c45",
-  "6d70b62a-3ca8-679e-4b6b-62656cfd539b",
-  "1f70d2d7-7b9a-35bc-42ab-a4e29d6c1032",
+  "e4787142-5b79-ba75-8318-a0b4cefc3a6a",
+  "07de7fa0-e1c9-b6f7-8997-df0d8633aeb0",
+  "9bb24451-adaf-b526-92e6-041f92162a9d",
   "4a1fa859-3609-3091-fee0-b90f1ee54a71",
   "fb34ee34-583e-6614-8bf5-891aefb7111b",
   "cd48fce9-9e39-e4ba-9db3-42087a0ade0c",

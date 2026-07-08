@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "56a186b9-4a6a-48a2-a450-7ac9130d1743",
     "Name": "PgrPowerBI_ListPage",
-    "ModifiedOnUtc": "\/Date(1782394260000)\/",
+    "ModifiedOnUtc": "\/Date(1783412706000)\/",
     "Parent": {
       "UId": "b7b898d0-8c77-4953-c097-23fa6800da02",
       "Name": "ListPageV3Template"

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "66e3892f-61be-420a-89a4-189c9aa8e551",
+    "Name": "PgrCustomerThresholdMatrixBusinessRule",
+    "ModifiedOnUtc": "\/Date(1783505615000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Customer threshold matrix (Business rules)",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,24 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "8dd352e7-523f-471d-9d56-71a3d9b1109e"
+        },
+        {
+          "SchemaColumnUId": "1e236958-f206-4fde-8a0e-6783fc223424",
+          "Value": "PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIyIDVDMjEuNDQ3NyA1IDIxIDUuNDQ3NzIgMjEgNlYyNkMyMSAyNi41NTIzIDIxLjQ0NzcgMjcgMjIgMjdIMjZDMjYuNTUyMyAyNyAyNyAyNi41NTIzIDI3IDI2VjZDMjcgNS40NDc3MiAyNi41NTIzIDUgMjYgNUgyMloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMyAxMEMxMyA5LjQ0NzcyIDEzLjQ0NzcgOSAxNCA5SDE4QzE4LjU1MjMgOSAxOSA5LjQ0NzcyIDE5IDEwVjI2QzE5IDI2LjU1MjMgMTguNTUyMyAyNyAxOCAyN0gxNEMxMy40NDc3IDI3IDEzIDI2LjU1MjMgMTMgMjZWMTBaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNSAxNkM1IDE1LjQ0NzcgNS40NDc3MiAxNSA2IDE1SDEwQzEwLjU1MjMgMTUgMTEgMTUuNDQ3NyAxMSAxNlYyNkMxMSAyNi41NTIzIDEwLjU1MjMgMjcgMTAgMjdINkM1LjQ0NzcyIDI3IDUgMjYuNTUyMyA1IDI2VjE2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="
+        },
+        {
+          "SchemaColumnUId": "be95e737-14e9-4253-b0c4-e280da05434d",
+          "Value": "image/svg+xml"
+        },
+        {
+          "SchemaColumnUId": "d245dcaf-23bd-4b73-8718-26fdf38b443b",
+          "Value": "SectionIcon_PgrCustomerThresholdMatrix.svg"
+        }
+      ]
+    }
+  ]
+}

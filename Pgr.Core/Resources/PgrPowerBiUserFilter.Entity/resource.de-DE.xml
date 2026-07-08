@@ -3,7 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Power Bi User Filter" />
-			<Item Name="Columns.PgrFilterValue.Caption" Value="Filter value" />
+			<Item Name="Columns.PgrSlicerValue.Caption" Value="Slicer Value" />
 			<Item Name="Columns.PgrUser.Caption" Value="User" />
 		</Items>
 	</Group>

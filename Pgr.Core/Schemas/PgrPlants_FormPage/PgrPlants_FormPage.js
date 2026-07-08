@@ -578,27 +578,48 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
-				"name": "Input_giyskcs",
+				"name": "ComboBox_rigrywz",
 				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrCountry_a4ebngk",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrCountry_a4ebngk",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 2,
 						"rowSpan": 1
 					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrStateProvince_7k3op1d",
-					"control": "$PDS_PgrStateProvince_7k3op1d",
-					"placeholder": "",
-					"tooltip": "",
+					"visible": true,
 					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto",
-					"visible": true
+					"placeholder": ""
 				},
 				"parentName": "GridContainer_9o1eenp",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_5d1fmua",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_5d1fmua_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_rigrywz",
+				"propertyName": "listActions",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -626,57 +647,12 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_rigrywz",
+				"name": "Input_grqwjyb",
 				"values": {
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_PgrCountry_a4ebngk",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_PgrCountry_a4ebngk",
 					"layoutConfig": {
 						"column": 3,
 						"colSpan": 1,
 						"row": 2,
-						"rowSpan": 1
-					},
-					"visible": true,
-					"readonly": false,
-					"placeholder": ""
-				},
-				"parentName": "GridContainer_9o1eenp",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_5d1fmua",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_5d1fmua_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_rigrywz",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Input_grqwjyb",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 3,
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
@@ -690,7 +666,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GridContainer_9o1eenp",
 				"propertyName": "items",
-				"index": 4
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -843,11 +819,6 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 									}
 								]
 							}
-						}
-					},
-					"PDS_PgrStateProvince_7k3op1d": {
-						"modelConfig": {
-							"path": "PDS.PgrStateProvince"
 						}
 					},
 					"PDS_PgrCity_pl95qjq": {

@@ -59,6 +59,12 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							"width": 418
 						},
 						{
+							"id": "b0b2f4ce-9f60-1a76-bcda-2da05b2f03aa",
+							"code": "PDS_Priority",
+							"caption": "#ResourceString(PDS_Priority)#",
+							"dataValueType": 10
+						},
+						{
 							"id": "eff5bc92-7274-950f-cccb-b9b3919cc191",
 							"code": "PDS_ActivityCategory",
 							"caption": "#ResourceString(PDS_ActivityCategory)#",
@@ -108,6 +114,22 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 					"PDS_DurationInMnutesAndHours",
 					"PDS_ShowInScheduler"
 				]
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"Items",
+					"viewModelConfig",
+					"attributes"
+				],
+				"values": {
+					"PDS_Priority": {
+						"modelConfig": {
+							"path": "PDS.Priority"
+						}
+					}
+				}
 			}
 		]/**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/,
 		modelConfigDiff: /**SCHEMA_MODEL_CONFIG_DIFF*/[
@@ -123,6 +145,20 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 					"DurationInMnutesAndHours",
 					"ShowInScheduler"
 				]
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"dataSources",
+					"PDS",
+					"config",
+					"attributes"
+				],
+				"values": {
+					"Priority": {
+						"path": "Priority"
+					}
+				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,

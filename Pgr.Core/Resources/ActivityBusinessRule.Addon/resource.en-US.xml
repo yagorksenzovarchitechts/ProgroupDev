@@ -3,7 +3,8 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="AddonConfig.Rules.5c876047-2562-2a90-9c03-357ba1cb1bd1.Caption" Value="Rules for types &lt;&gt;  Meeting, Visit, Visit call" />
-			<Item Name="AddonConfig.Rules.6fea1e11-83a8-f1bf-7ae4-63360efd7e83.Caption" Value="Set values: Is overdue" />
+			<Item Name="AddonConfig.Rules.6fea1e11-83a8-f1bf-7ae4-63360efd7e83.Caption" Value="Set values: Is overdue true" />
+			<Item Name="AddonConfig.Rules.8a2fbcc4-601b-aa73-e368-d115e260f654.Caption" Value="Set values: Is overdue false" />
 			<Item Name="AddonConfig.Rules.c1e211e9-8e29-6720-9a8d-b207df730852.Caption" Value="Rules for types = Meeting, Visit, Visit call" />
 		</Items>
 	</Group>

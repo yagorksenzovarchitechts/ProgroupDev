@@ -17,7 +17,7 @@ define("PgrPowerBiReport", ["@creatio-devkit/common"], function(sdk) {
 
     function parseCsvColumn(csv) {
         var lines = (csv || "").split(/\r?\n/).filter(function(l){ return l.trim().length > 0; });
-        if (lines.length <= 1) { return []; }                  // первая строка — заголовок
+        if (lines.length <= 1) { return []; }                  
         return lines.slice(1).map(function(l){
             var v = l.trim();
             if (v.charAt(0) === '"' && v.charAt(v.length - 1) === '"') {
@@ -30,12 +30,9 @@ define("PgrPowerBiReport", ["@creatio-devkit/common"], function(sdk) {
     class PgrPowerBiReport extends HTMLElement {
         constructor() {
             super();
-            this._cfg = null; this._report = null; this._slicerValues = "";
+            this._cfg = null; this._report = null;
             this._libs = null; this._pbiService = null; this._lastSync = null;
         }
-
-        set slicerValues(v) { this._slicerValues = v || ""; this._applySlicer(); }
-        get slicerValues() { return this._slicerValues; }
 
         set syncCommand(v) { if (v && v !== this._lastSync) { this._lastSync = v; this._syncCatalog(); } }
         get syncCommand() { return this._lastSync; }
@@ -49,14 +46,13 @@ define("PgrPowerBiReport", ["@creatio-devkit/common"], function(sdk) {
                 var http = new sdk.HttpClientService();
                 var resp = await http.get("rest/PgrPowerBiService/GetConfig");
                 this._cfg = JSON.parse(resp.body.GetConfigResult);
-                if (!this._slicerValues && this._cfg.slicerValue) { this._slicerValues = this._cfg.slicerValue; }
 
                 this._libs = await loadLibs();
                 var token = await this._acquireToken();
                 this._embed(token);
             } catch (e) {
                 console.error("PowerBI init failed", e);
-                this._container.textContent = "Error (view console)";
+                this._container.textContent = "Не удалось загрузить отчёт Power BI (см. консоль).";
             }
         }
 
@@ -102,29 +98,37 @@ define("PgrPowerBiReport", ["@creatio-devkit/common"], function(sdk) {
             this._pbiService.reset(this._container);
             this._report = this._pbiService.embed(this._container, config);
             var self = this;
-            this._report.on("loaded", function(){ self._applySlicer(); });
+            this._report.on("loaded", function(){ self._applyUserFilters(); });
             this._report.on("error", function(e){ console.error("PowerBI error", e.detail); });
         }
 
-        async _applySlicer() {
-            if (!this._report || !this._cfg || !this._libs) { return; }
-            var values = (this._slicerValues || "").split(",").map(function(s){return s.trim();}).filter(Boolean);
+        async _applyUserFilters() {
+            if (!this._report || !this._cfg) { return; }
+            var filters = this._cfg.filters || [];
+            if (!filters.length) { return; }
             var pages = await this._report.getPages();
-            var page = pages.filter(function(p){return p.isActive;})[0] || pages[0];
+            var page = pages.filter(function(p){ return p.isActive; })[0] || pages[0];
             var visuals = await page.getVisuals();
-            var slicers = visuals.filter(function(v){return v.type === "slicer";});
+            var slicers = visuals.filter(function(v){ return v.type === "slicer"; });
             for (var i = 0; i < slicers.length; i++) {
                 var slicer = slicers[i];
                 var state = await slicer.getSlicerState();
                 var target = state.targets && state.targets[0];
-                if (!target || target.table !== this._cfg.filterTable || target.column !== this._cfg.filterColumn) { continue; }
+                if (!target) { continue; }
+                var match = null;
+                for (var j = 0; j < filters.length; j++) {
+                    if (filters[j].table === target.table && filters[j].column === target.column) { match = filters[j]; break; }
+                }
+                if (!match) { continue; }
+                var vals = (match.values || []).filter(Boolean);
+                if (!vals.length) { continue; }
                 await slicer.setSlicerState({
-                    filters: values.length ? [{
+                    filters: [{
                         $schema: "http://powerbi.com/product/schema#basic",
-                        target: { table: this._cfg.filterTable, column: this._cfg.filterColumn },
+                        target: { table: target.table, column: target.column },
                         operator: "In",
-                        values: values
-                    }] : []
+                        values: vals
+                    }]
                 });
             }
         }
@@ -142,7 +146,7 @@ define("PgrPowerBiReport", ["@creatio-devkit/common"], function(sdk) {
                         var st = await v.getSlicerState();
                         var t = st.targets && st.targets[0];
                         if (t) { entry.table = t.table || ""; entry.column = t.column || ""; }
-                        else { continue; }                   
+                        else { continue; }                     
                     } catch (e) { continue; }
                     try {
                         var exp = await v.exportData(models.ExportDataType.Summarized);
@@ -155,7 +159,7 @@ define("PgrPowerBiReport", ["@creatio-devkit/common"], function(sdk) {
         }
 
         async _syncCatalog() {
-            if (!this._report) { console.warn("Отчёт ещё не готов — синхронизация отложена"); return; }
+            if (!this._report) { console.warn("Report was not ready"); return; }
             try {
                 var catalog = await this._collectCatalog();
                 var http = new sdk.HttpClientService();
@@ -172,7 +176,7 @@ define("PgrPowerBiReport", ["@creatio-devkit/common"], function(sdk) {
     sdk.registerViewElement({
         type: "pgr.PowerBIReport",
         selector: "pgr-powerbi-report",
-        inputs: { slicerValues: {}, syncCommand: {} }
+        inputs: { syncCommand: {} }
     });
 
     return {};

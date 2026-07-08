@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "f8617399-ae9e-40b4-b44e-82c17fdd021f",
+    "Name": "PgrCustomerThresholdMa_FormPage",
+    "ModifiedOnUtc": "\/Date(1783431638000)\/",
+    "Parent": {
+      "UId": "3b2e117f-8c6b-4ca5-80a2-7ebb497cddf9",
+      "Name": "PageWithTabsFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Customer threshold matrix form page",
+    "DependsOn": []
+  }
+}

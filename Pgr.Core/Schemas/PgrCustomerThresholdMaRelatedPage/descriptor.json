@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "1c34878e-8ef4-4b5e-a59d-45ba0bbe4928",
+    "Name": "PgrCustomerThresholdMaRelatedPage",
+    "ModifiedOnUtc": "\/Date(1783431638000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Customer threshold matrix (Page settings)",
+    "DependsOn": []
+  }
+}

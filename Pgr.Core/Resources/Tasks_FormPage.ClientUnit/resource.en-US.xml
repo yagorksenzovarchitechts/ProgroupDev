@@ -9,16 +9,23 @@
 			<Item Name="LocalizableStrings.ConnectionsTabContainerHeaderLabel_caption.Value" Value="Connections" />
 			<Item Name="LocalizableStrings.ConnectionsTabContainer_caption.Value" Value="Connections" />
 			<Item Name="LocalizableStrings.ExpansionPanelMeetingTranscripts_title.Value" Value="Meeting transcripts" />
+			<Item Name="LocalizableStrings.ExpansionPanel_luhcskb_title.Value" Value="Sub-tasks" />
 			<Item Name="LocalizableStrings.ExpansionPanel_wki6rii_title.Value" Value="Info" />
 			<Item Name="LocalizableStrings.ExpansionPanel_wxaphav_title.Value" Value="Linked visit report" />
 			<Item Name="LocalizableStrings.GridDetailAddBtnNewTranscript_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.GridDetailAddBtnRefreshTranscript_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_ycxh01j_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.GridDetailExportDataBtn_MeetingTranscripts_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_cifbi8i_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_0vsjg06_caption.Value" Value="Data import" />
 			<Item Name="LocalizableStrings.GridDetailImportDataBtn_MeetingTranscripts_caption.Value" Value="Data import" />
 			<Item Name="LocalizableStrings.GridDetailMeetingTranscripts_columns_0_caption.Value" Value="Saved on" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_nkxudbv_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_o2kvzmg_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_MeetingTranscripts_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_a81j6le_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_MeetingTranscripts_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_qc5rcs2_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.GridDetail_bdh4aggDS_PgrIsRelevantForWeeklyReport.Value" Value="Weekly report?" />
 			<Item Name="LocalizableStrings.LabelMeetingTranscriptsList_caption.Value" Value="These transcripts were used to generate the meeting summary. Double-click a transcript to view the full text." />
 			<Item Name="LocalizableStrings.Label_NoMeetSummaryAccessCaption_caption.Value" Value="The AI Meeting Summary is available only to meeting participants. You were not a participant in this meeting." />
@@ -31,6 +38,7 @@
 			<Item Name="LocalizableStrings.TabMeetingSummary_caption.Value" Value="Meeting summary" />
 			<Item Name="LocalizableStrings.addRecord_1g27yyy_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_2nooxby_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_4dcm6au_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_60hc7mu_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_6cy1p70_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_d7tgh1o_caption.Value" Value="Add new" />

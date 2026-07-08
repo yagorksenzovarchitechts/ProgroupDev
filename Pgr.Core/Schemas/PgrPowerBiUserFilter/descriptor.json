@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "97b578ce-c721-4409-9ce5-86590a900c1b",
     "Name": "PgrPowerBiUserFilter",
-    "ModifiedOnUtc": "\/Date(1782377474000)\/",
+    "ModifiedOnUtc": "\/Date(1783414014000)\/",
     "Parent": {
       "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
       "Name": "BaseLookup"
