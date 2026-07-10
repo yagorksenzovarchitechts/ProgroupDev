@@ -2,6 +2,7 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="LocalizableStrings.AccountCompetitorsExpansionPanel_title.Value" Value="Account competitors" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Attachments" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Attachments" />
 			<Item Name="LocalizableStrings.Button_4v2hyhs_caption.Value" Value="New" />

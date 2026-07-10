@@ -630,6 +630,13 @@
   "A4": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
++ MetaData.Schema.B2 {
+  "UId": "e8d8a81c-1410-ef6c-bfc2-08ff8f51c851",
+  "A2": "AccountCompetitorsExpansionPanel_title",
+  "A3": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
+  "A4": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
+  "A5": "c18f01ff-4f0e-4fbb-9d46-a0d146e8c848"
+}
 = MetaData.Schema.B2.["867e5d47-7935-3b75-3310-adaff80090bd"].A4 "a5f0272c-37e4-447a-b8f9-50c4afbe6857"
 = MetaData.Schema.B2.["867e5d47-7935-3b75-3310-adaff80090bd"].A5 "c3352ad7-734f-4d78-b5df-7bf53f0975cc"
 = MetaData.Schema.B2.["a0d2e802-58a2-ff63-b320-6962be0dd7c5"].A4 "a5f0272c-37e4-447a-b8f9-50c4afbe6857"
@@ -905,6 +912,7 @@
   "40b50cc4-eb68-fe4f-59ca-ef4bd4e26e08",
   "dbfce151-e0aa-a564-bda2-8f6153b86fa7",
   "b79f05f5-fcc2-4474-0197-c0b38560d163",
+  "e8d8a81c-1410-ef6c-bfc2-08ff8f51c851",
   "867e5d47-7935-3b75-3310-adaff80090bd",
   "a0d2e802-58a2-ff63-b320-6962be0dd7c5",
   "bec86d3e-4682-b81b-1f7b-e65bf6ebd01f",

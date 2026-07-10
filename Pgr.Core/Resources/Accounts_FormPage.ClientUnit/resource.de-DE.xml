@@ -2,6 +2,7 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
+			<Item Name="LocalizableStrings.AccountCompetitorsExpansionPanel_title.Value" Value="Wettbewerber im Kundenkonto" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
 			<Item Name="LocalizableStrings.Button_4v2hyhs_caption.Value" Value="Neu" />
@@ -9,14 +10,45 @@
 			<Item Name="LocalizableStrings.Button_wzoi3mp_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.CompetitorsAddButton_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.CompetitorsExpansionPanel_title.Value" Value="Wettbewerber" />
+			<Item Name="LocalizableStrings.CompetitorsExportDataButton_caption.Value" Value="Excel-Export" />
+			<Item Name="LocalizableStrings.CompetitorsImportDataButton_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.CompetitorsList_caption.Value" Value="Products offered" />
+			<Item Name="LocalizableStrings.CompetitorsRefreshButton_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.CompetitorsSettingsButton_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_1mbln9s_title.Value" Value="Adressen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_3jtu7p2_title.Value" Value="&#xA;SAP" />
 			<Item Name="LocalizableStrings.ExpansionPanel_4r2mr5k_title.Value" Value="Besuchsberichte" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ilw1gpx_title.Value" Value="Rechnung" />
 			<Item Name="LocalizableStrings.ExpansionPanel_pa1hlbi_title.Value" Value="Überlieferung" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_ytmu9oh_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.HowTheyMakeMoney_placeholder.Value" Value="Enter how the company generates revenue" />
+			<Item Name="LocalizableStrings.Label_HowTheyMakeMoney_caption.Value" Value="Wie sie Geld verdienen" />
+			<Item Name="LocalizableStrings.Label_ProductsOffered_caption.Value" Value="Products offered" />
+			<Item Name="LocalizableStrings.LeadAddButton_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.LeadExpansionPanel_title.Value" Value="MQL/SQL" />
+			<Item Name="LocalizableStrings.LeadExportDataButton_caption.Value" Value="Exportieren nach Excel" />
+			<Item Name="LocalizableStrings.LeadImportDataButton_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.LeadRefreshButton_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.LeadSearchFilter_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.LeadSettingsButton_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.MenuItem_5sivz5r_caption.Value" Value="Exportieren nach Excel" />
 			<Item Name="LocalizableStrings.MenuItem_hgmncrh_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.OpportunityAddButton_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.OpportunityExpansionPanel_title.Value" Value="Verkaufschancen" />
+			<Item Name="LocalizableStrings.OpportunityExportDataButton_caption.Value" Value="Excel-Export" />
+			<Item Name="LocalizableStrings.OpportunityImportDataButton_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.OpportunityRefreshButton_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.OpportunitySearchFilter_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.OpportunitySettingsButton_caption.Value" Value="Aktionen" />
+			<Item Name="LocalizableStrings.ProductsOffered_placeholder.Value" Value="Geben Sie ein, was das Unternehmen anbietet oder verkauft." />
+			<Item Name="LocalizableStrings.RecommendedProductExpansionPanel_title.Value" Value="Produktempfehlungen" />
+			<Item Name="LocalizableStrings.RecommendedProductExportDataButton_caption.Value" Value="Excel-Export" />
+			<Item Name="LocalizableStrings.RecommendedProductRefreshButton_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.RecommendedProductSearchFilter_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.RecommendedProductSettingsButton_caption.Value" Value="Aktionen" />
+			<Item Name="LocalizableStrings.SalesTab_caption.Value" Value="Verkauf" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
 			<Item Name="LocalizableStrings.SearchFilter_2pozl4n_placeholder.Value" Value="Suche" />
 			<Item Name="LocalizableStrings.TabContainer_0nkic4p_caption.Value" Value="Besuchsberichte" />

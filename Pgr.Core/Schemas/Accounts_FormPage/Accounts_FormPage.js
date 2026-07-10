@@ -1,4 +1,48 @@
 define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+
+	// Delivery + competitor shares for an account must add up to exactly this value.
+	const SHARE_REQUIRED_TOTAL = 100;
+
+	/** Sum of PgrShare across the in-memory competitor grid rows, including unsaved ones. */
+	function sumCompetitorShares(competitors) {
+		let sum = 0;
+		if (competitors && typeof competitors.forEach === "function") {
+			competitors.forEach((row) => {
+				// Grid cells are Zone.js-wrapped: the value lives under __zone_symbol__value.
+				const cell = row && row.DataGrid_0x7yiatDS_PgrShare;
+				const value = cell && typeof cell === "object" && "__zone_symbol__value" in cell
+					? cell.__zone_symbol__value
+					: cell;
+				sum += Number(value) || 0;
+			});
+		}
+		return sum;
+	}
+
+	/** Total share for the account = delivery share + all competitor shares (as the listener summed it). */
+	async function getAccountShareTotal(request) {
+		const deliveryShare = Number(await request.$context.PDS_PgrDeliveryShare_8wr4r2b) || 0;
+		const competitors = await request.$context.DataGrid_0x7yiat;
+		return deliveryShare + sumCompetitorShares(competitors);
+	}
+
+	/** Blocking dialog shown when the share total is not exactly 100%. */
+	async function showShareTotalError(request, total) {
+		const baseMsg = await request.$context.Resources.Strings.ShareTotalErrorString;
+		await request.$context.executeRequest({
+			type: "crt.ShowDialogRequest",
+			$context: request.$context,
+			dialogConfig: {
+				data: {
+					message: `${baseMsg} ${total}%`,
+					actions: [
+						{ key: "ok", config: { color: "primary", caption: "OK" } }
+					]
+				}
+			}
+		});
+	}
+
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -308,13 +352,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "merge",
-				"name": "ServiceTab",
-				"values": {
-					"visible": false
-				}
-			},
-			{
-				"operation": "merge",
 				"name": "SalesTab",
 				"values": {
 					"visible": false
@@ -438,6 +475,13 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"width": 220
 						}
 					]
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "ServiceTab",
+				"values": {
+					"visible": false
 				}
 			},
 			{
@@ -2921,6 +2965,28 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
+				"name": "PgrOrderIntakeDayCounter",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_PgrOrderIntakeDayCounter_xrch8ln",
+					"control": "$PDS_PgrOrderIntakeDayCounter_xrch8ln",
+					"readonly": true,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GridContainer_8plbcqj",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
 				"name": "TabContainer_Competitor",
 				"values": {
 					"type": "crt.TabContainer",
@@ -3109,6 +3175,264 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"parentName": "GridContainer_hx3nlo3",
 				"propertyName": "items",
 				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "AccountCompetitorsExpansionPanel",
+				"values": {
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(AccountCompetitorsExpansionPanel_title)#",
+					"toggleType": "material",
+					"togglePosition": "before",
+					"expanded": false,
+					"labelColor": "auto",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"padding": {
+						"top": "small",
+						"bottom": "small",
+						"left": "none",
+						"right": "none"
+					},
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch"
+				},
+				"parentName": "TabContainer_Competitor",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_clemq6h",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 24px)",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "AccountCompetitorsExpansionPanel",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_pw1kbai",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"gap": "none",
+					"alignItems": "center",
+					"items": [],
+					"layoutConfig": {
+						"colSpan": 1,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_clemq6h",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_yu6jgen",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 32px)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": null
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": [],
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
+				},
+				"parentName": "AccountCompetitorsExpansionPanel",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "AccountCompetitorsDataGrid",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 1,
+						"rowSpan": 5
+					},
+					"type": "crt.DataGrid",
+					"features": {
+						"rows": {
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
+						}
+					},
+					"items": "$DataGrid_0x7yiat",
+					"activeRow": "$DataGrid_0x7yiat_ActiveRow",
+					"selectionState": "$DataGrid_0x7yiat_SelectionState",
+					"_selectionOptions": {
+						"attribute": "DataGrid_0x7yiat_SelectionState"
+					},
+					"primaryColumnName": "DataGrid_0x7yiatDS_Id",
+					"columns": [
+						{
+							"id": "fb6698a2-b622-b4cd-82dd-7c5c3d52bf20",
+							"code": "DataGrid_0x7yiatDS_PgrCompetitor",
+							"caption": "#ResourceString(DataGrid_0x7yiatDS_PgrCompetitor)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "b890b765-3d26-2bc5-fc68-baf13c161db8",
+							"code": "DataGrid_0x7yiatDS_PgrShare",
+							"caption": "#ResourceString(DataGrid_0x7yiatDS_PgrShare)#",
+							"dataValueType": 4
+						},
+						{
+							"id": "70540db1-b9c0-1827-394b-e934d06e2228",
+							"code": "DataGrid_0x7yiatDS_PgrValidFrom",
+							"caption": "#ResourceString(DataGrid_0x7yiatDS_PgrValidFrom)#",
+							"dataValueType": 7
+						},
+						{
+							"id": "482726a1-dee1-d49b-cc70-334f5d54d5c3",
+							"code": "DataGrid_0x7yiatDS_PgrValidTo",
+							"caption": "#ResourceString(DataGrid_0x7yiatDS_PgrValidTo)#",
+							"dataValueType": 7
+						}
+					],
+					"placeholder": false,
+					"bulkActions": []
+				},
+				"parentName": "GridContainer_yu6jgen",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_0x7yiat_AddTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Add tag",
+					"icon": "tag-icon",
+					"clicked": {
+						"request": "crt.AddTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_0x7yiatDS",
+							"filters": "$DataGrid_0x7yiat | crt.ToCollectionFilters : 'DataGrid_0x7yiat' : $DataGrid_0x7yiat_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_0x7yiat_SelectionState"
+						}
+					},
+					"items": []
+				},
+				"parentName": "AccountCompetitorsDataGrid",
+				"propertyName": "bulkActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_0x7yiat_RemoveTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Remove tag",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.RemoveTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_0x7yiatDS",
+							"filters": "$DataGrid_0x7yiat | crt.ToCollectionFilters : 'DataGrid_0x7yiat' : $DataGrid_0x7yiat_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_0x7yiat_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_0x7yiat_AddTagsBulkAction",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_0x7yiat_ExportToExcelBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Export to Excel",
+					"icon": "export-button-icon",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "AccountCompetitorsDataGrid",
+							"filters": "$DataGrid_0x7yiat | crt.ToCollectionFilters : 'DataGrid_0x7yiat' : $DataGrid_0x7yiat_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_0x7yiat_SelectionState"
+						}
+					}
+				},
+				"parentName": "AccountCompetitorsDataGrid",
+				"propertyName": "bulkActions",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_0x7yiat_MergeBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Merge",
+					"icon": "merge-icon",
+					"clicked": {
+						"request": "crt.MergeRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_0x7yiatDS",
+							"selectionState": "$DataGrid_0x7yiat_SelectionState"
+						}
+					}
+				},
+				"parentName": "AccountCompetitorsDataGrid",
+				"propertyName": "bulkActions",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_0x7yiat_DeleteBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Delete",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.DeleteRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_0x7yiatDS",
+							"filters": "$DataGrid_0x7yiat | crt.ToCollectionFilters : 'DataGrid_0x7yiat' : $DataGrid_0x7yiat_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_0x7yiat_SelectionState"
+						}
+					}
+				},
+				"parentName": "AccountCompetitorsDataGrid",
+				"propertyName": "bulkActions",
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -6842,6 +7166,54 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"modelConfig": {
 							"path": "PDS.PgrWepaformCustomerId"
 						}
+					},
+					"DataGrid_0x7yiat": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "DataGrid_0x7yiatDS",
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "asc",
+										"columnName": "Description"
+									}
+								]
+							}
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"DataGrid_0x7yiatDS_PgrCompetitor": {
+									"modelConfig": {
+										"path": "DataGrid_0x7yiatDS.PgrCompetitor"
+									}
+								},
+								"DataGrid_0x7yiatDS_PgrShare": {
+									"modelConfig": {
+										"path": "DataGrid_0x7yiatDS.PgrShare"
+									}
+								},
+								"DataGrid_0x7yiatDS_PgrValidFrom": {
+									"modelConfig": {
+										"path": "DataGrid_0x7yiatDS.PgrValidFrom"
+									}
+								},
+								"DataGrid_0x7yiatDS_PgrValidTo": {
+									"modelConfig": {
+										"path": "DataGrid_0x7yiatDS.PgrValidTo"
+									}
+								},
+								"DataGrid_0x7yiatDS_Id": {
+									"modelConfig": {
+										"path": "DataGrid_0x7yiatDS.Id"
+									}
+								}
+							}
+						}
+					},
+					"PDS_PgrOrderIntakeDayCounter_xrch8ln": {
+						"modelConfig": {
+							"path": "PDS.PgrOrderIntakeDayCounter"
+						}
 					}
 				}
 			},
@@ -7000,6 +7372,13 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			}
 		]/**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/,
 		modelConfigDiff: /**SCHEMA_MODEL_CONFIG_DIFF*/[
+			{
+				"operation": "merge",
+				"path": [],
+				"values": {
+					"loadingConfig": {}
+				}
+			},
 			{
 				"operation": "merge",
 				"path": [
@@ -7305,6 +7684,51 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 								}
 							}
 						}
+					},
+					"PgrAccountTypesInAccountDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "page",
+						"config": {
+							"entitySchemaName": "PgrAccountTypesInAccount",
+							"loadParameters": {
+								"options": {
+									"pagingConfig": {
+										"rowCount": 1,
+										"rowsOffset": -1
+									},
+									"sortingConfig": {
+										"columns": [
+											{
+												"columnName": "CreatedOn",
+												"direction": "desc"
+											}
+										]
+									}
+								}
+							},
+							"allowCopyingRecords": true
+						}
+					},
+					"DataGrid_0x7yiatDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "AccountCompetitor",
+							"attributes": {
+								"PgrCompetitor": {
+									"path": "PgrCompetitor"
+								},
+								"PgrShare": {
+									"path": "PgrShare"
+								},
+								"PgrValidFrom": {
+									"path": "PgrValidFrom"
+								},
+								"PgrValidTo": {
+									"path": "PgrValidTo"
+								}
+							}
+						}
 					}
 				}
 			},
@@ -7458,46 +7882,47 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"attributePath": "PgrBonus",
 							"relationPath": "GridDetail_tziba2dDS.Id"
 						}
+					],
+					"PgrAccountTypesInAccountDS": [
+						{
+							"attributePath": "PgrAccount",
+							"relationPath": "PDS.Id"
+						}
+					],
+					"DataGrid_0x7yiatDS": [
+						{
+							"attributePath": "Account",
+							"relationPath": "PDS.Id"
+						}
 					]
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[
 			{
-			    request: "crt.SaveRecordRequest",
+			    request: "crt.SaveRecordsRequest",
 			    handler: async (request, next) => {
+			        // The floating "Save all" of an editable grid dispatches crt.SaveRecordsRequest.
+			        // itemsAttributeName says which grid is being saved — only guard the competitors grid.
+			        if (request.itemsAttributeName !== "DataGrid_0x7yiat") {
+			            return await next?.handle(request);
+			        }
+
 			        let total;
 			        try {
-			            const deliveryShare = Number(await request.$context.PDS_PgrDeliveryShare_8wr4r2b) || 0;
-			            const accountId = await request.$context.Id;
-			            const competitorsShare = accountId ? await sumCompetitorShare(accountId) : 0;
-			            total = Math.round((deliveryShare + competitorsShare) * 100) / 100;
+			            total = await getAccountShareTotal(request);
 			        } catch (e) {
 			            console.warn("Share validation skipped:", e);
 			            return await next?.handle(request);
 			        }
-					
-			        if (total === 0) {
+
+			        // Nothing entered yet, or the total is valid — let the save proceed.
+			        if (total === 0 || total === SHARE_REQUIRED_TOTAL) {
 			            return await next?.handle(request);
 			        }
-					
-			        if (total !== 100) {
-						const baseMsg = await request.$context.Resources.Strings.ShareTotalErrorString;
-			            await request.$context.executeRequest({
-			                type: "crt.ShowDialogRequest",
-			                $context: request.$context,
-			                dialogConfig: {
-			                    data: {
-			                        message: `${baseMsg} ${total}%`,
-			                        actions: [
-			                            { key: "ok", config: { color: "primary", caption: "OK" } }
-			                        ]
-			                    }
-			                }
-			            });
-			            return false; 
-			        }
-			        return await next?.handle(request);
+
+			        await showShareTotalError(request, total);
+			        return false;
 			    }
 			}
 		]/**SCHEMA_HANDLERS*/,
