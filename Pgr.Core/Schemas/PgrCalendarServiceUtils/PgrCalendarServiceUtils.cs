@@ -393,6 +393,29 @@ namespace Pgr.Core
 		}
 
 		/// <summary>
+		/// Checks whether the given day is a working day according to the calendar.
+		/// A shortened (pre-holiday) day counts as a working day; a holiday or a weekend does not.
+		/// </summary>
+		/// <param name="date"> Date to check. </param>
+		/// <param name="calendarId"> Calendar Id. </param>
+		/// <returns> <c>true</c> if the day is a working day. </returns>
+		public bool IsWorkingDay(DateTime date, Guid calendarId)
+		{
+			_calendarId = calendarId;
+			GetWeekends();
+			GetDaysOff();
+
+			var dayOff = _daysOffList.FirstOrDefault(x => x.Date == date.Date);
+			if (dayOff != null)
+			{
+				// A record in DayOff with IsWeekend == false is a shortened working day.
+				return !dayOff.IsWeekend;
+			}
+
+			return !_weekendsList.Contains(date.DayOfWeek.ToString());
+		}
+
+		/// <summary>
 		/// Checks whether the day is a day off.
 		/// </summary>
 		/// <param name="date"> Date. </param>
