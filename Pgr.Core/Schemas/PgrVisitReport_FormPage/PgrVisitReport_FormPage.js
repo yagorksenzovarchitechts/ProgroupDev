@@ -1215,7 +1215,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 						"right": "none"
 					},
 					"fitContent": true,
-					"visible": false,
+					"visible": true,
 					"alignItems": "stretch"
 				},
 				"parentName": "TabContainer_widjyyt",
