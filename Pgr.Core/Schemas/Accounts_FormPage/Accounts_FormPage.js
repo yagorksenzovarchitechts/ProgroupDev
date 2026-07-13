@@ -1,4 +1,4 @@
-define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(PgrAccountCompetitorShareHelper)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -175,6 +175,12 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"operation": "merge",
 				"name": "AddressList",
 				"values": {
+					"layoutConfig": {
+						"colSpan": 2,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 10
+					},
 					"columns": [
 						{
 							"id": "43a5726c-acfa-87ee-7b54-e5ee05626e0c",
@@ -3145,7 +3151,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"title": "#ResourceString(AccountCompetitorsExpansionPanel_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": false,
+					"expanded": true,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -3246,7 +3252,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"column": 1,
 						"colSpan": 2,
 						"row": 1,
-						"rowSpan": 5
+						"rowSpan": 12
 					},
 					"type": "crt.DataGrid",
 					"features": {
@@ -7861,73 +7867,81 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			{
 			    request: "crt.SaveRecordsRequest",
 			    handler: async (request, next) => {
-			        // NOTE: all helpers are declared INSIDE this handler on purpose. The Freedom UI
-			        // designer regenerates this file and wipes anything outside the /**SCHEMA_*/ marker
-			        // regions (e.g. functions in the define() closure), so module-level helpers do not
-			        // survive a designer save. Keeping them here keeps them inside the handlers region.
-			        const REQUIRED_TOTAL = 100;
-
-			        // Sum of PgrShare across the in-memory competitor grid rows, including unsaved ones.
-			        const sumCompetitorShares = (competitors) => {
-			            let sum = 0;
-			            if (competitors && typeof competitors.forEach === "function") {
-			                competitors.forEach((row) => {
-			                    // Grid cells are Zone.js-wrapped: the value lives under __zone_symbol__value.
-			                    const cell = row && row.CompetitorsGridDS_PgrShare;
-			                    const value = cell && typeof cell === "object" && "__zone_symbol__value" in cell
-			                        ? cell.__zone_symbol__value
-			                        : cell;
-			                    sum += Number(value) || 0;
-			                });
-			            }
-			            return sum;
-			        };
-
-			        // Total share for the account = delivery share + all competitor shares.
-			        const getAccountShareTotal = async () => {
-			            const deliveryShare = Number(await request.$context.PDS_PgrDeliveryShare_8wr4r2b) || 0;
-			            const competitors = await request.$context.CompetitorsGrid;
-			            return deliveryShare + sumCompetitorShares(competitors);
-			        };
-
-			        // Blocking dialog shown when the share total is not exactly 100%.
-			        const showShareTotalError = async (total) => {
-			            const baseMsg = await request.$context.Resources.Strings.ShareTotalErrorString;
-			            await request.$context.executeRequest({
-			                type: "crt.ShowDialogRequest",
-			                $context: request.$context,
-			                dialogConfig: {
-			                    data: {
-			                        message: `${baseMsg} ${total}%`,
-			                        actions: [
-			                            { key: "ok", config: { color: "primary", caption: "OK" } }
-			                        ]
-			                    }
-			                }
-			            });
-			        };
-
-			        // The floating "Save all" of an editable grid dispatches crt.SaveRecordsRequest.
-			        // itemsAttributeName says which grid is being saved — only guard the competitors grid.
+			        // Validate the "delivery + competitor shares = 100%" rule on the competitors grid
+			        // "Save all". Shared logic lives in the PgrAccountCompetitorShareHelper module.
 			        if (request.itemsAttributeName !== "CompetitorsGrid") {
 			            return await next?.handle(request);
 			        }
 
 			        let total;
 			        try {
-			            total = await getAccountShareTotal();
+			            total = await PgrAccountCompetitorShareHelper.getAccountShareTotal(request);
 			        } catch (e) {
 			            console.warn("Share validation skipped:", e);
 			            return await next?.handle(request);
 			        }
 
 			        // Nothing entered yet, or the total is valid — let the save proceed.
-			        if (total === 0 || total === REQUIRED_TOTAL) {
+			        if (total === 0 || total === PgrAccountCompetitorShareHelper.REQUIRED_TOTAL) {
 			            return await next?.handle(request);
 			        }
 
-			        await showShareTotalError(total);
+			        await PgrAccountCompetitorShareHelper.showTotalError(request, total);
 			        return false;
+			    }
+			},
+			{
+			    request: "crt.DeleteRecordsRequest",
+			    handler: async (request, next) => {
+			        // Block deleting a competitor when it would leave the account share total != 100%.
+			        // Deletes go through crt.DeleteRecordsRequest (immediate, not via "Save all").
+			        if (request.dataSourceName !== "CompetitorsGridDS") {
+			            return await next?.handle(request);
+			        }
+
+			        const helper = PgrAccountCompetitorShareHelper;
+			        const norm = (v) => (v === null || v === undefined) ? "" : String(helper.unwrap(v)).toLowerCase();
+
+			        let blockedTotal = null;
+			        try {
+			            // Which rows are being deleted: recordIds (row menu) or the selection (bulk panel).
+			            const selection = await request.$context.CompetitorsGrid_SelectionState;
+			            if (selection && selection.type === "all") {
+			                return await next?.handle(request);   // deleting everything -> empty grid -> allowed
+			            }
+			            const deletedIds = (request.recordIds && request.recordIds.length)
+			                ? request.recordIds.map(norm)
+			                : ((selection && selection.selected) || []).map(norm);
+
+			            // Rows that would remain after the deletion.
+			            const competitors = await request.$context.CompetitorsGrid;
+			            const remaining = [];
+			            if (competitors && typeof competitors.forEach === "function") {
+			                competitors.forEach((row) => {
+			                    if (deletedIds.indexOf(norm(row && row.CompetitorsGridDS_Id)) === -1) {
+			                        remaining.push(row);
+			                    }
+			                });
+			            }
+			            if (remaining.length === 0) {
+			                return await next?.handle(request);   // nothing left -> allowed
+			            }
+
+			            const remainingTotal = (await helper.getDeliveryShare(request)) + helper.sumShares(remaining);
+			            if (remainingTotal !== helper.REQUIRED_TOTAL) {
+			                blockedTotal = remainingTotal;
+			            }
+			        } catch (e) {
+			            console.warn("Competitor delete validation skipped:", e);
+			            return await next?.handle(request);
+			        }
+
+			        if (blockedTotal === null) {
+			            return await next?.handle(request);
+			        }
+
+			        await helper.showTotalError(request, blockedTotal);
+			        return false;   // do not call next -> deletion is cancelled
 			    }
 			}
 		]/**SCHEMA_HANDLERS*/,
