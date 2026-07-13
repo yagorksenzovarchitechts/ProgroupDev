@@ -2,14 +2,13 @@
   "Descriptor": {
     "UId": "2593a12e-895e-4284-8459-536ddd312535",
     "Name": "Tasks_ListPage",
-    "ModifiedOnUtc": "\/Date(1783503180000)\/",
+    "ModifiedOnUtc": "\/Date(1783935093000)\/",
     "Parent": {
       "UId": "41deb0ce-ddd6-4d98-b1ea-c4e89f2ceef1",
       "Name": "Tasks_ListPage"
     },
     "ExtendParent": true,
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Tasks list page",
-    "DependsOn": []
+    "Caption": "Tasks list page"
   }
 }

@@ -130,6 +130,17 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 						}
 					}
 				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"Items_PredefinedFilter",
+					"value"
+				],
+				"values": {
+					"logicalOperation": 1
+				}
 			}
 		]/**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/,
 		modelConfigDiff: /**SCHEMA_MODEL_CONFIG_DIFF*/[
