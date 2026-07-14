@@ -580,6 +580,14 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
   "S2": "325a73b8-0f47-44a0-8412-7606f78003ac"
 }
++ MetaData.Schema.D2 {
+  "UId": "a3636977-4057-3dfd-7883-83108bae41b6",
+  "A2": "PgrAccountTypesText",
+  "A3": "48f1b32e-101a-4268-b312-8279a75f3c37",
+  "A4": "48f1b32e-101a-4268-b312-8279a75f3c37",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "7c81a01e-f59b-47df-830c-8e830f1bf889",
@@ -670,28 +678,28 @@
   "9e24e09f-9fd4-5ca0-90c3-3893474a86dc",
   "04081919-1db3-a5de-00e6-c9f13590845f",
   "2a499bfd-641a-107d-7c5e-542852782e45",
-  "793e5217-428d-4aff-3f81-31ad49f72733"
+  "793e5217-428d-4aff-3f81-31ad49f72733",
+  "a3636977-4057-3dfd-7883-83108bae41b6"
 ]
 + MetaData.Schema.D20.FA1 false
 + MetaData.Schema.D20.FA2 false
 + MetaData.Schema.D20.FA3 false
-= MetaData.Schema.D20.FA4 false
-= MetaData.Schema.D20.FA5 false
-= MetaData.Schema.D20.FA6 false
-= MetaData.Schema.D20.FA7 false
++ MetaData.Schema.D20.FA4 false
++ MetaData.Schema.D20.FA5 false
++ MetaData.Schema.D20.FA6 false
++ MetaData.Schema.D20.FA7 false
 + MetaData.Schema.D20.FA8 false
 + MetaData.Schema.D20.FA9 false
 + MetaData.Schema.D20.FA10 false
-= MetaData.Schema.D20.FA11 false
-= MetaData.Schema.D20.FA12 false
++ MetaData.Schema.D20.FA11 false
++ MetaData.Schema.D20.FA12 false
 + MetaData.Schema.D20.FA16 false
 + MetaData.Schema.D20.FA13 false
 + MetaData.Schema.D20.FA14 false
-= MetaData.Schema.D20.FA15 false
++ MetaData.Schema.D20.FA15 false
 + MetaData.Schema.D20.FA17 false
 = MetaData.Schema.D36.A3 "48f1b32e-101a-4268-b312-8279a75f3c37"
 = MetaData.Schema.D36.BS1 false
-- MetaData.Schema.EG1.B6
 + MetaData.Schema.B7 true
 = MetaData.Schema.D8 "25d7c1ab-1de0-4501-b402-02e0e5a72d6e"
 + MetaData.Schema.D2.["ae0e45ca-c495-4fe7-a39d-3ab7278e1617"].E16 false

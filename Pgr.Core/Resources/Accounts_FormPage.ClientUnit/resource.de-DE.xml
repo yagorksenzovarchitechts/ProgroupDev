@@ -22,11 +22,7 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_4r2mr5k_title.Value" Value="Besuchsberichte" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ilw1gpx_title.Value" Value="Rechnung" />
 			<Item Name="LocalizableStrings.ExpansionPanel_pa1hlbi_title.Value" Value="Überlieferung" />
-			<Item Name="LocalizableStrings.GridDetailExportDataBtn_reb2xsj_caption.Value" Value="Excel-Export" />
-			<Item Name="LocalizableStrings.GridDetailRefreshBtn_lckpj3f_caption.Value" Value="Aktualisieren" />
-			<Item Name="LocalizableStrings.GridDetailSearchFilter_uioso6j_placeholder.Value" Value="Suche" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_ytmu9oh_placeholder.Value" Value="Suche" />
-			<Item Name="LocalizableStrings.GridDetailSettingsBtn_bc2y36v_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.HowTheyMakeMoney_placeholder.Value" Value="Enter how the company generates revenue" />
 			<Item Name="LocalizableStrings.Label_HowTheyMakeMoney_caption.Value" Value="Wie sie Geld verdienen" />
 			<Item Name="LocalizableStrings.Label_ProductsOffered_caption.Value" Value="Products offered" />

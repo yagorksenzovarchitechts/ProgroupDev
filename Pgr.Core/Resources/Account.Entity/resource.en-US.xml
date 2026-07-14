@@ -6,11 +6,12 @@
 			<Item Name="Columns.EmployeesNumber.Caption" Value="Employee count" />
 			<Item Name="Columns.Notes.Caption" Value="Description" />
 			<Item Name="Columns.Owner.Caption" Value="Account owner" />
-			<Item Name="Columns.Pgr369ThresholdAbsolute.Caption" Value="369 trehshold absolute" />
-			<Item Name="Columns.Pgr369ThresholdPercentage.Caption" Value="369 treshold percentage" />
+			<Item Name="Columns.Pgr369ThresholdAbsolute.Caption" Value="369 threshold absolute" />
+			<Item Name="Columns.Pgr369ThresholdPercentage.Caption" Value="369 threshold percentage" />
 			<Item Name="Columns.PgrAccountClassification.Caption" Value="Classification" />
 			<Item Name="Columns.PgrAccountLevel.Caption" Value="Level (Remove)" />
 			<Item Name="Columns.PgrAccountManagerCode.Caption" Value="Account owner code (delete)" />
+			<Item Name="Columns.PgrAccountTypesText.Caption" Value="Account types (text)" />
 			<Item Name="Columns.PgrBestPlantLinked.Caption" Value="Best plant" />
 			<Item Name="Columns.PgrBoardConnect.Caption" Value="Board connect" />
 			<Item Name="Columns.PgrCompetitorNotes.Caption" Value="Notes" />
@@ -56,6 +57,7 @@
 			<Item Name="Columns.PgrWorkingWidth.Caption" Value="Working width" />
 			<Item Name="Columns.PgrYearOfCommissioning.Caption" Value="Year of commissioning " />
 			<Item Name="Columns.Phone.Caption" Value="Phone" />
+			<Item Name="Columns.Type.Caption" Value="Type (delete)" />
 		</Items>
 	</Group>
 </Resources>

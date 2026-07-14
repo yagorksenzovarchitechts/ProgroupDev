@@ -96,6 +96,13 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							"caption": "#ResourceString(PDS_DueDate)#",
 							"dataValueType": 7,
 							"width": 246
+						},
+						{
+							"id": "325bbfd5-6e46-6a7a-b945-4bbb66f824bd",
+							"code": "PDS_PgrOverdueDays",
+							"caption": "#ResourceString(PDS_PgrOverdueDays)#",
+							"dataValueType": 4,
+							"width": 154
 						}
 					]
 				}
@@ -127,6 +134,11 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 					"PDS_Priority": {
 						"modelConfig": {
 							"path": "PDS.Priority"
+						}
+					},
+					"PDS_PgrOverdueDays": {
+						"modelConfig": {
+							"path": "PDS.PgrOverdueDays"
 						}
 					}
 				}
@@ -168,6 +180,9 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"values": {
 					"Priority": {
 						"path": "Priority"
+					},
+					"PgrOverdueDays": {
+						"path": "PgrOverdueDays"
 					}
 				}
 			}

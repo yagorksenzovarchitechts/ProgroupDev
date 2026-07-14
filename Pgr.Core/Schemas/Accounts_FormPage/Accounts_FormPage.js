@@ -2930,30 +2930,44 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 			},
 			{
 				"operation": "insert",
-				"name": "PgrOrderIntakeDayCounter",
+				"name": "GridContainer_2p6qhh0",
 				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
 					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_PgrOrderIntakeDayCounter_xrch8ln",
-					"control": "$PDS_PgrOrderIntakeDayCounter_xrch8ln",
-					"readonly": true,
-					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": ""
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
 				},
-				"parentName": "GridContainer_8plbcqj",
+				"parentName": "TabContainer_Customer",
 				"propertyName": "items",
-				"index": 2
+				"index": 9
 			},
 			{
 				"operation": "insert",
 				"name": "Pgr369BudgetCalculationExpansionPanel",
 				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
 					"type": "crt.ExpansionPanel",
 					"tools": [],
 					"items": [],
@@ -2974,13 +2988,13 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					"visible": true,
 					"alignItems": "stretch"
 				},
-				"parentName": "TabContainer_Customer",
+				"parentName": "GridContainer_2p6qhh0",
 				"propertyName": "items",
-				"index": 9
+				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "GridContainer_xixqaaz",
+				"name": "GridContainer_xofeh4b",
 				"values": {
 					"type": "crt.GridContainer",
 					"rows": "minmax(max-content, 24px)",
@@ -3002,7 +3016,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 			},
 			{
 				"operation": "insert",
-				"name": "FlexContainer_rish7lq",
+				"name": "FlexContainer_mwhci84",
 				"values": {
 					"type": "crt.FlexContainer",
 					"direction": "row",
@@ -3016,16 +3030,16 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 						"rowSpan": 1
 					}
 				},
-				"parentName": "GridContainer_xixqaaz",
+				"parentName": "GridContainer_xofeh4b",
 				"propertyName": "items",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "GridDetailRefreshBtn_lckpj3f",
+				"name": "GridDetailRefreshBtn_whsjtwh",
 				"values": {
 					"type": "crt.Button",
-					"caption": "#ResourceString(GridDetailRefreshBtn_lckpj3f_caption)#",
+					"caption": "#ResourceString(GridDetailRefreshBtn_whsjtwh_caption)#",
 					"icon": "reload-icon",
 					"iconPosition": "only-icon",
 					"color": "default",
@@ -3036,20 +3050,20 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 							"config": {
 								"loadType": "reload"
 							},
-							"dataSourceName": "Pgr369BudgetCalculationGridDS"
+							"dataSourceName": "GridDetail_29ab1xwDS"
 						}
 					}
 				},
-				"parentName": "FlexContainer_rish7lq",
+				"parentName": "FlexContainer_mwhci84",
 				"propertyName": "items",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "GridDetailSettingsBtn_bc2y36v",
+				"name": "GridDetailSettingsBtn_pfp47bp",
 				"values": {
 					"type": "crt.Button",
-					"caption": "#ResourceString(GridDetailSettingsBtn_bc2y36v_caption)#",
+					"caption": "#ResourceString(GridDetailSettingsBtn_pfp47bp_caption)#",
 					"icon": "actions-button-icon",
 					"iconPosition": "only-icon",
 					"color": "default",
@@ -3058,64 +3072,64 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					"menuItems": [],
 					"visible": true
 				},
-				"parentName": "FlexContainer_rish7lq",
+				"parentName": "FlexContainer_mwhci84",
 				"propertyName": "items",
 				"index": 1
 			},
 			{
 				"operation": "insert",
-				"name": "GridDetailExportDataBtn_reb2xsj",
+				"name": "GridDetailExportDataBtn_2hjq4ts",
 				"values": {
 					"type": "crt.MenuItem",
-					"caption": "#ResourceString(GridDetailExportDataBtn_reb2xsj_caption)#",
+					"caption": "#ResourceString(GridDetailExportDataBtn_2hjq4ts_caption)#",
 					"icon": "export-button-icon",
 					"color": "default",
 					"size": "medium",
 					"clicked": {
 						"request": "crt.ExportDataGridToExcelRequest",
 						"params": {
-							"viewName": "Pgr369BudgetCalculationGrid"
+							"viewName": "GridDetail_29ab1xw"
 						}
 					}
 				},
-				"parentName": "GridDetailSettingsBtn_bc2y36v",
+				"parentName": "GridDetailSettingsBtn_pfp47bp",
 				"propertyName": "menuItems",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "GridDetailSearchFilter_uioso6j",
+				"name": "GridDetailSearchFilter_j524rwj",
 				"values": {
 					"type": "crt.SearchFilter",
-					"placeholder": "#ResourceString(GridDetailSearchFilter_uioso6j_placeholder)#",
+					"placeholder": "#ResourceString(GridDetailSearchFilter_j524rwj_placeholder)#",
 					"iconOnly": true,
 					"_filterOptions": {
 						"expose": [
 							{
-								"attribute": "GridDetailSearchFilter_uioso6j_Pgr369BudgetCalculationGrid",
+								"attribute": "GridDetailSearchFilter_j524rwj_GridDetail_29ab1xw",
 								"converters": [
 									{
 										"converter": "crt.SearchFilterAttributeConverter",
 										"args": [
-											"Pgr369BudgetCalculationGrid"
+											"GridDetail_29ab1xw"
 										]
 									}
 								]
 							}
 						],
 						"from": [
-							"GridDetailSearchFilter_uioso6j_SearchValue",
-							"GridDetailSearchFilter_uioso6j_FilteredColumnsGroups"
+							"GridDetailSearchFilter_j524rwj_SearchValue",
+							"GridDetailSearchFilter_j524rwj_FilteredColumnsGroups"
 						]
 					}
 				},
-				"parentName": "FlexContainer_rish7lq",
+				"parentName": "FlexContainer_mwhci84",
 				"propertyName": "items",
 				"index": 2
 			},
 			{
 				"operation": "insert",
-				"name": "GridContainer_87vpyzk",
+				"name": "GridContainer_a2uqab2",
 				"values": {
 					"type": "crt.GridContainer",
 					"rows": "minmax(max-content, 32px)",
@@ -3138,7 +3152,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 			},
 			{
 				"operation": "insert",
-				"name": "Pgr369BudgetCalculationGrid",
+				"name": "GridDetail_29ab1xw",
 				"values": {
 					"type": "crt.DataGrid",
 					"layoutConfig": {
@@ -3149,8 +3163,10 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					},
 					"features": {
 						"rows": {
-							"selection": false,
-							"numeration": true
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
 						},
 						"header": {
 							"visible": true
@@ -3166,72 +3182,68 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 							"floatingEditPanel": false
 						}
 					},
-					"items": "$GridDetail_ypwoepy",
-					"activeRow": "$GridDetail_ypwoepy_ActiveRow",
-					"selectionState": "$GridDetail_ypwoepy_SelectionState",
+					"items": "$GridDetail_29ab1xw",
 					"style": "plain-white",
-					"visible": true,
-					"fitContent": true,
-					"primaryColumnName": "Pgr369BudgetCalculationGridDS_Id",
+					"primaryColumnName": "GridDetail_29ab1xwDS_Id",
 					"columns": [
 						{
-							"id": "1eada3e1-8d13-5079-4df3-f24cdcda0d94",
-							"code": "Pgr369BudgetCalculationGridDS_PgrCalculationDate",
-							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrCalculationDate)#",
+							"id": "ad92b1b4-eb86-a3ac-c4bb-23e6d638d064",
+							"code": "GridDetail_29ab1xwDS_PgrCalculationDate",
+							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrCalculationDate)#",
 							"dataValueType": 7
 						},
 						{
-							"id": "172fa1c3-f64e-98cd-849c-cb171d981134",
-							"code": "Pgr369BudgetCalculationGridDS_PgrWindowFrom",
-							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrWindowFrom)#",
-							"dataValueType": 7
-						},
-						{
-							"id": "9d3d14ac-61aa-81f0-6a45-ee9dada659af",
-							"code": "Pgr369BudgetCalculationGridDS_PgrWindowTo",
-							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrWindowTo)#",
-							"dataValueType": 7
-						},
-						{
-							"id": "0475d6d1-adf2-a46e-1448-c6642302c99d",
-							"code": "Pgr369BudgetCalculationGridDS_PgrCalendar",
-							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrCalendar)#",
+							"id": "cafe2e7c-10ad-5f2b-7d13-761679c3090a",
+							"code": "GridDetail_29ab1xwDS_PgrCalendar",
+							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrCalendar)#",
 							"dataValueType": 10
 						},
 						{
-							"id": "63213916-7c4e-5482-ef0a-331b9a64c33c",
-							"code": "Pgr369BudgetCalculationGridDS_PgrToleranceAdjustedBudget",
-							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrToleranceAdjustedBudget)#",
+							"id": "3f46a3dc-4784-276d-1d2a-04db71bf8a49",
+							"code": "GridDetail_29ab1xwDS_PgrWindowFrom",
+							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrWindowFrom)#",
+							"dataValueType": 7
+						},
+						{
+							"id": "4ab1510f-669f-be63-903d-9f49ca01e159",
+							"code": "GridDetail_29ab1xwDS_PgrWindowTo",
+							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrWindowTo)#",
+							"dataValueType": 7
+						},
+						{
+							"id": "d41b8513-bd76-2d37-257d-d55148b1ef94",
+							"code": "GridDetail_29ab1xwDS_PgrToleranceAdjustedBudget",
+							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrToleranceAdjustedBudget)#",
 							"dataValueType": 32
 						},
 						{
-							"id": "b7aa0b90-ca8e-ece9-0c74-cd4944a8a8ec",
-							"code": "Pgr369BudgetCalculationGridDS_PgrFullBudget",
-							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrFullBudget)#",
+							"id": "f5b7919c-0ec5-29e4-0a42-dac7b6bcca12",
+							"code": "GridDetail_29ab1xwDS_PgrOrderIntakeAvg",
+							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrOrderIntakeAvg)#",
 							"dataValueType": 32
 						},
 						{
-							"id": "4ed4ef96-cfd4-4f84-8393-0fec0b800e12",
-							"code": "Pgr369BudgetCalculationGridDS_PgrOrderIntakeAvg",
-							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrOrderIntakeAvg)#",
+							"id": "f92bff2a-4819-c84b-384e-1f72cecd524d",
+							"code": "GridDetail_29ab1xwDS_PgrFullBudget",
+							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrFullBudget)#",
 							"dataValueType": 32
 						},
 						{
-							"id": "b0fe2fa0-a82b-7e79-f7c7-ac763c080352",
-							"code": "Pgr369BudgetCalculationGridDS_PgrBudgetCompareValue",
-							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrBudgetCompareValue)#",
+							"id": "315588af-cc5d-cc51-ac07-8d695dd99c6e",
+							"code": "GridDetail_29ab1xwDS_PgrBudgetCompareValue",
+							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrBudgetCompareValue)#",
 							"dataValueType": 32
 						},
 						{
-							"id": "4c33e297-3005-894e-0522-81ca46a2ecb2",
-							"code": "Pgr369BudgetCalculationGridDS_PgrIsDeviation",
-							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrIsDeviation)#",
+							"id": "3a3dfa41-5972-08b4-1ddb-ca624f1b11f8",
+							"code": "GridDetail_29ab1xwDS_PgrIsDeviation",
+							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrIsDeviation)#",
 							"dataValueType": 12
 						}
 					],
 					"placeholder": false
 				},
-				"parentName": "GridContainer_87vpyzk",
+				"parentName": "GridContainer_a2uqab2",
 				"propertyName": "items",
 				"index": 0
 			},
@@ -7460,66 +7472,67 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 							}
 						}
 					},
-					"PDS_PgrOrderIntakeDayCounter_xrch8ln": {
-						"modelConfig": {
-							"path": "PDS.PgrOrderIntakeDayCounter"
-						}
-					},
-					"GridDetail_ypwoepy": {
+					"GridDetail_29ab1xw": {
 						"isCollection": true,
 						"modelConfig": {
-							"path": "Pgr369BudgetCalculationGridDS"
+							"path": "GridDetail_29ab1xwDS",
+							"filterAttributes": [
+								{
+									"name": "GridDetailSearchFilter_j524rwj_GridDetail_29ab1xw",
+									"loadOnChange": true
+								}
+							]
 						},
 						"viewModelConfig": {
 							"attributes": {
-								"Pgr369BudgetCalculationGridDS_PgrCalculationDate": {
+								"GridDetail_29ab1xwDS_PgrCalculationDate": {
 									"modelConfig": {
-										"path": "Pgr369BudgetCalculationGridDS.PgrCalculationDate"
+										"path": "GridDetail_29ab1xwDS.PgrCalculationDate"
 									}
 								},
-								"Pgr369BudgetCalculationGridDS_PgrWindowFrom": {
+								"GridDetail_29ab1xwDS_PgrCalendar": {
 									"modelConfig": {
-										"path": "Pgr369BudgetCalculationGridDS.PgrWindowFrom"
+										"path": "GridDetail_29ab1xwDS.PgrCalendar"
 									}
 								},
-								"Pgr369BudgetCalculationGridDS_PgrWindowTo": {
+								"GridDetail_29ab1xwDS_PgrWindowFrom": {
 									"modelConfig": {
-										"path": "Pgr369BudgetCalculationGridDS.PgrWindowTo"
+										"path": "GridDetail_29ab1xwDS.PgrWindowFrom"
 									}
 								},
-								"Pgr369BudgetCalculationGridDS_PgrCalendar": {
+								"GridDetail_29ab1xwDS_PgrWindowTo": {
 									"modelConfig": {
-										"path": "Pgr369BudgetCalculationGridDS.PgrCalendar"
+										"path": "GridDetail_29ab1xwDS.PgrWindowTo"
 									}
 								},
-								"Pgr369BudgetCalculationGridDS_PgrToleranceAdjustedBudget": {
+								"GridDetail_29ab1xwDS_PgrToleranceAdjustedBudget": {
 									"modelConfig": {
-										"path": "Pgr369BudgetCalculationGridDS.PgrToleranceAdjustedBudget"
+										"path": "GridDetail_29ab1xwDS.PgrToleranceAdjustedBudget"
 									}
 								},
-								"Pgr369BudgetCalculationGridDS_PgrFullBudget": {
+								"GridDetail_29ab1xwDS_PgrOrderIntakeAvg": {
 									"modelConfig": {
-										"path": "Pgr369BudgetCalculationGridDS.PgrFullBudget"
+										"path": "GridDetail_29ab1xwDS.PgrOrderIntakeAvg"
 									}
 								},
-								"Pgr369BudgetCalculationGridDS_PgrOrderIntakeAvg": {
+								"GridDetail_29ab1xwDS_PgrFullBudget": {
 									"modelConfig": {
-										"path": "Pgr369BudgetCalculationGridDS.PgrOrderIntakeAvg"
+										"path": "GridDetail_29ab1xwDS.PgrFullBudget"
 									}
 								},
-								"Pgr369BudgetCalculationGridDS_PgrBudgetCompareValue": {
+								"GridDetail_29ab1xwDS_PgrBudgetCompareValue": {
 									"modelConfig": {
-										"path": "Pgr369BudgetCalculationGridDS.PgrBudgetCompareValue"
+										"path": "GridDetail_29ab1xwDS.PgrBudgetCompareValue"
 									}
 								},
-								"Pgr369BudgetCalculationGridDS_PgrIsDeviation": {
+								"GridDetail_29ab1xwDS_PgrIsDeviation": {
 									"modelConfig": {
-										"path": "Pgr369BudgetCalculationGridDS.PgrIsDeviation"
+										"path": "GridDetail_29ab1xwDS.PgrIsDeviation"
 									}
 								},
-								"Pgr369BudgetCalculationGridDS_Id": {
+								"GridDetail_29ab1xwDS_Id": {
 									"modelConfig": {
-										"path": "Pgr369BudgetCalculationGridDS.Id"
+										"path": "GridDetail_29ab1xwDS.Id"
 									}
 								}
 							}
@@ -8040,7 +8053,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 							}
 						}
 					},
-					"Pgr369BudgetCalculationGridDS": {
+					"GridDetail_29ab1xwDS": {
 						"type": "crt.EntityDataSource",
 						"scope": "viewElement",
 						"config": {
@@ -8049,23 +8062,23 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 								"PgrCalculationDate": {
 									"path": "PgrCalculationDate"
 								},
+								"PgrCalendar": {
+									"path": "PgrCalendar"
+								},
 								"PgrWindowFrom": {
 									"path": "PgrWindowFrom"
 								},
 								"PgrWindowTo": {
 									"path": "PgrWindowTo"
 								},
-								"PgrCalendar": {
-									"path": "PgrCalendar"
-								},
 								"PgrToleranceAdjustedBudget": {
 									"path": "PgrToleranceAdjustedBudget"
 								},
-								"PgrFullBudget": {
-									"path": "PgrFullBudget"
-								},
 								"PgrOrderIntakeAvg": {
 									"path": "PgrOrderIntakeAvg"
+								},
+								"PgrFullBudget": {
+									"path": "PgrFullBudget"
 								},
 								"PgrBudgetCompareValue": {
 									"path": "PgrBudgetCompareValue"
@@ -8241,7 +8254,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 							"relationPath": "PDS.Id"
 						}
 					],
-					"Pgr369BudgetCalculationGridDS": [
+					"GridDetail_29ab1xwDS": [
 						{
 							"attributePath": "PgrAccount",
 							"relationPath": "PDS.Id"
