@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="3-6-9 Grund" />
+			<Item Name="Columns.PgrGroup.Caption" Value="Grundgruppe" />
+			<Item Name="EventsProcessSchema.Caption" Value="Geschäftsprozess" />
+		</Items>
+	</Group>
+</Resources>

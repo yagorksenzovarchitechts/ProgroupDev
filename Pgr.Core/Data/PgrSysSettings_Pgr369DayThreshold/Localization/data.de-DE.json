@@ -1,0 +1,23 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "eb7fea98-00dc-4d00-9550-350e3b2d6605"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "ColumnName": "Name",
+          "Value": "3-6-9 Tagesschwelle"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "ColumnName": "Description",
+          "Value": "Wert des Tageszählers, bei dem die 3-6-9-Aufgabe erstellt wird (Standard 3)."
+        }
+      ]
+    }
+  ]
+}

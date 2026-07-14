@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.ConditionalSequenceFlow1.Caption" Value="Create alert task" />
+			<Item Name="BaseElements.DefaultSequenceFlow1.Caption" Value="None" />
+			<Item Name="BaseElements.ScriptTask1.Caption" Value="Process account" />
+			<Item Name="BaseElements.SubProcess1.Caption" Value="Creating low order intake task 369 process" />
+			<Item Name="BaseElements.SubProcess1.Parameters.AccountId.Caption" Value="Account" />
+			<Item Name="BaseElements.SubProcess1.Parameters.AccountId.DisplayValue" Value="[#Account#]" />
+			<Item Name="Caption" Value="369 process" />
+			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
+			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
+			<Item Name="NotificationCaption.Caption" Value="Process instance caption" />
+			<Item Name="NotificationCaption.DisplayValue" Value="[#Process name#]" />
+			<Item Name="Parameters.AccountId.Caption" Value="Account" />
+			<Item Name="Parameters.ResultCode.Caption" Value="Result code" />
+		</Items>
+	</Group>
+</Resources>

@@ -413,12 +413,55 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 			},
 			{
 				"operation": "insert",
+				"name": "Pgr369Reason",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_Pgr369Reason_ty4tr3j",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_Pgr369Reason_ty4tr3j",
+					"visible": false
+				},
+				"parentName": "GridContainer_1qargav",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_zwyffhk",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_zwyffhk_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "Pgr369Reason",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "FlexContainer_rx674wm",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 5,
+						"row": 6,
 						"rowSpan": 1
 					},
 					"type": "crt.FlexContainer",
@@ -441,7 +484,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				},
 				"parentName": "GridContainer_1qargav",
 				"propertyName": "items",
-				"index": 6
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -1585,6 +1628,24 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 										"path": "GridDetail_1ay6zynDS.Id"
 									}
 								}
+							}
+						}
+					},
+					"PDS_Pgr369Reason_ty4tr3j": {
+						"modelConfig": {
+							"path": "PDS.Pgr369Reason"
+						}
+					},
+					"PDS_Pgr369Reason_ty4tr3j_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
 							}
 						}
 					}

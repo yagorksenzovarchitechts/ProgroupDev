@@ -17,6 +17,9 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/OpportunityProductInterest/OpportunityProductInterest.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/OpportunityProductInterest/OpportunityProductInterest.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Order/Order.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Order/Order.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/OrderProduct/OrderProduct.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/OrderProduct/OrderProduct.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Pgr369BudgetCalculation/Pgr369BudgetCalculation.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Pgr369BudgetCalculation/Pgr369BudgetCalculation.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Pgr369Reason/Pgr369Reason.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Pgr369Reason/Pgr369Reason.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Pgr369ReasonGroup/Pgr369ReasonGroup.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Pgr369ReasonGroup/Pgr369ReasonGroup.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrAccountClassification/PgrAccountClassification.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrAccountClassification/PgrAccountClassification.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrAccountLevel/PgrAccountLevel.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrAccountLevel/PgrAccountLevel.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrAccountTypesInAccount/PgrAccountTypesInAccount.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrAccountTypesInAccount/PgrAccountTypesInAccount.cs')" />
