@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="3-6-9 Budgetberechnung" />
+			<Item Name="Columns.PgrAccount.Caption" Value="Kunde" />
+			<Item Name="Columns.PgrBudgetCompareValue.Caption" Value="Budgetvergleichswert" />
+			<Item Name="Columns.PgrCalculationDate.Caption" Value="Berechnungsdatum" />
+			<Item Name="Columns.PgrCalendar.Caption" Value="Kalender" />
+			<Item Name="Columns.PgrFullBudget.Caption" Value="Vollbudget" />
+			<Item Name="Columns.PgrIsDeviation.Caption" Value="Abweichung" />
+			<Item Name="Columns.PgrOrderIntakeAvg.Caption" Value="Auftragseingang Durchschnitt" />
+			<Item Name="Columns.PgrToleranceAdjustedBudget.Caption" Value="Toleranzbereinigtes Budget" />
+			<Item Name="Columns.PgrWindowFrom.Caption" Value="Fensterbeginn" />
+			<Item Name="Columns.PgrWindowTo.Caption" Value="Fensterende" />
+		</Items>
+	</Group>
+</Resources>

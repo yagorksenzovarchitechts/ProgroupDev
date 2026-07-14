@@ -4,6 +4,7 @@ using Terrasoft.Core.DB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Terrasoft.Configuration;
 using Terrasoft.Configuration.Calendars;
 
 namespace Pgr.Core
@@ -413,6 +414,46 @@ namespace Pgr.Core
 			}
 
 			return !_weekendsList.Contains(date.DayOfWeek.ToString());
+		}
+
+		/// <summary>
+		/// Resolves the DayType Id for a date in the given calendar: a specific-date override in
+		/// DayOff takes precedence, otherwise the weekly DayInCalendar entry for that day of week.
+		/// Needed to tell a full working day from a shortened ("Reduced working") one, since both
+		/// share the same IsWeekend / NonWorking flags — see <see cref="PgrConstants.DayType" />.
+		/// </summary>
+		/// <param name="date"> Date to classify. </param>
+		/// <param name="calendarId"> Calendar Id. </param>
+		/// <returns> DayType Id, or <see cref="Guid.Empty" /> when the calendar has no entry. </returns>
+		public Guid GetDayTypeId(DateTime date, Guid calendarId)
+		{
+			_calendarId = calendarId;
+
+			// Specific-date override (holiday / shortened day) in DayOff.
+			var dayOffSelect = new Select(_userConnection)
+					.Top(1)
+					.Column("do", "DayTypeId").As("DayTypeId")
+				.From("DayOff").As("do")
+				.Where("do", "CalendarId").IsEqual(Column.Parameter(_calendarId))
+					.And("do", "Date").IsEqual(Column.Parameter(date.Date)) as Select;
+
+			var dayTypeId = dayOffSelect.ExecuteScalar<Guid>();
+			if (dayTypeId != Guid.Empty)
+			{
+				return dayTypeId;
+			}
+
+			// Weekly template for this day of week.
+			var weekdaySelect = new Select(_userConnection)
+					.Top(1)
+					.Column("dic", "DayTypeId").As("DayTypeId")
+				.From("DayInCalendar").As("dic")
+				.InnerJoin("DayOfWeek").As("dow")
+					.On("dic", "DayOfWeekId").IsEqual("dow", "Id")
+				.Where("dic", "CalendarId").IsEqual(Column.Parameter(_calendarId))
+					.And("dow", "Code").IsEqual(Column.Parameter(date.DayOfWeek.ToString())) as Select;
+
+			return weekdaySelect.ExecuteScalar<Guid>();
 		}
 
 		/// <summary>

@@ -71,6 +71,31 @@ namespace Pgr.Core
             return calendarUtils.AddWorkingDays(startDate, numberOfDays, calendarId);
         }
 
+        /// <summary>
+        ///     DayType Id of the given date for the customer's calendar. Used to tell a full
+        ///     working day from a half ("Reduced working") one — see <see cref="PgrConstants.DayType" />.
+        /// </summary>
+        /// <param name="date"> Date to classify. </param>
+        /// <param name="accountId"> Customer (Account) Id. </param>
+        /// <returns> DayType Id, or <see cref="Guid.Empty" /> when the calendar has no entry. </returns>
+        public Guid GetDayTypeId(DateTime date, Guid accountId)
+        {
+            var calendarId = ResolveCalendarId(accountId);
+            var calendarUtils = new PgrCalendarServiceUtils(_userConnection);
+            return calendarUtils.GetDayTypeId(date, calendarId);
+        }
+
+        /// <summary>
+        ///     The calendar Id resolved for the customer (Account.Country.CgrCalendar, or the base
+        ///     calendar fallback). Exposed so callers can record which calendar a calculation used.
+        /// </summary>
+        /// <param name="accountId"> Customer (Account) Id. </param>
+        /// <returns> Calendar Id. </returns>
+        public Guid GetCalendarId(Guid accountId)
+        {
+            return ResolveCalendarId(accountId);
+        }
+
         #endregion
 
         #region Methods: Private

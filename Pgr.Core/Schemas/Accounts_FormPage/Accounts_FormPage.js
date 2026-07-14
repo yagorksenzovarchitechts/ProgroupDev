@@ -2952,6 +2952,291 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 			},
 			{
 				"operation": "insert",
+				"name": "Pgr369BudgetCalculationExpansionPanel",
+				"values": {
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(Pgr369BudgetCalculationExpansionPanel_title)#",
+					"toggleType": "material",
+					"togglePosition": "before",
+					"expanded": true,
+					"labelColor": "auto",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"padding": {
+						"top": "small",
+						"bottom": "small",
+						"left": "none",
+						"right": "none"
+					},
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch"
+				},
+				"parentName": "TabContainer_Customer",
+				"propertyName": "items",
+				"index": 9
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_xixqaaz",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 24px)",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "Pgr369BudgetCalculationExpansionPanel",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_rish7lq",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"gap": "none",
+					"alignItems": "center",
+					"items": [],
+					"layoutConfig": {
+						"colSpan": 1,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_xixqaaz",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailRefreshBtn_lckpj3f",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailRefreshBtn_lckpj3f_caption)#",
+					"icon": "reload-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.LoadDataRequest",
+						"params": {
+							"config": {
+								"loadType": "reload"
+							},
+							"dataSourceName": "Pgr369BudgetCalculationGridDS"
+						}
+					}
+				},
+				"parentName": "FlexContainer_rish7lq",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailSettingsBtn_bc2y36v",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailSettingsBtn_bc2y36v_caption)#",
+					"icon": "actions-button-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clickMode": "menu",
+					"menuItems": [],
+					"visible": true
+				},
+				"parentName": "FlexContainer_rish7lq",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailExportDataBtn_reb2xsj",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(GridDetailExportDataBtn_reb2xsj_caption)#",
+					"icon": "export-button-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "Pgr369BudgetCalculationGrid"
+						}
+					}
+				},
+				"parentName": "GridDetailSettingsBtn_bc2y36v",
+				"propertyName": "menuItems",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailSearchFilter_uioso6j",
+				"values": {
+					"type": "crt.SearchFilter",
+					"placeholder": "#ResourceString(GridDetailSearchFilter_uioso6j_placeholder)#",
+					"iconOnly": true,
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "GridDetailSearchFilter_uioso6j_Pgr369BudgetCalculationGrid",
+								"converters": [
+									{
+										"converter": "crt.SearchFilterAttributeConverter",
+										"args": [
+											"Pgr369BudgetCalculationGrid"
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"GridDetailSearchFilter_uioso6j_SearchValue",
+							"GridDetailSearchFilter_uioso6j_FilteredColumnsGroups"
+						]
+					}
+				},
+				"parentName": "FlexContainer_rish7lq",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_87vpyzk",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 32px)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "Pgr369BudgetCalculationExpansionPanel",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Pgr369BudgetCalculationGrid",
+				"values": {
+					"type": "crt.DataGrid",
+					"layoutConfig": {
+						"colSpan": 2,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 6
+					},
+					"features": {
+						"rows": {
+							"selection": false,
+							"numeration": true
+						},
+						"header": {
+							"visible": true
+						},
+						"columns": {
+							"dragAndDrop": true,
+							"resizing": true,
+							"sorting": true
+						},
+						"editable": {
+							"enable": false,
+							"itemsCreation": false,
+							"floatingEditPanel": false
+						}
+					},
+					"items": "$GridDetail_ypwoepy",
+					"activeRow": "$GridDetail_ypwoepy_ActiveRow",
+					"selectionState": "$GridDetail_ypwoepy_SelectionState",
+					"style": "plain-white",
+					"visible": true,
+					"fitContent": true,
+					"primaryColumnName": "Pgr369BudgetCalculationGridDS_Id",
+					"columns": [
+						{
+							"id": "1eada3e1-8d13-5079-4df3-f24cdcda0d94",
+							"code": "Pgr369BudgetCalculationGridDS_PgrCalculationDate",
+							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrCalculationDate)#",
+							"dataValueType": 7
+						},
+						{
+							"id": "172fa1c3-f64e-98cd-849c-cb171d981134",
+							"code": "Pgr369BudgetCalculationGridDS_PgrWindowFrom",
+							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrWindowFrom)#",
+							"dataValueType": 7
+						},
+						{
+							"id": "9d3d14ac-61aa-81f0-6a45-ee9dada659af",
+							"code": "Pgr369BudgetCalculationGridDS_PgrWindowTo",
+							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrWindowTo)#",
+							"dataValueType": 7
+						},
+						{
+							"id": "0475d6d1-adf2-a46e-1448-c6642302c99d",
+							"code": "Pgr369BudgetCalculationGridDS_PgrCalendar",
+							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrCalendar)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "63213916-7c4e-5482-ef0a-331b9a64c33c",
+							"code": "Pgr369BudgetCalculationGridDS_PgrToleranceAdjustedBudget",
+							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrToleranceAdjustedBudget)#",
+							"dataValueType": 32
+						},
+						{
+							"id": "b7aa0b90-ca8e-ece9-0c74-cd4944a8a8ec",
+							"code": "Pgr369BudgetCalculationGridDS_PgrFullBudget",
+							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrFullBudget)#",
+							"dataValueType": 32
+						},
+						{
+							"id": "4ed4ef96-cfd4-4f84-8393-0fec0b800e12",
+							"code": "Pgr369BudgetCalculationGridDS_PgrOrderIntakeAvg",
+							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrOrderIntakeAvg)#",
+							"dataValueType": 32
+						},
+						{
+							"id": "b0fe2fa0-a82b-7e79-f7c7-ac763c080352",
+							"code": "Pgr369BudgetCalculationGridDS_PgrBudgetCompareValue",
+							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrBudgetCompareValue)#",
+							"dataValueType": 32
+						},
+						{
+							"id": "4c33e297-3005-894e-0522-81ca46a2ecb2",
+							"code": "Pgr369BudgetCalculationGridDS_PgrIsDeviation",
+							"caption": "#ResourceString(Pgr369BudgetCalculationGridDS_PgrIsDeviation)#",
+							"dataValueType": 12
+						}
+					],
+					"placeholder": false
+				},
+				"parentName": "GridContainer_87vpyzk",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "TabContainer_Competitor",
 				"values": {
 					"type": "crt.TabContainer",
@@ -7179,6 +7464,66 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 						"modelConfig": {
 							"path": "PDS.PgrOrderIntakeDayCounter"
 						}
+					},
+					"GridDetail_ypwoepy": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "Pgr369BudgetCalculationGridDS"
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"Pgr369BudgetCalculationGridDS_PgrCalculationDate": {
+									"modelConfig": {
+										"path": "Pgr369BudgetCalculationGridDS.PgrCalculationDate"
+									}
+								},
+								"Pgr369BudgetCalculationGridDS_PgrWindowFrom": {
+									"modelConfig": {
+										"path": "Pgr369BudgetCalculationGridDS.PgrWindowFrom"
+									}
+								},
+								"Pgr369BudgetCalculationGridDS_PgrWindowTo": {
+									"modelConfig": {
+										"path": "Pgr369BudgetCalculationGridDS.PgrWindowTo"
+									}
+								},
+								"Pgr369BudgetCalculationGridDS_PgrCalendar": {
+									"modelConfig": {
+										"path": "Pgr369BudgetCalculationGridDS.PgrCalendar"
+									}
+								},
+								"Pgr369BudgetCalculationGridDS_PgrToleranceAdjustedBudget": {
+									"modelConfig": {
+										"path": "Pgr369BudgetCalculationGridDS.PgrToleranceAdjustedBudget"
+									}
+								},
+								"Pgr369BudgetCalculationGridDS_PgrFullBudget": {
+									"modelConfig": {
+										"path": "Pgr369BudgetCalculationGridDS.PgrFullBudget"
+									}
+								},
+								"Pgr369BudgetCalculationGridDS_PgrOrderIntakeAvg": {
+									"modelConfig": {
+										"path": "Pgr369BudgetCalculationGridDS.PgrOrderIntakeAvg"
+									}
+								},
+								"Pgr369BudgetCalculationGridDS_PgrBudgetCompareValue": {
+									"modelConfig": {
+										"path": "Pgr369BudgetCalculationGridDS.PgrBudgetCompareValue"
+									}
+								},
+								"Pgr369BudgetCalculationGridDS_PgrIsDeviation": {
+									"modelConfig": {
+										"path": "Pgr369BudgetCalculationGridDS.PgrIsDeviation"
+									}
+								},
+								"Pgr369BudgetCalculationGridDS_Id": {
+									"modelConfig": {
+										"path": "Pgr369BudgetCalculationGridDS.Id"
+									}
+								}
+							}
+						}
 					}
 				}
 			},
@@ -7694,6 +8039,42 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 								}
 							}
 						}
+					},
+					"Pgr369BudgetCalculationGridDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "Pgr369BudgetCalculation",
+							"attributes": {
+								"PgrCalculationDate": {
+									"path": "PgrCalculationDate"
+								},
+								"PgrWindowFrom": {
+									"path": "PgrWindowFrom"
+								},
+								"PgrWindowTo": {
+									"path": "PgrWindowTo"
+								},
+								"PgrCalendar": {
+									"path": "PgrCalendar"
+								},
+								"PgrToleranceAdjustedBudget": {
+									"path": "PgrToleranceAdjustedBudget"
+								},
+								"PgrFullBudget": {
+									"path": "PgrFullBudget"
+								},
+								"PgrOrderIntakeAvg": {
+									"path": "PgrOrderIntakeAvg"
+								},
+								"PgrBudgetCompareValue": {
+									"path": "PgrBudgetCompareValue"
+								},
+								"PgrIsDeviation": {
+									"path": "PgrIsDeviation"
+								}
+							}
+						}
 					}
 				}
 			},
@@ -7857,6 +8238,12 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					"CompetitorsGridDS": [
 						{
 							"attributePath": "Account",
+							"relationPath": "PDS.Id"
+						}
+					],
+					"Pgr369BudgetCalculationGridDS": [
+						{
+							"attributePath": "PgrAccount",
 							"relationPath": "PDS.Id"
 						}
 					]

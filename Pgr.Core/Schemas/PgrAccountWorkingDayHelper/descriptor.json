@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "c0b99efa-f8d6-4618-84e9-676ceb50ba71",
     "Name": "PgrAccountWorkingDayHelper",
-    "ModifiedOnUtc": "\/Date(1783666770337)\/",
+    "ModifiedOnUtc": "\/Date(1783951936338)\/",
     "ManagerName": "SourceCodeSchemaManager",
     "Caption": "Pgr account working day helper",
     "DependsOn": []

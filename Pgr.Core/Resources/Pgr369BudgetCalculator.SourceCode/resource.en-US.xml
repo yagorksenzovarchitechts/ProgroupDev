@@ -2,7 +2,7 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Pgr account working day helper" />
+			<Item Name="Caption" Value="Pgr 3-6-9 budget calculator" />
 		</Items>
 	</Group>
 </Resources>
