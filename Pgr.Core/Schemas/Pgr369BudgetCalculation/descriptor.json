@@ -8,6 +8,7 @@
       "Name": "BaseEntity"
     },
     "ManagerName": "EntitySchemaManager",
-    "Caption": "3-6-9 budget calculation"
+    "Caption": "3-6-9 budget calculation",
+    "DependsOn": []
   }
 }

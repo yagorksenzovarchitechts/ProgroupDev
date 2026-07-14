@@ -4,7 +4,7 @@
     "Name": "PgrCreatingCustomerVisitOverdueTaskProcess",
     "ModifiedOnUtc": "\/Date(1783936116000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "Creating customer visit overdue task",
+    "Caption": "Creating customer visit overdue task sub-process",
     "DependsOn": []
   }
 }

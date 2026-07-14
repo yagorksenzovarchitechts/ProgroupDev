@@ -5,6 +5,9 @@
 			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value="Excel-Export" />
 			<Item Name="LocalizableStrings.MenuItem_ImportFromExcel_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.QuickFilter_CanceledTasks_config_caption.Value" Value="Abgebrochene Aufgaben anzeigen" />
+			<Item Name="LocalizableStrings.QuickFilter_Date_config_caption.Value" Value="Datum" />
+			<Item Name="LocalizableStrings.QuickFilter_Employee_config_caption.Value" Value="Mitarbeiter" />
 			<Item Name="LocalizableStrings.QuickFilter_MyTasks_config_caption.Value" Value="Nur meine Aufgaben" />
 			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Suche..." />
 		</Items>

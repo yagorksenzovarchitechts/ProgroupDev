@@ -4,6 +4,7 @@
     "Name": "Pgr369BudgetCalculationSubProcess",
     "ModifiedOnUtc": "\/Date(1784013463000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "369 budget calculation sub-process"
+    "Caption": "369 budget calculation sub-process",
+    "DependsOn": []
   }
 }

@@ -9,6 +9,7 @@
     },
     "ExtendParent": true,
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Tasks list page"
+    "Caption": "Tasks list page",
+    "DependsOn": []
   }
 }

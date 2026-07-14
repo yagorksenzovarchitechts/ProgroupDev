@@ -4,6 +4,7 @@
     "Name": "PgrAccountTypesInAccountEntityEventListener",
     "ModifiedOnUtc": "\/Date(1784021867000)\/",
     "ManagerName": "SourceCodeSchemaManager",
-    "Caption": "Account Types In Account Entity Event Listener"
+    "Caption": "Account Types In Account Entity Event Listener",
+    "DependsOn": []
   }
 }
