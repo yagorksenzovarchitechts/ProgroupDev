@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "9ad4410e-2513-4070-94d3-ec347174f2b4",
     "Name": "Pgr369BudgetCalculator",
-    "ModifiedOnUtc": "\/Date(1783953301487)\/",
+    "ModifiedOnUtc": "\/Date(1783953301000)\/",
     "ManagerName": "SourceCodeSchemaManager",
     "Caption": "Pgr 3-6-9 budget calculator",
     "DependsOn": []

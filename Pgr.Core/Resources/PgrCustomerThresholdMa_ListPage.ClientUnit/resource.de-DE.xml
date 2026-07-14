@@ -4,7 +4,9 @@
 		<Items>
 			<Item Name="Caption" Value="Customer threshold matrix list page" />
 			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Importieren" />
+			<Item Name="LocalizableStrings.Label_zm0jsfd_caption.Value" Value="Konfiguration pro Kundenkategorie und Region oder pro einzelnem Kunden. Bereiche können als Prozentsatz oder absoluter Wert festgelegt werden; kundenspezifische Schwellenwerte haben Vorrang vor den Matrixwerten." />
 			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value="Excel-Export" />
+			<Item Name="LocalizableStrings.QuickFilter_ccg491a_config_caption.Value" Value="Kundenspezifischer Schwellenwert vorhanden" />
 			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Suche..." />
 		</Items>
 	</Group>

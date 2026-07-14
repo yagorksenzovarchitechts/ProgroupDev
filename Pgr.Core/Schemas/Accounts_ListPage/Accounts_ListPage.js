@@ -410,11 +410,10 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
           "width": 148
         },
         {
-          "id": "b71f5c24-64f3-c8e2-e651-46577c104740",
+          "id": "21041da6-f2f5-d49d-20ab-c767ffc79be5",
           "code": "DataGrid_0kcsg12DS_PgrAccountTypesText",
           "caption": "#ResourceString(DataGrid_0kcsg12DS_PgrAccountTypesText)#",
-          "dataValueType": 28,
-          "width": 220
+          "dataValueType": 28
         },
         {
           "id": "b49ddccf-b083-bf8e-acb7-e7daed7467af",
@@ -743,30 +742,66 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
     }
   }
 ]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
-		converters: /**SCHEMA_CONVERTERS*/{
-			"usr.ToAccountTypeChips": function(value) {
-				if (!value) {
-					return [];
-				}
-				var colorMap = {
-					"Customer": "#98CB00",
-					"Subgroup": "#46BCEC",
-					"Our company": "#7848EE",
-					"Competitor": "#FF6534",
-					"Group": "#F9307F"
-				};
-				return value.split(",").map(function(name) {
-					var trimmed = name.trim();
-					return {
-						caption: trimmed,
-						color: colorMap[trimmed] || "#B0B0B0"
+		handlers: /**SCHEMA_HANDLERS*/[{
+				request: "crt.HandleViewModelInitRequest",
+				handler: async (request, next) => {
+					await next?.handle(request);
+					if (!document.getElementById("pgrAccountTypeChipStyle")) {
+						const style = document.createElement("style");
+						style.id = "pgrAccountTypeChipStyle";
+						style.innerHTML = ".pgr-account-type-chip { display: inline-block; padding: 4px 12px; margin: 2px 6px 2px 0; border-radius: 14px; font-size: 12px; font-weight: 500; white-space: nowrap; }";
+						document.head.appendChild(style);
+					}
+					const colorMap = {
+						"Customer": { bg: "#EAF6D6", text: "#5C8A00" },
+						"Subgroup": { bg: "#DFF4FC", text: "#1D7A9C" },
+						"Our company": { bg: "#EAE0FC", text: "#5B34C7" },
+						"Competitor": { bg: "#FFE2D6", text: "#C1440E" },
+						"Group": { bg: "#FCE0EC", text: "#C21F6B" }
 					};
-				}).filter(function(item) {
-					return item.caption.length > 0;
-				});
-			}
-		}/**SCHEMA_CONVERTERS*/,
+					const fallbackColor = { bg: "#EEEEEE", text: "#666666" };
+					const columnId = "21041da6-f2f5-d49d-20ab-c767ffc79be5";
+					const renderChips = () => {
+						const cells = document.querySelectorAll(`td[crt-data-table-column-id="${columnId}"]:not([data-pgr-chips-rendered])`);
+						cells.forEach((cell) => {
+							const text = (cell.textContent || "").trim();
+							cell.setAttribute("data-pgr-chips-rendered", "true");
+							if (!text) {
+								return;
+							}
+							cell.innerHTML = "";
+							text.split(",").forEach((name) => {
+								const trimmed = name.trim();
+								if (!trimmed) {
+									return;
+								}
+								const chip = document.createElement("span");
+								chip.className = "pgr-account-type-chip";
+								chip.textContent = trimmed;
+								const colors = colorMap[trimmed] || fallbackColor;
+								chip.style.backgroundColor = colors.bg;
+								chip.style.color = colors.text;
+								cell.appendChild(chip);
+							});
+						});
+					};
+					if (request.$context.pgrAccountTypesChipInterval) {
+						clearInterval(request.$context.pgrAccountTypesChipInterval);
+					}
+					request.$context.pgrAccountTypesChipInterval = setInterval(renderChips, 500);
+				}
+			},
+			{
+				request: "crt.HandleViewModelDestroyRequest",
+				handler: async (request, next) => {
+					if (request.$context.pgrAccountTypesChipInterval) {
+						clearInterval(request.$context.pgrAccountTypesChipInterval);
+						request.$context.pgrAccountTypesChipInterval = null;
+					}
+					return next?.handle(request);
+				}
+			}]/**SCHEMA_HANDLERS*/,
+		converters: /**SCHEMA_CONVERTERS*/[]/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
 	};
 });

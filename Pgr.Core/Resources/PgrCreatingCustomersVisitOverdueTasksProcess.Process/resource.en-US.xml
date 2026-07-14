@@ -37,6 +37,7 @@
 			<Item Name="BaseElements.SubProcess1.Parameters.InputRecordCollection.DisplayValue" Value="[#Read accounts.Collection of records#]" />
 			<Item Name="BaseElements.SubProcess1.Parameters.InputRecordCollection.ProcessSchemaParameter1.Caption" Value="Visit overdue days" />
 			<Item Name="BaseElements.SubProcess1.Parameters.InputRecordCollection.ProcessSchemaParameter1.Sys_Description" Value="VisitOverdueDays" />
+			<Item Name="BaseElements.SubProcess1.Parameters.InputRecordCollection.TaskDueDate.Caption" Value="Task due date" />
 			<Item Name="BaseElements.SubProcess1.Parameters.InputRecordCollection.TaskDurationInDays.Caption" Value="Task duration in days" />
 			<Item Name="BaseElements.SubProcess1.Parameters.OutputRecordCollection.Account.Caption" Value="Account" />
 			<Item Name="BaseElements.SubProcess1.Parameters.OutputRecordCollection.AccountClassification.Caption" Value="Account classification" />
@@ -45,10 +46,11 @@
 			<Item Name="BaseElements.SubProcess1.Parameters.OutputRecordCollection.Caption" Value="Output record collection" />
 			<Item Name="BaseElements.SubProcess1.Parameters.OutputRecordCollection.ProcessSchemaParameter1.Caption" Value="Visit overdue days" />
 			<Item Name="BaseElements.SubProcess1.Parameters.OutputRecordCollection.ProcessSchemaParameter1.Sys_Description" Value="VisitOverdueDays" />
+			<Item Name="BaseElements.SubProcess1.Parameters.OutputRecordCollection.TaskDueDate.Caption" Value="Task due date" />
 			<Item Name="BaseElements.SubProcess1.Parameters.OutputRecordCollection.TaskDurationInDays.Caption" Value="Task duration in days" />
 			<Item Name="BaseElements.SubProcess1.Parameters.TerminatedIterationsCount.Caption" Value="Number of terminated instances" />
 			<Item Name="BaseElements.SubProcess1.Parameters.TotalIterationsCount.Caption" Value="Total number of instances" />
-			<Item Name="Caption" Value="Creating customers visit overdue tasks" />
+			<Item Name="Caption" Value="Creating customer visit overdue tasks" />
 			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
 			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
 			<Item Name="NotificationCaption.Caption" Value="Process instance caption" />

@@ -9,6 +9,7 @@
     },
     "ExtendParent": true,
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Accounts form page"
+    "Caption": "Accounts form page",
+    "DependsOn": []
   }
 }
