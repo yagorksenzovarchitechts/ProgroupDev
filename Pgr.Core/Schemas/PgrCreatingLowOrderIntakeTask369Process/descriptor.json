@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "777071fd-07d2-479e-bccb-55ffff6406be",
+    "Name": "PgrCreatingLowOrderIntakeTask369Process",
+    "ModifiedOnUtc": "\/Date(1783927842000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Creating low order intake task 369 process",
+    "DependsOn": []
+  }
+}

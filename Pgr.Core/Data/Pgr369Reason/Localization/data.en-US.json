@@ -1,0 +1,18 @@
+﻿{
+  "PackageData": [
+    { "Row": [ { "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617", "ColumnName": "Id", "Value": "684150e9-cbd3-4b19-9d08-569a7868bbfd" }, { "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633", "ColumnName": "Name", "Value": "Prices" } ] },
+    { "Row": [ { "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617", "ColumnName": "Id", "Value": "d90a3b69-b7a7-41e6-82e4-5c5f1f73daad" }, { "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633", "ColumnName": "Name", "Value": "Product program" } ] },
+    { "Row": [ { "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617", "ColumnName": "Id", "Value": "f434ec18-3d5d-45d8-8420-72a897b0dc2e" }, { "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633", "ColumnName": "Name", "Value": "Product quality" } ] },
+    { "Row": [ { "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617", "ColumnName": "Id", "Value": "8de0bb4e-0f62-4ae3-b152-da683dda6728" }, { "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633", "ColumnName": "Name", "Value": "Delivery" } ] },
+    { "Row": [ { "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617", "ColumnName": "Id", "Value": "69e0518b-80d6-49ab-bc68-4c74eb225bcb" }, { "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633", "ColumnName": "Name", "Value": "Capacity" } ] },
+    { "Row": [ { "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617", "ColumnName": "Id", "Value": "17515f19-db7c-4a48-8e33-b828a2db9f4d" }, { "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633", "ColumnName": "Name", "Value": "Purchase strategy" } ] },
+    { "Row": [ { "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617", "ColumnName": "Id", "Value": "6d9979e0-6eb7-4931-8dbc-0ee8bc82a05a" }, { "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633", "ColumnName": "Name", "Value": "Customer is blocked" } ] },
+    { "Row": [ { "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617", "ColumnName": "Id", "Value": "c47d6a38-1f9c-4e30-af67-367422e076b4" }, { "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633", "ColumnName": "Name", "Value": "Low market demand" } ] },
+    { "Row": [ { "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617", "ColumnName": "Id", "Value": "4fffb7ba-344b-4a4a-8d52-51ab3d04a0dd" }, { "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633", "ColumnName": "Name", "Value": "Lost end customer" } ] },
+    { "Row": [ { "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617", "ColumnName": "Id", "Value": "519b4b52-3d08-4472-b5a3-3aad5852fd84" }, { "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633", "ColumnName": "Name", "Value": "Quality" } ] },
+    { "Row": [ { "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617", "ColumnName": "Id", "Value": "8914c49d-ffc6-4e98-926e-fd2397c9c837" }, { "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633", "ColumnName": "Name", "Value": "Purchased goods" } ] },
+    { "Row": [ { "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617", "ColumnName": "Id", "Value": "0e14fed5-9cc4-4b2d-9266-ca0a0aa1db87" }, { "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633", "ColumnName": "Name", "Value": "Customer integrated" } ] },
+    { "Row": [ { "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617", "ColumnName": "Id", "Value": "a2f75248-cb29-46d2-aa44-31f6a760d63e" }, { "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633", "ColumnName": "Name", "Value": "Problem with machinery" } ] },
+    { "Row": [ { "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617", "ColumnName": "Id", "Value": "c7f99903-41e9-4181-ade3-d8c956b45225" }, { "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633", "ColumnName": "Name", "Value": "Others" } ] }
+  ]
+}

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.89592521-a2f2-2fb4-d7a8-db1a813ae8e8.Caption" Value="Elemente anzeigen: Status kein Zugriff " />
+			<Item Name="AddonConfig.Rules.b593b9f8-cc39-9bce-0c6f-4f481949d7a6.Caption" Value="Element anzeigen: Tab Meeting-Zusammenfassung" />
+		</Items>
+	</Group>
+</Resources>
