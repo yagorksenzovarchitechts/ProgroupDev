@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "cde4455f-9298-430b-94d5-5e2535f9aa4c",
+    "Name": "PgrCreateMeasureTaskFromVisitReport",
+    "ModifiedOnUtc": "\/Date(1784116452000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Create measure task from Visit report",
+    "DependsOn": []
+  }
+}

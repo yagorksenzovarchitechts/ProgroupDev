@@ -9,11 +9,16 @@
 			<Item Name="Columns.DueDate.Caption" Value="Enddatum und Endzeitpunkt" />
 			<Item Name="Columns.Notes.Caption" Value="Beschreibung" />
 			<Item Name="Columns.Owner.Caption" Value="Verantwortlicher" />
+			<Item Name="Columns.PgrAccount.Caption" Value="Kunde" />
+			<Item Name="Columns.PgrDepartment.Caption" Value="Abteilung" />
 			<Item Name="Columns.PgrIsOverdue.Caption" Value="Überfällig" />
 			<Item Name="Columns.PgrOverdueDays.Caption" Value="Überfällige Tage" />
 			<Item Name="Columns.PgrParentTask.Caption" Value="Übergeordnete Aufgabe" />
 			<Item Name="Columns.PgrReasonCode.Caption" Value="Ursachencode" />
+			<Item Name="Columns.PgrReasonCodeSetBy.Caption" Value="Ursache erfasst von" />
 			<Item Name="Columns.PgrReasonNotes.Caption" Value="Anmerkungen zur Ursache" />
+			<Item Name="Columns.PgrReasonSetOn.Caption" Value="Ursache erfasst am" />
+			<Item Name="Columns.PgrVisitReport.Caption" Value="Besuchsbericht" />
 			<Item Name="Columns.Priority.Caption" Value="Priorität" />
 			<Item Name="Columns.ShowInScheduler.Caption" Value="Im Kalender anzeigen" />
 			<Item Name="Columns.StartDate.Caption" Value="Startdatum und Startzeitpunkt" />

@@ -147,38 +147,6 @@
   "S2": "c0f04627-4620-4bc0-84e5-9419dc8516b1"
 }
 + MetaData.Schema.D2 {
-  "UId": "a97ff624-cf87-40d4-e3c1-e14477a3c485",
-  "A2": "PgrTaskOwner",
-  "A3": "84c92193-3a76-4c34-81e7-f588516da67e",
-  "A4": "84c92193-3a76-4c34-81e7-f588516da67e",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
-}
-+ MetaData.Schema.D2 {
-  "UId": "150fdab2-3e27-70ab-e223-86eddcaeac74",
-  "A2": "PgrTaskDepartment",
-  "A3": "84c92193-3a76-4c34-81e7-f588516da67e",
-  "A4": "84c92193-3a76-4c34-81e7-f588516da67e",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
-}
-+ MetaData.Schema.D2 {
-  "UId": "9a6e8bf9-13ca-07cd-c79b-a7ab3b9554b0",
-  "A2": "PgrTaskContent",
-  "A3": "84c92193-3a76-4c34-81e7-f588516da67e",
-  "A4": "84c92193-3a76-4c34-81e7-f588516da67e",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "c0f04627-4620-4bc0-84e5-9419dc8516b1"
-}
-+ MetaData.Schema.D2 {
-  "UId": "85ce1e65-6dd9-74e4-39e3-6854fe2d36da",
-  "A2": "PgrTaskSubject",
-  "A3": "84c92193-3a76-4c34-81e7-f588516da67e",
-  "A4": "84c92193-3a76-4c34-81e7-f588516da67e",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
-}
-+ MetaData.Schema.D2 {
   "UId": "63825b70-51ac-4af9-58a1-b15752178bb5",
   "A2": "PgrMeasuresRequired",
   "A3": "84c92193-3a76-4c34-81e7-f588516da67e",
@@ -284,19 +252,6 @@
     "FB5": 5
   }
 }
-+ MetaData.Schema.D2 {
-  "UId": "089843c3-15c8-5074-f841-4573ce4d6985",
-  "A2": "PgrTask",
-  "A3": "84c92193-3a76-4c34-81e7-f588516da67e",
-  "A4": "84c92193-3a76-4c34-81e7-f588516da67e",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
-  "S4": "c449d832-a4cc-4b01-b9d5-8a12c42a9f89",
-  "E6": true,
-  "E20": true,
-  "E17": "PgrTaskId",
-  "E18": "PgrTaskTitle"
-}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -316,10 +271,6 @@
   "ffb2acd5-0ea8-350b-e17a-50416b0d15f8",
   "1e2823ca-7c1a-d2cc-6649-069ceaba6814",
   "dd225088-e72c-6bcf-5d3f-edb305d930a3",
-  "a97ff624-cf87-40d4-e3c1-e14477a3c485",
-  "150fdab2-3e27-70ab-e223-86eddcaeac74",
-  "9a6e8bf9-13ca-07cd-c79b-a7ab3b9554b0",
-  "85ce1e65-6dd9-74e4-39e3-6854fe2d36da",
   "63825b70-51ac-4af9-58a1-b15752178bb5",
   "20e6bb71-66a8-db49-d2f0-36a073fc2843",
   "5673c45f-6564-ea9f-42dd-14d7a5d80ac8",
@@ -329,8 +280,7 @@
   "6a20ce4c-e1ff-23e6-a19c-91c6388636b3",
   "c97372ee-a18d-8b0b-49e6-1ee4498cc8d2",
   "bd130d17-504a-9201-94ec-50363ea30409",
-  "f54e4faf-96ca-8ea7-5f9b-5b8e5b219381",
-  "089843c3-15c8-5074-f841-4573ce4d6985"
+  "f54e4faf-96ca-8ea7-5f9b-5b8e5b219381"
 ]
 = MetaData.Schema.D20.A2 "PgrVisitReportEvents"
 + MetaData.Schema.D20.FA1 false
