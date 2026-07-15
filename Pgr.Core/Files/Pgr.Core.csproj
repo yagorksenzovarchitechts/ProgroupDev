@@ -1366,6 +1366,7 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/OpportunityProductInterest/OpportunityProductInterest.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/OpportunityProductInterest/OpportunityProductInterest.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/Order/Order.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/Order/Order.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/OrderProduct/OrderProduct.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/OrderProduct/OrderProduct.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/Pgr369BudgetCalculation/Pgr369BudgetCalculation.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/Pgr369BudgetCalculation/Pgr369BudgetCalculation.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountClassification/PgrAccountClassification.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountClassification/PgrAccountClassification.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountLevel/PgrAccountLevel.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountLevel/PgrAccountLevel.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountTypesInAccount/PgrAccountTypesInAccount.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountTypesInAccount/PgrAccountTypesInAccount.cs')" />
@@ -1373,8 +1374,11 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusCondition/PgrBonusCondition.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusCondition/PgrBonusCondition.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCountryTerritory/PgrCountryTerritory.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCountryTerritory/PgrCountryTerritory.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCustomerlabel/PgrCustomerlabel.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCustomerlabel/PgrCustomerlabel.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCustomerThresholdMatrix/PgrCustomerThresholdMatrix.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCustomerThresholdMatrix/PgrCustomerThresholdMatrix.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrDeliveryTimesAccountAddress/PgrDeliveryTimesAccountAddress.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrDeliveryTimesAccountAddress/PgrDeliveryTimesAccountAddress.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrDeviationReasonCode/PgrDeviationReasonCode.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrDeviationReasonCode/PgrDeviationReasonCode.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrEBox/PgrEBox.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrEBox/PgrEBox.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrErpSystem/PgrErpSystem.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrErpSystem/PgrErpSystem.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrExecuteSQLErrorLog/PgrExecuteSQLErrorLog.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrExecuteSQLErrorLog/PgrExecuteSQLErrorLog.cs')" />
