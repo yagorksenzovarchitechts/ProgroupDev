@@ -233,23 +233,8 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"name": "CustomerNeed"
 			},
 			{
-				"operation": "merge",
-				"name": "CreatedOn",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"row": 4,
-						"colSpan": 1,
-						"rowSpan": 1
-					}
-				}
-			},
-			{
-				"operation": "move",
-				"name": "CreatedOn",
-				"parentName": "OverviewFieldsContainer",
-				"propertyName": "items",
-				"index": 7
+				"operation": "remove",
+				"name": "CreatedOn"
 			},
 			{
 				"operation": "merge",
@@ -1147,12 +1132,13 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_PgrEstimatedVolume_mn2b8fm",
+					"label": "#ResourceString(PgrEstimatedVolume_label)#",
 					"control": "$PDS_PgrEstimatedVolume_mn2b8fm",
 					"readonly": false,
-					"placeholder": "",
+					"placeholder": "#ResourceString(PgrEstimatedVolume_placeholder)#",
 					"labelPosition": "auto",
-					"tooltip": ""
+					"tooltip": "#ResourceString(PgrEstimatedVolume_tooltip)#",
+					"visible": true
 				},
 				"parentName": "OverviewFieldsContainer",
 				"propertyName": "items",
@@ -1204,6 +1190,53 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
+				"name": "Notes",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_Notes_p4ncqcs",
+					"control": "$PDS_Notes_p4ncqcs",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": true,
+					"labelPosition": "auto",
+					"visible": true
+				},
+				"parentName": "OverviewFieldsContainer",
+				"propertyName": "items",
+				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_o1ojcb7",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_PgrOpportunityStartDate_elix56k",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "date",
+					"control": "$PDS_PgrOpportunityStartDate_elix56k"
+				},
+				"parentName": "OverviewFieldsContainer",
+				"propertyName": "items",
+				"index": 8
+			},
+			{
+				"operation": "insert",
 				"name": "PgrFollowUpDate",
 				"values": {
 					"type": "crt.DateTimePicker",
@@ -1216,35 +1249,11 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"control": "$PDS_PgrFollowUpDate_b5idy35",
 					"visible": true,
 					"layoutConfig": {
-						"column": 1,
+						"column": 2,
 						"colSpan": 1,
 						"row": 5,
 						"rowSpan": 1
 					}
-				},
-				"parentName": "OverviewFieldsContainer",
-				"propertyName": "items",
-				"index": 8
-			},
-			{
-				"operation": "insert",
-				"name": "Notes",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 6,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_Notes_p4ncqcs",
-					"control": "$PDS_Notes_p4ncqcs",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": true,
-					"labelPosition": "auto",
-					"visible": true
 				},
 				"parentName": "OverviewFieldsContainer",
 				"propertyName": "items",
@@ -1714,6 +1723,11 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 									}
 								}
 							}
+						}
+					},
+					"PDS_PgrOpportunityStartDate_elix56k": {
+						"modelConfig": {
+							"path": "PDS.PgrOpportunityStartDate"
 						}
 					}
 				}
