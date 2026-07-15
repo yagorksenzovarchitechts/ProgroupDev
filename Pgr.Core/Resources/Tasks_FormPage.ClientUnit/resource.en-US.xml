@@ -36,6 +36,7 @@
 			<Item Name="LocalizableStrings.TabContainer_6uff3ez_caption.Value" Value="Visit report" />
 			<Item Name="LocalizableStrings.TabContainer_w3tsrln_caption.Value" Value="General Info" />
 			<Item Name="LocalizableStrings.TabMeetingSummary_caption.Value" Value="Meeting summary" />
+			<Item Name="LocalizableStrings.addRecord_005ou0u_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_1g27yyy_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_2nooxby_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_4dcm6au_caption.Value" Value="Add new" />
@@ -43,6 +44,7 @@
 			<Item Name="LocalizableStrings.addRecord_6cy1p70_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_a9s7x8w_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_d7tgh1o_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_k45qo5j_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_lt9y4t1_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_ugresq2_caption.Value" Value="Add new" />
 		</Items>

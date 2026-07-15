@@ -314,48 +314,6 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_r42qhlq",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 6,
-						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_PgrTask_ha36hpq",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_PgrTask_ha36hpq"
-				},
-				"parentName": "SideAreaProfileContainer",
-				"propertyName": "items",
-				"index": 5
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_njd0tr9",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_njd0tr9_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_r42qhlq",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
 				"name": "GridContainer_wk48872",
 				"values": {
 					"type": "crt.GridContainer",
@@ -1316,96 +1274,60 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 			},
 			{
 				"operation": "insert",
-				"name": "Input_tf2wqdp",
+				"name": "DataGrid_bhkko01",
 				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrTaskSubject_el70evn",
-					"control": "$PDS_PgrTaskSubject_el70evn",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": true,
-					"labelPosition": "auto",
-					"visible": true,
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
 						"row": 2,
-						"rowSpan": 1
-					}
+						"rowSpan": 6
+					},
+					"type": "crt.DataGrid",
+					"features": {
+						"rows": {
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
+						}
+					},
+					"items": "$DataGrid_bhkko01",
+					"primaryColumnName": "DataGrid_bhkko01DS_Id",
+					"columns": [
+						{
+							"id": "a9094436-616f-ff03-36c4-f35fa599ca7c",
+							"code": "DataGrid_bhkko01DS_Title",
+							"caption": "#ResourceString(DataGrid_bhkko01DS_Title)#",
+							"dataValueType": 28,
+							"width": 313
+						},
+						{
+							"id": "a9172e11-e2d4-79b9-daa4-427fc3178c1f",
+							"code": "DataGrid_bhkko01DS_PgrDepartment",
+							"caption": "#ResourceString(DataGrid_bhkko01DS_PgrDepartment)#",
+							"dataValueType": 28,
+							"width": 187
+						},
+						{
+							"id": "29012f92-65a7-ca23-c4b1-dbea4568aaf1",
+							"code": "DataGrid_bhkko01DS_Owner",
+							"caption": "#ResourceString(DataGrid_bhkko01DS_Owner)#",
+							"dataValueType": 10,
+							"width": 156
+						},
+						{
+							"id": "e390999e-7e34-5ee2-6e26-e5f0b9c55c98",
+							"code": "DataGrid_bhkko01DS_Notes",
+							"caption": "#ResourceString(DataGrid_bhkko01DS_Notes)#",
+							"dataValueType": 30,
+							"width": 695
+						}
+					],
+					"placeholder": false
 				},
 				"parentName": "GridContainer_oi1on93",
 				"propertyName": "items",
 				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "Input_u0gigfq",
-				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrTaskContent_690kksc",
-					"control": "$PDS_PgrTaskContent_690kksc",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto",
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 3,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "GridContainer_oi1on93",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "Input_phk9ls7",
-				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrTaskDepartment_6uzsixy",
-					"control": "$PDS_PgrTaskDepartment_6uzsixy",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto",
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 4,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "GridContainer_oi1on93",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "Input_f1mfpqy",
-				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrTaskOwner_rvf1947",
-					"control": "$PDS_PgrTaskOwner_rvf1947",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto",
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 5,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "GridContainer_oi1on93",
-				"propertyName": "items",
-				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -1573,24 +1495,6 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 							}
 						}
 					},
-					"PDS_PgrTask_ha36hpq": {
-						"modelConfig": {
-							"path": "PDS.PgrTask"
-						}
-					},
-					"PDS_PgrTask_ha36hpq_List": {
-						"isCollection": true,
-						"modelConfig": {
-							"sortingConfig": {
-								"default": [
-									{
-										"columnName": "Title",
-										"direction": "asc"
-									}
-								]
-							}
-						}
-					},
 					"PDS_PgrVisitType_a3iu7ng": {
 						"modelConfig": {
 							"path": "PDS.PgrVisitType"
@@ -1723,26 +1627,6 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 							"path": "PDS.PgrKeyTopics"
 						}
 					},
-					"PDS_PgrTaskSubject_el70evn": {
-						"modelConfig": {
-							"path": "PDS.PgrTaskSubject"
-						}
-					},
-					"PDS_PgrTaskContent_690kksc": {
-						"modelConfig": {
-							"path": "PDS.PgrTaskContent"
-						}
-					},
-					"PDS_PgrTaskDepartment_6uzsixy": {
-						"modelConfig": {
-							"path": "PDS.PgrTaskDepartment"
-						}
-					},
-					"PDS_PgrTaskOwner_rvf1947": {
-						"modelConfig": {
-							"path": "PDS.PgrTaskOwner"
-						}
-					},
 					"PDS_PgrSummary_eehi70g": {
 						"modelConfig": {
 							"path": "PDS.PgrSummary"
@@ -1751,6 +1635,41 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"PDS_PgrMeasuresRequired_tqltqlh": {
 						"modelConfig": {
 							"path": "PDS.PgrMeasuresRequired"
+						}
+					},
+					"DataGrid_bhkko01": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "DataGrid_bhkko01DS"
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"DataGrid_bhkko01DS_Title": {
+									"modelConfig": {
+										"path": "DataGrid_bhkko01DS.Title"
+									}
+								},
+								"DataGrid_bhkko01DS_PgrDepartment": {
+									"modelConfig": {
+										"path": "DataGrid_bhkko01DS.PgrDepartment"
+									}
+								},
+								"DataGrid_bhkko01DS_Owner": {
+									"modelConfig": {
+										"path": "DataGrid_bhkko01DS.Owner"
+									}
+								},
+								"DataGrid_bhkko01DS_Notes": {
+									"modelConfig": {
+										"path": "DataGrid_bhkko01DS.Notes"
+									}
+								},
+								"DataGrid_bhkko01DS_Id": {
+									"modelConfig": {
+										"path": "DataGrid_bhkko01DS.Id"
+									}
+								}
+							}
 						}
 					}
 				}
@@ -1772,7 +1691,15 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 				"operation": "merge",
 				"path": [],
 				"values": {
-					"primaryDataSourceName": "PDS"
+					"primaryDataSourceName": "PDS",
+					"dependencies": {
+						"DataGrid_bhkko01DS": [
+							{
+								"attributePath": "PgrVisitReport",
+								"relationPath": "PDS.Id"
+							}
+						]
+					}
 				}
 			},
 			{
@@ -1787,6 +1714,27 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 							"entitySchemaName": "PgrVisitReport"
 						},
 						"scope": "page"
+					},
+					"DataGrid_bhkko01DS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "Activity",
+							"attributes": {
+								"Title": {
+									"path": "Title"
+								},
+								"PgrDepartment": {
+									"path": "PgrDepartment"
+								},
+								"Owner": {
+									"path": "Owner"
+								},
+								"Notes": {
+									"path": "Notes"
+								}
+							}
+						}
 					}
 				}
 			}

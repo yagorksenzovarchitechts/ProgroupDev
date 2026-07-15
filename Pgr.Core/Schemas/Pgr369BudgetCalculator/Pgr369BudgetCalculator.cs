@@ -23,17 +23,15 @@ namespace Pgr.Core
         #region Constants
 
         private const string EntityName = "Pgr369BudgetCalculation";
+        private const string ThresholdMatrixEntityName = "PgrCustomerThresholdMatrix";
         private const int RollingWindowDays = 3;
 
-        // --- Test fixed values (CMVP-124, comment answer to question 2 & CMVP-194) ---
+        // --- Test fixed value (CMVP-124, comment answer to question 2 & CMVP-194) ---
         // "use test fixed values for now. use Order.Amount for order intake and budget is
-        //  fixed to 10000 (square meters)." The tolerance values match the "thesholds example"
-        //  worksheet (absolute = 1000, percentage = 5%). Replace with the real per-customer /
-        //  per-period budget + tolerance source (matrix / Account override) once CMVP-122/194
-        //  land — see ResolveDailyThreshold.
+        //  fixed to 10000 (square meters)." The daily budget is still a test fixed value; the
+        //  deviation tolerance (absolute units + percentage) now comes from the Customer threshold
+        //  matrix per customer / region-category — see ResolveTolerance / ResolveDailyThreshold.
         private const decimal TestDailyBudget = 10000m;
-        private const decimal TestAbsoluteTolerance = 1000m;
-        private const decimal TestPercentTolerance = 5m;
 
         #endregion
 
@@ -64,13 +62,15 @@ namespace Pgr.Core
         /// </summary>
         public Pgr369DailyCalculation CalculateDaily(Guid accountId)
         {
+            // Tolerance is customer-scoped and date-independent; resolve it once for the whole calculation.
+            var tolerance = ResolveTolerance(accountId);
             var calculation = new Pgr369DailyCalculation
             {
                 AccountId = accountId,
                 CalculationDate = DateTime.Today,
                 CalendarId = _workingDayHelper.GetCalendarId(accountId),
                 FullBudget = TestDailyBudget,
-                ToleranceAdjustedBudget = ResolveDailyThreshold(accountId, DateTime.Today)
+                ToleranceAdjustedBudget = ResolveDailyThreshold(DateTime.Today, tolerance)
             };
 
             // Trailing 3-working-day window ending yesterday; both averages share it (CMVP-194).
@@ -79,7 +79,7 @@ namespace Pgr.Core
             {
                 calculation.WindowFrom = window.Min();
                 calculation.WindowTo = window.Max();
-                calculation.BudgetCompareValue = GetBudgetCompareValue(accountId, window);
+                calculation.BudgetCompareValue = GetBudgetCompareValue(accountId, window, tolerance);
                 calculation.OrderIntakeAvg = GetAvg3OrderIntake(accountId, window);
                 calculation.IsDeviation = calculation.OrderIntakeAvg < calculation.BudgetCompareValue;
             }
@@ -159,12 +159,12 @@ namespace Pgr.Core
         ///     Each day keeps the threshold of the period it actually occurred in, so a window that
         ///     spans a period boundary is averaged as-is (period boundary handling, CMVP-194).
         /// </summary>
-        private decimal GetBudgetCompareValue(Guid accountId, List<DateTime> window)
+        private decimal GetBudgetCompareValue(Guid accountId, List<DateTime> window, Pgr369Tolerance tolerance)
         {
             var sum = 0m;
             foreach (var day in window)
             {
-                var dailyThreshold = ResolveDailyThreshold(accountId, day);
+                var dailyThreshold = ResolveDailyThreshold(day, tolerance);
                 sum += GetDayType(day, accountId) == Pgr369DayType.Half
                     ? dailyThreshold / 2m
                     : dailyThreshold;
@@ -174,26 +174,116 @@ namespace Pgr.Core
         }
 
         /// <summary>
-        ///     Tolerance-adjusted daily threshold for a customer on a given date (CMVP-194):
+        ///     Tolerance-adjusted daily threshold on a given date (CMVP-194):
         ///     applied tolerance = MIN(absolute, budget × %/100) — the smaller tolerance gives the
         ///     stricter (larger) threshold — and daily threshold = daily budget − applied tolerance.
-        ///     TODO CMVP-122/194: replace the test fixed values with the real per-customer /
-        ///     per-period budget and tolerance (customer override on Account takes precedence over
-        ///     the PgrCustomerThresholdMatrix row). The <paramref name="date" /> is already threaded
+        ///     The <paramref name="tolerance" /> (absolute units + percentage) is resolved once per
+        ///     calculation from the Customer threshold matrix; the daily budget is still a test fixed
+        ///     value. TODO CMVP-122/194: replace <see cref="TestDailyBudget" /> with the real
+        ///     per-customer / per-period budget. The <paramref name="date" /> is already threaded
         ///     through so a per-period budget can be resolved without changing the callers.
         /// </summary>
-        private decimal ResolveDailyThreshold(Guid accountId, DateTime date)
+        private decimal ResolveDailyThreshold(DateTime date, Pgr369Tolerance tolerance)
         {
             var dailyBudget = TestDailyBudget;
-            var percentToleranceValue = dailyBudget * TestPercentTolerance / 100m;
-            var appliedTolerance = Math.Min(TestAbsoluteTolerance, percentToleranceValue);
+            var percentToleranceValue = dailyBudget * tolerance.Percentage / 100m;
+            var appliedTolerance = Math.Min(tolerance.Absolute, percentToleranceValue);
             return dailyBudget - appliedTolerance;
+        }
+
+        /// <summary>
+        ///     Resolves the deviation tolerance (absolute units + percentage) for a customer from
+        ///     the Customer threshold matrix (CMVP-194): a row keyed on the customer takes
+        ///     precedence; otherwise the row matching the customer's Region + Category is used; if
+        ///     neither exists both values are 0.
+        /// </summary>
+        private Pgr369Tolerance ResolveTolerance(Guid accountId)
+        {
+            return GetToleranceByCustomer(accountId)
+                   ?? GetToleranceByRegionCategory(accountId)
+                   ?? Pgr369Tolerance.Zero;
+        }
+
+        /// <summary>
+        ///     Tolerance from the Customer threshold matrix row whose customer is
+        ///     <paramref name="accountId" />, or <c>null</c> when there is no such row.
+        /// </summary>
+        private Pgr369Tolerance? GetToleranceByCustomer(Guid accountId)
+        {
+            var esq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, ThresholdMatrixEntityName)
+            {
+                UseAdminRights = false
+            };
+            var absoluteColumn = esq.AddColumn("PgrAbsolute").Name;
+            var percentageColumn = esq.AddColumn("PgrPercentage").Name;
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "PgrCustomer", accountId));
+            return ReadTolerance(esq, absoluteColumn, percentageColumn);
+        }
+
+        /// <summary>
+        ///     Tolerance from the Customer threshold matrix row matching the customer's Region
+        ///     (Account.Territory) and Category (Account.PgrAccountClassification), or <c>null</c>
+        ///     when the customer has no region/category or there is no matching row.
+        /// </summary>
+        private Pgr369Tolerance? GetToleranceByRegionCategory(Guid accountId)
+        {
+            var accountEsq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, "Account")
+            {
+                UseAdminRights = false
+            };
+            var regionColumn = accountEsq.AddColumn("Territory").Name;
+            var categoryColumn = accountEsq.AddColumn("PgrAccountClassification").Name;
+            accountEsq.Filters.Add(accountEsq.CreateFilterWithParameters(
+                FilterComparisonType.Equal, "Id", accountId));
+            var accountRows = accountEsq.GetEntityCollection(_userConnection);
+            if (accountRows.Count == 0)
+            {
+                return null;
+            }
+
+            var regionId = accountRows[0].GetTypedColumnValue<Guid>(regionColumn);
+            var categoryId = accountRows[0].GetTypedColumnValue<Guid>(categoryColumn);
+            if (regionId == Guid.Empty || categoryId == Guid.Empty)
+            {
+                return null;
+            }
+
+            var esq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, ThresholdMatrixEntityName)
+            {
+                UseAdminRights = false
+            };
+            var absoluteColumn = esq.AddColumn("PgrAbsolute").Name;
+            var percentageColumn = esq.AddColumn("PgrPercentage").Name;
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "PgrRegion", regionId));
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "PgrCategory", categoryId));
+            return ReadTolerance(esq, absoluteColumn, percentageColumn);
+        }
+
+        /// <summary>
+        ///     Runs a prepared Customer threshold matrix query and reads the tolerance from its
+        ///     first row (<c>PgrAbsolute</c> = units, <c>PgrPercentage</c> = %), or <c>null</c>
+        ///     when the query returns no rows.
+        /// </summary>
+        private Pgr369Tolerance? ReadTolerance(EntitySchemaQuery esq, string absoluteColumn, string percentageColumn)
+        {
+            var rows = esq.GetEntityCollection(_userConnection);
+            if (rows.Count == 0)
+            {
+                return null;
+            }
+
+            return new Pgr369Tolerance(
+                rows[0].GetTypedColumnValue<int>(absoluteColumn),
+                rows[0].GetTypedColumnValue<decimal>(percentageColumn));
         }
 
         /// <summary>
         ///     Average order intake over the supplied trailing working-day window (CMVP-194).
         ///     Uses <c>Order.Amount</c> as-reported (not scaled on half days) and divides by the
-        ///     size of the window — the same window used for the budget compare value.
+        ///     size of the window — the same window used for the budget compare value. Filters on the
+        ///     exact set of working days (IN), not a date range, so orders dated on a non-working day
+        ///     that falls inside the window's span are excluded — non-working days are skipped in both
+        ///     averages symmetrically (CMVP-194).
         /// </summary>
         private decimal GetAvg3OrderIntake(Guid accountId, List<DateTime> window)
         {
@@ -213,9 +303,7 @@ namespace Pgr.Core
                 "PgrIsCancelled",
                 true));
             esq.Filters.Add(esq.CreateFilterWithParameters(
-                FilterComparisonType.GreaterOrEqual, "PgrWorkingDayDate", window.Min()));
-            esq.Filters.Add(esq.CreateFilterWithParameters(
-                FilterComparisonType.LessOrEqual, "PgrWorkingDayDate", window.Max()));
+                FilterComparisonType.Equal, "PgrWorkingDayDate", window.Cast<object>().ToArray()));
             var sum = 0m;
             foreach (var row in esq.GetEntityCollection(_userConnection))
             {
@@ -277,6 +365,32 @@ namespace Pgr.Core
                 .Where("PgrAccountId").IsEqual(Column.Parameter(accountId))
                 .And("PgrCalculationDate").IsEqual(Column.Parameter(date.Date))
                 .Execute();
+        }
+
+        #endregion
+
+        #region Struct: Pgr369Tolerance
+
+        /// <summary>
+        ///     A deviation tolerance pair resolved from the Customer threshold matrix (CMVP-194):
+        ///     the absolute allowance (units) and the percentage allowance.
+        /// </summary>
+        private struct Pgr369Tolerance
+        {
+            public Pgr369Tolerance(decimal absolute, decimal percentage)
+            {
+                Absolute = absolute;
+                Percentage = percentage;
+            }
+
+            /// <summary>Absolute deviation allowance in units (PgrAbsolute).</summary>
+            public decimal Absolute { get; }
+
+            /// <summary>Percentage deviation allowance (PgrPercentage).</summary>
+            public decimal Percentage { get; }
+
+            /// <summary>The "no matching matrix row" tolerance — both allowances are 0.</summary>
+            public static Pgr369Tolerance Zero => new Pgr369Tolerance(0m, 0m);
         }
 
         #endregion

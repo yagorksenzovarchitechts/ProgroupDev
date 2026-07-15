@@ -3187,58 +3187,67 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					"primaryColumnName": "GridDetail_29ab1xwDS_Id",
 					"columns": [
 						{
-							"id": "ad92b1b4-eb86-a3ac-c4bb-23e6d638d064",
+							"id": "75acd904-1975-eee1-723b-056834f4de6a",
 							"code": "GridDetail_29ab1xwDS_PgrCalculationDate",
 							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrCalculationDate)#",
-							"dataValueType": 7
+							"dataValueType": 8,
+							"width": 173
+						},
+						{
+							"id": "11c422f5-273a-b5b1-de66-9d6b8bfcd79a",
+							"code": "GridDetail_29ab1xwDS_PgrWindowFrom",
+							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrWindowFrom)#",
+							"dataValueType": 8,
+							"width": 158
+						},
+						{
+							"id": "b780b78b-9f90-8157-61e8-d2cd733011d5",
+							"code": "GridDetail_29ab1xwDS_PgrWindowTo",
+							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrWindowTo)#",
+							"dataValueType": 8,
+							"width": 163
 						},
 						{
 							"id": "cafe2e7c-10ad-5f2b-7d13-761679c3090a",
 							"code": "GridDetail_29ab1xwDS_PgrCalendar",
 							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrCalendar)#",
-							"dataValueType": 10
-						},
-						{
-							"id": "3f46a3dc-4784-276d-1d2a-04db71bf8a49",
-							"code": "GridDetail_29ab1xwDS_PgrWindowFrom",
-							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrWindowFrom)#",
-							"dataValueType": 7
-						},
-						{
-							"id": "4ab1510f-669f-be63-903d-9f49ca01e159",
-							"code": "GridDetail_29ab1xwDS_PgrWindowTo",
-							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrWindowTo)#",
-							"dataValueType": 7
+							"dataValueType": 10,
+							"width": 139
 						},
 						{
 							"id": "d41b8513-bd76-2d37-257d-d55148b1ef94",
 							"code": "GridDetail_29ab1xwDS_PgrToleranceAdjustedBudget",
 							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrToleranceAdjustedBudget)#",
-							"dataValueType": 32
+							"dataValueType": 32,
+							"width": 234
 						},
 						{
 							"id": "f5b7919c-0ec5-29e4-0a42-dac7b6bcca12",
 							"code": "GridDetail_29ab1xwDS_PgrOrderIntakeAvg",
 							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrOrderIntakeAvg)#",
-							"dataValueType": 32
+							"dataValueType": 32,
+							"width": 199
 						},
 						{
 							"id": "f92bff2a-4819-c84b-384e-1f72cecd524d",
 							"code": "GridDetail_29ab1xwDS_PgrFullBudget",
 							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrFullBudget)#",
-							"dataValueType": 32
+							"dataValueType": 32,
+							"width": 156
 						},
 						{
 							"id": "315588af-cc5d-cc51-ac07-8d695dd99c6e",
 							"code": "GridDetail_29ab1xwDS_PgrBudgetCompareValue",
 							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrBudgetCompareValue)#",
-							"dataValueType": 32
+							"dataValueType": 32,
+							"width": 210
 						},
 						{
 							"id": "3a3dfa41-5972-08b4-1ddb-ca624f1b11f8",
 							"code": "GridDetail_29ab1xwDS_PgrIsDeviation",
 							"caption": "#ResourceString(GridDetail_29ab1xwDS_PgrIsDeviation)#",
-							"dataValueType": 12
+							"dataValueType": 12,
+							"width": 134
 						}
 					],
 					"placeholder": false
@@ -7826,11 +7835,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 										"path": "GridDetail_29ab1xwDS.PgrCalculationDate"
 									}
 								},
-								"GridDetail_29ab1xwDS_PgrCalendar": {
-									"modelConfig": {
-										"path": "GridDetail_29ab1xwDS.PgrCalendar"
-									}
-								},
 								"GridDetail_29ab1xwDS_PgrWindowFrom": {
 									"modelConfig": {
 										"path": "GridDetail_29ab1xwDS.PgrWindowFrom"
@@ -7839,6 +7843,11 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 								"GridDetail_29ab1xwDS_PgrWindowTo": {
 									"modelConfig": {
 										"path": "GridDetail_29ab1xwDS.PgrWindowTo"
+									}
+								},
+								"GridDetail_29ab1xwDS_PgrCalendar": {
+									"modelConfig": {
+										"path": "GridDetail_29ab1xwDS.PgrCalendar"
 									}
 								},
 								"GridDetail_29ab1xwDS_PgrToleranceAdjustedBudget": {
@@ -8452,14 +8461,14 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 								"PgrCalculationDate": {
 									"path": "PgrCalculationDate"
 								},
-								"PgrCalendar": {
-									"path": "PgrCalendar"
-								},
 								"PgrWindowFrom": {
 									"path": "PgrWindowFrom"
 								},
 								"PgrWindowTo": {
 									"path": "PgrWindowTo"
+								},
+								"PgrCalendar": {
+									"path": "PgrCalendar"
 								},
 								"PgrToleranceAdjustedBudget": {
 									"path": "PgrToleranceAdjustedBudget"
@@ -8699,7 +8708,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 			        }
 
 			        // Nothing entered yet, or the total is valid — let the save proceed.
-			        if (total === 0 || total === PgrAccountCompetitorShareHelper.REQUIRED_TOTAL) {
+			        if (total === PgrAccountCompetitorShareHelper.REQUIRED_TOTAL) {
 			            return await next?.handle(request);
 			        }
 

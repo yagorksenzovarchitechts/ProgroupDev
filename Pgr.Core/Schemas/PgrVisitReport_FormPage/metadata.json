@@ -65,13 +65,6 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
 + MetaData.Schema.B2 {
-  "UId": "2a26c04a-0929-c5c5-5edf-388d876af58f",
-  "A2": "addRecord_njd0tr9_caption",
-  "A3": "dca3be9d-e1a0-448b-9b9f-fef594412715",
-  "A4": "dca3be9d-e1a0-448b-9b9f-fef594412715",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
-}
-+ MetaData.Schema.B2 {
   "UId": "fbe1d848-8585-985d-8981-2a82a10842e6",
   "A2": "addRecord_t5o0hwn_caption",
   "A3": "dca3be9d-e1a0-448b-9b9f-fef594412715",
@@ -187,7 +180,6 @@
   "4940d583-1d0a-7af5-5a71-8303e8410a24",
   "7ca6cda0-5644-d3f8-af53-bc3041f609ed",
   "33913fbd-52b9-13f2-d325-41e2aab843d9",
-  "2a26c04a-0929-c5c5-5edf-388d876af58f",
   "fbe1d848-8585-985d-8981-2a82a10842e6",
   "df686da9-2200-0ea8-a7cf-48f269d2b4f3",
   "5c7889aa-aaa1-149d-58f8-aff11d1c5628",

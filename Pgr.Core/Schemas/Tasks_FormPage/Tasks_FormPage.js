@@ -413,7 +413,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 			},
 			{
 				"operation": "insert",
-				"name": "GridContainer_ReasonCodeAndNotes",
+				"name": "FlexContainer_hdht802",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -421,6 +421,120 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 						"row": 5,
 						"rowSpan": 1
 					},
+					"type": "crt.FlexContainer",
+					"direction": "column",
+					"wrap": "nowrap",
+					"items": [],
+					"fitContent": true
+				},
+				"parentName": "GridContainer_1qargav",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_wlki7uc",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "FlexContainer_hdht802",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_blechm2",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrVisitReport_bl3njly",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrVisitReport_bl3njly",
+					"visible": false,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "GridContainer_wlki7uc",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_k45qo5j",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_k45qo5j_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_blechm2",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Input_zp5ixl9",
+				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrDepartment_c6krwbp",
+					"control": "$PDS_PgrDepartment_c6krwbp",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "above",
+					"visible": false,
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_wlki7uc",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_ReasonCodeAndNotes",
+				"values": {
 					"type": "crt.GridContainer",
 					"columns": [
 						"minmax(32px, 1fr)",
@@ -443,12 +557,12 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 						"top": "none",
 						"right": "none",
 						"bottom": "none",
-						"left": "none"
+						"left": "small"
 					}
 				},
-				"parentName": "GridContainer_1qargav",
+				"parentName": "FlexContainer_hdht802",
 				"propertyName": "items",
-				"index": 6
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -515,6 +629,75 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_d0zml3k",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrReasonCodeSetBy_km7i221",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrReasonCodeSetBy_km7i221",
+					"visible": true,
+					"readonly": true,
+					"placeholder": ""
+				},
+				"parentName": "GridContainer_ReasonCodeAndNotes",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_005ou0u",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_005ou0u_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_d0zml3k",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_gqhm1xl",
+				"values": {
+					"layoutConfig": {
+						"column": 3,
+						"colSpan": 2,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_PgrReasonSetOn_6w4ri4l",
+					"placeholder": "",
+					"readonly": true,
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "datetime",
+					"control": "$PDS_PgrReasonSetOn_6w4ri4l",
+					"visible": true
+				},
+				"parentName": "GridContainer_ReasonCodeAndNotes",
+				"propertyName": "items",
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -1714,6 +1897,52 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 					"PDS_PgrReasonNotes_0c2belc": {
 						"modelConfig": {
 							"path": "PDS.PgrReasonNotes"
+						}
+					},
+					"PDS_PgrReasonCodeSetBy_km7i221": {
+						"modelConfig": {
+							"path": "PDS.PgrReasonCodeSetBy"
+						}
+					},
+					"PDS_PgrReasonCodeSetBy_km7i221_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_PgrReasonSetOn_6w4ri4l": {
+						"modelConfig": {
+							"path": "PDS.PgrReasonSetOn"
+						}
+					},
+					"PDS_PgrDepartment_c6krwbp": {
+						"modelConfig": {
+							"path": "PDS.PgrDepartment"
+						}
+					},
+					"PDS_PgrVisitReport_bl3njly": {
+						"modelConfig": {
+							"path": "PDS.PgrVisitReport"
+						}
+					},
+					"PDS_PgrVisitReport_bl3njly_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "PgrNumber",
+										"direction": "asc"
+									}
+								]
+							}
 						}
 					}
 				}

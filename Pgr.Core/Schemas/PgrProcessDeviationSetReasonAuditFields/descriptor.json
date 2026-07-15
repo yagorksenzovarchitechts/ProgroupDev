@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "e36d7b38-e0f4-4105-8d12-8fa580b6f618",
+    "Name": "PgrProcessDeviationSetReasonAuditFields",
+    "ModifiedOnUtc": "\/Date(1784111507000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Deviation: Set reason code audit fields",
+    "DependsOn": []
+  }
+}

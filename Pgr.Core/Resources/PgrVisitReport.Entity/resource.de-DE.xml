@@ -17,10 +17,6 @@
 			<Item Name="Columns.PgrPerformance.Caption" Value="Performance" />
 			<Item Name="Columns.PgrPerformanceText.Caption" Value="Freitext Performance" />
 			<Item Name="Columns.PgrSummary.Caption" Value="Sonstiges / private Anmerkungen" />
-			<Item Name="Columns.PgrTaskContent.Caption" Value="Aufgabeninhalt" />
-			<Item Name="Columns.PgrTaskDepartment.Caption" Value="Abteilung" />
-			<Item Name="Columns.PgrTaskOwner.Caption" Value="Verantwortliche Person" />
-			<Item Name="Columns.PgrTaskSubject.Caption" Value="Aufgabenbetreff" />
 			<Item Name="Columns.PgrVisitBudget.Caption" Value="Budget" />
 			<Item Name="Columns.PgrVisitDate.Caption" Value="Besuchsdatum" />
 			<Item Name="Columns.PgrVisitDeviation.Caption" Value="Abweichung %" />
