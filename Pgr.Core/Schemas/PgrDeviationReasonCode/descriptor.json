@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "5a288b25-f3cf-41cb-8000-639a02e0e718",
+    "Name": "PgrDeviationReasonCode",
+    "ModifiedOnUtc": "\/Date(1784100654000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Deviation reason code",
+    "DependsOn": []
+  }
+}

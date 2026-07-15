@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="AddonConfig.Rules.89592521-a2f2-2fb4-d7a8-db1a813ae8e8.Caption" Value="Show elements: State no access" />
+			<Item Name="AddonConfig.Rules.aa084e8e-99ec-b762-35be-15840ec7b199.Caption" Value="Make required&amp;show: ReasonCodeAndNotes" />
 			<Item Name="AddonConfig.Rules.b2dd30df-e0fc-d033-d813-09f121a53df1.Caption" Value="Visit reports elements show/hide" />
 			<Item Name="AddonConfig.Rules.b593b9f8-cc39-9bce-0c6f-4f481949d7a6.Caption" Value="Show element: tab Meeting Summary" />
 		</Items>

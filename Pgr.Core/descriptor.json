@@ -38,6 +38,12 @@
         "InstallBehavior": 1
       },
       {
+        "UId": "520a3697-4d73-c598-38d4-a7501f8c8e9b",
+        "Name": "CrtWaterfallPipelineInLeadOppMgmt",
+        "Type": 1,
+        "InstallBehavior": 1
+      },
+      {
         "UId": "70dba663-02da-75c9-d7cd-7c0590bb4591",
         "PackageVersion": "7.8.0",
         "Name": "CrtDigitalAdsInLeadGen",

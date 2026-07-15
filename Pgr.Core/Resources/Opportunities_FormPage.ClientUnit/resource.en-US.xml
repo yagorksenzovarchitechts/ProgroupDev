@@ -42,6 +42,9 @@
 			<Item Name="LocalizableStrings.OrdersRefreshButton_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.OrdersSearchFilter_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.OrdersSettingsButton_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.PgrEstimatedVolume_label.Value" Value="Estimated volume (tsqm)" />
+			<Item Name="LocalizableStrings.PgrEstimatedVolume_placeholder.Value" Value="Volume per day " />
+			<Item Name="LocalizableStrings.PgrEstimatedVolume_tooltip.Value" Value="Only enter the expected volume per day for Progroup" />
 			<Item Name="LocalizableStrings.QuickFilterShowAllDocuments_config_caption.Value" Value="Show all documents by customer" />
 			<Item Name="LocalizableStrings.QuickFilterShowAllInvoices_config_caption.Value" Value="Show all invoices by customer" />
 			<Item Name="LocalizableStrings.QuickFilterShowAllOrders_config_caption.Value" Value="Show all orders by customer" />

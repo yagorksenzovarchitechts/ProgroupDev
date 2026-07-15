@@ -9,6 +9,8 @@
 			<Item Name="Columns.PgrIsOverdue.Caption" Value="Is overdue" />
 			<Item Name="Columns.PgrOverdueDays.Caption" Value="Overdue days" />
 			<Item Name="Columns.PgrParentTask.Caption" Value="Parent task" />
+			<Item Name="Columns.PgrReasonCode.Caption" Value="Reason code" />
+			<Item Name="Columns.PgrReasonNotes.Caption" Value="Reason notes" />
 			<Item Name="Columns.StartDate.Caption" Value="Start date and time" />
 		</Items>
 	</Group>
