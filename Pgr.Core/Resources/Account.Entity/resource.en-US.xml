@@ -39,6 +39,7 @@
 			<Item Name="Columns.PgrMaxOverDelivery.Caption" Value="Maximum over-delivery" />
 			<Item Name="Columns.PgrMaxUnderDelivery.Caption" Value="Maximum under-delivery" />
 			<Item Name="Columns.PgrOrderBl.Caption" Value="Order blocked" />
+			<Item Name="Columns.PgrOrderIntakeDayCounter.Caption" Value="Order intake day counter" />
 			<Item Name="Columns.PgrOverDeliveryPercentage1.Caption" Value="Over-delivery from quantity % 1" />
 			<Item Name="Columns.PgrOverDeliveryPercentage2.Caption" Value="Over-delivery from quantity % 2" />
 			<Item Name="Columns.PgrOverDeliveryQuantity1.Caption" Value="Over-delivery from quantity quantity 1" />
