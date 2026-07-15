@@ -4,19 +4,6 @@
       "Row": [
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
-          "Value": "2365ae4f-58e6-df11-971b-001d60e938c6"
-        },
-        {
-          "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
-          "Value": "fbe0acdc-cfc0-df11-b00f-001d60e938c6",
-          "DisplayValue": "Task"
-        }
-      ]
-    },
-    {
-      "Row": [
-        {
-          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
           "Value": "42c74c49-58e6-df11-971b-001d60e938c6"
         },
         {
@@ -70,6 +57,19 @@
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
           "Value": "8452bb92-4000-4c3c-8850-c391f45f05f8"
+        },
+        {
+          "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
+          "Value": "fbe0acdc-cfc0-df11-b00f-001d60e938c6",
+          "DisplayValue": "Task"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "bee620f7-f3f7-47e4-81a3-5b2a9a030413"
         },
         {
           "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",

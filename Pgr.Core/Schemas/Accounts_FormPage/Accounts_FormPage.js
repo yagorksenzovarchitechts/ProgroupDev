@@ -317,6 +317,13 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 			},
 			{
 				"operation": "merge",
+				"name": "ServiceTab",
+				"values": {
+					"visible": false
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "SalesTab",
 				"values": {
 					"visible": false
@@ -440,13 +447,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 							"width": 220
 						}
 					]
-				}
-			},
-			{
-				"operation": "merge",
-				"name": "ServiceTab",
-				"values": {
-					"visible": false
 				}
 			},
 			{
@@ -2927,6 +2927,28 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "PgrOrderIntakeDayCounter",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_PgrOrderIntakeDayCounter_yux7ecs",
+					"control": "$PDS_PgrOrderIntakeDayCounter_yux7ecs",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GridContainer_8plbcqj",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -7935,6 +7957,11 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 									}
 								}
 							}
+						}
+					},
+					"PDS_PgrOrderIntakeDayCounter_yux7ecs": {
+						"modelConfig": {
+							"path": "PDS.PgrOrderIntakeDayCounter"
 						}
 					}
 				}

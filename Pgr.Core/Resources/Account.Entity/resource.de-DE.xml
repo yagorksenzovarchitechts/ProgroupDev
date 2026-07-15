@@ -43,6 +43,7 @@
 			<Item Name="Columns.PgrMaxOverDelivery.Caption" Value="Max. Überlieferung" />
 			<Item Name="Columns.PgrMaxUnderDelivery.Caption" Value="Max. Unterlieferung" />
 			<Item Name="Columns.PgrOrderBl.Caption" Value="SAP Auftragssperre" />
+			<Item Name="Columns.PgrOrderIntakeDayCounter.Caption" Value="Auftragseingang-Tageszähler" />
 			<Item Name="Columns.PgrOverDeliveryPercentage1.Caption" Value="Überlieferung Prozent 1" />
 			<Item Name="Columns.PgrOverDeliveryPercentage2.Caption" Value="Überlieferung Prozent 2" />
 			<Item Name="Columns.PgrOverDeliveryQuantity1.Caption" Value="Überlieferung ab Menge 1" />
