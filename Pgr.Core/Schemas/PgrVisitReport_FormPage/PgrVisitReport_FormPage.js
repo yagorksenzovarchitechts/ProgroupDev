@@ -1274,7 +1274,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 			},
 			{
 				"operation": "insert",
-				"name": "DataGrid_bhkko01",
+				"name": "DataGrid_Measures",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -1289,6 +1289,10 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 								"enable": true,
 								"multiple": true
 							}
+						},
+						"editable": {
+							"enable": true,
+							"itemsCreation": false
 						}
 					},
 					"items": "$DataGrid_bhkko01",
@@ -1323,11 +1327,114 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 							"width": 695
 						}
 					],
-					"placeholder": false
+					"placeholder": false,
+					"activeRow": "$DataGrid_bhkko01_ActiveRow",
+					"selectionState": "$DataGrid_bhkko01_SelectionState",
+					"_selectionOptions": {
+						"attribute": "DataGrid_bhkko01_SelectionState"
+					},
+					"bulkActions": [],
+					"visible": false
 				},
 				"parentName": "GridContainer_oi1on93",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_bhkko01_AddTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Add tag",
+					"icon": "tag-icon",
+					"clicked": {
+						"request": "crt.AddTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_bhkko01DS",
+							"filters": "$DataGrid_bhkko01 | crt.ToCollectionFilters : 'DataGrid_bhkko01' : $DataGrid_bhkko01_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_bhkko01_SelectionState"
+						}
+					},
+					"items": []
+				},
+				"parentName": "DataGrid_Measures",
+				"propertyName": "bulkActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_bhkko01_RemoveTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Remove tag",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.RemoveTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_bhkko01DS",
+							"filters": "$DataGrid_bhkko01 | crt.ToCollectionFilters : 'DataGrid_bhkko01' : $DataGrid_bhkko01_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_bhkko01_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_bhkko01_AddTagsBulkAction",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_bhkko01_ExportToExcelBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Export to Excel",
+					"icon": "export-button-icon",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "DataGrid_bhkko01",
+							"filters": "$DataGrid_bhkko01 | crt.ToCollectionFilters : 'DataGrid_bhkko01' : $DataGrid_bhkko01_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_bhkko01_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_Measures",
+				"propertyName": "bulkActions",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_bhkko01_MergeBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Merge",
+					"icon": "merge-icon",
+					"clicked": {
+						"request": "crt.MergeRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_bhkko01DS",
+							"selectionState": "$DataGrid_bhkko01_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_Measures",
+				"propertyName": "bulkActions",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_bhkko01_DeleteBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Delete",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.DeleteRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_bhkko01DS",
+							"filters": "$DataGrid_bhkko01 | crt.ToCollectionFilters : 'DataGrid_bhkko01' : $DataGrid_bhkko01_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_bhkko01_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_Measures",
+				"propertyName": "bulkActions",
+				"index": 3
 			},
 			{
 				"operation": "insert",

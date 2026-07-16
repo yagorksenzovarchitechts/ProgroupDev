@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.9e72a160-3e1b-2a19-7588-fe36504fd782.Caption" Value="Show: Measures Activity" />
+			<Item Name="Caption" Value="Visit report form page (Business rules)" />
+		</Items>
+	</Group>
+</Resources>
