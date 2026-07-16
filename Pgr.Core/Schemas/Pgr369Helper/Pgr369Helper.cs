@@ -119,9 +119,9 @@ namespace Pgr.Core
             if (!isDeviation.Value)
             {
                 // Diagram "Order intake less than threshold? No" → reset counter to 0 (the increment
-                // above is overwritten) and auto-close any open 3-6-9 task (CMVP-123 AC).
+                // above is overwritten) and auto-close any open 3-6-9 measure task (CMVP-123 AC).
                 SetCounter(accountId, 0);
-                CloseOpen369Tasks(accountId);
+                CloseOpenMeasureTasks(accountId);
                 return Pgr369DailyAction.None;
             }
 
@@ -202,10 +202,10 @@ namespace Pgr.Core
         }
 
         /// <summary>
-        ///     Closes any open 3-6-9 alert task for the specified account.
-        ///     Sets the task status to "Canceled".
+        ///     Closes any open 3-6-9 measure task (ActivityCategory = "Measure") for the specified
+        ///     account when order intake recovers (CMVP-123 AC). Sets the task status to "Canceled".
         /// </summary>
-        private void CloseOpen369Tasks(Guid accountId)
+        private void CloseOpenMeasureTasks(Guid accountId)
         {
             var esq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, "Activity")
             {
@@ -217,7 +217,7 @@ namespace Pgr.Core
             };
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Account", accountId));
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "ActivityCategory",
-                PgrConstants.ActivityCategory.Category369));
+                PgrConstants.ActivityCategory.Measure));
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.NotEqual,
                 "Status.Finish",
                 true));
