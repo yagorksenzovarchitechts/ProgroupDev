@@ -438,6 +438,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 					"type": "crt.GridContainer",
 					"columns": [
 						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)",
 						"minmax(32px, 1fr)"
 					],
 					"rows": "minmax(max-content, 32px)",
@@ -517,8 +518,8 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 					"placeholder": "",
 					"tooltip": "",
 					"readonly": false,
-					"multiline": false,
-					"labelPosition": "above",
+					"multiline": true,
+					"labelPosition": "left",
 					"visible": false,
 					"layoutConfig": {
 						"column": 2,
@@ -530,6 +531,36 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"parentName": "GridContainer_wlki7uc",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_rar4rgy",
+				"values": {
+					"layoutConfig": {
+						"column": 3,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrPersonInCharge_0jnrmv5",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrPersonInCharge_0jnrmv5",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"secondaryDisplayValue": "Email",
+					"valueDetails": "$ComboBox_rar4rgy_ValueDetails"
+				},
+				"parentName": "GridContainer_wlki7uc",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -1944,6 +1975,29 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 								]
 							}
 						}
+					},
+					"PDS_PgrPersonInCharge_0jnrmv5": {
+						"modelConfig": {
+							"path": "PDS.PgrPersonInCharge"
+						}
+					},
+					"PDS_PgrPersonInCharge_0jnrmv5_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"ComboBox_rar4rgy_ValueDetails": {
+						"modelConfig": {
+							"path": "PDS.PgrPersonInChargeEmail"
+						}
 					}
 				}
 			},
@@ -2030,6 +2084,21 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 								}
 							}
 						}
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"dataSources",
+					"PDS",
+					"config",
+					"attributes"
+				],
+				"values": {
+					"PgrPersonInChargeEmail": {
+						"path": "PgrPersonInCharge.Email",
+						"type": "ForwardReference"
 					}
 				}
 			},

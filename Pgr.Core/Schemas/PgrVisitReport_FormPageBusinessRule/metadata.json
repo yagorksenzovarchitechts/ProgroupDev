@@ -53,7 +53,7 @@
                   {
                     "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionShowElement",
                     "UId": "06fea7f7-c509-0d05-d26f-8f28c7b7ffa7",
-                    "BRA4": "DataGrid_Measures"
+                    "BRA4": "DataGrid_Measures,Button_AddMeasure,Label_Measure,Button_RefreshMeasure"
                   }
                 ]
               }

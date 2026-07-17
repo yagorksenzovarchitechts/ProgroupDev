@@ -20,6 +20,9 @@ namespace Pgr.Core
         {
             /// <summary>ActivityCategory "369" — marker of a 3-6-9 alert task.</summary>
             public static readonly Guid Category369 = new Guid("8038a396-7825-e011-8165-00155d043204");
+
+            /// <summary>ActivityCategory "Measure" — marker of a 3-6-9 measure (corrective action) task.</summary>
+            public static readonly Guid Measure = new Guid("bee620f7-f3f7-47e4-81a3-5b2a9a030413");
         }
 
         /// <summary>

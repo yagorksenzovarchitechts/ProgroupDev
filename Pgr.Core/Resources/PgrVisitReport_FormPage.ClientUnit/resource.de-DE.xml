@@ -5,12 +5,15 @@
 			<Item Name="Caption" Value="Visit report form page" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.Button_AddMeasure_clicked_params_notificationText.Value" Value="Maßnahmenaufgabe wird erstellt" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.DataGrid_bhkko01DS_PgrPersonInCharge_Email.Value" Value="E-Mail des Verantwortlichen" />
 			<Item Name="LocalizableStrings.Input_1j86543_tooltip.Value" Value="Optionaler zusätzlicher Hinweis" />
 			<Item Name="LocalizableStrings.Input_1snwgmj_tooltip.Value" Value="Was wurde besprochen? Ergebnis? Chancen/Risiken?" />
 			<Item Name="LocalizableStrings.Input_az70u84_tooltip.Value" Value="Verwenden, wenn 'Sonstiges' ausgewählt ist" />
 			<Item Name="LocalizableStrings.Input_s875dfr_tooltip.Value" Value="Optionaler zusätzlicher Hinweis" />
+			<Item Name="LocalizableStrings.Label_Measure_caption.Value" Value="Der Verantwortliche erhält Benachrichtigungen zur Maßnahme in Creatio. Ohne Creatio-Zugang erfolgt die Benachrichtigung per E-Mail (Verantwortlicher wird auf den Vertriebsmitarbeiter gesetzt). E-Mail-Adresse auf der Kontaktseite erforderlich." />
 			<Item Name="LocalizableStrings.Label_qoozpze_caption.Value" Value="Besuchsbericht-Info" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
 			<Item Name="LocalizableStrings.TabContainer_widjyyt_caption.Value" Value="Grund &amp; Zweck" />

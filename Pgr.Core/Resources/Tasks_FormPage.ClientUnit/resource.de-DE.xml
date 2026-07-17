@@ -8,12 +8,25 @@
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
 			<Item Name="LocalizableStrings.ConnectionsTabContainerHeaderLabel_caption.Value" Value="Beziehungen" />
 			<Item Name="LocalizableStrings.ConnectionsTabContainer_caption.Value" Value="Beziehungen" />
+			<Item Name="LocalizableStrings.ExpansionPanelMeetingTranscripts_title.Value" Value="Meeting-Transkripte" />
 			<Item Name="LocalizableStrings.ExpansionPanel_luhcskb_title.Value" Value="Untergeordnete Aufgaben" />
 			<Item Name="LocalizableStrings.ExpansionPanel_wki6rii_title.Value" Value="Info" />
+			<Item Name="LocalizableStrings.GridDetailAddBtnNewTranscript_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.GridDetailAddBtnRefreshTranscript_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_MeetingTranscripts_caption.Value" Value="Excel-Export" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_MeetingTranscripts_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.GridDetailMeetingTranscripts_columns_0_caption.Value" Value="Gespeichert am" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_MeetingTranscripts_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_MeetingTranscripts_caption.Value" Value="Aktionen" />
+			<Item Name="LocalizableStrings.LabelMeetingTranscriptsList_caption.Value" Value="Diese Transkripte wurden verwendet, um die Zusammenfassung des Meetings zu erstellen. Doppelklicken Sie auf ein Transkript, um den vollständigen Text anzuzeigen." />
+			<Item Name="LocalizableStrings.Label_NoMeetSummaryAccessCaption_caption.Value" Value="Die AI-Meeting-Zusammenfassung ist nur für Meetingteilnehmer verfügbar. Sie waren kein Teilnehmer an diesem Meeting." />
+			<Item Name="LocalizableStrings.Label_NoMeetSummaryAccessTitle_caption.Value" Value="Sie haben keinen Zugriff auf die Meeting-Zusammenfassung" />
 			<Item Name="LocalizableStrings.Label_k843hzt_caption.Value" Value="Details" />
+			<Item Name="LocalizableStrings.ParticipantsExpansionPanel_title.Value" Value="Teilnehmer" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
 			<Item Name="LocalizableStrings.TabContainer_6uff3ez_caption.Value" Value="Besuchsberichte" />
 			<Item Name="LocalizableStrings.TabContainer_w3tsrln_caption.Value" Value="Allgemeine Info" />
+			<Item Name="LocalizableStrings.TabMeetingSummary_caption.Value" Value="Besprechungszusammenfassung" />
 			<Item Name="LocalizableStrings.addRecord_1g27yyy_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.addRecord_d7tgh1o_caption.Value" Value="Neu" />
 		</Items>

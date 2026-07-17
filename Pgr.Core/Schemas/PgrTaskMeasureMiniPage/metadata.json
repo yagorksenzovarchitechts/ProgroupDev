@@ -2,15 +2,15 @@
 = MetaData.Schema.A2 "PgrTaskMeasureMiniPage"
 = MetaData.Schema.A5 "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 + MetaData.Schema.B2 {
-  "UId": "9965e09f-4327-f14a-f4ad-d84ce2393b8f",
-  "A2": "addRecord_frczifa_caption",
+  "UId": "dc8b07a9-675a-c0bc-0512-bd738f2bdf8c",
+  "A2": "addRecord_4xl4su0_caption",
   "A3": "89b8593f-dffb-47dc-a170-86b270d6c790",
   "A4": "89b8593f-dffb-47dc-a170-86b270d6c790",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
 + MetaData.Schema.B2 {
-  "UId": "dc8b07a9-675a-c0bc-0512-bd738f2bdf8c",
-  "A2": "addRecord_4xl4su0_caption",
+  "UId": "d16e4e1d-6c16-2a05-b285-ac5c337dc6b8",
+  "A2": "addRecord_z0zksoa_caption",
   "A3": "89b8593f-dffb-47dc-a170-86b270d6c790",
   "A4": "89b8593f-dffb-47dc-a170-86b270d6c790",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
@@ -23,8 +23,8 @@
 = MetaData.Schema.B2.["67995f5e-d70a-e2a3-5494-a22737ff9c44"].A4 "89b8593f-dffb-47dc-a170-86b270d6c790"
 = MetaData.Schema.B2.["be578da5-5d7d-ab2f-1e20-3e60b2942dd8"].A4 "89b8593f-dffb-47dc-a170-86b270d6c790"
 ~ MetaData.Schema.B2 [
-  "9965e09f-4327-f14a-f4ad-d84ce2393b8f",
   "dc8b07a9-675a-c0bc-0512-bd738f2bdf8c",
+  "d16e4e1d-6c16-2a05-b285-ac5c337dc6b8",
   "3e977072-67fa-588e-d554-1d5c45e71ae9",
   "231defdf-a768-e23a-fb30-1af82d65f9f9",
   "ec6cab03-1f08-4d53-9ca9-7a76f4b90b87",
