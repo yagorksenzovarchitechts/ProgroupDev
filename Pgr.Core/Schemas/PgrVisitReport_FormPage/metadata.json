@@ -155,6 +155,41 @@
   "A4": "dca3be9d-e1a0-448b-9b9f-fef594412715",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
++ MetaData.Schema.B2 {
+  "UId": "82908200-2985-1056-ab10-4bd85b85a761",
+  "A2": "Button_AddMeasure_clicked_params_notificationText",
+  "A3": "dca3be9d-e1a0-448b-9b9f-fef594412715",
+  "A4": "dca3be9d-e1a0-448b-9b9f-fef594412715",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "6e77ef1b-1291-e62e-ae95-3291229794dd",
+  "A2": "Button_AddMeasure_caption",
+  "A3": "dca3be9d-e1a0-448b-9b9f-fef594412715",
+  "A4": "dca3be9d-e1a0-448b-9b9f-fef594412715",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "3345cad2-d47a-32c1-04d4-9588bb53f19d",
+  "A2": "DataGrid_bhkko01DS_PgrPersonInCharge_Email",
+  "A3": "dca3be9d-e1a0-448b-9b9f-fef594412715",
+  "A4": "dca3be9d-e1a0-448b-9b9f-fef594412715",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "3269b9af-2429-96cd-fed5-dee543e29e87",
+  "A2": "Label_Measure_caption",
+  "A3": "dca3be9d-e1a0-448b-9b9f-fef594412715",
+  "A4": "dca3be9d-e1a0-448b-9b9f-fef594412715",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "815f9999-0068-b4e6-2779-3ba211c31962",
+  "A2": "Button_RefreshMeasure_caption",
+  "A3": "dca3be9d-e1a0-448b-9b9f-fef594412715",
+  "A4": "dca3be9d-e1a0-448b-9b9f-fef594412715",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
 = MetaData.Schema.B2.["fd9e5bd2-19ad-68b5-1356-fe7b39d36f28"].A4 "dca3be9d-e1a0-448b-9b9f-fef594412715"
 = MetaData.Schema.B2.["a77180d7-a9d0-5c7d-a47b-74c0545a1774"].A4 "dca3be9d-e1a0-448b-9b9f-fef594412715"
 = MetaData.Schema.B2.["a53e6c9a-741a-21de-9293-9d87d6014595"].A4 "dca3be9d-e1a0-448b-9b9f-fef594412715"
@@ -193,6 +228,11 @@
   "ee7329f3-d67f-d41e-dc9f-42a8f83f9b2a",
   "e01e2de3-fa95-eb2f-eba5-785c3cbfaced",
   "474c6b21-3786-6eab-e84a-259db33417ff",
+  "82908200-2985-1056-ab10-4bd85b85a761",
+  "6e77ef1b-1291-e62e-ae95-3291229794dd",
+  "3345cad2-d47a-32c1-04d4-9588bb53f19d",
+  "3269b9af-2429-96cd-fed5-dee543e29e87",
+  "815f9999-0068-b4e6-2779-3ba211c31962",
   "fd9e5bd2-19ad-68b5-1356-fe7b39d36f28",
   "a77180d7-a9d0-5c7d-a47b-74c0545a1774",
   "a53e6c9a-741a-21de-9293-9d87d6014595",

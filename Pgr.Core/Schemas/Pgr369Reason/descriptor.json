@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "dface389-15c0-4468-a8ae-97cd902f23f7",
     "Name": "Pgr369Reason",
-    "ModifiedOnUtc": "\/Date(1783584236095)\/",
+    "ModifiedOnUtc": "\/Date(1783584236000)\/",
     "Parent": {
       "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
       "Name": "BaseLookup"

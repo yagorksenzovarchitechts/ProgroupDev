@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultCompositeObjectList.PgrOverdueDays.Caption" Value="Überfällige Tage" />
+			<Item Name="Caption" Value="Overdue days in tasks" />
+		</Items>
+	</Group>
+</Resources>

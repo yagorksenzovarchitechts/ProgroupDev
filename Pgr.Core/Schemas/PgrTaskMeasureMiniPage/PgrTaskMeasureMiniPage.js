@@ -99,7 +99,7 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_0rji90t",
+				"name": "ComboBox_kfer77j",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -108,7 +108,7 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.ActivityDS_Owner_aac8wdq",
+					"label": "$Resources.Strings.ActivityDS_PgrPersonInCharge_o0n7p4l",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
@@ -116,7 +116,7 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$ActivityDS_Owner_aac8wdq"
+					"control": "$ActivityDS_PgrPersonInCharge_o0n7p4l"
 				},
 				"parentName": "MainContainer",
 				"propertyName": "items",
@@ -124,18 +124,18 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
-				"name": "addRecord_frczifa",
+				"name": "addRecord_z0zksoa",
 				"values": {
 					"code": "addRecord",
 					"type": "crt.ComboboxSearchTextAction",
 					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_frczifa_caption)#",
+					"caption": "#ResourceString(addRecord_z0zksoa_caption)#",
 					"clicked": {
 						"request": "crt.CreateRecordFromLookupRequest",
 						"params": {}
 					}
 				},
-				"parentName": "ComboBox_0rji90t",
+				"parentName": "ComboBox_kfer77j",
 				"propertyName": "listActions",
 				"index": 0
 			},
@@ -228,12 +228,12 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 							"path": "ActivityDS.PgrDepartment"
 						}
 					},
-					"ActivityDS_Owner_aac8wdq": {
+					"ActivityDS_PgrAccount_9vdmdt3": {
 						"modelConfig": {
-							"path": "ActivityDS.Owner"
+							"path": "ActivityDS.PgrAccount"
 						}
 					},
-					"ActivityDS_Owner_aac8wdq_List": {
+					"ActivityDS_PgrAccount_9vdmdt3_List": {
 						"isCollection": true,
 						"modelConfig": {
 							"sortingConfig": {
@@ -246,12 +246,12 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 							}
 						}
 					},
-					"ActivityDS_PgrAccount_9vdmdt3": {
+					"ActivityDS_PgrPersonInCharge_o0n7p4l": {
 						"modelConfig": {
-							"path": "ActivityDS.PgrAccount"
+							"path": "ActivityDS.PgrPersonInCharge"
 						}
 					},
-					"ActivityDS_PgrAccount_9vdmdt3_List": {
+					"ActivityDS_PgrPersonInCharge_o0n7p4l_List": {
 						"isCollection": true,
 						"modelConfig": {
 							"sortingConfig": {

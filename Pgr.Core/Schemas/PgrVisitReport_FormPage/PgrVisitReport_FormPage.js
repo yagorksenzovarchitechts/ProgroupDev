@@ -1208,7 +1208,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 				"values": {
 					"type": "crt.FlexContainer",
 					"direction": "row",
-					"gap": "none",
+					"gap": "extra-small",
 					"alignItems": "center",
 					"items": [],
 					"layoutConfig": {
@@ -1216,11 +1216,83 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 						"column": 1,
 						"row": 1,
 						"rowSpan": 1
-					}
+					},
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "medium"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"justifyContent": "start",
+					"wrap": "wrap"
 				},
 				"parentName": "GridContainer_j30zw0i",
 				"propertyName": "items",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Button_RefreshMeasure",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_RefreshMeasure_caption)#",
+					"color": "default",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "only-icon",
+					"visible": false,
+					"icon": "reload-icon",
+					"clicked": {
+						"request": "crt.LoadDataRequest",
+						"params": {
+							"config": {
+								"loadType": "reload"
+							},
+							"refreshDataConfig": {
+								"mode": "RefreshSpecific",
+								"targetDataSourceNames": [
+									"DataGrid_bhkko01DS"
+								]
+							}
+						}
+					},
+					"clickMode": "default"
+				},
+				"parentName": "FlexContainer_i4rm6vi",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Button_AddMeasure",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_AddMeasure_caption)#",
+					"color": "outline",
+					"disabled": false,
+					"size": "medium",
+					"iconPosition": "left-icon",
+					"visible": false,
+					"icon": "add-button-icon",
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "PgrCreateMeasureTaskFromVisitReport",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"notificationText": "#ResourceString(Button_AddMeasure_clicked_params_notificationText)#",
+							"recordIdProcessParameterName": "ProcessSchemaParameterVisitReportId"
+						}
+					},
+					"clickMode": "default"
+				},
+				"parentName": "FlexContainer_i4rm6vi",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -1234,12 +1306,22 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					],
 					"gap": {
 						"columnGap": "large",
-						"rowGap": 0
+						"rowGap": "small"
 					},
 					"styles": {
 						"overflow-x": "hidden"
 					},
-					"items": []
+					"items": [],
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
 				},
 				"parentName": "ExpansionPanel_qygdbl8",
 				"propertyName": "items",
@@ -1258,19 +1340,44 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"labelPosition": "right",
 					"tooltip": "",
 					"control": "$PDS_PgrMeasuresRequired_tqltqlh",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 1,
 						"rowSpan": 1
-					},
-					"visible": true,
-					"readonly": false,
-					"placeholder": ""
+					}
 				},
 				"parentName": "GridContainer_oi1on93",
 				"propertyName": "items",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Label_Measure",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.Label",
+					"caption": "#MacrosTemplateString(#ResourceString(Label_Measure_caption)#)#",
+					"labelType": "caption",
+					"labelThickness": "default",
+					"labelEllipsis": false,
+					"labelColor": "auto",
+					"labelBackgroundColor": "transparent",
+					"labelTextAlign": "start",
+					"headingLevel": "label",
+					"visible": false
+				},
+				"parentName": "GridContainer_oi1on93",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -1279,7 +1386,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 2,
+						"row": 3,
 						"rowSpan": 6
 					},
 					"type": "crt.DataGrid",
@@ -1320,6 +1427,19 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 							"width": 156
 						},
 						{
+							"id": "abdf9438-1a78-9f97-cefa-8720773b9cd5",
+							"code": "DataGrid_bhkko01DS_PgrPersonInCharge",
+							"caption": "#ResourceString(DataGrid_bhkko01DS_PgrPersonInCharge)#",
+							"dataValueType": 10,
+							"width": 209
+						},
+						{
+							"id": "906b37bb-9a9c-583e-6570-68f6559c2963",
+							"code": "DataGrid_bhkko01DS_PgrPersonInCharge_Email",
+							"caption": "#ResourceString(DataGrid_bhkko01DS_PgrPersonInCharge_Email)#",
+							"dataValueType": 45
+						},
+						{
 							"id": "e390999e-7e34-5ee2-6e26-e5f0b9c55c98",
 							"code": "DataGrid_bhkko01DS_Notes",
 							"caption": "#ResourceString(DataGrid_bhkko01DS_Notes)#",
@@ -1338,7 +1458,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 				},
 				"parentName": "GridContainer_oi1on93",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -1766,6 +1886,16 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 										"path": "DataGrid_bhkko01DS.Owner"
 									}
 								},
+								"DataGrid_bhkko01DS_PgrPersonInCharge": {
+									"modelConfig": {
+										"path": "DataGrid_bhkko01DS.PgrPersonInCharge"
+									}
+								},
+								"DataGrid_bhkko01DS_PgrPersonInCharge_Email": {
+									"modelConfig": {
+										"path": "DataGrid_bhkko01DS.PgrPersonInCharge_Email"
+									}
+								},
 								"DataGrid_bhkko01DS_Notes": {
 									"modelConfig": {
 										"path": "DataGrid_bhkko01DS.Notes"
@@ -1836,6 +1966,13 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 								},
 								"Owner": {
 									"path": "Owner"
+								},
+								"PgrPersonInCharge": {
+									"path": "PgrPersonInCharge"
+								},
+								"PgrPersonInCharge_Email": {
+									"type": "ForwardReference",
+									"path": "PgrPersonInCharge.Email"
 								},
 								"Notes": {
 									"path": "Notes"

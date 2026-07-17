@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "4e08452b-2417-41c7-ae4f-823c552a2fc1",
+    "Name": "PgrOverdueDaysInTasks",
+    "ModifiedOnUtc": "\/Date(1784214113000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Overdue days in tasks",
+    "DependsOn": []
+  }
+}

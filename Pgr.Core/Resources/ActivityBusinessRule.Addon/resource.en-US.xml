@@ -2,6 +2,7 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="AddonConfig.Rules.129ad6ec-d7f4-015a-bf4a-4f528c64f3c3.Caption" Value="Make optional for measure: Owner/Role" />
 			<Item Name="AddonConfig.Rules.5c876047-2562-2a90-9c03-357ba1cb1bd1.Caption" Value="Rules for types &lt;&gt;  Meeting, Visit, Visit call" />
 			<Item Name="AddonConfig.Rules.6474876c-f506-c5e0-df95-d8a770492662.Caption" Value="Required for measure: Department" />
 			<Item Name="AddonConfig.Rules.6fea1e11-83a8-f1bf-7ae4-63360efd7e83.Caption" Value="Set values: Is overdue true" />

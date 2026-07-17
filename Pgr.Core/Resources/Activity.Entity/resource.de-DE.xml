@@ -14,6 +14,7 @@
 			<Item Name="Columns.PgrIsOverdue.Caption" Value="Überfällig" />
 			<Item Name="Columns.PgrOverdueDays.Caption" Value="Überfällige Tage" />
 			<Item Name="Columns.PgrParentTask.Caption" Value="Übergeordnete Aufgabe" />
+			<Item Name="Columns.PgrPersonInCharge.Caption" Value="Verantwortlicher" />
 			<Item Name="Columns.PgrReasonCode.Caption" Value="Ursachencode" />
 			<Item Name="Columns.PgrReasonCodeSetBy.Caption" Value="Ursache erfasst von" />
 			<Item Name="Columns.PgrReasonNotes.Caption" Value="Anmerkungen zur Ursache" />

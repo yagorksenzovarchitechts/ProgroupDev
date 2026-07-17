@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "3c56ddcc-317d-4e17-90e7-0320bf1315da",
     "Name": "Pgr369Reason",
-    "ModifiedOnUtc": "\/Date(1783581585941)\/",
+    "ModifiedOnUtc": "\/Date(1783581585000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "dface389-15c0-4468-a8ae-97cd902f23f7",
@@ -10,18 +10,18 @@
     },
     "Columns": [
       {
-        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
-        "IsForceUpdate": true,
-        "IsKey": false,
-        "ColumnName": "Name",
-        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
-      },
-      {
         "ColumnUId": "48c3a216-0789-4383-af4f-919063ff1c3c",
         "IsForceUpdate": true,
         "IsKey": false,
         "ColumnName": "PgrGroup",
         "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
       },
       {
         "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",

@@ -51,7 +51,6 @@
   "edca01f8-9ec0-9ece-6ad4-0bb1132c55a1"
 ]
 + MetaData.Schema.AD4.BRS1.["c1e211e9-8e29-6720-9a8d-b207df730852"].BR1.["b106811c-de8f-8b51-b402-3029ba6527f8"].BRC2.["d30669fa-13d3-8325-3742-c50f237d13a3"].BSVS1.["bd7fe291-a5ee-b7b4-5da4-a3c879ff9cae"].BRA2.BRE2 "AttributeValue"
-+ MetaData.Schema.AD4.BRS1.["c1e211e9-8e29-6720-9a8d-b207df730852"].BR1.["b106811c-de8f-8b51-b402-3029ba6527f8"].BRC2.["d30669fa-13d3-8325-3742-c50f237d13a3"].BSVS1.["bd7fe291-a5ee-b7b4-5da4-a3c879ff9cae"].BVS1 "null"
 - MetaData.Schema.AD4.BRS1.["c1e211e9-8e29-6720-9a8d-b207df730852"].BR1.["b106811c-de8f-8b51-b402-3029ba6527f8"].BRC2.["d30669fa-13d3-8325-3742-c50f237d13a3"].BSVS1.["bd7fe291-a5ee-b7b4-5da4-a3c879ff9cae"].BRA2.BRX2
 - MetaData.Schema.AD4.BRS1.["c1e211e9-8e29-6720-9a8d-b207df730852"].BR1.["b106811c-de8f-8b51-b402-3029ba6527f8"].BRC2.["d30669fa-13d3-8325-3742-c50f237d13a3"].BRA2
 - MetaData.Schema.AD4.BRS1.["c1e211e9-8e29-6720-9a8d-b207df730852"].BR1.["b106811c-de8f-8b51-b402-3029ba6527f8"].BRC2.["d30669fa-13d3-8325-3742-c50f237d13a3"].BRA3
@@ -110,7 +109,6 @@
   "e0995aa0-3392-14f9-c80c-1ef2f8420aab"
 ]
 + MetaData.Schema.AD4.BRS1.["5c876047-2562-2a90-9c03-357ba1cb1bd1"].BR1.["f45b745c-9ab1-5c8a-69ca-3be3683a993f"].BRC2.["fca45e5a-0331-bfb2-5b9c-a317990e742d"].BSVS1.["719bc119-3cc9-b7d7-4e22-67f1816b31ac"].BRA2.BRE2 "AttributeValue"
-+ MetaData.Schema.AD4.BRS1.["5c876047-2562-2a90-9c03-357ba1cb1bd1"].BR1.["f45b745c-9ab1-5c8a-69ca-3be3683a993f"].BRC2.["fca45e5a-0331-bfb2-5b9c-a317990e742d"].BSVS1.["719bc119-3cc9-b7d7-4e22-67f1816b31ac"].BVS1 "null"
 - MetaData.Schema.AD4.BRS1.["5c876047-2562-2a90-9c03-357ba1cb1bd1"].BR1.["f45b745c-9ab1-5c8a-69ca-3be3683a993f"].BRC2.["fca45e5a-0331-bfb2-5b9c-a317990e742d"].BSVS1.["719bc119-3cc9-b7d7-4e22-67f1816b31ac"].BRA2.BRX2
 - MetaData.Schema.AD4.BRS1.["5c876047-2562-2a90-9c03-357ba1cb1bd1"].BR1.["f45b745c-9ab1-5c8a-69ca-3be3683a993f"].BRC2.["fca45e5a-0331-bfb2-5b9c-a317990e742d"].BRA2
 - MetaData.Schema.AD4.BRS1.["5c876047-2562-2a90-9c03-357ba1cb1bd1"].BR1.["f45b745c-9ab1-5c8a-69ca-3be3683a993f"].BRC2.["fca45e5a-0331-bfb2-5b9c-a317990e742d"].BRA3
@@ -214,8 +212,7 @@
                 "UId": "20e436d5-2a14-5f79-991f-70011c1c9f4c",
                 "BRE1": "Boolean",
                 "BVE1": true
-              },
-              "BVS1": "null"
+              }
             }
           ]
         }
@@ -287,16 +284,14 @@
                 "UId": "5f2e00e2-66d6-8829-d00b-76316ff78844",
                 "BRE1": "Boolean",
                 "BRE2": "AttributeValue",
-                "BRX1": "PgrIsOverdue",
-                "BRX2": "null"
+                "BRX1": "PgrIsOverdue"
               },
               "BRA3": {
                 "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
                 "UId": "3cf763e7-8ac0-2ea1-6531-1e09d2845a25",
                 "BRE1": "Boolean",
                 "BVE1": false
-              },
-              "BVS1": "null"
+              }
             }
           ]
         }
@@ -373,11 +368,68 @@
   ],
   "BR3": "BusinessRule_f07d453"
 }
++ MetaData.Schema.AD4.BRS1 {
+  "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+  "UId": "129ad6ec-d7f4-015a-bf4a-4f528c64f3c3",
+  "BR1": [
+    {
+      "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+      "UId": "08c18526-e7c2-8d19-afaa-11854a49f65b",
+      "BRC1": {
+        "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleGroupCondition",
+        "UId": "da1bbe69-2a46-c3bb-635b-ef06dafd1191",
+        "BGC1": 1,
+        "BGC2": [
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+            "UId": "109c2d8d-111f-136b-f92c-193cdfd7aaab",
+            "BCO1": {
+              "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+              "UId": "69634cb4-e51d-1137-22e7-a37f2c5167f8",
+              "BRE1": "Lookup",
+              "BRE2": "AttributeValue",
+              "BRX1": "ActivityCategory"
+            },
+            "BCO2": {
+              "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+              "UId": "4f7c93bb-079a-d422-bd79-6adb77a8e9a1",
+              "BRE1": "Lookup",
+              "BRE3": "ActivityCategory",
+              "BVE1": "bee620f7-f3f7-47e4-81a3-5b2a9a030413"
+            },
+            "BCO3": 2
+          }
+        ]
+      },
+      "BRC2": [
+        {
+          "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionOptionalElement",
+          "UId": "1224d8fb-3461-fd27-8eca-62395aaf5257",
+          "BRA4": "OwnerRole"
+        }
+      ]
+    }
+  ],
+  "BR2": [
+    {
+      "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+      "UId": "cdc46869-9e5d-e207-418b-269d3cc415ff",
+      "BRT2": 2
+    },
+    {
+      "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+      "UId": "1f0eaf30-37b0-02f8-7d23-81b8285c4a51",
+      "BRT1": "ActivityCategory"
+    }
+  ],
+  "BR3": "BusinessRule_c492a9b"
+}
 ~ MetaData.Schema.AD4.BRS1 [
   "c1e211e9-8e29-6720-9a8d-b207df730852",
   "5c876047-2562-2a90-9c03-357ba1cb1bd1",
   "6fea1e11-83a8-f1bf-7ae4-63360efd7e83",
   "8a2fbcc4-601b-aa73-e368-d115e260f654",
-  "6474876c-f506-c5e0-df95-d8a770492662"
+  "6474876c-f506-c5e0-df95-d8a770492662",
+  "129ad6ec-d7f4-015a-bf4a-4f528c64f3c3"
 ]
 + MetaData.Schema.B7 true
