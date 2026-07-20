@@ -3,11 +3,16 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Attachments" />
+			<Item Name="LocalizableStrings.Button_CreateMeasure_caption.Value" Value="Create Measure task" />
 			<Item Name="LocalizableStrings.Button_v4xaeyf_caption.Value" Value="Create Visit Report" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancel" />
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Close" />
 			<Item Name="LocalizableStrings.ConnectionsTabContainerHeaderLabel_caption.Value" Value="Connections" />
 			<Item Name="LocalizableStrings.ConnectionsTabContainer_caption.Value" Value="Connections" />
+			<Item Name="LocalizableStrings.CreateMeasure_DefaultTitle.Value" Value="Measure" />
+			<Item Name="LocalizableStrings.CreateMeasure_Error_message.Value" Value="Failed to create the Measure task:" />
+			<Item Name="LocalizableStrings.CreateMeasure_NoReason_message.Value" Value="Please select a deviation reason before creating a Measure task." />
+			<Item Name="LocalizableStrings.CreateMeasure_Success_message.Value" Value="Measure task created." />
 			<Item Name="LocalizableStrings.ExpansionPanelMeetingTranscripts_title.Value" Value="Meeting transcripts" />
 			<Item Name="LocalizableStrings.ExpansionPanel_luhcskb_title.Value" Value="Sub-tasks" />
 			<Item Name="LocalizableStrings.ExpansionPanel_wki6rii_title.Value" Value="Info" />
@@ -48,7 +53,6 @@
 			<Item Name="LocalizableStrings.addRecord_k45qo5j_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_lt9y4t1_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_ugresq2_caption.Value" Value="Add new" />
-			<Item Name="LocalizableStrings.addRecord_zwyffhk_caption.Value" Value="Add new" />
 		</Items>
 	</Group>
 </Resources>

@@ -2,14 +2,13 @@
   "Descriptor": {
     "UId": "795095fb-5730-49f5-92e6-feca2a16c2f9",
     "Name": "Tasks_FormPage",
-    "ModifiedOnUtc": "\/Date(1784195188000)\/",
+    "ModifiedOnUtc": "\/Date(1784533949072)\/",
     "Parent": {
       "UId": "26566c23-fc64-4abf-a109-1a4d1994c1ac",
       "Name": "Tasks_FormPage"
     },
     "ExtendParent": true,
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Tasks form page",
-    "DependsOn": []
+    "Caption": "Tasks form page"
   }
 }
