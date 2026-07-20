@@ -3,6 +3,8 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Pgr 3-6-9 helper" />
+			<Item Name="LocalizableStrings.MeasureReminderMessage.Value" Value="Add a deviation reason and complete the measure task." />
+			<Item Name="LocalizableStrings.MeasureReminderTitle.Value" Value="3-6-9 deviation: measure required" />
 		</Items>
 	</Group>
 </Resources>

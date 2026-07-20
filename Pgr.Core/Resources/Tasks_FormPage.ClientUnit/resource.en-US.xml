@@ -11,7 +11,6 @@
 			<Item Name="LocalizableStrings.ConnectionsTabContainer_caption.Value" Value="Connections" />
 			<Item Name="LocalizableStrings.CreateMeasure_DefaultTitle.Value" Value="Measure" />
 			<Item Name="LocalizableStrings.CreateMeasure_Error_message.Value" Value="Failed to create the Measure task:" />
-			<Item Name="LocalizableStrings.CreateMeasure_NoReason_message.Value" Value="Please select a deviation reason before creating a Measure task." />
 			<Item Name="LocalizableStrings.CreateMeasure_Success_message.Value" Value="Measure task created." />
 			<Item Name="LocalizableStrings.ExpansionPanelMeetingTranscripts_title.Value" Value="Meeting transcripts" />
 			<Item Name="LocalizableStrings.ExpansionPanel_luhcskb_title.Value" Value="Sub-tasks" />

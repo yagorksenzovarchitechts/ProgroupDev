@@ -3,6 +3,8 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Pgr 3-6-9 Helper" />
+			<Item Name="LocalizableStrings.MeasureReminderMessage.Value" Value="Abweichungsgrund angeben und Maßnahme-Aufgabe abschließen." />
+			<Item Name="LocalizableStrings.MeasureReminderTitle.Value" Value="3-6-9-Abweichung: Maßnahme erforderlich" />
 		</Items>
 	</Group>
 </Resources>

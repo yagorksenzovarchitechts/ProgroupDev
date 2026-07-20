@@ -10,7 +10,6 @@
 			<Item Name="LocalizableStrings.ConnectionsTabContainer_caption.Value" Value="Beziehungen" />
 			<Item Name="LocalizableStrings.CreateMeasure_DefaultTitle.Value" Value="Maßnahme" />
 			<Item Name="LocalizableStrings.CreateMeasure_Error_message.Value" Value="Die Maßnahme-Aufgabe konnte nicht erstellt werden:" />
-			<Item Name="LocalizableStrings.CreateMeasure_NoReason_message.Value" Value="Bitte wählen Sie einen Abweichungsgrund aus, bevor Sie eine Maßnahme-Aufgabe erstellen." />
 			<Item Name="LocalizableStrings.CreateMeasure_Success_message.Value" Value="Maßnahme-Aufgabe erstellt." />
 			<Item Name="LocalizableStrings.ExpansionPanelMeetingTranscripts_title.Value" Value="Meeting-Transkripte" />
 			<Item Name="LocalizableStrings.ExpansionPanel_luhcskb_title.Value" Value="Untergeordnete Aufgaben" />

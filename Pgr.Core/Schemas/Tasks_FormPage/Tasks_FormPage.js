@@ -2223,13 +2223,9 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 						});
 					};
 
+					// Reason is optional at creation (CMVP-125): it can be filled in later when the
+					// Measure task is completed; the day-6 process reminds if it stays unfilled.
 					const reasonCode = unwrap(await request.$context.PDS_PgrReasonCode);
-					if (!reasonCode) {
-						// Mandatory reason before a Measure task can be created (CMVP-124).
-						await showMessage(await strings.CreateMeasure_NoReason_message);
-						return;
-					}
-
 					const parentTaskId = unwrap(await request.$context.PDS_Id);
 					const account = unwrap(await request.$context.PDS_Account);
 					const reasonNotes = await request.$context.PDS_PgrReasonNotes;
