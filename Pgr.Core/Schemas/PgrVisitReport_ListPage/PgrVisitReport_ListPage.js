@@ -101,6 +101,13 @@ define("PgrVisitReport_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 							"caption": "#ResourceString(PDS_PgrIsRelevantForWeeklyReport)#",
 							"dataValueType": 12,
 							"width": 235
+						},
+						{
+							"id": "42ed0976-5556-c6b8-72b0-f4de69886895",
+							"code": "PDS_PgrVisitDidNotTakePlace",
+							"caption": "#ResourceString(PDS_PgrVisitDidNotTakePlace)#",
+							"dataValueType": 12,
+							"width": 209
 						}
 					],
 					"features": {
@@ -222,6 +229,77 @@ define("PgrVisitReport_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 				"parentName": "LeftFilterContainerInner",
 				"propertyName": "items",
 				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_crb8bws",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_crb8bws_config_caption)#",
+						"hint": "",
+						"defaultValue": false,
+						"approachState": true
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_crb8bws_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"customFilter": {
+														"items": {
+															"3772f050-9d18-497a-b386-cf802f8444cf": {
+																"filterType": 1,
+																"comparisonType": 3,
+																"isEnabled": true,
+																"trimDateTimeParameterToDate": false,
+																"leftExpression": {
+																	"expressionType": 0,
+																	"columnPath": "PgrVisitDidNotTakePlace"
+																},
+																"isAggregative": false,
+																"dataValueType": 12,
+																"rightExpression": {
+																	"expressionType": 2,
+																	"parameter": {
+																		"dataValueType": 12,
+																		"value": true
+																	}
+																}
+															}
+														},
+														"logicalOperation": 0,
+														"isEnabled": true,
+														"filterType": 6,
+														"rootSchemaName": "PgrVisitReport"
+													},
+													"dependencyFilters": null
+												},
+												"quickFilterType": "custom",
+												"config": {
+													"approachState": true
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"QuickFilter_crb8bws_Value"
+						]
+					},
+					"filterType": "custom"
+				},
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 4
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -268,6 +346,11 @@ define("PgrVisitReport_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 						"modelConfig": {
 							"path": "PDS.PgrIsRelevantForWeeklyReport"
 						}
+					},
+					"PDS_PgrVisitDidNotTakePlace": {
+						"modelConfig": {
+							"path": "PDS.PgrVisitDidNotTakePlace"
+						}
 					}
 				}
 			},
@@ -302,6 +385,10 @@ define("PgrVisitReport_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 						},
 						{
 							"name": "QuickFilter_847b6lj_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_crb8bws_Items",
 							"loadOnChange": true
 						}
 					]
@@ -356,6 +443,9 @@ define("PgrVisitReport_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 						},
 						"PgrIsRelevantForWeeklyReport": {
 							"path": "PgrIsRelevantForWeeklyReport"
+						},
+						"PgrVisitDidNotTakePlace": {
+							"path": "PgrVisitDidNotTakePlace"
 						}
 					}
 				}
