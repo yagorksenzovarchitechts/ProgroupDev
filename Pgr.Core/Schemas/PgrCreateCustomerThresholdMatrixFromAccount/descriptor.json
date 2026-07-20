@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "ddd86426-2e28-4733-a48a-9599e30e2542",
+    "Name": "PgrCreateCustomerThresholdMatrixFromAccount",
+    "ModifiedOnUtc": "\/Date(1784292107000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Create customer threshold matrix from account",
+    "DependsOn": []
+  }
+}
