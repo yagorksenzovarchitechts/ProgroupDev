@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using Terrasoft.Common;
 using Terrasoft.Configuration;
 using Terrasoft.Core;
 using Terrasoft.Core.Entities;
@@ -10,9 +12,9 @@ namespace Pgr.Core
 
     /// <summary>
     ///     Result of the daily 3-6-9 evaluation for a single customer.
-    ///     The daily BPMN process branches on this value; task creation, reminders and
-    ///     escalation are performed by the process (ActivityUserTask) so that they
-    ///     surface in the communication panel (Reminding).
+    ///     Task creation (CMVP-124) and the reminder (CMVP-125) are performed inside
+    ///     <see cref="Pgr369Helper" /> itself; the value is only reported back to the
+    ///     daily BPMN process for logging/branching, escalation (CMVP-126) still TODO.
     /// </summary>
     public enum Pgr369DailyAction
     {
@@ -22,7 +24,7 @@ namespace Pgr.Core
         /// <summary>Day 3 reached below threshold and no open task — create the alert task (CMVP-124).</summary>
         CreateAlertTask = 3,
 
-        /// <summary>Open task not filled at day 6/9 — send a reminder (CMVP-125). TODO.</summary>
+        /// <summary>Open task's Measure task still not filled in at day 6 — a reminder was sent (CMVP-125).</summary>
         Remind = 6,
 
         /// <summary>Day 10 reached — escalate the open task to the Sales Director (CMVP-126). TODO.</summary>
@@ -35,10 +37,10 @@ namespace Pgr.Core
 
     /// <summary>
     ///     Day-counter and alert-task logic for the 3-6-9 order-intake deviation process (CMVP-64).
-    ///     Owns the daily counter (CMVP-123) and the day-3 decision (CMVP-124). The budget compare
-    ///     value / deviation calculation lives in <see cref="Pgr369BudgetCalculator" /> (CMVP-194);
-    ///     this class only reads the precomputed deviation flag. Reminders (CMVP-125) and escalation
-    ///     (CMVP-126) are only signalled here; the BPMN process performs them.
+    ///     Owns the daily counter (CMVP-123), the day-3 decision (CMVP-124) and the day-6 reminder
+    ///     (CMVP-125). The budget compare value / deviation calculation lives in
+    ///     <see cref="Pgr369BudgetCalculator" /> (CMVP-194); this class only reads the precomputed
+    ///     deviation flag. Escalation (CMVP-126) is only signalled here; the BPMN process performs it.
     /// </summary>
     public class Pgr369Helper
     {
@@ -49,6 +51,9 @@ namespace Pgr.Core
 
         private const string DayThresholdSettingCode = "Pgr369ProcessDay3Threshold";
         private const int DefaultDayThreshold = 3;
+
+        private const string Day6ThresholdSettingCode = "Pgr369ProcessDay6Threshold";
+        private const int DefaultDay6Threshold = 6;
 
         #endregion
 
@@ -90,14 +95,9 @@ namespace Pgr.Core
 
             var counter = account.GetTypedColumnValue<int>("PgrOrderIntakeDayCounter");
 
-            // Suspended by Sales Director (CMVP-127) — skip entirely.
-            if (counter == SuspendedCounter)
-            {
-                return Pgr369DailyAction.None;
-            }
-
-            // Count only working days (CMVP-123): on a non-working day do not increment.
-            if (!_workingDayHelper.IsWorkingDay(DateTime.Today, accountId))
+            // Suspended by Sales Director (CMVP-127), or a non-working day (CMVP-123: the
+            // counter only advances on working days) — nothing to do this run.
+            if (counter == SuspendedCounter || !_workingDayHelper.IsWorkingDay(DateTime.Today, accountId))
             {
                 return Pgr369DailyAction.None;
             }
@@ -112,39 +112,65 @@ namespace Pgr.Core
                 return Pgr369DailyAction.None;
             }
 
-            // Diagram "369 order intake deviation": "Increment the day counter by one" happens
-            // FIRST (right after the suspended check), BEFORE the deviation result is applied.
-            counter += 1;
-
-            if (!isDeviation.Value)
+            var updatedCounter = AdvanceDayCounter(accountId, counter, isDeviation.Value);
+            if (updatedCounter == null)
             {
-                // Diagram "Order intake less than threshold? No" → reset counter to 0 (the increment
-                // above is overwritten) and auto-close any open 3-6-9 measure task (CMVP-123 AC).
-                SetCounter(accountId, 0);
-                CloseOpenMeasureTasks(accountId);
+                // Diagram "Order intake less than threshold? No" — intake recovered this run.
                 return Pgr369DailyAction.None;
             }
 
-            // Diagram "Order intake less than threshold? Yes" → persist the incremented counter.
-            SetCounter(accountId, counter);
-
-            var dayThreshold = GetDayThreshold();
-            var hasOpenTask = HasOpenAlertTask(accountId);
-
-            // CMVP-124: at day 3 with no open task → create the alert task.
-            if (counter == dayThreshold && !hasOpenTask)
-            {
-                return Pgr369DailyAction.CreateAlertTask;
-            }
-
-            // TODO CMVP-125/126: when an open task exists, branch at day 6/9 (Remind)
-            // and day 10 (Escalate) after checking whether reason + measure are filled.
-            return Pgr369DailyAction.None;
+            return DecideAction(accountId, updatedCounter.Value);
         }
 
         #endregion
 
         #region Methods: Private
+
+        /// <summary>
+        ///     Diagram "369 order intake deviation": increments the day counter, then either persists
+        ///     it (still deviating) or resets it to 0 and auto-closes any open 3-6-9 measure task
+        ///     (CMVP-123 AC, recovered). Returns the new counter value, or null when it recovered.
+        /// </summary>
+        private int? AdvanceDayCounter(Guid accountId, int counter, bool isDeviation)
+        {
+            counter += 1;
+            if (!isDeviation)
+            {
+                SetCounter(accountId, 0);
+                CloseOpenMeasureTasks(accountId);
+                return null;
+            }
+
+            SetCounter(accountId, counter);
+            return counter;
+        }
+
+        /// <summary>
+        ///     Day-threshold decision (CMVP-124/125/126) once the counter for today has been persisted.
+        /// </summary>
+        private Pgr369DailyAction DecideAction(Guid accountId, int counter)
+        {
+            var openAlertTask = GetOpenAlertTask(accountId);
+
+            // CMVP-124: at day 3 with no open task → create the alert task.
+            if (counter == GetDayThreshold() && openAlertTask == null)
+            {
+                return Pgr369DailyAction.CreateAlertTask;
+            }
+
+            // CMVP-125: at day 6, if the open task's Measure task still has no reason/measure
+            // filled in, remind the sales person (the alert task's Owner). If it is already
+            // filled in, no reminder is sent and the daily cycle ends here for this account.
+            if (openAlertTask != null && counter == GetDay6Threshold() &&
+                !HasFilledMeasureTask(openAlertTask.PrimaryColumnValue))
+            {
+                SendMeasureTaskReminder(openAlertTask);
+                return Pgr369DailyAction.Remind;
+            }
+
+            // TODO CMVP-126: escalate to the Sales Director at day 10 if still not filled in.
+            return Pgr369DailyAction.None;
+        }
 
         /// <summary>Day value (SysSettings "Pgr369ProcessDay3Threshold") at which the alert task is created. Default 3.</summary>
         private int GetDayThreshold()
@@ -152,10 +178,19 @@ namespace Pgr.Core
             return SysSettings.GetValue(_userConnection, DayThresholdSettingCode, DefaultDayThreshold);
         }
 
-        /// <summary>True if the customer already has an open (not finished) 3-6-9 alert task.</summary>
-        private bool HasOpenAlertTask(Guid accountId)
+        /// <summary>
+        ///     Day value (SysSettings "Pgr369ProcessDay6Threshold") at which an unfilled open task triggers a reminder.
+        ///     Default 6.
+        /// </summary>
+        private int GetDay6Threshold()
         {
-            var esq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, "Activity")
+            return SysSettings.GetValue(_userConnection, Day6ThresholdSettingCode, DefaultDay6Threshold);
+        }
+
+        /// <summary>New ESQ against the given schema with the standard non-privileged always-select setup.</summary>
+        private EntitySchemaQuery CreateQuery(string schemaName)
+        {
+            return new EntitySchemaQuery(_userConnection.EntitySchemaManager, schemaName)
             {
                 UseAdminRights = false,
                 PrimaryQueryColumn =
@@ -163,24 +198,90 @@ namespace Pgr.Core
                     IsAlwaysSelect = true
                 }
             };
+        }
+
+        private EntitySchemaQuery CreateActivityQuery()
+        {
+            return CreateQuery("Activity");
+        }
+
+        /// <summary>ESQ for the account's open (not finished) activities of the given category.</summary>
+        private EntitySchemaQuery CreateOpenActivityQuery(Guid accountId, Guid activityCategoryId)
+        {
+            var esq = CreateActivityQuery();
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Account", accountId));
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "ActivityCategory",
-                PgrConstants.ActivityCategory.Category369));
+                activityCategoryId));
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.NotEqual,
-                "Status.Finish", true));
+                "Status.Finish",
+                true));
+            return esq;
+        }
+
+        /// <summary>The customer's open (not finished) 3-6-9 alert task, or null if there is none.</summary>
+        private Entity GetOpenAlertTask(Guid accountId)
+        {
+            var esq = CreateOpenActivityQuery(accountId, PgrConstants.ActivityCategory.Category369);
+            esq.AddColumn("Owner");
+            return esq.GetEntityCollection(_userConnection).FirstOrDefault();
+        }
+
+        /// <summary>
+        ///     True if the Measure task linked to the alert task (PgrParentTask) is filled in (CMVP-125 AC):
+        ///     it has a deviation reason and is in the "Completed" ("Done") status. The reason/measure
+        ///     fields are only shown on the activity card at that status (page business rule), so an
+        ///     unfinished Measure task counts as "not filled in" and still triggers the reminder.
+        /// </summary>
+        private bool HasFilledMeasureTask(Guid alertTaskId)
+        {
+            var esq = CreateActivityQuery();
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "PgrParentTask", alertTaskId));
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "ActivityCategory",
+                PgrConstants.ActivityCategory.Measure));
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Status",
+                ActivityConsts.CompletedStatusUId));
+            esq.Filters.Add(esq.CreateIsNotNullFilter("PgrReasonCode"));
             return esq.GetEntityCollection(_userConnection).Count > 0;
+        }
+
+        /// <summary>
+        ///     Creates a Reminding record (communication-panel notification, CMVP-125 AC) addressed
+        ///     to the alert task's Owner (the sales person), using the platform's own reminder
+        ///     infrastructure (<see cref="RemindingUtilities" />) — the same one that backs the
+        ///     Activity "Remind to owner" checkbox.
+        /// </summary>
+        private void SendMeasureTaskReminder(Entity alertTask)
+        {
+            var ownerId = alertTask.GetTypedColumnValue<Guid>("Owner");
+            if (ownerId == Guid.Empty)
+            {
+                return;
+            }
+
+            var activitySchemaUId = _userConnection.EntitySchemaManager.GetInstanceByName("Activity").UId;
+            var config = new RemindingConfig(activitySchemaUId)
+            {
+                SubjectId = alertTask.PrimaryColumnValue,
+                AuthorId = _userConnection.CurrentUser.ContactId,
+                ContactId = ownerId,
+                SourceId = RemindingConsts.RemindingSourceOwnerId,
+                NotificationTypeId = RemindingConsts.NotificationTypeRemindingId,
+                Description = GetLocalizableString("MeasureReminderMessage"),
+                PopupTitle = GetLocalizableString("MeasureReminderTitle")
+            };
+            new RemindingUtilities().CreateReminding(_userConnection, config);
+        }
+
+        /// <summary>Reads a localized string of this schema by its resource name.</summary>
+        private string GetLocalizableString(string name)
+        {
+            return new LocalizableString(_userConnection.ResourceStorage,
+                nameof(Pgr369Helper), $"LocalizableStrings.{name}.Value").ToString();
         }
 
         private Entity GetAccount(Guid accountId, params string[] columns)
         {
-            var esq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, "Account")
-            {
-                UseAdminRights = false,
-                PrimaryQueryColumn =
-                {
-                    IsAlwaysSelect = true
-                }
-            };
+            var esq = CreateQuery("Account");
             foreach (var column in columns)
             {
                 esq.AddColumn(column);
@@ -207,20 +308,7 @@ namespace Pgr.Core
         /// </summary>
         private void CloseOpenMeasureTasks(Guid accountId)
         {
-            var esq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, "Activity")
-            {
-                UseAdminRights = false,
-                PrimaryQueryColumn =
-                {
-                    IsAlwaysSelect = true
-                }
-            };
-            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Account", accountId));
-            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "ActivityCategory",
-                PgrConstants.ActivityCategory.Measure));
-            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.NotEqual,
-                "Status.Finish",
-                true));
+            var esq = CreateOpenActivityQuery(accountId, PgrConstants.ActivityCategory.Measure);
             var tasks = esq.GetEntityCollection(_userConnection);
             var canceledStatusId = ActivityConsts.CanceledStatusUId;
             foreach (var task in tasks)

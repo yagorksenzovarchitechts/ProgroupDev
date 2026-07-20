@@ -1,4 +1,4 @@
-﻿{
+{
   "PackageData": [
     {
       "Row": [
@@ -14,6 +14,32 @@
         {
           "SchemaColumnUId": "b36bfa07-34c7-45b1-a2ee-39e653034ba0",
           "Value": 3
+        },
+        {
+          "SchemaColumnUId": "55472376-a4dd-40da-86c6-975ce4b898fa",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "8f1984bb-7bef-4220-9b49-9a12d0ebcd68",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "1f72eec4-aa09-40b1-bd0e-1bc4a1e7e9c1"
+        },
+        {
+          "SchemaColumnUId": "0fde6f1e-22c5-48c7-9c89-6f0031e270de",
+          "Value": "ce123585-bd11-4295-937a-006c0ae32bea",
+          "DisplayValue": "369 process day 6 threshold"
+        },
+        {
+          "SchemaColumnUId": "b36bfa07-34c7-45b1-a2ee-39e653034ba0",
+          "Value": 6
         },
         {
           "SchemaColumnUId": "55472376-a4dd-40da-86c6-975ce4b898fa",

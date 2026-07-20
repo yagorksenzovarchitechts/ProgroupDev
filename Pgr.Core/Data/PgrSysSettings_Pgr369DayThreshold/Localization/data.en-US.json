@@ -1,4 +1,4 @@
-﻿{
+{
   "PackageData": [
     {
       "Row": [
@@ -16,6 +16,25 @@
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
           "ColumnName": "Description",
           "Value": "Day counter value at which the 3-6-9 alert task is created (default 3)."
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "ce123585-bd11-4295-937a-006c0ae32bea"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "ColumnName": "Name",
+          "Value": "369 process day 6 threshold"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "ColumnName": "Description",
+          "Value": "Day counter value at which a reminder is sent to the sales person if the open 3-6-9 task still has no completed measure (default 6)."
         }
       ]
     }

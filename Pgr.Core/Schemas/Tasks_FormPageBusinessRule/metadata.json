@@ -316,6 +316,65 @@
   ],
   "BR3": "BusinessRule_1a1d015"
 }
++ MetaData.Schema.AD4.BRS1 {
+  "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+  "UId": "805c4786-d0ce-45fb-80a1-8dd0fd956271",
+  "BR1": [
+    {
+      "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+      "UId": "6e262c70-ea1c-42ae-8442-64325a7256ad",
+      "BRC1": {
+        "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleGroupCondition",
+        "UId": "481b58fc-e00f-435a-a90d-00b090a63f0c",
+        "BGC1": 1,
+        "BGC2": [
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+            "UId": "5fbef22b-668e-45d5-8f6d-2fecf0b44611",
+            "BCO1": {
+              "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+              "UId": "d6589612-d851-4e13-a6bc-50954b9a59c7",
+              "BRE1": "Lookup",
+              "BRE2": "AttributeValue",
+              "BRX1": "ActivityCategory",
+              "BRX2": "PDS"
+            },
+            "BCO2": {
+              "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+              "UId": "9a2c1d32-35eb-43e2-bd31-ed2583c8b38b",
+              "BRE1": "Lookup",
+              "BRE3": "ActivityCategory",
+              "BVE1": "8038a396-7825-e011-8165-00155d043204"
+            },
+            "BCO3": 2
+          }
+        ]
+      },
+      "BRC2": [
+        {
+          "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionShowElement",
+          "UId": "6f67abfd-ab94-4d89-af83-222bba74380c",
+          "BRA4": "GridContainer_ReasonCodeAndNotes,Button_CreateMeasure"
+        }
+      ]
+    }
+  ],
+  "BR2": [
+    {
+      "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+      "UId": "887a3119-0712-414a-8bdb-0fa2d1ea6137",
+      "BRT1": "PDS",
+      "BRT2": 2
+    },
+    {
+      "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+      "UId": "f1538b8b-1cd4-4a05-9114-34a4e6011ee6",
+      "BRT1": "ActivityCategory",
+      "BRT3": "PDS"
+    }
+  ],
+  "BR3": "BusinessRule_66b3eca"
+}
 - MetaData.Schema.AD4.BRS1.["07dfb38a-0368-b910-d53b-b7103e1cab2e"]
 - MetaData.Schema.AD4.BRS1.["9bac7afb-b457-e480-52a6-f0cb8dcb5074"]
 ~ MetaData.Schema.AD4.BRS1 [
@@ -326,7 +385,8 @@
   "b2dd30df-e0fc-d033-d813-09f121a53df1",
   "aa084e8e-99ec-b762-35be-15840ec7b199",
   "129d9168-5e05-2fd0-9a1f-59c3375b186a",
-  "7902dc6b-6bf6-6af6-4ef1-574733ecf6b3"
+  "7902dc6b-6bf6-6af6-4ef1-574733ecf6b3",
+  "805c4786-d0ce-45fb-80a1-8dd0fd956271"
 ]
 + MetaData.Schema.B7 true
 = MetaData.Schema.AD5 "5a12b415-7f80-4731-8c97-8283c25a46ed"
