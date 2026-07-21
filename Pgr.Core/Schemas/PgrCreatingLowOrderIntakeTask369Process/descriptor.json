@@ -4,6 +4,7 @@
     "Name": "PgrCreatingLowOrderIntakeTask369Process",
     "ModifiedOnUtc": "\/Date(1784538349000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "Creating low order intake task 369 process"
+    "Caption": "Creating low order intake task 369 process",
+    "DependsOn": []
   }
 }

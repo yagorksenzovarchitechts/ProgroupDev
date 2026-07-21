@@ -38,7 +38,6 @@
 			<Item Name="BaseElements.DeleteDataUserTask1.Parameters.DataSourceFilters.Caption" Value="Data source filters" />
 			<Item Name="BaseElements.DeleteDataUserTask1.Parameters.EntitySchemaId.Caption" Value="Object" />
 			<Item Name="BaseElements.DeleteDataUserTask1.Parameters.IsMatchConditions.Caption" Value="Object must meet the following conditions" />
-			<Item Name="BaseElements.FormulaTask1.Caption" Value="Set VisitReportId param with Boolean" />
 			<Item Name="BaseElements.PreconfiguredPageUserTask1.Caption" Value="Mini page" />
 			<Item Name="BaseElements.PreconfiguredPageUserTask1.Parameters.ActivityPriority.Caption" Value="Priority" />
 			<Item Name="BaseElements.PreconfiguredPageUserTask1.Parameters.ActivityPriority.DisplayValue" Value="ab96fa02-7fe6-df11-971b-001d60e938c6" />
@@ -156,8 +155,6 @@
 			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
 			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultType.Caption" Value="Type of result" />
 			<Item Name="BaseElements.StartEvent1.Caption" Value="Create measure button" />
-			<Item Name="BaseElements.StartSignal1.Caption" Value="Visit report measure required" />
-			<Item Name="BaseElements.StartSignal1.Parameters.RecordId.Caption" Value="Unique identifier of record" />
 			<Item Name="Caption" Value="Create measure task from Visit report" />
 			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
 			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />

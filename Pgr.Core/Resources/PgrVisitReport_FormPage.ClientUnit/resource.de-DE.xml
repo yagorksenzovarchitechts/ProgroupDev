@@ -5,6 +5,7 @@
 			<Item Name="Caption" Value="Visit report form page" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.Button_AddMeasure_caption.Value" Value="Maßnahmenaufgabe erstellen" />
 			<Item Name="LocalizableStrings.Button_AddMeasure_clicked_params_notificationText.Value" Value="Maßnahmenaufgabe wird erstellt" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />

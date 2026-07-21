@@ -233,6 +233,29 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 			},
 			{
 				"operation": "insert",
+				"name": "Input_agm1koj",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.AccountAddressDS_Zip_itvhzsn",
+					"control": "$AccountAddressDS_Zip_itvhzsn",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "TopAreaProfileContainer",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
 				"name": "ComboBox_5la5k4n",
 				"values": {
 					"layoutConfig": {
@@ -254,29 +277,6 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"visible": true,
 					"readonly": false,
 					"placeholder": ""
-				},
-				"parentName": "TopAreaProfileContainer",
-				"propertyName": "items",
-				"index": 4
-			},
-			{
-				"operation": "insert",
-				"name": "NumberInput_zp3i951",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 4,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.AccountAddressDS_PgrWfAddressId_4ow9i05",
-					"control": "$AccountAddressDS_PgrWfAddressId_4ow9i05",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "left",
-					"tooltip": "",
-					"visible": true
 				},
 				"parentName": "TopAreaProfileContainer",
 				"propertyName": "items",
@@ -320,52 +320,6 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 			},
 			{
 				"operation": "insert",
-				"name": "Input_agm1koj",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.AccountAddressDS_Zip_itvhzsn",
-					"control": "$AccountAddressDS_Zip_itvhzsn",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
-				},
-				"parentName": "TopAreaProfileContainer",
-				"propertyName": "items",
-				"index": 7
-			},
-			{
-				"operation": "insert",
-				"name": "NumberInput_7sy9r2b",
-				"values": {
-					"layoutConfig": {
-						"column": 3,
-						"colSpan": 1,
-						"row": 4,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.AccountAddressDS_PgrSapAddressId_o5dk8of",
-					"control": "$AccountAddressDS_PgrSapAddressId_o5dk8of",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "left",
-					"tooltip": "",
-					"visible": true
-				},
-				"parentName": "TopAreaProfileContainer",
-				"propertyName": "items",
-				"index": 8
-			},
-			{
-				"operation": "insert",
 				"name": "Input_juo3t3b",
 				"values": {
 					"layoutConfig": {
@@ -375,8 +329,8 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
-					"label": "$Resources.Strings.AccountAddressDS_PgrWfAddressName_l9fljqa",
-					"control": "$AccountAddressDS_PgrWfAddressName_l9fljqa",
+					"label": "$Resources.Strings.AccountAddressDS_PgrWepaformAddressName_k4953sl",
+					"control": "$AccountAddressDS_PgrWepaformAddressName_k4953sl",
 					"placeholder": "",
 					"tooltip": "",
 					"readonly": false,
@@ -386,7 +340,30 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				},
 				"parentName": "TopAreaProfileContainer",
 				"propertyName": "items",
-				"index": 9
+				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "Input_j13y1kt",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.AccountAddressDS_PgrWepaformAddressId_8cs6vr3",
+					"control": "$AccountAddressDS_PgrWepaformAddressId_8cs6vr3",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "TopAreaProfileContainer",
+				"propertyName": "items",
+				"index": 8
 			},
 			{
 				"operation": "insert",
@@ -395,7 +372,7 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"layoutConfig": {
 						"column": 3,
 						"colSpan": 1,
-						"row": 5,
+						"row": 4,
 						"rowSpan": 1
 					},
 					"type": "crt.Checkbox",
@@ -413,7 +390,7 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				},
 				"parentName": "TopAreaProfileContainer",
 				"propertyName": "items",
-				"index": 10
+				"index": 9
 			},
 			{
 				"operation": "insert",
@@ -968,13 +945,6 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"primaryColumnName": "GridDetail_bzmq35rDS_Id",
 					"columns": [
 						{
-							"id": "480a2b23-6066-e5b0-c0cb-035aadc68f76",
-							"code": "GridDetail_bzmq35rDS_PgrSapAddressId",
-							"caption": "#ResourceString(GridDetail_bzmq35rDS_PgrSapAddressId)#",
-							"dataValueType": 4,
-							"width": 185
-						},
-						{
 							"id": "b9a0c06d-18d9-3824-ebb5-8e10e5af32a2",
 							"code": "GridDetail_bzmq35rDS_PgrDayOfWeek",
 							"caption": "#ResourceString(GridDetail_bzmq35rDS_PgrDayOfWeek)#",
@@ -1311,11 +1281,6 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 						},
 						"viewModelConfig": {
 							"attributes": {
-								"GridDetail_bzmq35rDS_PgrSapAddressId": {
-									"modelConfig": {
-										"path": "GridDetail_bzmq35rDS.PgrSapAddressId"
-									}
-								},
 								"GridDetail_bzmq35rDS_PgrDayOfWeek": {
 									"modelConfig": {
 										"path": "GridDetail_bzmq35rDS.PgrDayOfWeek"
@@ -1439,21 +1404,6 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							}
 						}
 					},
-					"AccountAddressDS_PgrWfAddressName_l9fljqa": {
-						"modelConfig": {
-							"path": "AccountAddressDS.PgrWfAddressName"
-						}
-					},
-					"AccountAddressDS_PgrWfAddressId_4ow9i05": {
-						"modelConfig": {
-							"path": "AccountAddressDS.PgrWfAddressId"
-						}
-					},
-					"AccountAddressDS_PgrSapAddressId_o5dk8of": {
-						"modelConfig": {
-							"path": "AccountAddressDS.PgrSapAddressId"
-						}
-					},
 					"AccountAddressDS_PgrValidFrom_7ons7ox": {
 						"modelConfig": {
 							"path": "AccountAddressDS.PgrValidFrom"
@@ -1501,6 +1451,16 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 								]
 							}
 						}
+					},
+					"AccountAddressDS_PgrWepaformAddressId_8cs6vr3": {
+						"modelConfig": {
+							"path": "AccountAddressDS.PgrWepaformAddressId"
+						}
+					},
+					"AccountAddressDS_PgrWepaformAddressName_k4953sl": {
+						"modelConfig": {
+							"path": "AccountAddressDS.PgrWepaformAddressName"
+						}
 					}
 				}
 			}
@@ -1536,9 +1496,6 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"config": {
 								"entitySchemaName": "PgrDeliveryTimesAccountAddress",
 								"attributes": {
-									"PgrSapAddressId": {
-										"path": "PgrSapAddressId"
-									},
 									"PgrDayOfWeek": {
 										"path": "PgrDayOfWeek"
 									},

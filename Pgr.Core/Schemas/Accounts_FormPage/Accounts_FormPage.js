@@ -317,13 +317,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 			},
 			{
 				"operation": "merge",
-				"name": "ServiceTab",
-				"values": {
-					"visible": false
-				}
-			},
-			{
-				"operation": "merge",
 				"name": "SalesTab",
 				"values": {
 					"visible": false
@@ -447,6 +440,13 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 							"width": 220
 						}
 					]
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "ServiceTab",
+				"values": {
+					"visible": false
 				}
 			},
 			{
@@ -1468,18 +1468,17 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					"primaryColumnName": "DataGrid_v111gbqDS_Id",
 					"columns": [
 						{
-							"id": "7db7dbd5-6c5a-9cb1-f9eb-3dfde1a7c2fe",
-							"code": "DataGrid_v111gbqDS_PgrWfAddressName",
-							"caption": "#ResourceString(DataGrid_v111gbqDS_PgrWfAddressName)#",
-							"dataValueType": 27,
-							"sticky": false
+							"id": "29558505-609c-9685-d5db-880b88d337f7",
+							"code": "DataGrid_v111gbqDS_PgrWepaformAddressName",
+							"caption": "#ResourceString(DataGrid_v111gbqDS_PgrWepaformAddressName)#",
+							"dataValueType": 27
 						},
 						{
 							"id": "f9eb005e-8317-ca4c-8ac4-141dd0cef8a0",
 							"code": "DataGrid_v111gbqDS_AddressType",
 							"caption": "#ResourceString(DataGrid_v111gbqDS_AddressType)#",
 							"dataValueType": 10,
-							"width": 144
+							"width": 169
 						},
 						{
 							"id": "c8da8acf-05a9-e126-221c-93c959c7aa05",
@@ -1493,7 +1492,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 							"code": "DataGrid_v111gbqDS_Primary",
 							"caption": "#ResourceString(DataGrid_v111gbqDS_Primary)#",
 							"dataValueType": 12,
-							"width": 122
+							"width": 240
 						}
 					],
 					"features": {
@@ -7583,6 +7582,11 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 						},
 						"viewModelConfig": {
 							"attributes": {
+								"DataGrid_v111gbqDS_PgrWepaformAddressName": {
+									"modelConfig": {
+										"path": "DataGrid_v111gbqDS.PgrWepaformAddressName"
+									}
+								},
 								"DataGrid_v111gbqDS_AddressType": {
 									"modelConfig": {
 										"path": "DataGrid_v111gbqDS.AddressType"
@@ -7601,11 +7605,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 								"DataGrid_v111gbqDS_Id": {
 									"modelConfig": {
 										"path": "DataGrid_v111gbqDS.Id"
-									}
-								},
-								"DataGrid_v111gbqDS_PgrWfAddressName": {
-									"modelConfig": {
-										"path": "DataGrid_v111gbqDS.PgrWfAddressName"
 									}
 								}
 							}
@@ -8338,6 +8337,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 						"config": {
 							"entitySchemaName": "AccountAddress",
 							"attributes": {
+								"PgrWepaformAddressName": {
+									"path": "PgrWepaformAddressName"
+								},
 								"AddressType": {
 									"path": "AddressType"
 								},
@@ -8346,9 +8348,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 								},
 								"Primary": {
 									"path": "Primary"
-								},
-								"PgrWfAddressName": {
-									"path": "PgrWfAddressName"
 								}
 							}
 						}

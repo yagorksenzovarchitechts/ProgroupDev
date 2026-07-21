@@ -220,6 +220,7 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
   "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
   "S4": "e7d99919-dde4-4410-88cc-0b6350cfb051",
+  "E2": 1,
   "E6": true,
   "E20": true,
   "E17": "PgrVisitTypeId",
@@ -252,6 +253,19 @@
     "FB5": 5
   }
 }
++ MetaData.Schema.D2 {
+  "UId": "af67f940-8d97-f4cb-44f2-84de70ec9ff1",
+  "A2": "PgrActivity",
+  "A3": "84c92193-3a76-4c34-81e7-f588516da67e",
+  "A4": "84c92193-3a76-4c34-81e7-f588516da67e",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "c449d832-a4cc-4b01-b9d5-8a12c42a9f89",
+  "E6": true,
+  "E20": true,
+  "E17": "PgrActivityId",
+  "E18": "PgrActivityTitle"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -280,7 +294,8 @@
   "6a20ce4c-e1ff-23e6-a19c-91c6388636b3",
   "c97372ee-a18d-8b0b-49e6-1ee4498cc8d2",
   "bd130d17-504a-9201-94ec-50363ea30409",
-  "f54e4faf-96ca-8ea7-5f9b-5b8e5b219381"
+  "f54e4faf-96ca-8ea7-5f9b-5b8e5b219381",
+  "af67f940-8d97-f4cb-44f2-84de70ec9ff1"
 ]
 = MetaData.Schema.D20.A2 "PgrVisitReportEvents"
 + MetaData.Schema.D20.FA1 false

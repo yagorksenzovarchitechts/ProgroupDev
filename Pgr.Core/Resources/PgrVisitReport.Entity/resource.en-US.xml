@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Caption" Value="Visit report" />
 			<Item Name="Columns.PgrAccount.Caption" Value="Account (Customer)" />
+			<Item Name="Columns.PgrActivity.Caption" Value="Activity" />
 			<Item Name="Columns.PgrCompetition.Caption" Value="Competition" />
 			<Item Name="Columns.PgrCompetitionText.Caption" Value="Competition remarks" />
 			<Item Name="Columns.PgrDeliveryShare.Caption" Value="Progroup delivery share (auto)" />

@@ -30,14 +30,14 @@
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_a81j6le_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_MeetingTranscripts_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_qc5rcs2_caption.Value" Value="Actions" />
-			<Item Name="LocalizableStrings.GridDetail_bdh4aggDS_PgrIsRelevantForWeeklyReport.Value" Value="Weekly report?" />
+			<Item Name="LocalizableStrings.GridDetail_VisitReport_columns_2_caption.Value" Value="Weekly report?" />
 			<Item Name="LocalizableStrings.LabelMeetingTranscriptsList_caption.Value" Value="These transcripts were used to generate the meeting summary. Double-click a transcript to view the full text." />
 			<Item Name="LocalizableStrings.Label_NoMeetSummaryAccessCaption_caption.Value" Value="The AI Meeting Summary is available only to meeting participants. You were not a participant in this meeting." />
 			<Item Name="LocalizableStrings.Label_NoMeetSummaryAccessTitle_caption.Value" Value="You don’t have access to the meeting summary" />
 			<Item Name="LocalizableStrings.Label_k843hzt_caption.Value" Value="Details" />
 			<Item Name="LocalizableStrings.ParticipantsExpansionPanel_title.Value" Value="Participants" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
-			<Item Name="LocalizableStrings.TabContainer_6uff3ez_caption.Value" Value="Visit report" />
+			<Item Name="LocalizableStrings.TabContainer_VisitReportTab_caption.Value" Value="Visit report" />
 			<Item Name="LocalizableStrings.TabContainer_w3tsrln_caption.Value" Value="General Info" />
 			<Item Name="LocalizableStrings.TabMeetingSummary_caption.Value" Value="Meeting summary" />
 			<Item Name="LocalizableStrings.addRecord_005ou0u_caption.Value" Value="Add new" />

@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancel" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
+			<Item Name="LocalizableStrings.addRecord_tvtz4dt_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_yghanbr_caption.Value" Value="Add new" />
 		</Items>
 	</Group>

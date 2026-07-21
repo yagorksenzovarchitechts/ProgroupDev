@@ -28,6 +28,80 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"operation": "merge",
 				"name": "QuickFilter_CanceledTasks",
 				"values": {
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_CanceledTasks_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"customFilter": {
+														"items": {
+															"5cee6311-c6c7-4ba2-b35d-d8a80cfbc96a": {
+																"filterType": 4,
+																"comparisonType": 4,
+																"isEnabled": true,
+																"trimDateTimeParameterToDate": false,
+																"leftExpression": {
+																	"expressionType": 0,
+																	"columnPath": "Status"
+																},
+																"isAggregative": false,
+																"dataValueType": 10,
+																"referenceSchemaName": "ActivityStatus",
+																"rightExpressions": [
+																	{
+																		"expressionType": 2,
+																		"parameter": {
+																			"dataValueType": 10,
+																			"value": {
+																				"Name": "Cancelled",
+																				"Id": "8dd2d787-2792-420c-8891-be9de36a600d",
+																				"value": "8dd2d787-2792-420c-8891-be9de36a600d",
+																				"displayValue": "Cancelled"
+																			}
+																		}
+																	},
+																	{
+																		"expressionType": 2,
+																		"parameter": {
+																			"dataValueType": 10,
+																			"value": {
+																				"Name": "Done",
+																				"Id": "4bdbb88f-58e6-df11-971b-001d60e938c6",
+																				"value": "4bdbb88f-58e6-df11-971b-001d60e938c6",
+																				"displayValue": "Done"
+																			}
+																		}
+																	}
+																]
+															}
+														},
+														"logicalOperation": 0,
+														"isEnabled": true,
+														"filterType": 6,
+														"rootSchemaName": "Activity"
+													},
+													"dependencyFilters": null
+												},
+												"quickFilterType": "custom",
+												"config": {
+													"approachState": false
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"QuickFilter_CanceledTasks_Value"
+						]
+					},
 					"visible": true
 				}
 			},
@@ -56,7 +130,14 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							"code": "PDS_Title",
 							"caption": "#ResourceString(PDS_Title)#",
 							"dataValueType": 1,
-							"width": 418
+							"width": 418,
+							"sticky": true
+						},
+						{
+							"id": "faa46696-568f-3cf6-a6c5-f41e987dffa5",
+							"code": "PDS_Status",
+							"caption": "#ResourceString(PDS_Status)#",
+							"dataValueType": 10
 						},
 						{
 							"id": "b0b2f4ce-9f60-1a76-bcda-2da05b2f03aa",
@@ -106,6 +187,160 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 						}
 					]
 				}
+			},
+			{
+				"operation": "merge",
+				"name": "Dashboards",
+				"values": {
+					"_designOptions": {
+						"entitySchemaName": "Activity",
+						"dependencies": [
+							{
+								"attributePath": "Id",
+								"relationPath": "PDS.Id"
+							}
+						],
+						"filters": [
+							{
+								"attribute": "QuickFilter_ndarf4i_Dashboards",
+								"loadOnChange": true
+							}
+						]
+					}
+				}
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_ndarf4i",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_ndarf4i_config_caption)#",
+						"hint": "",
+						"icon": "filter-column-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": [],
+						"entitySchemaName": "ActivityCategory",
+						"recordsFilter": null
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_ndarf4i_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"filterColumn": "ActivityCategory"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_ndarf4i_Dashboards",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Dashboards",
+													"filterColumn": "ActivityCategory"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": "QuickFilter_ndarf4i_Value"
+					},
+					"filterType": "lookup"
+				},
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_3hurnbj",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_3hurnbj_config_caption)#",
+						"hint": "",
+						"defaultValue": false,
+						"approachState": true,
+						"icon": "settings-button-icon",
+						"iconPosition": "left-icon"
+					},
+					"filterType": "custom",
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_3hurnbj_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"customFilter": {
+														"items": {
+															"5cee6311-c6c7-4ba2-b35d-d8a80cfbc96a": {
+																"filterType": 1,
+																"comparisonType": 3,
+																"isEnabled": true,
+																"trimDateTimeParameterToDate": false,
+																"leftExpression": {
+																	"expressionType": 0,
+																	"columnPath": "PgrIsOverdue"
+																},
+																"isAggregative": false,
+																"dataValueType": 12,
+																"rightExpression": {
+																	"expressionType": 2,
+																	"parameter": {
+																		"dataValueType": 12,
+																		"value": true
+																	}
+																}
+															}
+														},
+														"logicalOperation": 0,
+														"isEnabled": true,
+														"filterType": 6,
+														"rootSchemaName": "Activity"
+													},
+													"dependencyFilters": null
+												},
+												"quickFilterType": "custom",
+												"config": {
+													"approachState": true
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"QuickFilter_3hurnbj_Value"
+						]
+					},
+					"visible": true
+				},
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 5
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -131,6 +366,11 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 					"attributes"
 				],
 				"values": {
+					"PDS_Status": {
+						"modelConfig": {
+							"path": "PDS.Status"
+						}
+					},
 					"PDS_Priority": {
 						"modelConfig": {
 							"path": "PDS.Priority"
@@ -141,6 +381,62 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							"path": "PDS.PgrOverdueDays"
 						}
 					}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"Items",
+					"modelConfig"
+				],
+				"values": {
+					"filterAttributes": [
+						{
+							"loadOnChange": true,
+							"name": "FolderTree_active_folder_filter"
+						},
+						{
+							"name": "Items_PredefinedFilter",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_MyTasks_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_CanceledTasks_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_Date_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_Employee_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "LookupQuickFilterByTag_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "SearchFilter_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "LookupQuickFilterByTag_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_3hurnbj_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_ndarf4i_Items",
+							"loadOnChange": true
+						}
+					]
 				}
 			},
 			{
@@ -178,6 +474,9 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 					"attributes"
 				],
 				"values": {
+					"Status": {
+						"path": "Status"
+					},
 					"Priority": {
 						"path": "Priority"
 					},

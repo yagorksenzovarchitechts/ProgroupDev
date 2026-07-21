@@ -69,6 +69,42 @@ define("AddTaskMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_
 				"parentName": "MainFlexContainer",
 				"propertyName": "items",
 				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_thik4v1",
+				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.ActivityDS_Priority_8col3so",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "above",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$ActivityDS_Priority_8col3so"
+				},
+				"parentName": "MainFlexContainer",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_tvtz4dt",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_tvtz4dt_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_thik4v1",
+				"propertyName": "listActions",
+				"index": 0
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -125,6 +161,24 @@ define("AddTaskMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_
 					"ActivityDS_Notes_9ivan62": {
 						"modelConfig": {
 							"path": "ActivityDS.Notes"
+						}
+					},
+					"ActivityDS_Priority_8col3so": {
+						"modelConfig": {
+							"path": "ActivityDS.Priority"
+						}
+					},
+					"ActivityDS_Priority_8col3so_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
 						}
 					}
 				}

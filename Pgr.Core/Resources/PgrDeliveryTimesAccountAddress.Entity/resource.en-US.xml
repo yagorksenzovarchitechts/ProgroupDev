@@ -9,7 +9,6 @@
 			<Item Name="Columns.PgrOpeningHoursFrom2.Caption" Value="Opening hours from 2" />
 			<Item Name="Columns.PgrOpeningHoursTo1.Caption" Value="Opening hours to 1" />
 			<Item Name="Columns.PgrOpeningHoursTo2.Caption" Value="Opening hours to 2" />
-			<Item Name="Columns.PgrSapAddressId.Caption" Value="SAP address id" />
 		</Items>
 	</Group>
 </Resources>
