@@ -1,8 +1,8 @@
 ﻿{
   "Descriptor": {
     "UId": "d46a8cc8-b06b-47af-a666-b59cdb627b4f",
-    "Name": "PgrSysSettingsValue_Pgr369DayThreshold",
-    "ModifiedOnUtc": "\/Date(1784541569381)\/",
+    "Name": "PgrSysSettingsValue_Pgr369Process",
+    "ModifiedOnUtc": "\/Date(1784634622186)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "951b2bbb-0ba3-4049-9a29-b5d4c0b6d50f",
@@ -43,6 +43,13 @@
         "IsKey": false,
         "ColumnName": "IntegerValue",
         "DataTypeValueUId": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+      },
+      {
+        "ColumnUId": "297f4697-d071-4be2-8509-9090c07dfe18",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "BooleanValue",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
       }
     ]
   }

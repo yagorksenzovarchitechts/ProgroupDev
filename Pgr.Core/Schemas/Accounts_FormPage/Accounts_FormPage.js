@@ -2951,6 +2951,83 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 			},
 			{
 				"operation": "insert",
+				"name": "PgrActual3DayOrderIntake",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "#ResourceString(PgrActual3DayOrderIntake_label)#",
+					"control": "$PDS_PgrActual3DayOrderIntake_p194oi",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GridContainer_8plbcqj",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "PgrCurrentDailyBudget",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "#ResourceString(PgrCurrentDailyBudget_label)#",
+					"control": "$PDS_PgrCurrentDailyBudget_p194db",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GridContainer_8plbcqj",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "Pgr369RunBtn",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Pgr369RunBtn_caption)#",
+					"color": "primary",
+					"size": "medium",
+					"iconPosition": "only-text",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "Pgr369Process",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"notificationText": "#ResourceString(Pgr369RunBtn_clicked_params_notificationText)#",
+							"recordIdProcessParameterName": "AccountId"
+						}
+					},
+					"clickMode": "default",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 4,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_8plbcqj",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
 				"name": "GridContainer_2p6qhh0",
 				"values": {
 					"type": "crt.GridContainer",
@@ -7961,6 +8038,16 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					"PDS_PgrOrderIntakeDayCounter_yux7ecs": {
 						"modelConfig": {
 							"path": "PDS.PgrOrderIntakeDayCounter"
+						}
+					},
+					"PDS_PgrActual3DayOrderIntake_p194oi": {
+						"modelConfig": {
+							"path": "PDS.PgrActual3DayOrderIntake"
+						}
+					},
+					"PDS_PgrCurrentDailyBudget_p194db": {
+						"modelConfig": {
+							"path": "PDS.PgrCurrentDailyBudget"
 						}
 					}
 				}

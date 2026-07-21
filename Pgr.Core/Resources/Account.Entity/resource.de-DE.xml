@@ -13,6 +13,8 @@
 			<Item Name="Columns.Parent.Caption" Value="Parent Account" />
 			<Item Name="Columns.Pgr369ThresholdAbsolute.Caption" Value="Absoluter 369 Schwellwert" />
 			<Item Name="Columns.Pgr369ThresholdPercentage.Caption" Value="Prozentuale 369 Schwellwert" />
+			<Item Name="Columns.PgrActual3DayOrderIntake.Caption" Value="3-Tage-Auftragseingang" />
+			<Item Name="Columns.PgrCurrentDailyBudget.Caption" Value="Aktuelles Tagesbudget" />
 			<Item Name="Columns.PgrAccountClassification.Caption" Value="Klassifizierung" />
 			<Item Name="Columns.PgrAccountLevel.Caption" Value="Stufe" />
 			<Item Name="Columns.PgrAccountManagerCode.Caption" Value="VKL Kürzel" />
