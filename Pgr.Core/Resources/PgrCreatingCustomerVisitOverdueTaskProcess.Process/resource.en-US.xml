@@ -84,12 +84,12 @@
 			<Item Name="NotificationCaption.Caption" Value="Process instance caption" />
 			<Item Name="NotificationCaption.DisplayValue" Value="[#Process name#]" />
 			<Item Name="Parameters.Account.Caption" Value="Account" />
-			<Item Name="Parameters.AccountClassification.Caption" Value="Account classification" />
-			<Item Name="Parameters.AccountClassification.DisplayValue" Value="[#Read account.First item of resulting collection.Classification#]" />
 			<Item Name="Parameters.AccountCreatedOnDate.Caption" Value="Account created on date" />
 			<Item Name="Parameters.AccountCreatedOnDate.DisplayValue" Value="[#Read account.First item of resulting collection.Created on#]" />
 			<Item Name="Parameters.AccountLastVisitDate.Caption" Value="Account last visit date" />
 			<Item Name="Parameters.AccountLastVisitDate.DisplayValue" Value="[#Read account.First item of resulting collection.Last visit#]" />
+			<Item Name="Parameters.DueDateOffsetDays.Caption" Value="Due date offset days" />
+			<Item Name="Parameters.DueDateOffsetDays.DisplayValue" Value="[#Read visit threshold days.First item of resulting collection.Due date offset days#]" />
 			<Item Name="Parameters.ProcessSchemaParameter1.Caption" Value="Visit overdue days" />
 			<Item Name="Parameters.ProcessSchemaParameter1.Sys_Description" Value="VisitOverdueDays" />
 			<Item Name="Parameters.TaskDueDate.Caption" Value="Task due date" />

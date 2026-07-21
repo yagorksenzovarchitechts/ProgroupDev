@@ -71,6 +71,14 @@
   "A5": "c18f01ff-4f0e-4fbb-9d46-a0d146e8c848",
   "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
 }
++ MetaData.Schema.D2 {
+  "UId": "8ac94707-faee-53ab-662f-b0dca71c59f4",
+  "A2": "PgrDueDateOffsetDays",
+  "A3": "66758043-04bf-49a5-af00-bf21e72cb26d",
+  "A4": "66758043-04bf-49a5-af00-bf21e72cb26d",
+  "A5": "c18f01ff-4f0e-4fbb-9d46-a0d146e8c848",
+  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -80,7 +88,8 @@
   "736c30a7-c0ec-4fa9-b034-2552b319b633",
   "9e53fd7c-dde4-4502-a64c-b9e34148108b",
   "3fabd836-6a53-4d8d-9069-6df88d9dae1e",
-  "efa5cd83-37e4-bd4a-ed85-e2b51aece5e8"
+  "efa5cd83-37e4-bd4a-ed85-e2b51aece5e8",
+  "8ac94707-faee-53ab-662f-b0dca71c59f4"
 ]
 = MetaData.Schema.D20.A2 "PgrAccountClassificationEvents"
 + MetaData.Schema.D20.FA1 false
