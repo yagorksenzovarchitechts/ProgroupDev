@@ -11,6 +11,7 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/ContractType/ContractType.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/ContractType/ContractType.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Country/Country.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Country/Country.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/DayInCalendar/DayInCalendar.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/DayInCalendar/DayInCalendar.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/DayOfWeek/DayOfWeek.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/DayOfWeek/DayOfWeek.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Lead/Lead.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Lead/Lead.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Opportunity/Opportunity.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Opportunity/Opportunity.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/OpportunityCompetitor/OpportunityCompetitor.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/OpportunityCompetitor/OpportunityCompetitor.cs')" />

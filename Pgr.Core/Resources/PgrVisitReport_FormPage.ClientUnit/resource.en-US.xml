@@ -5,7 +5,7 @@
 			<Item Name="Caption" Value="Visit report form page" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Attachments" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Attachments" />
-			<Item Name="LocalizableStrings.Button_AddMeasure_caption.Value" Value="Add measure" />
+			<Item Name="LocalizableStrings.Button_AddMeasure_caption.Value" Value="Create measure task" />
 			<Item Name="LocalizableStrings.Button_AddMeasure_clicked_params_notificationText.Value" Value="Creating measure task" />
 			<Item Name="LocalizableStrings.Button_RefreshMeasure_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancel" />

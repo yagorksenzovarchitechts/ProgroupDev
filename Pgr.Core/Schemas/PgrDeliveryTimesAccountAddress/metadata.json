@@ -58,15 +58,6 @@
   "E18": "PgrDayOfWeekName"
 }
 + MetaData.Schema.D2 {
-  "UId": "88b5fece-0adb-4d64-22e8-6e48e71948a7",
-  "A2": "PgrSapAddressId",
-  "A3": "b160ee47-42b0-46cc-8b19-55365ea72710",
-  "A4": "b160ee47-42b0-46cc-8b19-55365ea72710",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0",
-  "E2": 1
-}
-+ MetaData.Schema.D2 {
   "UId": "6c5bb811-51d3-1cc1-c711-d253f6f0b440",
   "A2": "PgrOpeningHoursTo2",
   "A3": "b160ee47-42b0-46cc-8b19-55365ea72710",
@@ -107,7 +98,6 @@
   "3fabd836-6a53-4d8d-9069-6df88d9dae1e",
   "e857dae1-1b1f-815a-38e0-36c09508e627",
   "592bb8f9-0137-c3e5-17b9-c3b44785eb95",
-  "88b5fece-0adb-4d64-22e8-6e48e71948a7",
   "6c5bb811-51d3-1cc1-c711-d253f6f0b440",
   "2fd1dd70-0366-dc5b-808a-635c74a3ced6",
   "98b76940-79f3-d6ca-436f-5762fcde04a2",

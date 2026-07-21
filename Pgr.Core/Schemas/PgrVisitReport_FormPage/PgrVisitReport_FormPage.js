@@ -1398,8 +1398,9 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 							}
 						},
 						"editable": {
-							"enable": true,
-							"itemsCreation": false
+							"enable": false,
+							"itemsCreation": false,
+							"floatingEditPanel": false
 						}
 					},
 					"items": "$DataGrid_bhkko01",
@@ -1454,7 +1455,8 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 						"attribute": "DataGrid_bhkko01_SelectionState"
 					},
 					"bulkActions": [],
-					"visible": false
+					"visible": false,
+					"fitContent": true
 				},
 				"parentName": "GridContainer_oi1on93",
 				"propertyName": "items",

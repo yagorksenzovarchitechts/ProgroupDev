@@ -390,6 +390,7 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/ContractType/ContractType.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/ContractType/ContractType.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/Country/Country.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/Country/Country.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/DayInCalendar/DayInCalendar.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/DayInCalendar/DayInCalendar.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/DayOfWeek/DayOfWeek.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/DayOfWeek/DayOfWeek.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/Lead/Lead.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/Lead/Lead.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/Opportunity/Opportunity.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/Opportunity/Opportunity.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/OpportunityCompetitor/OpportunityCompetitor.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/OpportunityCompetitor/OpportunityCompetitor.cs')" />

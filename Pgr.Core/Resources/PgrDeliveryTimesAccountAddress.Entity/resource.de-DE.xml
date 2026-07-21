@@ -9,7 +9,6 @@
 			<Item Name="Columns.PgrOpeningHoursFrom2.Caption" Value="Geöffnet ab 2" />
 			<Item Name="Columns.PgrOpeningHoursTo1.Caption" Value="Geöffnet bis 1" />
 			<Item Name="Columns.PgrOpeningHoursTo2.Caption" Value="Geöffnet bis 2" />
-			<Item Name="Columns.PgrSapAddressId.Caption" Value="SAP Adressnummer" />
 		</Items>
 	</Group>
 </Resources>

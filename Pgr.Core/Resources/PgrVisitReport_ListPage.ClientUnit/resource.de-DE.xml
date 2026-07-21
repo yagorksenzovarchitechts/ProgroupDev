@@ -6,6 +6,8 @@
 			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Importieren" />
 			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value="Excel-Export" />
+			<Item Name="LocalizableStrings.QuickFilter_crb8bws_config_caption.Value" Value="Nicht stattgefunden" />
+			<Item Name="LocalizableStrings.QuickFilter_ha5zp3i_config_caption.Value" Value="Wochenbericht" />
 			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Suche..." />
 		</Items>
 	</Group>

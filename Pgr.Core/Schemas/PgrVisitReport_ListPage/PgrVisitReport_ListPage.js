@@ -46,6 +46,13 @@ define("PgrVisitReport_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 				}
 			},
 			{
+				"operation": "move",
+				"name": "LookupQuickFilterByTag",
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
 				"operation": "merge",
 				"name": "FolderTree",
 				"values": {
@@ -232,6 +239,79 @@ define("PgrVisitReport_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 			},
 			{
 				"operation": "insert",
+				"name": "QuickFilter_ha5zp3i",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_ha5zp3i_config_caption)#",
+						"hint": "",
+						"defaultValue": false,
+						"approachState": true,
+						"icon": "settings-button-icon",
+						"iconPosition": "left-icon"
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_ha5zp3i_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"customFilter": {
+														"items": {
+															"6ff25c2d-38ef-4e84-ac93-26f31cda7194": {
+																"filterType": 1,
+																"comparisonType": 3,
+																"isEnabled": true,
+																"trimDateTimeParameterToDate": false,
+																"leftExpression": {
+																	"expressionType": 0,
+																	"columnPath": "PgrIsRelevantForWeeklyReport"
+																},
+																"isAggregative": false,
+																"dataValueType": 12,
+																"rightExpression": {
+																	"expressionType": 2,
+																	"parameter": {
+																		"dataValueType": 12,
+																		"value": true
+																	}
+																}
+															}
+														},
+														"logicalOperation": 0,
+														"isEnabled": true,
+														"filterType": 6,
+														"rootSchemaName": "PgrVisitReport"
+													},
+													"dependencyFilters": null
+												},
+												"quickFilterType": "custom",
+												"config": {
+													"approachState": true
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"QuickFilter_ha5zp3i_Value"
+						]
+					},
+					"filterType": "custom"
+				},
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
 				"name": "QuickFilter_crb8bws",
 				"values": {
 					"type": "crt.QuickFilter",
@@ -239,7 +319,9 @@ define("PgrVisitReport_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 						"caption": "#ResourceString(QuickFilter_crb8bws_config_caption)#",
 						"hint": "",
 						"defaultValue": false,
-						"approachState": true
+						"approachState": true,
+						"icon": "settings-button-icon",
+						"iconPosition": "left-icon"
 					},
 					"_filterOptions": {
 						"expose": [
@@ -295,11 +377,12 @@ define("PgrVisitReport_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 							"QuickFilter_crb8bws_Value"
 						]
 					},
-					"filterType": "custom"
+					"filterType": "custom",
+					"visible": true
 				},
 				"parentName": "LeftFilterContainerInner",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -389,6 +472,10 @@ define("PgrVisitReport_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 						},
 						{
 							"name": "QuickFilter_crb8bws_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_ha5zp3i_Items",
 							"loadOnChange": true
 						}
 					]
