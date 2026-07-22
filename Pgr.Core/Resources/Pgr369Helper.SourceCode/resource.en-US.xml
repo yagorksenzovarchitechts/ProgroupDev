@@ -5,6 +5,10 @@
 			<Item Name="Caption" Value="Pgr 3-6-9 helper" />
 			<Item Name="LocalizableStrings.MeasureReminderMessage.Value" Value="Add a deviation reason and complete the measure task." />
 			<Item Name="LocalizableStrings.MeasureReminderTitle.Value" Value="3-6-9 deviation: measure required" />
+			<Item Name="LocalizableStrings.EscalationOwnerMessage.Value" Value="The measure task has been escalated to the Sales Director. Please add a justification explaining the situation." />
+			<Item Name="LocalizableStrings.EscalationOwnerTitle.Value" Value="3-6-9 deviation: escalated to Sales Director" />
+			<Item Name="LocalizableStrings.EscalationDirectorMessage.Value" Value="A 3-6-9 measure task has been escalated to you and requires your attention." />
+			<Item Name="LocalizableStrings.EscalationDirectorTitle.Value" Value="3-6-9 deviation: measure task escalated to you" />
 		</Items>
 	</Group>
 </Resources>

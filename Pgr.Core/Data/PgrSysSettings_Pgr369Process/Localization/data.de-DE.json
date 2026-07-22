@@ -56,6 +56,25 @@
           "Value": "Wenn aktiviert, verwendet die 3-6-9-Berechnung die vom Tester gesetzten Kontofelder (Aktuelles Tagesbudget, 3-Tage-Auftragseingang) anstelle des festen Budgets und der Order.Amount-Abfrage. Nur für Testtransparenz."
         }
       ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "2089c43a-3c35-47df-98fb-60a85ed46ff8"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "ColumnName": "Name",
+          "Value": "3-6-9 Tagesschwelle für Eskalation"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "ColumnName": "Description",
+          "Value": "Wert des Tageszählers, bei dem eine offene, nicht ausgefüllte 3-6-9-Maßnahme-Aufgabe an den Vertriebsleiter eskaliert wird (Standard 10)."
+        }
+      ]
     }
   ]
 }

@@ -5,6 +5,10 @@
 			<Item Name="Caption" Value="Pgr 3-6-9 Helper" />
 			<Item Name="LocalizableStrings.MeasureReminderMessage.Value" Value="Abweichungsgrund angeben und Maßnahme-Aufgabe abschließen." />
 			<Item Name="LocalizableStrings.MeasureReminderTitle.Value" Value="3-6-9-Abweichung: Maßnahme erforderlich" />
+			<Item Name="LocalizableStrings.EscalationOwnerMessage.Value" Value="Die Maßnahme-Aufgabe wurde an den Vertriebsleiter eskaliert. Bitte fügen Sie eine Begründung hinzu, die die Situation erklärt." />
+			<Item Name="LocalizableStrings.EscalationOwnerTitle.Value" Value="3-6-9-Abweichung: an Vertriebsleiter eskaliert" />
+			<Item Name="LocalizableStrings.EscalationDirectorMessage.Value" Value="Eine 3-6-9-Maßnahme-Aufgabe wurde an Sie eskaliert und erfordert Ihre Aufmerksamkeit." />
+			<Item Name="LocalizableStrings.EscalationDirectorTitle.Value" Value="3-6-9-Abweichung: Maßnahme-Aufgabe an Sie eskaliert" />
 		</Items>
 	</Group>
 </Resources>
