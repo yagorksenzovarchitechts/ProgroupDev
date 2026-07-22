@@ -612,6 +612,30 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
   "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
 }
++ MetaData.Schema.D2 {
+  "UId": "a4bb6183-f411-4d0d-815f-b2223829aec3",
+  "A2": "PgrExcludeFrom369",
+  "A3": "48f1b32e-101a-4268-b312-8279a75f3c37",
+  "A4": "48f1b32e-101a-4268-b312-8279a75f3c37",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "90b65bf8-0ffc-4141-8779-2420877af907"
+}
++ MetaData.Schema.D2 {
+  "UId": "17d5a513-1deb-49a5-80e4-522f4eb61d39",
+  "A2": "PgrSuspensionEndDate",
+  "A3": "48f1b32e-101a-4268-b312-8279a75f3c37",
+  "A4": "48f1b32e-101a-4268-b312-8279a75f3c37",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "603d4960-a1a2-45e9-b232-206a54421b01"
+}
++ MetaData.Schema.D2 {
+  "UId": "2a0311fa-af2c-446f-b9aa-0d5f34c194e8",
+  "A2": "PgrSuspensionReason",
+  "A3": "48f1b32e-101a-4268-b312-8279a75f3c37",
+  "A4": "48f1b32e-101a-4268-b312-8279a75f3c37",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "c0f04627-4620-4bc0-84e5-9419dc8516b1"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "7c81a01e-f59b-47df-830c-8e830f1bf889",
@@ -706,7 +730,10 @@
   "a3636977-4057-3dfd-7883-83108bae41b6",
   "dfa4b5ed-e654-8ba2-95ea-1f01e3ed7ec8",
   "8967a767-1f1a-4a2f-8093-2bdf57657f02",
-  "3d9beedf-a304-48c9-91a7-2d3af264d31e"
+  "3d9beedf-a304-48c9-91a7-2d3af264d31e",
+  "a4bb6183-f411-4d0d-815f-b2223829aec3",
+  "17d5a513-1deb-49a5-80e4-522f4eb61d39",
+  "2a0311fa-af2c-446f-b9aa-0d5f34c194e8"
 ]
 + MetaData.Schema.D20.FA1 false
 + MetaData.Schema.D20.FA2 false

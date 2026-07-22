@@ -378,6 +378,80 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
+				"name": "PgrSuspendedAt369QuickFilter",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(PgrSuspendedAt369QuickFilter_config_caption)#",
+						"hint": "",
+						"icon": "settings-button-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": false,
+						"approachState": true
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "PgrSuspendedAt369QuickFilter_DataGrid_0kcsg12",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "DataGrid_0kcsg12",
+													"customFilter": {
+														"items": {
+															"2c0a8697-7f4f-4d15-bbc4-2a0f7a695506": {
+																"filterType": 1,
+																"comparisonType": 3,
+																"isEnabled": true,
+																"trimDateTimeParameterToDate": false,
+																"leftExpression": {
+																	"expressionType": 0,
+																	"columnPath": "PgrExcludeFrom369"
+																},
+																"isAggregative": false,
+																"dataValueType": 12,
+																"rightExpression": {
+																	"expressionType": 2,
+																	"parameter": {
+																		"dataValueType": 12,
+																		"value": true
+																	}
+																}
+															}
+														},
+														"logicalOperation": 0,
+														"isEnabled": true,
+														"filterType": 6,
+														"rootSchemaName": "Account"
+													},
+													"dependencyFilters": null
+												},
+												"quickFilterType": "custom",
+												"config": {
+													"approachState": true
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"PgrSuspendedAt369QuickFilter_Value"
+						]
+					},
+					"filterType": "custom",
+					"visible": true
+				},
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 7
+			},
+			{
+				"operation": "insert",
 				"name": "DataGrid_0kcsg12",
 				"values": {
 					"type": "crt.DataGrid",
@@ -493,6 +567,10 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 								},
 								{
 									"name": "SearchFilter_DataGrid_0kcsg12",
+									"loadOnChange": true
+								},
+								{
+									"name": "PgrSuspendedAt369QuickFilter_DataGrid_0kcsg12",
 									"loadOnChange": true
 								}
 							]

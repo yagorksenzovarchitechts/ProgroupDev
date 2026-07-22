@@ -30,6 +30,9 @@
 			<Item Name="Columns.PgrEori.Caption" Value="EORI" />
 			<Item Name="Columns.PgrErpSystem.Caption" Value="ERP system provider" />
 			<Item Name="Columns.PgrExceedingCapacity.Caption" Value="Exceeding capacity" />
+			<Item Name="Columns.PgrExcludeFrom369.Caption" Value="Exclude from 3-6-9" />
+			<Item Name="Columns.PgrSuspensionEndDate.Caption" Value="Suspension end date" />
+			<Item Name="Columns.PgrSuspensionReason.Caption" Value="Suspension reason" />
 			<Item Name="Columns.PgrGroupAffiliation.Caption" Value="Group affiliation" />
 			<Item Name="Columns.PgrHasEInvoicing.Caption" Value="E-invoicing process" />
 			<Item Name="Columns.PgrHasInvoiceMailprocess.Caption" Value="PDF invoice process" />
