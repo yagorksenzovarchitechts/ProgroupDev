@@ -10,7 +10,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": "Produktreklamation"
+          "Value": "Produktportfolio"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -29,7 +29,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": "Preisdifferenz"
+          "Value": "Preis"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -48,7 +48,26 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": "Kundenproblem"
+          "Value": "Kunde ist gesperrt"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "ColumnName": "Description",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "8883f924-51f7-40e0-9c4f-f4540279ef21"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "ColumnName": "Name",
+          "Value": "Qualität"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -67,7 +86,45 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": "Lieferverzögerung"
+          "Value": "Lieferung"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "ColumnName": "Description",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "d9221c1f-5e54-40ac-97f3-919bb48e3df7"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "ColumnName": "Name",
+          "Value": "Kommunikation"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "ColumnName": "Description",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "feb649a0-b880-4e1e-8f1d-287114595666"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "ColumnName": "Name",
+          "Value": "Extern"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",

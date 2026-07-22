@@ -43,6 +43,10 @@
 			<Item Name="LocalizableStrings.OpportunitySearchFilter_placeholder.Value" Value="Suche" />
 			<Item Name="LocalizableStrings.OpportunitySettingsButton_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.Pgr369BudgetCalculationExpansionPanel_title.Value" Value="3-6-9 Budgetberechnungen" />
+			<Item Name="LocalizableStrings.Pgr369RunBtn_caption.Value" Value="3-6-9 ausführen" />
+			<Item Name="LocalizableStrings.Pgr369RunBtn_clicked_params_notificationText.Value" Value="3-6-9-Prozess wird ausgeführt" />
+			<Item Name="LocalizableStrings.PgrActual3DayOrderIntake_label.Value" Value="3-Tage-Auftragseingang" />
+			<Item Name="LocalizableStrings.PgrCurrentDailyBudget_label.Value" Value="Aktuelles Tagesbudget" />
 			<Item Name="LocalizableStrings.ProductsOffered_placeholder.Value" Value="Geben Sie ein, was das Unternehmen anbietet oder verkauft." />
 			<Item Name="LocalizableStrings.RecommendedProductExpansionPanel_title.Value" Value="Produktempfehlungen" />
 			<Item Name="LocalizableStrings.RecommendedProductExportDataButton_caption.Value" Value="Excel-Export" />

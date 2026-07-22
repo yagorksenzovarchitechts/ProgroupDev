@@ -5,6 +5,7 @@ using Terrasoft.Common;
 using Terrasoft.Core;
 using Terrasoft.Core.DB;
 using Terrasoft.Core.Entities;
+using SysSettings = Terrasoft.Core.Configuration.SysSettings;
 
 namespace Pgr.Core
 {
@@ -26,12 +27,16 @@ namespace Pgr.Core
         private const string ThresholdMatrixEntityName = "PgrCustomerThresholdMatrix";
         private const int RollingWindowDays = 3;
 
-        // --- Test fixed value (CMVP-124, comment answer to question 2 & CMVP-194) ---
-        // "use test fixed values for now. use Order.Amount for order intake and budget is
-        //  fixed to 10000 (square meters)." The daily budget is still a test fixed value; the
-        //  deviation tolerance (absolute units + percentage) now comes from the Customer threshold
-        //  matrix per customer / region-category — see ResolveTolerance / ResolveDailyThreshold.
-        private const decimal TestDailyBudget = 10000m;
+        // Fixed daily budget for the real (production) branch — used when the test-values switch is
+        // off. Still a placeholder for the real per-customer / per-period budget (TODO CMVP-122/194).
+        private const decimal DailyBudget = 10000m;
+
+        // System setting (Boolean, "369 process" folder). When ON, the daily budget and the 3-day
+        // order intake are taken from tester-controlled Account fields (PgrCurrentDailyBudget /
+        // PgrActual3DayOrderIntake) for testing transparency (CMVP-194); when OFF (default) the real
+        // logic runs (fixed budget + Order.Amount aggregate). The deviation tolerance always comes
+        // from the Customer threshold matrix, regardless of this switch.
+        private const string UseTestValuesSettingCode = "Pgr369UseTestValues";
 
         #endregion
 
@@ -62,25 +67,35 @@ namespace Pgr.Core
         /// </summary>
         public Pgr369DailyCalculation CalculateDaily(Guid accountId)
         {
-            // Tolerance is customer-scoped and date-independent; resolve it once for the whole calculation.
+            // CMVP-194: when the Pgr369UseTestValues system setting is ON, the daily budget and the
+            // 3-day order intake come from tester-controlled Account fields; otherwise the real logic
+            // runs (fixed budget + Order.Amount 3-day aggregate). Tolerance is customer-scoped and
+            // date-independent; resolve it (and the test values, only when needed) once for the calc.
+            var useTestValues = SysSettings.GetValue(_userConnection, UseTestValuesSettingCode, false);
+            var testValues = useTestValues ? GetAccountTestValues(accountId) : Pgr369TestValues.Zero;
             var tolerance = ResolveTolerance(accountId);
+            var dailyBudget = useTestValues ? testValues.DailyBudget : DailyBudget;
             var calculation = new Pgr369DailyCalculation
             {
                 AccountId = accountId,
                 CalculationDate = DateTime.Today,
                 CalendarId = _workingDayHelper.GetCalendarId(accountId),
-                FullBudget = TestDailyBudget,
-                ToleranceAdjustedBudget = ResolveDailyThreshold(DateTime.Today, tolerance)
+                FullBudget = dailyBudget,
+                ToleranceAdjustedBudget = ResolveDailyThreshold(dailyBudget, tolerance)
             };
 
-            // Trailing 3-working-day window ending yesterday; both averages share it (CMVP-194).
+            // Trailing 3-working-day window ending yesterday. The budget compare value averages the
+            // daily threshold over it (half days halved); the order intake is either the Account field
+            // (test) or the Order.Amount average over the same window (real).
             var window = GetLastWorkingDays(accountId, RollingWindowDays);
             if (window.Count > 0)
             {
                 calculation.WindowFrom = window.Min();
                 calculation.WindowTo = window.Max();
-                calculation.BudgetCompareValue = GetBudgetCompareValue(accountId, window, tolerance);
-                calculation.OrderIntakeAvg = GetAvg3OrderIntake(accountId, window);
+                calculation.BudgetCompareValue = GetBudgetCompareValue(accountId, window, dailyBudget, tolerance);
+                calculation.OrderIntakeAvg = useTestValues
+                    ? testValues.OrderIntake
+                    : GetAvg3OrderIntake(accountId, window);
                 calculation.IsDeviation = calculation.OrderIntakeAvg < calculation.BudgetCompareValue;
             }
 
@@ -159,12 +174,13 @@ namespace Pgr.Core
         ///     Each day keeps the threshold of the period it actually occurred in, so a window that
         ///     spans a period boundary is averaged as-is (period boundary handling, CMVP-194).
         /// </summary>
-        private decimal GetBudgetCompareValue(Guid accountId, List<DateTime> window, Pgr369Tolerance tolerance)
+        private decimal GetBudgetCompareValue(
+            Guid accountId, List<DateTime> window, decimal dailyBudget, Pgr369Tolerance tolerance)
         {
             var sum = 0m;
             foreach (var day in window)
             {
-                var dailyThreshold = ResolveDailyThreshold(day, tolerance);
+                var dailyThreshold = ResolveDailyThreshold(dailyBudget, tolerance);
                 sum += GetDayType(day, accountId) == Pgr369DayType.Half
                     ? dailyThreshold / 2m
                     : dailyThreshold;
@@ -174,18 +190,15 @@ namespace Pgr.Core
         }
 
         /// <summary>
-        ///     Tolerance-adjusted daily threshold on a given date (CMVP-194):
+        ///     Tolerance-adjusted daily threshold (CMVP-194):
         ///     applied tolerance = MIN(absolute, budget × %/100) — the smaller tolerance gives the
         ///     stricter (larger) threshold — and daily threshold = daily budget − applied tolerance.
         ///     The <paramref name="tolerance" /> (absolute units + percentage) is resolved once per
-        ///     calculation from the Customer threshold matrix; the daily budget is still a test fixed
-        ///     value. TODO CMVP-122/194: replace <see cref="TestDailyBudget" /> with the real
-        ///     per-customer / per-period budget. The <paramref name="date" /> is already threaded
-        ///     through so a per-period budget can be resolved without changing the callers.
+        ///     calculation from the Customer threshold matrix; <paramref name="dailyBudget" /> is the
+        ///     tester-controlled Account value (PgrCurrentDailyBudget).
         /// </summary>
-        private decimal ResolveDailyThreshold(DateTime date, Pgr369Tolerance tolerance)
+        private decimal ResolveDailyThreshold(decimal dailyBudget, Pgr369Tolerance tolerance)
         {
-            var dailyBudget = TestDailyBudget;
             var percentToleranceValue = dailyBudget * tolerance.Percentage / 100m;
             var appliedTolerance = Math.Min(tolerance.Absolute, percentToleranceValue);
             return dailyBudget - appliedTolerance;
@@ -278,12 +291,38 @@ namespace Pgr.Core
         }
 
         /// <summary>
-        ///     Average order intake over the supplied trailing working-day window (CMVP-194).
-        ///     Uses <c>Order.Amount</c> as-reported (not scaled on half days) and divides by the
-        ///     size of the window — the same window used for the budget compare value. Filters on the
-        ///     exact set of working days (IN), not a date range, so orders dated on a non-working day
-        ///     that falls inside the window's span are excluded — non-working days are skipped in both
-        ///     averages symmetrically (CMVP-194).
+        ///     Reads the tester-controlled test transparency values off the customer's Account
+        ///     (CMVP-194): <c>PgrCurrentDailyBudget</c> (the daily budget, replacing the former fixed
+        ///     10000) and <c>PgrActual3DayOrderIntake</c> (the 3-day order intake, replacing the
+        ///     former Order.Amount aggregate). Both are integer columns; a missing Account yields 0/0.
+        /// </summary>
+        private Pgr369TestValues GetAccountTestValues(Guid accountId)
+        {
+            var esq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, "Account")
+            {
+                UseAdminRights = false
+            };
+            var budgetColumn = esq.AddColumn("PgrCurrentDailyBudget").Name;
+            var orderIntakeColumn = esq.AddColumn("PgrActual3DayOrderIntake").Name;
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Id", accountId));
+            var rows = esq.GetEntityCollection(_userConnection);
+            if (rows.Count == 0)
+            {
+                return Pgr369TestValues.Zero;
+            }
+
+            return new Pgr369TestValues(
+                rows[0].GetTypedColumnValue<int>(budgetColumn),
+                rows[0].GetTypedColumnValue<int>(orderIntakeColumn));
+        }
+
+        /// <summary>
+        ///     Real (production) average order intake over the supplied trailing working-day window
+        ///     (CMVP-194), used when the test-values switch is off. Uses <c>Order.Amount</c>
+        ///     as-reported (not scaled on half days) and divides by the size of the window — the same
+        ///     window used for the budget compare value. Filters on the exact set of working days
+        ///     (IN), not a date range, so orders dated on a non-working day that falls inside the
+        ///     window's span are excluded — non-working days are skipped in both averages symmetrically.
         /// </summary>
         private decimal GetAvg3OrderIntake(Guid accountId, List<DateTime> window)
         {
@@ -391,6 +430,32 @@ namespace Pgr.Core
 
             /// <summary>The "no matching matrix row" tolerance — both allowances are 0.</summary>
             public static Pgr369Tolerance Zero => new Pgr369Tolerance(0m, 0m);
+        }
+
+        #endregion
+
+        #region Struct: Pgr369TestValues
+
+        /// <summary>
+        ///     The tester-controlled test transparency inputs read off the Account (CMVP-194):
+        ///     the current daily budget and the actual 3-day order intake.
+        /// </summary>
+        private struct Pgr369TestValues
+        {
+            public Pgr369TestValues(decimal dailyBudget, decimal orderIntake)
+            {
+                DailyBudget = dailyBudget;
+                OrderIntake = orderIntake;
+            }
+
+            /// <summary>Daily budget (Account.PgrCurrentDailyBudget).</summary>
+            public decimal DailyBudget { get; }
+
+            /// <summary>Actual 3-day order intake (Account.PgrActual3DayOrderIntake).</summary>
+            public decimal OrderIntake { get; }
+
+            /// <summary>The "no Account found" values — both 0.</summary>
+            public static Pgr369TestValues Zero => new Pgr369TestValues(0m, 0m);
         }
 
         #endregion

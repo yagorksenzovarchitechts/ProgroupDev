@@ -10,6 +10,7 @@
 			<Item Name="Columns.Notes.Caption" Value="Beschreibung" />
 			<Item Name="Columns.Owner.Caption" Value="Verantwortlicher" />
 			<Item Name="Columns.PgrAccount.Caption" Value="Kunde" />
+			<Item Name="Columns.PgrCorrectiveMeasureAction.Caption" Value="Korrekturmaßnahme" />
 			<Item Name="Columns.PgrDepartment.Caption" Value="Abteilung" />
 			<Item Name="Columns.PgrIsOverdue.Caption" Value="Überfällig" />
 			<Item Name="Columns.PgrOverdueDays.Caption" Value="Überfällige Tage" />

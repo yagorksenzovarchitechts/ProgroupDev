@@ -71,20 +71,6 @@
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
-          "UId": "b211e9ba-9c6c-4395-9cb1-9ea8919bbfde",
-          "A2": "AccountClassification",
-          "A3": "e655d9e0-9d9e-4d11-8603-fe3a283d1218",
-          "A4": "e655d9e0-9d9e-4d11-8603-fe3a283d1218",
-          "L1": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
-          "L8": {
-            "GS1": 3,
-            "GS2": "[#[IsOwnerSchema:false].[IsSchema:false].[Element:{34205d17-d254-460b-85e3-521d4a2003fe}].[Parameter:{0cb22a61-818e-476b-9191-2c85f0d69113}].[EntityColumn:{ca41e043-65f7-3528-63c0-7ed4fe2d47ab}]#]",
-            "GS5": "e655d9e0-9d9e-4d11-8603-fe3a283d1218"
-          },
-          "L9": "66758043-04bf-49a5-af00-bf21e72cb26d"
-        },
-        {
-          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
           "UId": "d510dad0-567d-49b9-a7a0-731b15729b17",
           "A2": "TaskDurationInDays",
           "A3": "e655d9e0-9d9e-4d11-8603-fe3a283d1218",
@@ -102,6 +88,19 @@
           "A4": "e655d9e0-9d9e-4d11-8603-fe3a283d1218",
           "L1": "d21e9ef4-c064-4012-b286-fa1a8171da44",
           "L8": {
+            "GS5": "e655d9e0-9d9e-4d11-8603-fe3a283d1218"
+          }
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "6fb06140-33aa-4708-a0d8-434cbd3d5729",
+          "A2": "DueDateOffsetDays",
+          "A3": "e655d9e0-9d9e-4d11-8603-fe3a283d1218",
+          "A4": "e655d9e0-9d9e-4d11-8603-fe3a283d1218",
+          "L1": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0",
+          "L8": {
+            "GS1": 3,
+            "GS2": "[#[IsOwnerSchema:false].[IsSchema:false].[Element:{3042035f-9879-4c34-9559-20ba12027f66}].[Parameter:{7f92e9c3-1ba1-4225-9bf6-4f7b316497f6}].[EntityColumn:{8ac94707-faee-53ab-662f-b0dca71c59f4}]#]",
             "GS5": "e655d9e0-9d9e-4d11-8603-fe3a283d1218"
           }
         }
@@ -590,7 +589,8 @@
           "GT4": "cb455b6f-78ff-4b1e-b241-c2bbc0b37e9f",
           "GT1": {
             "GS1": 1,
-            "GS2": "efa5cd83-37e4-bd4a-ed85-e2b51aece5e8"
+            "GS2": "efa5cd83-37e4-bd4a-ed85-e2b51aece5e8;8ac94707-faee-53ab-662f-b0dca71c59f4",
+            "GS5": "e655d9e0-9d9e-4d11-8603-fe3a283d1218"
           }
         },
         {
@@ -1565,7 +1565,7 @@
               "L1": "394e160f-c8e0-46fa-9c0d-75d97e9e9169",
               "L8": {
                 "GS1": 1,
-                "GS2": "efa5cd83-37e4-bd4a-ed85-e2b51aece5e8",
+                "GS2": "efa5cd83-37e4-bd4a-ed85-e2b51aece5e8;8ac94707-faee-53ab-662f-b0dca71c59f4",
                 "GS5": "e655d9e0-9d9e-4d11-8603-fe3a283d1218"
               }
             },
@@ -1869,7 +1869,7 @@
           "BO3": true,
           "BP2": [],
           "CL2": "FFFFFFFF",
-          "CH1": "var accountClassificationId = Get<Guid>(\"AccountClassification\");\r\nvar workingDaysToAdd = 0;\r\nif (accountClassificationId == PgrConstants.AccountClassification.A)\r\n{\r\n\tworkingDaysToAdd = 3;\r\n}\r\nelse if (accountClassificationId == PgrConstants.AccountClassification.B ||\r\n\t\t\t         accountClassificationId == PgrConstants.AccountClassification.C)\r\n{\r\n\tworkingDaysToAdd = 5;\r\n}\r\n\r\nvar accountId = Get<Guid>(\"Account\");\r\nvar workingDayHelper = new PgrAccountWorkingDayHelper(context.UserConnection);\r\nvar currentDate = DateTime.Now;\r\nvar endDate = workingDayHelper.AddWorkingDays(currentDate, workingDaysToAdd, accountId);\r\n\r\nSet(\"TaskDueDate\", endDate);\r\n\r\nreturn true;",
+          "CH1": "var workingDaysToAdd = Get<int>(\"DueDateOffsetDays\");\r\nvar accountId = Get<Guid>(\"Account\");\r\nvar workingDayHelper = new PgrAccountWorkingDayHelper(context.UserConnection);\r\nvar currentDate = DateTime.Now;\r\nvar endDate = workingDayHelper.AddWorkingDays(currentDate, workingDaysToAdd, accountId);\r\n\r\nSet(\"TaskDueDate\", endDate);\r\n\r\nreturn true;",
           "CH2": true
         },
         {

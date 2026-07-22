@@ -183,11 +183,10 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					},
 					"columns": [
 						{
-							"id": "43a5726c-acfa-87ee-7b54-e5ee05626e0c",
-							"code": "AddressListDS_PgrWfAddressName",
-							"caption": "#ResourceString(AddressListDS_PgrWfAddressName)#",
-							"dataValueType": 27,
-							"sticky": false
+							"id": "690e72c4-7e7f-acf3-2606-8e518c7adca8",
+							"code": "AddressListDS_PgrWepaformAddressName",
+							"caption": "#ResourceString(AddressListDS_PgrWepaformAddressName)#",
+							"dataValueType": 27
 						},
 						{
 							"id": "380e56aa-3444-c9f4-9a06-01d2453cd40f",
@@ -2948,6 +2947,83 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
 				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "PgrActual3DayOrderIntake",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "#ResourceString(PgrActual3DayOrderIntake_label)#",
+					"control": "$PDS_PgrActual3DayOrderIntake_p194oi",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GridContainer_8plbcqj",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "PgrCurrentDailyBudget",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "#ResourceString(PgrCurrentDailyBudget_label)#",
+					"control": "$PDS_PgrCurrentDailyBudget_p194db",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GridContainer_8plbcqj",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "Pgr369RunBtn",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Pgr369RunBtn_caption)#",
+					"color": "primary",
+					"size": "medium",
+					"iconPosition": "only-text",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "Pgr369Process",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"notificationText": "#ResourceString(Pgr369RunBtn_clicked_params_notificationText)#",
+							"recordIdProcessParameterName": "AccountId"
+						}
+					},
+					"clickMode": "default",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 4,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_8plbcqj",
+				"propertyName": "items",
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -7962,6 +8038,16 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 						"modelConfig": {
 							"path": "PDS.PgrOrderIntakeDayCounter"
 						}
+					},
+					"PDS_PgrActual3DayOrderIntake_p194oi": {
+						"modelConfig": {
+							"path": "PDS.PgrActual3DayOrderIntake"
+						}
+					},
+					"PDS_PgrCurrentDailyBudget_p194db": {
+						"modelConfig": {
+							"path": "PDS.PgrCurrentDailyBudget"
+						}
 					}
 				}
 			},
@@ -7998,9 +8084,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					"attributes"
 				],
 				"values": {
-					"AddressListDS_PgrWfAddressName": {
+					"AddressListDS_PgrWepaformAddressName": {
 						"modelConfig": {
-							"path": "AddressListDS.PgrWfAddressName"
+							"path": "AddressListDS.PgrWepaformAddressName"
 						}
 					}
 				}
@@ -8546,8 +8632,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					"attributes"
 				],
 				"values": {
-					"PgrWfAddressName": {
-						"path": "PgrWfAddressName"
+					"PgrWepaformAddressName": {
+						"path": "PgrWepaformAddressName"
 					}
 				}
 			},

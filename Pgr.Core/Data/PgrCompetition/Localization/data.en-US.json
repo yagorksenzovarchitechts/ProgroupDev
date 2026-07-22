@@ -1,21 +1,21 @@
-{
+﻿{
   "PackageData": [
     {
       "Row": [
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
           "ColumnName": "Id",
-          "Value": "eb7fea98-00dc-4d00-9550-350e3b2d6605"
+          "Value": "2f05b26a-e019-4689-a1e0-95c2bdd2449d"
         },
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": "3-6-9 Tagesschwelle"
+          "Value": "Intense"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
           "ColumnName": "Description",
-          "Value": "Wert des Tageszählers, bei dem die 3-6-9-Aufgabe erstellt wird (Standard 3)."
+          "Value": ""
         }
       ]
     },
@@ -24,17 +24,36 @@
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
           "ColumnName": "Id",
-          "Value": "ce123585-bd11-4295-937a-006c0ae32bea"
+          "Value": "6be45e35-9e43-4ba2-ac7e-9535348a81cc"
         },
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": "3-6-9 Tagesschwelle für Erinnerung"
+          "Value": "Calm"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
           "ColumnName": "Description",
-          "Value": "Wert des Tageszählers, bei dem eine Erinnerung an den Vertriebsmitarbeiter gesendet wird, wenn die offene 3-6-9-Aufgabe noch keine abgeschlossene Maßnahme enthält (Standard 6)."
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "b98f174f-ae83-4cdd-aa58-498678002c62"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "ColumnName": "Name",
+          "Value": "Active"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "ColumnName": "Description",
+          "Value": ""
         }
       ]
     }

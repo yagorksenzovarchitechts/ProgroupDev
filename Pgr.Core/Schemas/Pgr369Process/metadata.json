@@ -155,7 +155,7 @@
           "BO3": true,
           "BP2": [],
           "CL2": "FFFFFFFF",
-          "CH1": "var accountId = Get<Guid>(\"AccountId\");\r\nvar action = new Pgr369Helper(UserConnection).ProcessAccount(accountId);\r\nSet(\"ResultCode\", (int)action);\r\n\r\nreturn true;",
+          "CH1": "var accountId = Get<Guid>(\"AccountId\");\r\n// CMVP-194: in test-values mode recompute today's budget from the Account fields before\r\n// evaluating, so the Run 3-6-9 button reflects the just-entered test values.\r\nif (Terrasoft.Core.Configuration.SysSettings.GetValue(UserConnection, \"Pgr369UseTestValues\", false))\r\n{\r\n\tnew Pgr369BudgetCalculator(UserConnection).SaveDailyCalculation(accountId);\r\n}\r\nvar action = new Pgr369Helper(UserConnection).ProcessAccount(accountId);\r\nSet(\"ResultCode\", (int)action);\r\n\r\nreturn true;",
           "CH2": true
         },
         {

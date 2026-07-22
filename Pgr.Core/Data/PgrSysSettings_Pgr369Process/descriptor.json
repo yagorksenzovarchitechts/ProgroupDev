@@ -1,8 +1,8 @@
 ﻿{
   "Descriptor": {
     "UId": "93647457-390a-43e9-95c8-1f4e5e731f97",
-    "Name": "PgrSysSettings_Pgr369DayThreshold",
-    "ModifiedOnUtc": "\/Date(1784541569381)\/",
+    "Name": "PgrSysSettings_Pgr369Process",
+    "ModifiedOnUtc": "\/Date(1784634622000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "27aeadd6-d508-4572-8061-5b55b667c902",

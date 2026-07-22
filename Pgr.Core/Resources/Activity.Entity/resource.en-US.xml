@@ -7,6 +7,7 @@
 			<Item Name="Columns.DueDate.Caption" Value="Due date and time" />
 			<Item Name="Columns.Notes.Caption" Value="Description" />
 			<Item Name="Columns.PgrAccount.Caption" Value="Account (customer)" />
+			<Item Name="Columns.PgrCorrectiveMeasureAction.Caption" Value="Corrective action" />
 			<Item Name="Columns.PgrDepartment.Caption" Value="Department" />
 			<Item Name="Columns.PgrIsOverdue.Caption" Value="Is overdue" />
 			<Item Name="Columns.PgrOverdueDays.Caption" Value="Overdue days" />

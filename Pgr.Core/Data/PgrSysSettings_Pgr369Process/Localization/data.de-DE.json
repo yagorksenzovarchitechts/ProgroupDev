@@ -1,0 +1,61 @@
+{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "eb7fea98-00dc-4d00-9550-350e3b2d6605"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "ColumnName": "Name",
+          "Value": "3-6-9 Tagesschwelle"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "ColumnName": "Description",
+          "Value": "Wert des Tageszählers, bei dem die 3-6-9-Aufgabe erstellt wird (Standard 3)."
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "ce123585-bd11-4295-937a-006c0ae32bea"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "ColumnName": "Name",
+          "Value": "3-6-9 Tagesschwelle für Erinnerung"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "ColumnName": "Description",
+          "Value": "Wert des Tageszählers, bei dem eine Erinnerung an den Vertriebsmitarbeiter gesendet wird, wenn die offene 3-6-9-Aufgabe noch keine abgeschlossene Maßnahme enthält (Standard 6)."
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "77c589af-9bb5-4d30-9f67-8ea3e4fc461d"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "ColumnName": "Name",
+          "Value": "369 Testwerte verwenden"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "ColumnName": "Description",
+          "Value": "Wenn aktiviert, verwendet die 3-6-9-Berechnung die vom Tester gesetzten Kontofelder (Aktuelles Tagesbudget, 3-Tage-Auftragseingang) anstelle des festen Budgets und der Order.Amount-Abfrage. Nur für Testtransparenz."
+        }
+      ]
+    }
+  ]
+}
