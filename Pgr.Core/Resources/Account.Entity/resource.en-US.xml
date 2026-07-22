@@ -8,6 +8,8 @@
 			<Item Name="Columns.Owner.Caption" Value="Account owner" />
 			<Item Name="Columns.Pgr369ThresholdAbsolute.Caption" Value="369 threshold absolute" />
 			<Item Name="Columns.Pgr369ThresholdPercentage.Caption" Value="369 threshold percentage" />
+			<Item Name="Columns.PgrActual3DayOrderIntake.Caption" Value="3-Day order intake" />
+			<Item Name="Columns.PgrCurrentDailyBudget.Caption" Value="Current daily budget" />
 			<Item Name="Columns.PgrAccountClassification.Caption" Value="Classification" />
 			<Item Name="Columns.PgrAccountLevel.Caption" Value="Level (Remove)" />
 			<Item Name="Columns.PgrAccountManagerCode.Caption" Value="Account owner code (delete)" />

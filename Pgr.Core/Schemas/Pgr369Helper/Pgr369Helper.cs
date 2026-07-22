@@ -27,7 +27,7 @@ namespace Pgr.Core
         /// <summary>Open task's Measure task still not filled in at day 6 — a reminder was sent (CMVP-125).</summary>
         Remind = 6,
 
-        /// <summary>Day 10 reached — escalate the open task to the Sales Director (CMVP-126). TODO.</summary>
+        /// <summary>Day 10 reached and still unfilled — the task was escalated to the Sales Director (CMVP-126).</summary>
         Escalate = 10
     }
 
@@ -37,10 +37,10 @@ namespace Pgr.Core
 
     /// <summary>
     ///     Day-counter and alert-task logic for the 3-6-9 order-intake deviation process (CMVP-64).
-    ///     Owns the daily counter (CMVP-123), the day-3 decision (CMVP-124) and the day-6 reminder
-    ///     (CMVP-125). The budget compare value / deviation calculation lives in
-    ///     <see cref="Pgr369BudgetCalculator" /> (CMVP-194); this class only reads the precomputed
-    ///     deviation flag. Escalation (CMVP-126) is only signalled here; the BPMN process performs it.
+    ///     Owns the daily counter (CMVP-123), the day-3 decision (CMVP-124), the day-6 reminder
+    ///     (CMVP-125) and the day-10 escalation to the Sales Director (CMVP-126). The budget compare
+    ///     value / deviation calculation lives in <see cref="Pgr369BudgetCalculator" /> (CMVP-194);
+    ///     this class only reads the precomputed deviation flag.
     /// </summary>
     public class Pgr369Helper
     {
@@ -49,11 +49,14 @@ namespace Pgr.Core
         /// <summary>Day-counter sentinel meaning "suspended by Sales Director" (CMVP-127).</summary>
         private const int SuspendedCounter = -1;
 
-        private const string DayThresholdSettingCode = "Pgr369ProcessDay3Threshold";
-        private const int DefaultDayThreshold = 3;
+        private const string Day3ThresholdSettingCode = "Pgr369ProcessDay3Threshold";
+        private const int DefaultDay3Threshold = 3;
 
         private const string Day6ThresholdSettingCode = "Pgr369ProcessDay6Threshold";
         private const int DefaultDay6Threshold = 6;
+
+        private const string Day10ThresholdSettingCode = "Pgr369ProcessDay10Threshold";
+        private const int DefaultDay10Threshold = 10;
 
         #endregion
 
@@ -153,29 +156,44 @@ namespace Pgr.Core
             var openAlertTask = GetOpenAlertTask(accountId);
 
             // CMVP-124: at day 3 with no open task → create the alert task.
-            if (counter == GetDayThreshold() && openAlertTask == null)
+            if (counter == GetDay3Threshold() && openAlertTask == null)
             {
                 return Pgr369DailyAction.CreateAlertTask;
             }
 
-            // CMVP-125: at day 6, if the open task's Measure task still has no reason/measure
-            // filled in, remind the sales person (the alert task's Owner). If it is already
-            // filled in, no reminder is sent and the daily cycle ends here for this account.
-            if (openAlertTask != null && counter == GetDay6Threshold() &&
-                !HasFilledMeasureTask(openAlertTask.PrimaryColumnValue))
+            if (openAlertTask == null)
             {
-                SendMeasureTaskReminder(openAlertTask);
-                return Pgr369DailyAction.Remind;
+                return Pgr369DailyAction.None;
             }
 
-            // TODO CMVP-126: escalate to the Sales Director at day 10 if still not filled in.
+            // Day 6 (remind, CMVP-125) and day 10 (escalate, CMVP-126) both act only while the open
+            // task's Measure task is still not filled in — evaluate that once here, and only when the
+            // counter is actually at one of those days, rather than re-querying it per branch.
+            var atReminderDay = counter == GetDay6Threshold();
+            var atEscalationDay = counter == GetDay10Threshold();
+            if ((atReminderDay || atEscalationDay) && !HasFilledMeasureTask(openAlertTask.PrimaryColumnValue))
+            {
+                // CMVP-125: at day 6 remind the sales person (the alert task's Owner).
+                if (atReminderDay)
+                {
+                    SendMeasureTaskReminder(openAlertTask);
+                    return Pgr369DailyAction.Remind;
+                }
+
+                // CMVP-126: at day 10 escalate the still-unfilled task to the Sales Director — the
+                // existing open Measure task (or the alert task itself if none was created) is
+                // reassigned to the Sales Director; no new task is created.
+                EscalateToSalesDirector(accountId, openAlertTask);
+                return Pgr369DailyAction.Escalate;
+            }
+
             return Pgr369DailyAction.None;
         }
 
         /// <summary>Day value (SysSettings "Pgr369ProcessDay3Threshold") at which the alert task is created. Default 3.</summary>
-        private int GetDayThreshold()
+        private int GetDay3Threshold()
         {
-            return SysSettings.GetValue(_userConnection, DayThresholdSettingCode, DefaultDayThreshold);
+            return SysSettings.GetValue(_userConnection, Day3ThresholdSettingCode, DefaultDay3Threshold);
         }
 
         /// <summary>
@@ -185,6 +203,15 @@ namespace Pgr.Core
         private int GetDay6Threshold()
         {
             return SysSettings.GetValue(_userConnection, Day6ThresholdSettingCode, DefaultDay6Threshold);
+        }
+
+        /// <summary>
+        ///     Day value (SysSettings "Pgr369ProcessDay10Threshold") at which an unfilled open task is
+        ///     escalated to the Sales Director. Default 10.
+        /// </summary>
+        private int GetDay10Threshold()
+        {
+            return SysSettings.GetValue(_userConnection, Day10ThresholdSettingCode, DefaultDay10Threshold);
         }
 
         /// <summary>New ESQ against the given schema with the standard non-privileged always-select setup.</summary>
@@ -234,26 +261,90 @@ namespace Pgr.Core
         /// </summary>
         private bool HasFilledMeasureTask(Guid alertTaskId)
         {
-            var esq = CreateActivityQuery();
-            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "PgrParentTask", alertTaskId));
-            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "ActivityCategory",
-                PgrConstants.ActivityCategory.Measure));
+            var esq = CreateMeasureTaskQuery(alertTaskId);
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Status",
                 ActivityConsts.CompletedStatusUId));
             esq.Filters.Add(esq.CreateIsNotNullFilter("PgrReasonCode"));
             return esq.GetEntityCollection(_userConnection).Count > 0;
         }
 
+        /// <summary>ESQ for the Measure task(s) linked to an alert task (PgrParentTask + category Measure).</summary>
+        private EntitySchemaQuery CreateMeasureTaskQuery(Guid alertTaskId)
+        {
+            var esq = CreateActivityQuery();
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "PgrParentTask", alertTaskId));
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "ActivityCategory",
+                PgrConstants.ActivityCategory.Measure));
+            return esq;
+        }
+
         /// <summary>
-        ///     Creates a Reminding record (communication-panel notification, CMVP-125 AC) addressed
-        ///     to the alert task's Owner (the sales person), using the platform's own reminder
-        ///     infrastructure (<see cref="RemindingUtilities" />) — the same one that backs the
-        ///     Activity "Remind to owner" checkbox.
+        ///     Reminds the alert task's Owner (the sales person) to fill in the Measure task
+        ///     (CMVP-125 AC), via a communication-panel Reminding.
         /// </summary>
         private void SendMeasureTaskReminder(Entity alertTask)
         {
-            var ownerId = alertTask.GetTypedColumnValue<Guid>("Owner");
-            if (ownerId == Guid.Empty)
+            SendReminding(alertTask.PrimaryColumnValue, alertTask.GetTypedColumnValue<Guid>("Owner"),
+                GetLocalizableString("MeasureReminderMessage"), GetLocalizableString("MeasureReminderTitle"));
+        }
+
+        /// <summary>
+        ///     CMVP-126 escalation at day 10: reassigns the still-unfilled 3-6-9 work to the Sales
+        ///     Director and notifies both sides. The existing open Measure task has its Owner
+        ///     reassigned; if the sales person never created one, the alert task itself is reassigned.
+        ///     No new task is created — the reassignment is reflected in the Activity Owner change log.
+        /// </summary>
+        private void EscalateToSalesDirector(Guid accountId, Entity alertTask)
+        {
+            var salesDirectorId = GetSalesDirector(accountId);
+            if (salesDirectorId == Guid.Empty)
+            {
+                // Nobody to escalate to — leave the task with the sales person.
+                return;
+            }
+
+            var taskToEscalate = GetOpenMeasureTask(alertTask.PrimaryColumnValue) ?? alertTask;
+            var salesPersonId = taskToEscalate.GetTypedColumnValue<Guid>("Owner");
+
+            taskToEscalate.SetColumnValue("OwnerId", salesDirectorId);
+            taskToEscalate.Save(false);
+
+            // Sales person: notified the task was escalated and a justification must be added.
+            SendReminding(taskToEscalate.PrimaryColumnValue, salesPersonId,
+                GetLocalizableString("EscalationOwnerMessage"), GetLocalizableString("EscalationOwnerTitle"));
+            // Sales Director: notified the task was escalated to them.
+            SendReminding(taskToEscalate.PrimaryColumnValue, salesDirectorId,
+                GetLocalizableString("EscalationDirectorMessage"), GetLocalizableString("EscalationDirectorTitle"));
+        }
+
+        /// <summary>The customer's open (not finished) Measure task linked to the alert task, or null.</summary>
+        private Entity GetOpenMeasureTask(Guid alertTaskId)
+        {
+            var esq = CreateMeasureTaskQuery(alertTaskId);
+            esq.AddAllSchemaColumns();
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.NotEqual,
+                "Status.Finish", true));
+            return esq.GetEntityCollection(_userConnection).FirstOrDefault();
+        }
+
+        /// <summary>The account's Sales Director (Account.PgrSalesDirector) contact Id, or Guid.Empty.</summary>
+        private Guid GetSalesDirector(Guid accountId)
+        {
+            var esq = CreateQuery("Account");
+            var directorColumn = esq.AddColumn("PgrSalesDirector").Name;
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Id", accountId));
+            var rows = esq.GetEntityCollection(_userConnection);
+            return rows.Count == 0 ? Guid.Empty : rows[0].GetTypedColumnValue<Guid>(directorColumn);
+        }
+
+        /// <summary>
+        ///     Creates a Reminding record (communication-panel notification) for a recipient about an
+        ///     activity, using the platform reminder infrastructure (<see cref="RemindingUtilities" />)
+        ///     — the same one that backs the Activity "Remind to owner" checkbox. No-op without a recipient.
+        /// </summary>
+        private void SendReminding(Guid activityId, Guid recipientId, string description, string popupTitle)
+        {
+            if (recipientId == Guid.Empty)
             {
                 return;
             }
@@ -261,13 +352,13 @@ namespace Pgr.Core
             var activitySchemaUId = _userConnection.EntitySchemaManager.GetInstanceByName("Activity").UId;
             var config = new RemindingConfig(activitySchemaUId)
             {
-                SubjectId = alertTask.PrimaryColumnValue,
+                SubjectId = activityId,
                 AuthorId = _userConnection.CurrentUser.ContactId,
-                ContactId = ownerId,
+                ContactId = recipientId,
                 SourceId = RemindingConsts.RemindingSourceOwnerId,
                 NotificationTypeId = RemindingConsts.NotificationTypeRemindingId,
-                Description = GetLocalizableString("MeasureReminderMessage"),
-                PopupTitle = GetLocalizableString("MeasureReminderTitle")
+                Description = description,
+                PopupTitle = popupTitle
             };
             new RemindingUtilities().CreateReminding(_userConnection, config);
         }

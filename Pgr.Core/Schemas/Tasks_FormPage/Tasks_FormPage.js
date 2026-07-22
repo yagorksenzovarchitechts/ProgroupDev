@@ -2407,6 +2407,18 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 						});
 					};
 
+					// The new Activity references PgrParentTask = PDS_Id. If the Task card is not
+					// yet saved, that Id doesn't exist as a row in the DB, so save it first.
+					const saved = await request.$context.executeRequest({
+						type: "crt.SaveRecordRequest",
+						$context: request.$context,
+						preventCardClose: true
+					});
+					if (!saved) {
+						// Save failed — the framework already showed its own error dialog.
+						return;
+					}
+
 					// Reason is optional at creation (CMVP-125): it can be filled in later when the
 					// Measure task is completed; the day-6 process reminds if it stays unfilled.
 					const reasonCode = unwrap(await request.$context.PDS_PgrReasonCode);
@@ -2447,12 +2459,12 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 					}
 
 					// Refresh the child activities grid so the new Measure task shows up.
-					await request.$context.executeRequest({
+					/* await request.$context.executeRequest({
 						type: "crt.LoadDataRequest",
 						$context: request.$context,
 						config: { loadType: "reload" },
 						dataSourceName: childActivitiesDataSource
-					});
+					}); */
 					await showMessage(await strings.CreateMeasure_Success_message);
 					return next?.handle(request);
 				}

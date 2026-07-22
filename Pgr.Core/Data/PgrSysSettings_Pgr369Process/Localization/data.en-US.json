@@ -56,6 +56,25 @@
           "Value": "When enabled, the 3-6-9 budget calculation uses the tester-controlled Account fields (Current daily budget, 3-Day order intake) instead of the fixed budget and the Order.Amount query. For testing transparency only."
         }
       ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "2089c43a-3c35-47df-98fb-60a85ed46ff8"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "ColumnName": "Name",
+          "Value": "369 process day 10 threshold"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "ColumnName": "Description",
+          "Value": "Day counter value at which an unfilled open 3-6-9 measure task is escalated to the Sales Director (default 10)."
+        }
+      ]
     }
   ]
 }

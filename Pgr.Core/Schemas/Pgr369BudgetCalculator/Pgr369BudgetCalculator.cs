@@ -148,10 +148,7 @@ namespace Pgr.Core
         /// </summary>
         public bool? GetTodayDeviation(Guid accountId)
         {
-            var esq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, EntityName)
-            {
-                UseAdminRights = false
-            };
+            var esq = CreateQuery(EntityName);
             esq.AddColumn("PgrIsDeviation");
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "PgrAccount", accountId));
             esq.Filters.Add(esq.CreateFilterWithParameters(
@@ -165,6 +162,15 @@ namespace Pgr.Core
         #endregion
 
         #region Methods: Private
+
+        /// <summary>New ESQ against the given schema with the standard non-privileged setup.</summary>
+        private EntitySchemaQuery CreateQuery(string schemaName)
+        {
+            return new EntitySchemaQuery(_userConnection.EntitySchemaManager, schemaName)
+            {
+                UseAdminRights = false
+            };
+        }
 
         /// <summary>
         ///     Budget compare value (CMVP-194): the 3-day rolling average of the calendar-adjusted
@@ -223,14 +229,9 @@ namespace Pgr.Core
         /// </summary>
         private Pgr369Tolerance? GetToleranceByCustomer(Guid accountId)
         {
-            var esq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, ThresholdMatrixEntityName)
-            {
-                UseAdminRights = false
-            };
-            var absoluteColumn = esq.AddColumn("PgrAbsolute").Name;
-            var percentageColumn = esq.AddColumn("PgrPercentage").Name;
+            var esq = CreateQuery(ThresholdMatrixEntityName);
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "PgrCustomer", accountId));
-            return ReadTolerance(esq, absoluteColumn, percentageColumn);
+            return ReadTolerance(esq);
         }
 
         /// <summary>
@@ -240,10 +241,7 @@ namespace Pgr.Core
         /// </summary>
         private Pgr369Tolerance? GetToleranceByRegionCategory(Guid accountId)
         {
-            var accountEsq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, "Account")
-            {
-                UseAdminRights = false
-            };
+            var accountEsq = CreateQuery("Account");
             var regionColumn = accountEsq.AddColumn("Territory").Name;
             var categoryColumn = accountEsq.AddColumn("PgrAccountClassification").Name;
             accountEsq.Filters.Add(accountEsq.CreateFilterWithParameters(
@@ -261,24 +259,21 @@ namespace Pgr.Core
                 return null;
             }
 
-            var esq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, ThresholdMatrixEntityName)
-            {
-                UseAdminRights = false
-            };
-            var absoluteColumn = esq.AddColumn("PgrAbsolute").Name;
-            var percentageColumn = esq.AddColumn("PgrPercentage").Name;
+            var esq = CreateQuery(ThresholdMatrixEntityName);
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "PgrRegion", regionId));
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "PgrCategory", categoryId));
-            return ReadTolerance(esq, absoluteColumn, percentageColumn);
+            return ReadTolerance(esq);
         }
 
         /// <summary>
-        ///     Runs a prepared Customer threshold matrix query and reads the tolerance from its
-        ///     first row (<c>PgrAbsolute</c> = units, <c>PgrPercentage</c> = %), or <c>null</c>
-        ///     when the query returns no rows.
+        ///     Adds the tolerance columns to a filtered Customer threshold matrix query and reads the
+        ///     tolerance from its first row (<c>PgrAbsolute</c> = units, <c>PgrPercentage</c> = %), or
+        ///     <c>null</c> when the query returns no rows.
         /// </summary>
-        private Pgr369Tolerance? ReadTolerance(EntitySchemaQuery esq, string absoluteColumn, string percentageColumn)
+        private Pgr369Tolerance? ReadTolerance(EntitySchemaQuery esq)
         {
+            var absoluteColumn = esq.AddColumn("PgrAbsolute").Name;
+            var percentageColumn = esq.AddColumn("PgrPercentage").Name;
             var rows = esq.GetEntityCollection(_userConnection);
             if (rows.Count == 0)
             {
@@ -298,10 +293,7 @@ namespace Pgr.Core
         /// </summary>
         private Pgr369TestValues GetAccountTestValues(Guid accountId)
         {
-            var esq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, "Account")
-            {
-                UseAdminRights = false
-            };
+            var esq = CreateQuery("Account");
             var budgetColumn = esq.AddColumn("PgrCurrentDailyBudget").Name;
             var orderIntakeColumn = esq.AddColumn("PgrActual3DayOrderIntake").Name;
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Id", accountId));
@@ -331,10 +323,7 @@ namespace Pgr.Core
                 return 0m;
             }
 
-            var esq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, "Order")
-            {
-                UseAdminRights = false
-            };
+            var esq = CreateQuery("Order");
             var sumColumn = esq.AddColumn(esq.CreateAggregationFunction(
                 AggregationTypeStrict.Sum, "Amount")).Name;
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Account", accountId));

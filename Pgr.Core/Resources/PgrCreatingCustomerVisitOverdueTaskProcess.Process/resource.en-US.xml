@@ -84,8 +84,6 @@
 			<Item Name="NotificationCaption.Caption" Value="Process instance caption" />
 			<Item Name="NotificationCaption.DisplayValue" Value="[#Process name#]" />
 			<Item Name="Parameters.Account.Caption" Value="Account" />
-			<Item Name="Parameters.AccountClassification.Caption" Value="Account classification" />
-			<Item Name="Parameters.AccountClassification.DisplayValue" Value="[#Read account.First item of resulting collection.Classification#]" />
 			<Item Name="Parameters.AccountCreatedOnDate.Caption" Value="Account created on date" />
 			<Item Name="Parameters.AccountCreatedOnDate.DisplayValue" Value="[#Read account.First item of resulting collection.Created on#]" />
 			<Item Name="Parameters.AccountLastVisitDate.Caption" Value="Account last visit date" />
