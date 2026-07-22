@@ -1,0 +1,303 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "1a062bc1-56a0-4f23-8767-5a339f7f143e"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "6701c827-5bfc-45c5-8e79-5bace2992e13",
+          "DisplayValue": "Price"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "205b13be-2a35-4ec1-bcf9-2b915e36284a"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "d9221c1f-5e54-40ac-97f3-919bb48e3df7",
+          "DisplayValue": "Communication"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "23b96d10-9b35-408f-ae56-b9dee76db85c"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "c06d7053-1c44-48a8-96fb-19b1a49d1292",
+          "DisplayValue": "Delivery"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "3f29a3de-2886-4c7f-9178-192116526b86"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "feb649a0-b880-4e1e-8f1d-287114595666",
+          "DisplayValue": "External"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "421f8a1c-f8f7-4978-8829-5272521b8e82"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "0811149d-3451-46e1-bb6f-f89f971f6ecd",
+          "DisplayValue": "Product portfolio"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "4f06a797-1f9e-4924-8de6-213e4308c691"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "0811149d-3451-46e1-bb6f-f89f971f6ecd",
+          "DisplayValue": "Product portfolio"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "5bbc1ff2-98b0-4ef0-b020-16fe769ddb75"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "6d5b7834-33ba-44fe-88fd-1b1d61ea1728",
+          "DisplayValue": "Customer is blocked"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "5c4a2c3b-d389-4067-a2bc-2d59102f747e"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "6d5b7834-33ba-44fe-88fd-1b1d61ea1728",
+          "DisplayValue": "Customer is blocked"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "605e49f9-4b0e-4909-a2b8-04afb8b88fc8"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "6701c827-5bfc-45c5-8e79-5bace2992e13",
+          "DisplayValue": "Price"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "6db54266-365b-4a57-963e-d2307d371296"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "8883f924-51f7-40e0-9c4f-f4540279ef21",
+          "DisplayValue": "Quality"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "8a73f090-ba1f-4be4-b19f-4278e9179aa5"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "feb649a0-b880-4e1e-8f1d-287114595666",
+          "DisplayValue": "External"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "959135c3-2836-454b-9593-592509472edb"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "c06d7053-1c44-48a8-96fb-19b1a49d1292",
+          "DisplayValue": "Delivery"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "98f600ed-1ccd-48ea-821d-d3e4ba984f00"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "0811149d-3451-46e1-bb6f-f89f971f6ecd",
+          "DisplayValue": "Product portfolio"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "9e4a205a-2d3a-4590-bd0f-6eb051d13b02"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "feb649a0-b880-4e1e-8f1d-287114595666",
+          "DisplayValue": "External"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "a535780a-75ec-4b12-bc35-43772a9a6ee8"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "6701c827-5bfc-45c5-8e79-5bace2992e13",
+          "DisplayValue": "Price"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "a582a858-5e52-4ea9-9460-ed7889f8218c"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "c06d7053-1c44-48a8-96fb-19b1a49d1292",
+          "DisplayValue": "Delivery"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "c2eec3c6-2002-4fe4-9c72-ea2f7e7d59de"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "6d5b7834-33ba-44fe-88fd-1b1d61ea1728",
+          "DisplayValue": "Customer is blocked"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "c961dc4b-4ad0-4e32-b63b-112df40f84e8"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "6701c827-5bfc-45c5-8e79-5bace2992e13",
+          "DisplayValue": "Price"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "e0cd6549-4441-4622-80f6-2654be2a286e"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "8883f924-51f7-40e0-9c4f-f4540279ef21",
+          "DisplayValue": "Quality"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "e648541c-7a95-424c-bc18-bb3a820f25a9"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "d9221c1f-5e54-40ac-97f3-919bb48e3df7",
+          "DisplayValue": "Communication"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "f12f63af-3d29-4a94-a779-7f209c387beb"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "6701c827-5bfc-45c5-8e79-5bace2992e13",
+          "DisplayValue": "Price"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "f20604fa-ba77-49e8-a048-2fcdc35e9ef5"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "8883f924-51f7-40e0-9c4f-f4540279ef21",
+          "DisplayValue": "Quality"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "fb9d9398-b709-4277-9243-2a40a9fd0efa"
+        },
+        {
+          "SchemaColumnUId": "e0b97758-2996-184a-f4a3-f35f00e5111a",
+          "Value": "c06d7053-1c44-48a8-96fb-19b1a49d1292",
+          "DisplayValue": "Delivery"
+        }
+      ]
+    }
+  ]
+}

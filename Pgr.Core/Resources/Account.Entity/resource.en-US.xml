@@ -14,9 +14,11 @@
 			<Item Name="Columns.PgrAccountLevel.Caption" Value="Level (Remove)" />
 			<Item Name="Columns.PgrAccountManagerCode.Caption" Value="Account owner code (delete)" />
 			<Item Name="Columns.PgrAccountTypesText.Caption" Value="Account types (text)" />
+			<Item Name="Columns.PgrActual3DayOrderIntake.Caption" Value="3-Day order intake" />
 			<Item Name="Columns.PgrBestPlantLinked.Caption" Value="Best plant" />
 			<Item Name="Columns.PgrBoardConnect.Caption" Value="Board connect" />
 			<Item Name="Columns.PgrCompetitorNotes.Caption" Value="Notes" />
+			<Item Name="Columns.PgrCurrentDailyBudget.Caption" Value="Current daily budget" />
 			<Item Name="Columns.PgrCustomerServiceName.Caption" Value="Customer service name" />
 			<Item Name="Columns.PgrCustomerlabel.Caption" Value="Customer label" />
 			<Item Name="Columns.PgrDateBl.Caption" Value="Blocking date" />

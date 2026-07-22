@@ -1411,41 +1411,19 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 							"code": "DataGrid_bhkko01DS_Title",
 							"caption": "#ResourceString(DataGrid_bhkko01DS_Title)#",
 							"dataValueType": 28,
-							"width": 313
+							"width": 483
 						},
 						{
-							"id": "a9172e11-e2d4-79b9-daa4-427fc3178c1f",
-							"code": "DataGrid_bhkko01DS_PgrDepartment",
-							"caption": "#ResourceString(DataGrid_bhkko01DS_PgrDepartment)#",
-							"dataValueType": 28,
-							"width": 187
+							"id": "e68b10fa-91d4-fa75-7589-4ae35ab6f8ae",
+							"code": "DataGrid_bhkko01DS_PgrReasonCode",
+							"caption": "#ResourceString(DataGrid_bhkko01DS_PgrReasonCode)#",
+							"dataValueType": 10
 						},
 						{
-							"id": "29012f92-65a7-ca23-c4b1-dbea4568aaf1",
-							"code": "DataGrid_bhkko01DS_Owner",
-							"caption": "#ResourceString(DataGrid_bhkko01DS_Owner)#",
-							"dataValueType": 10,
-							"width": 156
-						},
-						{
-							"id": "abdf9438-1a78-9f97-cefa-8720773b9cd5",
-							"code": "DataGrid_bhkko01DS_PgrPersonInCharge",
-							"caption": "#ResourceString(DataGrid_bhkko01DS_PgrPersonInCharge)#",
-							"dataValueType": 10,
-							"width": 209
-						},
-						{
-							"id": "906b37bb-9a9c-583e-6570-68f6559c2963",
-							"code": "DataGrid_bhkko01DS_PgrPersonInCharge_Email",
-							"caption": "#ResourceString(DataGrid_bhkko01DS_PgrPersonInCharge_Email)#",
-							"dataValueType": 45
-						},
-						{
-							"id": "e390999e-7e34-5ee2-6e26-e5f0b9c55c98",
-							"code": "DataGrid_bhkko01DS_Notes",
-							"caption": "#ResourceString(DataGrid_bhkko01DS_Notes)#",
-							"dataValueType": 30,
-							"width": 695
+							"id": "90e2dad5-37da-9b2c-e3c1-389785c658c0",
+							"code": "DataGrid_bhkko01DS_PgrCorrectiveMeasureAction",
+							"caption": "#ResourceString(DataGrid_bhkko01DS_PgrCorrectiveMeasureAction)#",
+							"dataValueType": 10
 						}
 					],
 					"placeholder": false,
@@ -1878,29 +1856,14 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 										"path": "DataGrid_bhkko01DS.Title"
 									}
 								},
-								"DataGrid_bhkko01DS_PgrDepartment": {
+								"DataGrid_bhkko01DS_PgrReasonCode": {
 									"modelConfig": {
-										"path": "DataGrid_bhkko01DS.PgrDepartment"
+										"path": "DataGrid_bhkko01DS.PgrReasonCode"
 									}
 								},
-								"DataGrid_bhkko01DS_Owner": {
+								"DataGrid_bhkko01DS_PgrCorrectiveMeasureAction": {
 									"modelConfig": {
-										"path": "DataGrid_bhkko01DS.Owner"
-									}
-								},
-								"DataGrid_bhkko01DS_PgrPersonInCharge": {
-									"modelConfig": {
-										"path": "DataGrid_bhkko01DS.PgrPersonInCharge"
-									}
-								},
-								"DataGrid_bhkko01DS_PgrPersonInCharge_Email": {
-									"modelConfig": {
-										"path": "DataGrid_bhkko01DS.PgrPersonInCharge_Email"
-									}
-								},
-								"DataGrid_bhkko01DS_Notes": {
-									"modelConfig": {
-										"path": "DataGrid_bhkko01DS.Notes"
+										"path": "DataGrid_bhkko01DS.PgrCorrectiveMeasureAction"
 									}
 								},
 								"DataGrid_bhkko01DS_Id": {
@@ -1963,21 +1926,11 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 								"Title": {
 									"path": "Title"
 								},
-								"PgrDepartment": {
-									"path": "PgrDepartment"
+								"PgrReasonCode": {
+									"path": "PgrReasonCode"
 								},
-								"Owner": {
-									"path": "Owner"
-								},
-								"PgrPersonInCharge": {
-									"path": "PgrPersonInCharge"
-								},
-								"PgrPersonInCharge_Email": {
-									"type": "ForwardReference",
-									"path": "PgrPersonInCharge.Email"
-								},
-								"Notes": {
-									"path": "Notes"
+								"PgrCorrectiveMeasureAction": {
+									"path": "PgrCorrectiveMeasureAction"
 								}
 							}
 						}

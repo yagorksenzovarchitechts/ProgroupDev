@@ -4,6 +4,8 @@
 		<Items>
 			<Item Name="Caption" Value="Task measure mini page" />
 			<Item Name="LocalizableStrings.addRecord_4xl4su0_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_j8yzf98_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_t7pjwet_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_z0zksoa_caption.Value" Value="Add new" />
 		</Items>
 	</Group>

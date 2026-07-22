@@ -35,6 +35,19 @@
           "L8": {
             "GS5": "47b928bc-5a74-46c2-aae9-b4f38baed5be"
           }
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "08e0e864-9342-4122-9fca-53264f10ebe6",
+          "A2": "ProcessSchemaParameterCurrentDateAndTime",
+          "A3": "47b928bc-5a74-46c2-aae9-b4f38baed5be",
+          "A4": "47b928bc-5a74-46c2-aae9-b4f38baed5be",
+          "L1": "d21e9ef4-c064-4012-b286-fa1a8171da44",
+          "L8": {
+            "GS1": 3,
+            "GS2": "[#SysVariable.CurrentDateTime#]",
+            "GS5": "47b928bc-5a74-46c2-aae9-b4f38baed5be"
+          }
         }
       ],
       "IJ1": true,
@@ -844,7 +857,7 @@
           "BO3": true,
           "BP2": [],
           "CL2": "FFFFFFFF",
-          "CH1": "Convert.ToInt32(( [#SysVariable.CurrentDate#] - [#[IsOwnerSchema:false].[IsSchema:false].[Element:{93ab2969-650f-43c0-a0d1-03d86af9ec39}].[Parameter:{7a328d6d-2b3a-4ff0-a7b7-b3ad2f44a55b}].[EntityColumn:{4038ce1f-15b2-4630-abb6-0c7377ab4c9b}]#]).TotalDays)",
+          "CH1": "Convert.ToInt32(( [#[IsOwnerSchema:false].[IsSchema:false].[Parameter:{08e0e864-9342-4122-9fca-53264f10ebe6}]#] - [#[IsOwnerSchema:false].[IsSchema:false].[Element:{93ab2969-650f-43c0-a0d1-03d86af9ec39}].[Parameter:{7a328d6d-2b3a-4ff0-a7b7-b3ad2f44a55b}].[EntityColumn:{4038ce1f-15b2-4630-abb6-0c7377ab4c9b}]#]).TotalDays)",
           "HS1": "60045b02-a6e1-40b0-8944-e562e02288b5"
         },
         {

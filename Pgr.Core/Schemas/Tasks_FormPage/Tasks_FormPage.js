@@ -529,7 +529,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 					"tooltip": "",
 					"readonly": false,
 					"multiline": true,
-					"labelPosition": "left",
+					"labelPosition": "auto",
 					"visible": false,
 					"layoutConfig": {
 						"column": 2,
@@ -590,7 +590,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 					},
 					"items": [],
 					"fitContent": true,
-					"visible": false,
+					"visible": true,
 					"alignItems": "stretch",
 					"color": "transparent",
 					"borderRadius": "none",
@@ -611,7 +611,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				"values": {
 					"layoutConfig": {
 						"column": 1,
-						"colSpan": 1,
+						"colSpan": 2,
 						"row": 1,
 						"rowSpan": 1
 					},
@@ -649,12 +649,54 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 			},
 			{
 				"operation": "insert",
+				"name": "ComboBox_f3avwgp",
+				"values": {
+					"layoutConfig": {
+						"column": 3,
+						"colSpan": 2,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrCorrectiveMeasureAction_skk2vj4",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrCorrectiveMeasureAction_skk2vj4"
+				},
+				"parentName": "GridContainer_ReasonCodeAndNotes",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_hon0m3b",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_hon0m3b_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_f3avwgp",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "Input_16ouhqn",
 				"values": {
 					"layoutConfig": {
-						"column": 2,
-						"colSpan": 3,
-						"row": 1,
+						"column": 1,
+						"colSpan": 4,
+						"row": 2,
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
@@ -669,7 +711,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -678,7 +720,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 2,
+						"row": 3,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -697,7 +739,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -723,7 +765,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 					"layoutConfig": {
 						"column": 3,
 						"colSpan": 2,
-						"row": 2,
+						"row": 3,
 						"rowSpan": 1
 					},
 					"type": "crt.DateTimePicker",
@@ -738,29 +780,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "Button_CreateMeasure",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(Button_CreateMeasure_caption)#",
-					"color": "primary",
-					"disabled": false,
-					"size": "large",
-					"iconPosition": "left-icon",
-					"icon": "add-button-icon",
-					"visible": false,
-					"clicked": {
-						"request": "usr.CreateMeasureTaskRequest",
-						"params": {}
-					},
-					"clickMode": "default"
-				},
-				"parentName": "FlexContainer_hdht802",
-				"propertyName": "items",
-				"index": 2
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -831,6 +851,28 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				"parentName": "FlexContainer_rx674wm",
 				"propertyName": "items",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Button_CreateMeasure",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_CreateMeasure_caption)#",
+					"color": "primary",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "left-icon",
+					"icon": "add-button-icon",
+					"visible": false,
+					"clicked": {
+						"request": "usr.CreateMeasureTaskRequest",
+						"params": {}
+					},
+					"clickMode": "default"
+				},
+				"parentName": "FlexContainer_rx674wm",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -2180,6 +2222,24 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 					"Parameter_4u2l12d": {
 						"modelConfig": {
 							"path": "PDS.PgrAccount"
+						}
+					},
+					"PDS_PgrCorrectiveMeasureAction_skk2vj4": {
+						"modelConfig": {
+							"path": "PDS.PgrCorrectiveMeasureAction"
+						}
+					},
+					"PDS_PgrCorrectiveMeasureAction_skk2vj4_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
 						}
 					}
 				}

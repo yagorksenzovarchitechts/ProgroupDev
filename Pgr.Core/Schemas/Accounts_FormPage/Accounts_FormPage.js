@@ -183,11 +183,10 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					},
 					"columns": [
 						{
-							"id": "43a5726c-acfa-87ee-7b54-e5ee05626e0c",
-							"code": "AddressListDS_PgrWfAddressName",
-							"caption": "#ResourceString(AddressListDS_PgrWfAddressName)#",
-							"dataValueType": 27,
-							"sticky": false
+							"id": "690e72c4-7e7f-acf3-2606-8e518c7adca8",
+							"code": "AddressListDS_PgrWepaformAddressName",
+							"caption": "#ResourceString(AddressListDS_PgrWepaformAddressName)#",
+							"dataValueType": 27
 						},
 						{
 							"id": "380e56aa-3444-c9f4-9a06-01d2453cd40f",
@@ -8085,9 +8084,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					"attributes"
 				],
 				"values": {
-					"AddressListDS_PgrWfAddressName": {
+					"AddressListDS_PgrWepaformAddressName": {
 						"modelConfig": {
-							"path": "AddressListDS.PgrWfAddressName"
+							"path": "AddressListDS.PgrWepaformAddressName"
 						}
 					}
 				}
@@ -8633,8 +8632,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					"attributes"
 				],
 				"values": {
-					"PgrWfAddressName": {
-						"path": "PgrWfAddressName"
+					"PgrWepaformAddressName": {
+						"path": "PgrWepaformAddressName"
 					}
 				}
 			},

@@ -185,7 +185,19 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							"dataValueType": 4,
 							"width": 154
 						}
-					]
+					],
+					"features": {
+						"editable": {
+							"enable": true,
+							"itemsCreation": true
+						},
+						"rows": {
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
+						}
+					}
 				}
 			},
 			{

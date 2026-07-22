@@ -4,10 +4,10 @@
 		<Items>
 			<Item Name="AddonConfig.Rules.129d9168-5e05-2fd0-9a1f-59c3375b186a.Caption" Value="Make required&amp;show for Cancelled: ReasonCodeAndNotes" />
 			<Item Name="AddonConfig.Rules.369ebc62-1d5e-7ce2-8283-2ba9b4f9a5c4.Caption" Value="Show: Visit report tab" />
-			<Item Name="AddonConfig.Rules.7902dc6b-6bf6-6af6-4ef1-574733ecf6b3.Caption" Value="Show for measure: VR &amp; Department" />
+			<Item Name="AddonConfig.Rules.7902dc6b-6bf6-6af6-4ef1-574733ecf6b3.Caption" Value="Show for measure: VR &amp; Dep &amp; Person in charge" />
 			<Item Name="AddonConfig.Rules.805c4786-d0ce-45fb-80a1-8dd0fd956271.Caption" Value="Show create measure task button " />
 			<Item Name="AddonConfig.Rules.89592521-a2f2-2fb4-d7a8-db1a813ae8e8.Caption" Value="Show elements: State no access" />
-			<Item Name="AddonConfig.Rules.aa084e8e-99ec-b762-35be-15840ec7b199.Caption" Value="Make required&amp;show for Done: ReasonCodeAndNotes" />
+			<Item Name="AddonConfig.Rules.aa084e8e-99ec-b762-35be-15840ec7b199.Caption" Value="Required for Done/Cancelled: ReasonCodeAndNotes" />
 			<Item Name="AddonConfig.Rules.b2dd30df-e0fc-d033-d813-09f121a53df1.Caption" Value="Visit reports elements show/hide" />
 			<Item Name="AddonConfig.Rules.b593b9f8-cc39-9bce-0c6f-4f481949d7a6.Caption" Value="Show element: tab Meeting Summary" />
 		</Items>

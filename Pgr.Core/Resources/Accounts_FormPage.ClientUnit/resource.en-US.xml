@@ -109,6 +109,10 @@
 			<Item Name="LocalizableStrings.OpportunitySearchFilter_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.OpportunitySettingsButton_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.Pgr369BudgetCalculationExpansionPanel_title.Value" Value="3-6-9 budget calculations" />
+			<Item Name="LocalizableStrings.Pgr369RunBtn_caption.Value" Value="Run 3-6-9" />
+			<Item Name="LocalizableStrings.Pgr369RunBtn_clicked_params_notificationText.Value" Value="Running 3-6-9 process" />
+			<Item Name="LocalizableStrings.PgrActual3DayOrderIntake_label.Value" Value="3-Day order intake" />
+			<Item Name="LocalizableStrings.PgrCurrentDailyBudget_label.Value" Value="Current daily budget" />
 			<Item Name="LocalizableStrings.ProductsOffered_placeholder.Value" Value="Enter what the company provides or sells" />
 			<Item Name="LocalizableStrings.QuickFilter_nc0ykar_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.QuickFilter_nc0ykar_config_caption.Value" Value="Period" />

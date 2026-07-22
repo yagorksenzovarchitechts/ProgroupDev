@@ -57,6 +57,8 @@
 			<Item Name="NotificationCaption.DisplayValue" Value="[#Process name#]" />
 			<Item Name="Parameters.ProcessSchemaParameter1.Caption" Value="Task ID" />
 			<Item Name="Parameters.ProcessSchemaParameter1.DisplayValue" Value="[#Lookup.Activity.test task overdue.a510b950-a862-4d50-b57b-a520a6ca0542#]" />
+			<Item Name="Parameters.ProcessSchemaParameterCurrentDateAndTime.Caption" Value="Current date and time" />
+			<Item Name="Parameters.ProcessSchemaParameterCurrentDateAndTime.DisplayValue" Value="[#System variable.Current Time and Date#]" />
 			<Item Name="Parameters.ProcessSchemaParameterOverdueDays.Caption" Value="Overdue days" />
 		</Items>
 	</Group>
