@@ -1,4 +1,4 @@
-define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(PgrAccountCompetitorShareHelper)/**SCHEMA_ARGS*/ {
+define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", "@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(PgrAccountCompetitorShareHelper, sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -3032,7 +3032,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					"type": "crt.DateTimePicker",
 					"label": "#ResourceString(PgrSuspensionEndDateLabel)#",
 					"placeholder": "",
-					"readonly": false,
+					"readonly": "$PgrSuspensionReadonly",
 					"labelPosition": "auto",
 					"tooltip": "",
 					"pickerType": "date",
@@ -3055,13 +3055,14 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					},
 					"type": "crt.Checkbox",
 					"value": false,
-					"disabled": false,
+					"disabled": "$PgrSuspensionReadonly",
 					"inversed": false,
 					"label": "#ResourceString(PgrExcludeFrom369Label)#",
 					"ariaLabel": "",
 					"labelPosition": "auto",
 					"tooltip": "",
-					"control": "$PDS_PgrExcludeFrom369"
+					"control": "$PDS_PgrExcludeFrom369",
+					"visible": true
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
@@ -3082,7 +3083,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 					"control": "$PDS_PgrSuspensionReason",
 					"placeholder": "",
 					"tooltip": "",
-					"readonly": false,
+					"readonly": "$PgrSuspensionReadonly",
 					"multiline": true,
 					"labelPosition": "auto",
 					"visible": "$PDS_PgrExcludeFrom369"
@@ -8145,7 +8146,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 								"type": "crt.Required"
 							}
 						}
-					}
+					},
+					"PgrCurrentUserContactId": { "value": "" },
+					"PgrSuspensionReadonly": { "value": true }
 				}
 			},
 			{
@@ -8900,16 +8903,28 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[
 			{
+			    request: "crt.HandleViewModelInitRequest",
+			    handler: async (request, next) => {
+			        const result = await next?.handle(request);
+					const sysValues = await new sdk.SysValuesService().loadSysValues();
+					const currentContactId = sysValues.userContact?.value;
+					request.$context.PgrCurrentUserContactId = currentContactId || "";
+			        
+					return result;
+			    }
+			},
+			{
 			    request: "crt.HandleViewModelAttributeChangeRequest",
 			    handler: async (request, next) => {
-			        // CMVP-127: reason + end date are required only while the customer is
-			        // suspended (PgrExcludeFrom369 checked). Toggle the crt.Required validators
-			        // (bound in viewModelConfig) via enable/disableAttributeValidator. This handler
-			        // also fires after the datasource loads, so the state is correct when an
-			        // existing record opens.
+			        const unwrap = (v) => {
+			            if (v && typeof v === "object") {
+			                if ("__zone_symbol__value" in v) { return v.__zone_symbol__value; }
+			                if (v.value !== undefined) { return v.value; }
+			            }
+			            return v;
+			        };
 			        if (request.attributeName === "PDS_PgrExcludeFrom369") {
-			            const unwrap = (v) => (v && typeof v === "object" && "__zone_symbol__value" in v)
-			                ? v.__zone_symbol__value : v;
+			            // Reason + end date are required only while suspended — toggle the crt.Required validators.
 			            const isExcluded = unwrap(await request.$context.PDS_PgrExcludeFrom369) === true;
 			            ["PDS_PgrSuspensionEndDate", "PDS_PgrSuspensionReason"].forEach((field) => {
 			                if (isExcluded) {
@@ -8918,6 +8933,16 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 			                    request.$context.disableAttributeValidator(field, "required");
 			                }
 			            });
+			        } else if (request.attributeName === "PDS_PgrSalesDirector_2tiaywd") {
+			            // Sales Director changed on the page — re-evaluate visibility (contact id is
+						// cached on init).
+						const currentContactId =
+                            await request.$context.PgrCurrentUserContactId;
+                        const salesDirectorId = unwrap(
+                            await request.$context.PDS_PgrSalesDirector_2tiaywd,
+                        );
+                        const isSalesDirector = currentContactId === salesDirectorId;
+                        request.$context.PgrSuspensionReadonly = !isSalesDirector;
 			        }
 			        return next?.handle(request);
 			    }
