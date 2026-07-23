@@ -13,8 +13,6 @@
 			<Item Name="Columns.Parent.Caption" Value="Parent Account" />
 			<Item Name="Columns.Pgr369ThresholdAbsolute.Caption" Value="Absoluter 369 Schwellwert" />
 			<Item Name="Columns.Pgr369ThresholdPercentage.Caption" Value="Prozentuale 369 Schwellwert" />
-			<Item Name="Columns.PgrActual3DayOrderIntake.Caption" Value="3-Tage-Auftragseingang" />
-			<Item Name="Columns.PgrCurrentDailyBudget.Caption" Value="Aktuelles Tagesbudget" />
 			<Item Name="Columns.PgrAccountClassification.Caption" Value="Klassifizierung" />
 			<Item Name="Columns.PgrAccountLevel.Caption" Value="Stufe" />
 			<Item Name="Columns.PgrAccountManagerCode.Caption" Value="VKL Kürzel" />
@@ -35,8 +33,6 @@
 			<Item Name="Columns.PgrErpSystem.Caption" Value="ERP system provider" />
 			<Item Name="Columns.PgrExceedingCapacity.Caption" Value="Kapazitätsüberschreitung" />
 			<Item Name="Columns.PgrExcludeFrom369.Caption" Value="Von 3-6-9 ausschließen" />
-			<Item Name="Columns.PgrSuspensionEndDate.Caption" Value="Aussetzung Enddatum" />
-			<Item Name="Columns.PgrSuspensionReason.Caption" Value="Aussetzungsgrund" />
 			<Item Name="Columns.PgrGroupAffiliation.Caption" Value="Gruppe" />
 			<Item Name="Columns.PgrHasEInvoicing.Caption" Value="E-invocing Prozess" />
 			<Item Name="Columns.PgrHasInvoiceMailprocess.Caption" Value="PDF Rechnung Prozess" />
@@ -61,6 +57,8 @@
 			<Item Name="Columns.PgrSensitiveToOverDelivery.Caption" Value="Überlieferungssensibel" />
 			<Item Name="Columns.PgrServiceTeamLead.Caption" Value="ID Teamleiter" />
 			<Item Name="Columns.PgrSpecialFeatures.Caption" Value="Besonderheiten" />
+			<Item Name="Columns.PgrSuspensionEndDate.Caption" Value="Aussetzung Enddatum" />
+			<Item Name="Columns.PgrSuspensionReason.Caption" Value="Aussetzungsgrund" />
 			<Item Name="Columns.PgrVatNumber.Caption" Value="Umsatzsteuernummer" />
 			<Item Name="Columns.PgrWepaformCustomerId.Caption" Value="Wepaform Kundennummer" />
 			<Item Name="Columns.PgrWorkingWidth.Caption" Value="Arbeitsbreite" />

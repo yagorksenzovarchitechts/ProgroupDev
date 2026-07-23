@@ -2,6 +2,7 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="AddonConfig.Rules.0bd46725-f069-bada-de3d-fd7e1c3cc5a4.Caption" Value="Set values: Account (customer)" />
 			<Item Name="AddonConfig.Rules.129ad6ec-d7f4-015a-bf4a-4f528c64f3c3.Caption" Value="Make optional for measure: Owner/Role" />
 			<Item Name="AddonConfig.Rules.47c21520-1017-dcf1-35e6-a12a90e86034.Caption" Value="ChildRule-dfbeff71-5edc-ab9e-5b28-08de2946b54c-ClearValue" />
 			<Item Name="AddonConfig.Rules.5c876047-2562-2a90-9c03-357ba1cb1bd1.Caption" Value="Rules for types &lt;&gt;  Meeting, Visit, Visit call" />

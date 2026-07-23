@@ -3021,35 +3021,11 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
-				"name": "PgrSuspensionEndDate",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.DateTimePicker",
-					"label": "#ResourceString(PgrSuspensionEndDateLabel)#",
-					"placeholder": "",
-					"readonly": "$PgrSuspensionReadonly",
-					"labelPosition": "auto",
-					"tooltip": "",
-					"pickerType": "date",
-					"control": "$PDS_PgrSuspensionEndDate",
-					"visible": "$PDS_PgrExcludeFrom369"
-				},
-				"parentName": "GridContainer_8plbcqj",
-				"propertyName": "items",
-				"index": 5
-			},
-			{
-				"operation": "insert",
 				"name": "PgrExcludeFrom369",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
-						"colSpan": 1,
+						"colSpan": 2,
 						"row": 4,
 						"rowSpan": 1
 					},
@@ -3066,6 +3042,30 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "PgrSuspensionEndDate",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"label": "#ResourceString(PgrSuspensionEndDateLabel)#",
+					"placeholder": "",
+					"readonly": "$PgrSuspensionReadonly",
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "date",
+					"control": "$PDS_PgrSuspensionEndDate",
+					"visible": "$PDS_PgrExcludeFrom369"
+				},
+				"parentName": "GridContainer_8plbcqj",
+				"propertyName": "items",
 				"index": 6
 			},
 			{
@@ -3073,8 +3073,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"name": "PgrSuspensionReason",
 				"values": {
 					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
+						"column": 2,
+						"colSpan": 1,
 						"row": 5,
 						"rowSpan": 1
 					},
@@ -8909,7 +8909,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					const sysValues = await new sdk.SysValuesService().loadSysValues();
 					const currentContactId = sysValues.userContact?.value;
 					request.$context.PgrCurrentUserContactId = currentContactId || "";
-			        
+
 					return result;
 			    }
 			},

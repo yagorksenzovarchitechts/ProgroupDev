@@ -110,8 +110,8 @@
 			<Item Name="LocalizableStrings.PgrActual3DayOrderIntake_label.Value" Value="3-Day order intake" />
 			<Item Name="LocalizableStrings.PgrCurrentDailyBudget_label.Value" Value="Current daily budget" />
 			<Item Name="LocalizableStrings.PgrExcludeFrom369Label.Value" Value="Exclude from 3-6-9" />
-			<Item Name="LocalizableStrings.PgrSuspensionEndDateLabel.Value" Value="Suspension end date" />
 			<Item Name="LocalizableStrings.PgrSuspensionEndDateFutureError.Value" Value="Suspension end date must be later than today." />
+			<Item Name="LocalizableStrings.PgrSuspensionEndDateLabel.Value" Value="Suspension end date" />
 			<Item Name="LocalizableStrings.PgrSuspensionReasonLabel.Value" Value="Suspension reason" />
 			<Item Name="LocalizableStrings.ProductsOffered_placeholder.Value" Value="Enter what the company provides or sells" />
 			<Item Name="LocalizableStrings.QuickFilter_nc0ykar_caption.Value" Value="Quick filter" />

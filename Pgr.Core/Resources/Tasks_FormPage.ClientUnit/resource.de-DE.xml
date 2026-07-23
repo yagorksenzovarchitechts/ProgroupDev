@@ -14,7 +14,6 @@
 			<Item Name="LocalizableStrings.CreateMeasure_Success_message.Value" Value="Maßnahme-Aufgabe erstellt." />
 			<Item Name="LocalizableStrings.ExpansionPanelMeetingTranscripts_title.Value" Value="Meeting-Transkripte" />
 			<Item Name="LocalizableStrings.ExpansionPanel_luhcskb_title.Value" Value="Untergeordnete Aufgaben" />
-			<Item Name="LocalizableStrings.ExpansionPanel_wki6rii_title.Value" Value="Info" />
 			<Item Name="LocalizableStrings.GridDetailAddBtnNewTranscript_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.GridDetailAddBtnRefreshTranscript_caption.Value" Value="Aktualisieren" />
 			<Item Name="LocalizableStrings.GridDetailExportDataBtn_MeetingTranscripts_caption.Value" Value="Excel-Export" />

@@ -8,8 +8,6 @@
 			<Item Name="Columns.Owner.Caption" Value="Account owner" />
 			<Item Name="Columns.Pgr369ThresholdAbsolute.Caption" Value="369 threshold absolute" />
 			<Item Name="Columns.Pgr369ThresholdPercentage.Caption" Value="369 threshold percentage" />
-			<Item Name="Columns.PgrActual3DayOrderIntake.Caption" Value="3-Day order intake" />
-			<Item Name="Columns.PgrCurrentDailyBudget.Caption" Value="Current daily budget" />
 			<Item Name="Columns.PgrAccountClassification.Caption" Value="Classification" />
 			<Item Name="Columns.PgrAccountLevel.Caption" Value="Level (Remove)" />
 			<Item Name="Columns.PgrAccountManagerCode.Caption" Value="Account owner code (delete)" />
@@ -31,8 +29,6 @@
 			<Item Name="Columns.PgrErpSystem.Caption" Value="ERP system provider" />
 			<Item Name="Columns.PgrExceedingCapacity.Caption" Value="Exceeding capacity" />
 			<Item Name="Columns.PgrExcludeFrom369.Caption" Value="Exclude from 3-6-9" />
-			<Item Name="Columns.PgrSuspensionEndDate.Caption" Value="Suspension end date" />
-			<Item Name="Columns.PgrSuspensionReason.Caption" Value="Suspension reason" />
 			<Item Name="Columns.PgrGroupAffiliation.Caption" Value="Group affiliation" />
 			<Item Name="Columns.PgrHasEInvoicing.Caption" Value="E-invoicing process" />
 			<Item Name="Columns.PgrHasInvoiceMailprocess.Caption" Value="PDF invoice process" />
@@ -59,6 +55,8 @@
 			<Item Name="Columns.PgrSensitiveToOverDelivery.Caption" Value="Sensitive to over-delivery" />
 			<Item Name="Columns.PgrServiceTeamLead.Caption" Value="Customer service team lead name" />
 			<Item Name="Columns.PgrSpecialFeatures.Caption" Value="Special features" />
+			<Item Name="Columns.PgrSuspensionEndDate.Caption" Value="Suspension end date" />
+			<Item Name="Columns.PgrSuspensionReason.Caption" Value="Suspension reason" />
 			<Item Name="Columns.PgrVatNumber.Caption" Value="VAT number" />
 			<Item Name="Columns.PgrWepaformCustomerId.Caption" Value="Wepaform Customer ID" />
 			<Item Name="Columns.PgrWepaformName.Caption" Value="Wepaform name" />

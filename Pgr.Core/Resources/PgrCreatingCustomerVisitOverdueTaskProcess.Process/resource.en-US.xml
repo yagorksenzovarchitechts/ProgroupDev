@@ -84,6 +84,7 @@
 			<Item Name="NotificationCaption.Caption" Value="Process instance caption" />
 			<Item Name="NotificationCaption.DisplayValue" Value="[#Process name#]" />
 			<Item Name="Parameters.Account.Caption" Value="Account" />
+			<Item Name="Parameters.Account.DisplayValue" Value="[#Lookup.Account.TestCustomer.f66e9386-183e-418b-af24-4d2ae776da92#]" />
 			<Item Name="Parameters.AccountCreatedOnDate.Caption" Value="Account created on date" />
 			<Item Name="Parameters.AccountCreatedOnDate.DisplayValue" Value="[#Read account.First item of resulting collection.Created on#]" />
 			<Item Name="Parameters.AccountLastVisitDate.Caption" Value="Account last visit date" />

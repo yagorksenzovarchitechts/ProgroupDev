@@ -48,8 +48,8 @@
 			<Item Name="LocalizableStrings.PgrActual3DayOrderIntake_label.Value" Value="3-Tage-Auftragseingang" />
 			<Item Name="LocalizableStrings.PgrCurrentDailyBudget_label.Value" Value="Aktuelles Tagesbudget" />
 			<Item Name="LocalizableStrings.PgrExcludeFrom369Label.Value" Value="Von 3-6-9 ausschließen" />
-			<Item Name="LocalizableStrings.PgrSuspensionEndDateLabel.Value" Value="Aussetzung Enddatum" />
 			<Item Name="LocalizableStrings.PgrSuspensionEndDateFutureError.Value" Value="Das Aussetzung-Enddatum muss nach dem heutigen Datum liegen." />
+			<Item Name="LocalizableStrings.PgrSuspensionEndDateLabel.Value" Value="Aussetzung Enddatum" />
 			<Item Name="LocalizableStrings.PgrSuspensionReasonLabel.Value" Value="Aussetzungsgrund" />
 			<Item Name="LocalizableStrings.ProductsOffered_placeholder.Value" Value="Geben Sie ein, was das Unternehmen anbietet oder verkauft." />
 			<Item Name="LocalizableStrings.RecommendedProductExpansionPanel_title.Value" Value="Produktempfehlungen" />
