@@ -258,11 +258,16 @@ namespace Pgr.Core
             return esq;
         }
 
-        /// <summary>The customer's open (not finished) 3-6-9 alert task, or null if there is none.</summary>
+        /// <summary>
+        ///     The customer's open (not finished) 3-6-9 alert task, or null if there is none. Loads
+        ///     all schema columns (not just "Owner") because CMVP-126 escalation may need to
+        ///     SetColumnValue+Save this same entity directly when no Measure task exists yet — a
+        ///     narrower ESQ projection would throw ItemNotFoundException on the unset column.
+        /// </summary>
         private Entity GetOpenAlertTask(Guid accountId)
         {
             var esq = CreateOpenActivityQuery(accountId, PgrConstants.ActivityCategory.Category369);
-            esq.AddColumn("Owner");
+            esq.AddAllSchemaColumns();
             return esq.GetEntityCollection(_userConnection).FirstOrDefault();
         }
 
@@ -447,6 +452,10 @@ namespace Pgr.Core
         private void CloseOpenMeasureTasks(Guid accountId)
         {
             var esq = CreateOpenActivityQuery(accountId, PgrConstants.ActivityCategory.Measure);
+            // Load all schema columns: CreateOpenActivityQuery only adds filter columns (Account,
+            // ActivityCategory, Status.Finish), so without this SetColumnValue("StatusId", ...) below
+            // throws ItemNotFoundException — "Status"/"StatusId" was never projected into the entity.
+            esq.AddAllSchemaColumns();
             var tasks = esq.GetEntityCollection(_userConnection);
             var canceledStatusId = ActivityConsts.CanceledStatusUId;
             foreach (var task in tasks)
