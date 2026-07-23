@@ -160,7 +160,7 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							"width": 199
 						},
 						{
-							"id": "370392a6-520b-1fab-3b57-ce78fed6d3c7",
+							"id": "577ddf17-f30c-986c-5db6-77c04ece11ae",
 							"code": "PDS_Account",
 							"caption": "#ResourceString(PDS_Account)#",
 							"dataValueType": 10

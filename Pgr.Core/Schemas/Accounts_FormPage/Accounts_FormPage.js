@@ -2849,6 +2849,33 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 			},
 			{
 				"operation": "insert",
+				"name": "Pgr369RunBtn",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Pgr369RunBtn_caption)#",
+					"color": "primary",
+					"size": "medium",
+					"iconPosition": "only-text",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "Pgr369Process",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"notificationText": "#ResourceString(Pgr369RunBtn_clicked_params_notificationText)#",
+							"recordIdProcessParameterName": "AccountId"
+						}
+					},
+					"clickMode": "default"
+				},
+				"parentName": "FlexContainer_3dac0wy",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "GridContainer_8plbcqj",
 				"values": {
 					"type": "crt.GridContainer",
@@ -2994,36 +3021,75 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 			},
 			{
 				"operation": "insert",
-				"name": "Pgr369RunBtn",
+				"name": "PgrExcludeFrom369",
 				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(Pgr369RunBtn_caption)#",
-					"color": "primary",
-					"size": "medium",
-					"iconPosition": "only-text",
-					"visible": true,
-					"clicked": {
-						"request": "crt.RunBusinessProcessRequest",
-						"params": {
-							"processName": "Pgr369Process",
-							"processRunType": "ForTheSelectedPage",
-							"saveAtProcessStart": true,
-							"showNotification": true,
-							"notificationText": "#ResourceString(Pgr369RunBtn_clicked_params_notificationText)#",
-							"recordIdProcessParameterName": "AccountId"
-						}
-					},
-					"clickMode": "default",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
 						"row": 4,
 						"rowSpan": 1
-					}
+					},
+					"type": "crt.Checkbox",
+					"value": false,
+					"disabled": false,
+					"inversed": false,
+					"label": "#ResourceString(PgrExcludeFrom369Label)#",
+					"ariaLabel": "",
+					"labelPosition": "auto",
+					"tooltip": "",
+					"control": "$PDS_PgrExcludeFrom369"
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
 				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "PgrSuspensionEndDate",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"label": "#ResourceString(PgrSuspensionEndDateLabel)#",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "date",
+					"control": "$PDS_PgrSuspensionEndDate",
+					"visible": "$PDS_PgrExcludeFrom369"
+				},
+				"parentName": "GridContainer_8plbcqj",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "PgrSuspensionReason",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "#ResourceString(PgrSuspensionReasonLabel)#",
+					"control": "$PDS_PgrSuspensionReason",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": true,
+					"labelPosition": "auto",
+					"visible": "$PDS_PgrExcludeFrom369"
+				},
+				"parentName": "GridContainer_8plbcqj",
+				"propertyName": "items",
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -8048,6 +8114,37 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 						"modelConfig": {
 							"path": "PDS.PgrCurrentDailyBudget"
 						}
+					},
+					"PDS_PgrExcludeFrom369": {
+						"modelConfig": {
+							"path": "PDS.PgrExcludeFrom369"
+						}
+					},
+					"PDS_PgrSuspensionEndDate": {
+						"modelConfig": {
+							"path": "PDS.PgrSuspensionEndDate"
+						},
+						"validators": {
+							"required": {
+								"type": "crt.Required"
+							},
+							"futureDate": {
+								"type": "Pgr.FutureDate",
+								"params": {
+									"message": "#ResourceString(PgrSuspensionEndDateFutureError)#"
+								}
+							}
+						}
+					},
+					"PDS_PgrSuspensionReason": {
+						"modelConfig": {
+							"path": "PDS.PgrSuspensionReason"
+						},
+						"validators": {
+							"required": {
+								"type": "crt.Required"
+							}
+						}
 					}
 				}
 			},
@@ -8803,6 +8900,29 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[
 			{
+			    request: "crt.HandleViewModelAttributeChangeRequest",
+			    handler: async (request, next) => {
+			        // CMVP-127: reason + end date are required only while the customer is
+			        // suspended (PgrExcludeFrom369 checked). Toggle the crt.Required validators
+			        // (bound in viewModelConfig) via enable/disableAttributeValidator. This handler
+			        // also fires after the datasource loads, so the state is correct when an
+			        // existing record opens.
+			        if (request.attributeName === "PDS_PgrExcludeFrom369") {
+			            const unwrap = (v) => (v && typeof v === "object" && "__zone_symbol__value" in v)
+			                ? v.__zone_symbol__value : v;
+			            const isExcluded = unwrap(await request.$context.PDS_PgrExcludeFrom369) === true;
+			            ["PDS_PgrSuspensionEndDate", "PDS_PgrSuspensionReason"].forEach((field) => {
+			                if (isExcluded) {
+			                    request.$context.enableAttributeValidator(field, "required");
+			                } else {
+			                    request.$context.disableAttributeValidator(field, "required");
+			                }
+			            });
+			        }
+			        return next?.handle(request);
+			    }
+			},
+			{
 			    request: "crt.SaveRecordsRequest",
 			    handler: async (request, next) => {
 			        // Validate the "delivery + competitor shares = 100%" rule on the competitors grid
@@ -8884,6 +9004,30 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper"]/
 			}
 		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
-		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
+		validators: /**SCHEMA_VALIDATORS*/{
+			"Pgr.FutureDate": {
+				"validator": function(config) {
+					return function(control) {
+						const value = control.value;
+						// Empty is handled by the crt.Required validator; skip here.
+						if (!value) {
+							return null;
+						}
+						const endDate = new Date(value);
+						endDate.setHours(0, 0, 0, 0);
+						const today = new Date();
+						today.setHours(0, 0, 0, 0);
+						// CMVP-127: suspension end date must be strictly later than today.
+						return endDate.getTime() > today.getTime()
+							? null
+							: { "Pgr.FutureDate": { message: config.message } };
+					};
+				},
+				"params": [
+					{ "name": "message" }
+				],
+				"async": false
+			}
+		}/**SCHEMA_VALIDATORS*/
 	};
 });

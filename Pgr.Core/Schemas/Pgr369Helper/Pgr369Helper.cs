@@ -90,7 +90,7 @@ namespace Pgr.Core
         /// </summary>
         public Pgr369DailyAction ProcessAccount(Guid accountId)
         {
-            var account = GetAccount(accountId, "PgrOrderIntakeDayCounter");
+            var account = GetAccount(accountId, "PgrOrderIntakeDayCounter", "PgrSuspensionEndDate");
             if (account == null)
             {
                 return Pgr369DailyAction.None;
@@ -98,9 +98,22 @@ namespace Pgr.Core
 
             var counter = account.GetTypedColumnValue<int>("PgrOrderIntakeDayCounter");
 
-            // Suspended by Sales Director (CMVP-127), or a non-working day (CMVP-123: the
-            // counter only advances on working days) — nothing to do this run.
-            if (counter == SuspendedCounter || !_workingDayHelper.IsWorkingDay(DateTime.Today, accountId))
+            // Suspended by Sales Director (CMVP-127): the counter is parked at -1 and the daily
+            // process skips the customer. The suspension ends automatically the day after the
+            // defined end date — reset the counter to 0 and clear the suspension, then normal
+            // counting resumes on the next run.
+            if (counter == SuspendedCounter)
+            {
+                if (IsSuspensionExpired(account))
+                {
+                    ReactivateAccount(accountId);
+                }
+
+                return Pgr369DailyAction.None;
+            }
+
+            // The counter only advances on working days (CMVP-123) — nothing to do otherwise.
+            if (!_workingDayHelper.IsWorkingDay(DateTime.Today, accountId))
             {
                 return Pgr369DailyAction.None;
             }
@@ -391,6 +404,40 @@ namespace Pgr.Core
                 entity.SetColumnValue("PgrOrderIntakeDayCounter", value);
                 entity.Save(false);
             }
+        }
+
+        /// <summary>
+        ///     True when a suspended customer's end date (CMVP-127) has passed — reactivation
+        ///     happens the day *after* the defined end date. A suspension without an end date
+        ///     never auto-expires (it can still be lifted manually by clearing the checkbox).
+        /// </summary>
+        private static bool IsSuspensionExpired(Entity account)
+        {
+            var endDate = account.GetTypedColumnValue<DateTime>("PgrSuspensionEndDate");
+            return endDate != DateTime.MinValue && DateTime.Today.Date > endDate.Date;
+        }
+
+        /// <summary>
+        ///     Auto-reactivates a suspended customer (CMVP-127): resets the day counter to 0 and
+        ///     clears the suspension flag, reason and end date so the daily process resumes
+        ///     counting on the next run. The Account event listener keeps counter/flag in sync
+        ///     for manual toggles; this handles the automatic end-of-suspension case.
+        /// </summary>
+        private void ReactivateAccount(Guid accountId)
+        {
+            var schema = _userConnection.EntitySchemaManager.GetInstanceByName("Account");
+            var entity = schema.CreateEntity(_userConnection);
+            entity.UseAdminRights = false;
+            if (!entity.FetchFromDB(accountId, false))
+            {
+                return;
+            }
+
+            entity.SetColumnValue("PgrOrderIntakeDayCounter", 0);
+            entity.SetColumnValue("PgrExcludeFrom369", false);
+            entity.SetColumnValue("PgrSuspensionReason", string.Empty);
+            entity.SetColumnValue("PgrSuspensionEndDate", null);
+            entity.Save(false);
         }
 
         /// <summary>

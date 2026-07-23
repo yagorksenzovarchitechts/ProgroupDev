@@ -2,10 +2,6 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
-			<Item Name="LocalizableStrings.PgrActual3DayOrderIntake_label.Value" Value="3-Tage-Auftragseingang" />
-			<Item Name="LocalizableStrings.PgrCurrentDailyBudget_label.Value" Value="Aktuelles Tagesbudget" />
-			<Item Name="LocalizableStrings.Pgr369RunBtn_caption.Value" Value="3-6-9 ausführen" />
-			<Item Name="LocalizableStrings.Pgr369RunBtn_clicked_params_notificationText.Value" Value="3-6-9-Prozess wird ausgeführt" />
 			<Item Name="LocalizableStrings.AccountCompetitorsExpansionPanel_title.Value" Value="Wettbewerber im Kundenkonto" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
@@ -51,6 +47,10 @@
 			<Item Name="LocalizableStrings.Pgr369RunBtn_clicked_params_notificationText.Value" Value="3-6-9-Prozess wird ausgeführt" />
 			<Item Name="LocalizableStrings.PgrActual3DayOrderIntake_label.Value" Value="3-Tage-Auftragseingang" />
 			<Item Name="LocalizableStrings.PgrCurrentDailyBudget_label.Value" Value="Aktuelles Tagesbudget" />
+			<Item Name="LocalizableStrings.PgrExcludeFrom369Label.Value" Value="Von 3-6-9 ausschließen" />
+			<Item Name="LocalizableStrings.PgrSuspensionEndDateFutureError.Value" Value="Das Aussetzung-Enddatum muss nach dem heutigen Datum liegen." />
+			<Item Name="LocalizableStrings.PgrSuspensionEndDateLabel.Value" Value="Aussetzung Enddatum" />
+			<Item Name="LocalizableStrings.PgrSuspensionReasonLabel.Value" Value="Aussetzungsgrund" />
 			<Item Name="LocalizableStrings.ProductsOffered_placeholder.Value" Value="Geben Sie ein, was das Unternehmen anbietet oder verkauft." />
 			<Item Name="LocalizableStrings.RecommendedProductExpansionPanel_title.Value" Value="Produktempfehlungen" />
 			<Item Name="LocalizableStrings.RecommendedProductExportDataButton_caption.Value" Value="Excel-Export" />

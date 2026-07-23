@@ -50,13 +50,6 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
 + MetaData.Schema.B2 {
-  "UId": "f206ba9a-14d2-5b87-0560-a4f9f5023f17",
-  "A2": "ExpansionPanel_wki6rii_title",
-  "A3": "795095fb-5730-49f5-92e6-feca2a16c2f9",
-  "A4": "795095fb-5730-49f5-92e6-feca2a16c2f9",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
-}
-+ MetaData.Schema.B2 {
   "UId": "d04f43df-108e-3389-cc3b-d1a0c8ef7969",
   "A2": "CloseButton_caption",
   "A3": "795095fb-5730-49f5-92e6-feca2a16c2f9",
@@ -252,6 +245,20 @@
   "A4": "795095fb-5730-49f5-92e6-feca2a16c2f9",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
++ MetaData.Schema.B2 {
+  "UId": "54d1f505-3a22-522e-1836-94d7fd7df6f0",
+  "A2": "Button_anz5vn2_caption",
+  "A3": "795095fb-5730-49f5-92e6-feca2a16c2f9",
+  "A4": "795095fb-5730-49f5-92e6-feca2a16c2f9",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "d6dd0a63-3fb2-31f6-e5f8-59d31147425b",
+  "A2": "ExpansionPanel_17p0x4t_title",
+  "A3": "795095fb-5730-49f5-92e6-feca2a16c2f9",
+  "A4": "795095fb-5730-49f5-92e6-feca2a16c2f9",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
 = MetaData.Schema.B2.["e3d912a6-8372-1433-34ad-3c26a189de52"].A4 "795095fb-5730-49f5-92e6-feca2a16c2f9"
 = MetaData.Schema.B2.["e3d912a6-8372-1433-34ad-3c26a189de52"].A5 "a111acf5-75e5-41e6-b93a-bebf243e47a5"
 = MetaData.Schema.B2.["5ef435ab-b0b2-f6bb-c361-3a38835b812d"].A4 "795095fb-5730-49f5-92e6-feca2a16c2f9"
@@ -398,7 +405,6 @@
   "56059129-bab1-92f9-25e1-87d4fbec8280",
   "18ec8185-d19e-e1da-5d2d-9024d5c5c9fb",
   "b107490c-9466-616c-75a6-0edd53a972c7",
-  "f206ba9a-14d2-5b87-0560-a4f9f5023f17",
   "d04f43df-108e-3389-cc3b-d1a0c8ef7969",
   "50a1d898-9410-0ab2-6daf-4a4c389e43c5",
   "89f95652-e99b-fdc6-fd6c-4b36560442b3",
@@ -427,6 +433,8 @@
   "52053f0d-c18d-2991-6717-63dc74a5a96f",
   "d2f62b19-21bd-35d4-dd22-165eaa0359a5",
   "98bc72a1-a551-531f-9452-dca040917c26",
+  "54d1f505-3a22-522e-1836-94d7fd7df6f0",
+  "d6dd0a63-3fb2-31f6-e5f8-59d31147425b",
   "e3d912a6-8372-1433-34ad-3c26a189de52",
   "5ef435ab-b0b2-f6bb-c361-3a38835b812d",
   "d991f02c-bb3e-16c9-a294-8970da5937bf",

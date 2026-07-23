@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value="Excel-Export" />
+			<Item Name="LocalizableStrings.PgrSuspendedAt369QuickFilter_config_caption.Value" Value="Ausgesetzt bei 3-6-9" />
 			<Item Name="LocalizableStrings.QuickFilter_0yd6qle_config_caption.Value" Value="Vertriebsregion" />
 			<Item Name="LocalizableStrings.QuickFilter_5bm0ul6_config_caption.Value" Value="Vertriebsregion" />
 			<Item Name="LocalizableStrings.QuickFilter_iihiiel_config_caption.Value" Value="Vertriebsregion" />

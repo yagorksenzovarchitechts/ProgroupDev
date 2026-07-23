@@ -9,6 +9,7 @@
 			<Item Name="LocalizableStrings.DataGrid_0kcsg12DS_PgrSalesDirector.Value" Value="Sales Director" />
 			<Item Name="LocalizableStrings.DataTable_AssignTerritoryBulkAction_caption.Value" Value="Assign territory" />
 			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.PgrSuspendedAt369QuickFilter_config_caption.Value" Value="Suspended at 3-6-9" />
 			<Item Name="LocalizableStrings.QuickFilter_0yd6qle_caption.Value" Value="Territory" />
 			<Item Name="LocalizableStrings.QuickFilter_0yd6qle_config_caption.Value" Value="Type" />
 			<Item Name="LocalizableStrings.QuickFilter_2k9syxw_caption.Value" Value="Territory" />
@@ -19,6 +20,7 @@
 			<Item Name="LocalizableStrings.QuickFilter_iihiiel_caption.Value" Value="Territory" />
 			<Item Name="LocalizableStrings.QuickFilter_iihiiel_config_caption.Value" Value="Sales Person" />
 			<Item Name="LocalizableStrings.QuickFilter_mchlmde_caption.Value" Value="Territory" />
+			<Item Name="LocalizableStrings.QuickFilter_og3pxmu_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.QuickFilter_vwkukhh_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.TerritoryQuickFilter_caption.Value" Value="Territory" />
