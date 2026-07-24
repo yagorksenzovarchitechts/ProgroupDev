@@ -1,0 +1,76 @@
+{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "95fccdbe-c947-41f2-9287-bfe292b93713"
+        },
+        {
+          "SchemaColumnUId": "34982036-bcf9-408a-a293-d6b35c45edd5",
+          "Value": "bb8e1208-ecf7-41d1-adda-f7f2aa86f39f",
+          "DisplayValue": "Power BI client ID"
+        },
+        {
+          "SchemaColumnUId": "9e46bb69-9788-423c-b7cd-4c624081082d",
+          "Value": "995d250a-4132-46fe-8646-b4b78b591dfd",
+          "DisplayValue": "Power BI"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "0e983dfb-225c-4616-9e0a-a0a147065fd5"
+        },
+        {
+          "SchemaColumnUId": "34982036-bcf9-408a-a293-d6b35c45edd5",
+          "Value": "781843d0-6a5a-4545-9fb7-48a1280ef8ab",
+          "DisplayValue": "Power BI tenant ID"
+        },
+        {
+          "SchemaColumnUId": "9e46bb69-9788-423c-b7cd-4c624081082d",
+          "Value": "995d250a-4132-46fe-8646-b4b78b591dfd",
+          "DisplayValue": "Power BI"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "ca6a632d-11a9-48f2-a84c-f2d2d250c604"
+        },
+        {
+          "SchemaColumnUId": "34982036-bcf9-408a-a293-d6b35c45edd5",
+          "Value": "b729aea9-f604-4ca6-9f7f-4b2ef7d538e1",
+          "DisplayValue": "Power BI report ID"
+        },
+        {
+          "SchemaColumnUId": "9e46bb69-9788-423c-b7cd-4c624081082d",
+          "Value": "995d250a-4132-46fe-8646-b4b78b591dfd",
+          "DisplayValue": "Power BI"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "fef1fd93-365a-4290-987a-aaf3884bbb5b"
+        },
+        {
+          "SchemaColumnUId": "34982036-bcf9-408a-a293-d6b35c45edd5",
+          "Value": "1e1de161-5a4b-4259-ac0d-786a79847a98",
+          "DisplayValue": "Power BI report page name"
+        },
+        {
+          "SchemaColumnUId": "9e46bb69-9788-423c-b7cd-4c624081082d",
+          "Value": "995d250a-4132-46fe-8646-b4b78b591dfd",
+          "DisplayValue": "Power BI"
+        }
+      ]
+    }
+  ]
+}
