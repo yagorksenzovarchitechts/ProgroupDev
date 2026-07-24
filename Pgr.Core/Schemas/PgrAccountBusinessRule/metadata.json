@@ -89,6 +89,74 @@
               }
             ],
             "BR3": "BusinessRule_9070014"
+          },
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+            "UId": "bcd6eed8-9cf0-040e-a7e6-cbff5b72a8ac",
+            "BR1": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+                "UId": "1b3feb6e-c793-c068-54fb-639da8680596",
+                "BRC1": {
+                  "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleGroupCondition",
+                  "UId": "a203a80d-8b68-a422-9a17-2b6771f65b7b",
+                  "BGC1": 1,
+                  "BGC2": [
+                    {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+                      "UId": "ec11feb6-547b-6591-954a-aae6870974ea",
+                      "BCO1": {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+                        "UId": "fb450931-b2bf-56d9-a31c-9f03dd7585a1",
+                        "BRE1": "EmailText",
+                        "BRE2": "AttributeValue",
+                        "BRX1": "PgrInvoiceMailAddress"
+                      },
+                      "BCO3": 1
+                    }
+                  ]
+                },
+                "BRC2": [
+                  {
+                    "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionSetValues",
+                    "UId": "5ccc936b-f951-9aa8-3a22-f89ef5ac8d7b",
+                    "BSVS1": [
+                      {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleSetValueItem",
+                        "UId": "3aa826c1-1347-a0a4-969c-bbad20c5dcb4",
+                        "BRA2": {
+                          "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+                          "UId": "6f45e1fc-5adf-6958-c893-c2736d3d4dd0",
+                          "BRE1": "Boolean",
+                          "BRE2": "AttributeValue",
+                          "BRX1": "PgrHasInvoiceMailprocess",
+                          "BRX2": "null"
+                        },
+                        "BRA3": {
+                          "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+                          "UId": "1e8b86cf-47a1-caba-1464-6052bef68e0d",
+                          "BRE1": "Boolean",
+                          "BVE1": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "BR2": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "0d3ac36d-7f52-40d1-d890-48e58f76cc25",
+                "BRT2": 2
+              },
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "1c0f32a6-fbaf-7aad-596d-27182e8741dd",
+                "BRT1": "PgrInvoiceMailAddress"
+              }
+            ],
+            "BR3": "BusinessRule_ec406d8"
           }
         ]
       }

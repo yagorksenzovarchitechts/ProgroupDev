@@ -1832,7 +1832,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"title": "#ResourceString(ExpansionPanel_ilw1gpx_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": false,
+					"expanded": true,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -2886,7 +2886,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					],
 					"gap": {
 						"columnGap": "large",
-						"rowGap": null
+						"rowGap": "none"
 					},
 					"styles": {
 						"overflow-x": "hidden"
@@ -2904,29 +2904,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"alignItems": "stretch"
 				},
 				"parentName": "ExpansionPanel_br1488r",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "NumberInput_08fq2bk",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "#ResourceString(NumberInput_08fq2bk_label)#",
-					"control": "$PDS_Pgr369ThresholdAbsolute_3jso02f",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": "",
-					"visible": true
-				},
-				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
 				"index": 0
 			},
@@ -2951,16 +2928,141 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_ThresholdMatrix",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 5
+					},
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "medium",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch",
+					"justifyContent": "end",
+					"gap": "small"
+				},
+				"parentName": "GridContainer_8plbcqj",
+				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ListWidget_6k17ufu",
+				"values": {
+					"type": "crt.ListWidget",
+					"widgetConfig": {
+						"theme": "full-fill",
+						"layout": {
+							"color": "dark-blue"
+						}
+					},
+					"title": "#ResourceString(ListWidget_6k17ufu_title)#",
+					"features": {
+						"rows": {
+							"numeration": false,
+							"selection": {
+								"enable": true,
+								"multiple": false
+							}
+						},
+						"editable": false,
+						"columns": {
+							"dragAndDrop": false,
+							"resizing": false,
+							"sorting": false
+						}
+					},
+					"items": "$ListWidget_6k17ufu",
+					"primaryColumnName": "ListWidget_6k17ufuDS_Id",
+					"columns": [
+						{
+							"id": "61f74c11-8f6c-0b78-7ada-ddb4463624d6",
+							"code": "ListWidget_6k17ufuDS_PgrCategory",
+							"caption": "#ResourceString(ListWidget_6k17ufuDS_PgrCategory)#",
+							"dataValueType": 10,
+							"width": 148
+						},
+						{
+							"id": "b8c941d6-892a-4c19-1dfe-c5aea70cd4f0",
+							"code": "ListWidget_6k17ufuDS_PgrRegion",
+							"caption": "#ResourceString(ListWidget_6k17ufuDS_PgrRegion)#",
+							"dataValueType": 10,
+							"width": 148
+						},
+						{
+							"id": "eb61ba55-2cad-fd70-14e8-1418f857eee1",
+							"code": "ListWidget_6k17ufuDS_PgrPercentage",
+							"caption": "#ResourceString(ListWidget_6k17ufuDS_PgrPercentage)#",
+							"dataValueType": 32,
+							"width": 76
+						},
+						{
+							"id": "25685be0-af84-c930-25cd-770fcc074ebc",
+							"code": "ListWidget_6k17ufuDS_PgrAbsolute",
+							"caption": "#ResourceString(ListWidget_6k17ufuDS_PgrAbsolute)#",
+							"dataValueType": 4,
+							"width": 122
+						}
+					],
+					"placeholder": false,
+					"layoutConfig": {
+						"width": 569.375
+					},
+					"visible": true,
+					"fitContent": true
+				},
+				"parentName": "FlexContainer_ThresholdMatrix",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "NumberInput_08fq2bk",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "#ResourceString(NumberInput_08fq2bk_label)#",
+					"control": "$PDS_Pgr369ThresholdAbsolute_3jso02f",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": "",
+					"visible": true
+				},
+				"parentName": "GridContainer_8plbcqj",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",
 				"name": "PgrActual3DayOrderIntake",
 				"values": {
 					"layoutConfig": {
-						"column": 2,
+						"column": 1,
 						"colSpan": 1,
-						"row": 2,
+						"row": 3,
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
@@ -2969,11 +3071,12 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"readonly": false,
 					"placeholder": "",
 					"labelPosition": "auto",
-					"tooltip": ""
+					"tooltip": "",
+					"visible": true
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -2982,7 +3085,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 2,
+						"row": 4,
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
@@ -2995,7 +3098,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -3004,7 +3107,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 3,
+						"row": 5,
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
@@ -3013,11 +3116,12 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"readonly": false,
 					"placeholder": "",
 					"labelPosition": "auto",
-					"tooltip": ""
+					"tooltip": "",
+					"visible": true
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -3026,7 +3130,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 4,
+						"row": 6,
 						"rowSpan": 1
 					},
 					"type": "crt.Checkbox",
@@ -3042,7 +3146,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
-				"index": 5
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -3051,7 +3155,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 5,
+						"row": 7,
 						"rowSpan": 1
 					},
 					"type": "crt.DateTimePicker",
@@ -3066,7 +3170,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
-				"index": 6
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -3075,7 +3179,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
-						"row": 5,
+						"row": 7,
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
@@ -3090,7 +3194,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
-				"index": 7
+				"index": 8
 			},
 			{
 				"operation": "insert",
@@ -3896,8 +4000,18 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					],
 					"gap": {
 						"columnGap": "large",
-						"rowGap": 0
-					}
+						"rowGap": null
+					},
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
 				},
 				"parentName": "TabContainer_cyno10d",
 				"propertyName": "items",
@@ -4522,6 +4636,36 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
+				"name": "GridContainer_aym7emn",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "TabContainer_0nkic4p",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "GridContainer_vchxido",
 				"values": {
 					"type": "crt.GridContainer",
@@ -4537,6 +4681,29 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					}
 				},
 				"parentName": "TabContainer_0nkic4p",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_gdz6d8t",
+				"values": {
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_PgrLastVisit_hwb1kgp",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "date",
+					"control": "$PDS_PgrLastVisit_hwb1kgp",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_vchxido",
 				"propertyName": "items",
 				"index": 0
 			},
@@ -4566,7 +4733,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "TabContainer_0nkic4p",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -4775,7 +4942,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 						"colSpan": 2,
 						"column": 1,
 						"row": 1,
-						"rowSpan": 6
+						"rowSpan": 9
 					},
 					"features": {
 						"rows": {
@@ -4843,7 +5010,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"fullWidthHeader": false,
 					"titleWidth": 20,
 					"padding": {
-						"top": "small",
+						"top": "medium",
 						"bottom": "small",
 						"left": "none",
 						"right": "none"
@@ -4854,7 +5021,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "TabContainer_0nkic4p",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -4884,7 +5051,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"values": {
 					"type": "crt.FlexContainer",
 					"direction": "row",
-					"gap": "none",
+					"gap": "small",
 					"alignItems": "center",
 					"items": [],
 					"layoutConfig": {
@@ -4892,7 +5059,18 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 						"column": 1,
 						"row": 1,
 						"rowSpan": 1
-					}
+					},
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"justifyContent": "start",
+					"wrap": "wrap"
 				},
 				"parentName": "GridContainer_na0r6qi",
 				"propertyName": "items",
@@ -5004,6 +5182,80 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
+				"name": "QuickFilter_th32v2i",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_th32v2i_config_caption)#",
+						"hint": "",
+						"icon": "settings-button-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": true,
+						"approachState": true
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_th32v2i_GridDetail_jexrtmf",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "GridDetail_jexrtmf",
+													"customFilter": {
+														"items": {
+															"e42c1fa6-7dd6-41e8-83df-de9d69e3411f": {
+																"filterType": 1,
+																"comparisonType": 3,
+																"isEnabled": true,
+																"trimDateTimeParameterToDate": false,
+																"leftExpression": {
+																	"expressionType": 0,
+																	"columnPath": "PgrVisitDidNotTakePlace"
+																},
+																"isAggregative": false,
+																"dataValueType": 12,
+																"rightExpression": {
+																	"expressionType": 2,
+																	"parameter": {
+																		"dataValueType": 12,
+																		"value": false
+																	}
+																}
+															}
+														},
+														"logicalOperation": 0,
+														"isEnabled": true,
+														"filterType": 6,
+														"rootSchemaName": "PgrVisitReport"
+													},
+													"dependencyFilters": null
+												},
+												"quickFilterType": "custom",
+												"config": {
+													"approachState": true
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"QuickFilter_th32v2i_Value"
+						]
+					},
+					"filterType": "custom",
+					"visible": true
+				},
+				"parentName": "FlexContainer_yppel89",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
 				"name": "GridDetailSearchFilter_ermdvce",
 				"values": {
 					"type": "crt.SearchFilter",
@@ -5031,7 +5283,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "FlexContainer_yppel89",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -5090,7 +5342,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"id": "99e04d9e-55df-16d5-5bd6-493f528fe262",
 							"code": "GridDetail_jexrtmfDS_PgrNumber",
 							"caption": "#ResourceString(GridDetail_jexrtmfDS_PgrNumber)#",
-							"dataValueType": 27
+							"dataValueType": 27,
+							"width": 163
 						},
 						{
 							"id": "dabfa9b3-e122-2539-4384-5476b536bf7e",
@@ -5123,6 +5376,13 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"caption": "#ResourceString(GridDetail_jexrtmfDS_PgrIsRelevantForWeeklyReport)#",
 							"dataValueType": 12,
 							"width": 251
+						},
+						{
+							"id": "7a5852fb-6f5a-36ab-55d4-c126a4840b07",
+							"code": "GridDetail_jexrtmfDS_PgrVisitDidNotTakePlace",
+							"caption": "#ResourceString(GridDetail_jexrtmfDS_PgrVisitDidNotTakePlace)#",
+							"dataValueType": 12,
+							"width": 230
 						}
 					],
 					"placeholder": false
@@ -7616,6 +7876,10 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								{
 									"name": "GridDetailSearchFilter_ermdvce_GridDetail_jexrtmf",
 									"loadOnChange": true
+								},
+								{
+									"name": "QuickFilter_th32v2i_GridDetail_jexrtmf",
+									"loadOnChange": true
 								}
 							],
 							"sortingConfig": {
@@ -7657,6 +7921,11 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								"GridDetail_jexrtmfDS_PgrIsRelevantForWeeklyReport": {
 									"modelConfig": {
 										"path": "GridDetail_jexrtmfDS.PgrIsRelevantForWeeklyReport"
+									}
+								},
+								"GridDetail_jexrtmfDS_PgrVisitDidNotTakePlace": {
+									"modelConfig": {
+										"path": "GridDetail_jexrtmfDS.PgrVisitDidNotTakePlace"
 									}
 								},
 								"GridDetail_jexrtmfDS_Id": {
@@ -8147,8 +8416,65 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							}
 						}
 					},
-					"PgrCurrentUserContactId": { "value": "" },
-					"PgrSuspensionReadonly": { "value": true }
+					"PgrCurrentUserContactId": {
+						"value": ""
+					},
+					"PgrSuspensionReadonly": {
+						"value": true
+					},
+					"ListWidget_6k17ufu": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "ListWidget_6k17ufuDS",
+							"filterAttributes": [
+								{
+									"loadOnChange": true,
+									"name": "ListWidget_6k17ufu_PredefinedFilter"
+								}
+							],
+							"pagingConfig": {
+								"rowCount": 30,
+								"rowsLimit": 1
+							}
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"ListWidget_6k17ufuDS_PgrCategory": {
+									"modelConfig": {
+										"path": "ListWidget_6k17ufuDS.PgrCategory"
+									}
+								},
+								"ListWidget_6k17ufuDS_PgrRegion": {
+									"modelConfig": {
+										"path": "ListWidget_6k17ufuDS.PgrRegion"
+									}
+								},
+								"ListWidget_6k17ufuDS_PgrPercentage": {
+									"modelConfig": {
+										"path": "ListWidget_6k17ufuDS.PgrPercentage"
+									}
+								},
+								"ListWidget_6k17ufuDS_PgrAbsolute": {
+									"modelConfig": {
+										"path": "ListWidget_6k17ufuDS.PgrAbsolute"
+									}
+								},
+								"ListWidget_6k17ufuDS_Id": {
+									"modelConfig": {
+										"path": "ListWidget_6k17ufuDS.Id"
+									}
+								}
+							}
+						}
+					},
+					"ListWidget_6k17ufu_PredefinedFilter": {
+						"value": null
+					},
+					"PDS_PgrLastVisit_hwb1kgp": {
+						"modelConfig": {
+							"path": "PDS.PgrLastVisit"
+						}
+					}
 				}
 			},
 			{
@@ -8513,6 +8839,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								},
 								"PgrIsRelevantForWeeklyReport": {
 									"path": "PgrIsRelevantForWeeklyReport"
+								},
+								"PgrVisitDidNotTakePlace": {
+									"path": "PgrVisitDidNotTakePlace"
 								}
 							}
 						}
@@ -8720,6 +9049,27 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								}
 							}
 						}
+					},
+					"ListWidget_6k17ufuDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "PgrCustomerThresholdMatrix",
+							"attributes": {
+								"PgrCategory": {
+									"path": "PgrCategory"
+								},
+								"PgrRegion": {
+									"path": "PgrRegion"
+								},
+								"PgrPercentage": {
+									"path": "PgrPercentage"
+								},
+								"PgrAbsolute": {
+									"path": "PgrAbsolute"
+								}
+							}
+						}
 					}
 				}
 			},
@@ -8896,6 +9246,16 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 						{
 							"attributePath": "Account",
 							"relationPath": "PDS.Id"
+						}
+					],
+					"ListWidget_6k17ufuDS": [
+						{
+							"attributePath": "PgrCategory",
+							"relationPath": "PDS.PgrAccountClassification"
+						},
+						{
+							"attributePath": "PgrRegion",
+							"relationPath": "PDS.Territory"
 						}
 					]
 				}

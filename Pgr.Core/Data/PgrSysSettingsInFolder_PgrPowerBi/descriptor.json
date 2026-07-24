@@ -1,8 +1,8 @@
-{
+﻿{
   "Descriptor": {
     "UId": "ab4bd209-3fc9-43d5-8f4c-1d05b9279ab8",
     "Name": "PgrSysSettingsInFolder_PgrPowerBi",
-    "ModifiedOnUtc": "\/Date(1784891959398)\/",
+    "ModifiedOnUtc": "\/Date(1784891959000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "fcd1648a-01fd-47f9-a42f-24f245d37768",

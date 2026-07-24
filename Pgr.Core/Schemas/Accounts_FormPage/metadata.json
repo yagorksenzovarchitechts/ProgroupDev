@@ -798,6 +798,48 @@
   "A4": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
++ MetaData.Schema.B2 {
+  "UId": "5bb91931-7b40-8bcc-17c3-17a35ed1ba85",
+  "A2": "ListWidget_6k17ufu_title",
+  "A3": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
+  "A4": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "47821ec4-2ee6-1fd3-e73b-bd781b0070f5",
+  "A2": "ListWidget_6k17ufuDS_PgrCategory",
+  "A3": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
+  "A4": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "10f348c9-afd1-38a4-6f06-b42990dcb99a",
+  "A2": "ListWidget_6k17ufuDS_PgrPercentage",
+  "A3": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
+  "A4": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "4a989b41-779a-6a7b-425b-585f0efb7d34",
+  "A2": "ListWidget_6k17ufuDS_PgrAbsolute",
+  "A3": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
+  "A4": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "4878e050-b879-6a95-ecdf-011e573a4d39",
+  "A2": "QuickFilter_th32v2i_config_caption",
+  "A3": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
+  "A4": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "c054fb04-6aee-15fb-c685-088878c479b5",
+  "A2": "QuickFilter_th32v2i_caption",
+  "A3": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
+  "A4": "a5f0272c-37e4-447a-b8f9-50c4afbe6857",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
 = MetaData.Schema.B2.["867e5d47-7935-3b75-3310-adaff80090bd"].A4 "a5f0272c-37e4-447a-b8f9-50c4afbe6857"
 = MetaData.Schema.B2.["867e5d47-7935-3b75-3310-adaff80090bd"].A5 "c3352ad7-734f-4d78-b5df-7bf53f0975cc"
 = MetaData.Schema.B2.["a0d2e802-58a2-ff63-b320-6962be0dd7c5"].A4 "a5f0272c-37e4-447a-b8f9-50c4afbe6857"
@@ -1097,6 +1139,12 @@
   "5ea58eda-9eb1-4350-8281-1d42a7223408",
   "b5045a89-711c-4ff3-b9f8-ebd5c024264a",
   "8693e24e-a2e8-4b2c-b4ab-d20db40c28af",
+  "5bb91931-7b40-8bcc-17c3-17a35ed1ba85",
+  "47821ec4-2ee6-1fd3-e73b-bd781b0070f5",
+  "10f348c9-afd1-38a4-6f06-b42990dcb99a",
+  "4a989b41-779a-6a7b-425b-585f0efb7d34",
+  "4878e050-b879-6a95-ecdf-011e573a4d39",
+  "c054fb04-6aee-15fb-c685-088878c479b5",
   "867e5d47-7935-3b75-3310-adaff80090bd",
   "a0d2e802-58a2-ff63-b320-6962be0dd7c5",
   "bec86d3e-4682-b81b-1f7b-e65bf6ebd01f",

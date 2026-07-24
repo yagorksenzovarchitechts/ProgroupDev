@@ -58,7 +58,7 @@
         {
           "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionShowElement",
           "UId": "7d5dc69d-3e84-bd7e-15de-82b029f493dd",
-          "BRA4": "TabContainer_6uff3ez,Button_v4xaeyf"
+          "BRA4": "Button_v4xaeyf"
         }
       ]
     }
@@ -284,7 +284,7 @@
         {
           "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionShowElement",
           "UId": "a15c6649-136c-7f91-fdfa-3de13ae09939",
-          "BRA4": "Input_zp5ixl9,ComboBox_blechm2,ComboBox_rar4rgy"
+          "BRA4": "ComboBox_blechm2,ComboBox_rar4rgy"
         }
       ]
     }

@@ -37,7 +37,7 @@
 			<Item Name="Columns.PgrIsFsc.Caption" Value="FSC" />
 			<Item Name="Columns.PgrIsTestCustomer.Caption" Value="Test customer" />
 			<Item Name="Columns.PgrIsVertIntegrated.Caption" Value="Vertical integrated" />
-			<Item Name="Columns.PgrLastVisit.Caption" Value="Last visit" />
+			<Item Name="Columns.PgrLastVisit.Caption" Value="Last visit date" />
 			<Item Name="Columns.PgrMainPlantLinked.Caption" Value="Main plant" />
 			<Item Name="Columns.PgrMaxOverDelivery.Caption" Value="Maximum over-delivery" />
 			<Item Name="Columns.PgrMaxUnderDelivery.Caption" Value="Maximum under-delivery" />

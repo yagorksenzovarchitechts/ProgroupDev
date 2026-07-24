@@ -6,6 +6,9 @@
 			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Import" />
 			<Item Name="LocalizableStrings.Label_zm0jsfd_caption.Value" Value="Configured per customer category and region, or per individual customer. Ranges can be set as a percentage or absolute value; customer-specific thresholds override matrix values." />
+			<Item Name="LocalizableStrings.PDS_PgrAbsolute.Value" Value="TQM/WD" />
+			<Item Name="LocalizableStrings.PDS_PgrCategory.Value" Value="Classification" />
+			<Item Name="LocalizableStrings.PDS_PgrPercentage.Value" Value="% of current daily budget" />
 			<Item Name="LocalizableStrings.QuickFilter_ccg491a_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.QuickFilter_ccg491a_config_caption.Value" Value="Customer-specific threshhold exists" />
 		</Items>

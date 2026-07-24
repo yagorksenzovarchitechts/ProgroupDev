@@ -396,56 +396,6 @@
   "BR5": "dfbeff71-5edc-ab9e-5b28-08de2946b54c",
   "BR6": "301491e2-7556-6b78-d767-2ad026e932e8"
 }
-+ MetaData.Schema.AD4.BRS1 {
-  "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
-  "UId": "0bd46725-f069-bada-de3d-fd7e1c3cc5a4",
-  "BR1": [
-    {
-      "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
-      "UId": "5a3b12f8-4648-3b36-9e80-089c81d4a698",
-      "BRC2": [
-        {
-          "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionSetValues",
-          "UId": "d9a7a3ac-90fb-74ef-4f25-23a017ef4309",
-          "BSVS1": [
-            {
-              "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleSetValueItem",
-              "UId": "d19eb170-0e4e-6ecb-7b1b-03ec591eca06",
-              "BRA2": {
-                "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
-                "UId": "c48f9fa3-e4a0-8419-f0ce-057e4f8e1315",
-                "BRE1": "Lookup",
-                "BRE2": "AttributeValue",
-                "BRX1": "PgrAccount"
-              },
-              "BRA3": {
-                "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
-                "UId": "fef654cd-e87a-1ea0-fb29-a0cac7517592",
-                "BRE1": "Lookup",
-                "BRE2": "AttributeValue",
-                "BRE3": "Account",
-                "BRX1": "Account"
-              }
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "BR2": [
-    {
-      "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
-      "UId": "2d6d4b1b-feeb-8575-f29d-c027b3d7d25e",
-      "BRT2": 2
-    },
-    {
-      "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
-      "UId": "1e1b6ecd-f4ad-a425-0f47-fe1fdfc0333a",
-      "BRT1": "Account"
-    }
-  ],
-  "BR3": "BusinessRule_fc38572"
-}
 ~ MetaData.Schema.AD4.BRS1 [
   "c1e211e9-8e29-6720-9a8d-b207df730852",
   "5c876047-2562-2a90-9c03-357ba1cb1bd1",
@@ -453,7 +403,6 @@
   "129ad6ec-d7f4-015a-bf4a-4f528c64f3c3",
   "dfbeff71-5edc-ab9e-5b28-08de2946b54c",
   "47c21520-1017-dcf1-35e6-a12a90e86034",
-  "dd86968e-8d51-5836-13fd-37da7f5a0592",
-  "0bd46725-f069-bada-de3d-fd7e1c3cc5a4"
+  "dd86968e-8d51-5836-13fd-37da7f5a0592"
 ]
 + MetaData.Schema.B7 true
