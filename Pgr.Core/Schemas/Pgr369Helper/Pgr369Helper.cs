@@ -267,6 +267,12 @@ namespace Pgr.Core
         private Entity GetOpenAlertTask(Guid accountId)
         {
             var esq = CreateOpenActivityQuery(accountId, PgrConstants.ActivityCategory.Category369);
+            // Only genuine alert tasks (Type = Task). Other activity types that get mis-tagged with
+            // ActivityCategory 369 — e.g. the emails created by the "Send email to person in charge"
+            // process (Type = Email) — must NOT be mistaken for the open alert task, otherwise the
+            // day-3 create condition (openAlertTask == null) would be permanently blocked.
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Type",
+                PgrConstants.ActivityType.Task));
             esq.AddAllSchemaColumns();
             return esq.GetEntityCollection(_userConnection).FirstOrDefault();
         }
