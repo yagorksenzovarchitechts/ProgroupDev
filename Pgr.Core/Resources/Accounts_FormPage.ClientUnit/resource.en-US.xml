@@ -87,14 +87,18 @@
 			<Item Name="LocalizableStrings.LeadRefreshButton_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.LeadSearchFilter_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.LeadSettingsButton_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.ListWidget_6k17ufuDS_PgrAbsolute.Value" Value="TQM/WD" />
+			<Item Name="LocalizableStrings.ListWidget_6k17ufuDS_PgrCategory.Value" Value="Classification" />
+			<Item Name="LocalizableStrings.ListWidget_6k17ufuDS_PgrPercentage.Value" Value="%" />
+			<Item Name="LocalizableStrings.ListWidget_6k17ufu_title.Value" Value="Threshold for Classification &amp; Region" />
 			<Item Name="LocalizableStrings.MenuItem_5sivz5r_caption.Value" Value="Export to Excel" />
 			<Item Name="LocalizableStrings.MenuItem_hgmncrh_caption.Value" Value="Data import" />
 			<Item Name="LocalizableStrings.MultiSelect_unyiz66_label.Value" Value="Account type/s" />
 			<Item Name="LocalizableStrings.MultiSelect_unyiz66_placeholder.Value" Value="Select the relevant type/s" />
-			<Item Name="LocalizableStrings.NumberInput_08fq2bk_label.Value" Value="3-6-9 threshold (value)" />
+			<Item Name="LocalizableStrings.NumberInput_08fq2bk_label.Value" Value="3-6-9 threshold (TQM/WD)" />
 			<Item Name="LocalizableStrings.NumberInput_16huvt7_label.Value" Value="Over-delivery from quantity (% 1)" />
 			<Item Name="LocalizableStrings.NumberInput_63qzwaj_label.Value" Value="Over-delivery from quantity (value 1)" />
-			<Item Name="LocalizableStrings.NumberInput_84ghcah_label.Value" Value="3-6-9 threshold (%)" />
+			<Item Name="LocalizableStrings.NumberInput_84ghcah_label.Value" Value="3-6-9 threshold (% of current daily budget)" />
 			<Item Name="LocalizableStrings.NumberInput_9wk64ol_label.Value" Value="Over-delivery from quantity (% 2)" />
 			<Item Name="LocalizableStrings.NumberInput_g4pyp3s_label.Value" Value="Over-delivery from quantity (value 2)" />
 			<Item Name="LocalizableStrings.OpportunityAddButton_caption.Value" Value="New" />
@@ -107,8 +111,8 @@
 			<Item Name="LocalizableStrings.Pgr369BudgetCalculationExpansionPanel_title.Value" Value="3-6-9 budget calculations" />
 			<Item Name="LocalizableStrings.Pgr369RunBtn_caption.Value" Value="Run 3-6-9" />
 			<Item Name="LocalizableStrings.Pgr369RunBtn_clicked_params_notificationText.Value" Value="Running 3-6-9 process" />
-			<Item Name="LocalizableStrings.PgrActual3DayOrderIntake_label.Value" Value="3-Day order intake" />
-			<Item Name="LocalizableStrings.PgrCurrentDailyBudget_label.Value" Value="Current daily budget" />
+			<Item Name="LocalizableStrings.PgrActual3DayOrderIntake_label.Value" Value="3-Day order intake / WD" />
+			<Item Name="LocalizableStrings.PgrCurrentDailyBudget_label.Value" Value="Current daily budget (TQM/WD)" />
 			<Item Name="LocalizableStrings.PgrExcludeFrom369Label.Value" Value="Exclude from 3-6-9" />
 			<Item Name="LocalizableStrings.PgrSuspensionEndDateFutureError.Value" Value="Suspension end date must be later than today." />
 			<Item Name="LocalizableStrings.PgrSuspensionEndDateLabel.Value" Value="Suspension end date" />
@@ -116,6 +120,8 @@
 			<Item Name="LocalizableStrings.ProductsOffered_placeholder.Value" Value="Enter what the company provides or sells" />
 			<Item Name="LocalizableStrings.QuickFilter_nc0ykar_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.QuickFilter_nc0ykar_config_caption.Value" Value="Period" />
+			<Item Name="LocalizableStrings.QuickFilter_th32v2i_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_th32v2i_config_caption.Value" Value="Hide Visits that did not take place" />
 			<Item Name="LocalizableStrings.RecommendedProductExpansionPanel_title.Value" Value="Recommended products" />
 			<Item Name="LocalizableStrings.RecommendedProductExportDataButton_caption.Value" Value="Export to Excel" />
 			<Item Name="LocalizableStrings.RecommendedProductRefreshButton_caption.Value" Value="Refresh" />

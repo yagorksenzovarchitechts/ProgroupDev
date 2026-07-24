@@ -25,6 +25,15 @@ namespace Pgr.Core
             public static readonly Guid Measure = new Guid("bee620f7-f3f7-47e4-81a3-5b2a9a030413");
         }
 
+        /// <summary>Base Activity.Type values (ActivityType lookup, standard Creatio seed).</summary>
+        public static class ActivityType
+        {
+            /// <summary>"Task" — the type of a genuine 3-6-9 alert/measure task. Used to keep other
+            /// activity types (e.g. an Email mis-tagged with ActivityCategory 369) from being
+            /// treated as the open alert task.</summary>
+            public static readonly Guid Task = new Guid("fbe0acdc-cfc0-df11-b00f-001d60e938c6");
+        }
+
         /// <summary>
         ///     DayType lookup records (bound in Data/DayType_LookupData). "Working day" and
         ///     "Reduced working" share the same NonWorking/IsWeekend flags, so a half (shortened)

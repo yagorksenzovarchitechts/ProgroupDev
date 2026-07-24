@@ -67,7 +67,8 @@ define("PgrCustomerThresholdMa_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, fu
 							"id": "eedf5581-8253-0f56-7c56-71e6fc17a6f4",
 							"code": "PDS_PgrRegion",
 							"caption": "#ResourceString(PDS_PgrRegion)#",
-							"dataValueType": 10
+							"dataValueType": 10,
+							"width": 254
 						},
 						{
 							"id": "4c746679-8d5a-bc32-8d2e-578dad4a74c4",
@@ -85,7 +86,8 @@ define("PgrCustomerThresholdMa_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, fu
 							"id": "502dd5a6-b7c3-6ade-a24e-1e42c7f38617",
 							"code": "PDS_PgrPercentage",
 							"caption": "#ResourceString(PDS_PgrPercentage)#",
-							"dataValueType": 32
+							"dataValueType": 32,
+							"width": 311
 						},
 						{
 							"id": "6a24032f-b872-880f-ec9f-0b472dce177f",

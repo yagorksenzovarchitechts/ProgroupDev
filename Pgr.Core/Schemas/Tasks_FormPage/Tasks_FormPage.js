@@ -721,35 +721,11 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 			},
 			{
 				"operation": "insert",
-				"name": "Input_zp5ixl9",
-				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrDepartment_c6krwbp",
-					"control": "$PDS_PgrDepartment_c6krwbp",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": true,
-					"labelPosition": "auto",
-					"visible": false,
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "GridContainer_ReasonCodeAndNotes",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
 				"name": "ComboBox_rar4rgy",
 				"values": {
 					"layoutConfig": {
-						"column": 3,
-						"colSpan": 1,
+						"column": 1,
+						"colSpan": 3,
 						"row": 1,
 						"rowSpan": 1
 					},
@@ -758,7 +734,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
-					"labelPosition": "auto",
+					"labelPosition": "left",
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
@@ -771,7 +747,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 1
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -796,7 +772,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 2
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -838,7 +814,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 3
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -879,7 +855,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 4
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -907,7 +883,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 5
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -948,7 +924,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 6
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -980,7 +956,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 7
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -2212,11 +2188,6 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 					"PDS_PgrReasonSetOn_6w4ri4l": {
 						"modelConfig": {
 							"path": "PDS.PgrReasonSetOn"
-						}
-					},
-					"PDS_PgrDepartment_c6krwbp": {
-						"modelConfig": {
-							"path": "PDS.PgrDepartment"
 						}
 					},
 					"PDS_PgrVisitReport_bl3njly": {

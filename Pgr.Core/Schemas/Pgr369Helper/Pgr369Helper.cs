@@ -245,24 +245,38 @@ namespace Pgr.Core
             return CreateQuery("Activity");
         }
 
-        /// <summary>ESQ for the account's open (not finished) activities of the given category.</summary>
+        /// <summary>
+        ///     ESQ for the account's open (not finished) 3-6-9 *tasks* of the given category.
+        ///     Restricted to <c>Type = Task</c>: the 3-6-9 alert and measure tasks are always created
+        ///     as Tasks, so other activity types that get mis-tagged with a 3-6-9 ActivityCategory —
+        ///     e.g. the Emails created by the "Send email to person in charge" process, which carry
+        ///     ActivityCategory 369 — must not be picked up here (that would block day-3 creation and
+        ///     skew the recovery close-out).
+        /// </summary>
         private EntitySchemaQuery CreateOpenActivityQuery(Guid accountId, Guid activityCategoryId)
         {
             var esq = CreateActivityQuery();
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Account", accountId));
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "ActivityCategory",
                 activityCategoryId));
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Type",
+                PgrConstants.ActivityType.Task));
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.NotEqual,
                 "Status.Finish",
                 true));
             return esq;
         }
 
-        /// <summary>The customer's open (not finished) 3-6-9 alert task, or null if there is none.</summary>
+        /// <summary>
+        ///     The customer's open (not finished) 3-6-9 alert task, or null if there is none. Loads
+        ///     all schema columns (not just "Owner") because CMVP-126 escalation may need to
+        ///     SetColumnValue+Save this same entity directly when no Measure task exists yet — a
+        ///     narrower ESQ projection would throw ItemNotFoundException on the unset column.
+        /// </summary>
         private Entity GetOpenAlertTask(Guid accountId)
         {
             var esq = CreateOpenActivityQuery(accountId, PgrConstants.ActivityCategory.Category369);
-            esq.AddColumn("Owner");
+            esq.AddAllSchemaColumns();
             return esq.GetEntityCollection(_userConnection).FirstOrDefault();
         }
 
@@ -447,6 +461,10 @@ namespace Pgr.Core
         private void CloseOpenMeasureTasks(Guid accountId)
         {
             var esq = CreateOpenActivityQuery(accountId, PgrConstants.ActivityCategory.Measure);
+            // Load all schema columns: CreateOpenActivityQuery only adds filter columns (Account,
+            // ActivityCategory, Status.Finish), so without this SetColumnValue("StatusId", ...) below
+            // throws ItemNotFoundException — "Status"/"StatusId" was never projected into the entity.
+            esq.AddAllSchemaColumns();
             var tasks = esq.GetEntityCollection(_userConnection);
             var canceledStatusId = ActivityConsts.CanceledStatusUId;
             foreach (var task in tasks)

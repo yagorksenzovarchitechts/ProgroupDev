@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="AddonConfig.Rules.2b606d6c-d568-206f-5fe9-c9d9254718f0.Caption" Value="Set values: Also known as" />
+			<Item Name="AddonConfig.Rules.bcd6eed8-9cf0-040e-a7e6-cbff5b72a8ac.Caption" Value="Set values: PDF invoice process" />
 			<Item Name="Caption" Value="Account (Business rules)" />
 		</Items>
 	</Group>
