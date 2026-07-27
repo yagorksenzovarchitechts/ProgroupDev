@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.ActivityGridPageActionsPickerSchedule.Value" Value="Kalender" />
+		</Items>
+	</Group>
+</Resources>

@@ -28,6 +28,102 @@
       "Row": [
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "35f94b53-c6ae-4c7b-82ad-4572ed4a30f9"
+        },
+        {
+          "SchemaColumnUId": "5d3a4b62-1fe1-91d2-9d12-ea6fed370cea",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "7a333c2d-03b1-3969-cb9d-8e9218e71c7b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "8ce3c720-3800-3340-ab7f-3709bc15adfe",
+          "Value": "https://cdn.jsdelivr.net"
+        },
+        {
+          "SchemaColumnUId": "ef07c4d0-0753-5986-a748-951a6c1ee937",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "497d189f-05e6-4cd2-910c-9fb9fa759b19"
+        },
+        {
+          "SchemaColumnUId": "5d3a4b62-1fe1-91d2-9d12-ea6fed370cea",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "7a333c2d-03b1-3969-cb9d-8e9218e71c7b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "8ce3c720-3800-3340-ab7f-3709bc15adfe",
+          "Value": "https://api.powerbi.com"
+        },
+        {
+          "SchemaColumnUId": "ef07c4d0-0753-5986-a748-951a6c1ee937",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "66e5db75-d9a2-4c4a-a966-6b287627c373"
+        },
+        {
+          "SchemaColumnUId": "5d3a4b62-1fe1-91d2-9d12-ea6fed370cea",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "7a333c2d-03b1-3969-cb9d-8e9218e71c7b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "8ce3c720-3800-3340-ab7f-3709bc15adfe",
+          "Value": "https://alcdn.msauth.net"
+        },
+        {
+          "SchemaColumnUId": "ef07c4d0-0753-5986-a748-951a6c1ee937",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "838774fd-313a-4f86-8728-0faad0d6bd6b"
+        },
+        {
+          "SchemaColumnUId": "5d3a4b62-1fe1-91d2-9d12-ea6fed370cea",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "7a333c2d-03b1-3969-cb9d-8e9218e71c7b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "8ce3c720-3800-3340-ab7f-3709bc15adfe",
+          "Value": "https://login.microsoftonline.com"
+        },
+        {
+          "SchemaColumnUId": "ef07c4d0-0753-5986-a748-951a6c1ee937",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
           "Value": "b1ba5093-846c-4cdd-b0bc-2900737b4ac9"
         },
         {
@@ -41,6 +137,30 @@
         {
           "SchemaColumnUId": "8ce3c720-3800-3340-ab7f-3709bc15adfe",
           "Value": "https://*.powerbi.com"
+        },
+        {
+          "SchemaColumnUId": "ef07c4d0-0753-5986-a748-951a6c1ee937",
+          "Value": ""
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "fe0c4187-c61d-4e3f-b5cf-5c69b6c93f75"
+        },
+        {
+          "SchemaColumnUId": "5d3a4b62-1fe1-91d2-9d12-ea6fed370cea",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "7a333c2d-03b1-3969-cb9d-8e9218e71c7b",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "8ce3c720-3800-3340-ab7f-3709bc15adfe",
+          "Value": "https://*.analysis.windows.net"
         },
         {
           "SchemaColumnUId": "ef07c4d0-0753-5986-a748-951a6c1ee937",
