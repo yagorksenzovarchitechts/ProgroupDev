@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Power Bi report" />
+			<Item Name="ErrorLoadReport" Value="Failed to load the Power BI report (see console)." />
 		</Items>
 	</Group>
 </Resources>

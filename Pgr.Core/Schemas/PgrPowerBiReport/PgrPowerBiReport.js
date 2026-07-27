@@ -1,4 +1,4 @@
-define("PgrPowerBiReport", ["@creatio-devkit/common"], function(sdk) {
+define("PgrPowerBiReport", ["@creatio-devkit/common", "PgrPowerBiReportResources"], function(sdk, resources) {
 
     require.config({
         paths: {
@@ -52,7 +52,7 @@ define("PgrPowerBiReport", ["@creatio-devkit/common"], function(sdk) {
                 this._embed(token);
             } catch (e) {
                 console.error("PowerBI init failed", e);
-                this._container.textContent = "Не удалось загрузить отчёт Power BI (см. консоль).";
+                this._container.textContent = resources.localizableStrings.ErrorLoadReport;
             }
         }
 
