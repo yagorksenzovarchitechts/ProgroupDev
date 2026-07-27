@@ -2,6 +2,7 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
+			<Item Name="Caption" Value="Kalender" />
 			<Item Name="Columns.CreatedOn.Caption" Value="Erstellt am" />
 			<Item Name="Columns.Depth.Caption" Value="EbeneEbene&#xA;Ebene" />
 			<Item Name="Columns.Description.Caption" Value="Beschreibung" />

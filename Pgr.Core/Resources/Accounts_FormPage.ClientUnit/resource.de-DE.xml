@@ -63,6 +63,7 @@
 			<Item Name="LocalizableStrings.TabContainer_0nkic4p_caption.Value" Value="Besuchsberichte" />
 			<Item Name="LocalizableStrings.TabContainer_Competitor_caption.Value" Value="Mitbewerber info" />
 			<Item Name="LocalizableStrings.TabContainer_Customer_caption.Value" Value="Kundennummer info" />
+			<Item Name="LocalizableStrings.Territory_placeholder.Value" Value="Gebiet auswählen" />
 		</Items>
 	</Group>
 </Resources>
