@@ -3,6 +3,13 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Bonuses form page" />
+			<Item Name="LocalizableStrings.ExpansionPanel_2ii744k_title.Value" Value="Bonus Konditionen" />
+			<Item Name="LocalizableStrings.ExpansionPanel_nggrqb0_title.Value" Value="Bonus Schwellen" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_17kp2fm_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_asgflp9_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_15srmqf_caption.Value" Value="Export nach Excel" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_muboyj1_caption.Value" Value="Export nach Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_jjmrmmi_caption.Value" Value="Datenimport" />
 		</Items>
 	</Group>
 </Resources>

@@ -2,7 +2,8 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Bonusliste" />
+			<Item Name="Caption" Value="Bonusdetail" />
+			<Item Name="LocalizableStrings.Caption.Value" Value="Bonus" />
 		</Items>
 	</Group>
 </Resources>
