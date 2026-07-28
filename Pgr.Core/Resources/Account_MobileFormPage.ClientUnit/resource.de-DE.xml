@@ -2,7 +2,7 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Bonusliste" />
+			<Item Name="LocalizableStrings.AddressesExpansionPanel_title.Value" Value="Adressen" />
 		</Items>
 	</Group>
 </Resources>

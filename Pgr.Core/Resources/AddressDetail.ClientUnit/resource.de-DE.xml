@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.CityCaption.Value" Value="Stadt" />
+			<Item Name="LocalizableStrings.CountryCaption.Value" Value="Land" />
+			<Item Name="LocalizableStrings.ZipCaption.Value" Value="PLZ" />
+		</Items>
+	</Group>
+</Resources>

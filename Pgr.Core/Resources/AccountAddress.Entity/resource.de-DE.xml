@@ -15,6 +15,7 @@
 			<Item Name="Columns.PgrSapAddressID.Caption" Value="SAP Adressnummer" />
 			<Item Name="Columns.PgrValidFrom.Caption" Value="Gültig ab" />
 			<Item Name="Columns.PgrValidTo.Caption" Value="Gültig bis" />
+			<Item Name="Columns.PgrWepaformAddressId.Caption" Value="WF Matchcode" />
 			<Item Name="Columns.Primary.Caption" Value="Korrespondenzadresse" />
 			<Item Name="Columns.Region.Caption" Value="Bundesstaat/Provinz" />
 			<Item Name="Columns.Zip.Caption" Value="Postleitzahl" />

@@ -2,7 +2,7 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Bonusliste" />
+			<Item Name="Caption" Value="Bonus" />
 		</Items>
 	</Group>
 </Resources>

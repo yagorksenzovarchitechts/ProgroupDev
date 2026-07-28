@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Columns.AccountCategory.Caption" Value="Kategorie" />
 			<Item Name="Columns.AdditionalPhone.Caption" Value="Mobiltelefonnummer" />
+			<Item Name="Columns.Address.Caption" Value="Adresse" />
 			<Item Name="Columns.Code.Caption" Value="Code" />
 			<Item Name="Columns.Country.Caption" Value="Land" />
 			<Item Name="Columns.EmployeesNumber.Caption" Value="Anzahl Mitarbeiter" />
