@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Columns.Calendar.Caption" Value="Kalender" />
+			<Item Name="Columns.PgrDescription.Caption" Value="Beschreibung" />
 		</Items>
 	</Group>
 </Resources>

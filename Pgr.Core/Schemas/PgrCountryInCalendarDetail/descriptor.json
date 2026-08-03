@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "03b7078f-e940-4f0d-99f7-b9ff16450fed",
+    "Name": "PgrCountryInCalendarDetail",
+    "ModifiedOnUtc": "\/Date(1785752752637)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Countries in calendar detail schema",
+    "DependsOn": []
+  }
+}

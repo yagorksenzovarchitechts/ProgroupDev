@@ -2,6 +2,8 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
+			<Item Name="LocalizableStrings.CountriesDetailCaption.Value" Value="Länder" />
+			<Item Name="LocalizableStrings.CountriesTabCaption.Value" Value="Länder" />
 			<Item Name="LocalizableStrings.DayOffsDetailCaption.Value" Value="Freie Tage" />
 			<Item Name="LocalizableStrings.DaysOffTabCaption.Value" Value="Freie Tage" />
 			<Item Name="LocalizableStrings.WorkingWeekDetailCaption.Value" Value="Arbeitswoche" />

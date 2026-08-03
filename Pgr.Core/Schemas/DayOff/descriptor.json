@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "a2df0140-0088-4761-9ed7-6eb7a75e52c5",
+    "Name": "DayOff",
+    "ModifiedOnUtc": "\/Date(1785752752637)\/",
+    "Parent": {
+      "UId": "77bd6a64-4931-4aeb-b124-5cdee0325c8a",
+      "Name": "DayOff"
+    },
+    "ExtendParent": true,
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Day off",
+    "DependsOn": []
+  }
+}
