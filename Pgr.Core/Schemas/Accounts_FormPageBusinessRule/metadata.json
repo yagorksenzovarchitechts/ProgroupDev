@@ -516,7 +516,8 @@
       "BRT1": "PDS_Pgr369ThresholdAbsolute_3jso02f"
     }
   ],
-  "BR3": "BusinessRule_a8b97f8"
+  "BR3": "BusinessRule_a8b97f8",
+  "BR4": false
 }
 - MetaData.Schema.AD4.BRS1.["aa28548a-884f-c296-efa3-183daf547797"]
 - MetaData.Schema.AD4.BRS1.["3a7de010-c53c-d16b-d537-a4acd9e31ae5"]

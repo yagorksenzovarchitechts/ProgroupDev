@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.Button_m8g38tz_caption.Value" Value="Sales person overview" />
 			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Import" />
 			<Item Name="LocalizableStrings.DataTable_AddRecordsToStaticFolderAction_caption.Value" Value="Add to static folder" />
 			<Item Name="LocalizableStrings.DataTable_RemoveRecordsFromStaticFolderAction_caption.Value" Value="Remove from static folder" />

@@ -2,6 +2,30 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
+				"operation": "remove",
+				"name": "MarketingFieldsContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "CustomerNeed"
+			},
+			{
+				"operation": "remove",
+				"name": "RegisterMethod"
+			},
+			{
+				"operation": "remove",
+				"name": "Channel"
+			},
+			{
+				"operation": "remove",
+				"name": "Source"
+			},
+			{
+				"operation": "remove",
+				"name": "AdCampaign"
+			},
+			{
 				"operation": "merge",
 				"name": "SaveButton",
 				"values": {
@@ -343,6 +367,10 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "remove",
+				"name": "TimelineTile_Case"
+			},
+			{
+				"operation": "remove",
 				"name": "TimelineTile_Invoice"
 			},
 			{
@@ -355,7 +383,51 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "remove",
-				"name": "TimelineTile_Case"
+				"name": "ServiceTab"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesToolsContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesToolsFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesAddButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesImportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesList"
 			},
 			{
 				"operation": "remove",
@@ -464,6 +536,162 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			{
 				"operation": "remove",
 				"name": "GridDetail_guswpo0_DeleteBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "MarketingTab"
+			},
+			{
+				"operation": "remove",
+				"name": "MarketingTabGridContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailToolContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailToolFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailList"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailList_AddTagsBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailList_RemoveTagsBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailList_ExportToExcelBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormToolContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormToolFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormImportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormList"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesToolsContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesToolsFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesExportMenuItem"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesImportMenuItem"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "GridContainer_jilqo44"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesDataGrid"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_wij59kw_AddTagsBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_wij59kw_RemoveTagsBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_wij59kw_ExportToExcelBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_wij59kw_MergeBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_wij59kw_DeleteBulkAction"
 			},
 			{
 				"operation": "remove",
@@ -636,470 +864,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			{
 				"operation": "remove",
 				"name": "OpportunityList"
-			},
-			{
-				"operation": "remove",
-				"name": "MarketingTab"
-			},
-			{
-				"operation": "remove",
-				"name": "MarketingTabGridContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "MrktLeadExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "MrktLeadToolsContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "MrktLeadToolsFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "CreateLeadButton"
-			},
-			{
-				"operation": "remove",
-				"name": "MrktLeadRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "GridDetailSettingsBtn_icmycs2"
-			},
-			{
-				"operation": "remove",
-				"name": "MrktLeadExportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "MrktLeadImportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "MrktLeadSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "MrktLeadListContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "MrktLeadList"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormToolContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormToolFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormSettingsButton"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormExportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormImportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormListContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormList"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesToolsContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesToolsFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesSettingsButton"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesExportMenuItem"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesImportMenuItem"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "GridContainer_jilqo44"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesDataGrid"
-			},
-			{
-				"operation": "remove",
-				"name": "DataGrid_wij59kw_AddTagsBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "DataGrid_wij59kw_RemoveTagsBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "DataGrid_wij59kw_ExportToExcelBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "DataGrid_wij59kw_MergeBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "DataGrid_wij59kw_DeleteBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailToolContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailToolFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailSettingsButton"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailExportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailListContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailList"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailList_AddTagsBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailList_RemoveTagsBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailList_ExportToExcelBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "MarketingFieldsContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "CustomerNeed"
-			},
-			{
-				"operation": "remove",
-				"name": "RegisterMethod"
-			},
-			{
-				"operation": "remove",
-				"name": "Channel"
-			},
-			{
-				"operation": "remove",
-				"name": "Source"
-			},
-			{
-				"operation": "remove",
-				"name": "AdCampaign"
-			},
-			{
-				"operation": "remove",
-				"name": "CampaignExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "CampaignToolContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "CampaignToolFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "CampaignRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "CampaignSettingsButton"
-			},
-			{
-				"operation": "remove",
-				"name": "CampaignExportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "CampaignSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "CampaignListContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "CampaignList"
-			},
-			{
-				"operation": "remove",
-				"name": "WebSessionExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "WebSessionToolContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "WebSessionToolFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "WebSessionRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "WebSessionSettingsButton"
-			},
-			{
-				"operation": "remove",
-				"name": "WebSessionExportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "MenuItem_tz82vh6"
-			},
-			{
-				"operation": "remove",
-				"name": "WebSessionSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "WebSessionListContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "WebSessionList"
-			},
-			{
-				"operation": "remove",
-				"name": "WebActionExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "WebActionToolContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "WebActionToolFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "WebActionRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "WebActionSettingsButton"
-			},
-			{
-				"operation": "remove",
-				"name": "WebActionExportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "WebActionImportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "WebActionSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "WebActionListContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "WebActionList"
-			},
-			{
-				"operation": "remove",
-				"name": "EventExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "EventToolContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "EventToolFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "EventRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "EventSettingsButton"
-			},
-			{
-				"operation": "remove",
-				"name": "EventExportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "EventSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "EventListContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "EventList"
-			},
-			{
-				"operation": "remove",
-				"name": "ServiceTab"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesToolsContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesToolsFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesAddButton"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesSettingsButton"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesExportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesImportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesListContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesList"
-			},
-			{
-				"operation": "remove",
-				"name": "ServiceAgreementsExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "ServiceAgreementsToolsContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "ServiceAgreementsToolsFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "ServiceAgreementsRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "ServiceAgreementsSettingsButton"
-			},
-			{
-				"operation": "remove",
-				"name": "ServiceAgreementsExportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "ServiceAgreementsImportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "ServiceAgreementsSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "ServiceAgreementsListContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "ServiceAgreementsList"
 			},
 			{
 				"operation": "merge",
@@ -1527,7 +1291,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					],
 					"gap": {
 						"columnGap": "large",
-						"rowGap": null
+						"rowGap": "none"
 					},
 					"styles": {
 						"overflow-x": "hidden"
@@ -1750,6 +1514,331 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "ComboBox_9kaap0p",
 				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_hv4r0n7",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrTerritory_4gny4bv",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "left",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrTerritory_4gny4bv",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "GridContainer_lrmq544",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_dl5wfrs",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_dl5wfrs_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_hv4r0n7",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ExpansionPanel_p5mzqae",
+				"values": {
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(ExpansionPanel_p5mzqae_title)#",
+					"toggleType": "material",
+					"togglePosition": "before",
+					"expanded": true,
+					"labelColor": "auto",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"padding": {
+						"top": "small",
+						"bottom": "small",
+						"left": "none",
+						"right": "none"
+					},
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch"
+				},
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_29367nz",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 24px)",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_p5mzqae",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_8br65c3",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"gap": "none",
+					"alignItems": "center",
+					"items": [],
+					"layoutConfig": {
+						"colSpan": 1,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_29367nz",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailAddBtn_uqi8e2s",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailAddBtn_uqi8e2s_caption)#",
+					"icon": "add-button-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.CreateRecordRequest",
+						"params": {
+							"entityName": "Activity"
+						}
+					},
+					"visible": false,
+					"clickMode": "default"
+				},
+				"parentName": "FlexContainer_8br65c3",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailRefreshBtn_5ot987e",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailRefreshBtn_5ot987e_caption)#",
+					"icon": "reload-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.LoadDataRequest",
+						"params": {
+							"config": {
+								"loadType": "reload"
+							},
+							"dataSourceName": "GridDetail_qib93u6DS"
+						}
+					}
+				},
+				"parentName": "FlexContainer_8br65c3",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailSettingsBtn_yswzqgr",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailSettingsBtn_yswzqgr_caption)#",
+					"icon": "actions-button-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clickMode": "menu",
+					"menuItems": []
+				},
+				"parentName": "FlexContainer_8br65c3",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailExportDataBtn_a2t14jx",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(GridDetailExportDataBtn_a2t14jx_caption)#",
+					"icon": "export-button-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "GridDetail_qib93u6"
+						}
+					}
+				},
+				"parentName": "GridDetailSettingsBtn_yswzqgr",
+				"propertyName": "menuItems",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailImportDataBtn_46ygazv",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(GridDetailImportDataBtn_46ygazv_caption)#",
+					"icon": "import-button-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.ImportDataRequest",
+						"params": {
+							"entitySchemaName": "Activity"
+						}
+					}
+				},
+				"parentName": "GridDetailSettingsBtn_yswzqgr",
+				"propertyName": "menuItems",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailSearchFilter_46tlg98",
+				"values": {
+					"type": "crt.SearchFilter",
+					"placeholder": "#ResourceString(GridDetailSearchFilter_46tlg98_placeholder)#",
+					"iconOnly": true,
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "GridDetailSearchFilter_46tlg98_GridDetail_qib93u6",
+								"converters": [
+									{
+										"converter": "crt.SearchFilterAttributeConverter",
+										"args": [
+											"GridDetail_qib93u6"
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"GridDetailSearchFilter_46tlg98_SearchValue",
+							"GridDetailSearchFilter_46tlg98_FilteredColumnsGroups"
+						]
+					}
+				},
+				"parentName": "FlexContainer_8br65c3",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_dzfwyhp",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 32px)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_p5mzqae",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_qib93u6",
+				"values": {
+					"type": "crt.DataGrid",
+					"layoutConfig": {
+						"colSpan": 2,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 6
+					},
+					"features": {
+						"rows": {
+							"selection": false,
+							"numeration": false
+						},
+						"editable": {
+							"enable": false,
+							"itemsCreation": false,
+							"floatingEditPanel": false
+						}
+					},
+					"items": "$GridDetail_qib93u6",
+					"primaryColumnName": "GridDetail_qib93u6DS_Id",
+					"columns": [
+						{
+							"id": "aea80fea-d179-8935-789b-91a980688e4d",
+							"code": "GridDetail_qib93u6DS_Title",
+							"caption": "#ResourceString(GridDetail_qib93u6DS_Title)#",
+							"dataValueType": 28
+						},
+						{
+							"id": "328628ab-c8bd-69ec-fa0d-1449202333a0",
+							"code": "GridDetail_qib93u6DS_ActivityCategory",
+							"caption": "#ResourceString(GridDetail_qib93u6DS_ActivityCategory)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "88b5c9e3-3421-28c6-715e-d90cfd3901b4",
+							"code": "GridDetail_qib93u6DS_Priority",
+							"caption": "#ResourceString(GridDetail_qib93u6DS_Priority)#",
+							"dataValueType": 10
+						}
+					],
+					"placeholder": false,
+					"visible": true,
+					"fitContent": true
+				},
+				"parentName": "GridContainer_dzfwyhp",
+				"propertyName": "items",
 				"index": 0
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
@@ -2027,6 +2116,113 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 								]
 							}
 						}
+					},
+					"PDS_PgrTerritory_4gny4bv": {
+						"modelConfig": {
+							"path": "PDS.PgrTerritory"
+						}
+					},
+					"PDS_PgrTerritory_4gny4bv_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"GridDetail_qib93u6": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "GridDetail_qib93u6DS",
+							"filterAttributes": [
+								{
+									"name": "GridDetailSearchFilter_46tlg98_GridDetail_qib93u6",
+									"loadOnChange": true
+								},
+								{
+									"loadOnChange": true,
+									"name": "GridDetail_qib93u6_PredefinedFilter"
+								}
+							]
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"GridDetail_qib93u6DS_Title": {
+									"modelConfig": {
+										"path": "GridDetail_qib93u6DS.Title"
+									}
+								},
+								"GridDetail_qib93u6DS_ActivityCategory": {
+									"modelConfig": {
+										"path": "GridDetail_qib93u6DS.ActivityCategory"
+									}
+								},
+								"GridDetail_qib93u6DS_Priority": {
+									"modelConfig": {
+										"path": "GridDetail_qib93u6DS.Priority"
+									}
+								},
+								"GridDetail_qib93u6DS_Id": {
+									"modelConfig": {
+										"path": "GridDetail_qib93u6DS.Id"
+									}
+								}
+							}
+						}
+					},
+					"GridDetail_qib93u6_PredefinedFilter": {
+						"value": {
+							"items": {
+								"e36e3628-b584-42da-8922-0dc6936f0b71": {
+									"filterType": 4,
+									"comparisonType": 3,
+									"isEnabled": true,
+									"trimDateTimeParameterToDate": false,
+									"leftExpression": {
+										"expressionType": 0,
+										"columnPath": "ActivityCategory"
+									},
+									"isAggregative": false,
+									"dataValueType": 10,
+									"referenceSchemaName": "ActivityCategory",
+									"rightExpressions": [
+										{
+											"expressionType": 2,
+											"parameter": {
+												"dataValueType": 10,
+												"value": {
+													"Name": "Visit call",
+													"Id": "543d0f02-c32e-45ae-8427-365a5fa5ea43",
+													"value": "543d0f02-c32e-45ae-8427-365a5fa5ea43",
+													"displayValue": "Visit call"
+												}
+											}
+										},
+										{
+											"expressionType": 2,
+											"parameter": {
+												"dataValueType": 10,
+												"value": {
+													"Name": "Visit",
+													"Id": "fbef561a-c041-4bf7-9715-38123ec86789",
+													"value": "fbef561a-c041-4bf7-9715-38123ec86789",
+													"displayValue": "Visit"
+												}
+											}
+										}
+									]
+								}
+							},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "Activity"
+						}
 					}
 				}
 			},
@@ -2046,17 +2242,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"path": [
 					"attributes",
 					"CareerList",
-					"modelConfig"
-				],
-				"values": {
-					"filterAttributes": []
-				}
-			},
-			{
-				"operation": "merge",
-				"path": [
-					"attributes",
-					"CasesList",
 					"modelConfig"
 				],
 				"values": {
@@ -2158,6 +2343,17 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				],
 				"values": {
 					"modelConfig": {}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"CasesList",
+					"modelConfig"
+				],
+				"values": {
+					"filterAttributes": []
 				}
 			},
 			{
@@ -2308,6 +2504,24 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 								}
 							}
 						}
+					},
+					"GridDetail_qib93u6DS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "Activity",
+							"attributes": {
+								"Title": {
+									"path": "Title"
+								},
+								"ActivityCategory": {
+									"path": "ActivityCategory"
+								},
+								"Priority": {
+									"path": "Priority"
+								}
+							}
+						}
 					}
 				}
 			},
@@ -2319,7 +2533,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"properties": [
 					"AddressListDS",
 					"CareerListDS",
-					"CasesListDS",
 					"BulkEmailListDS",
 					"GridDetail_guswpo0DS",
 					"RecommendedProductListDS",
@@ -2327,8 +2540,23 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"OrderListDS",
 					"GridDetail_dm1myagDS",
 					"DataGrid_wij59kwDS",
+					"CasesListDS",
 					"LeadListDS"
 				]
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"dependencies"
+				],
+				"values": {
+					"GridDetail_qib93u6DS": [
+						{
+							"attributePath": "Owner",
+							"relationPath": "PDS.Id"
+						}
+					]
+				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,

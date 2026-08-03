@@ -20,6 +20,7 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_1mbln9s_title.Value" Value="Adressen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_3jtu7p2_title.Value" Value="&#xA;SAP" />
 			<Item Name="LocalizableStrings.ExpansionPanel_4r2mr5k_title.Value" Value="Besuchsberichte" />
+			<Item Name="LocalizableStrings.ExpansionPanel_h2q0n69_title.Value" Value="Projektpreise" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ilw1gpx_title.Value" Value="Rechnung" />
 			<Item Name="LocalizableStrings.ExpansionPanel_pa1hlbi_title.Value" Value="Überlieferung" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_ytmu9oh_placeholder.Value" Value="Suche" />
@@ -63,6 +64,7 @@
 			<Item Name="LocalizableStrings.TabContainer_0nkic4p_caption.Value" Value="Besuchsberichte" />
 			<Item Name="LocalizableStrings.TabContainer_Competitor_caption.Value" Value="Mitbewerber info" />
 			<Item Name="LocalizableStrings.TabContainer_Customer_caption.Value" Value="Kundennummer info" />
+			<Item Name="LocalizableStrings.TabContainer_rn66zaz_caption.Value" Value="Projektpreise" />
 			<Item Name="LocalizableStrings.Territory_placeholder.Value" Value="Gebiet auswählen" />
 		</Items>
 	</Group>

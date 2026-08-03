@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "626d4d14-01fd-41c3-8077-2f95375954e4",
+    "Name": "PgrChangeTheStatusOfTheVisitTasksToDone",
+    "ModifiedOnUtc": "\/Date(1785421210000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Change status of meetings, calls and visit tasks sub-process",
+    "DependsOn": []
+  }
+}

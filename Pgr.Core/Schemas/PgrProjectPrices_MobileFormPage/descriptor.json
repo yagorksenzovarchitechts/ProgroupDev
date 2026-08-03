@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "aae2bb5a-fdfb-40e9-8e04-ff98d0c7eab9",
+    "Name": "PgrProjectPrices_MobileFormPage",
+    "ModifiedOnUtc": "\/Date(1785330981000)\/",
+    "Parent": {
+      "UId": "019c694a-1a3b-4812-b2e5-219b326061ae",
+      "Name": "MobilePageWithTabsFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Project Prices mobile form page",
+    "DependsOn": []
+  }
+}

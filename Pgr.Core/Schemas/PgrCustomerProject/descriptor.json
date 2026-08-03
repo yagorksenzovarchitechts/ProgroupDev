@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "0ce7d573-8ad1-4208-b7ee-8693b741b0db",
+    "Name": "PgrCustomerProject",
+    "ModifiedOnUtc": "\/Date(1785330623000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Customer project",
+    "DependsOn": []
+  }
+}

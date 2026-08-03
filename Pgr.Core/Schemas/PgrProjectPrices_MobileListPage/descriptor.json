@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "35e42246-3aa3-4ae6-929b-353315fcbb96",
+    "Name": "PgrProjectPrices_MobileListPage",
+    "ModifiedOnUtc": "\/Date(1785330981000)\/",
+    "Parent": {
+      "UId": "011e7dda-a763-4535-9b9a-e09eddd047be",
+      "Name": "BaseMobileListTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Project Prices mobile list page",
+    "DependsOn": []
+  }
+}

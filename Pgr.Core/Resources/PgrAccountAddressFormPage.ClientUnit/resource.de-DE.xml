@@ -8,6 +8,7 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_jd5h7os_title.Value" Value="Lieferzeiten" />
 			<Item Name="LocalizableStrings.ExpansionPanel_s9yk8er_title.Value" Value="Progroup plants" />
 			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="Allgemeine info" />
+			<Item Name="LocalizableStrings.GridDetail_bzmq35rDS_PgrDayOfWeek_Number.Value" Value="#" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
 			<Item Name="LocalizableStrings.TabContainer_wuleg2y_caption.Value" Value="Lieferadresse" />
 		</Items>

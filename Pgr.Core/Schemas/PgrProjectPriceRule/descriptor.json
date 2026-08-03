@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "c82b69de-8f79-420e-9f62-8b54ae093058",
+    "Name": "PgrProjectPriceRule",
+    "ModifiedOnUtc": "\/Date(1785393225000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Project price rule",
+    "DependsOn": []
+  }
+}

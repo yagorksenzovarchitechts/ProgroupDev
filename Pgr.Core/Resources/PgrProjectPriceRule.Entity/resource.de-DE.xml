@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Objekt" />
+			<Item Name="Columns.PgrAccountAddress.Caption" Value="Adressnummer" />
+			<Item Name="Columns.PgrAddressMatchcode.Caption" Value="Adressbeschreibung" />
+			<Item Name="Columns.PgrDiscountAbsoluteCurrency.Caption" Value="Rabatt absolut (Währung)" />
+			<Item Name="Columns.PgrDiscountAbsoluteEur.Caption" Value="Rabatt absolut (EUR)" />
+			<Item Name="Columns.PgrDiscountPercentage.Caption" Value="Rabatt in %" />
+			<Item Name="Columns.PgrMostlyPgPaper.Caption" Value="Überw. PG Papiere" />
+			<Item Name="Columns.PgrPlant.Caption" Value="Werk" />
+			<Item Name="Columns.PgrProjectPriceId.Caption" Value="Projektnummer" />
+		</Items>
+	</Group>
+</Resources>

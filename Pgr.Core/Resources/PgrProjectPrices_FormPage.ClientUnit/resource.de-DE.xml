@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Project Prices form page" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.ExpansionPanel_h5h73ms_title.Value" Value="Kommentare" />
+			<Item Name="LocalizableStrings.ExpansionPanel_ixutzf7_title.Value" Value="Projektpreisregeln" />
+			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="Allgemeine Informationen" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
+		</Items>
+	</Group>
+</Resources>

@@ -2,6 +2,7 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
+			<Item Name="Caption" Value="Unternehmen" />
 			<Item Name="Columns.AccountCategory.Caption" Value="Kategorie" />
 			<Item Name="Columns.AdditionalPhone.Caption" Value="Mobiltelefonnummer" />
 			<Item Name="Columns.Address.Caption" Value="Adresse" />

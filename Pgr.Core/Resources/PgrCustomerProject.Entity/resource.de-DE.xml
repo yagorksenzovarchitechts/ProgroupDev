@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Objekt" />
+			<Item Name="Columns.PgrCustomerProjectId.Caption" Value="Kundenprojekt ID" />
+			<Item Name="Columns.PgrName.Caption" Value="Kundenprojekt" />
+			<Item Name="Columns.PgrNote.Caption" Value="Kommentar" />
+			<Item Name="Columns.PgrProjectPriceId.Caption" Value="Projektnummer" />
+		</Items>
+	</Group>
+</Resources>

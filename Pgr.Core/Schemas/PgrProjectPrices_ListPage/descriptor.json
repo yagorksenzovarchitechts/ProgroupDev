@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "f9b8b9d7-d59e-4017-b5c8-9c1e82cd729c",
+    "Name": "PgrProjectPrices_ListPage",
+    "ModifiedOnUtc": "\/Date(1785334391000)\/",
+    "Parent": {
+      "UId": "b7b898d0-8c77-4953-c097-23fa6800da02",
+      "Name": "ListPageV3Template"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Project Prices list page",
+    "DependsOn": []
+  }
+}

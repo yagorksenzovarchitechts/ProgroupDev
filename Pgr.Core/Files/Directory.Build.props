@@ -33,6 +33,7 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrCorrectiveMeasureAction/PgrCorrectiveMeasureAction.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrCorrectiveMeasureAction/PgrCorrectiveMeasureAction.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrCountryTerritory/PgrCountryTerritory.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrCountryTerritory/PgrCountryTerritory.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrCustomerlabel/PgrCustomerlabel.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrCustomerlabel/PgrCustomerlabel.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrCustomerProject/PgrCustomerProject.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrCustomerProject/PgrCustomerProject.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrCustomerThresholdMatrix/PgrCustomerThresholdMatrix.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrCustomerThresholdMatrix/PgrCustomerThresholdMatrix.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrDeliveryTimesAccountAddress/PgrDeliveryTimesAccountAddress.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrDeliveryTimesAccountAddress/PgrDeliveryTimesAccountAddress.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrDeviationReasonCode/PgrDeviationReasonCode.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrDeviationReasonCode/PgrDeviationReasonCode.cs')" />
@@ -49,6 +50,8 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiSlicer/PgrPowerBiSlicer.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiSlicer/PgrPowerBiSlicer.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiSlicerValue/PgrPowerBiSlicerValue.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiSlicerValue/PgrPowerBiSlicerValue.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiUserFilter/PgrPowerBiUserFilter.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiUserFilter/PgrPowerBiUserFilter.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrProjectPrice/PgrProjectPrice.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrProjectPrice/PgrProjectPrice.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrProjectPriceRule/PgrProjectPriceRule.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrProjectPriceRule/PgrProjectPriceRule.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrTeam/PgrTeam.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrTeam/PgrTeam.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrVisitReason/PgrVisitReason.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrVisitReason/PgrVisitReason.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrVisitReport/PgrVisitReport.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrVisitReport/PgrVisitReport.cs')" />

@@ -1,0 +1,28 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "84e923d5-a1ae-46d7-bd6c-e2ac355d6a8c",
+      "A2": "PgrProjectPricesRelatedPage",
+      "A5": "6f71e54c-1960-40c9-94f6-073fd67699ab",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "5530927f-22ea-e7c9-4ccf-506d3a6c2ed2",
+      "B8": "0.0.0.0",
+      "AD1": "2c441be4-f7d5-45c8-881d-f2b5d045991f",
+      "AD2": "EntitySchemaManager",
+      "AD3": "RelatedPage",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+        "Pages": [
+          {
+            "UId": "74de469f-fa47-4f37-9428-6a57b4e4b94e",
+            "PageSchemaUId": "83a50402-e919-4f4f-9ff5-67059f436fab",
+            "IsDefault": true
+          }
+        ]
+      }
+    }
+  }
+}
