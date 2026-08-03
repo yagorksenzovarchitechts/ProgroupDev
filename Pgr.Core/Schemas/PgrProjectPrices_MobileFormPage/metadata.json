@@ -1,0 +1,10 @@
+= MetaData.Schema.UId "aae2bb5a-fdfb-40e9-8e04-ff98d0c7eab9"
+= MetaData.Schema.A2 "PgrProjectPrices_MobileFormPage"
+= MetaData.Schema.A5 "d484d861-d8e5-4a3f-84ad-1d9256189431"
+~ MetaData.Schema.B2 ["f87aa558-7506-4c8c-9b53-61a5ef69d2d1","1f6fb4c3-f6df-4ed9-89cc-81b00fa9b127","e1ef9082-bcaf-4073-8355-c4f60695f730","defa1de1-19ed-4910-9ec5-075afeb33c6e"]
+= MetaData.Schema.B6 "a00051f4-cde3-4f3f-b08e-c5ad1a5c735a"
+= MetaData.Schema.HD1 "019c694a-1a3b-4812-b2e5-219b326061ae"
+= MetaData.Schema.HD6 "null"
+- MetaData.Schema.B7
+- MetaData.Schema.HD12
++ MetaData.Schema.B7 false

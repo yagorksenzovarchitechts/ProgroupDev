@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Project price rule" />
+			<Item Name="Columns.PgrAccountAddress.Caption" Value="Delivery address ID" />
+			<Item Name="Columns.PgrAddressMatchcode.Caption" Value="Address matchcode" />
+			<Item Name="Columns.PgrDiscountAbsoluteCurrency.Caption" Value="Discount absolute (currency)" />
+			<Item Name="Columns.PgrDiscountAbsoluteEur.Caption" Value="Discount absolute (EUR)" />
+			<Item Name="Columns.PgrDiscountPercentage.Caption" Value="Discount %" />
+			<Item Name="Columns.PgrMostlyPgPaper.Caption" Value="Mostly PG paper" />
+			<Item Name="Columns.PgrPlant.Caption" Value="Plant" />
+			<Item Name="Columns.PgrProjectPriceId.Caption" Value="Project price ID" />
+		</Items>
+	</Group>
+</Resources>

@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.Button_m8g38tz_caption.Value" Value="Vertriebsmitarbeiter-Übersicht" />
 			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Importieren" />
 			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_caption.Value" Value="Tag" />
 			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value="Excel-Export" />

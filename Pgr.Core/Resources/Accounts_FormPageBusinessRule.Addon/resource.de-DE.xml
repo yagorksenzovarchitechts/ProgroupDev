@@ -2,8 +2,6 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
-			<Item Name="AddonConfig.Rules.3a7de010-c53c-d16b-d537-a4acd9e31ae5.Caption" Value="Visibility for NBOContainer" />
-			<Item Name="AddonConfig.Rules.aa28548a-884f-c296-efa3-183daf547797.Caption" Value="Visibility for LeadConversionScore" />
 			<Item Name="Caption" Value="Accounts form page (Business rules)" />
 		</Items>
 	</Group>

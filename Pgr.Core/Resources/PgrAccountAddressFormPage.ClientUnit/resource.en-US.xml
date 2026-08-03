@@ -20,6 +20,7 @@
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_wy1k49q_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_v6obxg8_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_xqgiqsu_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.GridDetail_bzmq35rDS_PgrDayOfWeek_Number.Value" Value="#" />
 			<Item Name="LocalizableStrings.Input_j13y1kt_label.Value" Value="Text" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
 			<Item Name="LocalizableStrings.TabContainer_wuleg2y_caption.Value" Value="DELIVERY ADDRESS" />

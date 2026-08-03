@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "18e1a5c8-2a2d-4ba0-890e-b24f9e3aaf12",
+    "Name": "PgrProjectPricesMobileRelatedPage",
+    "ModifiedOnUtc": "\/Date(1785330981000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Project Prices (Mobile page settings)",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Sales person overview page" />
+			<Item Name="LocalizableStrings.DefaultHeaderCaption.Value" Value="Vertriebsmitarbeiter-Übersicht" />
+			<Item Name="LocalizableStrings.PageTitle_caption.Value" Value="Vertriebsmitarbeiter-Übersicht" />
+			<Item Name="LocalizableStrings.QuickFilter_vumvdng_config_caption.Value" Value="Gebiet" />
+		</Items>
+	</Group>
+</Resources>

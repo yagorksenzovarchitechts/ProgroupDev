@@ -81,6 +81,29 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
+				"name": "Button_m8g38tz",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_m8g38tz_caption)#",
+					"color": "outline",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "only-text",
+					"visible": true,
+					"clicked": {
+						"request": "crt.OpenPageRequest",
+						"params": {
+							"schemaName": "PgrSalesPersonOverviewPage"
+						}
+					},
+					"clickMode": "default"
+				},
+				"parentName": "ActionButtonsContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "QuickFilter_gpw24m7",
 				"values": {
 					"type": "crt.QuickFilter",
@@ -277,21 +300,6 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		modelConfig: /**SCHEMA_MODEL_CONFIG*/{
-			"dataSources": {
-				"PDS": {
-					"config": {
-						"attributes": {
-							"Phone": {
-								"path": "Phone"
-							},
-							"MobilePhone": {},
-							"Email": {}
-						}
-					}
-				}
-			}
-		}/**SCHEMA_MODEL_CONFIG*/,
 		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/

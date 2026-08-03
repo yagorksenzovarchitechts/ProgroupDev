@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Project Prices form page" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Attachments" />
+			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Attachments" />
+			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancel" />
+			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Close" />
+			<Item Name="LocalizableStrings.ExpansionPanel_h5h73ms_title.Value" Value="Comments" />
+			<Item Name="LocalizableStrings.ExpansionPanel_inykyal_title.Value" Value="IDs" />
+			<Item Name="LocalizableStrings.ExpansionPanel_ixutzf7_title.Value" Value="Project price rules" />
+			<Item Name="LocalizableStrings.ExpansionPanel_seziytl_title.Value" Value="Customer project" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_lqwte3w_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_v6lrc2g_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_8zmyasi_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_vvk9krh_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_69ggcj3_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_wd16bna_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_u6esjyx_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_xf6m1oq_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_fl1oogx_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_pq1b86d_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_ixljdko_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_zyrp9hx_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
+			<Item Name="LocalizableStrings.addRecord_d3uxr1j_caption.Value" Value="Add new" />
+		</Items>
+	</Group>
+</Resources>

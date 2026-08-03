@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "1c52e464-b911-4e76-9888-f1d24b22530b",
     "Name": "PgrMeasureSendEmailPersonInCharge",
-    "ModifiedOnUtc": "\/Date(1784727465000)\/",
+    "ModifiedOnUtc": "\/Date(1785411231000)\/",
     "ManagerName": "ProcessSchemaManager",
     "Caption": "Measure: Send email to Person in Charge",
     "DependsOn": []

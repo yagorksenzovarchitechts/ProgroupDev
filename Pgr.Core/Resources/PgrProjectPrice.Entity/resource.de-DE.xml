@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Objekt" />
+			<Item Name="Columns.PgrAccount.Caption" Value="Kunde" />
+			<Item Name="Columns.PgrCustomerProjectMandatory.Caption" Value="Kundenprojekt Pflicht" />
+			<Item Name="Columns.PgrEndDate.Caption" Value="Enddatum" />
+			<Item Name="Columns.PgrName.Caption" Value="Projektname" />
+			<Item Name="Columns.PgrNotes.Caption" Value="Kommentar" />
+			<Item Name="Columns.PgrProjectPriceId.Caption" Value="Projektnummer" />
+			<Item Name="Columns.PgrSapId.Caption" Value="SAP ID" />
+			<Item Name="Columns.PgrStartDate.Caption" Value="Startdatum" />
+			<Item Name="Columns.PgrWfId.Caption" Value="Wepaform ID" />
+		</Items>
+	</Group>
+</Resources>

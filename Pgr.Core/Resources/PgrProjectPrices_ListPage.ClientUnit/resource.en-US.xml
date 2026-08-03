@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Project Prices list page" />
+			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Import" />
+			<Item Name="LocalizableStrings.QuickFilter_dsylv6x_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_dsylv6x_config_caption.Value" Value="Customer (Account)" />
+			<Item Name="LocalizableStrings.QuickFilter_t4jq17j_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_t4jq17j_config_caption.Value" Value="Start date" />
+			<Item Name="LocalizableStrings.QuickFilter_uwqyba7_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_uwqyba7_config_caption.Value" Value="End date" />
+		</Items>
+	</Group>
+</Resources>

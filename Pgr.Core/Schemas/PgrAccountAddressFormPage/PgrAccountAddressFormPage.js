@@ -935,15 +935,27 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					},
 					"features": {
 						"rows": {
-							"selection": {
-								"enable": true,
-								"multiple": true
-							}
+							"selection": false,
+							"numeration": false
+						},
+						"editable": {
+							"enable": true,
+							"itemsCreation": true
+						},
+						"columns": {
+							"sorting": false
 						}
 					},
 					"items": "$GridDetail_bzmq35r",
 					"primaryColumnName": "GridDetail_bzmq35rDS_Id",
 					"columns": [
+						{
+							"id": "915700c7-a01c-7c5d-6aae-e88868ba9278",
+							"code": "GridDetail_bzmq35rDS_PgrDayOfWeek_Number",
+							"caption": "#ResourceString(GridDetail_bzmq35rDS_PgrDayOfWeek_Number)#",
+							"dataValueType": 4,
+							"width": 76
+						},
 						{
 							"id": "b9a0c06d-18d9-3824-ebb5-8e10e5af32a2",
 							"code": "GridDetail_bzmq35rDS_PgrDayOfWeek",
@@ -980,7 +992,9 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"width": 187
 						}
 					],
-					"placeholder": false
+					"placeholder": false,
+					"visible": true,
+					"fitContent": true
 				},
 				"parentName": "GridContainer_shn2eng",
 				"propertyName": "items",
@@ -1274,13 +1288,18 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 								"default": [
 									{
 										"direction": "asc",
-										"columnName": "PgrAccountAddress"
+										"columnName": "PgrDayOfWeek_Number"
 									}
 								]
 							}
 						},
 						"viewModelConfig": {
 							"attributes": {
+								"GridDetail_bzmq35rDS_PgrDayOfWeek_Number": {
+									"modelConfig": {
+										"path": "GridDetail_bzmq35rDS.PgrDayOfWeek_Number"
+									}
+								},
 								"GridDetail_bzmq35rDS_PgrDayOfWeek": {
 									"modelConfig": {
 										"path": "GridDetail_bzmq35rDS.PgrDayOfWeek"
@@ -1496,6 +1515,10 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"config": {
 								"entitySchemaName": "PgrDeliveryTimesAccountAddress",
 								"attributes": {
+									"PgrDayOfWeek_Number": {
+										"type": "ForwardReference",
+										"path": "PgrDayOfWeek.Number"
+									},
 									"PgrDayOfWeek": {
 										"path": "PgrDayOfWeek"
 									},
