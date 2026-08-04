@@ -1,4 +1,4 @@
-define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientConsts"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk, PgrClientConsts)/**SCHEMA_ARGS*/ {
+define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -971,8 +971,14 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 					"icon": "add-button-icon",
 					"visible": false,
 					"clicked": {
-						"request": "usr.CreateMeasureTaskRequest",
-						"params": {}
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "PgrCreateMeasureTaskFrom396Task",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"recordIdProcessParameterName": "TaskId"
+						}
 					},
 					"clickMode": "default"
 				},
@@ -2394,94 +2400,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[
-			{
-				request: "usr.CreateMeasureTaskRequest",
-				handler: async (request, next) => {
-					const measureCategoryId = PgrClientConsts.ActivityCategory.Measure;
-					// Auto-generated datasource of the child-activities grid (sub-tasks list).
-					const childActivitiesDataSource = "GridDetail_1ay6zynDS";
-					const strings = request.$context.Resources.Strings;
-					// Lookup attribute values are stored as { value, displayValue } — take the id.
-					const unwrap = (v) => (v && typeof v === "object" && "value" in v) ? v.value : v;
-					const showMessage = async (message) => {
-						await request.$context.executeRequest({
-							type: "crt.ShowDialogRequest",
-							$context: request.$context,
-							dialogConfig: {
-								data: {
-									message: message,
-									actions: [
-										{ key: "ok", config: { color: "primary", caption: "OK" } }
-									]
-								}
-							}
-						});
-					};
-
-					// The new Activity references PgrParentTask = PDS_Id. If the Task card is not
-					// yet saved, that Id doesn't exist as a row in the DB, so save it first.
-					const saved = await request.$context.executeRequest({
-						type: "crt.SaveRecordRequest",
-						$context: request.$context,
-						preventCardClose: true
-					});
-					if (!saved) {
-						// Save failed — the framework already showed its own error dialog.
-						return;
-					}
-
-					// Reason is optional at creation (CMVP-125): it can be filled in later when the
-					// Measure task is completed; the day-6 process reminds if it stays unfilled.
-					const reasonCode = unwrap(await request.$context.PDS_PgrReasonCode);
-					const parentTaskId = unwrap(await request.$context.PDS_Id);
-					const account = unwrap(await request.$context.PDS_Account);
-					const reasonNotes = await request.$context.PDS_PgrReasonNotes;
-					const activityTitle = await request.$context.PDS_ActivityTitle;
-					// Owner of the Measure task = the customer's Sales manager (Account.PgrSalesManager).
-					let owner = unwrap(await request.$context.PDS_AccountSalesManager);
-					if (!owner) {
-						// No sales manager on the account — fall back to the current user.
-						const sysValues = await new sdk.SysValuesService().loadSysValues();
-						owner = sysValues?.userContact?.value ?? sysValues?.userContact?.Id;
-					}
-
-					// Create the Measure activity with the same links, without opening the card.
-					const measureLabel = await strings.CreateMeasure_DefaultTitle;
-					const activityModel = await sdk.Model.create("Activity");
-					const result = await activityModel.insert({
-						Title: activityTitle ? `${measureLabel}: ${activityTitle}` : measureLabel,
-						ActivityCategory: measureCategoryId,
-						PgrParentTask: parentTaskId,
-						Account: account,
-						PgrReasonCode: reasonCode,
-						PgrReasonNotes: reasonNotes,
-						Owner: owner,
-						RemindToOwner: true,
-						RemindToOwnerDate: new Date()
-					});
-
-					// insert() reports failure via the result, it does not throw.
-					if (!result || !result.success) {
-						console.error("usr.CreateMeasureTaskRequest: activity insert failed", result);
-						const errorText = (result && result.errorInfo) || "";
-						const baseMsg = await strings.CreateMeasure_Error_message;
-						await showMessage(errorText ? `${baseMsg} ${errorText}` : baseMsg);
-						return;
-					}
-
-					// Refresh the child activities grid so the new Measure task shows up.
-					/* await request.$context.executeRequest({
-						type: "crt.LoadDataRequest",
-						$context: request.$context,
-						config: { loadType: "reload" },
-						dataSourceName: childActivitiesDataSource
-					}); */
-					await showMessage(await strings.CreateMeasure_Success_message);
-					return next?.handle(request);
-				}
-			}
-		]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
 	};
