@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "452a0e7d-7686-42f1-8cd0-91a4c14bc043",
+    "Name": "PgrContactInLead",
+    "ModifiedOnUtc": "\/Date(1785929913000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Contact in lead",
+    "DependsOn": []
+  }
+}

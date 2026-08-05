@@ -4,6 +4,7 @@
     "Name": "PgrCreateMeasureTaskFrom396Task",
     "ModifiedOnUtc": "\/Date(1785767019000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "Create measure task from 396 task"
+    "Caption": "Create measure task from 396 task",
+    "DependsOn": []
   }
 }

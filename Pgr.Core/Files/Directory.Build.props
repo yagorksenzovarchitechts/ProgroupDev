@@ -13,6 +13,7 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/ContractType/ContractType.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/ContractType/ContractType.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Country/Country.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Country/Country.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/DayInCalendar/DayInCalendar.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/DayInCalendar/DayInCalendar.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/DayOff/DayOff.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/DayOff/DayOff.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/DayOfWeek/DayOfWeek.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/DayOfWeek/DayOfWeek.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Lead/Lead.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Lead/Lead.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Opportunity/Opportunity.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Opportunity/Opportunity.cs')" />
@@ -30,6 +31,7 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonusCondition/PgrBonusCondition.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonusCondition/PgrBonusCondition.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrContactInLead/PgrContactInLead.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrContactInLead/PgrContactInLead.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrCorrectiveMeasureAction/PgrCorrectiveMeasureAction.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrCorrectiveMeasureAction/PgrCorrectiveMeasureAction.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrCountryTerritory/PgrCountryTerritory.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrCountryTerritory/PgrCountryTerritory.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrCustomerlabel/PgrCustomerlabel.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrCustomerlabel/PgrCustomerlabel.cs')" />
@@ -58,6 +60,7 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrVisitType/PgrVisitType.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrVisitType/PgrVisitType.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrYear/PgrYear.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrYear/PgrYear.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Product/Product.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Product/Product.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/SocialMessage/SocialMessage.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/SocialMessage/SocialMessage.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Territory/Territory.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Territory/Territory.cs')" />
 	</ItemGroup>
 </Project>

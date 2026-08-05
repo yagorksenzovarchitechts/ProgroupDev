@@ -71,9 +71,41 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 			},
 			{
 				"operation": "merge",
+				"name": "Role",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 5,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"visible": false,
+					"readonly": false
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "Reporter",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 3,
+						"colSpan": 1,
+						"rowSpan": 1
+					}
+				}
+			},
+			{
+				"operation": "move",
+				"name": "Reporter",
+				"parentName": "GridContainer_3mhjndt",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "merge",
 				"name": "GridContainer_i2j0o75",
 				"values": {
-					"visible": false,
 					"alignItems": "stretch"
 				}
 			},
@@ -608,7 +640,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 						"right": "none"
 					},
 					"fitContent": true,
-					"visible": true,
+					"visible": false,
 					"alignItems": "stretch"
 				},
 				"parentName": "TabContainer_w3tsrln",
@@ -725,7 +757,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				"values": {
 					"layoutConfig": {
 						"column": 1,
-						"colSpan": 3,
+						"colSpan": 2,
 						"row": 1,
 						"rowSpan": 1
 					},
@@ -751,6 +783,90 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 			},
 			{
 				"operation": "insert",
+				"name": "FlexContainer_2yxqudl",
+				"values": {
+					"layoutConfig": {
+						"column": 3,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true
+				},
+				"parentName": "GridContainer_ReasonCodeAndNotes",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Button_anz5vn2",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_anz5vn2_caption)#",
+					"color": "primary",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "left-icon",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "PgrMeasureSendEmailPersonInCharge",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"recordIdProcessParameterName": "ProcessSchemaTaskId"
+						}
+					},
+					"clickMode": "default",
+					"icon": "email-button-icon"
+				},
+				"parentName": "FlexContainer_2yxqudl",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_xnxgcpu",
+				"values": {
+					"layoutConfig": {
+						"column": 4,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "GridContainer_ReasonCodeAndNotes",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
 				"name": "ComboBox_5yceyw3",
 				"values": {
 					"layoutConfig": {
@@ -772,7 +888,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 1
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -814,7 +930,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 2
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -855,7 +971,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 3
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -883,7 +999,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 4
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -924,7 +1040,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 5
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -956,7 +1072,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 6
+				"index": 8
 			},
 			{
 				"operation": "insert",
@@ -985,34 +1101,6 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				"parentName": "FlexContainer_lbswzca",
 				"propertyName": "items",
 				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Button_anz5vn2",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(Button_anz5vn2_caption)#",
-					"color": "primary",
-					"disabled": false,
-					"size": "large",
-					"iconPosition": "left-icon",
-					"visible": true,
-					"clicked": {
-						"request": "crt.RunBusinessProcessRequest",
-						"params": {
-							"processName": "PgrMeasureSendEmailPersonInCharge",
-							"processRunType": "ForTheSelectedPage",
-							"saveAtProcessStart": true,
-							"showNotification": true,
-							"recordIdProcessParameterName": "ProcessSchemaTaskId"
-						}
-					},
-					"clickMode": "default",
-					"icon": "email-button-icon"
-				},
-				"parentName": "FlexContainer_lbswzca",
-				"propertyName": "items",
-				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -1862,6 +1950,35 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				"index": 1
 			},
 			{
+				"operation": "insert",
+				"name": "ComboBox_hth0sst",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrAccountPgrSalesDirector_ji6eoid",
+					"ariaLabel": "#ResourceString(ComboBox_hth0sst_ariaLabel)#",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"readonly": true,
+					"control": "$PDS_PgrAccountPgrSalesDirector_ji6eoid",
+					"visible": false,
+					"placeholder": "",
+					"secondaryDisplayValue": null
+				},
+				"parentName": "GridContainer_3mhjndt",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
 				"operation": "move",
 				"name": "CenterContainer",
 				"parentName": "CardContentWrapper",
@@ -2035,10 +2152,6 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 						"modelConfig": {
 							"path": "PDS.CreatedOn"
 						}
-					},
-					"undefined_List": {
-						"isCollection": true,
-						"modelConfig": {}
 					},
 					"GridDetail_bdh4agg": {
 						"isCollection": true,
@@ -2259,6 +2372,50 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 								]
 							}
 						}
+					},
+					"PDS_PgrAccountPgrSalesDirector_ji6eoid": {
+						"modelConfig": {
+							"path": "PDS.PgrAccountPgrSalesDirector_ji6eoid"
+						}
+					},
+					"PDS_PgrAccountPgrSalesDirector_ji6eoid_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"LookupAttribute_jbhd2d1_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"LookupAttribute_eh7knlb_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
 					}
 				}
 			},
@@ -2366,6 +2523,10 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 					},
 					"PgrAccountSalesManager": {
 						"path": "Account.PgrSalesManager",
+						"type": "ForwardReference"
+					},
+					"PgrAccountPgrSalesDirector_ji6eoid": {
+						"path": "PgrAccount.PgrSalesDirector",
 						"type": "ForwardReference"
 					}
 				}

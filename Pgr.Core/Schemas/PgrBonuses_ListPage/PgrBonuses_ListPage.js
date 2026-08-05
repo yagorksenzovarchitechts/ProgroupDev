@@ -26,18 +26,11 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				"values": {
 					"columns": [
 						{
-							"id": "f252f581-0ccf-44ac-b7c9-c00df2ad9919",
-							"code": "PDS_PgrName",
-							"caption": "#ResourceString(PDS_PgrName)#",
-							"dataValueType": 1,
-							"width": 146
-						},
-						{
-							"id": "6dce1c21-001f-4697-d0dd-5de74627d7f5",
+							"id": "c2c2ef3b-a3ac-619b-f909-016a007cb25e",
 							"code": "PDS_PgrBonusId",
 							"caption": "#ResourceString(PDS_PgrBonusId)#",
-							"dataValueType": 4,
-							"width": 128
+							"dataValueType": 27,
+							"sticky": true
 						},
 						{
 							"id": "b900873a-3cb3-809d-1cde-0571978dd2ef",
@@ -118,11 +111,6 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"attributes"
 				],
 				"values": {
-					"PDS_PgrName": {
-						"modelConfig": {
-							"path": "PDS.PgrName"
-						}
-					},
 					"PDS_PgrBonusId": {
 						"modelConfig": {
 							"path": "PDS.PgrBonusId"
@@ -167,9 +155,6 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				"values": {
 					"entitySchemaName": "PgrBonus",
 					"attributes": {
-						"PgrName": {
-							"path": "PgrName"
-						},
 						"PgrBonusId": {
 							"path": "PgrBonusId"
 						},

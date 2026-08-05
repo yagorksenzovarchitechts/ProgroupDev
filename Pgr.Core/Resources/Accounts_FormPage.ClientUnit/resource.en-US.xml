@@ -81,6 +81,8 @@
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_mpajj38_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_o98i8bf_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_pfp47bp_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.GridDetail_c3c1pioDS_ActivityCategory.Value" Value="Category" />
+			<Item Name="LocalizableStrings.GridDetail_c3c1pioDS_UserEmailAddress.Value" Value="Email" />
 			<Item Name="LocalizableStrings.GridDetail_fwd4w3aDS_Name.Value" Value="Account name" />
 			<Item Name="LocalizableStrings.GridDetail_nzg1cklDS_PgrOpportunityStartDate.Value" Value="Start date" />
 			<Item Name="LocalizableStrings.GridDetail_nzg1cklDS_Title.Value" Value="Project" />
@@ -125,6 +127,12 @@
 			<Item Name="LocalizableStrings.PgrSuspensionEndDateLabel.Value" Value="Suspension end date" />
 			<Item Name="LocalizableStrings.PgrSuspensionReasonLabel.Value" Value="Suspension reason" />
 			<Item Name="LocalizableStrings.ProductsOffered_placeholder.Value" Value="Enter what the company provides or sells" />
+			<Item Name="LocalizableStrings.QuickFilter_29xf66d_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_29xf66d_config_caption.Value" Value="Status" />
+			<Item Name="LocalizableStrings.QuickFilter_hs77vju_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_hs77vju_config_caption.Value" Value="Overdue" />
+			<Item Name="LocalizableStrings.QuickFilter_hx0yfnz_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_hx0yfnz_config_caption.Value" Value="Category" />
 			<Item Name="LocalizableStrings.QuickFilter_nc0ykar_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.QuickFilter_nc0ykar_config_caption.Value" Value="Period" />
 			<Item Name="LocalizableStrings.QuickFilter_th32v2i_caption.Value" Value="Quick filter" />
