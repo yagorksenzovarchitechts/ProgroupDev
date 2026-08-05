@@ -5,6 +5,8 @@
 			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value="Export to Excel" />
 			<Item Name="LocalizableStrings.MenuItem_ImportFromExcel_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.QuickFilter_07b11xi_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_07b11xi_config_caption.Value" Value="Account" />
 			<Item Name="LocalizableStrings.QuickFilter_3hurnbj_config_caption.Value" Value="Overdue tasks" />
 			<Item Name="LocalizableStrings.QuickFilter_CanceledTasks_config_caption.Value" Value="Show canceled/closed tasks" />
 			<Item Name="LocalizableStrings.QuickFilter_MyTasks_config_caption.Value" Value="Only my tasks" />

@@ -2,30 +2,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
-				"operation": "remove",
-				"name": "MarketingFieldsContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "CustomerNeed"
-			},
-			{
-				"operation": "remove",
-				"name": "RegisterMethod"
-			},
-			{
-				"operation": "remove",
-				"name": "Channel"
-			},
-			{
-				"operation": "remove",
-				"name": "Source"
-			},
-			{
-				"operation": "remove",
-				"name": "AdCampaign"
-			},
-			{
 				"operation": "merge",
 				"name": "SaveButton",
 				"values": {
@@ -199,7 +175,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"name": "Owner",
 				"parentName": "ContactInfoFieldsContainer",
 				"propertyName": "items",
-				"index": 7
+				"index": 6
 			},
 			{
 				"operation": "remove",
@@ -367,10 +343,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "remove",
-				"name": "TimelineTile_Case"
-			},
-			{
-				"operation": "remove",
 				"name": "TimelineTile_Invoice"
 			},
 			{
@@ -383,51 +355,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "remove",
-				"name": "ServiceTab"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesToolsContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesToolsFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesAddButton"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesSettingsButton"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesExportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesImportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesListContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "CasesList"
+				"name": "TimelineTile_Case"
 			},
 			{
 				"operation": "remove",
@@ -536,162 +464,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			{
 				"operation": "remove",
 				"name": "GridDetail_guswpo0_DeleteBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "MarketingTab"
-			},
-			{
-				"operation": "remove",
-				"name": "MarketingTabGridContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailToolContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailToolFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailSettingsButton"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailExportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailListContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailList"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailList_AddTagsBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailList_RemoveTagsBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailList_ExportToExcelBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormToolContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormToolFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormSettingsButton"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormExportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormImportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormListContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "SubmittedFormList"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesToolsContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesToolsFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesSettingsButton"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesExportMenuItem"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesImportMenuItem"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "GridContainer_jilqo44"
-			},
-			{
-				"operation": "remove",
-				"name": "AdAudiencesDataGrid"
-			},
-			{
-				"operation": "remove",
-				"name": "DataGrid_wij59kw_AddTagsBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "DataGrid_wij59kw_RemoveTagsBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "DataGrid_wij59kw_ExportToExcelBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "DataGrid_wij59kw_MergeBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "DataGrid_wij59kw_DeleteBulkAction"
 			},
 			{
 				"operation": "remove",
@@ -864,6 +636,470 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			{
 				"operation": "remove",
 				"name": "OpportunityList"
+			},
+			{
+				"operation": "remove",
+				"name": "MarketingTab"
+			},
+			{
+				"operation": "remove",
+				"name": "MarketingTabGridContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadToolsContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadToolsFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "CreateLeadButton"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "GridDetailSettingsBtn_icmycs2"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadImportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadList"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormToolContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormToolFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormImportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "SubmittedFormList"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesToolsContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesToolsFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesExportMenuItem"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesImportMenuItem"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "GridContainer_jilqo44"
+			},
+			{
+				"operation": "remove",
+				"name": "AdAudiencesDataGrid"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_wij59kw_AddTagsBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_wij59kw_RemoveTagsBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_wij59kw_ExportToExcelBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_wij59kw_MergeBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_wij59kw_DeleteBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailToolContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailToolFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailList"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailList_AddTagsBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailList_RemoveTagsBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailList_ExportToExcelBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "MarketingFieldsContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "CustomerNeed"
+			},
+			{
+				"operation": "remove",
+				"name": "RegisterMethod"
+			},
+			{
+				"operation": "remove",
+				"name": "Channel"
+			},
+			{
+				"operation": "remove",
+				"name": "Source"
+			},
+			{
+				"operation": "remove",
+				"name": "AdCampaign"
+			},
+			{
+				"operation": "remove",
+				"name": "CampaignExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "CampaignToolContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "CampaignToolFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "CampaignRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CampaignSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CampaignExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CampaignSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "CampaignListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "CampaignList"
+			},
+			{
+				"operation": "remove",
+				"name": "WebSessionExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "WebSessionToolContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "WebSessionToolFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "WebSessionRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "WebSessionSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "WebSessionExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "MenuItem_tz82vh6"
+			},
+			{
+				"operation": "remove",
+				"name": "WebSessionSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "WebSessionListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "WebSessionList"
+			},
+			{
+				"operation": "remove",
+				"name": "WebActionExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "WebActionToolContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "WebActionToolFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "WebActionRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "WebActionSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "WebActionExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "WebActionImportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "WebActionSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "WebActionListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "WebActionList"
+			},
+			{
+				"operation": "remove",
+				"name": "EventExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "EventToolContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "EventToolFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "EventRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "EventSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "EventExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "EventSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "EventListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "EventList"
+			},
+			{
+				"operation": "remove",
+				"name": "ServiceTab"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesToolsContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesToolsFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesAddButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesImportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "CasesList"
+			},
+			{
+				"operation": "remove",
+				"name": "ServiceAgreementsExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "ServiceAgreementsToolsContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "ServiceAgreementsToolsFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "ServiceAgreementsRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "ServiceAgreementsSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "ServiceAgreementsExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "ServiceAgreementsImportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "ServiceAgreementsSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "ServiceAgreementsListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "ServiceAgreementsList"
 			},
 			{
 				"operation": "merge",
@@ -1141,7 +1377,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "ContactInfoFieldsContainer",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -1165,7 +1401,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "ContactInfoFieldsContainer",
 				"propertyName": "items",
-				"index": 6
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -1563,6 +1799,50 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
+				"name": "TabContainer_uf2redb",
+				"values": {
+					"type": "crt.TabContainer",
+					"items": [],
+					"caption": "#ResourceString(TabContainer_uf2redb_caption)#",
+					"iconPosition": "only-text",
+					"visible": true
+				},
+				"parentName": "Tabs",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_gmba0s7",
+				"values": {
+					"type": "crt.GridContainer",
+					"items": [],
+					"rows": "minmax(32px, max-content)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": null
+					},
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
+				},
+				"parentName": "TabContainer_uf2redb",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "ExpansionPanel_p5mzqae",
 				"values": {
 					"type": "crt.ExpansionPanel",
@@ -1585,9 +1865,9 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"visible": true,
 					"alignItems": "stretch"
 				},
-				"parentName": "GeneralInfoTab",
+				"parentName": "TabContainer_uf2redb",
 				"propertyName": "items",
-				"index": 3
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -1798,7 +2078,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"colSpan": 2,
 						"column": 1,
 						"row": 1,
-						"rowSpan": 6
+						"rowSpan": 24
 					},
 					"features": {
 						"rows": {
@@ -1824,6 +2104,24 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"id": "328628ab-c8bd-69ec-fa0d-1449202333a0",
 							"code": "GridDetail_qib93u6DS_ActivityCategory",
 							"caption": "#ResourceString(GridDetail_qib93u6DS_ActivityCategory)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "5eec774b-e231-834e-a381-2af002ad8a0d",
+							"code": "GridDetail_qib93u6DS_Account",
+							"caption": "#ResourceString(GridDetail_qib93u6DS_Account)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "b72ff5f1-f4a0-5bf0-6f84-10fa575da9c3",
+							"code": "GridDetail_qib93u6DS_DueDate",
+							"caption": "#ResourceString(GridDetail_qib93u6DS_DueDate)#",
+							"dataValueType": 7
+						},
+						{
+							"id": "22db8500-8036-5248-67ea-936aec72ab33",
+							"code": "GridDetail_qib93u6DS_Status",
+							"caption": "#ResourceString(GridDetail_qib93u6DS_Status)#",
 							"dataValueType": 10
 						},
 						{
@@ -2162,6 +2460,21 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 										"path": "GridDetail_qib93u6DS.ActivityCategory"
 									}
 								},
+								"GridDetail_qib93u6DS_Account": {
+									"modelConfig": {
+										"path": "GridDetail_qib93u6DS.Account"
+									}
+								},
+								"GridDetail_qib93u6DS_DueDate": {
+									"modelConfig": {
+										"path": "GridDetail_qib93u6DS.DueDate"
+									}
+								},
+								"GridDetail_qib93u6DS_Status": {
+									"modelConfig": {
+										"path": "GridDetail_qib93u6DS.Status"
+									}
+								},
 								"GridDetail_qib93u6DS_Priority": {
 									"modelConfig": {
 										"path": "GridDetail_qib93u6DS.Priority"
@@ -2242,6 +2555,17 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"path": [
 					"attributes",
 					"CareerList",
+					"modelConfig"
+				],
+				"values": {
+					"filterAttributes": []
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"CasesList",
 					"modelConfig"
 				],
 				"values": {
@@ -2343,17 +2667,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				],
 				"values": {
 					"modelConfig": {}
-				}
-			},
-			{
-				"operation": "merge",
-				"path": [
-					"attributes",
-					"CasesList",
-					"modelConfig"
-				],
-				"values": {
-					"filterAttributes": []
 				}
 			},
 			{
@@ -2517,6 +2830,15 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 								"ActivityCategory": {
 									"path": "ActivityCategory"
 								},
+								"Account": {
+									"path": "Account"
+								},
+								"DueDate": {
+									"path": "DueDate"
+								},
+								"Status": {
+									"path": "Status"
+								},
 								"Priority": {
 									"path": "Priority"
 								}
@@ -2533,6 +2855,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"properties": [
 					"AddressListDS",
 					"CareerListDS",
+					"CasesListDS",
 					"BulkEmailListDS",
 					"GridDetail_guswpo0DS",
 					"RecommendedProductListDS",
@@ -2540,7 +2863,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"OrderListDS",
 					"GridDetail_dm1myagDS",
 					"DataGrid_wij59kwDS",
-					"CasesListDS",
 					"LeadListDS"
 				]
 			},

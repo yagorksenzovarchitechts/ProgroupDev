@@ -3,8 +3,34 @@ define("AddTaskMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
 				"operation": "merge",
+				"name": "ContinueInEditPageButton",
+				"values": {
+					"iconPosition": "left-icon"
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "ContinueInOtherPageButton",
+				"values": {
+					"iconPosition": "left-icon",
+					"clickMode": "default"
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "MainContainer",
 				"values": {
+					"alignItems": "stretch"
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "GridContainer_c7lbo6c",
+				"values": {
+					"gap": {
+						"columnGap": "small",
+						"rowGap": "small"
+					},
 					"alignItems": "stretch"
 				}
 			},
@@ -179,6 +205,11 @@ define("AddTaskMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_
 									}
 								]
 							}
+						}
+					},
+					"Parameter_ilvm5h1": {
+						"modelConfig": {
+							"path": "ActivityDS.PgrAccount"
 						}
 					}
 				}

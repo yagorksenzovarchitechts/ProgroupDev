@@ -1,4 +1,4 @@
-define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientConsts"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk, PgrClientConsts)/**SCHEMA_ARGS*/ {
+define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -71,9 +71,41 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 			},
 			{
 				"operation": "merge",
+				"name": "Role",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 5,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"visible": false,
+					"readonly": false
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "Reporter",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 3,
+						"colSpan": 1,
+						"rowSpan": 1
+					}
+				}
+			},
+			{
+				"operation": "move",
+				"name": "Reporter",
+				"parentName": "GridContainer_3mhjndt",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "merge",
 				"name": "GridContainer_i2j0o75",
 				"values": {
-					"visible": false,
 					"alignItems": "stretch"
 				}
 			},
@@ -608,7 +640,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 						"right": "none"
 					},
 					"fitContent": true,
-					"visible": true,
+					"visible": false,
 					"alignItems": "stretch"
 				},
 				"parentName": "TabContainer_w3tsrln",
@@ -725,7 +757,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				"values": {
 					"layoutConfig": {
 						"column": 1,
-						"colSpan": 3,
+						"colSpan": 2,
 						"row": 1,
 						"rowSpan": 1
 					},
@@ -751,6 +783,90 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 			},
 			{
 				"operation": "insert",
+				"name": "FlexContainer_2yxqudl",
+				"values": {
+					"layoutConfig": {
+						"column": 3,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true
+				},
+				"parentName": "GridContainer_ReasonCodeAndNotes",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Button_anz5vn2",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_anz5vn2_caption)#",
+					"color": "primary",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "left-icon",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "PgrMeasureSendEmailPersonInCharge",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"recordIdProcessParameterName": "ProcessSchemaTaskId"
+						}
+					},
+					"clickMode": "default",
+					"icon": "email-button-icon"
+				},
+				"parentName": "FlexContainer_2yxqudl",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_xnxgcpu",
+				"values": {
+					"layoutConfig": {
+						"column": 4,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "GridContainer_ReasonCodeAndNotes",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
 				"name": "ComboBox_5yceyw3",
 				"values": {
 					"layoutConfig": {
@@ -772,7 +888,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 1
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -814,7 +930,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 2
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -855,7 +971,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 3
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -883,7 +999,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 4
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -924,7 +1040,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 5
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -956,7 +1072,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				},
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
-				"index": 6
+				"index": 8
 			},
 			{
 				"operation": "insert",
@@ -971,42 +1087,20 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 					"icon": "add-button-icon",
 					"visible": false,
 					"clicked": {
-						"request": "usr.CreateMeasureTaskRequest",
-						"params": {}
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "PgrCreateMeasureTaskFrom396Task",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"recordIdProcessParameterName": "TaskId"
+						}
 					},
 					"clickMode": "default"
 				},
 				"parentName": "FlexContainer_lbswzca",
 				"propertyName": "items",
 				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Button_anz5vn2",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(Button_anz5vn2_caption)#",
-					"color": "primary",
-					"disabled": false,
-					"size": "large",
-					"iconPosition": "left-icon",
-					"visible": true,
-					"clicked": {
-						"request": "crt.RunBusinessProcessRequest",
-						"params": {
-							"processName": "PgrMeasureSendEmailPersonInCharge",
-							"processRunType": "ForTheSelectedPage",
-							"saveAtProcessStart": true,
-							"showNotification": true,
-							"recordIdProcessParameterName": "ProcessSchemaTaskId"
-						}
-					},
-					"clickMode": "default",
-					"icon": "email-button-icon"
-				},
-				"parentName": "FlexContainer_lbswzca",
-				"propertyName": "items",
-				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -1856,6 +1950,35 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				"index": 1
 			},
 			{
+				"operation": "insert",
+				"name": "ComboBox_hth0sst",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrAccountPgrSalesDirector_ji6eoid",
+					"ariaLabel": "#ResourceString(ComboBox_hth0sst_ariaLabel)#",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"readonly": true,
+					"control": "$PDS_PgrAccountPgrSalesDirector_ji6eoid",
+					"visible": false,
+					"placeholder": "",
+					"secondaryDisplayValue": null
+				},
+				"parentName": "GridContainer_3mhjndt",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
 				"operation": "move",
 				"name": "CenterContainer",
 				"parentName": "CardContentWrapper",
@@ -2029,10 +2152,6 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 						"modelConfig": {
 							"path": "PDS.CreatedOn"
 						}
-					},
-					"undefined_List": {
-						"isCollection": true,
-						"modelConfig": {}
 					},
 					"GridDetail_bdh4agg": {
 						"isCollection": true,
@@ -2253,6 +2372,50 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 								]
 							}
 						}
+					},
+					"PDS_PgrAccountPgrSalesDirector_ji6eoid": {
+						"modelConfig": {
+							"path": "PDS.PgrAccountPgrSalesDirector_ji6eoid"
+						}
+					},
+					"PDS_PgrAccountPgrSalesDirector_ji6eoid_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"LookupAttribute_jbhd2d1_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"LookupAttribute_eh7knlb_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
 					}
 				}
 			},
@@ -2361,6 +2524,10 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 					"PgrAccountSalesManager": {
 						"path": "Account.PgrSalesManager",
 						"type": "ForwardReference"
+					},
+					"PgrAccountPgrSalesDirector_ji6eoid": {
+						"path": "PgrAccount.PgrSalesDirector",
+						"type": "ForwardReference"
 					}
 				}
 			},
@@ -2394,94 +2561,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientCo
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[
-			{
-				request: "usr.CreateMeasureTaskRequest",
-				handler: async (request, next) => {
-					const measureCategoryId = PgrClientConsts.ActivityCategory.Measure;
-					// Auto-generated datasource of the child-activities grid (sub-tasks list).
-					const childActivitiesDataSource = "GridDetail_1ay6zynDS";
-					const strings = request.$context.Resources.Strings;
-					// Lookup attribute values are stored as { value, displayValue } — take the id.
-					const unwrap = (v) => (v && typeof v === "object" && "value" in v) ? v.value : v;
-					const showMessage = async (message) => {
-						await request.$context.executeRequest({
-							type: "crt.ShowDialogRequest",
-							$context: request.$context,
-							dialogConfig: {
-								data: {
-									message: message,
-									actions: [
-										{ key: "ok", config: { color: "primary", caption: "OK" } }
-									]
-								}
-							}
-						});
-					};
-
-					// The new Activity references PgrParentTask = PDS_Id. If the Task card is not
-					// yet saved, that Id doesn't exist as a row in the DB, so save it first.
-					const saved = await request.$context.executeRequest({
-						type: "crt.SaveRecordRequest",
-						$context: request.$context,
-						preventCardClose: true
-					});
-					if (!saved) {
-						// Save failed — the framework already showed its own error dialog.
-						return;
-					}
-
-					// Reason is optional at creation (CMVP-125): it can be filled in later when the
-					// Measure task is completed; the day-6 process reminds if it stays unfilled.
-					const reasonCode = unwrap(await request.$context.PDS_PgrReasonCode);
-					const parentTaskId = unwrap(await request.$context.PDS_Id);
-					const account = unwrap(await request.$context.PDS_Account);
-					const reasonNotes = await request.$context.PDS_PgrReasonNotes;
-					const activityTitle = await request.$context.PDS_ActivityTitle;
-					// Owner of the Measure task = the customer's Sales manager (Account.PgrSalesManager).
-					let owner = unwrap(await request.$context.PDS_AccountSalesManager);
-					if (!owner) {
-						// No sales manager on the account — fall back to the current user.
-						const sysValues = await new sdk.SysValuesService().loadSysValues();
-						owner = sysValues?.userContact?.value ?? sysValues?.userContact?.Id;
-					}
-
-					// Create the Measure activity with the same links, without opening the card.
-					const measureLabel = await strings.CreateMeasure_DefaultTitle;
-					const activityModel = await sdk.Model.create("Activity");
-					const result = await activityModel.insert({
-						Title: activityTitle ? `${measureLabel}: ${activityTitle}` : measureLabel,
-						ActivityCategory: measureCategoryId,
-						PgrParentTask: parentTaskId,
-						Account: account,
-						PgrReasonCode: reasonCode,
-						PgrReasonNotes: reasonNotes,
-						Owner: owner,
-						RemindToOwner: true,
-						RemindToOwnerDate: new Date()
-					});
-
-					// insert() reports failure via the result, it does not throw.
-					if (!result || !result.success) {
-						console.error("usr.CreateMeasureTaskRequest: activity insert failed", result);
-						const errorText = (result && result.errorInfo) || "";
-						const baseMsg = await strings.CreateMeasure_Error_message;
-						await showMessage(errorText ? `${baseMsg} ${errorText}` : baseMsg);
-						return;
-					}
-
-					// Refresh the child activities grid so the new Measure task shows up.
-					/* await request.$context.executeRequest({
-						type: "crt.LoadDataRequest",
-						$context: request.$context,
-						config: { loadType: "reload" },
-						dataSourceName: childActivitiesDataSource
-					}); */
-					await showMessage(await strings.CreateMeasure_Success_message);
-					return next?.handle(request);
-				}
-			}
-		]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
 	};

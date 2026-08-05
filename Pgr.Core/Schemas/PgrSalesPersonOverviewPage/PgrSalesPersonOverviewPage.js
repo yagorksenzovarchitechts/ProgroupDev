@@ -185,10 +185,10 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 							"dataValueType": 28
 						},
 						{
-							"id": "ee4ae1ba-b761-70f8-40cc-4bc186b75328",
-							"code": "DataGrid_vmm3jfpDS_PgrProGroupSalesPerson",
-							"caption": "#ResourceString(DataGrid_vmm3jfpDS_PgrProGroupSalesPerson)#",
-							"dataValueType": 27
+							"id": "9beaf0e7-4013-6867-1f10-128091b4c3f0",
+							"code": "DataGrid_vmm3jfpDS_Department",
+							"caption": "#ResourceString(DataGrid_vmm3jfpDS_Department)#",
+							"dataValueType": 10
 						},
 						{
 							"id": "a1910fab-eb5b-36dd-3303-0933b2e1996d",
@@ -308,9 +308,9 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 										"path": "DataGrid_vmm3jfpDS.Name"
 									}
 								},
-								"DataGrid_vmm3jfpDS_PgrProGroupSalesPerson": {
+								"DataGrid_vmm3jfpDS_Department": {
 									"modelConfig": {
-										"path": "DataGrid_vmm3jfpDS.PgrProGroupSalesPerson"
+										"path": "DataGrid_vmm3jfpDS.Department"
 									}
 								},
 								"DataGrid_vmm3jfpDS_PgrTeam": {
@@ -364,23 +364,31 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 									"isNull": false
 								},
 								"6e391301-b33e-47b7-bad6-bfb25db293e6": {
-									"filterType": 1,
-									"comparisonType": 11,
+									"filterType": 4,
+									"comparisonType": 3,
 									"isEnabled": true,
 									"trimDateTimeParameterToDate": false,
 									"leftExpression": {
 										"expressionType": 0,
-										"columnPath": "PgrProGroupSalesPerson"
+										"columnPath": "Department"
 									},
 									"isAggregative": false,
-									"dataValueType": 1,
-									"rightExpression": {
-										"expressionType": 2,
-										"parameter": {
-											"dataValueType": 1,
-											"value": "Sales"
+									"dataValueType": 10,
+									"referenceSchemaName": "Department",
+									"rightExpressions": [
+										{
+											"expressionType": 2,
+											"parameter": {
+												"dataValueType": 10,
+												"value": {
+													"Name": "Sales",
+													"Id": "2076c4b6-7fe6-df11-971b-001d60e938c6",
+													"value": "2076c4b6-7fe6-df11-971b-001d60e938c6",
+													"displayValue": "Sales"
+												}
+											}
 										}
-									}
+									]
 								}
 							},
 							"logicalOperation": 0,
@@ -415,8 +423,8 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 									"Name": {
 										"path": "Name"
 									},
-									"PgrProGroupSalesPerson": {
-										"path": "PgrProGroupSalesPerson"
+									"Department": {
+										"path": "Department"
 									},
 									"PgrTeam": {
 										"path": "PgrTeam"

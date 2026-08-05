@@ -508,11 +508,10 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"dataValueType": 10
 						},
 						{
-							"id": "714fecd2-29c4-a45b-76e9-381c7dbd1e6c",
-							"code": "DataGrid_0kcsg12DS_Owner",
-							"caption": "#ResourceString(DataGrid_0kcsg12DS_Owner)#",
-							"dataValueType": 10,
-							"width": 201
+							"id": "ee6d5d29-34b2-9b23-c7cb-579bae7c4bc8",
+							"code": "DataGrid_0kcsg12DS_PgrSalesManager",
+							"caption": "#ResourceString(DataGrid_0kcsg12DS_PgrSalesManager)#",
+							"dataValueType": 10
 						},
 						{
 							"id": "40faed4b-7089-eabc-e810-548494be1bfa",
@@ -602,9 +601,9 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 										"path": "DataGrid_0kcsg12DS.PgrMainPlantLinked"
 									}
 								},
-								"DataGrid_0kcsg12DS_Owner": {
+								"DataGrid_0kcsg12DS_PgrSalesManager": {
 									"modelConfig": {
-										"path": "DataGrid_0kcsg12DS.Owner"
+										"path": "DataGrid_0kcsg12DS.PgrSalesManager"
 									}
 								},
 								"DataGrid_0kcsg12DS_PgrSalesDirector": {
@@ -773,8 +772,8 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 								"PgrMainPlantLinked": {
 									"path": "PgrMainPlantLinked"
 								},
-								"Owner": {
-									"path": "Owner"
+								"PgrSalesManager": {
+									"path": "PgrSalesManager"
 								},
 								"PgrSalesDirector": {
 									"path": "PgrSalesDirector"

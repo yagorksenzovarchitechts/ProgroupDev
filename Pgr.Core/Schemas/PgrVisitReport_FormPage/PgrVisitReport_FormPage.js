@@ -519,7 +519,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"title": "#ResourceString(ExpansionPanel_cmepoqk_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": false,
+					"expanded": true,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -710,6 +710,36 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 			},
 			{
 				"operation": "insert",
+				"name": "GridContainer_l95ntx0",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "primary",
+					"borderRadius": "medium",
+					"padding": {
+						"top": "medium",
+						"bottom": "medium",
+						"right": "medium",
+						"left": "medium"
+					}
+				},
+				"parentName": "CardContentContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
 				"name": "ExpansionPanel_9f310aw",
 				"values": {
 					"type": "crt.ExpansionPanel",
@@ -718,7 +748,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"title": "#ResourceString(ExpansionPanel_9f310aw_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": false,
+					"expanded": true,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -730,11 +760,17 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					},
 					"fitContent": true,
 					"visible": true,
-					"alignItems": "stretch"
+					"alignItems": "stretch",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
 				},
-				"parentName": "TabContainer_widjyyt",
+				"parentName": "GridContainer_l95ntx0",
 				"propertyName": "items",
-				"index": 1
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -790,12 +826,22 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					],
 					"gap": {
 						"columnGap": "large",
-						"rowGap": 0
+						"rowGap": null
 					},
 					"styles": {
 						"overflow-x": "hidden"
 					},
-					"items": []
+					"items": [],
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
 				},
 				"parentName": "ExpansionPanel_9f310aw",
 				"propertyName": "items",
@@ -839,14 +885,40 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 			},
 			{
 				"operation": "insert",
-				"name": "NumberInput_xt3vqgj",
+				"name": "FlexContainer_rg696p6",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
-						"colSpan": 1,
+						"colSpan": 2,
 						"row": 1,
 						"rowSpan": 1
 					},
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "small",
+						"right": "small",
+						"bottom": "medium",
+						"left": "small"
+					},
+					"color": "#EFEFEF",
+					"borderRadius": "small",
+					"alignItems": "stretch",
+					"justifyContent": "space-between",
+					"gap": "small"
+				},
+				"parentName": "GridContainer_dz84da0",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "NumberInput_xt3vqgj",
+				"values": {
 					"type": "crt.NumberInput",
 					"label": "$Resources.Strings.PDS_PgrNineDayAvg_htg5jr3",
 					"control": "$PDS_PgrNineDayAvg_htg5jr3",
@@ -855,7 +927,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"labelPosition": "auto",
 					"tooltip": ""
 				},
-				"parentName": "GridContainer_dz84da0",
+				"parentName": "FlexContainer_rg696p6",
 				"propertyName": "items",
 				"index": 0
 			},
@@ -863,12 +935,6 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 				"operation": "insert",
 				"name": "NumberInput_6ru1855",
 				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					},
 					"type": "crt.NumberInput",
 					"label": "$Resources.Strings.PDS_PgrVisitBudget_9lyfccw",
 					"control": "$PDS_PgrVisitBudget_9lyfccw",
@@ -877,7 +943,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"labelPosition": "auto",
 					"tooltip": ""
 				},
-				"parentName": "GridContainer_dz84da0",
+				"parentName": "FlexContainer_rg696p6",
 				"propertyName": "items",
 				"index": 1
 			},
@@ -885,12 +951,6 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 				"operation": "insert",
 				"name": "NumberInput_7mhczei",
 				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
 					"type": "crt.NumberInput",
 					"label": "$Resources.Strings.PDS_PgrVisitDeviation_nc4objw",
 					"control": "$PDS_PgrVisitDeviation_nc4objw",
@@ -899,7 +959,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"labelPosition": "auto",
 					"tooltip": ""
 				},
-				"parentName": "GridContainer_dz84da0",
+				"parentName": "FlexContainer_rg696p6",
 				"propertyName": "items",
 				"index": 2
 			},
@@ -910,7 +970,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 3,
+						"row": 2,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -926,7 +986,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 				},
 				"parentName": "GridContainer_dz84da0",
 				"propertyName": "items",
-				"index": 3
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -961,13 +1021,13 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 4,
+						"row": 3,
 						"rowSpan": 1
 					}
 				},
 				"parentName": "GridContainer_dz84da0",
 				"propertyName": "items",
-				"index": 4
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -976,7 +1036,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 5,
+						"row": 4,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -992,7 +1052,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 				},
 				"parentName": "GridContainer_dz84da0",
 				"propertyName": "items",
-				"index": 5
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -1018,7 +1078,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 6,
+						"row": 5,
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
@@ -1033,7 +1093,37 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 				},
 				"parentName": "GridContainer_dz84da0",
 				"propertyName": "items",
-				"index": 6
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_39vexxk",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "primary",
+					"borderRadius": "medium",
+					"padding": {
+						"top": "medium",
+						"bottom": "medium",
+						"right": "medium",
+						"left": "medium"
+					}
+				},
+				"parentName": "CardContentContainer",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -1045,7 +1135,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"title": "#ResourceString(ExpansionPanel_v7m1ic2_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": false,
+					"expanded": true,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -1057,11 +1147,17 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					},
 					"fitContent": true,
 					"visible": true,
-					"alignItems": "stretch"
+					"alignItems": "stretch",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
 				},
-				"parentName": "TabContainer_widjyyt",
+				"parentName": "GridContainer_39vexxk",
 				"propertyName": "items",
-				"index": 2
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -1154,6 +1250,36 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 			},
 			{
 				"operation": "insert",
+				"name": "GridContainer_ymn6nlj",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "primary",
+					"borderRadius": "medium",
+					"padding": {
+						"top": "medium",
+						"bottom": "medium",
+						"right": "medium",
+						"left": "medium"
+					}
+				},
+				"parentName": "CardContentContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
 				"name": "ExpansionPanel_qygdbl8",
 				"values": {
 					"type": "crt.ExpansionPanel",
@@ -1174,11 +1300,17 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					},
 					"fitContent": true,
 					"visible": true,
-					"alignItems": "stretch"
+					"alignItems": "stretch",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
 				},
-				"parentName": "TabContainer_widjyyt",
+				"parentName": "GridContainer_ymn6nlj",
 				"propertyName": "items",
-				"index": 3
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -1538,6 +1670,36 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 			},
 			{
 				"operation": "insert",
+				"name": "GridContainer_w42jle0",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "primary",
+					"borderRadius": "medium",
+					"padding": {
+						"top": "medium",
+						"bottom": "medium",
+						"right": "medium",
+						"left": "medium"
+					}
+				},
+				"parentName": "CardContentContainer",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
 				"name": "ExpansionPanel_kl2km0r",
 				"values": {
 					"type": "crt.ExpansionPanel",
@@ -1558,11 +1720,17 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					},
 					"fitContent": true,
 					"visible": true,
-					"alignItems": "stretch"
+					"alignItems": "stretch",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
 				},
-				"parentName": "TabContainer_widjyyt",
+				"parentName": "GridContainer_w42jle0",
 				"propertyName": "items",
-				"index": 4
+				"index": 0
 			},
 			{
 				"operation": "insert",

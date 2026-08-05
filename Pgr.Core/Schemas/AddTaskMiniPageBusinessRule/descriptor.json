@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "446788b1-f66b-4ba2-bcd9-35c29b2b8f06",
+    "Name": "AddTaskMiniPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1785842351000)\/",
+    "Parent": {
+      "UId": "fba8e901-5a6e-41cf-b721-8b88c68d1f37",
+      "Name": "AddTaskMiniPageBusinessRule"
+    },
+    "ExtendParent": true,
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Tasks mini page (Business rules)",
+    "DependsOn": []
+  }
+}

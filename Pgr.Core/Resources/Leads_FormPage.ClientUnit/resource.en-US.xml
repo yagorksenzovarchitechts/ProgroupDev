@@ -22,12 +22,19 @@
 			<Item Name="LocalizableStrings.EmailsSentMetric_title.Value" Value="Emails sent" />
 			<Item Name="LocalizableStrings.EmailsSentNewMetric_template.Value" Value="{0}" />
 			<Item Name="LocalizableStrings.EmailsSentNewMetric_title.Value" Value="Emails sent" />
+			<Item Name="LocalizableStrings.ExpansionPanel_2esifok_title.Value" Value="Contacts in lead" />
 			<Item Name="LocalizableStrings.ExpansionPanel_rpqfsg9_title.Value" Value="Account address" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_80zbawx_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_br8mlpf_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_4qzhy2i_caption.Value" Value="Export to Excel" />
 			<Item Name="LocalizableStrings.GridDetailExportDataBtn_m1mrypp_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_mxvubg6_caption.Value" Value="Data import" />
 			<Item Name="LocalizableStrings.GridDetailImportDataBtn_zrog8a0_caption.Value" Value="Data import" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_00lfve8_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_imnepjq_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_egj39sn_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_trggbnn_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_lqvz5sp_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_pjq7f15_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.HistoryTab_caption.Value" Value="History" />
 			<Item Name="LocalizableStrings.IndicatorWidget_1cjn6ld_template.Value" Value="{0}" />

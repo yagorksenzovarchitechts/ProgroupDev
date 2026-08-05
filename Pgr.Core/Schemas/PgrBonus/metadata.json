@@ -25,7 +25,7 @@
 + MetaData.Schema.D29 "null"
 + MetaData.Schema.D30 "null"
 + MetaData.Schema.D31 "null"
-+ MetaData.Schema.D4 "09b52714-d46f-3828-7a7c-3dc27affe808"
++ MetaData.Schema.D4 "edd5e4aa-98e8-f242-0973-c6c80bf881c9"
 - MetaData.Schema.D2.["ae0e45ca-c495-4fe7-a39d-3ab7278e1617"].E16
 - MetaData.Schema.D2.["e80190a5-03b2-4095-90f7-a193a960adee"].E16
 - MetaData.Schema.D2.["ebf6bb93-8aa6-4a01-900d-c6ea67affe21"].E16
@@ -65,15 +65,6 @@
   "S2": "325a73b8-0f47-44a0-8412-7606f78003ac"
 }
 + MetaData.Schema.D2 {
-  "UId": "09aa5eea-c59e-5303-f49e-42d64787e91c",
-  "A2": "PgrBonusId",
-  "A3": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
-  "A4": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0",
-  "E2": 1
-}
-+ MetaData.Schema.D2 {
   "UId": "08dd8853-37ef-5146-c4d7-66e4ce3333d7",
   "A2": "PgrAccount",
   "A3": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
@@ -102,6 +93,14 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
   "S2": "325a73b8-0f47-44a0-8412-7606f78003ac"
 }
++ MetaData.Schema.D2 {
+  "UId": "edd5e4aa-98e8-f242-0973-c6c80bf881c9",
+  "A2": "PgrBonusId",
+  "A3": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
+  "A4": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "325a73b8-0f47-44a0-8412-7606f78003ac"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -113,10 +112,10 @@
   "73900886-0b6f-e400-cf65-12a5569bce80",
   "8a8ec8fd-492b-6686-44e3-1d69a28c34c3",
   "b9f19f47-3657-6c1a-ba64-07c9438f4e5f",
-  "09aa5eea-c59e-5303-f49e-42d64787e91c",
   "08dd8853-37ef-5146-c4d7-66e4ce3333d7",
   "502c925f-cf43-77a5-2e67-b95ffd1c6d97",
-  "09b52714-d46f-3828-7a7c-3dc27affe808"
+  "09b52714-d46f-3828-7a7c-3dc27affe808",
+  "edd5e4aa-98e8-f242-0973-c6c80bf881c9"
 ]
 = MetaData.Schema.D20.A2 "PgrBonusEvents"
 + MetaData.Schema.D20.FA1 false

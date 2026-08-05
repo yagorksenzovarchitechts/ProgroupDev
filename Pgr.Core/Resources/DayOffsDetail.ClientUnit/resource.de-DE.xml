@@ -8,6 +8,7 @@
 			<Item Name="LocalizableStrings.EmptyDateOrDateTypeErrorMessage.Value" Value="Bitte geben Sie ein Datum und eine Wochentagskategorie ein." />
 			<Item Name="LocalizableStrings.ErrorOnRemove.Value" Value="Datensätze mit einem Datum vor dem aktuellen Datum können nicht gelöscht werden." />
 			<Item Name="LocalizableStrings.ErrorOnSave.Value" Value="Sie können keinen Datensatz mit einem Datum hinzufügen, das vor dem aktuellen Datum liegt." />
+			<Item Name="LocalizableStrings.PgrDescriptionCaption.Value" Value="Beschreibung" />
 			<Item Name="LocalizableStrings.SetWorkingHourCaption.Value" Value="Feste Arbeitszeiten" />
 			<Item Name="LocalizableStrings.WorkingIntervalsCaption.Value" Value="Arbeitszeit" />
 		</Items>

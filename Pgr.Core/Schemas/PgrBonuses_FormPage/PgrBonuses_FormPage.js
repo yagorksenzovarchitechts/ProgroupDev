@@ -159,7 +159,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
-				"name": "NumberInput_o1da14p",
+				"name": "Input_0cfttbe",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
@@ -167,17 +167,42 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						"row": 1,
 						"rowSpan": 1
 					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_PgrBonusId_dk8wwid",
-					"control": "$PDS_PgrBonusId_dk8wwid",
-					"readonly": false,
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrBonusId_hrmxsue",
+					"control": "$PDS_PgrBonusId_hrmxsue",
 					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": ""
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Input_pwn8c59",
+				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrDescription_33q24ha",
+					"control": "$PDS_PgrDescription_33q24ha",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": true,
+					"labelPosition": "auto",
+					"visible": true,
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -202,7 +227,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -220,53 +245,6 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				"parentName": "ComboBox_z3bbkp0",
 				"propertyName": "listActions",
 				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Input_pwn8c59",
-				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrDescription_33q24ha",
-					"control": "$PDS_PgrDescription_33q24ha",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": true,
-					"labelPosition": "auto",
-					"visible": true,
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "Input_nm323ly",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrBonusType_q6rhxr9",
-					"control": "$PDS_PgrBonusType_q6rhxr9",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -289,30 +267,30 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 5
+				"index": 4
 			},
 			{
 				"operation": "insert",
-				"name": "DateTimePicker_3iaj2w9",
+				"name": "Input_nm323ly",
 				"values": {
-					"type": "crt.DateTimePicker",
-					"label": "$Resources.Strings.PDS_PgrStartDate_n0qastw",
-					"placeholder": "",
-					"readonly": false,
-					"labelPosition": "auto",
-					"tooltip": "",
-					"pickerType": "date",
-					"control": "$PDS_PgrStartDate_n0qastw",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 4,
+						"row": 3,
 						"rowSpan": 1
-					}
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrBonusType_q6rhxr9",
+					"control": "$PDS_PgrBonusType_q6rhxr9",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 6
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -332,6 +310,29 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"tooltip": "",
 					"pickerType": "date",
 					"control": "$PDS_PgrEndDate_uqhmj5m"
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_3iaj2w9",
+				"values": {
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_PgrStartDate_n0qastw",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "date",
+					"control": "$PDS_PgrStartDate_n0qastw",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					}
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -1121,11 +1122,6 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"path": "PDS.PgrName"
 						}
 					},
-					"PDS_PgrBonusId_dk8wwid": {
-						"modelConfig": {
-							"path": "PDS.PgrBonusId"
-						}
-					},
 					"PDS_PgrStartDate_n0qastw": {
 						"modelConfig": {
 							"path": "PDS.PgrStartDate"
@@ -1249,6 +1245,11 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 									}
 								}
 							}
+						}
+					},
+					"PDS_PgrBonusId_hrmxsue": {
+						"modelConfig": {
+							"path": "PDS.PgrBonusId"
 						}
 					}
 				}

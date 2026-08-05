@@ -1,0 +1,26 @@
+= MetaData.Schema.UId "03b7078f-e940-4f0d-99f7-b9ff16450fed"
+= MetaData.Schema.A2 "PgrCountryInCalendarDetail"
+= MetaData.Schema.A5 "de82fb2d-d61c-4364-83bd-334aeb9af71c"
++ MetaData.Schema.B2 {
+  "UId": "a3ecb72d-2093-44de-958f-507ed436f4cd",
+  "A2": "MoveCountriesConfirmationMessage",
+  "A3": "03b7078f-e940-4f0d-99f7-b9ff16450fed",
+  "A4": "03b7078f-e940-4f0d-99f7-b9ff16450fed",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "f836167c-4cca-477b-bf57-4a998a81eb6c",
+  "A2": "RemoveFromCalendarMenuCaption",
+  "A3": "03b7078f-e940-4f0d-99f7-b9ff16450fed",
+  "A4": "03b7078f-e940-4f0d-99f7-b9ff16450fed",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
+~ MetaData.Schema.B2 [
+  "a3ecb72d-2093-44de-958f-507ed436f4cd",
+  "f836167c-4cca-477b-bf57-4a998a81eb6c"
+]
+= MetaData.Schema.B6 "655ac62c-1e4a-cc32-6e65-323f197c68e0"
+= MetaData.Schema.B8 "8.3.4.2753"
+= MetaData.Schema.HD5 []
+- MetaData.Schema.B7
++ MetaData.Schema.B7 false

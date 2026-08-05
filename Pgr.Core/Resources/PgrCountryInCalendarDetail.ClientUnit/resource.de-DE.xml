@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.MoveCountriesConfirmationMessage.Value" Value="Die folgenden Länder sind bereits einem anderen Kalender zugeordnet: {0}. Sollen sie in diesen Kalender verschoben werden?" />
+			<Item Name="LocalizableStrings.RemoveFromCalendarMenuCaption.Value" Value="Aus Kalender entfernen" />
+		</Items>
+	</Group>
+</Resources>

@@ -216,6 +216,10 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							{
 								"attribute": "QuickFilter_ndarf4i_Dashboards",
 								"loadOnChange": true
+							},
+							{
+								"attribute": "QuickFilter_07b11xi_Dashboards",
+								"loadOnChange": true
 							}
 						]
 					}
@@ -279,6 +283,71 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"parentName": "LeftFilterContainerInner",
 				"propertyName": "items",
 				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_07b11xi",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_07b11xi_config_caption)#",
+						"hint": "",
+						"icon": "work-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": [
+							{
+								"value": "[#currentUserAccount#]",
+								"checkedState": true
+							}
+						],
+						"entitySchemaName": "Account",
+						"recordsFilter": null
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_07b11xi_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"filterColumn": "Account"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_07b11xi_Dashboards",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Dashboards",
+													"filterColumn": "Account"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": "QuickFilter_07b11xi_Value"
+					},
+					"filterType": "lookup",
+					"visible": true
+				},
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -352,7 +421,7 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				},
 				"parentName": "LeftFilterContainerInner",
 				"propertyName": "items",
-				"index": 5
+				"index": 6
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -446,6 +515,10 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 						},
 						{
 							"name": "QuickFilter_ndarf4i_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_07b11xi_Items",
 							"loadOnChange": true
 						}
 					]

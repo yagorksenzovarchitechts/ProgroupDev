@@ -139,6 +139,7 @@
 			<Item Name="LocalizableStrings.SubscribeInfoLargeText_caption.Value" Value="This contact is currently subscribed to bulk marketing emails" />
 			<Item Name="LocalizableStrings.SubscribeInfoText_caption.Value" Value="You can add this contact to the audience of bulk marketing emails" />
 			<Item Name="LocalizableStrings.SubscriptionsTab_caption.Value" Value="Subscriptions" />
+			<Item Name="LocalizableStrings.TabContainer_uf2redb_caption.Value" Value="Customer Visit history" />
 			<Item Name="LocalizableStrings.UnsubscribeButton_caption.Value" Value="Unsubscribe contact" />
 			<Item Name="LocalizableStrings.UnsubscribeInfoLargeText_caption.Value" Value="This contact is currently not subscribed to any bulk marketing emails" />
 			<Item Name="LocalizableStrings.UnsubscribeInfoText_caption.Value" Value="Creatio automatically excludes this contact from the bulk email audience" />

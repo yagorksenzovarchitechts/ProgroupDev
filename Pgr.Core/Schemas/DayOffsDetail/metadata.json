@@ -1,5 +1,12 @@
 = MetaData.Schema.UId "02404528-8197-4876-bb48-655d57a8cbe5"
 = MetaData.Schema.A5 "de82fb2d-d61c-4364-83bd-334aeb9af71c"
++ MetaData.Schema.B2 {
+  "UId": "a1000450-23d6-440e-bd04-e0e718013bca",
+  "A2": "PgrDescriptionCaption",
+  "A3": "02404528-8197-4876-bb48-655d57a8cbe5",
+  "A4": "02404528-8197-4876-bb48-655d57a8cbe5",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
 = MetaData.Schema.B2.["9d45150e-4614-4ebc-bd6a-72c206c111e9"].A4 "02404528-8197-4876-bb48-655d57a8cbe5"
 = MetaData.Schema.B2.["0cd12b86-9530-4232-82f8-2b7f7565acd0"].A4 "02404528-8197-4876-bb48-655d57a8cbe5"
 = MetaData.Schema.B2.["8f7c31a4-b656-47c9-a503-a72d0b3dd077"].A4 "02404528-8197-4876-bb48-655d57a8cbe5"
@@ -74,7 +81,8 @@
   "870f93b5-808b-40f1-b447-ccf93a753ce5",
   "78764e1b-4865-44b0-ac48-cc192b6d47df",
   "ef1db1c5-cce1-483f-8d8b-83c53609dab3",
-  "181841d6-a7ee-4ab8-ae13-174546b027b5"
+  "181841d6-a7ee-4ab8-ae13-174546b027b5",
+  "a1000450-23d6-440e-bd04-e0e718013bca"
 ]
 = MetaData.Schema.B6 "655ac62c-1e4a-cc32-6e65-323f197c68e0"
 = MetaData.Schema.B7 true

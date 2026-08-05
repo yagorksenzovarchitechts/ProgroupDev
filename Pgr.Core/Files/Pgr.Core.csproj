@@ -392,6 +392,7 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/ContractType/ContractType.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/ContractType/ContractType.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/Country/Country.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/Country/Country.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/DayInCalendar/DayInCalendar.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/DayInCalendar/DayInCalendar.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/DayOff/DayOff.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/DayOff/DayOff.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/DayOfWeek/DayOfWeek.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/DayOfWeek/DayOfWeek.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/Lead/Lead.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/Lead/Lead.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/Opportunity/Opportunity.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/Opportunity/Opportunity.cs')" />
@@ -409,6 +410,7 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusCondition/PgrBonusCondition.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusCondition/PgrBonusCondition.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactInLead/PgrContactInLead.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactInLead/PgrContactInLead.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCorrectiveMeasureAction/PgrCorrectiveMeasureAction.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCorrectiveMeasureAction/PgrCorrectiveMeasureAction.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCountryTerritory/PgrCountryTerritory.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCountryTerritory/PgrCountryTerritory.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCustomerlabel/PgrCustomerlabel.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCustomerlabel/PgrCustomerlabel.cs')" />
@@ -437,6 +439,7 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitType/PgrVisitType.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitType/PgrVisitType.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrYear/PgrYear.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrYear/PgrYear.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/Product/Product.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/Product/Product.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/SocialMessage/SocialMessage.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/SocialMessage/SocialMessage.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/Territory/Territory.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/Territory/Territory.cs')" />
 	</ItemGroup>
 	<ItemGroup Label="3rd Party References"></ItemGroup>
