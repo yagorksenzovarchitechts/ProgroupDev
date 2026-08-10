@@ -3,10 +3,13 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancel" />
+			<Item Name="LocalizableStrings.ComboBox_pf25tri_label.Value" Value="Customer Service" />
+			<Item Name="LocalizableStrings.MultiSelect_7glcxqp_label.Value" Value="Account type/s" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
-			<Item Name="LocalizableStrings.addRecord_461ypcc_caption.Value" Value="Add new" />
-			<Item Name="LocalizableStrings.addRecord_5kiq3ue_caption.Value" Value="Add new" />
-			<Item Name="LocalizableStrings.addRecord_r2fecyj_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_ihl83d9_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_liqw5f4_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_nssslg9_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_wo3395f_caption.Value" Value="Add new" />
 		</Items>
 	</Group>
 </Resources>

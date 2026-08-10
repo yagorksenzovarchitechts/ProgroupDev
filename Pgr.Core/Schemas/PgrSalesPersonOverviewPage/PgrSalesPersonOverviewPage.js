@@ -22,6 +22,14 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 				"name": "TagSelect"
 			},
 			{
+				"operation": "merge",
+				"name": "TopAreaProfileContainer",
+				"values": {
+					"visible": true,
+					"alignItems": "stretch"
+				}
+			},
+			{
 				"operation": "insert",
 				"name": "QuickFilter_fu2sgb8",
 				"values": {
@@ -182,7 +190,15 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 							"id": "9e0747a0-2e32-3abc-95a2-3b5fd681e9cd",
 							"code": "DataGrid_vmm3jfpDS_Name",
 							"caption": "#ResourceString(DataGrid_vmm3jfpDS_Name)#",
-							"dataValueType": 28
+							"dataValueType": 28,
+							"sticky": true,
+							"width": 275
+						},
+						{
+							"id": "d04d071d-d09a-5a0a-5faf-df4864175140",
+							"code": "DataGrid_vmm3jfpDS_PgrProGroupSalesPerson",
+							"caption": "#ResourceString(DataGrid_vmm3jfpDS_PgrProGroupSalesPerson)#",
+							"dataValueType": 27
 						},
 						{
 							"id": "9beaf0e7-4013-6867-1f10-128091b4c3f0",
@@ -214,12 +230,6 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 							"caption": "#ResourceString(DataGrid_vmm3jfpDS_PgrIsActive)#",
 							"dataValueType": 12,
 							"width": 134
-						},
-						{
-							"id": "1978df18-1062-b8ef-a2aa-653f70c56c79",
-							"code": "DataGrid_vmm3jfpDS_PgrCreatioUser",
-							"caption": "#ResourceString(DataGrid_vmm3jfpDS_PgrCreatioUser)#",
-							"dataValueType": 10
 						}
 					],
 					"placeholder": false,
@@ -308,6 +318,11 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 										"path": "DataGrid_vmm3jfpDS.Name"
 									}
 								},
+								"DataGrid_vmm3jfpDS_PgrProGroupSalesPerson": {
+									"modelConfig": {
+										"path": "DataGrid_vmm3jfpDS.PgrProGroupSalesPerson"
+									}
+								},
 								"DataGrid_vmm3jfpDS_Department": {
 									"modelConfig": {
 										"path": "DataGrid_vmm3jfpDS.Department"
@@ -331,11 +346,6 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 								"DataGrid_vmm3jfpDS_PgrIsActive": {
 									"modelConfig": {
 										"path": "DataGrid_vmm3jfpDS.PgrIsActive"
-									}
-								},
-								"DataGrid_vmm3jfpDS_PgrCreatioUser": {
-									"modelConfig": {
-										"path": "DataGrid_vmm3jfpDS.PgrCreatioUser"
 									}
 								},
 								"DataGrid_vmm3jfpDS_Id": {
@@ -423,6 +433,9 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 									"Name": {
 										"path": "Name"
 									},
+									"PgrProGroupSalesPerson": {
+										"path": "PgrProGroupSalesPerson"
+									},
 									"Department": {
 										"path": "Department"
 									},
@@ -437,9 +450,6 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 									},
 									"PgrIsActive": {
 										"path": "PgrIsActive"
-									},
-									"PgrCreatioUser": {
-										"path": "PgrCreatioUser"
 									}
 								}
 							}
