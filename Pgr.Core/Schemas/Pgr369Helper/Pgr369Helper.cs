@@ -90,7 +90,8 @@ namespace Pgr.Core
         /// </summary>
         public Pgr369DailyAction ProcessAccount(Guid accountId)
         {
-            var account = GetAccount(accountId, "PgrOrderIntakeDayCounter", "PgrSuspensionEndDate");
+            var account = GetAccount(accountId, "PgrOrderIntakeDayCounter", "PgrSuspensionEndDate",
+                "PgrSalesManager", "PgrSalesDirector");
             if (account == null)
             {
                 return Pgr369DailyAction.None;
@@ -135,7 +136,7 @@ namespace Pgr.Core
                 return Pgr369DailyAction.None;
             }
 
-            return DecideAction(accountId, updatedCounter.Value);
+            return DecideAction(account, updatedCounter.Value);
         }
 
         #endregion
@@ -163,9 +164,12 @@ namespace Pgr.Core
 
         /// <summary>
         ///     Day-threshold decision (CMVP-124/125/126) once the counter for today has been persisted.
+        ///     Takes the already-loaded Account entity (carries PgrSalesManager/PgrSalesDirector) so
+        ///     the reminder/escalation branches below don't each re-query the Account.
         /// </summary>
-        private Pgr369DailyAction DecideAction(Guid accountId, int counter)
+        private Pgr369DailyAction DecideAction(Entity account, int counter)
         {
+            var accountId = account.PrimaryColumnValue;
             var openAlertTask = GetOpenAlertTask(accountId);
 
             // CMVP-124: at day 3 with no open task → create the alert task.
@@ -186,17 +190,17 @@ namespace Pgr.Core
             var atEscalationDay = counter == GetDay10Threshold();
             if ((atReminderDay || atEscalationDay) && !HasFilledMeasureTask(openAlertTask.PrimaryColumnValue))
             {
-                // CMVP-125: at day 6 remind the sales person (the alert task's Owner).
+                // CMVP-125: at day 6 remind the account's current Sales Manager.
                 if (atReminderDay)
                 {
-                    SendMeasureTaskReminder(openAlertTask);
+                    SendMeasureTaskReminder(account, openAlertTask);
                     return Pgr369DailyAction.Remind;
                 }
 
                 // CMVP-126: at day 10 escalate the still-unfilled task to the Sales Director — the
-                // existing open Measure task (or the alert task itself if none was created) is
-                // reassigned to the Sales Director; no new task is created.
-                EscalateToSalesDirector(accountId, openAlertTask);
+                // Sales Director and the Sales Manager are both notified; ownership stays with the
+                // Sales Manager, no reassignment and no new task is created.
+                EscalateToSalesDirector(account, openAlertTask);
                 return Pgr369DailyAction.Escalate;
             }
 
@@ -306,24 +310,25 @@ namespace Pgr.Core
         }
 
         /// <summary>
-        ///     Reminds the alert task's Owner (the sales person) to fill in the Measure task
-        ///     (CMVP-125 AC), via a communication-panel Reminding.
+        ///     Reminds the account's current Sales Manager (Account.PgrSalesManager) to fill in the
+        ///     Measure task (CMVP-125 AC), via a communication-panel Reminding. Read off the already
+        ///     loaded Account entity, not the task's "Owner" column, so a Sales Manager reassignment
+        ///     after task creation is picked up.
         /// </summary>
-        private void SendMeasureTaskReminder(Entity alertTask)
+        private void SendMeasureTaskReminder(Entity account, Entity alertTask)
         {
-            SendReminding(alertTask.PrimaryColumnValue, alertTask.GetTypedColumnValue<Guid>("Owner"),
+            SendReminding(alertTask.PrimaryColumnValue, account.GetTypedColumnValue<Guid>("PgrSalesManager"),
                 GetLocalizableString("MeasureReminderMessage"), GetLocalizableString("MeasureReminderTitle"));
         }
 
         /// <summary>
-        ///     CMVP-126 escalation at day 10: reassigns the still-unfilled 3-6-9 work to the Sales
-        ///     Director and notifies both sides. The existing open Measure task has its Owner
-        ///     reassigned; if the sales person never created one, the alert task itself is reassigned.
-        ///     No new task is created — the reassignment is reflected in the Activity Owner change log.
+        ///     CMVP-126 escalation at day 10: notifies the Sales Director that the still-unfilled
+        ///     3-6-9 work has been escalated to them, and notifies the Sales Manager that this
+        ///     happened. Ownership of the task is NOT changed — it stays with the Sales Manager.
         /// </summary>
-        private void EscalateToSalesDirector(Guid accountId, Entity alertTask)
+        private void EscalateToSalesDirector(Entity account, Entity alertTask)
         {
-            var salesDirectorId = GetSalesDirector(accountId);
+            var salesDirectorId = account.GetTypedColumnValue<Guid>("PgrSalesDirector");
             if (salesDirectorId == Guid.Empty)
             {
                 // Nobody to escalate to — leave the task with the sales person.
@@ -331,10 +336,7 @@ namespace Pgr.Core
             }
 
             var taskToEscalate = GetOpenMeasureTask(alertTask.PrimaryColumnValue) ?? alertTask;
-            var salesPersonId = taskToEscalate.GetTypedColumnValue<Guid>("Owner");
-
-            taskToEscalate.SetColumnValue("OwnerId", salesDirectorId);
-            taskToEscalate.Save(false);
+            var salesPersonId = account.GetTypedColumnValue<Guid>("PgrSalesManager");
 
             // Sales person: notified the task was escalated and a justification must be added.
             SendReminding(taskToEscalate.PrimaryColumnValue, salesPersonId,
@@ -352,16 +354,6 @@ namespace Pgr.Core
             esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.NotEqual,
                 "Status.Finish", true));
             return esq.GetEntityCollection(_userConnection).FirstOrDefault();
-        }
-
-        /// <summary>The account's Sales Director (Account.PgrSalesDirector) contact Id, or Guid.Empty.</summary>
-        private Guid GetSalesDirector(Guid accountId)
-        {
-            var esq = CreateQuery("Account");
-            var directorColumn = esq.AddColumn("PgrSalesDirector").Name;
-            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Id", accountId));
-            var rows = esq.GetEntityCollection(_userConnection);
-            return rows.Count == 0 ? Guid.Empty : rows[0].GetTypedColumnValue<Guid>(directorColumn);
         }
 
         /// <summary>

@@ -153,7 +153,7 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"name": "ComboBox_e2mq5s2",
 				"values": {
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.ActivityDS_PgrAccount_9vdmdt3",
+					"label": "#ResourceString(ComboBox_e2mq5s2_label)#",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
@@ -161,7 +161,10 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$ActivityDS_PgrAccount_9vdmdt3"
+					"control": "$ActivityDS_PgrAccount_9vdmdt3",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
 				},
 				"parentName": "FlexContainer_fhm2tjd",
 				"propertyName": "items",

@@ -87,7 +87,7 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_bibsqh7",
+				"name": "ComboBox_ydz1g7o",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -96,7 +96,7 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.AccountDS_Type_snnuh6y",
+					"label": "$Resources.Strings.AccountDS_Country_xkr2q79",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
@@ -104,7 +104,7 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$AccountDS_Type_snnuh6y"
+					"control": "$AccountDS_Country_xkr2q79"
 				},
 				"parentName": "MainContainer",
 				"propertyName": "items",
@@ -112,24 +112,24 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
-				"name": "addRecord_5kiq3ue",
+				"name": "addRecord_wo3395f",
 				"values": {
 					"code": "addRecord",
 					"type": "crt.ComboboxSearchTextAction",
 					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_5kiq3ue_caption)#",
+					"caption": "#ResourceString(addRecord_wo3395f_caption)#",
 					"clicked": {
 						"request": "crt.CreateRecordFromLookupRequest",
 						"params": {}
 					}
 				},
-				"parentName": "ComboBox_bibsqh7",
+				"parentName": "ComboBox_ydz1g7o",
 				"propertyName": "listActions",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_3nubt32",
+				"name": "MultiSelect_7glcxqp",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -137,16 +137,17 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"row": 3,
 						"rowSpan": 1
 					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.AccountDS_PgrAccountLevel_rj8ninn",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
+					"type": "crt.MultiSelect",
+					"label": "#ResourceString(MultiSelect_7glcxqp_label)#",
+					"recordId": "",
+					"recordRelationColumnName": "",
+					"selectSchemaName": "PgrAccountTypesInAccount",
+					"selectColumnName": "PgrAccountType",
+					"visible": true,
 					"labelPosition": "above",
-					"controlActions": [],
-					"listActions": [],
+					"placeholder": "",
 					"tooltip": "",
-					"control": "$AccountDS_PgrAccountLevel_rj8ninn"
+					"required": false
 				},
 				"parentName": "MainContainer",
 				"propertyName": "items",
@@ -154,24 +155,7 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
-				"name": "addRecord_r2fecyj",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_r2fecyj_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_3nubt32",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "ComboBox_bilfohq",
+				"name": "ComboBox_w7cxw2c",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -180,7 +164,7 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.AccountDS_Owner_cppjggk",
+					"label": "$Resources.Strings.AccountDS_PgrSalesManager_3uxvzm8",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
@@ -188,7 +172,7 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$AccountDS_Owner_cppjggk"
+					"control": "$AccountDS_PgrSalesManager_3uxvzm8"
 				},
 				"parentName": "MainContainer",
 				"propertyName": "items",
@@ -196,24 +180,24 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
-				"name": "addRecord_461ypcc",
+				"name": "addRecord_ihl83d9",
 				"values": {
 					"code": "addRecord",
 					"type": "crt.ComboboxSearchTextAction",
 					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_461ypcc_caption)#",
+					"caption": "#ResourceString(addRecord_ihl83d9_caption)#",
 					"clicked": {
 						"request": "crt.CreateRecordFromLookupRequest",
 						"params": {}
 					}
 				},
-				"parentName": "ComboBox_bilfohq",
+				"parentName": "ComboBox_w7cxw2c",
 				"propertyName": "listActions",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "Input_jnjvbgv",
+				"name": "ComboBox_zsqu7ke",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -221,18 +205,82 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"row": 5,
 						"rowSpan": 1
 					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.AccountDS_PgrAccountManagerCode_rli0je3",
-					"control": "$AccountDS_PgrAccountManagerCode_rli0je3",
-					"placeholder": "",
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.AccountDS_PgrSalesDirector_d0s8o9k",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "above",
+					"controlActions": [],
+					"listActions": [],
 					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "above"
+					"control": "$AccountDS_PgrSalesDirector_d0s8o9k"
 				},
 				"parentName": "MainContainer",
 				"propertyName": "items",
 				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_nssslg9",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_nssslg9_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_zsqu7ke",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_pf25tri",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 6,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "#ResourceString(ComboBox_pf25tri_label)#",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "above",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$AccountDS_PgrCustomerServiceName_ux403u4",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "MainContainer",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_liqw5f4",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_liqw5f4_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_pf25tri",
+				"propertyName": "listActions",
+				"index": 0
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -242,40 +290,20 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"attributes"
 				],
 				"values": {
-					"AccountDS_Owner_cppjggk": {
-						"modelConfig": {
-							"path": "AccountDS.Owner"
-						}
-					},
-					"AccountDS_Owner_cppjggk_List": {
-						"isCollection": true,
-						"modelConfig": {
-							"sortingConfig": {
-								"default": [
-									{
-										"columnName": "Name",
-										"direction": "asc"
-									}
-								]
-							}
-						}
-					},
-					"AccountDS_PgrAccountManagerCode_rli0je3": {
-						"modelConfig": {
-							"path": "AccountDS.PgrAccountManagerCode"
-						}
-					},
 					"AccountDS_Name_d52ozas": {
 						"modelConfig": {
 							"path": "AccountDS.Name"
 						}
 					},
-					"AccountDS_Type_snnuh6y": {
+					"MultiSelect_7glcxqp_List_Items_Predefined_Filter": {
+						"value": null
+					},
+					"AccountDS_PgrSalesManager_3uxvzm8": {
 						"modelConfig": {
-							"path": "AccountDS.Type"
+							"path": "AccountDS.PgrSalesManager"
 						}
 					},
-					"AccountDS_Type_snnuh6y_List": {
+					"AccountDS_PgrSalesManager_3uxvzm8_List": {
 						"isCollection": true,
 						"modelConfig": {
 							"sortingConfig": {
@@ -288,12 +316,48 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							}
 						}
 					},
-					"AccountDS_PgrAccountLevel_rj8ninn": {
+					"AccountDS_PgrSalesDirector_d0s8o9k": {
 						"modelConfig": {
-							"path": "AccountDS.PgrAccountLevel"
+							"path": "AccountDS.PgrSalesDirector"
 						}
 					},
-					"AccountDS_PgrAccountLevel_rj8ninn_List": {
+					"AccountDS_PgrSalesDirector_d0s8o9k_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"AccountDS_PgrCustomerServiceName_ux403u4": {
+						"modelConfig": {
+							"path": "AccountDS.PgrCustomerServiceName"
+						}
+					},
+					"AccountDS_PgrCustomerServiceName_ux403u4_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"AccountDS_Country_xkr2q79": {
+						"modelConfig": {
+							"path": "AccountDS.Country"
+						}
+					},
+					"AccountDS_Country_xkr2q79_List": {
 						"isCollection": true,
 						"modelConfig": {
 							"sortingConfig": {

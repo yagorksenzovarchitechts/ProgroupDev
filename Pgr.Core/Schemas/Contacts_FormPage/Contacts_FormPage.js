@@ -159,23 +159,12 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				}
 			},
 			{
-				"operation": "merge",
-				"name": "Owner",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"row": 4,
-						"colSpan": 1,
-						"rowSpan": 1
-					}
-				}
+				"operation": "remove",
+				"name": "Owner"
 			},
 			{
-				"operation": "move",
-				"name": "Owner",
-				"parentName": "ContactInfoFieldsContainer",
-				"propertyName": "items",
-				"index": 6
+				"operation": "remove",
+				"name": "addRecord_e9kbl5o"
 			},
 			{
 				"operation": "remove",
@@ -1156,23 +1145,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
-				"name": "PgrEmployeeCode",
-				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrProGroupSalesPerson_bpuquo5",
-					"control": "$PDS_PgrProGroupSalesPerson_bpuquo5",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
-				},
-				"parentName": "SideAreaProfileFieldFlexContainer",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
 				"name": "ComboBox_cf5dsmd",
 				"values": {
 					"type": "crt.ComboBox",
@@ -1188,7 +1160,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 5
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -1223,7 +1195,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 6
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -1241,7 +1213,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 7
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -1259,7 +1231,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 8
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -1358,35 +1330,12 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
-				"name": "PgrWepaformContactId",
-				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrWepaformContactId_cyy2pv1",
-					"control": "$PDS_PgrWepaformContactId_cyy2pv1",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto",
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 3,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "ContactInfoFieldsContainer",
-				"propertyName": "items",
-				"index": 5
-			},
-			{
-				"operation": "insert",
 				"name": "DoNotUseCall",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 4,
+						"row": 3,
 						"rowSpan": 1
 					},
 					"type": "crt.Checkbox",
@@ -1401,7 +1350,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "ContactInfoFieldsContainer",
 				"propertyName": "items",
-				"index": 7
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -1410,7 +1359,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 5,
+						"row": 4,
 						"rowSpan": 1
 					},
 					"type": "crt.Checkbox",
@@ -1425,7 +1374,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "ContactInfoFieldsContainer",
 				"propertyName": "items",
-				"index": 8
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -1550,20 +1499,16 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
-				"name": "Checkbox_f1mc61r",
+				"name": "PgrEmployeeCode",
 				"values": {
-					"type": "crt.Checkbox",
-					"value": true,
-					"disabled": false,
-					"inversed": false,
-					"label": "$Resources.Strings.PDS_PgrIsActive_g6chb63",
-					"ariaLabel": "",
-					"labelPosition": "left",
-					"tooltip": "",
-					"control": "$PDS_PgrIsActive_g6chb63",
-					"visible": true,
-					"readonly": false,
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrProGroupSalesPerson_bpuquo5",
+					"control": "$PDS_PgrProGroupSalesPerson_bpuquo5",
 					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
@@ -1622,48 +1567,30 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
-				"name": "Department",
+				"name": "Checkbox_f1mc61r",
 				"values": {
+					"type": "crt.Checkbox",
+					"value": true,
+					"disabled": false,
+					"inversed": false,
+					"label": "$Resources.Strings.PDS_PgrIsActive_g6chb63",
+					"ariaLabel": "",
+					"labelPosition": "left",
+					"tooltip": "",
+					"control": "$PDS_PgrIsActive_g6chb63",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 2,
 						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_Department_blp5ygl",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_Department_blp5ygl",
-					"visible": true,
-					"readonly": false,
-					"placeholder": "#ResourceString(Department_placeholder)#"
+					}
 				},
 				"parentName": "GridContainer_lrmq544",
 				"propertyName": "items",
 				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_2lrvn2r",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_2lrvn2r_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "Department",
-				"propertyName": "listActions",
-				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -1712,7 +1639,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_9kaap0p",
+				"name": "Department",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -1721,7 +1648,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_PgrTeam_wa51w6k",
+					"label": "$Resources.Strings.PDS_Department_blp5ygl",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
@@ -1729,7 +1656,10 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_PgrTeam_wa51w6k"
+					"control": "$PDS_Department_blp5ygl",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "#ResourceString(Department_placeholder)#"
 				},
 				"parentName": "GridContainer_lrmq544",
 				"propertyName": "items",
@@ -1737,18 +1667,18 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
-				"name": "addRecord_mvth9pz",
+				"name": "addRecord_2lrvn2r",
 				"values": {
 					"code": "addRecord",
 					"type": "crt.ComboboxSearchTextAction",
 					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_mvth9pz_caption)#",
+					"caption": "#ResourceString(addRecord_2lrvn2r_caption)#",
 					"clicked": {
 						"request": "crt.CreateRecordFromLookupRequest",
 						"params": {}
 					}
 				},
-				"parentName": "ComboBox_9kaap0p",
+				"parentName": "Department",
 				"propertyName": "listActions",
 				"index": 0
 			},
@@ -1794,6 +1724,48 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					}
 				},
 				"parentName": "ComboBox_hv4r0n7",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_9kaap0p",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrTeam_wa51w6k",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrTeam_wa51w6k"
+				},
+				"parentName": "GridContainer_lrmq544",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_mvth9pz",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_mvth9pz_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_9kaap0p",
 				"propertyName": "listActions",
 				"index": 0
 			},
@@ -2173,19 +2145,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							}
 						}
 					},
-					"Owner_List": {
-						"isCollection": true,
-						"modelConfig": {
-							"sortingConfig": {
-								"default": [
-									{
-										"columnName": "Name",
-										"direction": "asc"
-									}
-								]
-							}
-						}
-					},
 					"Language_List": {
 						"isCollection": true,
 						"modelConfig": {
@@ -2197,11 +2156,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 									}
 								]
 							}
-						}
-					},
-					"PDS_PgrWepaformContactId_cyy2pv1": {
-						"modelConfig": {
-							"path": "PDS.PgrWepaformContactId"
 						}
 					},
 					"PDS_GivenName_97c45ey": {

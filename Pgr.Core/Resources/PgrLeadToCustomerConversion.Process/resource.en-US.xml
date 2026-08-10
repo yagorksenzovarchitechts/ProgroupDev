@@ -76,6 +76,7 @@
 			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultIntegerFunction.Caption" Value="Function result (Integer)" />
 			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
 			<Item Name="BaseElements.ReadDataUserTask3.Parameters.ResultType.Caption" Value="Type of result" />
+			<Item Name="BaseElements.ScriptTask1.Caption" Value="Move feed from lead to account" />
 			<Item Name="BaseElements.StartSignal1.Caption" Value="New account is created" />
 			<Item Name="BaseElements.StartSignal1.Parameters.RecordId.Caption" Value="Unique identifier of record" />
 			<Item Name="BaseElements.SubProcess1.Caption" Value="Lead to customer conversion for collection of records 1" />
@@ -96,6 +97,10 @@
 			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
 			<Item Name="NotificationCaption.Caption" Value="Process instance caption" />
 			<Item Name="NotificationCaption.DisplayValue" Value="[#Process name#]" />
+			<Item Name="Parameters.AccountId.Caption" Value="AccountId" />
+			<Item Name="Parameters.AccountId.DisplayValue" Value="[#Read the account.First item of resulting collection.Id#]" />
+			<Item Name="Parameters.LeadId.Caption" Value="LeadId" />
+			<Item Name="Parameters.LeadId.DisplayValue" Value="[#Read the lead.First item of resulting collection.Id#]" />
 		</Items>
 	</Group>
 </Resources>

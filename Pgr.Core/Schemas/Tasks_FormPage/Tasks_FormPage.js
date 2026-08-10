@@ -811,7 +811,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 					"disabled": false,
 					"size": "large",
 					"iconPosition": "left-icon",
-					"visible": true,
+					"visible": false,
 					"clicked": {
 						"request": "crt.RunBusinessProcessRequest",
 						"params": {
@@ -1046,12 +1046,6 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				"operation": "insert",
 				"name": "FlexContainer_lbswzca",
 				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 4,
-						"row": 5,
-						"rowSpan": 1
-					},
 					"type": "crt.FlexContainer",
 					"direction": "row",
 					"wrap": "wrap",
@@ -1070,9 +1064,9 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 					"justifyContent": "end",
 					"gap": "small"
 				},
-				"parentName": "GridContainer_ReasonCodeAndNotes",
+				"parentName": "TabContainer_w3tsrln",
 				"propertyName": "items",
-				"index": 8
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -1128,7 +1122,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				},
 				"parentName": "TabContainer_w3tsrln",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",

@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "89b8593f-dffb-47dc-a170-86b270d6c790",
     "Name": "PgrTaskMeasureMiniPage",
-    "ModifiedOnUtc": "\/Date(1784667441000)\/",
+    "ModifiedOnUtc": "\/Date(1786023776000)\/",
     "Parent": {
       "UId": "ecdcc8ff-272c-4957-9381-7d74ce17e140",
       "Name": "BaseMiniPageTemplate"

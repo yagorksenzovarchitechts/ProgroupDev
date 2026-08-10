@@ -7,10 +7,62 @@
       "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
       "B1": [],
       "B2": [],
-      "B3": [],
+      "B3": [
+        {
+          "UId": "b41735f0-5edf-41f4-be86-8016856bf68d",
+          "A2": "System.Data",
+          "A3": "d042bdc0-e495-42a9-931e-74310b759530",
+          "A4": "d042bdc0-e495-42a9-931e-74310b759530",
+          "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+          "GF1": "null"
+        },
+        {
+          "UId": "4aba369c-f624-40a4-b87d-199c71dc9d45",
+          "A2": "System.Collections.Generic",
+          "A3": "d042bdc0-e495-42a9-931e-74310b759530",
+          "A4": "d042bdc0-e495-42a9-931e-74310b759530",
+          "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+          "GF1": "null"
+        },
+        {
+          "UId": "0a3f1d7d-c369-4ae8-a4a8-038f0a67f5a1",
+          "A2": "Terrasoft.Core.DB",
+          "A3": "d042bdc0-e495-42a9-931e-74310b759530",
+          "A4": "d042bdc0-e495-42a9-931e-74310b759530",
+          "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+          "GF1": "null"
+        }
+      ],
       "B6": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
       "B8": "8.3.4.2753",
-      "FJ1": [],
+      "FJ1": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "c639782e-5731-4196-be02-bb03f72b4403",
+          "A2": "LeadId",
+          "A3": "d042bdc0-e495-42a9-931e-74310b759530",
+          "A4": "d042bdc0-e495-42a9-931e-74310b759530",
+          "L1": "23018567-a13c-4320-8687-fd6f9e3699bd",
+          "L8": {
+            "GS1": 3,
+            "GS2": "[#[IsOwnerSchema:false].[IsSchema:false].[Element:{8f52e827-bb81-4e11-a196-c622b5dcde00}].[Parameter:{fb5fce50-5362-4c2a-bc4b-e5e9d98d165a}].[EntityColumn:{ae0e45ca-c495-4fe7-a39d-3ab7278e1617}]#]",
+            "GS5": "d042bdc0-e495-42a9-931e-74310b759530"
+          }
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "5f3c015f-4838-4ada-a696-4da3dca5b1a9",
+          "A2": "AccountId",
+          "A3": "d042bdc0-e495-42a9-931e-74310b759530",
+          "A4": "d042bdc0-e495-42a9-931e-74310b759530",
+          "L1": "23018567-a13c-4320-8687-fd6f9e3699bd",
+          "L8": {
+            "GS1": 3,
+            "GS2": "[#[IsOwnerSchema:false].[IsSchema:false].[Element:{d63830af-d47a-4d1e-abbb-c0a7bb4a2b05}].[Parameter:{fd0b169b-54b2-4ca1-bb2b-7e6432e1669a}].[EntityColumn:{ae0e45ca-c495-4fe7-a39d-3ab7278e1617}]#]",
+            "GS5": "d042bdc0-e495-42a9-931e-74310b759530"
+          }
+        }
+      ],
       "IJ1": true,
       "BK8": "bb4d6607-026b-4b27-b640-8f5c77c1e89d",
       "IJ10": true,
@@ -232,7 +284,7 @@
           "GT4": "cb455b6f-78ff-4b1e-b241-c2bbc0b37e9f",
           "GT1": {
             "GS1": 1,
-            "GS2": "7c81a01e-f59b-47df-830c-8e830f1bf889;ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+            "GS2": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617;7c81a01e-f59b-47df-830c-8e830f1bf889",
             "GS5": "d042bdc0-e495-42a9-931e-74310b759530"
           }
         },
@@ -898,7 +950,7 @@
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaMapping",
-          "UId": "67b06443-c3db-4eec-a7ea-311c6399f74c",
+          "UId": "df833fe0-27a5-443e-a003-6dcf16748910",
           "A2": "SubProcess1",
           "A3": "d042bdc0-e495-42a9-931e-74310b759530",
           "A4": "d042bdc0-e495-42a9-931e-74310b759530",
@@ -912,7 +964,7 @@
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaMapping",
-          "UId": "de269a65-b2e6-45a4-a48a-52cfcb89f48d",
+          "UId": "d62fb501-7128-4e86-b1a5-1f0ad86b92e0",
           "A2": "SubProcess1",
           "A3": "d042bdc0-e495-42a9-931e-74310b759530",
           "A4": "d042bdc0-e495-42a9-931e-74310b759530",
@@ -979,7 +1031,7 @@
           "A4": "d042bdc0-e495-42a9-931e-74310b759530",
           "A5": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
           "IL2": "bfd09350-ff7c-457c-95e8-1e8a7360dbd8",
-          "BL3": "1094;184",
+          "BL3": "1290;184",
           "BL7": "1bd93619-0574-454e-bb4e-cf53b9eb9470",
           "BL8": "d042bdc0-e495-42a9-931e-74310b759530",
           "BN2": "31;31",
@@ -1234,7 +1286,7 @@
               "L1": "394e160f-c8e0-46fa-9c0d-75d97e9e9169",
               "L8": {
                 "GS1": 1,
-                "GS2": "7c81a01e-f59b-47df-830c-8e830f1bf889;ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+                "GS2": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617;7c81a01e-f59b-47df-830c-8e830f1bf889",
                 "GS5": "d042bdc0-e495-42a9-931e-74310b759530"
               }
             },
@@ -1647,7 +1699,7 @@
           "A4": "d042bdc0-e495-42a9-931e-74310b759530",
           "A5": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
           "IL2": "bfd09350-ff7c-457c-95e8-1e8a7360dbd8",
-          "BL3": "744;172",
+          "BL3": "963;172",
           "BL7": "cb455b6f-78ff-4b1e-b241-c2bbc0b37e9f",
           "BL8": "d042bdc0-e495-42a9-931e-74310b759530",
           "BN2": "69;55",
@@ -1911,7 +1963,7 @@
           "A5": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
           "IL2": "bfd09350-ff7c-457c-95e8-1e8a7360dbd8",
           "IL3": true,
-          "BL3": "919;172",
+          "BL3": "1153;172",
           "BL7": "49eafdbb-a89e-4bdf-a29d-7f17b1670a45",
           "BL8": "d042bdc0-e495-42a9-931e-74310b759530",
           "BN2": "69;55",
@@ -2046,6 +2098,24 @@
           "CK3": []
         },
         {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaScriptTask",
+          "UId": "9c8202e2-5043-4d5e-afa7-2f731319b8ae",
+          "A2": "ScriptTask1",
+          "A3": "d042bdc0-e495-42a9-931e-74310b759530",
+          "A4": "d042bdc0-e495-42a9-931e-74310b759530",
+          "A5": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
+          "IL2": "bfd09350-ff7c-457c-95e8-1e8a7360dbd8",
+          "BL3": "758;172",
+          "BL7": "0e490dda-e140-4441-b600-6f5c64d024df",
+          "BL8": "d042bdc0-e495-42a9-931e-74310b759530",
+          "BN2": "69;55",
+          "BO3": true,
+          "BP2": [],
+          "CL2": "FFFFFFFF",
+          "CH1": "var userConnection = Get<UserConnection>(\"UserConnection\");\n\nGuid leadId = Get<Guid>(\"LeadId\");\nGuid accountId = Get<Guid>(\"AccountId\");\n\nif (leadId == Guid.Empty || accountId == Guid.Empty) {\n    return true;\n}\n\ntry {\n    Guid accountSchemaUId = userConnection.EntitySchemaManager.GetInstanceByName(\"Account\").UId;\n\n    // 1. SELECT ALL TOP-LEVEL POSTS FOR THE LEAD\n    var selectPosts = new Terrasoft.Core.DB.Select(userConnection)\n        .Column(\"Id\")\n        .Column(\"Message\")\n        .Column(\"CreatedById\")\n        .Column(\"CreatedOn\")\n        .From(\"SocialMessage\")\n        .Where(\"EntityId\").IsEqual(Terrasoft.Core.DB.Column.Parameter(leadId))\n        .And(\"ParentId\").IsNull() as Terrasoft.Core.DB.Select;\n\n    var postsToCopy = new System.Collections.Generic.List<Dictionary<string, object>>();\n\n    using (Terrasoft.Core.DB.DBExecutor dbExecutor = userConnection.EnsureDBConnection()) {\n        using (System.Data.IDataReader reader = selectPosts.ExecuteReader(dbExecutor)) {\n            while (reader.Read()) {\n                postsToCopy.Add(new Dictionary<string, object> {\n                    { \"Id\", reader.GetColumnValue<Guid>(\"Id\") },\n                    { \"Message\", reader.GetColumnValue<string>(\"Message\") ?? string.Empty },\n                    { \"CreatedById\", reader.GetColumnValue<Guid>(\"CreatedById\") },\n                    { \"CreatedOn\", reader.GetColumnValue<DateTime>(\"CreatedOn\") }\n                });\n            }\n        }\n    }\n\n    // 2. PROCESS EACH POST\n    foreach (var post in postsToCopy) {\n        Guid oldPostId = (Guid)post[\"Id\"];\n        Guid newPostId = Guid.NewGuid();\n        DateTime createdOn = (DateTime)post[\"CreatedOn\"];\n\n        // A. Fetch Comments\n        var selectComments = new Terrasoft.Core.DB.Select(userConnection)\n            .Column(\"Message\")\n            .Column(\"CreatedById\")\n            .Column(\"CreatedOn\")\n            .From(\"SocialMessage\")\n            .Where(\"ParentId\").IsEqual(Terrasoft.Core.DB.Column.Parameter(oldPostId)) as Terrasoft.Core.DB.Select;\n\n        var commentsToCopy = new System.Collections.Generic.List<Dictionary<string, object>>();\n        using (Terrasoft.Core.DB.DBExecutor dbExecutor = userConnection.EnsureDBConnection()) {\n            using (System.Data.IDataReader commentReader = selectComments.ExecuteReader(dbExecutor)) {\n                while (commentReader.Read()) {\n                    commentsToCopy.Add(new Dictionary<string, object> {\n                        { \"Message\", commentReader.GetColumnValue<string>(\"Message\") ?? string.Empty },\n                        { \"CreatedById\", commentReader.GetColumnValue<Guid>(\"CreatedById\") },\n                        { \"CreatedOn\", commentReader.GetColumnValue<DateTime>(\"CreatedOn\") }\n                    });\n                }\n            }\n        }\n\n        // B. Fetch Likes\n        var selectLikes = new Terrasoft.Core.DB.Select(userConnection)\n            .Column(\"UserId\")\n            .From(\"SocialLike\")\n            .Where(\"SocialMessageId\").IsEqual(Terrasoft.Core.DB.Column.Parameter(oldPostId)) as Terrasoft.Core.DB.Select;\n\n        var likesToCopy = new System.Collections.Generic.List<Guid>();\n        using (Terrasoft.Core.DB.DBExecutor dbExecutor = userConnection.EnsureDBConnection()) {\n            using (System.Data.IDataReader likeReader = selectLikes.ExecuteReader(dbExecutor)) {\n                while (likeReader.Read()) {\n                    likesToCopy.Add(likeReader.GetColumnValue<Guid>(\"UserId\"));\n                }\n            }\n        }\n\n        // C. Fetch Files specifically from [FeedFile] (Freedom UI Feed Attachment Table)\n        var selectFeedFiles = new Terrasoft.Core.DB.Select(userConnection)\n            .Column(\"Name\")\n            .Column(\"Data\")\n            .Column(\"Size\")\n            .Column(\"TypeId\")\n            .From(\"FeedFile\")\n            .Where(\"RecordId\").IsEqual(Terrasoft.Core.DB.Column.Parameter(oldPostId)) as Terrasoft.Core.DB.Select;\n\n        var filesToCopy = new System.Collections.Generic.List<Dictionary<string, object>>();\n        using (Terrasoft.Core.DB.DBExecutor dbExecutor = userConnection.EnsureDBConnection()) {\n            using (System.Data.IDataReader fileReader = selectFeedFiles.ExecuteReader(dbExecutor)) {\n                while (fileReader.Read()) {\n                    filesToCopy.Add(new Dictionary<string, object> {\n                        { \"Name\", fileReader.GetColumnValue<string>(\"Name\") },\n                        { \"Data\", fileReader.GetColumnValue<byte[]>(\"Data\") },\n                        { \"Size\", fileReader.GetColumnValue<int>(\"Size\") },\n                        { \"TypeId\", fileReader.GetColumnValue<Guid>(\"TypeId\") }\n                    });\n                }\n            }\n        }\n\n        // D. Insert Parent Post\n        new Terrasoft.Core.DB.Insert(userConnection)\n            .Into(\"SocialMessage\")\n            .Set(\"Id\", Terrasoft.Core.DB.Column.Parameter(newPostId))\n            .Set(\"EntityId\", Terrasoft.Core.DB.Column.Parameter(accountId))\n            .Set(\"EntitySchemaUId\", Terrasoft.Core.DB.Column.Parameter(accountSchemaUId))\n            .Set(\"Message\", Terrasoft.Core.DB.Column.Parameter(post[\"Message\"]))\n            .Set(\"CreatedById\", Terrasoft.Core.DB.Column.Parameter(post[\"CreatedById\"]))\n            .Set(\"CreatedOn\", Terrasoft.Core.DB.Column.Parameter(createdOn))\n            .Set(\"LastActionOn\", Terrasoft.Core.DB.Column.Parameter(createdOn))\n            .Set(\"CommentCount\", Terrasoft.Core.DB.Column.Parameter(commentsToCopy.Count))\n            .Set(\"LikeCount\", Terrasoft.Core.DB.Column.Parameter(likesToCopy.Count))\n            .Execute();\n\n        // E. Insert Threaded Comments\n        foreach (var comment in commentsToCopy) {\n            DateTime commentCreatedOn = (DateTime)comment[\"CreatedOn\"];\n            new Terrasoft.Core.DB.Insert(userConnection)\n                .Into(\"SocialMessage\")\n                .Set(\"Id\", Terrasoft.Core.DB.Column.Parameter(Guid.NewGuid()))\n                .Set(\"EntityId\", Terrasoft.Core.DB.Column.Parameter(accountId))\n                .Set(\"EntitySchemaUId\", Terrasoft.Core.DB.Column.Parameter(accountSchemaUId))\n                .Set(\"ParentId\", Terrasoft.Core.DB.Column.Parameter(newPostId))\n                .Set(\"Message\", Terrasoft.Core.DB.Column.Parameter(comment[\"Message\"]))\n                .Set(\"CreatedById\", Terrasoft.Core.DB.Column.Parameter(comment[\"CreatedById\"]))\n                .Set(\"CreatedOn\", Terrasoft.Core.DB.Column.Parameter(commentCreatedOn))\n                .Set(\"LastActionOn\", Terrasoft.Core.DB.Column.Parameter(commentCreatedOn))\n                .Execute();\n        }\n\n        // F. Insert Likes\n        foreach (var userId in likesToCopy) {\n            new Terrasoft.Core.DB.Insert(userConnection)\n                .Into(\"SocialLike\")\n                .Set(\"Id\", Terrasoft.Core.DB.Column.Parameter(Guid.NewGuid()))\n                .Set(\"SocialMessageId\", Terrasoft.Core.DB.Column.Parameter(newPostId))\n                .Set(\"UserId\", Terrasoft.Core.DB.Column.Parameter(userId))\n                .Execute();\n        }\n\n        // G. Insert File Attachments into [FeedFile] and [SysFile]\n        foreach (var file in filesToCopy) {\n            Guid newFileId = Guid.NewGuid();\n\n            // Insert into FeedFile (Exact Freedom UI Feed Attachment schema)\n            new Terrasoft.Core.DB.Insert(userConnection)\n                .Into(\"FeedFile\")\n                .Set(\"Id\", Terrasoft.Core.DB.Column.Parameter(newFileId))\n                .Set(\"RecordId\", Terrasoft.Core.DB.Column.Parameter(newPostId))\n                .Set(\"RecordSchemaName\", Terrasoft.Core.DB.Column.Parameter(\"SocialMessage\"))\n                .Set(\"Name\", Terrasoft.Core.DB.Column.Parameter(file[\"Name\"]))\n                .Set(\"Data\", Terrasoft.Core.DB.Column.Parameter(file[\"Data\"]))\n                .Set(\"Size\", Terrasoft.Core.DB.Column.Parameter(file[\"Size\"]))\n                .Set(\"TypeId\", Terrasoft.Core.DB.Column.Parameter(file[\"TypeId\"]))\n                .Execute();\n\n            // Insert into SysFile as backup\n            try {\n                new Terrasoft.Core.DB.Insert(userConnection)\n                    .Into(\"SysFile\")\n                    .Set(\"Id\", Terrasoft.Core.DB.Column.Parameter(newFileId))\n                    .Set(\"RecordId\", Terrasoft.Core.DB.Column.Parameter(newPostId))\n                    .Set(\"RecordSchemaName\", Terrasoft.Core.DB.Column.Parameter(\"SocialMessage\"))\n                    .Set(\"Name\", Terrasoft.Core.DB.Column.Parameter(file[\"Name\"]))\n                    .Set(\"Data\", Terrasoft.Core.DB.Column.Parameter(file[\"Data\"]))\n                    .Set(\"Size\", Terrasoft.Core.DB.Column.Parameter(file[\"Size\"]))\n                    .Set(\"TypeId\", Terrasoft.Core.DB.Column.Parameter(file[\"TypeId\"]))\n                    .Execute();\n            } catch { }\n        }\n    }\n} catch (Exception ex) {\n    var logger = global::Common.Logging.LogManager.GetLogger(\"Process\");\n    logger.Error($\"Feed Copy Error: {ex.Message}\", ex);\n}\n\nreturn true;",
+          "CH2": true
+        },
+        {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
           "UId": "b7347d7b-6a3d-4064-9b65-2c42c0277856",
           "A2": "SequenceFlow1",
@@ -2089,12 +2159,12 @@
           "BL7": "0d8351f6-c2f4-4737-bdd9-6fbfe0837fec",
           "BL8": "d042bdc0-e495-42a9-931e-74310b759530",
           "CI1": "ddb574d0-d212-423e-9af4-a4c4559f750b",
-          "CI2": "a7adeb8f-dccc-4ed0-b776-a4ccff0eb396",
+          "CI2": "9c8202e2-5043-4d5e-afa7-2f731319b8ae",
           "CI3": "null",
           "CI5": "FF939598",
           "CI6": 1,
           "CI11": "634;200",
-          "CI12": "744;200"
+          "CI12": "758;200"
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaConditionalFlow",
@@ -2132,10 +2202,10 @@
           "CI7": "0;1",
           "CI8": "0;1",
           "CI11": "416;172",
-          "CI12": "1110;184",
+          "CI12": "1306;184",
           "CI10": {
             "Item0": "416;107",
-            "Item1": "1110;107"
+            "Item1": "1306;107"
           },
           "GV2": "{}",
           "GV3": []
@@ -2154,8 +2224,8 @@
           "CI3": "null",
           "CI5": "FF939598",
           "CI6": 1,
-          "CI11": "813;200",
-          "CI12": "919;200"
+          "CI11": "1032;200",
+          "CI12": "1153;200"
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
@@ -2171,8 +2241,25 @@
           "CI3": "null",
           "CI5": "FF939598",
           "CI6": 1,
-          "CI11": "988;200",
-          "CI12": "1094;200"
+          "CI11": "1222;200",
+          "CI12": "1290;200"
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
+          "UId": "dcc9b97f-72ee-435c-899e-841439a615dc",
+          "A2": "SequenceFlow9",
+          "A3": "d042bdc0-e495-42a9-931e-74310b759530",
+          "A4": "d042bdc0-e495-42a9-931e-74310b759530",
+          "A5": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
+          "BL7": "0d8351f6-c2f4-4737-bdd9-6fbfe0837fec",
+          "BL8": "d042bdc0-e495-42a9-931e-74310b759530",
+          "CI1": "9c8202e2-5043-4d5e-afa7-2f731319b8ae",
+          "CI2": "a7adeb8f-dccc-4ed0-b776-a4ccff0eb396",
+          "CI3": "null",
+          "CI5": "FF939598",
+          "CI6": 1,
+          "CI11": "827;200",
+          "CI12": "963;200"
         }
       ],
       "BK9": [],
