@@ -287,6 +287,34 @@
   "A4": "795095fb-5730-49f5-92e6-feca2a16c2f9",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
++ MetaData.Schema.B2 {
+  "UId": "8887ff4d-7cb5-4988-b23c-cf59622c9429",
+  "A2": "Button_CloseWorkflow_caption",
+  "A3": "795095fb-5730-49f5-92e6-feca2a16c2f9",
+  "A4": "795095fb-5730-49f5-92e6-feca2a16c2f9",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "2583d391-3c3a-4a59-9e80-f2ddde866127",
+  "A2": "PgrIsEscalatedLabel",
+  "A3": "795095fb-5730-49f5-92e6-feca2a16c2f9",
+  "A4": "795095fb-5730-49f5-92e6-feca2a16c2f9",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "d19d0c8c-bbe2-404f-9f80-2b77c6df4ae3",
+  "A2": "PgrClosureJustificationLabel",
+  "A3": "795095fb-5730-49f5-92e6-feca2a16c2f9",
+  "A4": "795095fb-5730-49f5-92e6-feca2a16c2f9",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "2d299cf2-c4b9-4679-b9e9-9ea8d9d0541a",
+  "A2": "PgrCloseWorkflowFailedMessage",
+  "A3": "795095fb-5730-49f5-92e6-feca2a16c2f9",
+  "A4": "795095fb-5730-49f5-92e6-feca2a16c2f9",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
 = MetaData.Schema.B2.["e3d912a6-8372-1433-34ad-3c26a189de52"].A4 "795095fb-5730-49f5-92e6-feca2a16c2f9"
 = MetaData.Schema.B2.["e3d912a6-8372-1433-34ad-3c26a189de52"].A5 "a111acf5-75e5-41e6-b93a-bebf243e47a5"
 = MetaData.Schema.B2.["5ef435ab-b0b2-f6bb-c361-3a38835b812d"].A4 "795095fb-5730-49f5-92e6-feca2a16c2f9"
@@ -467,6 +495,10 @@
   "7cb47d43-3735-9bb2-34f8-34f2edce77ba",
   "9fc3eeaa-b09d-aacb-9898-325a4f618e68",
   "db5b3618-6169-4af9-51d4-e9ad76673973",
+  "8887ff4d-7cb5-4988-b23c-cf59622c9429",
+  "2583d391-3c3a-4a59-9e80-f2ddde866127",
+  "d19d0c8c-bbe2-404f-9f80-2b77c6df4ae3",
+  "2d299cf2-c4b9-4679-b9e9-9ea8d9d0541a",
   "e3d912a6-8372-1433-34ad-3c26a189de52",
   "5ef435ab-b0b2-f6bb-c361-3a38835b812d",
   "d991f02c-bb3e-16c9-a294-8970da5937bf",

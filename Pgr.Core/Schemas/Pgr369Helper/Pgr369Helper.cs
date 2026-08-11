@@ -139,6 +139,41 @@ namespace Pgr.Core
             return DecideAction(account, updatedCounter.Value);
         }
 
+        /// <summary>
+        ///     CMVP-208: closes an escalated 3-6-9 cycle (Sales Director action, with a
+        ///     justification already saved on the task by the caller). Callable from either the
+        ///     369 alert task or its linked Measure sub-task — both may carry the escalation flag
+        ///     (see <see cref="EscalateToSalesDirector" />). Cancels the clicked task, its linked
+        ///     alert task if the click came from the Measure side, and any other still-open Measure
+        ///     task for the account, then resets the account's day counter to 0 so a new cycle can
+        ///     start later if the customer deviates again. No-op if the task isn't currently
+        ///     escalated.
+        /// </summary>
+        public void CloseWorkflow(Guid taskId)
+        {
+            var task = LoadActivity(taskId);
+            if (task == null || !task.GetTypedColumnValue<bool>("PgrIsEscalated"))
+            {
+                return;
+            }
+
+            var accountId = task.GetTypedColumnValue<Guid>("Account");
+            CloseEscalatedTask(task);
+
+            var parentTaskId = task.GetTypedColumnValue<Guid>("PgrParentTask");
+            if (parentTaskId != Guid.Empty)
+            {
+                var alertTask = LoadActivity(parentTaskId);
+                if (alertTask != null && alertTask.GetTypedColumnValue<bool>("PgrIsEscalated"))
+                {
+                    CloseEscalatedTask(alertTask);
+                }
+            }
+
+            SetCounter(accountId, 0);
+            CloseOpenMeasureTasks(accountId);
+        }
+
         #endregion
 
         #region Methods: Private
@@ -150,7 +185,10 @@ namespace Pgr.Core
         /// </summary>
         private int? AdvanceDayCounter(Guid accountId, int counter, bool isDeviation)
         {
-            counter += 1;
+            // CMVP-208: day 10 is the highest escalation level — once reached, the counter stays
+            // pinned there (does not keep climbing to 11, 12, 13…) until the Sales Director closes
+            // the cycle via CloseWorkflow.
+            counter = Math.Min(counter + 1, GetDay10Threshold());
             if (!isDeviation)
             {
                 SetCounter(accountId, 0);
@@ -186,8 +224,12 @@ namespace Pgr.Core
             // Day 6 (remind, CMVP-125) and day 10 (escalate, CMVP-126) both act only while the open
             // task's Measure task is still not filled in — evaluate that once here, and only when the
             // counter is actually at one of those days, rather than re-querying it per branch.
+            // CMVP-208: the counter stays pinned at day 10 (see AdvanceDayCounter) until the cycle is
+            // closed, so "at day 10" alone is not enough to re-enter the escalation branch every
+            // subsequent day — only the first time, guarded by PgrIsEscalated.
             var atReminderDay = counter == GetDay6Threshold();
-            var atEscalationDay = counter == GetDay10Threshold();
+            var atEscalationDay = counter == GetDay10Threshold() &&
+                !openAlertTask.GetTypedColumnValue<bool>("PgrIsEscalated");
             if ((atReminderDay || atEscalationDay) && !HasFilledMeasureTask(openAlertTask.PrimaryColumnValue))
             {
                 // CMVP-125: at day 6 remind the account's current Sales Manager.
@@ -338,12 +380,18 @@ namespace Pgr.Core
             var taskToEscalate = GetOpenMeasureTask(alertTask.PrimaryColumnValue) ?? alertTask;
             var salesPersonId = account.GetTypedColumnValue<Guid>("PgrSalesManager");
 
-            // Sales person: notified the task was escalated and a justification must be added.
             SendReminding(taskToEscalate.PrimaryColumnValue, salesPersonId,
                 GetLocalizableString("EscalationOwnerMessage"), GetLocalizableString("EscalationOwnerTitle"));
-            // Sales Director: notified the task was escalated to them.
             SendReminding(taskToEscalate.PrimaryColumnValue, salesDirectorId,
                 GetLocalizableString("EscalationDirectorMessage"), GetLocalizableString("EscalationDirectorTitle"));
+            
+            alertTask.SetColumnValue("PgrIsEscalated", true);
+            alertTask.Save(false);
+            if (taskToEscalate.PrimaryColumnValue != alertTask.PrimaryColumnValue)
+            {
+                taskToEscalate.SetColumnValue("PgrIsEscalated", true);
+                taskToEscalate.Save(false);
+            }
         }
 
         /// <summary>The customer's open (not finished) Measure task linked to the alert task, or null.</summary>
@@ -412,6 +460,23 @@ namespace Pgr.Core
             }
         }
 
+        /// <summary>Loads an Activity by Id with all schema columns, or null if it doesn't exist.</summary>
+        private Entity LoadActivity(Guid activityId)
+        {
+            var schema = _userConnection.EntitySchemaManager.GetInstanceByName("Activity");
+            var entity = schema.CreateEntity(_userConnection);
+            entity.UseAdminRights = false;
+            return entity.FetchFromDB(activityId, false) ? entity : null;
+        }
+
+        /// <summary>CMVP-208: clears the escalation flag and cancels the task (used by CloseWorkflow).</summary>
+        private static void CloseEscalatedTask(Entity task)
+        {
+            task.SetColumnValue("PgrIsEscalated", false);
+            task.SetColumnValue("StatusId", ActivityConsts.CanceledStatusUId);
+            task.Save(false);
+        }
+
         /// <summary>
         ///     True when a suspended customer's end date (CMVP-127) has passed — reactivation
         ///     happens the day *after* the defined end date. A suspension without an end date
@@ -448,7 +513,9 @@ namespace Pgr.Core
 
         /// <summary>
         ///     Closes any open 3-6-9 measure task (ActivityCategory = "Measure") for the specified
-        ///     account when order intake recovers (CMVP-123 AC). Sets the task status to "Canceled".
+        ///     account when order intake recovers (CMVP-123 AC) or the Sales Director closes an
+        ///     escalated cycle (CMVP-208). Sets the task status to "Canceled" and clears
+        ///     "PgrIsEscalated" (a no-op for the recovery case, where it was never set).
         /// </summary>
         private void CloseOpenMeasureTasks(Guid accountId)
         {
@@ -458,11 +525,9 @@ namespace Pgr.Core
             // throws ItemNotFoundException — "Status"/"StatusId" was never projected into the entity.
             esq.AddAllSchemaColumns();
             var tasks = esq.GetEntityCollection(_userConnection);
-            var canceledStatusId = ActivityConsts.CanceledStatusUId;
             foreach (var task in tasks)
             {
-                task.SetColumnValue("StatusId", canceledStatusId);
-                task.Save(false);
+                CloseEscalatedTask(task);
             }
         }
 

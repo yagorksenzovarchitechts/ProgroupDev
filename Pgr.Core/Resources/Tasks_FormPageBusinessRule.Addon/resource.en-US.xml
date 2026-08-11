@@ -12,6 +12,7 @@
 			<Item Name="AddonConfig.Rules.b2dd30df-e0fc-d033-d813-09f121a53df1.Caption" Value="Visit reports elements show/hide" />
 			<Item Name="AddonConfig.Rules.b593b9f8-cc39-9bce-0c6f-4f481949d7a6.Caption" Value="Show element: tab Meeting Summary" />
 			<Item Name="AddonConfig.Rules.df8e9480-b890-15ce-c67a-aef3a1e831d2.Caption" Value="369, measure elements show/hide" />
+			<Item Name="AddonConfig.Rules.e69fe67d-261d-3b55-ba90-98e7e9847687.Caption" Value="Show measure group" />
 		</Items>
 	</Group>
 </Resources>

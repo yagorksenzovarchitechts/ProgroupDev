@@ -1,4 +1,4 @@
-define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
+define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrClientConsts"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk, PgrClientConsts)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -1044,6 +1044,57 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 			},
 			{
 				"operation": "insert",
+				"name": "Checkbox_PgrIsEscalated",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.Checkbox",
+					"value": false,
+					"disabled": false,
+					"inversed": false,
+					"label": "#ResourceString(PgrIsEscalatedLabel)#",
+					"ariaLabel": "",
+					"labelPosition": "right",
+					"tooltip": "",
+					"control": "$PDS_PgrIsEscalated",
+					"visible": "$Pgr369CloseWorkflowVisible",
+					"readonly": true,
+					"placeholder": ""
+				},
+				"parentName": "GridContainer_ReasonCodeAndNotes",
+				"propertyName": "items",
+				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "Input_PgrClosureJustification",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 4,
+						"row": 6,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "#ResourceString(PgrClosureJustificationLabel)#",
+					"control": "$PDS_PgrClosureJustification",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": "$Pgr369CloseReadonly",
+					"multiline": true,
+					"labelPosition": "auto",
+					"visible": "$Pgr369CloseWorkflowVisible"
+				},
+				"parentName": "GridContainer_ReasonCodeAndNotes",
+				"propertyName": "items",
+				"index": 9
+			},
+			{
+				"operation": "insert",
 				"name": "FlexContainer_lbswzca",
 				"values": {
 					"type": "crt.FlexContainer",
@@ -1095,6 +1146,27 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				"parentName": "FlexContainer_lbswzca",
 				"propertyName": "items",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Button_CloseWorkflow",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_CloseWorkflow_caption)#",
+					"color": "primary",
+					"disabled": "$Pgr369CloseReadonly",
+					"size": "large",
+					"iconPosition": "only-text",
+					"visible": "$Pgr369CloseWorkflowVisible",
+					"clicked": {
+						"request": "usr.CloseWorkflowRequest",
+						"params": {}
+					},
+					"clickMode": "default"
+				},
+				"parentName": "FlexContainer_lbswzca",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -2012,6 +2084,35 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 							"path": "PDS.PgrReasonNotes"
 						}
 					},
+					"PDS_PgrIsEscalated": {
+						"modelConfig": {
+							"path": "PDS.PgrIsEscalated"
+						}
+					},
+					"PDS_PgrClosureJustification": {
+						"modelConfig": {
+							"path": "PDS.PgrClosureJustification"
+						},
+						"validators": {
+							"required": {
+								"type": "crt.Required"
+							}
+						}
+					},
+					"PDS_PgrAccountSalesDirector": {
+						"modelConfig": {
+							"path": "PDS.PgrAccountSalesDirector"
+						}
+					},
+					"PgrCurrentUserContactId": {
+						"value": ""
+					},
+					"Pgr369CloseReadonly": {
+						"value": true
+					},
+					"Pgr369CloseWorkflowVisible": {
+						"value": false
+					},
 					"PDS_AccountSalesManager": {
 						"modelConfig": {
 							"path": "PDS.PgrAccountSalesManager"
@@ -2522,6 +2623,10 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 					"PgrAccountPgrSalesDirector_ji6eoid": {
 						"path": "PgrAccount.PgrSalesDirector",
 						"type": "ForwardReference"
+					},
+					"PgrAccountSalesDirector": {
+						"path": "Account.PgrSalesDirector",
+						"type": "ForwardReference"
 					}
 				}
 			},
@@ -2555,7 +2660,122 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[
+			{
+				request: "crt.HandleViewModelInitRequest",
+				handler: async (request, next) => {
+					const result = await next?.handle(request);
+					const sysValues = await new sdk.SysValuesService().loadSysValues();
+					const currentContactId = sysValues.userContact?.value;
+					request.$context.PgrCurrentUserContactId = currentContactId || "";
+					return result;
+				}
+			},
+			{
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				handler: async (request, next) => {
+					const unwrap = (v) => {
+						if (v && typeof v === "object") {
+							if ("__zone_symbol__value" in v) { return v.__zone_symbol__value; }
+							if (v.value !== undefined) { return v.value; }
+						}
+						return v;
+					};
+					if (request.attributeName === "PDS_PgrIsEscalated" ||
+						request.attributeName === "PDS_ActivityCategory_frl97qi") {
+						// CMVP-208: the Close-workflow UI (status indicator, justification, button)
+						// shows on either the 369 alert task or its linked Measure sub-task — Pgr369Helper.
+						// EscalateToSalesDirector flags PgrIsEscalated=true on both when a Measure task
+						// exists, and CloseWorkflow closes the pair together from whichever side was
+						// clicked.
+						const isEscalated = unwrap(await request.$context.PDS_PgrIsEscalated) === true;
+						const categoryId = unwrap(await request.$context.PDS_ActivityCategory_frl97qi);
+						const isCloseWorkflowCategory = categoryId === PgrClientConsts.ActivityCategory.Category369 ||
+							categoryId === PgrClientConsts.ActivityCategory.Measure;
+						const isEscalated369Task = isEscalated && isCloseWorkflowCategory;
+						request.$context.Pgr369CloseWorkflowVisible = isEscalated369Task;
+						if (isEscalated369Task) {
+							request.$context.enableAttributeValidator("PDS_PgrClosureJustification", "required");
+						} else {
+							request.$context.disableAttributeValidator("PDS_PgrClosureJustification", "required");
+						}
+					} else if (request.attributeName === "PDS_PgrAccountSalesDirector") {
+						// CMVP-208: only the account's Sales Director may close the cycle (contact id
+						// is cached on init).
+						const currentContactId = await request.$context.PgrCurrentUserContactId;
+						const salesDirectorId = unwrap(await request.$context.PDS_PgrAccountSalesDirector);
+						const isSalesDirector = currentContactId === salesDirectorId;
+						request.$context.Pgr369CloseReadonly = !isSalesDirector;
+					}
+					return next?.handle(request);
+				}
+			},
+			{
+				request: "usr.CloseWorkflowRequest",
+				handler: async (request, next) => {
+					const unwrap = (v) => {
+						if (v && typeof v === "object") {
+							if ("__zone_symbol__value" in v) { return v.__zone_symbol__value; }
+							if (v.value !== undefined) { return v.value; }
+						}
+						return v;
+					};
+					const handlerChain = sdk.HandlerChainService.instance;
+					const taskId = unwrap(await request.$context.PDS_Id);
+
+					const showError = async (message) => {
+						await handlerChain.process({
+							type: "crt.ShowDialogRequest",
+							$context: request.$context,
+							dialogConfig: {
+								data: {
+									message: message,
+									actions: [
+										{ key: "ok", config: { color: "primary", caption: "OK" } }
+									]
+								}
+							}
+						});
+					};
+
+					// Persist the justification just entered before calling the service.
+					await handlerChain.process({
+						type: "crt.SaveRecordRequest",
+						$context: request.$context
+					});
+
+					const failedMessage = await request.$context.Resources.Strings.PgrCloseWorkflowFailedMessage;
+					const http = new sdk.HttpClientService();
+					let response;
+					try {
+						response = await http.post("rest/Pgr369Service/CloseWorkflow/" + taskId);
+					} catch (e) {
+						await showError(failedMessage + " " + (e && e.message ? e.message : e));
+						return next?.handle(request);
+					}
+
+					// BodyStyle.Wrapped on the service method wraps the ConfigurationServiceResponse
+					// under "<MethodName>Result" — same envelope shape (success/errorInfo.message) as
+					// the platform's other Configuration web services.
+					const result = response && response.body && response.body.CloseWorkflowResult;
+					if (!result || result.success === false) {
+						const reason = (result && result.errorInfo && result.errorInfo.message) ||
+							("HTTP " + (response && response.status));
+						await showError(failedMessage + " " + reason);
+						return next?.handle(request);
+					}
+
+					// Reload so PgrIsEscalated (and the Escalated indicator) reflect the closed state.
+					await handlerChain.process({
+						type: "crt.LoadDataRequest",
+						config: { loadType: "reload" },
+						$context: request.$context
+					});
+
+					return next?.handle(request);
+				}
+			}
+		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
 	};

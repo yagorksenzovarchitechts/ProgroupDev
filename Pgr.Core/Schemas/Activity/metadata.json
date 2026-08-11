@@ -1491,6 +1491,22 @@
   "S2": "90b65bf8-0ffc-4141-8779-2420877af907"
 }
 + MetaData.Schema.D2 {
+  "UId": "436cadc3-911e-40e1-9aa4-b8ea1e0f0bca",
+  "A2": "PgrIsEscalated",
+  "A3": "7ae923b5-a60a-47e4-a03c-cdcdd5cd56fa",
+  "A4": "7ae923b5-a60a-47e4-a03c-cdcdd5cd56fa",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "90b65bf8-0ffc-4141-8779-2420877af907"
+}
++ MetaData.Schema.D2 {
+  "UId": "9fcfd96e-7891-452d-95a6-408795e8ee7d",
+  "A2": "PgrClosureJustification",
+  "A3": "7ae923b5-a60a-47e4-a03c-cdcdd5cd56fa",
+  "A4": "7ae923b5-a60a-47e4-a03c-cdcdd5cd56fa",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "5ca35f10-a101-4c67-a96a-383da6afacfc"
+}
++ MetaData.Schema.D2 {
   "UId": "a572957b-e3a8-f235-c79e-8338f44bf73f",
   "A2": "PgrParentTask",
   "A3": "7ae923b5-a60a-47e4-a03c-cdcdd5cd56fa",
