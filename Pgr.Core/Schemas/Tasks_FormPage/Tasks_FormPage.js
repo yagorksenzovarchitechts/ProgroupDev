@@ -621,6 +621,370 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 			},
 			{
 				"operation": "insert",
+				"name": "ExpansionPanel_369ReasonDetails",
+				"values": {
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(ExpansionPanel_369ReasonDetails_title)#",
+					"toggleType": "material",
+					"togglePosition": "before",
+					"expanded": true,
+					"labelColor": "auto",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"padding": {
+						"top": "small",
+						"bottom": "small",
+						"left": "none",
+						"right": "none"
+					},
+					"fitContent": true,
+					"visible": false,
+					"alignItems": "stretch"
+				},
+				"parentName": "TabContainer_w3tsrln",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_k0z98iu",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 24px)",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_369ReasonDetails",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_f664t13",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"gap": "none",
+					"alignItems": "center",
+					"items": [],
+					"layoutConfig": {
+						"colSpan": 1,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_k0z98iu",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_s6wr1e7",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 32px)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": [],
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
+				},
+				"parentName": "ExpansionPanel_369ReasonDetails",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_5yceyw3",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrReasonCode_ukscpy6",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrReasonCode_ukscpy6"
+				},
+				"parentName": "GridContainer_s6wr1e7",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_a9s7x8w",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_a9s7x8w_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_5yceyw3",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_f3avwgp",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrCorrectiveMeasureAction_skk2vj4",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrCorrectiveMeasureAction_skk2vj4"
+				},
+				"parentName": "GridContainer_s6wr1e7",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_hon0m3b",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_hon0m3b_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_f3avwgp",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Input_16ouhqn",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrReasonNotes_0c2belc",
+					"control": "$PDS_PgrReasonNotes_0c2belc",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": true,
+					"labelPosition": "auto",
+					"visible": true
+				},
+				"parentName": "GridContainer_s6wr1e7",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_d0zml3k",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrReasonCodeSetBy_km7i221",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrReasonCodeSetBy_km7i221",
+					"visible": true,
+					"readonly": true,
+					"placeholder": ""
+				},
+				"parentName": "GridContainer_s6wr1e7",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_005ou0u",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_005ou0u_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_d0zml3k",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_gqhm1xl",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_PgrReasonSetOn_6w4ri4l",
+					"placeholder": "",
+					"readonly": true,
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "datetime",
+					"control": "$PDS_PgrReasonSetOn_6w4ri4l",
+					"visible": true
+				},
+				"parentName": "GridContainer_s6wr1e7",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "Input_8x4bji3",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_Pgr369ReasonForClosure_usvewze",
+					"control": "$PDS_Pgr369ReasonForClosure_usvewze",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto",
+					"visible": false
+				},
+				"parentName": "GridContainer_s6wr1e7",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_lbswzca",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "medium",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "flex-start",
+					"justifyContent": "end",
+					"gap": "small",
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_s6wr1e7",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "Button_CreateMeasure",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_CreateMeasure_caption)#",
+					"color": "primary",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "left-icon",
+					"icon": "add-button-icon",
+					"visible": false,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "PgrCreateMeasureTaskFrom396Task",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"recordIdProcessParameterName": "TaskId"
+						}
+					},
+					"clickMode": "default"
+				},
+				"parentName": "FlexContainer_lbswzca",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "ExpansionPanel_17p0x4t",
 				"values": {
 					"type": "crt.ExpansionPanel",
@@ -645,7 +1009,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				},
 				"parentName": "TabContainer_w3tsrln",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -867,7 +1231,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_5yceyw3",
+				"name": "ComboBox_84dhem0",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -892,24 +1256,24 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 			},
 			{
 				"operation": "insert",
-				"name": "addRecord_a9s7x8w",
+				"name": "ComboboxSearchTextAction_izzd8rm",
 				"values": {
 					"code": "addRecord",
 					"type": "crt.ComboboxSearchTextAction",
 					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_a9s7x8w_caption)#",
+					"caption": "#ResourceString(ComboboxSearchTextAction_izzd8rm_caption)#",
 					"clicked": {
 						"request": "crt.CreateRecordFromLookupRequest",
 						"params": {}
 					}
 				},
-				"parentName": "ComboBox_5yceyw3",
+				"parentName": "ComboBox_84dhem0",
 				"propertyName": "listActions",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_f3avwgp",
+				"name": "ComboBox_a5g3fxf",
 				"values": {
 					"layoutConfig": {
 						"column": 3,
@@ -934,24 +1298,24 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 			},
 			{
 				"operation": "insert",
-				"name": "addRecord_hon0m3b",
+				"name": "ComboboxSearchTextAction_e8lecd4",
 				"values": {
 					"code": "addRecord",
 					"type": "crt.ComboboxSearchTextAction",
 					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_hon0m3b_caption)#",
+					"caption": "#ResourceString(ComboboxSearchTextAction_e8lecd4_caption)#",
 					"clicked": {
 						"request": "crt.CreateRecordFromLookupRequest",
 						"params": {}
 					}
 				},
-				"parentName": "ComboBox_f3avwgp",
+				"parentName": "ComboBox_a5g3fxf",
 				"propertyName": "listActions",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "Input_16ouhqn",
+				"name": "Input_ea0l8m4",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -975,7 +1339,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_d0zml3k",
+				"name": "ComboBox_bwxpshf",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -1003,24 +1367,24 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 			},
 			{
 				"operation": "insert",
-				"name": "addRecord_005ou0u",
+				"name": "ComboboxSearchTextAction_w1faulg",
 				"values": {
 					"code": "addRecord",
 					"type": "crt.ComboboxSearchTextAction",
 					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_005ou0u_caption)#",
+					"caption": "#ResourceString(ComboboxSearchTextAction_w1faulg_caption)#",
 					"clicked": {
 						"request": "crt.CreateRecordFromLookupRequest",
 						"params": {}
 					}
 				},
-				"parentName": "ComboBox_d0zml3k",
+				"parentName": "ComboBox_bwxpshf",
 				"propertyName": "listActions",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "DateTimePicker_gqhm1xl",
+				"name": "DateTimePicker_p7yuwir",
 				"values": {
 					"layoutConfig": {
 						"column": 3,
@@ -1041,60 +1405,6 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				"parentName": "GridContainer_ReasonCodeAndNotes",
 				"propertyName": "items",
 				"index": 7
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_lbswzca",
-				"values": {
-					"type": "crt.FlexContainer",
-					"direction": "row",
-					"wrap": "wrap",
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"padding": {
-						"top": "medium",
-						"right": "none",
-						"bottom": "none",
-						"left": "none"
-					},
-					"color": "transparent",
-					"borderRadius": "none",
-					"alignItems": "flex-start",
-					"justifyContent": "end",
-					"gap": "small"
-				},
-				"parentName": "TabContainer_w3tsrln",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "Button_CreateMeasure",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(Button_CreateMeasure_caption)#",
-					"color": "primary",
-					"disabled": false,
-					"size": "large",
-					"iconPosition": "left-icon",
-					"icon": "add-button-icon",
-					"visible": false,
-					"clicked": {
-						"request": "crt.RunBusinessProcessRequest",
-						"params": {
-							"processName": "PgrCreateMeasureTaskFrom396Task",
-							"processRunType": "ForTheSelectedPage",
-							"saveAtProcessStart": true,
-							"showNotification": true,
-							"recordIdProcessParameterName": "TaskId"
-						}
-					},
-					"clickMode": "default"
-				},
-				"parentName": "FlexContainer_lbswzca",
-				"propertyName": "items",
-				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -1348,7 +1658,16 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 							"id": "db23d481-299c-4d76-abf1-46b641db532c",
 							"code": "GridDetail_1ay6zynDS_Title",
 							"caption": "#ResourceString(GridDetail_1ay6zynDS_Title)#",
-							"dataValueType": 28
+							"dataValueType": 28,
+							"width": 375,
+							"sticky": true
+						},
+						{
+							"id": "c49ddec2-c9fe-7d6c-b84f-3b2bbdc72ca2",
+							"code": "GridDetail_1ay6zynDS_ActivityCategory",
+							"caption": "#ResourceString(GridDetail_1ay6zynDS_ActivityCategory)#",
+							"dataValueType": 10,
+							"width": 161
 						},
 						{
 							"id": "002dab94-28af-803b-0753-5829cbf6a03c",
@@ -1360,7 +1679,8 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 							"id": "2bd1dd17-efc4-331b-cd45-3b222e84c33d",
 							"code": "GridDetail_1ay6zynDS_Status",
 							"caption": "#ResourceString(GridDetail_1ay6zynDS_Status)#",
-							"dataValueType": 10
+							"dataValueType": 10,
+							"width": 149
 						},
 						{
 							"id": "6748266b-361b-cc45-366b-556c62ceaa47",
@@ -1372,6 +1692,13 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 							"id": "82b7e0cb-eb54-fbe6-decb-bffb631b8c26",
 							"code": "GridDetail_1ay6zynDS_Owner",
 							"caption": "#ResourceString(GridDetail_1ay6zynDS_Owner)#",
+							"dataValueType": 10,
+							"width": 169
+						},
+						{
+							"id": "a65b8f1f-c741-6e10-60d5-a7c679e5f639",
+							"code": "GridDetail_1ay6zynDS_PgrPersonInCharge",
+							"caption": "#ResourceString(GridDetail_1ay6zynDS_PgrPersonInCharge)#",
 							"dataValueType": 10
 						}
 					],
@@ -2229,6 +2556,11 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 										"path": "GridDetail_1ay6zynDS.Title"
 									}
 								},
+								"GridDetail_1ay6zynDS_ActivityCategory": {
+									"modelConfig": {
+										"path": "GridDetail_1ay6zynDS.ActivityCategory"
+									}
+								},
 								"GridDetail_1ay6zynDS_Priority": {
 									"modelConfig": {
 										"path": "GridDetail_1ay6zynDS.Priority"
@@ -2247,6 +2579,11 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 								"GridDetail_1ay6zynDS_Owner": {
 									"modelConfig": {
 										"path": "GridDetail_1ay6zynDS.Owner"
+									}
+								},
+								"GridDetail_1ay6zynDS_PgrPersonInCharge": {
+									"modelConfig": {
+										"path": "GridDetail_1ay6zynDS.PgrPersonInCharge"
 									}
 								},
 								"GridDetail_1ay6zynDS_Id": {
@@ -2410,6 +2747,11 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 								]
 							}
 						}
+					},
+					"PDS_Pgr369ReasonForClosure_usvewze": {
+						"modelConfig": {
+							"path": "PDS.Pgr369ReasonForClosure"
+						}
 					}
 				}
 			},
@@ -2485,6 +2827,9 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 								"Title": {
 									"path": "Title"
 								},
+								"ActivityCategory": {
+									"path": "ActivityCategory"
+								},
 								"Priority": {
 									"path": "Priority"
 								},
@@ -2496,6 +2841,9 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 								},
 								"Owner": {
 									"path": "Owner"
+								},
+								"PgrPersonInCharge": {
+									"path": "PgrPersonInCharge"
 								}
 							}
 						}

@@ -276,14 +276,6 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"name": "Group"
 			},
 			{
-				"operation": "remove",
-				"name": "ContactChannel"
-			},
-			{
-				"operation": "remove",
-				"name": "ContactRegisterMethod"
-			},
-			{
 				"operation": "merge",
 				"name": "Owner",
 				"values": {
@@ -301,6 +293,14 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
 				"index": 2
+			},
+			{
+				"operation": "remove",
+				"name": "ContactChannel"
+			},
+			{
+				"operation": "remove",
+				"name": "ContactRegisterMethod"
 			},
 			{
 				"operation": "merge",

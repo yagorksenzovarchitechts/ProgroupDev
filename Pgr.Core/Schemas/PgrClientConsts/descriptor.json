@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "b1a2708a-3872-4490-a2ca-15d7f3775427",
     "Name": "PgrClientConsts",
-    "ModifiedOnUtc": "\/Date(1784297744000)\/",
+    "ModifiedOnUtc": "\/Date(1786429794000)\/",
     "ManagerName": "ClientUnitSchemaManager",
     "Caption": "Pgr client constants",
     "DependsOn": []

@@ -140,6 +140,12 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							"dataValueType": 10
 						},
 						{
+							"id": "ecb5a95d-67d3-473d-a90c-0cecfbc897b2",
+							"code": "PDS_PgrIsEscalated",
+							"caption": "#ResourceString(PDS_PgrIsEscalated)#",
+							"dataValueType": 12
+						},
+						{
 							"id": "b0b2f4ce-9f60-1a76-bcda-2da05b2f03aa",
 							"code": "PDS_Priority",
 							"caption": "#ResourceString(PDS_Priority)#",
@@ -422,6 +428,80 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"parentName": "LeftFilterContainerInner",
 				"propertyName": "items",
 				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_PgrIsEscalated",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_PgrIsEscalated_config_caption)#",
+						"icon": "settings-button-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": false,
+						"approachState": true,
+						"hint": ""
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_PgrIsEscalated_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"customFilter": {
+														"items": {
+															"46e0104a-79a1-4f92-a541-7b2dcf83fe1e": {
+																"filterType": 1,
+																"comparisonType": 3,
+																"isEnabled": true,
+																"trimDateTimeParameterToDate": false,
+																"leftExpression": {
+																	"expressionType": 0,
+																	"columnPath": "PgrIsEscalated"
+																},
+																"isAggregative": false,
+																"dataValueType": 12,
+																"rightExpression": {
+																	"expressionType": 2,
+																	"parameter": {
+																		"dataValueType": 12,
+																		"value": true
+																	}
+																}
+															}
+														},
+														"logicalOperation": 0,
+														"isEnabled": true,
+														"filterType": 6,
+														"rootSchemaName": "Activity"
+													},
+													"dependencyFilters": null
+												},
+												"quickFilterType": "custom",
+												"config": {
+													"approachState": true
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"QuickFilter_PgrIsEscalated_Value"
+						]
+					},
+					"filterType": "custom",
+					"visible": true
+				},
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 7
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -460,6 +540,11 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 					"PDS_PgrOverdueDays": {
 						"modelConfig": {
 							"path": "PDS.PgrOverdueDays"
+						}
+					},
+					"PDS_PgrIsEscalated": {
+						"modelConfig": {
+							"path": "PDS.PgrIsEscalated"
 						}
 					}
 				}
@@ -519,6 +604,10 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 						},
 						{
 							"name": "QuickFilter_07b11xi_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_PgrIsEscalated_Items",
 							"loadOnChange": true
 						}
 					]

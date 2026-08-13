@@ -611,6 +611,17 @@
         },
         {
           "BL1": "Terrasoft.Core.DcmProcess.DcmSchemaStage",
+          "UId": "c3ee000c-e60c-49da-818a-5771116bc30a",
+          "A2": "Stage6",
+          "A3": "d209cbbb-162e-446f-ac4f-de46e9cae73b",
+          "A4": "d209cbbb-162e-446f-ac4f-de46e9cae73b",
+          "A5": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
+          "Color": "#0C8701",
+          "StageRecordId": "49bb7220-fab0-42ac-87e0-51622b4a28b9",
+          "Elements": []
+        },
+        {
+          "BL1": "Terrasoft.Core.DcmProcess.DcmSchemaStage",
           "UId": "e0371d68-480d-47a1-8b52-f44fa02c6483",
           "A2": "Stage3",
           "A3": "d209cbbb-162e-446f-ac4f-de46e9cae73b",
@@ -1336,6 +1347,46 @@
           {
             "Source": "3ee845b0-8038-4e92-8a02-0fa7d8fbe1b3",
             "Target": "c6381ee6-24e4-44fe-9362-c0f58572f7e3"
+          },
+          {
+            "Source": "c3ee000c-e60c-49da-818a-5771116bc30a",
+            "Target": "5a201387-ad5b-484a-a574-015598905068"
+          },
+          {
+            "Source": "5a201387-ad5b-484a-a574-015598905068",
+            "Target": "c3ee000c-e60c-49da-818a-5771116bc30a"
+          },
+          {
+            "Source": "c3ee000c-e60c-49da-818a-5771116bc30a",
+            "Target": "c6381ee6-24e4-44fe-9362-c0f58572f7e3"
+          },
+          {
+            "Source": "c6381ee6-24e4-44fe-9362-c0f58572f7e3",
+            "Target": "c3ee000c-e60c-49da-818a-5771116bc30a"
+          },
+          {
+            "Source": "c3ee000c-e60c-49da-818a-5771116bc30a",
+            "Target": "e0371d68-480d-47a1-8b52-f44fa02c6483"
+          },
+          {
+            "Source": "e0371d68-480d-47a1-8b52-f44fa02c6483",
+            "Target": "c3ee000c-e60c-49da-818a-5771116bc30a"
+          },
+          {
+            "Source": "c3ee000c-e60c-49da-818a-5771116bc30a",
+            "Target": "d5466539-e362-431d-acbc-f26ebb90cca1"
+          },
+          {
+            "Source": "d5466539-e362-431d-acbc-f26ebb90cca1",
+            "Target": "c3ee000c-e60c-49da-818a-5771116bc30a"
+          },
+          {
+            "Source": "c3ee000c-e60c-49da-818a-5771116bc30a",
+            "Target": "3ee845b0-8038-4e92-8a02-0fa7d8fbe1b3"
+          },
+          {
+            "Source": "3ee845b0-8038-4e92-8a02-0fa7d8fbe1b3",
+            "Target": "c3ee000c-e60c-49da-818a-5771116bc30a"
           }
         ]
       },

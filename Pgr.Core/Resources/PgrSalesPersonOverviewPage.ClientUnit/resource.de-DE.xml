@@ -6,6 +6,7 @@
 			<Item Name="LocalizableStrings.DefaultHeaderCaption.Value" Value="Vertriebsmitarbeiter-Übersicht" />
 			<Item Name="LocalizableStrings.PageTitle_caption.Value" Value="Vertriebsmitarbeiter-Übersicht" />
 			<Item Name="LocalizableStrings.QuickFilter_vumvdng_config_caption.Value" Value="Gebiet" />
+			<Item Name="LocalizableStrings.SearchFilter_r1hc9v3_placeholder.Value" Value="Suche..." />
 		</Items>
 	</Group>
 </Resources>

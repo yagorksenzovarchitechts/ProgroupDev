@@ -10,6 +10,7 @@
 			<Item Name="LocalizableStrings.QuickFilter_3hurnbj_config_caption.Value" Value="Overdue tasks" />
 			<Item Name="LocalizableStrings.QuickFilter_CanceledTasks_config_caption.Value" Value="Show canceled/closed tasks" />
 			<Item Name="LocalizableStrings.QuickFilter_MyTasks_config_caption.Value" Value="Only my tasks" />
+			<Item Name="LocalizableStrings.QuickFilter_PgrIsEscalated_config_caption.Value" Value="Escalated" />
 			<Item Name="LocalizableStrings.QuickFilter_ndarf4i_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.QuickFilter_ndarf4i_config_caption.Value" Value="Category" />
 			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Search" />

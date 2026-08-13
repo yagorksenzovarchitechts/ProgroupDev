@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "98a818cc-dffd-4741-9ca8-69463fa5688c",
     "Name": "PgrVisitReportBusinessRule",
-    "ModifiedOnUtc": "\/Date(1781889895000)\/",
+    "ModifiedOnUtc": "\/Date(1786538378000)\/",
     "ManagerName": "AddonSchemaManager",
     "Caption": "Visit report (Business rules)",
     "DependsOn": []

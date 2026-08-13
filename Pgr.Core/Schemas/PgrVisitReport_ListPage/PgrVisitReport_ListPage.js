@@ -65,11 +65,19 @@ define("PgrVisitReport_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 				"values": {
 					"columns": [
 						{
-							"id": "f252f581-0ccf-44ac-b7c9-c00df2ad9919",
+							"id": "cf585528-6533-a2fa-ae70-38879987bbc0",
 							"code": "PDS_PgrNumber",
 							"caption": "#ResourceString(PDS_PgrNumber)#",
-							"dataValueType": 1,
-							"width": 155
+							"dataValueType": 27,
+							"sticky": true
+						},
+						{
+							"id": "27552c61-8f2e-8105-b2a0-02aa94dd6358",
+							"code": "PDS_PgrName",
+							"caption": "#ResourceString(PDS_PgrName)#",
+							"dataValueType": 28,
+							"sticky": false,
+							"width": 471
 						},
 						{
 							"id": "182164aa-da30-18a3-130c-41a3ba19e074",
@@ -400,6 +408,11 @@ define("PgrVisitReport_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 							"path": "PDS.PgrNumber"
 						}
 					},
+					"PDS_PgrName": {
+						"modelConfig": {
+							"path": "PDS.PgrName"
+						}
+					},
 					"PDS_PgrAccount": {
 						"modelConfig": {
 							"path": "PDS.PgrAccount"
@@ -512,6 +525,9 @@ define("PgrVisitReport_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"attributes": {
 						"PgrNumber": {
 							"path": "PgrNumber"
+						},
+						"PgrName": {
+							"path": "PgrName"
 						},
 						"PgrAccount": {
 							"path": "PgrAccount"

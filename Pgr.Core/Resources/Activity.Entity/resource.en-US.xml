@@ -6,11 +6,15 @@
 			<Item Name="Columns.ActivityCategory.Caption" Value="Categories" />
 			<Item Name="Columns.DueDate.Caption" Value="Due date and time" />
 			<Item Name="Columns.Notes.Caption" Value="Description" />
+			<Item Name="Columns.Pgr369ReasonForClosure.Caption" Value="369 Reason for closure" />
 			<Item Name="Columns.PgrAccount.Caption" Value="Account (customer)" />
+			<Item Name="Columns.PgrClosureJustification.Caption" Value="Justification" />
 			<Item Name="Columns.PgrCorrectiveMeasureAction.Caption" Value="Corrective action" />
 			<Item Name="Columns.PgrDepartment.Caption" Value="Department" />
+			<Item Name="Columns.PgrIsEscalated.Caption" Value="Escalated" />
 			<Item Name="Columns.PgrIsOverdue.Caption" Value="Is overdue" />
 			<Item Name="Columns.PgrOverdueDays.Caption" Value="Overdue days" />
+			<Item Name="Columns.PgrParentIsVisit.Caption" Value="Parent is Visit" />
 			<Item Name="Columns.PgrParentTask.Caption" Value="Parent task" />
 			<Item Name="Columns.PgrPersonInCharge.Caption" Value="Person in charge" />
 			<Item Name="Columns.PgrReasonCode.Caption" Value="Reason code" />

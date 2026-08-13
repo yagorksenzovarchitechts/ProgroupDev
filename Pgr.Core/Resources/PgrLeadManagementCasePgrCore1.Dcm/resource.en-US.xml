@@ -70,6 +70,7 @@
 			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.TerritoryPreview.Caption" Value="Territory preview " />
 			<Item Name="Stages.Stage4.Caption" Value="Closed / Not interesting" />
 			<Item Name="Stages.Stage5.Caption" Value="Qualification" />
+			<Item Name="Stages.Stage6.Caption" Value="Conversion" />
 		</Items>
 	</Group>
 </Resources>

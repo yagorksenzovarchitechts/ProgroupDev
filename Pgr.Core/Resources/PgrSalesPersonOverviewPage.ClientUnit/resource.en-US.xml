@@ -9,6 +9,7 @@
 			<Item Name="LocalizableStrings.QuickFilter_fu2sgb8_config_caption.Value" Value="Team" />
 			<Item Name="LocalizableStrings.QuickFilter_vumvdng_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.QuickFilter_vumvdng_config_caption.Value" Value="Territory" />
+			<Item Name="LocalizableStrings.SearchFilter_r1hc9v3_placeholder.Value" Value="Search" />
 		</Items>
 	</Group>
 </Resources>
