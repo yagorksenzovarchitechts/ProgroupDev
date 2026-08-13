@@ -2,7 +2,6 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Visit report" />
 			<Item Name="Columns.PgrAccount.Caption" Value="Kunde&#xA;&#xA;Kunde&#xA;&#xA;&#xA;Kunde&#xA;&#xA;Kunde" />
 			<Item Name="Columns.PgrCompetition.Caption" Value="Wettbewerb" />
 			<Item Name="Columns.PgrCompetitionText.Caption" Value="Freitext Wettbewerb" />

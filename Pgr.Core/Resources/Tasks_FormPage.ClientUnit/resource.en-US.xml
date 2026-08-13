@@ -12,6 +12,9 @@
 			<Item Name="LocalizableStrings.ComboBox_6mcz5gh_label.Value" Value="Dropdown" />
 			<Item Name="LocalizableStrings.ComboBox_hth0sst_ariaLabel.Value" Value="Dropdown" />
 			<Item Name="LocalizableStrings.ComboBox_hth0sst_label.Value" Value="Dropdown" />
+			<Item Name="LocalizableStrings.ComboboxSearchTextAction_e8lecd4_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.ComboboxSearchTextAction_izzd8rm_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.ComboboxSearchTextAction_w1faulg_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.ConnectionsTabContainerHeaderLabel_caption.Value" Value="Connections" />
 			<Item Name="LocalizableStrings.ConnectionsTabContainer_caption.Value" Value="Connections" />
 			<Item Name="LocalizableStrings.CreateMeasure_DefaultTitle.Value" Value="Measure" />
@@ -19,6 +22,7 @@
 			<Item Name="LocalizableStrings.CreateMeasure_Success_message.Value" Value="Measure task created." />
 			<Item Name="LocalizableStrings.ExpansionPanelMeetingTranscripts_title.Value" Value="Meeting transcripts" />
 			<Item Name="LocalizableStrings.ExpansionPanel_17p0x4t_title.Value" Value="Measure task" />
+			<Item Name="LocalizableStrings.ExpansionPanel_369ReasonDetails_title.Value" Value="369 Reason details" />
 			<Item Name="LocalizableStrings.ExpansionPanel_luhcskb_title.Value" Value="Sub-tasks" />
 			<Item Name="LocalizableStrings.ExpansionPanel_wxaphav_title.Value" Value="Linked visit report" />
 			<Item Name="LocalizableStrings.GridDetailAddBtnNewTranscript_caption.Value" Value="New" />
@@ -35,6 +39,7 @@
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_a81j6le_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_MeetingTranscripts_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_qc5rcs2_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.GridDetail_1ay6zynDS_ActivityCategory.Value" Value="Category" />
 			<Item Name="LocalizableStrings.GridDetail_VisitReport_columns_2_caption.Value" Value="Weekly report?" />
 			<Item Name="LocalizableStrings.LabelMeetingTranscriptsList_caption.Value" Value="These transcripts were used to generate the meeting summary. Double-click a transcript to view the full text." />
 			<Item Name="LocalizableStrings.Label_NoMeetSummaryAccessCaption_caption.Value" Value="The AI Meeting Summary is available only to meeting participants. You were not a participant in this meeting." />

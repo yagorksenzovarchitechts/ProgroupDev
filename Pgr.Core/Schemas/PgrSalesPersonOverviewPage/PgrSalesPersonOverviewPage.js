@@ -116,6 +116,36 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 			},
 			{
 				"operation": "insert",
+				"name": "SearchFilter_r1hc9v3",
+				"values": {
+					"type": "crt.SearchFilter",
+					"placeholder": "#ResourceString(SearchFilter_r1hc9v3_placeholder)#",
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "SearchFilter_r1hc9v3_DataGrid_vmm3jfp",
+								"converters": [
+									{
+										"converter": "crt.SearchFilterAttributeConverter",
+										"args": [
+											"DataGrid_vmm3jfp"
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"SearchFilter_r1hc9v3_SearchValue",
+							"SearchFilter_r1hc9v3_FilteredColumnsGroups"
+						]
+					}
+				},
+				"parentName": "CardToolsContainer",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
 				"name": "GridContainer_8blg20y",
 				"values": {
 					"layoutConfig": {
@@ -230,6 +260,12 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 							"caption": "#ResourceString(DataGrid_vmm3jfpDS_PgrIsActive)#",
 							"dataValueType": 12,
 							"width": 134
+						},
+						{
+							"id": "780c1890-b504-4576-30bb-3b08b731d9cc",
+							"code": "DataGrid_vmm3jfpDS_PgrCreatioUser",
+							"caption": "#ResourceString(DataGrid_vmm3jfpDS_PgrCreatioUser)#",
+							"dataValueType": 10
 						}
 					],
 					"placeholder": false,
@@ -308,6 +344,10 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 								{
 									"name": "QuickFilter_vumvdng_DataGrid_vmm3jfp",
 									"loadOnChange": true
+								},
+								{
+									"name": "SearchFilter_r1hc9v3_DataGrid_vmm3jfp",
+									"loadOnChange": true
 								}
 							]
 						},
@@ -346,6 +386,11 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 								"DataGrid_vmm3jfpDS_PgrIsActive": {
 									"modelConfig": {
 										"path": "DataGrid_vmm3jfpDS.PgrIsActive"
+									}
+								},
+								"DataGrid_vmm3jfpDS_PgrCreatioUser": {
+									"modelConfig": {
+										"path": "DataGrid_vmm3jfpDS.PgrCreatioUser"
 									}
 								},
 								"DataGrid_vmm3jfpDS_Id": {
@@ -450,6 +495,9 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 									},
 									"PgrIsActive": {
 										"path": "PgrIsActive"
+									},
+									"PgrCreatioUser": {
+										"path": "PgrCreatioUser"
 									}
 								}
 							}
