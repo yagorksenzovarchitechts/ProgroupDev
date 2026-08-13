@@ -1,0 +1,10 @@
+{
+  "Descriptor": {
+    "UId": "7b3f1c94-2e5d-4a86-9c17-0d4e8f62b5a1",
+    "Name": "PgrActivityEntityEventListener",
+    "ModifiedOnUtc": "\/Date(1786616240469)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "Activity Entity Event Listener",
+    "DependsOn": []
+  }
+}

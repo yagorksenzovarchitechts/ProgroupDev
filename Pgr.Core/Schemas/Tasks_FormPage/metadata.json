@@ -322,6 +322,13 @@
   "A4": "795095fb-5730-49f5-92e6-feca2a16c2f9",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
++ MetaData.Schema.B2 {
+  "UId": "e1c74a5b-9f30-4a12-b06d-5c8e7d21f4a3",
+  "A2": "PDS_Pgr369ReasonForClosure_usvewze",
+  "A3": "795095fb-5730-49f5-92e6-feca2a16c2f9",
+  "A4": "795095fb-5730-49f5-92e6-feca2a16c2f9",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
 = MetaData.Schema.B2.["e3d912a6-8372-1433-34ad-3c26a189de52"].A4 "795095fb-5730-49f5-92e6-feca2a16c2f9"
 = MetaData.Schema.B2.["e3d912a6-8372-1433-34ad-3c26a189de52"].A5 "a111acf5-75e5-41e6-b93a-bebf243e47a5"
 = MetaData.Schema.B2.["5ef435ab-b0b2-f6bb-c361-3a38835b812d"].A4 "795095fb-5730-49f5-92e6-feca2a16c2f9"
@@ -576,7 +583,8 @@
   "0ef4e6c0-483c-51d1-63e7-36c00e8d2a8e",
   "8fcac9c7-7dae-5622-4882-ee177bd428c0",
   "8759340d-2262-ff2a-f2fa-1811446e1975",
-  "54711d7f-83bd-7a12-2040-9afeb2327a78"
+  "54711d7f-83bd-7a12-2040-9afeb2327a78",
+  "e1c74a5b-9f30-4a12-b06d-5c8e7d21f4a3"
 ]
 = MetaData.Schema.B6 "655ac62c-1e4a-cc32-6e65-323f197c68e0"
 = MetaData.Schema.B8 "8.3.4.2753"

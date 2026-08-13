@@ -3,7 +3,6 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Attachments" />
-			<Item Name="LocalizableStrings.Button_CloseWorkflow_caption.Value" Value="Close workflow" />
 			<Item Name="LocalizableStrings.Button_CreateMeasure_caption.Value" Value="Create Measure task" />
 			<Item Name="LocalizableStrings.Button_anz5vn2_caption.Value" Value="Email Person in charge" />
 			<Item Name="LocalizableStrings.Button_v4xaeyf_caption.Value" Value="Create Visit Report" />
@@ -45,10 +44,8 @@
 			<Item Name="LocalizableStrings.Label_NoMeetSummaryAccessCaption_caption.Value" Value="The AI Meeting Summary is available only to meeting participants. You were not a participant in this meeting." />
 			<Item Name="LocalizableStrings.Label_NoMeetSummaryAccessTitle_caption.Value" Value="You don’t have access to the meeting summary" />
 			<Item Name="LocalizableStrings.Label_k843hzt_caption.Value" Value="Details" />
+			<Item Name="LocalizableStrings.PDS_Pgr369ReasonForClosure_usvewze.Value" Value="369 Reason for closure" />
 			<Item Name="LocalizableStrings.ParticipantsExpansionPanel_title.Value" Value="Participants" />
-			<Item Name="LocalizableStrings.PgrCloseWorkflowFailedMessage.Value" Value="Failed to close the workflow:" />
-			<Item Name="LocalizableStrings.PgrClosureJustificationLabel.Value" Value="Justification" />
-			<Item Name="LocalizableStrings.PgrIsEscalatedLabel.Value" Value="Escalated" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
 			<Item Name="LocalizableStrings.TabContainer_VisitReportTab_caption.Value" Value="Visit report" />
 			<Item Name="LocalizableStrings.TabContainer_w3tsrln_caption.Value" Value="General Info" />

@@ -9,8 +9,8 @@
 			<Item Name="Columns.KnowledgeBase.Caption" Value="Wissensbasis-Artikel" />
 			<Item Name="Columns.Notes.Caption" Value="Beschreibung" />
 			<Item Name="Columns.Owner.Caption" Value="Verantwortlicher" />
+			<Item Name="Columns.Pgr369ReasonForClosure.Caption" Value="369 Grund für den Abschluss" />
 			<Item Name="Columns.PgrAccount.Caption" Value="Kunde" />
-			<Item Name="Columns.PgrClosureJustification.Caption" Value="Begründung" />
 			<Item Name="Columns.PgrCorrectiveMeasureAction.Caption" Value="Korrekturmaßnahme" />
 			<Item Name="Columns.PgrDepartment.Caption" Value="Abteilung" />
 			<Item Name="Columns.PgrIsEscalated.Caption" Value="Eskaliert" />
