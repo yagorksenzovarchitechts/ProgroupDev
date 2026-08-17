@@ -358,6 +358,18 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "merge",
+				"name": "GridDetail_DeleteBulkAction",
+				"values": {
+					"clicked": {
+						"request": "crt.DeleteRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetailDS"
+						}
+					}
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "CompetitorsList",
 				"values": {
 					"columns": [
