@@ -1,49 +1,34 @@
 define("PgrAccountCompetitorShareHelper", [], function() {
 
-	// Shared logic for the "delivery share + competitor shares must total 100%" rule on the
-	// Account form. Kept in a standalone module (not inside the page handlers) so the same
-	// primitives are reused by the Save and Delete handlers of Accounts_FormPage.
-	//
-	// The Account form shows competitor shares in TWO controls over the same AccountCompetitor
-	// object, so the validation must cover both:
-	//   * "Account competitors" - editable crt.DataGrid, items attribute "CompetitorsGrid",
-	//     datasource "CompetitorsGridDS";
-	//   * "Share of wallet"      - classic crt.GridDetail, items attribute "GridDetail",
-	//     datasource "GridDetailDS".
-	// Every function takes the grid binding (see GRIDS) so the two paths stay in sync.
-
 	const REQUIRED_TOTAL = 100;
 
-	// Per-grid binding: the in-memory items attribute, its selection-state attribute, and the
-	// row column codes for share / id. Keyed by the grid's items-attribute name.
 	const GRIDS = {
-		// "Account competitors" editable DataGrid.
 		CompetitorsGrid: {
 			itemsAttr: "CompetitorsGrid",
 			selectionAttr: "CompetitorsGrid_SelectionState",
 			shareColumn: "CompetitorsGridDS_PgrShare",
 			idColumn: "CompetitorsGridDS_Id",
+			validToColumn: "CompetitorsGridDS_PgrValidTo",
+			competitorColumn: "CompetitorsGridDS_PgrCompetitor",
 			dataSourceName: "CompetitorsGridDS"
 		},
-		// "Share of wallet" classic detail.
 		GridDetail: {
 			itemsAttr: "GridDetail",
 			selectionAttr: "GridDetail_SelectionState",
 			shareColumn: "GridDetailDS_PgrShare",
 			idColumn: "GridDetailDS_Id",
+			validToColumn: "GridDetailDS_PgrValidTo",
+			competitorColumn: "GridDetailDS_PgrCompetitor",
 			dataSourceName: "GridDetailDS"
 		}
 	};
 
-	// Grid cells are Zone.js-wrapped: the actual value lives under __zone_symbol__value.
 	function unwrap(value) {
 		return (value && typeof value === "object" && "__zone_symbol__value" in value)
 			? value.__zone_symbol__value
 			: value;
 	}
 
-	// Ids arrive in different letter cases depending on the source (selection state, filters,
-	// grid rows), so everything is compared as a lowercased string.
 	function norm(value) {
 		const unwrapped = unwrap(value);
 		return (unwrapped === null || unwrapped === undefined)
@@ -51,7 +36,6 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 			: String(unwrapped).toLowerCase();
 	}
 
-	// Grid binding lookups used by the two handlers to decide whether a request is ours.
 	function getGridByItemsAttr(itemsAttributeName) {
 		return GRIDS[itemsAttributeName] || null;
 	}
@@ -64,10 +48,6 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		return null;
 	}
 
-	// Which competitor grid a delete request targets. dataSourceName alone is unreliable:
-	// on a bulk delete the request bubbles up to the page and arrives with
-	// dataSourceName === "PDS" (the page data source) instead of the grid's own datasource.
-	// So fall back to whichever grid currently has an active selection.
 	async function resolveGridForDelete(request) {
 		const direct = getGridByDataSource(request.dataSourceName);
 		if (direct) {
@@ -84,8 +64,6 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		return null;
 	}
 
-	// Ids listed in an "Id in (...)" delete filter. On a bulk delete request.recordIds is not
-	// set, and the ids are only carried by request.filters and the grid selection state.
 	function getIdsFromFilters(filters) {
 		const ids = [];
 		const items = (filters && filters.items) || {};
@@ -107,8 +85,6 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		return ids;
 	}
 
-	// Ids of the rows a delete request targets, from whichever source actually carries them:
-	// recordIds (single row menu), the grid selection, or the request filters (bulk delete).
 	function getDeletedIds(request, selection) {
 		const fromRecordIds = (request.recordIds || []).map(norm);
 		if (fromRecordIds.length) {
@@ -121,10 +97,6 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		return getIdsFromFilters(request.filters);
 	}
 
-	// Rows that would be left in the grid once the pending deletion goes through.
-	// Returns null when the deletion cannot be reasoned about - no ids were resolved, or none
-	// of them matched a grid row. The caller must then let the delete through rather than
-	// block it on a total it failed to compute.
 	async function getRemainingRows(request, grid, deletedIds) {
 		if (!deletedIds.length) {
 			return null;
@@ -146,39 +118,127 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		return remaining;
 	}
 
-	// Sum of the share column across the given competitor grid rows (array or grid collection).
-	function sumShares(rows, shareColumn) {
-		let sum = 0;
+	function toDateOnly(value) {
+		const unwrapped = unwrap(value);
+		if (!unwrapped) {
+			return null;
+		}
+		const date = unwrapped instanceof Date ? unwrapped : new Date(unwrapped);
+		return isNaN(date.getTime()) ? null : date;
+	}
+
+	function getValidToKey(row, grid) {
+		const date = toDateOnly(row && row[grid.validToColumn]);
+		if (!date) {
+			return "";
+		}
+		const month = String(date.getMonth() + 1).padStart(2, "0");
+		const day = String(date.getDate()).padStart(2, "0");
+		return `${date.getFullYear()}-${month}-${day}`;
+	}
+
+	function getValidToLabel(row, grid) {
+		const date = toDateOnly(row && row[grid.validToColumn]);
+		return date ? date.toLocaleDateString() : "no valid to date";
+	}
+
+	function getCompetitorKey(row, grid) {
+		const value = unwrap(row && row[grid.competitorColumn]);
+		if (value && typeof value === "object") {
+			return String(value.value !== undefined ? value.value : (value.id !== undefined ? value.id : JSON.stringify(value)));
+		}
+		return String(value);
+	}
+
+	function buildTimelines(rows, grid) {
+		const timelines = new Map();
 		if (rows && typeof rows.forEach === "function") {
 			rows.forEach(function(row) {
-				sum += Number(unwrap(row && row[shareColumn])) || 0;
+				const dateKey = getValidToKey(row, grid);
+				if (!dateKey) {
+					return;
+				}
+				const competitorKey = getCompetitorKey(row, grid);
+				if (!timelines.has(competitorKey)) {
+					timelines.set(competitorKey, new Map());
+				}
+				const timeline = timelines.get(competitorKey);
+				const share = Number(unwrap(row[grid.shareColumn])) || 0;
+				timeline.set(dateKey, (timeline.get(dateKey) || 0) + share);
 			});
 		}
-		return sum;
+		const result = [];
+		timelines.forEach(function(timeline) {
+			const entries = Array.from(timeline.entries())
+				.map(function(entry) { return { dateKey: entry[0], share: entry[1] }; })
+				.sort(function(a, b) { return a.dateKey < b.dateKey ? -1 : (a.dateKey > b.dateKey ? 1 : 0); });
+			result.push(entries);
+		});
+		return result;
 	}
 
-	// ProGroup's own delivery share stored on the account.
-	async function getDeliveryShare(request) {
-		return Number(unwrap(await request.$context.PDS_PgrDeliveryShare_8wr4r2b)) || 0;
+	function getCheckpoints(rows, grid) {
+		const checkpoints = new Map();
+		if (rows && typeof rows.forEach === "function") {
+			rows.forEach(function(row) {
+				const key = getValidToKey(row, grid);
+				if (key && !checkpoints.has(key)) {
+					checkpoints.set(key, getValidToLabel(row, grid));
+				}
+			});
+		}
+		return Array.from(checkpoints.entries())
+			.map(function(entry) { return { key: entry[0], label: entry[1] }; })
+			.sort(function(a, b) { return a.key < b.key ? -1 : (a.key > b.key ? 1 : 0); });
 	}
 
-	// Total = delivery share + all competitor shares currently in the given grid, including
-	// brand-new, not-yet-saved rows (read straight from the in-memory grid collection).
-	async function getAccountShareTotal(request, grid) {
-		const deliveryShare = await getDeliveryShare(request);
+	function getActiveShare(timeline, checkpointKey) {
+		if (!timeline.length || checkpointKey < timeline[0].dateKey) {
+			return null;
+		}
+		for (let i = 0; i < timeline.length; i++) {
+			if (timeline[i].dateKey >= checkpointKey) {
+				return timeline[i].share;
+			}
+		}
+		return timeline[timeline.length - 1].share;
+	}
+
+	function getInvalidCheckpoints(rows, grid) {
+		const timelines = buildTimelines(rows, grid);
+		const checkpoints = getCheckpoints(rows, grid);
+		const invalid = [];
+		checkpoints.forEach(function(checkpoint) {
+			let total = 0;
+			timelines.forEach(function(timeline) {
+				const share = getActiveShare(timeline, checkpoint.key);
+				if (share !== null) {
+					total += share;
+				}
+			});
+			if (total !== REQUIRED_TOTAL) {
+				invalid.push({ label: checkpoint.label, total: total });
+			}
+		});
+		return invalid;
+	}
+
+	async function getInvalidCheckpointsForGrid(request, grid) {
 		const rows = await request.$context[grid.itemsAttr];
-		return deliveryShare + sumShares(rows, grid.shareColumn);
+		return getInvalidCheckpoints(rows, grid);
 	}
 
-	// Blocking dialog shown when the share total is not exactly 100%.
-	async function showTotalError(request, total) {
+	async function showGroupedTotalError(request, invalidGroups) {
 		const baseMsg = await request.$context.Resources.Strings.ShareTotalErrorString;
+		const details = invalidGroups
+			.map(function(group) { return `${group.label}: ${group.total}%`; })
+			.join("; ");
 		await request.$context.executeRequest({
 			type: "crt.ShowDialogRequest",
 			$context: request.$context,
 			dialogConfig: {
 				data: {
-					message: `${baseMsg} ${total}%`,
+					message: `${baseMsg} ${details}`,
 					actions: [
 						{ key: "ok", config: { color: "primary", caption: "OK" } }
 					]
@@ -191,14 +251,13 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		REQUIRED_TOTAL: REQUIRED_TOTAL,
 		unwrap: unwrap,
 		norm: norm,
-		sumShares: sumShares,
 		getGridByItemsAttr: getGridByItemsAttr,
 		getGridByDataSource: getGridByDataSource,
 		resolveGridForDelete: resolveGridForDelete,
 		getDeletedIds: getDeletedIds,
 		getRemainingRows: getRemainingRows,
-		getDeliveryShare: getDeliveryShare,
-		getAccountShareTotal: getAccountShareTotal,
-		showTotalError: showTotalError
+		getInvalidCheckpoints: getInvalidCheckpoints,
+		getInvalidCheckpointsForGrid: getInvalidCheckpointsForGrid,
+		showGroupedTotalError: showGroupedTotalError
 	};
 });

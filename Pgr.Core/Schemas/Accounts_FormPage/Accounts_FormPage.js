@@ -358,19 +358,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "merge",
-				"name": "GridDetail_DeleteBulkAction",
-				"values": {
-					"clicked": {
-						"request": "crt.DeleteRecordsRequest",
-						"params": {
-							"dataSourceName": "GridDetailDS",
-							"filters": "$GridDetail | crt.ToCollectionFilters : 'GridDetail' : $GridDetail_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_SelectionState"
-						}
-					}
-				}
-			},
-			{
-				"operation": "merge",
 				"name": "CompetitorsList",
 				"values": {
 					"columns": [
@@ -389,18 +376,11 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"width": 117
 						},
 						{
-							"id": "50f086fa-2a7b-978b-df47-93423fbc4e04",
-							"code": "GridDetailDS_PgrValidFrom",
-							"caption": "#ResourceString(GridDetailDS_PgrValidFrom)#",
-							"dataValueType": 7,
-							"width": 147
-						},
-						{
-							"id": "1c2d8da8-476c-0a9f-1f69-4477a8833a3c",
+							"id": "bf087326-c944-51eb-6a61-254586029c45",
 							"code": "GridDetailDS_PgrValidTo",
 							"caption": "#ResourceString(GridDetailDS_PgrValidTo)#",
-							"dataValueType": 7,
-							"width": 145
+							"dataValueType": 8,
+							"width": 189
 						},
 						{
 							"id": "b6b4a7a8-15ba-6008-700f-286c31f8ba9e",
@@ -410,6 +390,19 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"width": 489
 						}
 					]
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "GridDetail_DeleteBulkAction",
+				"values": {
+					"clicked": {
+						"request": "crt.DeleteRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetailDS",
+							"filters": "$GridDetail | crt.ToCollectionFilters : 'GridDetail' : $GridDetail_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_SelectionState"
+						}
+					}
 				}
 			},
 			{
@@ -1560,7 +1553,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"title": "#ResourceString(ExpansionPanel_0hsju2s_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": false,
+					"expanded": true,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -3902,16 +3895,11 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"dataValueType": 4
 						},
 						{
-							"id": "70540db1-b9c0-1827-394b-e934d06e2228",
-							"code": "CompetitorsGridDS_PgrValidFrom",
-							"caption": "#ResourceString(CompetitorsGridDS_PgrValidFrom)#",
-							"dataValueType": 7
-						},
-						{
 							"id": "482726a1-dee1-d49b-cc70-334f5d54d5c3",
 							"code": "CompetitorsGridDS_PgrValidTo",
 							"caption": "#ResourceString(CompetitorsGridDS_PgrValidTo)#",
-							"dataValueType": 7
+							"dataValueType": 8,
+							"width": 340
 						}
 					],
 					"placeholder": false,
@@ -8825,11 +8813,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 										"path": "CompetitorsGridDS.PgrShare"
 									}
 								},
-								"CompetitorsGridDS_PgrValidFrom": {
-									"modelConfig": {
-										"path": "CompetitorsGridDS.PgrValidFrom"
-									}
-								},
 								"CompetitorsGridDS_PgrValidTo": {
 									"modelConfig": {
 										"path": "CompetitorsGridDS.PgrValidTo"
@@ -9239,6 +9222,23 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				}
 			},
 			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"GridDetail",
+					"modelConfig",
+					"sortingConfig"
+				],
+				"values": {
+					"default": [
+						{
+							"direction": "desc",
+							"columnName": "PgrValidTo"
+						}
+					]
+				}
+			},
+			{
 				"operation": "remove",
 				"path": [
 					"attributes",
@@ -9268,11 +9268,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"GridDetailDS_PgrShare": {
 						"modelConfig": {
 							"path": "GridDetailDS.PgrShare"
-						}
-					},
-					"GridDetailDS_PgrValidFrom": {
-						"modelConfig": {
-							"path": "GridDetailDS.PgrValidFrom"
 						}
 					},
 					"GridDetailDS_PgrValidTo": {
@@ -9643,9 +9638,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								"PgrShare": {
 									"path": "PgrShare"
 								},
-								"PgrValidFrom": {
-									"path": "PgrValidFrom"
-								},
 								"PgrValidTo": {
 									"path": "PgrValidTo"
 								}
@@ -9839,9 +9831,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"PgrShare": {
 						"path": "PgrShare"
 					},
-					"PgrValidFrom": {
-						"path": "PgrValidFrom"
-					},
 					"PgrValidTo": {
 						"path": "PgrValidTo"
 					}
@@ -9996,39 +9985,34 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			{
 			    request: "crt.SaveRecordsRequest",
 			    handler: async (request, next) => {
-			        // Validate the "delivery + competitor shares = 100%" rule on the competitors grids
-			        // ("Account competitors" and "Share of wallet") "Save all". Shared logic lives in
-			        // the PgrAccountCompetitorShareHelper module.
-			        const grid = PgrAccountCompetitorShareHelper.getGridByItemsAttr(request.itemsAttributeName);
+			        const helper = PgrAccountCompetitorShareHelper;
+			        const grid = helper.getGridByItemsAttr(request.itemsAttributeName);
 			        if (!grid) {
 			            return await next?.handle(request);
 			        }
 
-			        let total;
+			        let invalidGroups;
 			        try {
-			            total = await PgrAccountCompetitorShareHelper.getAccountShareTotal(request, grid);
+			            invalidGroups = await helper.getInvalidCheckpointsForGrid(request, grid);
 			        } catch (e) {
 			            console.warn("Share validation skipped:", e);
 			            return await next?.handle(request);
 			        }
 
-			        // The total is valid — let the save proceed.
-			        if (total === PgrAccountCompetitorShareHelper.REQUIRED_TOTAL) {
+			        if (!invalidGroups.length) {
 			            return await next?.handle(request);
 			        }
 
-			        await PgrAccountCompetitorShareHelper.showTotalError(request, total);
+			        await helper.showGroupedTotalError(request, invalidGroups);
 			        return false;
 			    }
 			},
 			{
 			    request: "crt.DeleteRecordsRequest",
 			    handler: async (request, next) => {
-			        // Block deleting a competitor when it would leave the account share total != 100%.
-			        // Deletes go through crt.DeleteRecordsRequest (immediate, not via "Save all").
 			        const helper = PgrAccountCompetitorShareHelper;
 
-			        let blockedTotal = null;
+			        let invalidGroups = [];
 			        try {
 			            const grid = await helper.resolveGridForDelete(request);
 			            if (!grid) {
@@ -10037,32 +10021,27 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 
 			            const selection = await request.$context[grid.selectionAttr];
 			            if (selection && selection.type === "all") {
-			                return await next?.handle(request);   // deleting everything -> empty grid -> allowed
+			                return await next?.handle(request);
 			            }
 
-			            // Rows left once the deletion goes through; null means it could not be
-			            // determined, in which case the delete must not be blocked.
 			            const deletedIds = helper.getDeletedIds(request, selection);
 			            const remaining = await helper.getRemainingRows(request, grid, deletedIds);
 			            if (remaining === null || remaining.length === 0) {
 			                return await next?.handle(request);
 			            }
 
-			            const remainingTotal = (await helper.getDeliveryShare(request)) + helper.sumShares(remaining, grid.shareColumn);
-			            if (remainingTotal !== helper.REQUIRED_TOTAL) {
-			                blockedTotal = remainingTotal;
-			            }
+			            invalidGroups = helper.getInvalidCheckpoints(remaining, grid);
 			        } catch (e) {
 			            console.warn("Competitor delete validation skipped:", e);
 			            return await next?.handle(request);
 			        }
 
-			        if (blockedTotal === null) {
+			        if (!invalidGroups.length) {
 			            return await next?.handle(request);
 			        }
 
-			        await helper.showTotalError(request, blockedTotal);
-			        return false;   // do not call next -> deletion is cancelled
+			        await helper.showGroupedTotalError(request, invalidGroups);
+			        return false;
 			    }
 			}
 		]/**SCHEMA_HANDLERS*/,
