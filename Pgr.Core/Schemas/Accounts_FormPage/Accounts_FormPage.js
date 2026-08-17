@@ -363,7 +363,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"clicked": {
 						"request": "crt.DeleteRecordsRequest",
 						"params": {
-							"dataSourceName": "GridDetailDS"
+							"dataSourceName": "GridDetailDS",
+							"filters": "$GridDetail | crt.ToCollectionFilters : 'GridDetail' : $GridDetail_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_SelectionState"
 						}
 					}
 				}
