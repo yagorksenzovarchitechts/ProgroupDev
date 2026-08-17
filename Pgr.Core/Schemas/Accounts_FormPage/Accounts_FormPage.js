@@ -9983,21 +9983,23 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			{
 			    request: "crt.SaveRecordsRequest",
 			    handler: async (request, next) => {
-			        // Validate the "delivery + competitor shares = 100%" rule on the competitors grid
-			        // "Save all". Shared logic lives in the PgrAccountCompetitorShareHelper module.
-			        if (request.itemsAttributeName !== "CompetitorsGrid") {
+			        // Validate the "delivery + competitor shares = 100%" rule on the competitors grids
+			        // ("Account competitors" and "Share of wallet") "Save all". Shared logic lives in
+			        // the PgrAccountCompetitorShareHelper module.
+			        const grid = PgrAccountCompetitorShareHelper.getGridByItemsAttr(request.itemsAttributeName);
+			        if (!grid) {
 			            return await next?.handle(request);
 			        }
 
 			        let total;
 			        try {
-			            total = await PgrAccountCompetitorShareHelper.getAccountShareTotal(request);
+			            total = await PgrAccountCompetitorShareHelper.getAccountShareTotal(request, grid);
 			        } catch (e) {
 			            console.warn("Share validation skipped:", e);
 			            return await next?.handle(request);
 			        }
 
-			        // Nothing entered yet, or the total is valid — let the save proceed.
+			        // The total is valid — let the save proceed.
 			        if (total === PgrAccountCompetitorShareHelper.REQUIRED_TOTAL) {
 			            return await next?.handle(request);
 			        }
@@ -10011,39 +10013,29 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			    handler: async (request, next) => {
 			        // Block deleting a competitor when it would leave the account share total != 100%.
 			        // Deletes go through crt.DeleteRecordsRequest (immediate, not via "Save all").
-			        if (request.dataSourceName !== "CompetitorsGridDS") {
-			            return await next?.handle(request);
-			        }
-
 			        const helper = PgrAccountCompetitorShareHelper;
-			        const norm = (v) => (v === null || v === undefined) ? "" : String(helper.unwrap(v)).toLowerCase();
 
 			        let blockedTotal = null;
 			        try {
-			            // Which rows are being deleted: recordIds (row menu) or the selection (bulk panel).
-			            const selection = await request.$context.CompetitorsGrid_SelectionState;
+			            const grid = await helper.resolveGridForDelete(request);
+			            if (!grid) {
+			                return await next?.handle(request);
+			            }
+
+			            const selection = await request.$context[grid.selectionAttr];
 			            if (selection && selection.type === "all") {
 			                return await next?.handle(request);   // deleting everything -> empty grid -> allowed
 			            }
-			            const deletedIds = (request.recordIds && request.recordIds.length)
-			                ? request.recordIds.map(norm)
-			                : ((selection && selection.selected) || []).map(norm);
 
-			            // Rows that would remain after the deletion.
-			            const competitors = await request.$context.CompetitorsGrid;
-			            const remaining = [];
-			            if (competitors && typeof competitors.forEach === "function") {
-			                competitors.forEach((row) => {
-			                    if (deletedIds.indexOf(norm(row && row.CompetitorsGridDS_Id)) === -1) {
-			                        remaining.push(row);
-			                    }
-			                });
-			            }
-			            if (remaining.length === 0) {
-			                return await next?.handle(request);   // nothing left -> allowed
+			            // Rows left once the deletion goes through; null means it could not be
+			            // determined, in which case the delete must not be blocked.
+			            const deletedIds = helper.getDeletedIds(request, selection);
+			            const remaining = await helper.getRemainingRows(request, grid, deletedIds);
+			            if (remaining === null || remaining.length === 0) {
+			                return await next?.handle(request);
 			            }
 
-			            const remainingTotal = (await helper.getDeliveryShare(request)) + helper.sumShares(remaining);
+			            const remainingTotal = (await helper.getDeliveryShare(request)) + helper.sumShares(remaining, grid.shareColumn);
 			            if (remainingTotal !== helper.REQUIRED_TOTAL) {
 			                blockedTotal = remainingTotal;
 			            }
