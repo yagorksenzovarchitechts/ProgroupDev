@@ -517,6 +517,28 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
+				"name": "ComboBox_tuutgko",
+				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_Country_4npsawy",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_Country_4npsawy",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "#ResourceString(ComboBox_tuutgko_placeholder)#"
+				},
+				"parentName": "SideAreaProfileFieldFlexContainer",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
 				"name": "PhoneInput_a95qk36",
 				"values": {
 					"type": "crt.PhoneInput",
@@ -529,7 +551,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 5
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -545,7 +567,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 6
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -561,7 +583,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 7
+				"index": 8
 			},
 			{
 				"operation": "insert",
@@ -9071,6 +9093,24 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 										"path": "GridDetail_8xx12aeDS.Id"
 									}
 								}
+							}
+						}
+					},
+					"PDS_Country_4npsawy": {
+						"modelConfig": {
+							"path": "PDS.Country"
+						}
+					},
+					"PDS_Country_4npsawy_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
 							}
 						}
 					}

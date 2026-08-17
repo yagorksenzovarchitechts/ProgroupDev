@@ -340,123 +340,6 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 			},
 			{
 				"operation": "insert",
-				"name": "ExpansionPanel_inykyal",
-				"values": {
-					"type": "crt.ExpansionPanel",
-					"tools": [],
-					"items": [],
-					"title": "#ResourceString(ExpansionPanel_inykyal_title)#",
-					"toggleType": "material",
-					"togglePosition": "before",
-					"expanded": true,
-					"labelColor": "auto",
-					"fullWidthHeader": false,
-					"titleWidth": 20,
-					"padding": {
-						"top": "small",
-						"bottom": "small",
-						"left": "none",
-						"right": "none"
-					},
-					"fitContent": true,
-					"visible": true,
-					"alignItems": "stretch"
-				},
-				"parentName": "GeneralInfoTab",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "GridContainer_meo270f",
-				"values": {
-					"type": "crt.GridContainer",
-					"rows": "minmax(max-content, 24px)",
-					"columns": [
-						"minmax(32px, 1fr)"
-					],
-					"gap": {
-						"columnGap": "large",
-						"rowGap": 0
-					},
-					"styles": {
-						"overflow-x": "hidden"
-					},
-					"items": []
-				},
-				"parentName": "ExpansionPanel_inykyal",
-				"propertyName": "tools",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "GridContainer_u1e89mg",
-				"values": {
-					"type": "crt.GridContainer",
-					"rows": "minmax(max-content, 32px)",
-					"columns": [
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)"
-					],
-					"gap": {
-						"columnGap": "large",
-						"rowGap": 0
-					},
-					"styles": {
-						"overflow-x": "hidden"
-					},
-					"items": []
-				},
-				"parentName": "ExpansionPanel_inykyal",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "NumberInput_p83i62l",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_PgrSapId_5ag7eh2",
-					"control": "$PDS_PgrSapId_5ag7eh2",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": ""
-				},
-				"parentName": "GridContainer_u1e89mg",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "NumberInput_1v0q0ss",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_PgrWfId_sx1pdpv",
-					"control": "$PDS_PgrWfId_sx1pdpv",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": ""
-				},
-				"parentName": "GridContainer_u1e89mg",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
 				"name": "ExpansionPanel_h5h73ms",
 				"values": {
 					"type": "crt.ExpansionPanel",
@@ -481,7 +364,7 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 2
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -548,7 +431,7 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 3
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -780,12 +663,6 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"dataValueType": 10
 						},
 						{
-							"id": "2522f456-2636-d85a-3558-b14bc3158e1d",
-							"code": "GridDetail_7aw16gjDS_PgrAddressMatchcode",
-							"caption": "#ResourceString(GridDetail_7aw16gjDS_PgrAddressMatchcode)#",
-							"dataValueType": 27
-						},
-						{
 							"id": "d8dd7d36-f47d-c3b7-1676-f6ef6f0ee0e2",
 							"code": "GridDetail_7aw16gjDS_PgrDiscountPercentage",
 							"caption": "#ResourceString(GridDetail_7aw16gjDS_PgrDiscountPercentage)#",
@@ -843,7 +720,7 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 4
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -1141,16 +1018,6 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"path": "PDS.PgrEndDate"
 						}
 					},
-					"PDS_PgrSapId_5ag7eh2": {
-						"modelConfig": {
-							"path": "PDS.PgrSapId"
-						}
-					},
-					"PDS_PgrWfId_sx1pdpv": {
-						"modelConfig": {
-							"path": "PDS.PgrWfId"
-						}
-					},
 					"PDS_PgrNotes_h0ktfg0": {
 						"modelConfig": {
 							"path": "PDS.PgrNotes"
@@ -1172,11 +1039,6 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 								"GridDetail_7aw16gjDS_PgrPlant": {
 									"modelConfig": {
 										"path": "GridDetail_7aw16gjDS.PgrPlant"
-									}
-								},
-								"GridDetail_7aw16gjDS_PgrAddressMatchcode": {
-									"modelConfig": {
-										"path": "GridDetail_7aw16gjDS.PgrAddressMatchcode"
 									}
 								},
 								"GridDetail_7aw16gjDS_PgrDiscountPercentage": {
@@ -1300,9 +1162,6 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"attributes": {
 								"PgrPlant": {
 									"path": "PgrPlant"
-								},
-								"PgrAddressMatchcode": {
-									"path": "PgrAddressMatchcode"
 								},
 								"PgrDiscountPercentage": {
 									"path": "PgrDiscountPercentage"

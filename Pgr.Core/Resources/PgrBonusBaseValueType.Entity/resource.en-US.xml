@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Bonus base value type" />
+			<Item Name="Columns.PgrWepaformCode.Caption" Value="Wepaform code" />
+		</Items>
+	</Group>
+</Resources>

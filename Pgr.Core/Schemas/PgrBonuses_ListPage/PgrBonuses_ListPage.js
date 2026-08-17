@@ -40,18 +40,16 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"width": 233
 						},
 						{
-							"id": "b7e4cb62-ced7-16d7-a263-4c1d1c365483",
+							"id": "80ce44cf-a4e1-ebfc-4fb9-f847fbcfcd55",
 							"code": "PDS_PgrBaseValueType",
 							"caption": "#ResourceString(PDS_PgrBaseValueType)#",
-							"dataValueType": 27,
-							"width": 244
+							"dataValueType": 10
 						},
 						{
-							"id": "9f1a9408-fab9-2343-7345-585e8628c1ef",
+							"id": "628b49b1-fe49-e239-6f8b-a002f0c00e24",
 							"code": "PDS_PgrBonusType",
 							"caption": "#ResourceString(PDS_PgrBonusType)#",
-							"dataValueType": 27,
-							"width": 199
+							"dataValueType": 10
 						},
 						{
 							"id": "8a889416-499f-c6ae-cfc4-5714a458ef92",

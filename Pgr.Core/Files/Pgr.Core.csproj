@@ -407,8 +407,12 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountLevel/PgrAccountLevel.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountLevel/PgrAccountLevel.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountTypesInAccount/PgrAccountTypesInAccount.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountTypesInAccount/PgrAccountTypesInAccount.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonus/PgrBonus.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonus/PgrBonus.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusBaseValueType/PgrBonusBaseValueType.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusBaseValueType/PgrBonusBaseValueType.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusCondition/PgrBonusCondition.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusCondition/PgrBonusCondition.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusConditionCondition/PgrBonusConditionCondition.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusConditionCondition/PgrBonusConditionCondition.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusConditionsOperator/PgrBonusConditionsOperator.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusConditionsOperator/PgrBonusConditionsOperator.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusType/PgrBonusType.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusType/PgrBonusType.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactInLead/PgrContactInLead.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactInLead/PgrContactInLead.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactsInVisitReport/PgrContactsInVisitReport.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactsInVisitReport/PgrContactsInVisitReport.cs')" />

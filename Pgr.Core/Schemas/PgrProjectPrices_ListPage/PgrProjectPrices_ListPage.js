@@ -65,7 +65,7 @@ define("PgrProjectPrices_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"dataValueType": 27
 						},
 						{
-							"id": "e56ac6eb-31b6-e570-d9c1-0066bb0ff58a",
+							"id": "430bb78c-e9ff-0135-0dbb-78418e28661b",
 							"code": "PDS_PgrProjectPriceId",
 							"caption": "#ResourceString(PDS_PgrProjectPriceId)#",
 							"dataValueType": 4

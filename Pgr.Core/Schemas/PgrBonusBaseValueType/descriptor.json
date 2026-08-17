@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "c9503c6d-0eee-4cb8-b57b-508805791d7a",
+    "Name": "PgrBonusBaseValueType",
+    "ModifiedOnUtc": "\/Date(1786634534000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Bonus base value type",
+    "DependsOn": []
+  }
+}

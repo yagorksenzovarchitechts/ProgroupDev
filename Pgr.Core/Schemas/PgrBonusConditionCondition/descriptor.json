@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "6eb8d4cd-2c5b-4d9f-86b7-b77894d0ce25",
+    "Name": "PgrBonusConditionCondition",
+    "ModifiedOnUtc": "\/Date(1786634961000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Bonus condition conditions",
+    "DependsOn": []
+  }
+}

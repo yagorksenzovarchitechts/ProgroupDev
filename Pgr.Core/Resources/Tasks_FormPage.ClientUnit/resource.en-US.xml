@@ -44,6 +44,7 @@
 			<Item Name="LocalizableStrings.Label_NoMeetSummaryAccessCaption_caption.Value" Value="The AI Meeting Summary is available only to meeting participants. You were not a participant in this meeting." />
 			<Item Name="LocalizableStrings.Label_NoMeetSummaryAccessTitle_caption.Value" Value="You don’t have access to the meeting summary" />
 			<Item Name="LocalizableStrings.Label_k843hzt_caption.Value" Value="Details" />
+			<Item Name="LocalizableStrings.PDS_Pgr369ReasonForClosure_usvewze.Value" Value="369 Reason for closure" />
 			<Item Name="LocalizableStrings.ParticipantsExpansionPanel_title.Value" Value="Participants" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
 			<Item Name="LocalizableStrings.TabContainer_VisitReportTab_caption.Value" Value="Visit report" />

@@ -100,13 +100,6 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
 + MetaData.Schema.B2 {
-  "UId": "43e920b0-5356-a3ba-54ec-9eb4fcc1e2d5",
-  "A2": "ExpansionPanel_inykyal_title",
-  "A3": "83a50402-e919-4f4f-9ff5-67059f436fab",
-  "A4": "83a50402-e919-4f4f-9ff5-67059f436fab",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
-}
-+ MetaData.Schema.B2 {
   "UId": "236adae1-cf54-c73b-acc0-f6081d95e426",
   "A2": "GridDetailSearchFilter_pq1b86d_placeholder",
   "A3": "83a50402-e919-4f4f-9ff5-67059f436fab",
@@ -185,7 +178,6 @@
   "50b3df2b-6922-a0aa-06c6-235ee80cb97a",
   "bae6e640-4a1b-82d7-c6ab-842236c85ebd",
   "315b3252-6c0a-82b1-e565-e2155ef6712e",
-  "43e920b0-5356-a3ba-54ec-9eb4fcc1e2d5",
   "236adae1-cf54-c73b-acc0-f6081d95e426",
   "43ac8635-91e7-aae5-b717-69ad26e48985",
   "f677d275-84bc-0937-3171-b1132a362698",

@@ -33,14 +33,6 @@
 - MetaData.Schema.D2.["3015559e-cbc6-406a-88af-07f7930be832"].E16
 - MetaData.Schema.D2.["3fabd836-6a53-4d8d-9069-6df88d9dae1e"].E16
 + MetaData.Schema.D2 {
-  "UId": "3c43a2f8-d4bf-71f0-c51a-a7ba6b98dac2",
-  "A2": "PgrBaseValueType",
-  "A3": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
-  "A4": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "325a73b8-0f47-44a0-8412-7606f78003ac"
-}
-+ MetaData.Schema.D2 {
   "UId": "73900886-0b6f-e400-cf65-12a5569bce80",
   "A2": "PgrEndDate",
   "A3": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
@@ -55,14 +47,6 @@
   "A4": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
   "S2": "603d4960-a1a2-45e9-b232-206a54421b01"
-}
-+ MetaData.Schema.D2 {
-  "UId": "b9f19f47-3657-6c1a-ba64-07c9438f4e5f",
-  "A2": "PgrBonusType",
-  "A3": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
-  "A4": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "325a73b8-0f47-44a0-8412-7606f78003ac"
 }
 + MetaData.Schema.D2 {
   "UId": "08dd8853-37ef-5146-c4d7-66e4ce3333d7",
@@ -101,6 +85,32 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
   "S2": "325a73b8-0f47-44a0-8412-7606f78003ac"
 }
++ MetaData.Schema.D2 {
+  "UId": "a73b4062-b635-1a0e-8b3f-007cca285818",
+  "A2": "PgrBonusType",
+  "A3": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
+  "A4": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "fc6380d8-3b4e-4c49-854d-790d04a0540a",
+  "E6": true,
+  "E20": true,
+  "E17": "PgrBonusTypeId",
+  "E18": "PgrBonusTypeName"
+}
++ MetaData.Schema.D2 {
+  "UId": "b5a8508d-35aa-aa96-bdff-4a98fbc4c458",
+  "A2": "PgrBaseValueType",
+  "A3": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
+  "A4": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "c9503c6d-0eee-4cb8-b57b-508805791d7a",
+  "E6": true,
+  "E20": true,
+  "E17": "PgrBaseValueTypeId",
+  "E18": "PgrBaseValueTypeName"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -108,14 +118,14 @@
   "9928edec-4272-425a-93bb-48743fee4b04",
   "3015559e-cbc6-406a-88af-07f7930be832",
   "3fabd836-6a53-4d8d-9069-6df88d9dae1e",
-  "3c43a2f8-d4bf-71f0-c51a-a7ba6b98dac2",
   "73900886-0b6f-e400-cf65-12a5569bce80",
   "8a8ec8fd-492b-6686-44e3-1d69a28c34c3",
-  "b9f19f47-3657-6c1a-ba64-07c9438f4e5f",
   "08dd8853-37ef-5146-c4d7-66e4ce3333d7",
   "502c925f-cf43-77a5-2e67-b95ffd1c6d97",
   "09b52714-d46f-3828-7a7c-3dc27affe808",
-  "edd5e4aa-98e8-f242-0973-c6c80bf881c9"
+  "edd5e4aa-98e8-f242-0973-c6c80bf881c9",
+  "a73b4062-b635-1a0e-8b3f-007cca285818",
+  "b5a8508d-35aa-aa96-bdff-4a98fbc4c458"
 ]
 = MetaData.Schema.D20.A2 "PgrBonusEvents"
 + MetaData.Schema.D20.FA1 false

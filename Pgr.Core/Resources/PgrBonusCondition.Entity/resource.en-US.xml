@@ -8,7 +8,6 @@
 			<Item Name="Columns.PgrCondition.Caption" Value="Condition" />
 			<Item Name="Columns.PgrOperator.Caption" Value="Operator sign" />
 			<Item Name="Columns.PgrValue.Caption" Value="Value" />
-			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
 		</Items>
 	</Group>
 </Resources>

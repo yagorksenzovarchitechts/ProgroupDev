@@ -13,6 +13,7 @@
 			<Item Name="LocalizableStrings.CreateMeasure_Error_message.Value" Value="Die Maßnahme-Aufgabe konnte nicht erstellt werden:" />
 			<Item Name="LocalizableStrings.CreateMeasure_Success_message.Value" Value="Maßnahme-Aufgabe erstellt." />
 			<Item Name="LocalizableStrings.ExpansionPanelMeetingTranscripts_title.Value" Value="Meeting-Transkripte" />
+			<Item Name="LocalizableStrings.ExpansionPanel_369ReasonDetails_title.Value" Value="369 Ursachendetails" />
 			<Item Name="LocalizableStrings.ExpansionPanel_luhcskb_title.Value" Value="Untergeordnete Aufgaben" />
 			<Item Name="LocalizableStrings.GridDetailAddBtnNewTranscript_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.GridDetailAddBtnRefreshTranscript_caption.Value" Value="Aktualisieren" />
@@ -25,6 +26,7 @@
 			<Item Name="LocalizableStrings.Label_NoMeetSummaryAccessCaption_caption.Value" Value="Die AI-Meeting-Zusammenfassung ist nur für Meetingteilnehmer verfügbar. Sie waren kein Teilnehmer an diesem Meeting." />
 			<Item Name="LocalizableStrings.Label_NoMeetSummaryAccessTitle_caption.Value" Value="Sie haben keinen Zugriff auf die Meeting-Zusammenfassung" />
 			<Item Name="LocalizableStrings.Label_k843hzt_caption.Value" Value="Details" />
+			<Item Name="LocalizableStrings.PDS_Pgr369ReasonForClosure_usvewze.Value" Value="369 Grund für den Abschluss" />
 			<Item Name="LocalizableStrings.ParticipantsExpansionPanel_title.Value" Value="Teilnehmer" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
 			<Item Name="LocalizableStrings.TabContainer_VisitReportTab_caption.Value" Value="Besuchsberichte" />

@@ -17,7 +17,9 @@
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_u3f83rk_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_01pgx06_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_k9b555f_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.addRecord_1riutvz_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_mfra0rh_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_qano2fr_caption.Value" Value="Add new" />
 		</Items>
 	</Group>
 </Resources>

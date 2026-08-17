@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Pgr 3-6-9 Helper" />
+			<Item Name="LocalizableStrings.AutoClosureReason.Value" Value="Aufgabe automatisch abgeschlossen: Der Auftragseingang hat den Budget-Vergleichswert wieder erreicht oder überschritten. Es wurde keine Abweichung mehr festgestellt, keine weiteren Maßnahmen erforderlich." />
 			<Item Name="LocalizableStrings.EscalationDirectorMessage.Value" Value="Eine 3-6-9-Maßnahme-Aufgabe wurde an Sie eskaliert und erfordert Ihre Aufmerksamkeit." />
 			<Item Name="LocalizableStrings.EscalationDirectorTitle.Value" Value="3-6-9-Abweichung: Maßnahme-Aufgabe an Sie eskaliert" />
 			<Item Name="LocalizableStrings.EscalationOwnerMessage.Value" Value="Die Maßnahme-Aufgabe wurde an den Vertriebsleiter eskaliert. Bitte fügen Sie eine Begründung hinzu, die die Situation erklärt." />
