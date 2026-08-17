@@ -9,9 +9,7 @@
 			<Item Name="Columns.PgrName.Caption" Value="Projektname" />
 			<Item Name="Columns.PgrNotes.Caption" Value="Kommentar" />
 			<Item Name="Columns.PgrProjectPriceId.Caption" Value="Projektnummer" />
-			<Item Name="Columns.PgrSapId.Caption" Value="SAP ID" />
 			<Item Name="Columns.PgrStartDate.Caption" Value="Startdatum" />
-			<Item Name="Columns.PgrWfId.Caption" Value="Wepaform ID" />
 		</Items>
 	</Group>
 </Resources>

@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "df1c4f16-ce13-4ce9-9f6f-935ce18aaa40",
     "Name": "PgrBonusCondition",
-    "ModifiedOnUtc": "\/Date(1781783140000)\/",
+    "ModifiedOnUtc": "\/Date(1786628077000)\/",
     "Parent": {
       "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
       "Name": "BaseEntity"

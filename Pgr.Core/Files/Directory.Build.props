@@ -28,8 +28,12 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrAccountLevel/PgrAccountLevel.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrAccountLevel/PgrAccountLevel.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrAccountTypesInAccount/PgrAccountTypesInAccount.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrAccountTypesInAccount/PgrAccountTypesInAccount.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonus/PgrBonus.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonus/PgrBonus.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonusBaseValueType/PgrBonusBaseValueType.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonusBaseValueType/PgrBonusBaseValueType.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonusCondition/PgrBonusCondition.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonusCondition/PgrBonusCondition.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonusConditionCondition/PgrBonusConditionCondition.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonusConditionCondition/PgrBonusConditionCondition.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonusConditionsOperator/PgrBonusConditionsOperator.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonusConditionsOperator/PgrBonusConditionsOperator.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonusType/PgrBonusType.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonusType/PgrBonusType.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrContactInLead/PgrContactInLead.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrContactInLead/PgrContactInLead.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrContactsInVisitReport/PgrContactsInVisitReport.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrContactsInVisitReport/PgrContactsInVisitReport.cs')" />

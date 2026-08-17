@@ -33,37 +33,12 @@
 - MetaData.Schema.D2.["3015559e-cbc6-406a-88af-07f7930be832"].E16
 - MetaData.Schema.D2.["3fabd836-6a53-4d8d-9069-6df88d9dae1e"].E16
 + MetaData.Schema.D2 {
-  "UId": "7265e6c0-2e3b-1ab2-90f8-d32964d314f1",
-  "A2": "PgrProjectPriceId",
-  "A3": "2c441be4-f7d5-45c8-881d-f2b5d045991f",
-  "A4": "2c441be4-f7d5-45c8-881d-f2b5d045991f",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0",
-  "E2": 1
-}
-+ MetaData.Schema.D2 {
   "UId": "27ca5bd2-c623-4186-5abb-caf3ac79007d",
   "A2": "PgrName",
   "A3": "2c441be4-f7d5-45c8-881d-f2b5d045991f",
   "A4": "2c441be4-f7d5-45c8-881d-f2b5d045991f",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
   "S2": "325a73b8-0f47-44a0-8412-7606f78003ac"
-}
-+ MetaData.Schema.D2 {
-  "UId": "080a7f49-417d-76a7-5a4a-9ec4d55c5ea2",
-  "A2": "PgrSapId",
-  "A3": "2c441be4-f7d5-45c8-881d-f2b5d045991f",
-  "A4": "2c441be4-f7d5-45c8-881d-f2b5d045991f",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
-}
-+ MetaData.Schema.D2 {
-  "UId": "3adf496f-5162-5d51-ce6f-070d527f888f",
-  "A2": "PgrWfId",
-  "A3": "2c441be4-f7d5-45c8-881d-f2b5d045991f",
-  "A4": "2c441be4-f7d5-45c8-881d-f2b5d045991f",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
 }
 + MetaData.Schema.D2 {
   "UId": "b291826d-6aa9-fa14-b5fe-68a2ab17f613",
@@ -110,6 +85,15 @@
   "E17": "PgrAccountId",
   "E18": "PgrAccountName"
 }
++ MetaData.Schema.D2 {
+  "UId": "adc5a171-9b18-ef77-40c5-3ee45f23dee8",
+  "A2": "PgrProjectPriceId",
+  "A3": "2c441be4-f7d5-45c8-881d-f2b5d045991f",
+  "A4": "2c441be4-f7d5-45c8-881d-f2b5d045991f",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0",
+  "E2": 1
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -117,15 +101,13 @@
   "9928edec-4272-425a-93bb-48743fee4b04",
   "3015559e-cbc6-406a-88af-07f7930be832",
   "3fabd836-6a53-4d8d-9069-6df88d9dae1e",
-  "7265e6c0-2e3b-1ab2-90f8-d32964d314f1",
   "27ca5bd2-c623-4186-5abb-caf3ac79007d",
-  "080a7f49-417d-76a7-5a4a-9ec4d55c5ea2",
-  "3adf496f-5162-5d51-ce6f-070d527f888f",
   "b291826d-6aa9-fa14-b5fe-68a2ab17f613",
   "acc0fe74-770a-c780-bd5e-7cc59cf6bbd2",
   "8f5833cc-1655-611c-21c9-aa008f70321a",
   "e93045bd-b283-634e-c65a-feb62c8297b3",
-  "dd7b4329-3e74-9cce-9533-92a25b76110b"
+  "dd7b4329-3e74-9cce-9533-92a25b76110b",
+  "adc5a171-9b18-ef77-40c5-3ee45f23dee8"
 ]
 = MetaData.Schema.D20.A2 "PgrProjectPriceEvents"
 + MetaData.Schema.D20.FA1 false
