@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "1f473dcb-9555-4b11-bdaa-0d0f6a6a04ca",
+    "Name": "PgrMsTeamsMeetingService",
+    "ModifiedOnUtc": "\/Date(1786978318000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "Ms Teams meeting service",
+    "DependsOn": []
+  }
+}

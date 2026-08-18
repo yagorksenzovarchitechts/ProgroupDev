@@ -1,0 +1,148 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "1f01d538-335e-4c43-bb37-8a8676ec0230"
+        },
+        {
+          "SchemaColumnUId": "34982036-bcf9-408a-a293-d6b35c45edd5",
+          "Value": "fabc52c1-7edf-4d85-bb2d-9b30017cc4ce",
+          "DisplayValue": "MS Teams: Graph tenant id"
+        },
+        {
+          "SchemaColumnUId": "9e46bb69-9788-423c-b7cd-4c624081082d",
+          "Value": "171bc98a-fc04-444c-aaf6-e63b795b9a77",
+          "DisplayValue": "MS Teams integration"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "68167f57-108f-48c5-a2c8-6ee66570394d"
+        },
+        {
+          "SchemaColumnUId": "34982036-bcf9-408a-a293-d6b35c45edd5",
+          "Value": "ac9b3f93-5935-474a-b313-1b5f2ec3f3c7",
+          "DisplayValue": "MS Teams: Graph client id"
+        },
+        {
+          "SchemaColumnUId": "9e46bb69-9788-423c-b7cd-4c624081082d",
+          "Value": "171bc98a-fc04-444c-aaf6-e63b795b9a77",
+          "DisplayValue": "MS Teams integration"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "7298f6b1-29cc-4ce5-aa71-26afcfeb411c"
+        },
+        {
+          "SchemaColumnUId": "34982036-bcf9-408a-a293-d6b35c45edd5",
+          "Value": "e98c38c4-7d3d-4f9e-86b0-636f1073a774",
+          "DisplayValue": "MS Teams: Graph client secret"
+        },
+        {
+          "SchemaColumnUId": "9e46bb69-9788-423c-b7cd-4c624081082d",
+          "Value": "171bc98a-fc04-444c-aaf6-e63b795b9a77",
+          "DisplayValue": "MS Teams integration"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "e90fdf56-b089-4889-aba7-79be8fb49f7c"
+        },
+        {
+          "SchemaColumnUId": "34982036-bcf9-408a-a293-d6b35c45edd5",
+          "Value": "153af7e4-9cec-45fa-9cd7-71659abe813e",
+          "DisplayValue": "MS Teams: Graph base url"
+        },
+        {
+          "SchemaColumnUId": "9e46bb69-9788-423c-b7cd-4c624081082d",
+          "Value": "171bc98a-fc04-444c-aaf6-e63b795b9a77",
+          "DisplayValue": "MS Teams integration"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "0054b5f6-a785-48d6-a84c-ac08d3e59e78"
+        },
+        {
+          "SchemaColumnUId": "34982036-bcf9-408a-a293-d6b35c45edd5",
+          "Value": "afec1cf1-75e3-4422-aa6a-3bc0b46af2df",
+          "DisplayValue": "MS Teams: default meeting time zone"
+        },
+        {
+          "SchemaColumnUId": "9e46bb69-9788-423c-b7cd-4c624081082d",
+          "Value": "171bc98a-fc04-444c-aaf6-e63b795b9a77",
+          "DisplayValue": "MS Teams integration"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "21a29eda-d5de-4dfe-a4a3-98bbea68c62e"
+        },
+        {
+          "SchemaColumnUId": "34982036-bcf9-408a-a293-d6b35c45edd5",
+          "Value": "c2f68b4e-695f-4e88-b604-bba146f66f41",
+          "DisplayValue": "MS Teams: default meeting organizer"
+        },
+        {
+          "SchemaColumnUId": "9e46bb69-9788-423c-b7cd-4c624081082d",
+          "Value": "171bc98a-fc04-444c-aaf6-e63b795b9a77",
+          "DisplayValue": "MS Teams integration"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "5df5e01e-1f3f-450b-ab90-5f2591e06350"
+        },
+        {
+          "SchemaColumnUId": "34982036-bcf9-408a-a293-d6b35c45edd5",
+          "Value": "122020af-1820-409d-beb9-615c298136f6",
+          "DisplayValue": "MS Teams: service account user name"
+        },
+        {
+          "SchemaColumnUId": "9e46bb69-9788-423c-b7cd-4c624081082d",
+          "Value": "171bc98a-fc04-444c-aaf6-e63b795b9a77",
+          "DisplayValue": "MS Teams integration"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "85ba5a27-f24b-4070-b138-6302138d779f"
+        },
+        {
+          "SchemaColumnUId": "34982036-bcf9-408a-a293-d6b35c45edd5",
+          "Value": "d8b19853-2914-4473-b9db-66fd457f55bf",
+          "DisplayValue": "MS Teams: delegated refresh token"
+        },
+        {
+          "SchemaColumnUId": "9e46bb69-9788-423c-b7cd-4c624081082d",
+          "Value": "171bc98a-fc04-444c-aaf6-e63b795b9a77",
+          "DisplayValue": "MS Teams integration"
+        }
+      ]
+    }
+  ]
+}
