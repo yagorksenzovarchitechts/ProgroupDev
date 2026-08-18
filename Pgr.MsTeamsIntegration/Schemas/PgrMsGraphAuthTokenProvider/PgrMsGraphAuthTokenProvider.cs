@@ -27,6 +27,11 @@ namespace Pgr.MsTeamsIntegration
 
 		#region Methods: Protected
 
+		protected override void EnsureConfigured()
+		{
+			MsGraphSettings.RequireSetting(Settings.ClientSecret, "PgrMsGraphClientSecret");
+		}
+
 		protected override IEnumerable<KeyValuePair<string, string>> BuildTokenRequestForm()
 		{
 			return new[]

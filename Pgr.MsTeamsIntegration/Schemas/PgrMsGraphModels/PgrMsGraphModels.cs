@@ -55,16 +55,17 @@ namespace Pgr.MsTeamsIntegration
 					"PgrMsGraphServiceUserName", string.Empty)
 			};
 
-			// TenantId / ClientId / ClientSecret are mandatory — the app-only Graph auth
-			// cannot work without them. GraphBaseUrl has a safe default and stays optional.
+			// TenantId / ClientId identify the app registration and are needed by both the
+			// app-only and the delegated flow. ClientSecret is only needed by app-only
+			// (client_credentials); the delegated flow never sends it, so it is validated
+			// in MsGraphTokenProvider instead of here.
 			RequireSetting(settings.TenantId, "PgrMsGraphTenantId");
 			RequireSetting(settings.ClientId, "PgrMsGraphClientId");
-			RequireSetting(settings.ClientSecret, "PgrMsGraphClientSecret");
 
 			return settings;
 		}
 
-		private static void RequireSetting(string value, string code)
+		internal static void RequireSetting(string value, string code)
 		{
 			if (string.IsNullOrWhiteSpace(value))
 			{
