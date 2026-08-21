@@ -13,17 +13,6 @@
       "FJ1": [
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
-          "UId": "d7541603-5ec5-4877-b0a4-a9df86ad23a2",
-          "A2": "OrganizerUserId",
-          "A3": "17a24d18-8d81-49da-826b-3a764675bea8",
-          "A4": "17a24d18-8d81-49da-826b-3a764675bea8",
-          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
-          "L8": {},
-          "L6": true,
-          "L11": false
-        },
-        {
-          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
           "UId": "9c9f709c-a403-43ec-b6fc-7f4998c38eca",
           "A2": "Subject",
           "A3": "17a24d18-8d81-49da-826b-3a764675bea8",
@@ -63,7 +52,6 @@
           "A4": "17a24d18-8d81-49da-826b-3a764675bea8",
           "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
           "L8": {},
-          "L6": true,
           "L11": false
         },
         {
@@ -76,6 +64,39 @@
           "L8": {},
           "L6": true,
           "L11": false
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "1ff9d2fe-3324-f54f-e407-7b91e98b2b7e",
+          "A2": "JoinUrl",
+          "A3": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "A4": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+          "L8": {},
+          "L11": false,
+          "L13": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "a3e03480-bb91-c301-c7be-28a52c49175c",
+          "A2": "EventId",
+          "A3": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "A4": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+          "L8": {},
+          "L11": false,
+          "L13": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "971f20d0-f57f-df63-28a8-9aeda2e02c40",
+          "A2": "WebLink",
+          "A3": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "A4": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+          "L8": {},
+          "L11": false,
+          "L13": true
         }
       ],
       "FK12": "#839DC3",

@@ -22,47 +22,30 @@ namespace Terrasoft.Core.Process.Configuration
 
 		#region Methods: Protected
 
-			/*
-			 * Process-action body.
-			 *
-			 * Meeting data is taken from the user-task parameters
-			 * (OrganizerUserId, Subject, StartDateTime, EndDateTime, TimeZone, AttendeeEmails).
-			 * Connection settings and the default time zone are read from the "PgrMsGraph*"
-			 * system settings INSIDE MsGraphMeetingService — there is no system-setting
-			 * access in this task.
-			 */
-		protected override bool InternalExecute(ProcessExecutingContext context) {
-			// --- Original hard-coded test values (kept for reference) ---
-			// var settings = new MsGraphSettings {
-			//     TenantId     = "e4809f55-415e-4d01-ae6f-8ae8d8a8003c",
-			//     ClientId     = "3b174e19-79b0-476b-999b-4f2534632e8e",
-			//     ClientSecret = "***"   // moved to the PgrMsGraphClientSecret system setting
-			// };
-			// var request = new CreateMeetingRequest {
-			//     OrganizerUserId = "613b1ee5-df69-4707-add1-4ad6c3638d5b",
-			//     Subject         = "Meeting from Creatio",
-			//     Start           = DateTime.Now.AddHours(1),
-			//     End             = DateTime.Now.AddHours(2),
-			//     TimeZone        = "W. Europe Standard Time",
-			//     AttendeeEmails  = new List<string> { "yagor.ksenzov@architechts.nl" }
-			// };
-			// ------------------------------------------------------------
+		protected override bool InternalExecute(ProcessExecutingContext context)
+		{
+			var attendees = ParseEmails(AttendeeEmails);
+			if (attendees.Count == 0)
+			{
+				throw new ArgumentException(
+					"At least one attendee is required: fill in \"AttendeeEmails\".");
+			}
 
-			// Meeting request from the user-task parameters.
-			var request = new CreateMeetingRequest {
-				OrganizerUserId = OrganizerUserId,
-				Subject         = Subject,
-				Start           = StartDateTime,
-				End             = EndDateTime,
-				TimeZone        = TimeZone,   // empty -> service falls back to the default time-zone setting
-				AttendeeEmails  = ParseEmails(AttendeeEmails)
+			var request = new CreateMeetingRequest
+			{
+				Subject = Subject,
+				Start = StartDateTime,
+				End = EndDateTime,
+				TimeZone = TimeZone,
+				AttendeeEmails = attendees
 			};
 
-			// Connection settings + default time zone are resolved from system settings
-			// inside the service; nothing to configure here.
-			var result = new MsGraphMeetingService(context.UserConnection).CreateTeamsMeeting(request);
+			var result = new MsGraphMeetingService(context.UserConnection)
+				.CreateTeamsMeetingDelegated(request);
 
-			// result.JoinUrl -> the Teams join link; result.EventId, result.WebLink also available
+			JoinUrl = result.JoinUrl;
+			EventId = result.EventId;
+			WebLink = result.WebLink;
 
 			return true;
 		}
@@ -71,14 +54,17 @@ namespace Terrasoft.Core.Process.Configuration
 
 		#region Methods: Private
 
-		private static IList<string> ParseEmails(string value) {
-			if (string.IsNullOrWhiteSpace(value)) {
+		private static IList<string> ParseEmails(string value)
+		{
+			if (string.IsNullOrWhiteSpace(value))
+			{
 				return new List<string>();
 			}
 			return value
-				.Split(new[] { ';', ',' }, StringSplitOptions.RemoveEmptyEntries)
+				.Split(new[] { ';', ',', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries)
 				.Select(email => email.Trim())
 				.Where(email => email.Length > 0)
+				.Distinct(StringComparer.OrdinalIgnoreCase)
 				.ToList();
 		}
 
@@ -109,4 +95,3 @@ namespace Terrasoft.Core.Process.Configuration
 	#endregion
 
 }
-

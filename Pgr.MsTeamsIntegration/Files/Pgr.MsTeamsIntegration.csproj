@@ -1323,11 +1323,6 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="Pgr.Core">
-			<HintPath>$(RelativePkgFolderPath)/Pgr.Core/$(StandalonePackageAssemblyPath)/Pgr.Core.dll</HintPath>
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
 		<Reference Include="PortalMessageFeed">
 			<HintPath>$(RelativePkgFolderPath)/PortalMessageFeed/$(StandalonePackageAssemblyPath)/PortalMessageFeed.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>

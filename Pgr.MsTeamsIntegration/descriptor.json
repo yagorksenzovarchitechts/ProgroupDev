@@ -3,13 +3,14 @@
     "UId": "f0fe5d6f-e51b-c2c3-85fe-c266c632f8ba",
     "Name": "Pgr.MsTeamsIntegration",
     "Type": 1,
-    "ModifiedOnUtc": "\/Date(1786978318000)\/",
+    "ModifiedOnUtc": "\/Date(1787227500000)\/",
     "Maintainer": "ProGroup",
     "ProjectPath": "Files/Pgr.MsTeamsIntegration.csproj",
     "DependsOn": [
       {
-        "UId": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
-        "Name": "Pgr.Core",
+        "UId": "012e2e14-082b-ac2b-da5a-2fc87bad41d4",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtCore",
         "Type": 1
       }
     ]

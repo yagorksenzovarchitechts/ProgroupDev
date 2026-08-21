@@ -17,7 +17,10 @@ namespace Pgr.MsTeamsIntegration
 		#region Constants: Private
 
 		private const string DelegatedScope =
-			"https://graph.microsoft.com/Calendars.ReadWrite offline_access";
+			"https://graph.microsoft.com/Calendars.ReadWrite " +
+			"https://graph.microsoft.com/Chat.Create " +
+			"https://graph.microsoft.com/ChatMessage.Send " +
+			"https://graph.microsoft.com/User.ReadBasic.All offline_access";
 
 		private const string RefreshTokenSettingCode = "PgrMsGraphRefreshToken";
 
@@ -54,7 +57,7 @@ namespace Pgr.MsTeamsIntegration
 		#region Properties: Protected
 
 		protected override string CacheKey =>
-			"devicecode|" + Settings.TenantId + "|" + Settings.ClientId;
+			"devicecode|" + Settings.TenantId + "|" + Settings.ClientId + "|chat";
 
 		protected override string FlowName => "Delegated";
 
@@ -122,6 +125,11 @@ namespace Pgr.MsTeamsIntegration
 			WriteRefreshToken(refreshToken);
 			CacheToken(token, expiresInSeconds);
 			return ResolveSignedInUser(token);
+		}
+
+		public string GetConnectedUser()
+		{
+			return ResolveSignedInUser(GetToken());
 		}
 
 		#endregion
@@ -346,7 +354,9 @@ namespace Pgr.MsTeamsIntegration
 			}
 			if (description.Contains("AADSTS65001"))
 			{
-				return "the delegated Calendars.ReadWrite permission has no admin consent (AADSTS65001).";
+				return "one of the requested delegated permissions has no admin consent (AADSTS65001). " +
+					"Grant Calendars.ReadWrite, Chat.Create, ChatMessage.Send and User.ReadBasic.All " +
+					"in the Azure app registration.";
 			}
 			if (description.Contains("AADSTS50059") || description.Contains("AADSTS90002"))
 			{

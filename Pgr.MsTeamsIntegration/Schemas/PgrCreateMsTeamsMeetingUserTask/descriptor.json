@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "17a24d18-8d81-49da-826b-3a764675bea8",
     "Name": "PgrCreateMsTeamsMeetingUserTask",
-    "ModifiedOnUtc": "\/Date(1783424750753)\/",
+    "ModifiedOnUtc": "\/Date(1787225212000)\/",
     "ManagerName": "ProcessUserTaskSchemaManager",
     "Caption": "Create Ms Teams meeting user task"
   }

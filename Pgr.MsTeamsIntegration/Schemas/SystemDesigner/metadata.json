@@ -1,0 +1,16 @@
+= MetaData.Schema.UId "ac03b55e-262f-2416-93e3-5d1533a631f4"
+= MetaData.Schema.A5 "de82fb2d-d61c-4364-83bd-334aeb9af71c"
++ MetaData.Schema.B2 {
+  "UId": "32e40cd2-1856-81b2-7c21-75c68c36ab64",
+  "A2": "PgrMsTeamsSetupLinkCaption",
+  "A3": "ac03b55e-262f-2416-93e3-5d1533a631f4",
+  "A4": "ac03b55e-262f-2416-93e3-5d1533a631f4",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
+~ MetaData.Schema.B2 [
+  "32e40cd2-1856-81b2-7c21-75c68c36ab64"
+]
+= MetaData.Schema.B6 "f0fe5d6f-e51b-c2c3-85fe-c266c632f8ba"
+= MetaData.Schema.B8 "8.3.4.2753"
++ MetaData.Schema.B7 true
+= MetaData.Schema.HD1 "30eb596d-9981-4116-ac6c-daf1060716f4"

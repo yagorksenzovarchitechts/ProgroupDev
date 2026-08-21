@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "fde66fdc-2dd4-4c2d-afc2-d07fc37fb66a",
+    "Name": "PgrSendMsTeamsMessageUserTask",
+    "ModifiedOnUtc": "\/Date(1787226219000)\/",
+    "ManagerName": "ProcessUserTaskSchemaManager",
+    "Caption": "Send Ms Teams message user task"
+  }
+}

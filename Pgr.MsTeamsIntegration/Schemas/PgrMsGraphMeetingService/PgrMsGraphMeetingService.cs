@@ -5,10 +5,8 @@
 	using System.Linq;
 	using System.Net;
 	using System.Net.Http;
-	using System.Text;
 	using System.Text.Json;
 	using System.Text.Json.Serialization;
-	using System.Threading;
 	using Common.Logging;
 	using Terrasoft.Common;
 	using Terrasoft.Core;
@@ -27,8 +25,6 @@
 
 		#region Fields: Private
 
-		private const int MaxRetries = 3;
-		private static readonly HttpClient Http = new HttpClient();
 		private static readonly ILog ErrorLogger = LogManager.GetLogger("Error");
 
 		private static readonly JsonSerializerOptions SerializerOptions = new JsonSerializerOptions
@@ -107,8 +103,8 @@
 		{
 			var payload = BuildEventPayload(request);
 
-			var response = SendWithRetry(url, payload, tokenSource);
-			var body = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+			var response = MsGraphApiClient.Send(HttpMethod.Post, url, payload, tokenSource);
+			var body = MsGraphApiClient.ReadBody(response);
 
 			if (response.StatusCode != HttpStatusCode.Created &&
 				response.StatusCode != HttpStatusCode.OK)
@@ -138,59 +134,6 @@
 				JoinUrl = joinUrl,
 				WebLink = json.WebLink
 			};
-		}
-
-		private HttpResponseMessage SendWithRetry(string url, string payload,
-			IMsGraphTokenSource tokenSource)
-		{
-			var authRetried = false;
-
-			for (var attempt = 1; ; attempt++)
-			{
-				using (var message = new HttpRequestMessage(HttpMethod.Post, url))
-				{
-					message.Headers.Add("Authorization", "Bearer " + tokenSource.GetToken());
-					message.Content = new StringContent(payload, Encoding.UTF8, "application/json");
-
-					var response = Http.SendAsync(message).GetAwaiter().GetResult();
-
-					// Token expired / revoked: refresh once and retry.
-					if (response.StatusCode == HttpStatusCode.Unauthorized && !authRetried)
-					{
-						authRetried = true;
-						tokenSource.Invalidate();
-						continue;
-					}
-
-					// Throttled: honour Retry-After and back off.
-					if ((int)response.StatusCode == 429 && attempt < MaxRetries)
-					{
-						var wait = GetRetryAfter(response) ?? TimeSpan.FromSeconds(Math.Pow(2, attempt));
-						Thread.Sleep(wait);
-						continue;
-					}
-
-					return response;
-				}
-			}
-		}
-
-		private static TimeSpan? GetRetryAfter(HttpResponseMessage response)
-		{
-			if (response.Headers.RetryAfter == null)
-			{
-				return null;
-			}
-			if (response.Headers.RetryAfter.Delta.HasValue)
-			{
-				return response.Headers.RetryAfter.Delta.Value;
-			}
-			if (response.Headers.RetryAfter.Date.HasValue)
-			{
-				var delta = response.Headers.RetryAfter.Date.Value - DateTimeOffset.UtcNow;
-				return delta > TimeSpan.Zero ? delta : TimeSpan.Zero;
-			}
-			return null;
 		}
 
 		private static string BuildEventPayload(CreateMeetingRequest request)

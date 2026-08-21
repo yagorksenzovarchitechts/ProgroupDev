@@ -124,6 +124,88 @@ namespace Terrasoft.Configuration
             }
         }
 
+        [OperationContract]
+        [WebInvoke(Method = "POST", UriTemplate = "GetDelegatedSignInStatus",
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Bare)]
+        public DelegatedSignInStatusResponse GetDelegatedSignInStatus(DelegatedSignInRequest request)
+        {
+            try
+            {
+                var settings = MsGraphSettings.FromSysSettings(UserConnection);
+                var response = new DelegatedSignInStatusResponse
+                {
+                    ExpectedAccount = settings.ServiceUserName
+                };
+                try
+                {
+                    response.SignedInAs = new MsGraphDelegatedTokenProvider(settings, UserConnection)
+                        .GetConnectedUser();
+                    response.IsConnected = true;
+                }
+                catch (Exception e)
+                {
+                    response.IsConnected = false;
+                    response.Message = e.Message;
+                }
+                return response;
+            }
+            catch (Exception e)
+            {
+                ErrorLogger.Error("PgrMsTeamsMeetingService.GetDelegatedSignInStatus failed.", e);
+                return new DelegatedSignInStatusResponse(e);
+            }
+        }
+
+        [OperationContract]
+        [WebInvoke(Method = "POST", UriTemplate = "SendChatMessage",
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json,
+            BodyStyle = WebMessageBodyStyle.Bare)]
+        public SendChatMessageServiceResponse SendChatMessage(SendChatMessageServiceRequest request)
+        {
+            try
+            {
+                var chatRequest = BuildChatRequest(request);
+                var result = new MsGraphChatService(UserConnection)
+                    .SendChatMessageDelegated(chatRequest);
+                return new SendChatMessageServiceResponse(result);
+            }
+            catch (Exception e)
+            {
+                ErrorLogger.Error("PgrMsTeamsMeetingService.SendChatMessage failed.", e);
+                return new SendChatMessageServiceResponse(e);
+            }
+        }
+
+        private SendChatMessageRequest BuildChatRequest(SendChatMessageServiceRequest request)
+        {
+            if (request == null)
+            {
+                throw new ArgumentNullException(nameof(request), "Request body is empty.");
+            }
+
+            var recipientEmail = request.RecipientEmail;
+            if (string.IsNullOrWhiteSpace(recipientEmail))
+            {
+                if (request.ContactId == Guid.Empty)
+                {
+                    throw new ArgumentException(
+                        "Either \"recipientEmail\" or \"contactId\" is required.");
+                }
+                recipientEmail = GetContactEmail(request.ContactId,
+                    "The contact has no email address, so the Teams recipient cannot be resolved.");
+            }
+
+            return new SendChatMessageRequest
+            {
+                RecipientEmail = recipientEmail,
+                Message = request.Message,
+                IsHtml = request.IsHtml
+            };
+        }
+
         private MsGraphDelegatedTokenProvider BuildDelegatedTokenProvider()
         {
             return new MsGraphDelegatedTokenProvider(
@@ -140,7 +222,8 @@ namespace Terrasoft.Configuration
             var attendees = (request.AttendeeEmails ?? new List<string>()).ToList();
             if (request.ContactId != Guid.Empty)
             {
-                attendees.Add(GetContactEmail(request.ContactId));
+                attendees.Add(GetContactEmail(request.ContactId,
+                    "The contact has no email address, so there is nobody to invite to the meeting."));
             }
 
             return new CreateMeetingRequest
@@ -157,22 +240,9 @@ namespace Terrasoft.Configuration
             };
         }
 
-        private string GetContactEmail(Guid contactId)
+        private string GetContactEmail(Guid contactId, string emptyEmailMessage)
         {
-            var esq = new EntitySchemaQuery(UserConnection.EntitySchemaManager, "Contact");
-            var emailColumn = esq.AddColumn("Email").Name;
-            var contact = esq.GetEntity(UserConnection, contactId);
-            if (contact == null)
-            {
-                throw new ArgumentException($"Contact {contactId} was not found.");
-            }
-            var email = contact.GetTypedColumnValue<string>(emailColumn);
-            if (string.IsNullOrWhiteSpace(email))
-            {
-                throw new InvalidOperationException(
-                    "The contact has no email address, so there is nobody to invite to the meeting.");
-            }
-            return email;
+            return MsTeamsContactResolver.GetEmail(UserConnection, contactId, emptyEmailMessage);
         }
 
         private static DateTime ParseWallClock(string value, string fieldName)
@@ -338,4 +408,97 @@ namespace Terrasoft.Configuration
     }
 
     #endregion
+
+    #region Class: SendChatMessageServiceRequest
+
+    /// <summary>Input contract for <see cref="PgrMsTeamsMeetingService.SendChatMessage"/>.</summary>
+    [DataContract]
+    public class SendChatMessageServiceRequest
+    {
+        /// <summary>
+        /// Recipient mailbox. Optional — empty falls back to the email of the contact
+        /// identified by <see cref="ContactId"/>.
+        /// </summary>
+        [DataMember(Name = "recipientEmail")]
+        public string RecipientEmail { get; set; }
+
+        [DataMember(Name = "contactId")]
+        public Guid ContactId { get; set; }
+
+        [DataMember(Name = "message")]
+        public string Message { get; set; }
+
+        /// <summary>Send the message as HTML instead of plain text.</summary>
+        [DataMember(Name = "isHtml")]
+        public bool IsHtml { get; set; }
+    }
+
+    #endregion
+
+    #region Class: SendChatMessageServiceResponse
+
+    [DataContract]
+    public class SendChatMessageServiceResponse : ConfigurationServiceResponse
+    {
+        public SendChatMessageServiceResponse()
+        {
+        }
+
+        public SendChatMessageServiceResponse(SendChatMessageResult result)
+        {
+            ChatId = result.ChatId;
+            MessageId = result.MessageId;
+            WebUrl = result.WebUrl;
+        }
+
+        public SendChatMessageServiceResponse(Exception e)
+            : base(e)
+        {
+        }
+
+        [DataMember(Name = "chatId")]
+        public string ChatId { get; set; }
+
+        [DataMember(Name = "messageId")]
+        public string MessageId { get; set; }
+
+        [DataMember(Name = "webUrl")]
+        public string WebUrl { get; set; }
+    }
+
+    #endregion
+
+    #region Class: DelegatedSignInStatusResponse
+
+    [DataContract]
+    public class DelegatedSignInStatusResponse : ConfigurationServiceResponse
+    {
+        public DelegatedSignInStatusResponse()
+        {
+        }
+
+        public DelegatedSignInStatusResponse(Exception e)
+            : base(e)
+        {
+        }
+
+        /// <summary>A delegated token could be obtained for the stored service account.</summary>
+        [DataMember(Name = "isConnected")]
+        public bool IsConnected { get; set; }
+
+        /// <summary>UPN reported by Graph for the connected account.</summary>
+        [DataMember(Name = "signedInAs")]
+        public string SignedInAs { get; set; }
+
+        /// <summary>Account the "PgrMsGraphServiceUserName" setting expects.</summary>
+        [DataMember(Name = "expectedAccount")]
+        public string ExpectedAccount { get; set; }
+
+        /// <summary>Why the connection is not usable, when IsConnected is false.</summary>
+        [DataMember(Name = "message")]
+        public string Message { get; set; }
+    }
+
+    #endregion
 }
+

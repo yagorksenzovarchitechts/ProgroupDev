@@ -2,10 +2,44 @@ namespace Pgr.MsTeamsIntegration
 {
 	using System;
 	using System.Collections.Generic;
+	using System.Linq;
 	using System.Text.Json.Serialization;
 	using Terrasoft.Common;
 	using Terrasoft.Core;
 	using Terrasoft.Core.Configuration;
+	using Terrasoft.Core.Entities;
+
+	#region Class: MsTeamsContactResolver
+
+	public static class MsTeamsContactResolver
+	{
+		public static string GetEmail(UserConnection userConnection, Guid contactId,
+			string emptyEmailMessage)
+		{
+			userConnection.CheckArgumentNull(nameof(userConnection));
+			if (contactId == Guid.Empty)
+			{
+				throw new ArgumentException("A contact is required.");
+			}
+
+			var esq = new EntitySchemaQuery(userConnection.EntitySchemaManager, "Contact");
+			var emailColumn = esq.AddColumn("Email").Name;
+			var contact = esq.GetEntity(userConnection, contactId);
+			if (contact == null)
+			{
+				throw new ArgumentException($"Contact {contactId} was not found.");
+			}
+
+			var email = contact.GetTypedColumnValue<string>(emailColumn);
+			if (string.IsNullOrWhiteSpace(email))
+			{
+				throw new InvalidOperationException(emptyEmailMessage);
+			}
+			return email.Trim();
+		}
+	}
+
+	#endregion
 
 	#region Models: Public API
 
@@ -125,6 +159,24 @@ namespace Pgr.MsTeamsIntegration
 
 		/// <summary>Outlook web link to the event (optional).</summary>
 		public string WebLink { get; set; }
+	}
+
+	public sealed class SendChatMessageRequest
+	{
+		public string RecipientEmail { get; set; }
+
+		public string Message { get; set; }
+
+		public bool IsHtml { get; set; }
+	}
+
+	public sealed class SendChatMessageResult
+	{
+		public string ChatId { get; set; }
+
+		public string MessageId { get; set; }
+
+		public string WebUrl { get; set; }
 	}
 
 	#endregion
@@ -255,6 +307,71 @@ namespace Pgr.MsTeamsIntegration
 	{
 		[JsonPropertyName("joinUrl")]
 		public string JoinUrl { get; set; }
+	}
+
+	internal sealed class GraphUser
+	{
+		[JsonPropertyName("id")]
+		public string Id { get; set; }
+
+		[JsonPropertyName("userPrincipalName")]
+		public string UserPrincipalName { get; set; }
+
+		[JsonPropertyName("displayName")]
+		public string DisplayName { get; set; }
+	}
+
+	internal sealed class GraphUserList
+	{
+		[JsonPropertyName("value")]
+		public List<GraphUser> Value { get; set; }
+	}
+
+	/// <summary>Request body for POST /chats.</summary>
+	internal sealed class GraphChatCreateRequest
+	{
+		[JsonPropertyName("chatType")]
+		public string ChatType { get; set; }
+
+		[JsonPropertyName("members")]
+		public List<GraphConversationMember> Members { get; set; } = new List<GraphConversationMember>();
+	}
+
+	internal sealed class GraphConversationMember
+	{
+		[JsonPropertyName("@odata.type")]
+		public string ODataType { get; set; }
+
+		[JsonPropertyName("roles")]
+		public List<string> Roles { get; set; } = new List<string>();
+
+		[JsonPropertyName("user@odata.bind")]
+		public string UserBind { get; set; }
+	}
+
+	internal sealed class GraphChat
+	{
+		[JsonPropertyName("id")]
+		public string Id { get; set; }
+
+		[JsonPropertyName("webUrl")]
+		public string WebUrl { get; set; }
+	}
+
+	/// <summary>Request body for POST /chats/{id}/messages.</summary>
+	internal sealed class GraphChatMessageRequest
+	{
+		[JsonPropertyName("body")]
+		public GraphItemBody Body { get; set; }
+	}
+
+	internal sealed class GraphChatMessage
+	{
+		[JsonPropertyName("id")]
+		public string Id { get; set; }
+
+		[JsonPropertyName("webUrl")]
+		public string WebUrl { get; set; }
 	}
 
 	#endregion
