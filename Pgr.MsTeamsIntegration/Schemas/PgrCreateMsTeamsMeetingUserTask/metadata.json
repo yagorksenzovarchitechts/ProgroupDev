@@ -1,0 +1,106 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ProcessUserTaskSchemaManager",
+      "UId": "17a24d18-8d81-49da-826b-3a764675bea8",
+      "A2": "PgrCreateMsTeamsMeetingUserTask",
+      "A5": "69a502cd-6aed-4cd5-9676-16cad57f7caa",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "f0fe5d6f-e51b-c2c3-85fe-c266c632f8ba",
+      "B8": "8.3.4.2753",
+      "FJ1": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "9c9f709c-a403-43ec-b6fc-7f4998c38eca",
+          "A2": "Subject",
+          "A3": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "A4": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+          "L8": {},
+          "L6": true,
+          "L11": false
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "b1fdb11a-b3f9-408f-8ace-8a0e6e0b31f5",
+          "A2": "StartDateTime",
+          "A3": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "A4": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "L1": "d21e9ef4-c064-4012-b286-fa1a8171da44",
+          "L8": {},
+          "L6": true,
+          "L11": false
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "4429bb5a-330d-4dec-99bc-5bb4052a3adf",
+          "A2": "EndDateTime",
+          "A3": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "A4": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "L1": "d21e9ef4-c064-4012-b286-fa1a8171da44",
+          "L8": {},
+          "L6": true,
+          "L11": false
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "aaefd582-44bc-4342-a32b-a659597c11ae",
+          "A2": "TimeZone",
+          "A3": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "A4": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+          "L8": {},
+          "L11": false
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "8a01c26b-059b-4f2f-b529-fe28f30e203d",
+          "A2": "AttendeeEmails",
+          "A3": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "A4": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+          "L8": {},
+          "L6": true,
+          "L11": false
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "1ff9d2fe-3324-f54f-e407-7b91e98b2b7e",
+          "A2": "JoinUrl",
+          "A3": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "A4": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+          "L8": {},
+          "L11": false,
+          "L13": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "a3e03480-bb91-c301-c7be-28a52c49175c",
+          "A2": "EventId",
+          "A3": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "A4": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+          "L8": {},
+          "L11": false,
+          "L13": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "971f20d0-f57f-df63-28a8-9aeda2e02c40",
+          "A2": "WebLink",
+          "A3": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "A4": "17a24d18-8d81-49da-826b-3a764675bea8",
+          "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+          "L8": {},
+          "L11": false,
+          "L13": true
+        }
+      ],
+      "FK12": "#839DC3",
+      "FK16": true
+    }
+  }
+}

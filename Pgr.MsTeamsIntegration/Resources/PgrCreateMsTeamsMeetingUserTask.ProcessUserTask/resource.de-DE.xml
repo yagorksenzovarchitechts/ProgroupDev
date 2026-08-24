@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Create Ms Teams meeting user task" />
+			<Item Name="Parameters.AttendeeEmails.Caption" Value="AttendeeEmails" />
+			<Item Name="Parameters.EndDateTime.Caption" Value="EndDateTime" />
+			<Item Name="Parameters.EventId.Caption" Value="EventId" />
+			<Item Name="Parameters.JoinUrl.Caption" Value="JoinUrl" />
+			<Item Name="Parameters.StartDateTime.Caption" Value="StartDateTime" />
+			<Item Name="Parameters.Subject.Caption" Value="Subject" />
+			<Item Name="Parameters.TimeZone.Caption" Value="TimeZone" />
+			<Item Name="Parameters.WebLink.Caption" Value="WebLink" />
+		</Items>
+	</Group>
+</Resources>

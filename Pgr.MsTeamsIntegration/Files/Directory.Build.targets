@@ -1,0 +1,19 @@
+<Project>
+	<ItemGroup Condition="'$(PkgPath)' != ''">
+		<Compile Remove="$(PkgPath)/Pgr.MsTeamsIntegration/Assemblies/**" />
+		<Compile Remove="$(PkgPath)/Pgr.MsTeamsIntegration/Data/**" />
+		<Compile Remove="$(PkgPath)/Pgr.MsTeamsIntegration/SqlScripts/**" />
+		<Compile Remove="$(PkgPath)/Pgr.MsTeamsIntegration/Schemas\**" />
+		<Compile Remove="$(PkgPath)/Pgr.MsTeamsIntegration/Resources/**" />
+		<EmbeddedResource Remove="$(PkgPath)/Pgr.MsTeamsIntegration/Assemblies/**" />
+		<EmbeddedResource Remove="$(PkgPath)/Pgr.MsTeamsIntegration/Data/**" />
+		<EmbeddedResource Remove="$(PkgPath)/Pgr.MsTeamsIntegration/SqlScripts/**" />
+		<EmbeddedResource Remove="$(PkgPath)/Pgr.MsTeamsIntegration/Schemas/**" />
+		<EmbeddedResource Remove="$(PkgPath)/Pgr.MsTeamsIntegration/Resources/**" />
+		<None Remove="$(PkgPath)/Pgr.MsTeamsIntegration/Assemblies/**" />
+		<None Remove="$(PkgPath)/Pgr.MsTeamsIntegration/Data/**" />
+		<None Remove="$(PkgPath)/Pgr.MsTeamsIntegration/SqlScripts/**" />
+		<None Remove="$(PkgPath)/Pgr.MsTeamsIntegration/Schemas/**" />
+		<None Remove="$(PkgPath)/Pgr.MsTeamsIntegration/Resources/**" />
+  </ItemGroup>
+</Project>

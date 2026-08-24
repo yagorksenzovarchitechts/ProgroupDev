@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "963ce902-a25d-4d2e-94a1-10aa8de7e066",
+    "Name": "PgrMsGraphAuthTokenProvider",
+    "ModifiedOnUtc": "\/Date(1787037297000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "MsGraphAuthTokenProvider"
+  }
+}

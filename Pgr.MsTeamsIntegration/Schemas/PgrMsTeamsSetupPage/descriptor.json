@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "08004add-cdf4-cb22-0906-bc5105372a7d",
+    "Name": "PgrMsTeamsSetupPage",
+    "ModifiedOnUtc": "\/Date(1787214000000)\/",
+    "Parent": {
+      "UId": "97e48060-149c-408f-9f17-8ba82c400249",
+      "Name": "PageWithAreaFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Ms Teams setup page",
+    "DependsOn": []
+  }
+}

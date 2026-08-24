@@ -1,0 +1,42 @@
+﻿{
+  "Descriptor": {
+    "UId": "1c8ab7de-7943-49d8-aba6-756303f7d0ae",
+    "Name": "PgrSysSettingsFolder_MsTeamsIntegration",
+    "ModifiedOnUtc": "\/Date(1783417233435)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "81996156-45e6-40de-931e-6ddc6f75cd7e",
+      "Name": "SysSettingsFolder"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "e44c8807-bc0e-4415-b41c-2272c8fbdf42",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "FolderType",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "7194c633-a5a9-48cf-a96c-d8b548878b2f",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "OptimizationType",
+        "DataTypeValueUId": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+      }
+    ]
+  }
+}

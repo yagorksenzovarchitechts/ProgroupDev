@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.PageTitle_caption.Value" Value="MS Teams integration" />
+			<Item Name="LocalizableStrings.PgrCheckConnectionButtonCaption.Value" Value="Check connection" />
+			<Item Name="LocalizableStrings.PgrConnectAccountFailedMessage.Value" Value="The service account could not be connected." />
+			<Item Name="LocalizableStrings.PgrConnectAccountPromptMessage.Value" Value="Open {0}, enter the code {1} and sign in with the Microsoft 365 service account. Press OK here only after the sign-in is finished." />
+			<Item Name="LocalizableStrings.PgrConnectAccountSuccessMessage.Value" Value="The service account is connected:" />
+			<Item Name="LocalizableStrings.PgrConnectServiceAccountButtonCaption.Value" Value="Connect service account" />
+			<Item Name="LocalizableStrings.PgrConnectionStatusLabel.Value" Value="Connection status" />
+			<Item Name="LocalizableStrings.PgrStatusConnectedMessage.Value" Value="Connected as" />
+			<Item Name="LocalizableStrings.PgrStatusNotConnectedMessage.Value" Value="Not connected." />
+		</Items>
+	</Group>
+</Resources>

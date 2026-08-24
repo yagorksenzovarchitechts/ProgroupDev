@@ -1,0 +1,83 @@
+= MetaData.Schema.UId "08004add-cdf4-cb22-0906-bc5105372a7d"
+= MetaData.Schema.A2 "PgrMsTeamsSetupPage"
+= MetaData.Schema.A5 "de82fb2d-d61c-4364-83bd-334aeb9af71c"
++ MetaData.Schema.B2 {
+  "UId": "53104aba-54d9-3c6f-6c6a-2d1f4f40b149",
+  "A2": "PageTitle_caption",
+  "A3": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A4": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "b7a26100-3cf0-89e3-4565-762882b2126f",
+  "A2": "PgrConnectionStatusLabel",
+  "A3": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A4": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "0c73d320-73e4-49f4-3480-eacbf2bfc751",
+  "A2": "PgrConnectServiceAccountButtonCaption",
+  "A3": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A4": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "62d69b1d-0c45-88d5-8515-ef53bc010ddf",
+  "A2": "PgrCheckConnectionButtonCaption",
+  "A3": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A4": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "791d12f0-66f3-c4cc-e8c6-feabff9578dc",
+  "A2": "PgrConnectAccountPromptMessage",
+  "A3": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A4": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "1e8b1f62-8c39-ac05-fac1-dcd587cd1c0c",
+  "A2": "PgrConnectAccountSuccessMessage",
+  "A3": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A4": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "8f89c9f0-4671-659e-9c85-10e89200f2d9",
+  "A2": "PgrConnectAccountFailedMessage",
+  "A3": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A4": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "9f487176-b294-e84a-79ca-2fb3ab155c07",
+  "A2": "PgrStatusNotConnectedMessage",
+  "A3": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A4": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "5c1e77a4-3b62-4d18-9f03-6ad20b41e5c9",
+  "A2": "PgrStatusConnectedMessage",
+  "A3": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A4": "08004add-cdf4-cb22-0906-bc5105372a7d",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
+~ MetaData.Schema.B2 [
+  "53104aba-54d9-3c6f-6c6a-2d1f4f40b149",
+  "b7a26100-3cf0-89e3-4565-762882b2126f",
+  "0c73d320-73e4-49f4-3480-eacbf2bfc751",
+  "62d69b1d-0c45-88d5-8515-ef53bc010ddf",
+  "791d12f0-66f3-c4cc-e8c6-feabff9578dc",
+  "1e8b1f62-8c39-ac05-fac1-dcd587cd1c0c",
+  "8f89c9f0-4671-659e-9c85-10e89200f2d9",
+  "9f487176-b294-e84a-79ca-2fb3ab155c07",
+  "5c1e77a4-3b62-4d18-9f03-6ad20b41e5c9"
+]
+= MetaData.Schema.B6 "f0fe5d6f-e51b-c2c3-85fe-c266c632f8ba"
+= MetaData.Schema.B8 "8.3.4.2753"
+= MetaData.Schema.HD1 "97e48060-149c-408f-9f17-8ba82c400249"
++ MetaData.Schema.HD15 1
+= MetaData.Schema.HD6 "define('{0}Structure', ['{0}Resources'], function(resources) {{return {{schemaUId:'{2}',schemaName:'{3}',parentSchemaUId:'{4}',extendParent:{5},type:Terrasoft.SchemaType.ANGULAR_SCHEMA,entitySchema:'',name:'',extend:'Terrasoft.model.BaseViewModel',schema:{{leftPanel:[],rightPanel:[],actions:[],analytics:[]}},methods:{{}},controlsConfig:{{}},customBindings:{{}},bindings:{{}},parameters:{{}},schemaVersion:1,optionalProperties:{{}},schemaDifferences:function(){{\n{1}\n}}}};}});"
++ MetaData.Schema.B7 false
