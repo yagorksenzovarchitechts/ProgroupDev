@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Account metrics" />
+			<Item Name="Columns.PgrAccountId.Caption" Value="Account" />
+			<Item Name="Columns.PgrDate.Caption" Value="Date" />
+			<Item Name="Columns.PgrMetricTypeId.Caption" Value="Metric type" />
+			<Item Name="Columns.PgrPeriodUnitId.Caption" Value="Period unit" />
+			<Item Name="Columns.PgrReceivedOn.Caption" Value="Received on" />
+			<Item Name="Columns.PgrValue.Caption" Value="Value" />
+		</Items>
+	</Group>
+</Resources>

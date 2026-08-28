@@ -1,55 +1,244 @@
 define("PgrAccountCompetitorShareHelper", [], function() {
 
-	// Shared logic for the "delivery share + competitor shares must total 100%" rule on the
-	// Account form. Kept in a standalone module (not inside the page handlers) so the same
-	// primitives are reused by both the Save and Delete handlers of Accounts_FormPage.
-	//
-	// All functions are pure with respect to the page: they take the request and read everything
-	// from request.$context. Attribute/column codes below belong to the Accounts_FormPage
-	// competitors grid (attribute "CompetitorsGrid", datasource "CompetitorsGridDS").
-
 	const REQUIRED_TOTAL = 100;
 
-	// Grid cells are Zone.js-wrapped: the actual value lives under __zone_symbol__value.
+	const GRIDS = {
+		CompetitorsGrid: {
+			itemsAttr: "CompetitorsGrid",
+			selectionAttr: "CompetitorsGrid_SelectionState",
+			shareColumn: "CompetitorsGridDS_PgrShare",
+			idColumn: "CompetitorsGridDS_Id",
+			validToColumn: "CompetitorsGridDS_PgrValidTo",
+			competitorColumn: "CompetitorsGridDS_PgrCompetitor",
+			dataSourceName: "CompetitorsGridDS"
+		},
+		GridDetail: {
+			itemsAttr: "GridDetail",
+			selectionAttr: "GridDetail_SelectionState",
+			shareColumn: "GridDetailDS_PgrShare",
+			idColumn: "GridDetailDS_Id",
+			validToColumn: "GridDetailDS_PgrValidTo",
+			competitorColumn: "GridDetailDS_PgrCompetitor",
+			dataSourceName: "GridDetailDS"
+		}
+	};
+
 	function unwrap(value) {
 		return (value && typeof value === "object" && "__zone_symbol__value" in value)
 			? value.__zone_symbol__value
 			: value;
 	}
 
-	// Sum of PgrShare across the given competitor grid rows (array or grid collection).
-	function sumShares(rows) {
-		let sum = 0;
-		if (rows && typeof rows.forEach === "function") {
-			rows.forEach(function(row) {
-				sum += Number(unwrap(row && row.CompetitorsGridDS_PgrShare)) || 0;
+	function norm(value) {
+		const unwrapped = unwrap(value);
+		return (unwrapped === null || unwrapped === undefined)
+			? ""
+			: String(unwrapped).toLowerCase();
+	}
+
+	function getGridByItemsAttr(itemsAttributeName) {
+		return GRIDS[itemsAttributeName] || null;
+	}
+	function getGridByDataSource(dataSourceName) {
+		for (const key in GRIDS) {
+			if (GRIDS[key].dataSourceName === dataSourceName) {
+				return GRIDS[key];
+			}
+		}
+		return null;
+	}
+
+	async function resolveGridForDelete(request) {
+		const direct = getGridByDataSource(request.dataSourceName);
+		if (direct) {
+			return direct;
+		}
+		for (const key in GRIDS) {
+			const grid = GRIDS[key];
+			const selection = await request.$context[grid.selectionAttr];
+			if (selection && (selection.type === "all" ||
+				(selection.selected && selection.selected.length))) {
+				return grid;
+			}
+		}
+		return null;
+	}
+
+	function getIdsFromFilters(filters) {
+		const ids = [];
+		const items = (filters && filters.items) || {};
+		for (const key in items) {
+			const item = items[key];
+			const columnPath = item && item.leftExpression && item.leftExpression.columnPath;
+			if (columnPath !== "Id") {
+				continue;
+			}
+			const expressions = item.rightExpressions ||
+				(item.rightExpression ? [item.rightExpression] : []);
+			expressions.forEach(function(expression) {
+				const value = expression && expression.parameter && expression.parameter.value;
+				if (value) {
+					ids.push(norm(value));
+				}
 			});
 		}
-		return sum;
+		return ids;
 	}
 
-	// ProGroup's own delivery share stored on the account.
-	async function getDeliveryShare(request) {
-		return Number(unwrap(await request.$context.PDS_PgrDeliveryShare_8wr4r2b)) || 0;
+	function getDeletedIds(request, selection) {
+		const fromRecordIds = (request.recordIds || []).map(norm);
+		if (fromRecordIds.length) {
+			return fromRecordIds;
+		}
+		const fromSelection = ((selection && selection.selected) || []).map(norm);
+		if (fromSelection.length) {
+			return fromSelection;
+		}
+		return getIdsFromFilters(request.filters);
 	}
 
-	// Total = delivery share + all competitor shares currently in the grid, including
-	// brand-new, not-yet-saved rows (read straight from the in-memory grid collection).
-	async function getAccountShareTotal(request) {
-		const deliveryShare = await getDeliveryShare(request);
-		const competitors = await request.$context.CompetitorsGrid;
-		return deliveryShare + sumShares(competitors);
+	async function getRemainingRows(request, grid, deletedIds) {
+		if (!deletedIds.length) {
+			return null;
+		}
+		const rows = [];
+		const collection = await request.$context[grid.itemsAttr];
+		if (collection && typeof collection.forEach === "function") {
+			collection.forEach(function(row) {
+				rows.push(row);
+			});
+		}
+		const remaining = rows.filter(function(row) {
+			return deletedIds.indexOf(norm(row && row[grid.idColumn])) === -1;
+		});
+		if (remaining.length === rows.length) {
+			console.warn("Competitor delete: none of the deleted ids matched a grid row.");
+			return null;
+		}
+		return remaining;
 	}
 
-	// Blocking dialog shown when the share total is not exactly 100%.
-	async function showTotalError(request, total) {
+	function toDateOnly(value) {
+		const unwrapped = unwrap(value);
+		if (!unwrapped) {
+			return null;
+		}
+		const date = unwrapped instanceof Date ? unwrapped : new Date(unwrapped);
+		return isNaN(date.getTime()) ? null : date;
+	}
+
+	function getValidToKey(row, grid) {
+		const date = toDateOnly(row && row[grid.validToColumn]);
+		if (!date) {
+			return "";
+		}
+		const month = String(date.getMonth() + 1).padStart(2, "0");
+		const day = String(date.getDate()).padStart(2, "0");
+		return `${date.getFullYear()}-${month}-${day}`;
+	}
+
+	function getValidToLabel(row, grid) {
+		const date = toDateOnly(row && row[grid.validToColumn]);
+		return date ? date.toLocaleDateString() : "no valid to date";
+	}
+
+	function getCompetitorKey(row, grid) {
+		const value = unwrap(row && row[grid.competitorColumn]);
+		if (value && typeof value === "object") {
+			return String(value.value !== undefined ? value.value : (value.id !== undefined ? value.id : JSON.stringify(value)));
+		}
+		return String(value);
+	}
+
+	function buildTimelines(rows, grid) {
+		const timelines = new Map();
+		if (rows && typeof rows.forEach === "function") {
+			rows.forEach(function(row) {
+				const dateKey = getValidToKey(row, grid);
+				if (!dateKey) {
+					return;
+				}
+				const competitorKey = getCompetitorKey(row, grid);
+				if (!timelines.has(competitorKey)) {
+					timelines.set(competitorKey, new Map());
+				}
+				const timeline = timelines.get(competitorKey);
+				const share = Number(unwrap(row[grid.shareColumn])) || 0;
+				timeline.set(dateKey, (timeline.get(dateKey) || 0) + share);
+			});
+		}
+		const result = [];
+		timelines.forEach(function(timeline) {
+			const entries = Array.from(timeline.entries())
+				.map(function(entry) { return { dateKey: entry[0], share: entry[1] }; })
+				.sort(function(a, b) { return a.dateKey < b.dateKey ? -1 : (a.dateKey > b.dateKey ? 1 : 0); });
+			result.push(entries);
+		});
+		return result;
+	}
+
+	function getCheckpoints(rows, grid) {
+		const checkpoints = new Map();
+		if (rows && typeof rows.forEach === "function") {
+			rows.forEach(function(row) {
+				const key = getValidToKey(row, grid);
+				if (key && !checkpoints.has(key)) {
+					checkpoints.set(key, getValidToLabel(row, grid));
+				}
+			});
+		}
+		return Array.from(checkpoints.entries())
+			.map(function(entry) { return { key: entry[0], label: entry[1] }; })
+			.sort(function(a, b) { return a.key < b.key ? -1 : (a.key > b.key ? 1 : 0); });
+	}
+
+	function getActiveShare(timeline, checkpointKey) {
+		if (!timeline.length || checkpointKey < timeline[0].dateKey) {
+			return null;
+		}
+		for (let i = 0; i < timeline.length; i++) {
+			if (timeline[i].dateKey >= checkpointKey) {
+				return timeline[i].share;
+			}
+		}
+		return timeline[timeline.length - 1].share;
+	}
+
+	function getInvalidCheckpoints(rows, grid) {
+		const timelines = buildTimelines(rows, grid);
+		const checkpoints = getCheckpoints(rows, grid);
+		const invalid = [];
+		checkpoints.forEach(function(checkpoint) {
+			let total = 0;
+			timelines.forEach(function(timeline) {
+				const share = getActiveShare(timeline, checkpoint.key);
+				if (share !== null) {
+					total += share;
+				}
+			});
+			if (total !== REQUIRED_TOTAL) {
+				invalid.push({ label: checkpoint.label, total: total });
+			}
+		});
+		return invalid;
+	}
+
+	async function getInvalidCheckpointsForGrid(request, grid) {
+		const rows = await request.$context[grid.itemsAttr];
+		return getInvalidCheckpoints(rows, grid);
+	}
+
+	async function showGroupedTotalError(request, invalidGroups) {
 		const baseMsg = await request.$context.Resources.Strings.ShareTotalErrorString;
+		const details = invalidGroups
+			.map(function(group) { return `${group.label}: ${group.total}%`; })
+			.join("; ");
 		await request.$context.executeRequest({
 			type: "crt.ShowDialogRequest",
 			$context: request.$context,
 			dialogConfig: {
 				data: {
-					message: `${baseMsg} ${total}%`,
+					message: `${baseMsg} ${details}`,
 					actions: [
 						{ key: "ok", config: { color: "primary", caption: "OK" } }
 					]
@@ -61,9 +250,14 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 	return {
 		REQUIRED_TOTAL: REQUIRED_TOTAL,
 		unwrap: unwrap,
-		sumShares: sumShares,
-		getDeliveryShare: getDeliveryShare,
-		getAccountShareTotal: getAccountShareTotal,
-		showTotalError: showTotalError
+		norm: norm,
+		getGridByItemsAttr: getGridByItemsAttr,
+		getGridByDataSource: getGridByDataSource,
+		resolveGridForDelete: resolveGridForDelete,
+		getDeletedIds: getDeletedIds,
+		getRemainingRows: getRemainingRows,
+		getInvalidCheckpoints: getInvalidCheckpoints,
+		getInvalidCheckpointsForGrid: getInvalidCheckpointsForGrid,
+		showGroupedTotalError: showGroupedTotalError
 	};
 });

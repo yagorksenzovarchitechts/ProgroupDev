@@ -5,7 +5,6 @@
 			<Item Name="Columns.Account.Caption" Value="Customer" />
 			<Item Name="Columns.ActivityCategory.Caption" Value="Categories" />
 			<Item Name="Columns.DueDate.Caption" Value="Due date and time" />
-			<Item Name="Columns.KnowledgeBase.Caption" Value="Knowledge base article" />
 			<Item Name="Columns.Notes.Caption" Value="Description" />
 			<Item Name="Columns.Pgr369ReasonForClosure.Caption" Value="369 Reason for closure" />
 			<Item Name="Columns.PgrAccount.Caption" Value="Account (customer)" />

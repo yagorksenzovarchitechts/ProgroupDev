@@ -654,10 +654,10 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"dataValueType": 10
 						},
 						{
-							"id": "07a7067e-0285-e0c2-9a5a-941d2b90efe8",
+							"id": "2b8a446e-c1a2-b6a3-dad5-6400f393e0fc",
 							"code": "GridDetail_agutdo1DS_PgrPaymentTerms",
 							"caption": "#ResourceString(GridDetail_agutdo1DS_PgrPaymentTerms)#",
-							"dataValueType": 27
+							"dataValueType": 10
 						}
 					],
 					"placeholder": false

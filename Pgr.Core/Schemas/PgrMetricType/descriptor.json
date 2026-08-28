@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "217ee6f4-bd44-4041-8042-b41c60b98f83",
+    "Name": "PgrMetricType",
+    "ModifiedOnUtc": "\/Date(1787295912000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Metric type",
+    "DependsOn": []
+  }
+}

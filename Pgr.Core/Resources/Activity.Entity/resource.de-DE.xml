@@ -3,11 +3,9 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Columns.Account.Caption" Value="Kunde" />
-			<Item Name="Columns.ActivityCategory.Caption" Value="Kategorie" />
 			<Item Name="Columns.Contact.Caption" Value="Kontakte" />
 			<Item Name="Columns.CreatedOn.Caption" Value="Erstellt am" />
 			<Item Name="Columns.DueDate.Caption" Value="Enddatum und Endzeitpunkt" />
-			<Item Name="Columns.KnowledgeBase.Caption" Value="Wissensbasis-Artikel" />
 			<Item Name="Columns.Notes.Caption" Value="Beschreibung" />
 			<Item Name="Columns.Owner.Caption" Value="Verantwortlicher" />
 			<Item Name="Columns.Pgr369ReasonForClosure.Caption" Value="369 Grund für den Abschluss" />
@@ -25,10 +23,8 @@
 			<Item Name="Columns.PgrReasonNotes.Caption" Value="Anmerkungen zur Ursache" />
 			<Item Name="Columns.PgrReasonSetOn.Caption" Value="Ursache erfasst am" />
 			<Item Name="Columns.PgrVisitReport.Caption" Value="Besuchsbericht" />
-			<Item Name="Columns.Priority.Caption" Value="Priorität" />
 			<Item Name="Columns.ShowInScheduler.Caption" Value="Im Kalender anzeigen" />
 			<Item Name="Columns.StartDate.Caption" Value="Startdatum und Startzeitpunkt" />
-			<Item Name="Columns.Status.Caption" Value="Status" />
 			<Item Name="Columns.Title.Caption" Value="Titel" />
 		</Items>
 	</Group>

@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "f8749d78-4ff8-4b84-adef-09386e7af2a7",
+    "Name": "PgrAccountMetricValue",
+    "ModifiedOnUtc": "\/Date(1787758356000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Account metrics",
+    "DependsOn": []
+  }
+}
