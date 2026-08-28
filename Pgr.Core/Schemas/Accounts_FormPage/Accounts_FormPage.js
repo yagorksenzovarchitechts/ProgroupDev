@@ -3108,35 +3108,12 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
-				"name": "PgrActual3DayOrderIntake",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "#ResourceString(PgrActual3DayOrderIntake_label)#",
-					"control": "$PDS_PgrActual3DayOrderIntake_p194oi",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": "",
-					"visible": true
-				},
-				"parentName": "GridContainer_8plbcqj",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
 				"name": "PgrOrderIntakeDayCounter",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 4,
+						"row": 3,
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
@@ -3149,30 +3126,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
-				"index": 4
-			},
-			{
-				"operation": "insert",
-				"name": "PgrCurrentDailyBudget",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 5,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "#ResourceString(PgrCurrentDailyBudget_label)#",
-					"control": "$PDS_PgrCurrentDailyBudget_p194db",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": "",
-					"visible": true
-				},
-				"parentName": "GridContainer_8plbcqj",
-				"propertyName": "items",
-				"index": 5
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -3181,7 +3135,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 6,
+						"row": 4,
 						"rowSpan": 1
 					},
 					"type": "crt.Checkbox",
@@ -3197,7 +3151,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
-				"index": 6
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -3206,7 +3160,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 7,
+						"row": 5,
 						"rowSpan": 1
 					},
 					"type": "crt.DateTimePicker",
@@ -3221,7 +3175,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
-				"index": 7
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -3230,7 +3184,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
-						"row": 7,
+						"row": 5,
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
@@ -3245,7 +3199,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
-				"index": 8
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -9354,16 +9308,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"PDS_PgrOrderIntakeDayCounter_yux7ecs": {
 						"modelConfig": {
 							"path": "PDS.PgrOrderIntakeDayCounter"
-						}
-					},
-					"PDS_PgrActual3DayOrderIntake_p194oi": {
-						"modelConfig": {
-							"path": "PDS.PgrActual3DayOrderIntake"
-						}
-					},
-					"PDS_PgrCurrentDailyBudget_p194db": {
-						"modelConfig": {
-							"path": "PDS.PgrCurrentDailyBudget"
 						}
 					},
 					"PDS_PgrExcludeFrom369": {

@@ -1,0 +1,10 @@
+{
+  "SqlScript": {
+    "UId": "de4e2cd4-39bc-4c83-aaf6-ab6258012a02",
+    "Name": "Pgr369DeleteUseTestValuesSysSetting",
+    "DBEngineType": 2,
+    "InstallType": 1,
+    "ModifiedOnUtc": "\/Date(1787911214821)\/",
+    "DependsOn": []
+  }
+}

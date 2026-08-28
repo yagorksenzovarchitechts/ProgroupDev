@@ -18,11 +18,9 @@
 			<Item Name="Columns.PgrAccountClassification.Caption" Value="Klassifizierung" />
 			<Item Name="Columns.PgrAccountLevel.Caption" Value="Stufe" />
 			<Item Name="Columns.PgrAccountManagerCode.Caption" Value="VKL Kürzel" />
-			<Item Name="Columns.PgrActual3DayOrderIntake.Caption" Value="3-Tage-Auftragseingang" />
 			<Item Name="Columns.PgrBestPlantLinked.Caption" Value="Bestwerk" />
 			<Item Name="Columns.PgrBoardConnect.Caption" Value="Board Connect" />
 			<Item Name="Columns.PgrCompetitorNotes.Caption" Value="Notiz" />
-			<Item Name="Columns.PgrCurrentDailyBudget.Caption" Value="Aktuelles Tagesbudget" />
 			<Item Name="Columns.PgrCustomerServiceName.Caption" Value="Innendienstmitarbeiter" />
 			<Item Name="Columns.PgrCustomerlabel.Caption" Value="Kundenkennzeichen" />
 			<Item Name="Columns.PgrDateBl.Caption" Value="Sperrdatum" />

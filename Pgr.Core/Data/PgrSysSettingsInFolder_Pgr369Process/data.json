@@ -40,24 +40,6 @@
       "Row": [
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
-          "Value": "68c9713f-fe45-4cc8-b471-f0f96c00e659"
-        },
-        {
-          "SchemaColumnUId": "34982036-bcf9-408a-a293-d6b35c45edd5",
-          "Value": "77c589af-9bb5-4d30-9f67-8ea3e4fc461d",
-          "DisplayValue": "369 use test values"
-        },
-        {
-          "SchemaColumnUId": "9e46bb69-9788-423c-b7cd-4c624081082d",
-          "Value": "b8e0de25-86d8-4b12-98b7-5fe2564e9b42",
-          "DisplayValue": "369 process"
-        }
-      ]
-    },
-    {
-      "Row": [
-        {
-          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
           "Value": "a69f466c-af41-43ca-aff0-0b5974a3cd92"
         },
         {

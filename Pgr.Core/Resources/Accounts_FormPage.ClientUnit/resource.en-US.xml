@@ -129,8 +129,6 @@
 			<Item Name="LocalizableStrings.Pgr369BudgetCalculationExpansionPanel_title.Value" Value="3-6-9 budget calculations" />
 			<Item Name="LocalizableStrings.Pgr369RunBtn_caption.Value" Value="Run 3-6-9" />
 			<Item Name="LocalizableStrings.Pgr369RunBtn_clicked_params_notificationText.Value" Value="Running 3-6-9 process" />
-			<Item Name="LocalizableStrings.PgrActual3DayOrderIntake_label.Value" Value="3-Day order intake / WD" />
-			<Item Name="LocalizableStrings.PgrCurrentDailyBudget_label.Value" Value="Current daily budget (TQM/WD)" />
 			<Item Name="LocalizableStrings.PgrExcludeFrom369Label.Value" Value="Exclude from 3-6-9" />
 			<Item Name="LocalizableStrings.PgrSuspensionEndDateFutureError.Value" Value="Suspension end date must be later than today." />
 			<Item Name="LocalizableStrings.PgrSuspensionEndDateLabel.Value" Value="Suspension end date" />

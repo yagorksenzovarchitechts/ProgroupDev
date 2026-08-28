@@ -56,32 +56,6 @@
       "Row": [
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
-          "Value": "f8e38e9d-84ee-4314-9499-3a6b4e6277e1"
-        },
-        {
-          "SchemaColumnUId": "0fde6f1e-22c5-48c7-9c89-6f0031e270de",
-          "Value": "77c589af-9bb5-4d30-9f67-8ea3e4fc461d",
-          "DisplayValue": "369 use test values"
-        },
-        {
-          "SchemaColumnUId": "297f4697-d071-4be2-8509-9090c07dfe18",
-          "Value": true
-        },
-        {
-          "SchemaColumnUId": "55472376-a4dd-40da-86c6-975ce4b898fa",
-          "Value": true
-        },
-        {
-          "SchemaColumnUId": "8f1984bb-7bef-4220-9b49-9a12d0ebcd68",
-          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
-          "DisplayValue": "All employees"
-        }
-      ]
-    },
-    {
-      "Row": [
-        {
-          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
           "Value": "4b0f22f4-e825-47ba-b364-ad5a3d834cb4"
         },
         {
