@@ -3800,7 +3800,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"config": {
 						"caption": "#ResourceString(QuickFilter_opxladf_config_caption)#",
 						"hint": "",
-						"icon": "filter-column-icon",
+						"icon": "filter-funnel-icon",
 						"iconPosition": "left-icon",
 						"defaultValue": [],
 						"entitySchemaName": "PgrMetricType",
@@ -3838,6 +3838,49 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
+				"name": "QuickFilter_4kw1p4g",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_4kw1p4g_config_caption)#",
+						"hint": "",
+						"icon": "date",
+						"iconPosition": "left-icon",
+						"defaultValue": "[#currentWeek#]",
+						"showTime": false,
+						"showFiscalPeriods": false
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_4kw1p4g_GridDetail_0zv2biy",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "GridDetail_0zv2biy",
+													"filterColumnStart": "PgrDate",
+													"filterColumnEnd": "PgrDate"
+												},
+												"quickFilterType": "date-range"
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": "QuickFilter_4kw1p4g_Value"
+					},
+					"filterType": "date-range"
+				},
+				"parentName": "FlexContainer_eg8smce",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
 				"name": "GridDetailSearchFilter_hockob5",
 				"values": {
 					"type": "crt.SearchFilter",
@@ -3865,7 +3908,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "FlexContainer_eg8smce",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -9526,6 +9569,10 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								},
 								{
 									"name": "QuickFilter_opxladf_GridDetail_0zv2biy",
+									"loadOnChange": true
+								},
+								{
+									"name": "QuickFilter_4kw1p4g_GridDetail_0zv2biy",
 									"loadOnChange": true
 								}
 							]
