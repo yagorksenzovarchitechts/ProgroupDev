@@ -5,7 +5,6 @@
 			<Item Name="Caption" Value="Objekt" />
 			<Item Name="Columns.PgrAccountAddress.Caption" Value="Lieferadresse" />
 			<Item Name="Columns.PgrCurrency.Caption" Value="Währung" />
-			<Item Name="Columns.PgrPaymentTerms.Caption" Value="Zahlungsbedingungen" />
 			<Item Name="Columns.PgrPlantId.Caption" Value="Progroup Lieferwerk" />
 		</Items>
 	</Group>

@@ -45,14 +45,6 @@
   "E17": "PgrAccountAddressId"
 }
 + MetaData.Schema.D2 {
-  "UId": "b2cf53bf-4f9a-c2af-9ec1-863a7e15e4a9",
-  "A2": "PgrPaymentTerms",
-  "A3": "f5fb5aa6-90cd-49ca-898d-302a9c13dd5e",
-  "A4": "f5fb5aa6-90cd-49ca-898d-302a9c13dd5e",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "325a73b8-0f47-44a0-8412-7606f78003ac"
-}
-+ MetaData.Schema.D2 {
   "UId": "08d79937-346a-95d2-7e92-28976230ba7b",
   "A2": "PgrCurrency",
   "A3": "f5fb5aa6-90cd-49ca-898d-302a9c13dd5e",
@@ -78,6 +70,19 @@
   "E17": "PgrPlantIdId",
   "E18": "PgrPlantIdPgrName"
 }
++ MetaData.Schema.D2 {
+  "UId": "00791690-4189-494f-426d-670b3f88e146",
+  "A2": "PgrPaymentTerms",
+  "A3": "f5fb5aa6-90cd-49ca-898d-302a9c13dd5e",
+  "A4": "f5fb5aa6-90cd-49ca-898d-302a9c13dd5e",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "62dc7100-ac6a-4cf5-b4a0-adc74d91bd9a",
+  "E6": true,
+  "E20": true,
+  "E17": "PgrPaymentTermsId",
+  "E18": "PgrPaymentTermsName"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -86,9 +91,9 @@
   "3015559e-cbc6-406a-88af-07f7930be832",
   "3fabd836-6a53-4d8d-9069-6df88d9dae1e",
   "f1b24d68-d7de-cb17-baac-2ff2b458f84f",
-  "b2cf53bf-4f9a-c2af-9ec1-863a7e15e4a9",
   "08d79937-346a-95d2-7e92-28976230ba7b",
-  "09c36152-ccef-53ea-8ca1-1da1f7635d72"
+  "09c36152-ccef-53ea-8ca1-1da1f7635d72",
+  "00791690-4189-494f-426d-670b3f88e146"
 ]
 = MetaData.Schema.D20.A2 "PgrPlantAccountAddressEvents"
 + MetaData.Schema.D20.FA1 false

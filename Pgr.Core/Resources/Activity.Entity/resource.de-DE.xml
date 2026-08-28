@@ -6,7 +6,6 @@
 			<Item Name="Columns.Contact.Caption" Value="Kontakte" />
 			<Item Name="Columns.CreatedOn.Caption" Value="Erstellt am" />
 			<Item Name="Columns.DueDate.Caption" Value="Enddatum und Endzeitpunkt" />
-			<Item Name="Columns.KnowledgeBase.Caption" Value="Wissensbasis-Artikel" />
 			<Item Name="Columns.Notes.Caption" Value="Beschreibung" />
 			<Item Name="Columns.Owner.Caption" Value="Verantwortlicher" />
 			<Item Name="Columns.Pgr369ReasonForClosure.Caption" Value="369 Grund für den Abschluss" />

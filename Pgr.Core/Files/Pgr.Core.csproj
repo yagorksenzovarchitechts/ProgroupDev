@@ -405,6 +405,7 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/Pgr369ReasonGroup/Pgr369ReasonGroup.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/Pgr369ReasonGroup/Pgr369ReasonGroup.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountClassification/PgrAccountClassification.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountClassification/PgrAccountClassification.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountLevel/PgrAccountLevel.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountLevel/PgrAccountLevel.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountMetricValue/PgrAccountMetricValue.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountMetricValue/PgrAccountMetricValue.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountTypesInAccount/PgrAccountTypesInAccount.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrAccountTypesInAccount/PgrAccountTypesInAccount.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonus/PgrBonus.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonus/PgrBonus.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusBaseValueType/PgrBonusBaseValueType.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusBaseValueType/PgrBonusBaseValueType.cs')" />
@@ -428,10 +429,13 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrExecuteSQLErrorLog/PgrExecuteSQLErrorLog.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrExecuteSQLErrorLog/PgrExecuteSQLErrorLog.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrGroupAffiliation/PgrGroupAffiliation.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrGroupAffiliation/PgrGroupAffiliation.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrIsVertIntegrated/PgrIsVertIntegrated.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrIsVertIntegrated/PgrIsVertIntegrated.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrMetricType/PgrMetricType.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrMetricType/PgrMetricType.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrOdataLog/PgrOdataLog.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrOdataLog/PgrOdataLog.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPerformance/PgrPerformance.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPerformance/PgrPerformance.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPeriodUnit/PgrPeriodUnit.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPeriodUnit/PgrPeriodUnit.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPlant/PgrPlant.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPlant/PgrPlant.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPlantAccountAddress/PgrPlantAccountAddress.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPlantAccountAddress/PgrPlantAccountAddress.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPlantAccountAddressPaymentTerms/PgrPlantAccountAddressPaymentTerms.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPlantAccountAddressPaymentTerms/PgrPlantAccountAddressPaymentTerms.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPowerBI/PgrPowerBI.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPowerBI/PgrPowerBI.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPowerBiSlicer/PgrPowerBiSlicer.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPowerBiSlicer/PgrPowerBiSlicer.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPowerBiSlicerValue/PgrPowerBiSlicerValue.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPowerBiSlicerValue/PgrPowerBiSlicerValue.cs')" />

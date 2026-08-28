@@ -56,6 +56,13 @@
   "A4": "2593a12e-895e-4284-8459-536ddd312535",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
++ MetaData.Schema.B2 {
+  "UId": "fe3ac493-0e53-8a04-8514-da2ce57ba538",
+  "A2": "Button_laa1foi_caption",
+  "A3": "2593a12e-895e-4284-8459-536ddd312535",
+  "A4": "2593a12e-895e-4284-8459-536ddd312535",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
 = MetaData.Schema.B2.["4a1fa859-3609-3091-fee0-b90f1ee54a71"].A4 "2593a12e-895e-4284-8459-536ddd312535"
 = MetaData.Schema.B2.["fb34ee34-583e-6614-8bf5-891aefb7111b"].A4 "2593a12e-895e-4284-8459-536ddd312535"
 = MetaData.Schema.B2.["cd48fce9-9e39-e4ba-9db3-42087a0ade0c"].A4 "2593a12e-895e-4284-8459-536ddd312535"
@@ -113,6 +120,7 @@
   "1bbccb8f-f563-1a05-339b-02d48c51a12d",
   "b9a62781-2939-c02c-ce56-a8bb12b9ca23",
   "8663aeae-063d-4590-90c3-166042c91451",
+  "fe3ac493-0e53-8a04-8514-da2ce57ba538",
   "4a1fa859-3609-3091-fee0-b90f1ee54a71",
   "fb34ee34-583e-6614-8bf5-891aefb7111b",
   "cd48fce9-9e39-e4ba-9db3-42087a0ade0c",

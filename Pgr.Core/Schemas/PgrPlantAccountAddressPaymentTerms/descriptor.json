@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "62dc7100-ac6a-4cf5-b4a0-adc74d91bd9a",
+    "Name": "PgrPlantAccountAddressPaymentTerms",
+    "ModifiedOnUtc": "\/Date(1786973290000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Plant account address payment terms",
+    "DependsOn": []
+  }
+}

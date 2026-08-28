@@ -26,6 +26,7 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Pgr369ReasonGroup/Pgr369ReasonGroup.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Pgr369ReasonGroup/Pgr369ReasonGroup.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrAccountClassification/PgrAccountClassification.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrAccountClassification/PgrAccountClassification.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrAccountLevel/PgrAccountLevel.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrAccountLevel/PgrAccountLevel.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrAccountMetricValue/PgrAccountMetricValue.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrAccountMetricValue/PgrAccountMetricValue.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrAccountTypesInAccount/PgrAccountTypesInAccount.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrAccountTypesInAccount/PgrAccountTypesInAccount.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonus/PgrBonus.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonus/PgrBonus.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonusBaseValueType/PgrBonusBaseValueType.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonusBaseValueType/PgrBonusBaseValueType.cs')" />
@@ -49,10 +50,13 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrExecuteSQLErrorLog/PgrExecuteSQLErrorLog.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrExecuteSQLErrorLog/PgrExecuteSQLErrorLog.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrGroupAffiliation/PgrGroupAffiliation.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrGroupAffiliation/PgrGroupAffiliation.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrIsVertIntegrated/PgrIsVertIntegrated.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrIsVertIntegrated/PgrIsVertIntegrated.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrMetricType/PgrMetricType.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrMetricType/PgrMetricType.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrOdataLog/PgrOdataLog.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrOdataLog/PgrOdataLog.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPerformance/PgrPerformance.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPerformance/PgrPerformance.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPeriodUnit/PgrPeriodUnit.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPeriodUnit/PgrPeriodUnit.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPlant/PgrPlant.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPlant/PgrPlant.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPlantAccountAddress/PgrPlantAccountAddress.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPlantAccountAddress/PgrPlantAccountAddress.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPlantAccountAddressPaymentTerms/PgrPlantAccountAddressPaymentTerms.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPlantAccountAddressPaymentTerms/PgrPlantAccountAddressPaymentTerms.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPowerBI/PgrPowerBI.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPowerBI/PgrPowerBI.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiSlicer/PgrPowerBiSlicer.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiSlicer/PgrPowerBiSlicer.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiSlicerValue/PgrPowerBiSlicerValue.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiSlicerValue/PgrPowerBiSlicerValue.cs')" />

@@ -233,6 +233,30 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 			},
 			{
 				"operation": "insert",
+				"name": "Button_laa1foi",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_laa1foi_caption)#",
+					"color": "outline",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "only-text",
+					"visible": true,
+					"clicked": {
+						"request": "crt.OpenPageRequest",
+						"params": {
+							"schemaName": "PgrPage369Dashboard"
+						}
+					},
+					"clickMode": "default",
+					"icon": null
+				},
+				"parentName": "ActionButtonsContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "QuickFilter_ndarf4i",
 				"values": {
 					"type": "crt.QuickFilter",
@@ -608,6 +632,10 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 						},
 						{
 							"name": "QuickFilter_PgrIsEscalated_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "Filters_Filter",
 							"loadOnChange": true
 						}
 					]
