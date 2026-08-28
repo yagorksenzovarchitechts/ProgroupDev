@@ -233,30 +233,6 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 			},
 			{
 				"operation": "insert",
-				"name": "Button_laa1foi",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(Button_laa1foi_caption)#",
-					"color": "outline",
-					"disabled": false,
-					"size": "large",
-					"iconPosition": "only-text",
-					"visible": true,
-					"clicked": {
-						"request": "crt.OpenPageRequest",
-						"params": {
-							"schemaName": "PgrPage369Dashboard"
-						}
-					},
-					"clickMode": "default",
-					"icon": null
-				},
-				"parentName": "ActionButtonsContainer",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
 				"name": "QuickFilter_ndarf4i",
 				"values": {
 					"type": "crt.QuickFilter",
@@ -331,7 +307,8 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							}
 						],
 						"entitySchemaName": "Account",
-						"recordsFilter": null
+						"recordsFilter": null,
+						"defaultValueListSorting": null
 					},
 					"_filterOptions": {
 						"expose": [
@@ -344,23 +321,6 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 											{
 												"target": {
 													"viewAttributeName": "Items",
-													"filterColumn": "Account"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_07b11xi_Dashboards",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "Dashboards",
 													"filterColumn": "Account"
 												},
 												"quickFilterType": "lookup"

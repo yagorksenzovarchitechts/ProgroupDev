@@ -365,6 +365,48 @@
   "A4": "b8dad126-2d11-4802-9021-6ef47225523e",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
++ MetaData.Schema.B2 {
+  "UId": "70d5594e-8fac-dcb6-af09-b65d2df6178b",
+  "A2": "QuickFilter_vhvjf03_caption",
+  "A3": "b8dad126-2d11-4802-9021-6ef47225523e",
+  "A4": "b8dad126-2d11-4802-9021-6ef47225523e",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "9c0d8f0a-1a70-93a4-9488-d8418466436e",
+  "A2": "TabContainer_fcjfvm1_caption",
+  "A3": "b8dad126-2d11-4802-9021-6ef47225523e",
+  "A4": "b8dad126-2d11-4802-9021-6ef47225523e",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "957d0ebd-7bad-dbc8-ef92-99ecf4e64e6d",
+  "A2": "TabContainer_oeg60rm_caption",
+  "A3": "b8dad126-2d11-4802-9021-6ef47225523e",
+  "A4": "b8dad126-2d11-4802-9021-6ef47225523e",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "68580a49-ee19-76e1-108b-89e829c3cf16",
+  "A2": "ChartWidget_jg9ahyn_series_2",
+  "A3": "b8dad126-2d11-4802-9021-6ef47225523e",
+  "A4": "b8dad126-2d11-4802-9021-6ef47225523e",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "0150cb93-966f-0fd2-c1a9-eff0e65361c7",
+  "A2": "DataGrid_5vg8g3rDS_Name",
+  "A3": "b8dad126-2d11-4802-9021-6ef47225523e",
+  "A4": "b8dad126-2d11-4802-9021-6ef47225523e",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "18384b45-8369-cef4-38bb-290b1c9862f1",
+  "A2": "DataGrid_5vg8g3rDS_PgrOrderIntakeDayCounter",
+  "A3": "b8dad126-2d11-4802-9021-6ef47225523e",
+  "A4": "b8dad126-2d11-4802-9021-6ef47225523e",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
 ~ MetaData.Schema.B2 [
   "b4e61f43-3e55-1a4a-7c6f-73ae50a74e74",
   "86fbd675-e1bb-0902-e963-9d2767791952",
@@ -417,7 +459,13 @@
   "f2963231-8500-da72-7fd8-9ef7be5b9e88",
   "a41c9206-f1e3-1eaa-88a3-43575a0cda71",
   "50891fa6-f1c0-ac6f-b38f-2a30453d7447",
-  "228b90d4-e656-3421-7254-8d1c066c0cbd"
+  "228b90d4-e656-3421-7254-8d1c066c0cbd",
+  "70d5594e-8fac-dcb6-af09-b65d2df6178b",
+  "9c0d8f0a-1a70-93a4-9488-d8418466436e",
+  "957d0ebd-7bad-dbc8-ef92-99ecf4e64e6d",
+  "68580a49-ee19-76e1-108b-89e829c3cf16",
+  "0150cb93-966f-0fd2-c1a9-eff0e65361c7",
+  "18384b45-8369-cef4-38bb-290b1c9862f1"
 ]
 = MetaData.Schema.B6 "655ac62c-1e4a-cc32-6e65-323f197c68e0"
 = MetaData.Schema.B8 "10.0.0.858"

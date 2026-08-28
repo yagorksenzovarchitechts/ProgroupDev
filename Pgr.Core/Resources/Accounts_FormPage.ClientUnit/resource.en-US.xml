@@ -136,6 +136,8 @@
 			<Item Name="LocalizableStrings.ProductsOffered_placeholder.Value" Value="Enter what the company provides or sells" />
 			<Item Name="LocalizableStrings.QuickFilter_29xf66d_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.QuickFilter_29xf66d_config_caption.Value" Value="Status" />
+			<Item Name="LocalizableStrings.QuickFilter_4kw1p4g_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_4kw1p4g_config_caption.Value" Value="Date" />
 			<Item Name="LocalizableStrings.QuickFilter_hs77vju_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.QuickFilter_hs77vju_config_caption.Value" Value="Overdue" />
 			<Item Name="LocalizableStrings.QuickFilter_hx0yfnz_caption.Value" Value="Quick filter" />
