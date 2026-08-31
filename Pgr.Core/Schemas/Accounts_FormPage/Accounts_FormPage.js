@@ -390,9 +390,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"width": 117
 						},
 						{
-							"id": "bf087326-c944-51eb-6a61-254586029c45",
-							"code": "GridDetailDS_PgrValidTo",
-							"caption": "#ResourceString(GridDetailDS_PgrValidTo)#",
+							"id": "5336b267-4f0d-4b81-a3c2-d078059d8c8f",
+							"code": "GridDetailDS_PgrValidFrom",
+							"caption": "#ResourceString(GridDetailDS_PgrValidFrom)#",
 							"dataValueType": 8,
 							"width": 189
 						},
@@ -4297,9 +4297,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"dataValueType": 4
 						},
 						{
-							"id": "482726a1-dee1-d49b-cc70-334f5d54d5c3",
-							"code": "CompetitorsGridDS_PgrValidTo",
-							"caption": "#ResourceString(CompetitorsGridDS_PgrValidTo)#",
+							"id": "e77fd4c8-9902-41d8-9f18-639370e54824",
+							"code": "CompetitorsGridDS_PgrValidFrom",
+							"caption": "#ResourceString(CompetitorsGridDS_PgrValidFrom)#",
 							"dataValueType": 8,
 							"width": 340
 						}
@@ -9215,9 +9215,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 										"path": "CompetitorsGridDS.PgrShare"
 									}
 								},
-								"CompetitorsGridDS_PgrValidTo": {
+								"CompetitorsGridDS_PgrValidFrom": {
 									"modelConfig": {
-										"path": "CompetitorsGridDS.PgrValidTo"
+										"path": "CompetitorsGridDS.PgrValidFrom"
 									}
 								},
 								"CompetitorsGridDS_Id": {
@@ -9684,7 +9684,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"default": [
 						{
 							"direction": "desc",
-							"columnName": "PgrValidTo"
+							"columnName": "PgrValidFrom"
 						}
 					]
 				}
@@ -9721,9 +9721,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"path": "GridDetailDS.PgrShare"
 						}
 					},
-					"GridDetailDS_PgrValidTo": {
+					"GridDetailDS_PgrValidFrom": {
 						"modelConfig": {
-							"path": "GridDetailDS.PgrValidTo"
+							"path": "GridDetailDS.PgrValidFrom"
 						}
 					}
 				}
@@ -10089,8 +10089,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								"PgrShare": {
 									"path": "PgrShare"
 								},
-								"PgrValidTo": {
-									"path": "PgrValidTo"
+								"PgrValidFrom": {
+									"path": "PgrValidFrom"
 								}
 							}
 						}
@@ -10309,8 +10309,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"PgrShare": {
 						"path": "PgrShare"
 					},
-					"PgrValidTo": {
-						"path": "PgrValidTo"
+					"PgrValidFrom": {
+						"path": "PgrValidFrom"
 					}
 				}
 			},
@@ -10477,7 +10477,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 
 			        let invalidGroups;
 			        try {
-			            invalidGroups = await helper.getInvalidCheckpointsForGrid(request, grid);
+			            const rows = await request.$context[grid.itemsAttr];
+			            invalidGroups = helper.getInvalidCheckpoints(rows, grid);
 			        } catch (e) {
 			            console.warn("Share validation skipped:", e);
 			            return await next?.handle(request);
