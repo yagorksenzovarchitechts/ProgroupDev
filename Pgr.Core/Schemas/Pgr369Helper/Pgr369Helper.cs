@@ -311,15 +311,14 @@ namespace Pgr.Core
 
         /// <summary>
         ///     True if the Measure task linked to the alert task (PgrParentTask) is filled in (CMVP-125 AC):
-        ///     it has a deviation reason and is in the "Completed" ("Done") status. The reason/measure
-        ///     fields are only shown on the activity card at that status (page business rule), so an
-        ///     unfinished Measure task counts as "not filled in" and still triggers the reminder.
+        ///     it has a deviation reason and is in a finished status ("Completed" or "Cancelled" — the page
+        ///     business rule shows/requires the reason/measure fields at both). A still-open Measure task
+        ///     counts as "not filled in" and still triggers the reminder.
         /// </summary>
         private bool HasFilledMeasureTask(Guid alertTaskId)
         {
             var esq = CreateMeasureTaskQuery(alertTaskId);
-            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Status",
-                ActivityConsts.CompletedStatusUId));
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "Status.Finish", true));
             esq.Filters.Add(esq.CreateIsNotNullFilter("PgrReasonCode"));
             return esq.GetEntityCollection(_userConnection).Count > 0;
         }
