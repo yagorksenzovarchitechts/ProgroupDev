@@ -5,6 +5,7 @@
 			<Item Name="AddonConfig.Rules.129ad6ec-d7f4-015a-bf4a-4f528c64f3c3.Caption" Value="Make optional for measure: Owner/Role" />
 			<Item Name="AddonConfig.Rules.47c21520-1017-dcf1-35e6-a12a90e86034.Caption" Value="ChildRule-dfbeff71-5edc-ab9e-5b28-08de2946b54c-ClearValue" />
 			<Item Name="AddonConfig.Rules.5c876047-2562-2a90-9c03-357ba1cb1bd1.Caption" Value="Rules for types &lt;&gt;  Meeting, Visit, Visit call" />
+			<Item Name="AddonConfig.Rules.8987a5de-2ff5-4626-5978-b2f0527251b8.Caption" Value="Apply static filter: Status" />
 			<Item Name="AddonConfig.Rules.a1099290-f698-723f-b9ed-c91011a7fb52.Caption" Value="Make elements read-only: Parent is Visit" />
 			<Item Name="AddonConfig.Rules.c1e211e9-8e29-6720-9a8d-b207df730852.Caption" Value="Rules for types = Meeting, Visit, Visit call" />
 			<Item Name="AddonConfig.Rules.d48825f6-fc06-b66b-48b1-c9851aaac8db.Caption" Value="Set: Priority for 369" />

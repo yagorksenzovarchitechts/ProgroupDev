@@ -50,5 +50,17 @@ namespace Pgr.Core
             /// <summary>"Reduced working" / "Reduzierte Arbeitszeit" — half working day (counts as 0.5).</summary>
             public static readonly Guid ReducedWorking = new Guid("e7a91a43-1156-4cd1-aa35-131783f9980e");
         }
+
+        public static class PgrMetricType
+        {
+            public static readonly Guid Budget = new Guid("abad9912-b6a4-4777-b445-d55d9e9a7ae1");
+            public static readonly Guid AvgOrderIntake3Days = new Guid("deaf43be-659a-48b8-bea6-d8e9527a1cc3");
+        }
+
+        public static class PgrPeriodUnit
+        {
+            public static readonly Guid Day = new Guid("9a6270c7-4fee-4f8a-98a9-896d1a462947");
+            public static readonly Guid Month = new Guid("deda94c4-255e-4def-b4e7-d991b44d3f74");
+        }
     }
 } 

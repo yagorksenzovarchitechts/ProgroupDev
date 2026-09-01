@@ -19,25 +19,6 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "merge",
-				"name": "LookupQuickFilterByTag",
-				"values": {
-					"config": {
-						"caption": "#ResourceString(LookupQuickFilterByTag_config_caption)#",
-						"hint": "#ResourceString(LookupQuickFilterByTag_config_hint)#",
-						"icon": "tag-icon",
-						"iconPosition": "left-icon",
-						"entitySchemaName": null,
-						"defaultValue": [],
-						"recordsFilter": null
-					},
-					"_filterOptions": {
-						"expose": [],
-						"from": "LookupQuickFilterByTag_Value"
-					}
-				}
-			},
-			{
-				"operation": "merge",
 				"name": "TerritoryQuickFilter",
 				"values": {
 					"config": {
@@ -89,6 +70,25 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"from": "TerritoryQuickFilter_Value"
 					},
 					"visible": true
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "LookupQuickFilterByTag",
+				"values": {
+					"config": {
+						"caption": "#ResourceString(LookupQuickFilterByTag_config_caption)#",
+						"hint": "#ResourceString(LookupQuickFilterByTag_config_hint)#",
+						"icon": "tag-icon",
+						"iconPosition": "left-icon",
+						"entitySchemaName": null,
+						"defaultValue": [],
+						"recordsFilter": null
+					},
+					"_filterOptions": {
+						"expose": [],
+						"from": "LookupQuickFilterByTag_Value"
+					}
 				}
 			},
 			{
@@ -259,11 +259,12 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"config": {
 						"caption": "#ResourceString(QuickFilter_5bm0ul6_config_caption)#",
 						"hint": "",
-						"icon": "business-contact-icon",
+						"icon": "segments-icon",
 						"iconPosition": "left-icon",
 						"defaultValue": [],
 						"entitySchemaName": "Contact",
-						"recordsFilter": null
+						"recordsFilter": null,
+						"defaultValueListSorting": null
 					},
 					"_filterOptions": {
 						"expose": [

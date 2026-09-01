@@ -8,7 +8,7 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 			selectionAttr: "CompetitorsGrid_SelectionState",
 			shareColumn: "CompetitorsGridDS_PgrShare",
 			idColumn: "CompetitorsGridDS_Id",
-			validToColumn: "CompetitorsGridDS_PgrValidTo",
+			validFromColumn: "CompetitorsGridDS_PgrValidFrom",
 			competitorColumn: "CompetitorsGridDS_PgrCompetitor",
 			dataSourceName: "CompetitorsGridDS"
 		},
@@ -17,7 +17,7 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 			selectionAttr: "GridDetail_SelectionState",
 			shareColumn: "GridDetailDS_PgrShare",
 			idColumn: "GridDetailDS_Id",
-			validToColumn: "GridDetailDS_PgrValidTo",
+			validFromColumn: "GridDetailDS_PgrValidFrom",
 			competitorColumn: "GridDetailDS_PgrCompetitor",
 			dataSourceName: "GridDetailDS"
 		}
@@ -127,8 +127,8 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		return isNaN(date.getTime()) ? null : date;
 	}
 
-	function getValidToKey(row, grid) {
-		const date = toDateOnly(row && row[grid.validToColumn]);
+	function getValidFromKey(row, grid) {
+		const date = toDateOnly(row && row[grid.validFromColumn]);
 		if (!date) {
 			return "";
 		}
@@ -137,9 +137,9 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		return `${date.getFullYear()}-${month}-${day}`;
 	}
 
-	function getValidToLabel(row, grid) {
-		const date = toDateOnly(row && row[grid.validToColumn]);
-		return date ? date.toLocaleDateString() : "no valid to date";
+	function getValidFromLabel(row, grid) {
+		const date = toDateOnly(row && row[grid.validFromColumn]);
+		return date ? date.toLocaleDateString() : "no valid from date";
 	}
 
 	function getCompetitorKey(row, grid) {
@@ -154,7 +154,7 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		const timelines = new Map();
 		if (rows && typeof rows.forEach === "function") {
 			rows.forEach(function(row) {
-				const dateKey = getValidToKey(row, grid);
+				const dateKey = getValidFromKey(row, grid);
 				if (!dateKey) {
 					return;
 				}
@@ -181,9 +181,9 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		const checkpoints = new Map();
 		if (rows && typeof rows.forEach === "function") {
 			rows.forEach(function(row) {
-				const key = getValidToKey(row, grid);
+				const key = getValidFromKey(row, grid);
 				if (key && !checkpoints.has(key)) {
-					checkpoints.set(key, getValidToLabel(row, grid));
+					checkpoints.set(key, getValidFromLabel(row, grid));
 				}
 			});
 		}
@@ -196,20 +196,49 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		if (!timeline.length || checkpointKey < timeline[0].dateKey) {
 			return null;
 		}
+		let active = timeline[0].share;
 		for (let i = 0; i < timeline.length; i++) {
-			if (timeline[i].dateKey >= checkpointKey) {
-				return timeline[i].share;
+			if (timeline[i].dateKey <= checkpointKey) {
+				active = timeline[i].share;
+			} else {
+				break;
 			}
 		}
-		return timeline[timeline.length - 1].share;
+		return active;
+	}
+
+	function partitionRows(rows, grid) {
+		const dated = [];
+		let undatedTotal = 0;
+		let rowCount = 0;
+		if (rows && typeof rows.forEach === "function") {
+			rows.forEach(function(row) {
+				rowCount++;
+				if (getValidFromKey(row, grid)) {
+					dated.push(row);
+				} else {
+					undatedTotal += Number(unwrap(row[grid.shareColumn])) || 0;
+				}
+			});
+		}
+		return { dated: dated, undatedTotal: undatedTotal, rowCount: rowCount };
 	}
 
 	function getInvalidCheckpoints(rows, grid) {
-		const timelines = buildTimelines(rows, grid);
-		const checkpoints = getCheckpoints(rows, grid);
+		const partitioned = partitionRows(rows, grid);
+		const timelines = buildTimelines(partitioned.dated, grid);
+		const checkpoints = getCheckpoints(partitioned.dated, grid);
 		const invalid = [];
+
+		if (!checkpoints.length) {
+			if (partitioned.rowCount && partitioned.undatedTotal !== REQUIRED_TOTAL) {
+				invalid.push({ label: "no valid from date", total: partitioned.undatedTotal });
+			}
+			return invalid;
+		}
+
 		checkpoints.forEach(function(checkpoint) {
-			let total = 0;
+			let total = partitioned.undatedTotal;
 			timelines.forEach(function(timeline) {
 				const share = getActiveShare(timeline, checkpoint.key);
 				if (share !== null) {
@@ -221,11 +250,6 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 			}
 		});
 		return invalid;
-	}
-
-	async function getInvalidCheckpointsForGrid(request, grid) {
-		const rows = await request.$context[grid.itemsAttr];
-		return getInvalidCheckpoints(rows, grid);
 	}
 
 	async function showGroupedTotalError(request, invalidGroups) {
@@ -257,7 +281,6 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		getDeletedIds: getDeletedIds,
 		getRemainingRows: getRemainingRows,
 		getInvalidCheckpoints: getInvalidCheckpoints,
-		getInvalidCheckpointsForGrid: getInvalidCheckpointsForGrid,
 		showGroupedTotalError: showGroupedTotalError
 	};
 });

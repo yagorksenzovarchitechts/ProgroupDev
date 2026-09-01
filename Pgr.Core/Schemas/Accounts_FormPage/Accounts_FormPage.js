@@ -390,9 +390,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"width": 117
 						},
 						{
-							"id": "bf087326-c944-51eb-6a61-254586029c45",
-							"code": "GridDetailDS_PgrValidTo",
-							"caption": "#ResourceString(GridDetailDS_PgrValidTo)#",
+							"id": "5336b267-4f0d-4b81-a3c2-d078059d8c8f",
+							"code": "GridDetailDS_PgrValidFrom",
+							"caption": "#ResourceString(GridDetailDS_PgrValidFrom)#",
 							"dataValueType": 8,
 							"width": 189
 						},
@@ -3108,35 +3108,12 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
-				"name": "PgrActual3DayOrderIntake",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "#ResourceString(PgrActual3DayOrderIntake_label)#",
-					"control": "$PDS_PgrActual3DayOrderIntake_p194oi",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": "",
-					"visible": true
-				},
-				"parentName": "GridContainer_8plbcqj",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
 				"name": "PgrOrderIntakeDayCounter",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 4,
+						"row": 3,
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
@@ -3149,30 +3126,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
-				"index": 4
-			},
-			{
-				"operation": "insert",
-				"name": "PgrCurrentDailyBudget",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 5,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "#ResourceString(PgrCurrentDailyBudget_label)#",
-					"control": "$PDS_PgrCurrentDailyBudget_p194db",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": "",
-					"visible": true
-				},
-				"parentName": "GridContainer_8plbcqj",
-				"propertyName": "items",
-				"index": 5
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -3181,7 +3135,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 6,
+						"row": 4,
 						"rowSpan": 1
 					},
 					"type": "crt.Checkbox",
@@ -3197,7 +3151,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
-				"index": 6
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -3206,7 +3160,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 7,
+						"row": 5,
 						"rowSpan": 1
 					},
 					"type": "crt.DateTimePicker",
@@ -3221,7 +3175,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
-				"index": 7
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -3230,7 +3184,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
-						"row": 7,
+						"row": 5,
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
@@ -3245,7 +3199,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
-				"index": 8
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -4343,9 +4297,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"dataValueType": 4
 						},
 						{
-							"id": "482726a1-dee1-d49b-cc70-334f5d54d5c3",
-							"code": "CompetitorsGridDS_PgrValidTo",
-							"caption": "#ResourceString(CompetitorsGridDS_PgrValidTo)#",
+							"id": "e77fd4c8-9902-41d8-9f18-639370e54824",
+							"code": "CompetitorsGridDS_PgrValidFrom",
+							"caption": "#ResourceString(CompetitorsGridDS_PgrValidFrom)#",
 							"dataValueType": 8,
 							"width": 340
 						}
@@ -9261,9 +9215,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 										"path": "CompetitorsGridDS.PgrShare"
 									}
 								},
-								"CompetitorsGridDS_PgrValidTo": {
+								"CompetitorsGridDS_PgrValidFrom": {
 									"modelConfig": {
-										"path": "CompetitorsGridDS.PgrValidTo"
+										"path": "CompetitorsGridDS.PgrValidFrom"
 									}
 								},
 								"CompetitorsGridDS_Id": {
@@ -9397,16 +9351,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"PDS_PgrOrderIntakeDayCounter_yux7ecs": {
 						"modelConfig": {
 							"path": "PDS.PgrOrderIntakeDayCounter"
-						}
-					},
-					"PDS_PgrActual3DayOrderIntake_p194oi": {
-						"modelConfig": {
-							"path": "PDS.PgrActual3DayOrderIntake"
-						}
-					},
-					"PDS_PgrCurrentDailyBudget_p194db": {
-						"modelConfig": {
-							"path": "PDS.PgrCurrentDailyBudget"
 						}
 					},
 					"PDS_PgrExcludeFrom369": {
@@ -9740,7 +9684,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"default": [
 						{
 							"direction": "desc",
-							"columnName": "PgrValidTo"
+							"columnName": "PgrValidFrom"
 						}
 					]
 				}
@@ -9777,9 +9721,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"path": "GridDetailDS.PgrShare"
 						}
 					},
-					"GridDetailDS_PgrValidTo": {
+					"GridDetailDS_PgrValidFrom": {
 						"modelConfig": {
-							"path": "GridDetailDS.PgrValidTo"
+							"path": "GridDetailDS.PgrValidFrom"
 						}
 					}
 				}
@@ -10145,8 +10089,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								"PgrShare": {
 									"path": "PgrShare"
 								},
-								"PgrValidTo": {
-									"path": "PgrValidTo"
+								"PgrValidFrom": {
+									"path": "PgrValidFrom"
 								}
 							}
 						}
@@ -10365,8 +10309,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"PgrShare": {
 						"path": "PgrShare"
 					},
-					"PgrValidTo": {
-						"path": "PgrValidTo"
+					"PgrValidFrom": {
+						"path": "PgrValidFrom"
 					}
 				}
 			},
@@ -10533,7 +10477,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 
 			        let invalidGroups;
 			        try {
-			            invalidGroups = await helper.getInvalidCheckpointsForGrid(request, grid);
+			            const rows = await request.$context[grid.itemsAttr];
+			            invalidGroups = helper.getInvalidCheckpoints(rows, grid);
 			        } catch (e) {
 			            console.warn("Share validation skipped:", e);
 			            return await next?.handle(request);

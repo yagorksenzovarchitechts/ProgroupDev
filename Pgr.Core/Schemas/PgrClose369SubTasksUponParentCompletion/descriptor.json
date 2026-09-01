@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "30213614-2ab0-4882-bafe-c314fb624723",
+    "Name": "PgrClose369SubTasksUponParentCompletion",
+    "ModifiedOnUtc": "\/Date(1788180673000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Close 369 sub-tasks upon parent completion",
+    "DependsOn": []
+  }
+}

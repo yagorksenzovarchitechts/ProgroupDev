@@ -3,7 +3,6 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
-			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
 			<Item Name="LocalizableStrings.Button_CreateMeasure_caption.Value" Value="Maßnahme-Aufgabe erstellen" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
@@ -26,7 +25,6 @@
 			<Item Name="LocalizableStrings.Label_NoMeetSummaryAccessCaption_caption.Value" Value="Die AI-Meeting-Zusammenfassung ist nur für Meetingteilnehmer verfügbar. Sie waren kein Teilnehmer an diesem Meeting." />
 			<Item Name="LocalizableStrings.Label_NoMeetSummaryAccessTitle_caption.Value" Value="Sie haben keinen Zugriff auf die Meeting-Zusammenfassung" />
 			<Item Name="LocalizableStrings.Label_k843hzt_caption.Value" Value="Details" />
-			<Item Name="LocalizableStrings.PDS_Pgr369ReasonForClosure_usvewze.Value" Value="369 Grund für den Abschluss" />
 			<Item Name="LocalizableStrings.ParticipantsExpansionPanel_title.Value" Value="Teilnehmer" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
 			<Item Name="LocalizableStrings.TabContainer_VisitReportTab_caption.Value" Value="Besuchsberichte" />
