@@ -51,6 +51,12 @@
         "InstallBehavior": 1
       },
       {
+        "UId": "90858294-4f2b-60a6-6032-33639e964dfe",
+        "Name": "CrtAICases",
+        "Type": 1,
+        "InstallBehavior": 1
+      },
+      {
         "UId": "99158cb9-b1b4-3a1d-beb0-7157e0414e73",
         "PackageVersion": "7.8.0",
         "Name": "CrtC360InUiV2",

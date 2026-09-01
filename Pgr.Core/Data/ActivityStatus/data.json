@@ -4,31 +4,11 @@
       "Row": [
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
-          "Value": "384d4b84-58e6-df11-971b-001d60e938c6"
-        },
-        {
-          "SchemaColumnUId": "13aad544-ec30-4e76-a373-f0cff3202e24",
-          "Value": "Started"
-        },
-        {
-          "SchemaColumnUId": "983558da-75f4-7893-546c-1bc635f595c7",
-          "Value": "#B87CCF"
-        },
-        {
-          "SchemaColumnUId": "b618e983-400b-4eee-8645-f6a53fd325ec",
-          "Value": false
-        }
-      ]
-    },
-    {
-      "Row": [
-        {
-          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
           "Value": "394d4b84-58e6-df11-971b-001d60e938c6"
         },
         {
           "SchemaColumnUId": "13aad544-ec30-4e76-a373-f0cff3202e24",
-          "Value": "Waiting"
+          "Value": "InProgress"
         },
         {
           "SchemaColumnUId": "983558da-75f4-7893-546c-1bc635f595c7",
@@ -68,7 +48,7 @@
         },
         {
           "SchemaColumnUId": "13aad544-ec30-4e76-a373-f0cff3202e24",
-          "Value": "Cancelled"
+          "Value": "Canceled"
         },
         {
           "SchemaColumnUId": "983558da-75f4-7893-546c-1bc635f595c7",
@@ -88,7 +68,7 @@
         },
         {
           "SchemaColumnUId": "13aad544-ec30-4e76-a373-f0cff3202e24",
-          "Value": "Open"
+          "Value": "NotStarted"
         },
         {
           "SchemaColumnUId": "983558da-75f4-7893-546c-1bc635f595c7",
@@ -97,6 +77,26 @@
         {
           "SchemaColumnUId": "b618e983-400b-4eee-8645-f6a53fd325ec",
           "Value": false
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "de886b4e-c4c5-462f-bd85-ae1694a655ae"
+        },
+        {
+          "SchemaColumnUId": "13aad544-ec30-4e76-a373-f0cff3202e24",
+          "Value": "ClosedBySystem"
+        },
+        {
+          "SchemaColumnUId": "983558da-75f4-7893-546c-1bc635f595c7",
+          "Value": "#808080"
+        },
+        {
+          "SchemaColumnUId": "b618e983-400b-4eee-8645-f6a53fd325ec",
+          "Value": true
         }
       ]
     }
