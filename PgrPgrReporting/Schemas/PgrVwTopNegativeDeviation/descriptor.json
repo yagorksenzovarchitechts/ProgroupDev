@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "7a58f444-7a27-4d35-a0a2-2ddb7e029984",
+    "Name": "PgrVwTopNegativeDeviation",
+    "ModifiedOnUtc": "\/Date(1788190456000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "PgrVwTopNegativeDeviation",
+    "DependsOn": []
+  }
+}

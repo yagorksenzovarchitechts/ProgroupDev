@@ -46,8 +46,8 @@ define("Calendar_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 																			"dataValueType": 10,
 																			"value": {
 																				"Name": "Cancelled",
-																				"Id": "8dd2d787-2792-420c-8891-be9de36a600d",
-																				"value": "8dd2d787-2792-420c-8891-be9de36a600d",
+																				"Id": "201cfba8-58e6-df11-971b-001d60e938c6",
+																				"value": "201cfba8-58e6-df11-971b-001d60e938c6",
 																				"displayValue": "Cancelled"
 																			}
 																		}

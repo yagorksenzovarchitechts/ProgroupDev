@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.AccountsByCategoryWidget_title.Value" Value="Accounts by classification" />
+			<Item Name="LocalizableStrings.Label_e91m14r_caption.Value" Value="Once potential volume (our potential) is available, show METRICS with #customers &gt; 80%, 60 - 79, &lt;59" />
+		</Items>
+	</Group>
+</Resources>

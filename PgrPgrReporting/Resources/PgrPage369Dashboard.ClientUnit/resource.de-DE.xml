@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="369 Dashboard" />
+			<Item Name="LocalizableStrings.ChartWidget_jg9ahyn_title.Value" Value="Abweichungsentwicklung (tsqm)" />
+			<Item Name="LocalizableStrings.ChartWidget_jk2m9xb_title.Value" Value="Gründe für offene 3-6-9-Aufgaben" />
+			<Item Name="LocalizableStrings.ChartWidget_owf9zxk_title.Value" Value="Gründe für abgebrochene 3-6-9-Aufgaben" />
+			<Item Name="LocalizableStrings.ChartWidget_v0di9fu_title.Value" Value="Gesamtabweichung / wöchentlich (Alle Kunden)" />
+			<Item Name="LocalizableStrings.ChartWidget_x197886_title.Value" Value="Gesamtabweichung / monatlich (Alle Kunden)" />
+			<Item Name="LocalizableStrings.IndicatorWidget_2a8rq9m_title.Value" Value="Offene 3-6-9-Aufgaben" />
+			<Item Name="LocalizableStrings.IndicatorWidget_4zzc2is_title.Value" Value="Kunden im 3-6-9-Prozess" />
+			<Item Name="LocalizableStrings.IndicatorWidget_omfkkrs_title.Value" Value="Überfällige 3-6-9-Aufgaben" />
+			<Item Name="LocalizableStrings.Label_c4756rt_caption.Value" Value="Offene 3-6-9-Aufgaben" />
+			<Item Name="LocalizableStrings.Label_gvcwang_caption.Value" Value="Handlungsbedarf bei Kunden" />
+			<Item Name="LocalizableStrings.QuickFilter_8dqngzb_config_caption.Value" Value="Vertriebsleiter" />
+			<Item Name="LocalizableStrings.QuickFilter_euba5qp_config_caption.Value" Value="Kunde" />
+			<Item Name="LocalizableStrings.QuickFilter_gw8mhx3_config_caption.Value" Value="Gebiet" />
+			<Item Name="LocalizableStrings.QuickFilter_hfjkws3_config_caption.Value" Value="Vertriebsdirektor" />
+			<Item Name="LocalizableStrings.QuickFilter_oavwhzq_config_caption.Value" Value="Abweichungsgrund" />
+			<Item Name="LocalizableStrings.QuickFilter_qlugkq6_config_caption.Value" Value="Land" />
+			<Item Name="LocalizableStrings.TabContainer_oeg60rm_caption.Value" Value="3-6-9 Dashboard" />
+		</Items>
+	</Group>
+</Resources>
