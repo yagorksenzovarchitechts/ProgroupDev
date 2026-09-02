@@ -17,6 +17,11 @@
 			<Item Name="LocalizableStrings.BulkEmailSettingsButton_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.BulkEmailSubscriptionExpansionPanel_title.Value" Value="Bulk email subscriptions" />
 			<Item Name="LocalizableStrings.BulkEmailSubscriptionNote_caption.Value" Value="Customize the contact’s subscriptions of the contact by the bulk email type" />
+			<Item Name="LocalizableStrings.BulkEmailSubscriptionRefreshButton_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.BulkEmailSubscriptionSearchFilter_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.BulkEmailSubscriptionSettingsButton_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.Button_5wnd7c6_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.Button_6g2hkz7_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.Button_8lva7d5_caption.Value" Value="Create lead" />
 			<Item Name="LocalizableStrings.CampaignExpansionPanel_title.Value" Value="Campaigns" />
 			<Item Name="LocalizableStrings.CampaignExportDataButton_caption.Value" Value="Export to Excel" />
@@ -38,6 +43,7 @@
 			<Item Name="LocalizableStrings.ComboBox_268yz1f_placeholder.Value" Value="Select source" />
 			<Item Name="LocalizableStrings.ComboBox_3zub1m3_placeholder.Value" Value="Select channel" />
 			<Item Name="LocalizableStrings.ComboBox_8hzpzs3_label.Value" Value="Linked Creatio user" />
+			<Item Name="LocalizableStrings.ContactSubscriptions_ExpansionPanel_title.Value" Value="Omnichannel subscriptions" />
 			<Item Name="LocalizableStrings.CustomerNeed_placeholder.Value" Value="Select customer need" />
 			<Item Name="LocalizableStrings.Department_placeholder.Value" Value="Select department" />
 			<Item Name="LocalizableStrings.EventExpansionPanel_title.Value" Value="Events" />
@@ -86,6 +92,7 @@
 			<Item Name="LocalizableStrings.Label_d6hun0y_caption.Value" Value="Bulk email subscriptions " />
 			<Item Name="LocalizableStrings.Label_jb7a8ft_caption.Value" Value="Label" />
 			<Item Name="LocalizableStrings.Label_t82s6c4_caption.Value" Value="Contact is unsubscribed from all marketing bulk emails." />
+			<Item Name="LocalizableStrings.Label_ywjapbv_caption.Value" Value="View and manage subscription types across channels, including addresses and subscription dates. Subscription settings apply only to bulk messages sent from Freedom UI sections. If no subscription information is available, Creatio will still send the message to the primary address." />
 			<Item Name="LocalizableStrings.LeadAddButton_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.LeadConversionScore_tooltip.Value" Value="The score indicates the probability of creating a Lead associated with the Contact. The value is calculated with the ML model" />
 			<Item Name="LocalizableStrings.LeadExpansionPanel_title.Value" Value="MQL/SQL" />
@@ -95,6 +102,8 @@
 			<Item Name="LocalizableStrings.LeadSearchFilter_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.LeadSettingsButton_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.MarketingTab_caption.Value" Value="Marketing" />
+			<Item Name="LocalizableStrings.MenuItem_2mr227g_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.MenuItem_h6sf9eo_caption.Value" Value="Data import" />
 			<Item Name="LocalizableStrings.MenuItem_tz82vh6_caption.Value" Value="Data import" />
 			<Item Name="LocalizableStrings.MrktLeadRefreshButton_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.NotesLabel.Value" Value="Notes" />
@@ -120,6 +129,7 @@
 			<Item Name="LocalizableStrings.RegisterMethod_placeholder.Value" Value="Select registration method" />
 			<Item Name="LocalizableStrings.SalesTab_caption.Value" Value="Sales" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
+			<Item Name="LocalizableStrings.SearchFilter_Subscriptions_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.ServiceAgreementsExpansionPanel_title.Value" Value="Service agreements" />
 			<Item Name="LocalizableStrings.ServiceAgreementsExportDataButton_caption.Value" Value="Export to Excel" />
 			<Item Name="LocalizableStrings.ServiceAgreementsImportDataButton_caption.Value" Value="Data import" />
@@ -132,6 +142,8 @@
 			<Item Name="LocalizableStrings.ServiceAgreementsSearchFilter_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.ServiceAgreementsSettingsButton_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.ServiceTab_caption.Value" Value="Service" />
+			<Item Name="LocalizableStrings.SubcriptionModelHelpTextLabel_caption.Value" Value="Migrate to the new model to use channel-aware subscriptions  and per-subscription delivery routing" />
+			<Item Name="LocalizableStrings.SubcriptionModelTitleLabel_caption.Value" Value="You're on the legacy Subscriptions model" />
 			<Item Name="LocalizableStrings.SubmittedFormExpansionPanel_title.Value" Value="Submissions" />
 			<Item Name="LocalizableStrings.SubmittedFormExportDataButton_caption.Value" Value="Export to Excel" />
 			<Item Name="LocalizableStrings.SubmittedFormRefreshButton_caption.Value" Value="Refresh" />
