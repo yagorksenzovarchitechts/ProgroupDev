@@ -141,7 +141,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"name": "Tabs",
 				"values": {
 					"underlineSelectedTabColor": "crt-color-coral",
-					"allowToggleClose": true,
 					"visible": true,
 					"stretch": true
 				}
@@ -192,6 +191,18 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"name": "Language",
 				"values": {
 					"readonly": false
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "Manager",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					}
 				}
 			},
 			{
@@ -345,114 +356,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			{
 				"operation": "remove",
 				"name": "TimelineTile_Case"
-			},
-			{
-				"operation": "remove",
-				"name": "SubscriptionsTab"
-			},
-			{
-				"operation": "remove",
-				"name": "UnsubscribeInfoContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "UnsubcribeInfoTextContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "UnsubscribeInfoLargeText"
-			},
-			{
-				"operation": "remove",
-				"name": "UnsubscribeInfoText"
-			},
-			{
-				"operation": "remove",
-				"name": "SubscribeButton"
-			},
-			{
-				"operation": "remove",
-				"name": "SubscribeInfoContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "SubcribeInfoTextContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "SubscribeInfoLargeText"
-			},
-			{
-				"operation": "remove",
-				"name": "SubscribeInfoText"
-			},
-			{
-				"operation": "remove",
-				"name": "UnsubscribeButton"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailSubscriptionExpansionPanel"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailSubscriptionToolsContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailSubscriptionToolFlexContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailSubscriptionRefreshButton"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailSubscriptionSettingsButton"
-			},
-			{
-				"operation": "remove",
-				"name": "GridDetailExportDataBtn_23fe8ko"
-			},
-			{
-				"operation": "remove",
-				"name": "GridDetailImportDataBtn_su2a5tm"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailSubscriptionSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "FlexContainer_l6s3pge"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailSubscriptionNote"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailSubscriptionListContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "BulkEmailSubscriptionList"
-			},
-			{
-				"operation": "remove",
-				"name": "GridDetail_guswpo0_AddTagsBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "GridDetail_guswpo0_RemoveTagsBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "GridDetail_guswpo0_ExportToExcelBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "GridDetail_guswpo0_DeleteBulkAction"
 			},
 			{
 				"operation": "remove",
@@ -628,6 +531,194 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "remove",
+				"name": "SubscriptionsTab"
+			},
+			{
+				"operation": "remove",
+				"name": "DoNotUseEmailTogglePanel"
+			},
+			{
+				"operation": "remove",
+				"name": "SubscriptionModelGridContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "SubcriptionModelTitleFlex"
+			},
+			{
+				"operation": "remove",
+				"name": "SubcriptionModelTitleLabel"
+			},
+			{
+				"operation": "remove",
+				"name": "SubcriptionModelHelpTextLabel"
+			},
+			{
+				"operation": "remove",
+				"name": "UnsubscribeInfoContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "UnsubcribeInfoTextContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "UnsubscribeInfoLargeText"
+			},
+			{
+				"operation": "remove",
+				"name": "UnsubscribeInfoText"
+			},
+			{
+				"operation": "remove",
+				"name": "SubscribeButton"
+			},
+			{
+				"operation": "remove",
+				"name": "SubscribeInfoContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "SubcribeInfoTextContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "SubscribeInfoLargeText"
+			},
+			{
+				"operation": "remove",
+				"name": "SubscribeInfoText"
+			},
+			{
+				"operation": "remove",
+				"name": "UnsubscribeButton"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailSubscriptionExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailSubscriptionToolsContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailSubscriptionToolFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailSubscriptionRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailSubscriptionSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "GridDetailExportDataBtn_23fe8ko"
+			},
+			{
+				"operation": "remove",
+				"name": "GridDetailImportDataBtn_su2a5tm"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailSubscriptionSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailSubscriptionListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "BulkEmailSubscriptionList"
+			},
+			{
+				"operation": "remove",
+				"name": "GridDetail_guswpo0_AddTagsBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "GridDetail_guswpo0_RemoveTagsBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "GridDetail_guswpo0_ExportToExcelBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "GridDetail_guswpo0_DeleteBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "ContactSubscriptions_ExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "GridContainer_rr4pc75"
+			},
+			{
+				"operation": "remove",
+				"name": "FlexContainer_klc0q56"
+			},
+			{
+				"operation": "remove",
+				"name": "Button_6g2hkz7"
+			},
+			{
+				"operation": "remove",
+				"name": "Button_5wnd7c6"
+			},
+			{
+				"operation": "remove",
+				"name": "MenuItem_2mr227g"
+			},
+			{
+				"operation": "remove",
+				"name": "MenuItem_h6sf9eo"
+			},
+			{
+				"operation": "remove",
+				"name": "SearchFilter_Subscriptions"
+			},
+			{
+				"operation": "remove",
+				"name": "FlexContainer_ew2hfss"
+			},
+			{
+				"operation": "remove",
+				"name": "Label_ywjapbv"
+			},
+			{
+				"operation": "remove",
+				"name": "GridContainer_x3ihv1k"
+			},
+			{
+				"operation": "remove",
+				"name": "ContactSubscriptions_DataGrid"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_sc2w2z4_AddTagsBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_sc2w2z4_RemoveTagsBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_sc2w2z4_ExportToExcelBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_sc2w2z4_MergeBulkAction"
+			},
+			{
+				"operation": "remove",
+				"name": "DataGrid_sc2w2z4_DeleteBulkAction"
+			},
+			{
+				"operation": "remove",
 				"name": "MarketingTab"
 			},
 			{
@@ -636,47 +727,27 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "remove",
-				"name": "MrktLeadExpansionPanel"
+				"name": "MarketingFieldsContainer"
 			},
 			{
 				"operation": "remove",
-				"name": "MrktLeadToolsContainer"
+				"name": "CustomerNeed"
 			},
 			{
 				"operation": "remove",
-				"name": "MrktLeadToolsFlexContainer"
+				"name": "RegisterMethod"
 			},
 			{
 				"operation": "remove",
-				"name": "CreateLeadButton"
+				"name": "Channel"
 			},
 			{
 				"operation": "remove",
-				"name": "MrktLeadRefreshButton"
+				"name": "Source"
 			},
 			{
 				"operation": "remove",
-				"name": "GridDetailSettingsBtn_icmycs2"
-			},
-			{
-				"operation": "remove",
-				"name": "MrktLeadExportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "MrktLeadImportDataButton"
-			},
-			{
-				"operation": "remove",
-				"name": "MrktLeadSearchFilter"
-			},
-			{
-				"operation": "remove",
-				"name": "MrktLeadListContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "MrktLeadList"
+				"name": "AdCampaign"
 			},
 			{
 				"operation": "remove",
@@ -780,6 +851,50 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "remove",
+				"name": "MrktLeadExpansionPanel"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadToolsContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadToolsFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "CreateLeadButton"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "GridDetailSettingsBtn_icmycs2"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadImportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "MrktLeadList"
+			},
+			{
+				"operation": "remove",
 				"name": "BulkEmailExpansionPanel"
 			},
 			{
@@ -825,30 +940,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			{
 				"operation": "remove",
 				"name": "BulkEmailList_ExportToExcelBulkAction"
-			},
-			{
-				"operation": "remove",
-				"name": "MarketingFieldsContainer"
-			},
-			{
-				"operation": "remove",
-				"name": "CustomerNeed"
-			},
-			{
-				"operation": "remove",
-				"name": "RegisterMethod"
-			},
-			{
-				"operation": "remove",
-				"name": "Channel"
-			},
-			{
-				"operation": "remove",
-				"name": "Source"
-			},
-			{
-				"operation": "remove",
-				"name": "AdCampaign"
 			},
 			{
 				"operation": "remove",
@@ -1145,6 +1236,23 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
+				"name": "DateTimePicker_o6emyj1",
+				"values": {
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_BirthDate_0v6vcrk",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "date",
+					"control": "$PDS_BirthDate_0v6vcrk"
+				},
+				"parentName": "SideAreaProfileFieldFlexContainer",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
 				"name": "ComboBox_cf5dsmd",
 				"values": {
 					"type": "crt.ComboBox",
@@ -1160,7 +1268,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -1195,7 +1303,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 5
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -1213,7 +1321,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 6
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -1231,7 +1339,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 7
+				"index": 8
 			},
 			{
 				"operation": "insert",
@@ -2132,19 +2240,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							}
 						}
 					},
-					"SalutationType_List": {
-						"isCollection": true,
-						"modelConfig": {
-							"sortingConfig": {
-								"default": [
-									{
-										"columnName": "Name",
-										"direction": "asc"
-									}
-								]
-							}
-						}
-					},
 					"Language_List": {
 						"isCollection": true,
 						"modelConfig": {
@@ -2490,6 +2585,11 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"filterType": 6,
 							"rootSchemaName": "Activity"
 						}
+					},
+					"PDS_BirthDate_0v6vcrk": {
+						"modelConfig": {
+							"path": "PDS.BirthDate"
+						}
 					}
 				}
 			},
@@ -2513,6 +2613,16 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				],
 				"values": {
 					"filterAttributes": []
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"Timeline_AllTileFilters"
+				],
+				"values": {
+					"modelConfig": {}
 				}
 			},
 			{
@@ -2608,16 +2718,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"path": [
 					"attributes",
 					"DataGrid_wij59kw_PredefinedFilter"
-				],
-				"values": {
-					"modelConfig": {}
-				}
-			},
-			{
-				"operation": "merge",
-				"path": [
-					"attributes",
-					"Timeline_AllTileFilters"
 				],
 				"values": {
 					"modelConfig": {}
@@ -2811,7 +2911,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"CareerListDS",
 					"CasesListDS",
 					"BulkEmailListDS",
-					"GridDetail_guswpo0DS",
 					"RecommendedProductListDS",
 					"OpportunityListDS",
 					"OrderListDS",

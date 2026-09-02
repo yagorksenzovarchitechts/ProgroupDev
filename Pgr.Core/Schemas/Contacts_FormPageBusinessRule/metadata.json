@@ -32,6 +32,25 @@
               "BVE1": "60733efc-f36b-1410-a883-16d83cab0980"
             },
             "BCO3": 3
+          },
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+            "UId": "538f244d-5814-3a7f-e381-4d710f2c651f",
+            "BCO1": {
+              "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+              "UId": "bca2725c-c90b-6d2c-95d4-8da8496a9b20",
+              "BRE1": "Lookup",
+              "BRE2": "AttributeValue",
+              "BRX1": "Type"
+            },
+            "BCO2": {
+              "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+              "UId": "67f84811-0d3a-6006-826e-1aeaf8759453",
+              "BRE1": "Lookup",
+              "BRE3": "ContactType",
+              "BVE1": "ab501a14-e361-4695-a9a4-0bc644ad9d86"
+            },
+            "BCO3": 3
           }
         ]
       },
@@ -39,7 +58,7 @@
         {
           "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionHideElement",
           "UId": "09cef770-2094-661c-0a26-8a6a14c85384",
-          "BRA4": "PgrEmployeeCode,PhoneInput_ft4hr28,EmailInput_vzkwr3o,ExpansionPanel_Employee,ExpansionPanel_p5mzqae"
+          "BRA4": "PgrEmployeeCode,PhoneInput_ft4hr28,EmailInput_vzkwr3o,ExpansionPanel_Employee,ExpansionPanel_p5mzqae,ContactCompactProfile_lpwah0r"
         },
         {
           "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionShowElement",
@@ -73,7 +92,7 @@
       "BRC1": {
         "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleGroupCondition",
         "UId": "1935c300-2e45-d69a-a71c-6c773386aab9",
-        "BGC1": 1,
+        "BGC1": 2,
         "BGC2": [
           {
             "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
@@ -93,6 +112,25 @@
               "BVE1": "60733efc-f36b-1410-a883-16d83cab0980"
             },
             "BCO3": 2
+          },
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+            "UId": "966d1f88-38b9-abbf-d6cf-0541a425bf34",
+            "BCO1": {
+              "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+              "UId": "09682353-cc59-6b01-d7a8-907532699cae",
+              "BRE1": "Lookup",
+              "BRE2": "AttributeValue",
+              "BRX1": "Type"
+            },
+            "BCO2": {
+              "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+              "UId": "93a1d92e-55a4-276a-b636-5b570a9eba10",
+              "BRE1": "Lookup",
+              "BRE3": "ContactType",
+              "BVE1": "ab501a14-e361-4695-a9a4-0bc644ad9d86"
+            },
+            "BCO3": 2
           }
         ]
       },
@@ -105,7 +143,7 @@
         {
           "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionShowElement",
           "UId": "4956a4c3-2ce1-81ea-0cbe-ad30a9cb8655",
-          "BRA4": "PhoneInput_ft4hr28,EmailInput_vzkwr3o,ExpansionPanel_Employee"
+          "BRA4": "PhoneInput_ft4hr28,EmailInput_vzkwr3o,ExpansionPanel_Employee,Manager"
         }
       ]
     }
@@ -129,6 +167,7 @@
 - MetaData.Schema.AD4.BRS1.["0fe50b7d-2db8-c3b6-c560-e2c8bc243c11"]
 - MetaData.Schema.AD4.BRS1.["06681439-8e01-45ef-9011-09c1989e8ab9"]
 - MetaData.Schema.AD4.BRS1.["62dec8d7-910c-6707-b312-057e00537a42"]
+- MetaData.Schema.AD4.BRS1.["b40d0241-165f-6985-cf55-87550c3ea337"]
 ~ MetaData.Schema.AD4.BRS1 [
   "5ee38a88-f4c4-35e2-49a5-f68d87f91755",
   "b0776421-935f-24dd-db66-0ab83cde9472"

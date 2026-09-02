@@ -40,6 +40,18 @@
       "Row": [
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "ab501a14-e361-4695-a9a4-0bc644ad9d86"
+        },
+        {
+          "SchemaColumnUId": "fa1cc2fc-6b0e-adce-0b00-336c3e6f585f",
+          "Value": "#009688"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
           "Value": "ac278ef3-e63f-48d9-ba34-7c52e92fecfe"
         },
         {
