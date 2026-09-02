@@ -44,6 +44,46 @@
       "Row": [
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "8dd2d787-2792-420c-8891-be9de36a600d"
+        },
+        {
+          "SchemaColumnUId": "13aad544-ec30-4e76-a373-f0cff3202e24",
+          "Value": "Canceled"
+        },
+        {
+          "SchemaColumnUId": "983558da-75f4-7893-546c-1bc635f595c7",
+          "Value": "#ff000d"
+        },
+        {
+          "SchemaColumnUId": "b618e983-400b-4eee-8645-f6a53fd325ec",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "9d78df31-4cec-4202-bad9-1da9181a8bfc"
+        },
+        {
+          "SchemaColumnUId": "13aad544-ec30-4e76-a373-f0cff3202e24",
+          "Value": "NotStarted"
+        },
+        {
+          "SchemaColumnUId": "983558da-75f4-7893-546c-1bc635f595c7",
+          "Value": "#FFD700"
+        },
+        {
+          "SchemaColumnUId": "b618e983-400b-4eee-8645-f6a53fd325ec",
+          "Value": false
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
           "Value": "de886b4e-c4c5-462f-bd85-ae1694a655ae"
         },
         {
