@@ -1,0 +1,11 @@
+﻿{
+  "SqlScript": {
+    "UId": "22c5fada-b2dd-9584-9966-8d240a1a0c1b",
+    "Name": "PgrVwTopAccountsByBudget",
+    "DBEngineType": 0,
+    "InstallType": 1,
+    "ModifiedOnUtc": "\/Date(1788192668000)\/",
+    "BackwardCompatibilityConfirmed": false,
+    "DependsOn": []
+  }
+}

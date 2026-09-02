@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="PgrVwAccountMetricSnapshot" />
+			<Item Name="Columns.PgrAccount.Caption" Value="Account" />
+			<Item Name="Columns.PgrBudgetMonth.Caption" Value="Budget month" />
+			<Item Name="Columns.PgrBudgetValue.Caption" Value="Budget value" />
+			<Item Name="Columns.PgrCustomerName.Caption" Value="Account display name" />
+			<Item Name="Columns.PgrDeviationDate.Caption" Value="Deviation date" />
+			<Item Name="Columns.PgrDeviationValue.Caption" Value="Deviation value" />
+			<Item Name="Columns.PgrOrderIntakeDate.Caption" Value="Order intake date" />
+			<Item Name="Columns.PgrOrderIntakeValue.Caption" Value="Order intake value" />
+		</Items>
+	</Group>
+</Resources>

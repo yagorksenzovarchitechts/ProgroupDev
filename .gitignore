@@ -2,6 +2,7 @@
 /*
 !/.gitignore
 !/Pgr.*/
+!/PgrPgrReporting/
 
 data.*.json
 !*data.de-De.json*

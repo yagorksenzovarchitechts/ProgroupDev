@@ -1,0 +1,11 @@
+﻿{
+  "SqlScript": {
+    "UId": "988c3475-7201-7aa6-8565-d6c1da5e1e04",
+    "Name": "PgrVwAccountMetricSnapshot",
+    "DBEngineType": 0,
+    "InstallType": 1,
+    "ModifiedOnUtc": "\/Date(1788189938000)\/",
+    "BackwardCompatibilityConfirmed": false,
+    "DependsOn": []
+  }
+}

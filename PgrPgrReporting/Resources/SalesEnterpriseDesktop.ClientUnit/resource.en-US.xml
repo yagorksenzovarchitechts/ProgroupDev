@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.Button_978ivs9_caption.Value" Value="Create task" />
+			<Item Name="LocalizableStrings.ChartWidget_l52twdo_series_0.Value" Value="Actual (tsqm)" />
+			<Item Name="LocalizableStrings.ChartWidget_l52twdo_series_1.Value" Value="Budget (tsqm)" />
+			<Item Name="LocalizableStrings.ChartWidget_l52twdo_title.Value" Value="Top 5 Customers by Budget" />
+			<Item Name="LocalizableStrings.ChartWidget_vpvvd4s_series_0.Value" Value="Negative deviation (tsqm)" />
+			<Item Name="LocalizableStrings.ChartWidget_vpvvd4s_title.Value" Value="Top 5 Customers by Negative Deviation" />
+			<Item Name="LocalizableStrings.IndicatorWidget_1i78h71_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.IndicatorWidget_1i78h71_hint.Value" Value="Components.IndicatorWidget.Hint" />
+			<Item Name="LocalizableStrings.IndicatorWidget_1i78h71_title.Value" Value="Order intake (tsqm)" />
+			<Item Name="LocalizableStrings.IndicatorWidget_hjabhyi_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.IndicatorWidget_hjabhyi_hint.Value" Value="Components.IndicatorWidget.Hint" />
+			<Item Name="LocalizableStrings.IndicatorWidget_hjabhyi_title.Value" Value="Budget (tsqm)" />
+			<Item Name="LocalizableStrings.IndicatorWidget_w2xzqke_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.IndicatorWidget_w2xzqke_hint.Value" Value="Components.IndicatorWidget.Hint" />
+			<Item Name="LocalizableStrings.IndicatorWidget_w2xzqke_title.Value" Value="# Customers" />
+			<Item Name="LocalizableStrings.Label_gy2c3xl_caption.Value" Value="My tasks" />
+			<Item Name="LocalizableStrings.Label_ievcl1k_caption.Value" Value="Started" />
+			<Item Name="LocalizableStrings.Label_rt9u18e_caption.Value" Value="All tasks" />
+			<Item Name="LocalizableStrings.Label_u2ka648_caption.Value" Value="All planned visits" />
+			<Item Name="LocalizableStrings.Label_xibhisv_caption.Value" Value="Tasks due in the next 7 days" />
+			<Item Name="LocalizableStrings.Label_yh979bd_caption.Value" Value="Customer visits" />
+			<Item Name="LocalizableStrings.Label_yv7lboj_caption.Value" Value="Visits in the next 7 days" />
+			<Item Name="LocalizableStrings.QuickFilter_5bp9x92_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_729neyc_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_CurrentContact_config_caption.Value" Value="Current user contact" />
+			<Item Name="LocalizableStrings.QuickFilter_SalesDirector_config_caption.Value" Value="Sales Director" />
+			<Item Name="LocalizableStrings.QuickFilter_SalesManager_config_caption.Value" Value="Sales Person" />
+			<Item Name="LocalizableStrings.QuickFilter_Territory_config_caption.Value" Value="Territory" />
+			<Item Name="LocalizableStrings.QuickFilter_nflqbuc_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.TabContainer_0i53x2r_caption.Value" Value="All visits" />
+			<Item Name="LocalizableStrings.TabContainer_0zl56x2_caption.Value" Value="All tasks" />
+			<Item Name="LocalizableStrings.TabContainer_1jc1xxr_caption.Value" Value="Started" />
+			<Item Name="LocalizableStrings.TabContainer_f9urj41_caption.Value" Value="Next 7 days" />
+			<Item Name="LocalizableStrings.TabContainer_mvhf4la_caption.Value" Value="Due in next 7 days" />
+		</Items>
+	</Group>
+</Resources>

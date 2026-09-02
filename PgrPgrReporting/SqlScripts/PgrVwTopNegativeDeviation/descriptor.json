@@ -1,0 +1,11 @@
+﻿{
+  "SqlScript": {
+    "UId": "8b4650a3-2aef-9e98-547f-7edcb8450282",
+    "Name": "PgrVwTopNegativeDeviation",
+    "DBEngineType": 0,
+    "InstallType": 1,
+    "ModifiedOnUtc": "\/Date(1788190265000)\/",
+    "BackwardCompatibilityConfirmed": false,
+    "DependsOn": []
+  }
+}

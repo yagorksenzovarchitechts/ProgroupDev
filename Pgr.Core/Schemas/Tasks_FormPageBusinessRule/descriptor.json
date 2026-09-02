@@ -2,12 +2,14 @@
   "Descriptor": {
     "UId": "7cf7032c-5792-476b-92db-ff77a22226f4",
     "Name": "Tasks_FormPageBusinessRule",
-    "ModifiedOnUtc": "\/Date(1788342930976)\/",
+    "ModifiedOnUtc": "\/Date(1788342930000)\/",
     "Parent": {
       "UId": "5a12b415-7f80-4731-8c97-8283c25a46ed",
       "Name": "Tasks_FormPageBusinessRule"
     },
     "ExtendParent": true,
-    "ManagerName": "AddonSchemaManager"
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Tasks form page (Business rules)",
+    "DependsOn": []
   }
 }

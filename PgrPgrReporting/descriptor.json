@@ -1,0 +1,17 @@
+﻿{
+  "Descriptor": {
+    "UId": "79407b15-c164-4a99-9c5b-36fb13835f0d",
+    "Name": "PgrPgrReporting",
+    "Type": 1,
+    "ModifiedOnUtc": "\/Date(1787215990000)\/",
+    "Maintainer": "ProGroup",
+    "ProjectPath": "Files/PgrPgrReporting.csproj",
+    "DependsOn": [
+      {
+        "UId": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
+        "Name": "Pgr.Core",
+        "Type": 1
+      }
+    ]
+  }
+}
