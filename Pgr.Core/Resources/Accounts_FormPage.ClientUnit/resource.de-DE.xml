@@ -10,6 +10,7 @@
 			<Item Name="LocalizableStrings.Button_wzoi3mp_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.ComboBox_tuutgko_placeholder.Value" Value="Land auswählen" />
 			<Item Name="LocalizableStrings.CompetitorsAddButton_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.CompetitorsExpansionPanel_title.Value" Value="Wettbewerber" />
 			<Item Name="LocalizableStrings.CompetitorsExportDataButton_caption.Value" Value="Excel-Export" />
@@ -17,6 +18,7 @@
 			<Item Name="LocalizableStrings.CompetitorsList_caption.Value" Value="Products offered" />
 			<Item Name="LocalizableStrings.CompetitorsRefreshButton_caption.Value" Value="Aktualisieren" />
 			<Item Name="LocalizableStrings.CompetitorsSettingsButton_caption.Value" Value="Aktionen" />
+			<Item Name="LocalizableStrings.ContractsTab_caption.Value" Value="Verträge" />
 			<Item Name="LocalizableStrings.ExpansionPanel_1mbln9s_title.Value" Value="Adressen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_3jtu7p2_title.Value" Value="&#xA;SAP" />
 			<Item Name="LocalizableStrings.ExpansionPanel_4r2mr5k_title.Value" Value="Besuchsberichte" />
@@ -36,6 +38,8 @@
 			<Item Name="LocalizableStrings.LeadSettingsButton_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.MenuItem_5sivz5r_caption.Value" Value="Exportieren nach Excel" />
 			<Item Name="LocalizableStrings.MenuItem_hgmncrh_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.MultiSelect_unyiz66_label.Value" Value="Unternehmenstyp" />
+			<Item Name="LocalizableStrings.MultiSelect_unyiz66_placeholder.Value" Value="Typ auswählen" />
 			<Item Name="LocalizableStrings.OpportunityAddButton_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.OpportunityExpansionPanel_title.Value" Value="Verkaufschancen" />
 			<Item Name="LocalizableStrings.OpportunityExportDataButton_caption.Value" Value="Excel-Export" />
@@ -46,8 +50,6 @@
 			<Item Name="LocalizableStrings.Pgr369BudgetCalculationExpansionPanel_title.Value" Value="3-6-9 Budgetberechnungen" />
 			<Item Name="LocalizableStrings.Pgr369RunBtn_caption.Value" Value="3-6-9 ausführen" />
 			<Item Name="LocalizableStrings.Pgr369RunBtn_clicked_params_notificationText.Value" Value="3-6-9-Prozess wird ausgeführt" />
-			<Item Name="LocalizableStrings.PgrActual3DayOrderIntake_label.Value" Value="3-Tage-Auftragseingang" />
-			<Item Name="LocalizableStrings.PgrCurrentDailyBudget_label.Value" Value="Aktuelles Tagesbudget" />
 			<Item Name="LocalizableStrings.PgrExcludeFrom369Label.Value" Value="Von 3-6-9 ausschließen" />
 			<Item Name="LocalizableStrings.PgrSuspensionEndDateFutureError.Value" Value="Das Aussetzung-Enddatum muss nach dem heutigen Datum liegen." />
 			<Item Name="LocalizableStrings.PgrSuspensionEndDateLabel.Value" Value="Aussetzung Enddatum" />
@@ -61,9 +63,10 @@
 			<Item Name="LocalizableStrings.SalesTab_caption.Value" Value="Verkauf" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
 			<Item Name="LocalizableStrings.SearchFilter_2pozl4n_placeholder.Value" Value="Suche" />
-			<Item Name="LocalizableStrings.TabContainer_0nkic4p_caption.Value" Value="Besuchsberichte" />
+			<Item Name="LocalizableStrings.TabContainer_0nkic4p_caption.Value" Value="Aktivitäten &amp; Besuchsberichte" />
 			<Item Name="LocalizableStrings.TabContainer_Competitor_caption.Value" Value="Mitbewerber info" />
-			<Item Name="LocalizableStrings.TabContainer_Customer_caption.Value" Value="Kundennummer info" />
+			<Item Name="LocalizableStrings.TabContainer_Customer_caption.Value" Value="Kunden Info" />
+			<Item Name="LocalizableStrings.TabContainer_cyno10d_caption.Value" Value="Bonus &amp; Vereinbarungen" />
 			<Item Name="LocalizableStrings.TabContainer_rn66zaz_caption.Value" Value="Projektpreise" />
 			<Item Name="LocalizableStrings.Territory_placeholder.Value" Value="Gebiet auswählen" />
 		</Items>
