@@ -2,14 +2,8 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Unternehmen" />
-			<Item Name="Columns.AccountCategory.Caption" Value="Kategorie" />
 			<Item Name="Columns.AdditionalPhone.Caption" Value="Mobiltelefonnummer" />
-			<Item Name="Columns.Address.Caption" Value="Adresse" />
-			<Item Name="Columns.Code.Caption" Value="Code" />
-			<Item Name="Columns.Country.Caption" Value="Land" />
 			<Item Name="Columns.EmployeesNumber.Caption" Value="Anzahl Mitarbeiter" />
-			<Item Name="Columns.Name.Caption" Value="Name" />
 			<Item Name="Columns.Notes.Caption" Value="Beschreibung" />
 			<Item Name="Columns.Owner.Caption" Value="Verkaufsleiter" />
 			<Item Name="Columns.Parent.Caption" Value="Parent Account" />
@@ -64,6 +58,7 @@
 			<Item Name="Columns.PgrWorkingWidth.Caption" Value="Arbeitsbreite" />
 			<Item Name="Columns.PgrYearOfCommissioning.Caption" Value="Inbetriebnahme" />
 			<Item Name="Columns.Phone.Caption" Value="Telefonnumer" />
+			<Item Name="Columns.Territory.Caption" Value="Gebiet" />
 			<Item Name="Columns.Type.Caption" Value="Accountart" />
 			<Item Name="Columns.Web.Caption" Value="Webseites" />
 		</Items>

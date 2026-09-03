@@ -9616,6 +9616,24 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				]
 			},
 			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"ContractList",
+					"modelConfig"
+				],
+				"values": {
+					"sortingConfig": {
+						"default": [
+							{
+								"direction": "asc",
+								"columnName": "PgrContractRenewalReminderDate"
+							}
+						]
+					}
+				}
+			},
+			{
 				"operation": "remove",
 				"path": [
 					"attributes",
