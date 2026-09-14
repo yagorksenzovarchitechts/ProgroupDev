@@ -25,6 +25,7 @@
 + MetaData.Schema.D29 "null"
 + MetaData.Schema.D30 "null"
 + MetaData.Schema.D31 "null"
++ MetaData.Schema.D4 "05460c34-aef4-8314-7639-972ab17f1d27"
 - MetaData.Schema.D2.["ae0e45ca-c495-4fe7-a39d-3ab7278e1617"].E16
 - MetaData.Schema.D2.["e80190a5-03b2-4095-90f7-a193a960adee"].E16
 - MetaData.Schema.D2.["ebf6bb93-8aa6-4a01-900d-c6ea67affe21"].E16
@@ -100,6 +101,14 @@
   "E17": "PgrMetricTypeIdId",
   "E18": "PgrMetricTypeIdName"
 }
++ MetaData.Schema.D2 {
+  "UId": "05460c34-aef4-8314-7639-972ab17f1d27",
+  "A2": "PgrNumber",
+  "A3": "f8749d78-4ff8-4b84-adef-09386e7af2a7",
+  "A4": "f8749d78-4ff8-4b84-adef-09386e7af2a7",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "325a73b8-0f47-44a0-8412-7606f78003ac"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -112,7 +121,8 @@
   "5017ffc1-0c70-cee8-c014-9280ddac470d",
   "e1ea0794-bb3b-40e9-fc1b-e4fadd7a78a8",
   "c3c7c787-b3f4-7ebf-8664-a2511212e61f",
-  "385aafc1-6c35-15fb-8d50-4f3d3535cdee"
+  "385aafc1-6c35-15fb-8d50-4f3d3535cdee",
+  "05460c34-aef4-8314-7639-972ab17f1d27"
 ]
 = MetaData.Schema.D20.A2 "PgrAccountMetricValueEvents"
 + MetaData.Schema.D20.FA1 false

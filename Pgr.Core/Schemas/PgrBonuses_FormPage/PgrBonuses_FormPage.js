@@ -2,6 +2,14 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
+				"operation": "merge",
+				"name": "SaveButton",
+				"values": {
+					"size": "large",
+					"iconPosition": "only-text"
+				}
+			},
+			{
 				"operation": "remove",
 				"name": "RequeueQueueItemButton"
 			},
@@ -140,18 +148,28 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
-				"name": "PgrName",
+				"name": "ComboBox_z3bbkp0",
 				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PgrName",
-					"control": "$PgrName",
-					"labelPosition": "auto",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 1,
 						"rowSpan": 1
-					}
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrAccount_lm4afll",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrAccount_lm4afll",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"secondaryDisplayValue": "PgrWepaformName"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -159,31 +177,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
-				"name": "Input_pwn8c59",
-				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrDescription_33q24ha",
-					"control": "$PDS_PgrDescription_33q24ha",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": true,
-					"labelPosition": "auto",
-					"visible": true,
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "Input_0cfttbe",
+				"name": "ComboBox_vmjjcia",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
@@ -191,12 +185,57 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						"row": 1,
 						"rowSpan": 1
 					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrBonusType_dkvaxhc",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrBonusType_dkvaxhc",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ListAction_oiw2twp",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "ComboBox.AddNewRecord",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_vmjjcia",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Input_orip60j",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
 					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrBonusId_hrmxsue",
-					"control": "$PDS_PgrBonusId_hrmxsue",
+					"label": "$Resources.Strings.PDS_PgrAccountPgrWepaformName_sgr1s52",
+					"control": "$PDS_PgrAccountPgrWepaformName_sgr1s52",
 					"placeholder": "",
 					"tooltip": "",
-					"readonly": false,
+					"readonly": true,
 					"multiline": false,
 					"labelPosition": "auto"
 				},
@@ -211,7 +250,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
-						"row": 3,
+						"row": 2,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -248,90 +287,22 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_z3bbkp0",
+				"name": "PgrName",
 				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_PgrAccount_lm4afll",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PgrName",
+					"control": "$PgrName",
 					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_PgrAccount_lm4afll"
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 4
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_mfra0rh",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_mfra0rh_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_z3bbkp0",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "ComboBox_vmjjcia",
-				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 3,
 						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_PgrBonusType_dkvaxhc",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_PgrBonusType_dkvaxhc",
-					"visible": true,
-					"readonly": false,
-					"placeholder": ""
+					}
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 5
-			},
-			{
-				"operation": "insert",
-				"name": "ListAction_oiw2twp",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "ComboBox.AddNewRecord",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_vmjjcia",
-				"propertyName": "listActions",
-				"index": 0
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -346,11 +317,34 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"pickerType": "date",
 					"control": "$PDS_PgrStartDate_n0qastw",
 					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "Input_0cfttbe",
+				"values": {
+					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 4,
 						"rowSpan": 1
-					}
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrBonusId_hrmxsue",
+					"control": "$PDS_PgrBonusId_hrmxsue",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -381,6 +375,24 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
+				"name": "Input_pwn8c59",
+				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrDescription_33q24ha",
+					"control": "$PDS_PgrDescription_33q24ha",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": true,
+					"labelPosition": "auto",
+					"visible": true
+				},
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
 				"name": "ExpansionPanel_nggrqb0",
 				"values": {
 					"type": "crt.ExpansionPanel",
@@ -405,7 +417,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -785,7 +797,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -1316,6 +1328,11 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 								]
 							}
 						}
+					},
+					"PDS_PgrAccountPgrWepaformName_sgr1s52": {
+						"modelConfig": {
+							"path": "PDS.PgrAccountPgrWepaformName_sgr1s52"
+						}
 					}
 				}
 			},
@@ -1360,7 +1377,8 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 								"relationPath": "PDS.Id"
 							}
 						]
-					}
+					},
+					"loadingConfig": {}
 				}
 			},
 			{
@@ -1372,7 +1390,13 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"PDS": {
 						"type": "crt.EntityDataSource",
 						"config": {
-							"entitySchemaName": "PgrBonus"
+							"entitySchemaName": "PgrBonus",
+							"attributes": {
+								"PgrAccountPgrWepaformName_sgr1s52": {
+									"path": "PgrAccount.PgrWepaformName",
+									"type": "ForwardReference"
+								}
+							}
 						},
 						"scope": "page"
 					},

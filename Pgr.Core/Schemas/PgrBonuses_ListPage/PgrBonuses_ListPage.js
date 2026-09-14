@@ -3,6 +3,24 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
 				"operation": "merge",
+				"name": "AddButton",
+				"values": {
+					"caption": "#ResourceString(AddButton_caption)#",
+					"size": "large",
+					"visible": false,
+					"clickMode": "default"
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "DataImportButton",
+				"values": {
+					"caption": "#ResourceString(DataImportButton_caption)#",
+					"visible": false
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "MenuItem_ImportFromExcel",
 				"values": {
 					"clicked": {
@@ -12,6 +30,26 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						}
 					}
 				}
+			},
+			{
+				"operation": "merge",
+				"name": "ActionButton",
+				"values": {
+					"iconPosition": "left-icon",
+					"icon": "import-button-icon",
+					"clickMode": "default",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "DataTable",
+							"filters": "$Items | crt.ToCollectionFilters : 'Items' : $DataTable_SelectionState"
+						}
+					}
+				}
+			},
+			{
+				"operation": "remove",
+				"name": "MenuItem_ExportToExcel"
 			},
 			{
 				"operation": "merge",
@@ -79,7 +117,11 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"floatingEditPanel": false
 						}
 					},
-					"visible": true
+					"visible": true,
+					"selectionState": "$DataTable_SelectionState",
+					"_selectionOptions": {
+						"attribute": "DataTable_SelectionState"
+					}
 				}
 			},
 			{

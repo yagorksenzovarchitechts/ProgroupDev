@@ -5,8 +5,6 @@
 			<Item Name="Columns.Account.Caption" Value="Firma" />
 			<Item Name="Columns.Address.Caption" Value="Straße" />
 			<Item Name="Columns.AddressType.Caption" Value="Addressart" />
-			<Item Name="Columns.City.Caption" Value="Stadt" />
-			<Item Name="Columns.Country.Caption" Value="Land" />
 			<Item Name="Columns.PgrLoadingSillHeight.Caption" Value="Ladekantenhöhe" />
 			<Item Name="Columns.PgrMaxStackHeight.Caption" Value="Max. Stapelhöhe" />
 			<Item Name="Columns.PgrMaxStackWeight.Caption" Value="Max. Stapelgewicht" />

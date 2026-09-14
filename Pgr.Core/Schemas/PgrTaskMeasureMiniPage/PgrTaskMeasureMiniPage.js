@@ -97,23 +97,6 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
-				"name": "Input_oo5y19m",
-				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.ActivityDS_PgrDepartment_vv1pfz1",
-					"control": "$ActivityDS_PgrDepartment_vv1pfz1",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "above"
-				},
-				"parentName": "FlexContainer_fhm2tjd",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
 				"name": "ComboBox_kfer77j",
 				"values": {
 					"type": "crt.ComboBox",
@@ -129,7 +112,7 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				},
 				"parentName": "FlexContainer_fhm2tjd",
 				"propertyName": "items",
-				"index": 2
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -147,6 +130,29 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"parentName": "ComboBox_kfer77j",
 				"propertyName": "listActions",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_ne96wms",
+				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.ActivityDS_PgrDepartmentLookup_y2pkto2",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "above",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$ActivityDS_PgrDepartmentLookup_y2pkto2",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null
+				},
+				"parentName": "FlexContainer_fhm2tjd",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -312,11 +318,6 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 							"path": "ActivityDS.Notes"
 						}
 					},
-					"ActivityDS_PgrDepartment_vv1pfz1": {
-						"modelConfig": {
-							"path": "ActivityDS.PgrDepartment"
-						}
-					},
 					"ActivityDS_PgrAccount_9vdmdt3": {
 						"modelConfig": {
 							"path": "ActivityDS.PgrAccount"
@@ -382,6 +383,24 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 						}
 					},
 					"ActivityDS_PgrCorrectiveMeasureAction_6fsjxxk_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"ActivityDS_PgrDepartmentLookup_y2pkto2": {
+						"modelConfig": {
+							"path": "ActivityDS.PgrDepartmentLookup"
+						}
+					},
+					"ActivityDS_PgrDepartmentLookup_y2pkto2_List": {
 						"isCollection": true,
 						"modelConfig": {
 							"sortingConfig": {

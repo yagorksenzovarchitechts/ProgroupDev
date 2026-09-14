@@ -142,7 +142,10 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"values": {
 					"underlineSelectedTabColor": "crt-color-coral",
 					"visible": true,
-					"stretch": true
+					"stretch": true,
+					"selectedTab": {
+						"value": "GeneralInfoTab"
+					}
 				}
 			},
 			{
@@ -2218,6 +2221,1201 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"parentName": "GridContainer_dzfwyhp",
 				"propertyName": "items",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "TabContainer_c5ul5fu",
+				"values": {
+					"type": "crt.TabContainer",
+					"items": [],
+					"caption": "#ResourceString(TabContainer_c5ul5fu_caption)#",
+					"iconPosition": "only-text",
+					"visible": true
+				},
+				"parentName": "Tabs",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_ufsy3y4",
+				"values": {
+					"type": "crt.GridContainer",
+					"items": [],
+					"rows": "minmax(32px, max-content)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": null
+					},
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
+				},
+				"parentName": "TabContainer_c5ul5fu",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Timeline_3he5r0h",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.Timeline",
+					"items": [],
+					"tools": [],
+					"customFilters": [],
+					"hideTools": false,
+					"masterSchemaId": "$Id",
+					"caption": "#ResourceString(Timeline_3he5r0h_caption)#",
+					"label": "#ResourceString(Timeline_3he5r0h_label)#",
+					"filters": [],
+					"masterEntitySchemaName": "Contact",
+					"filterValues": "$Timeline_3he5r0h_AllTileFilters"
+				},
+				"parentName": "GridContainer_ufsy3y4",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineTile_AIInsight_7n98584",
+				"values": {
+					"type": "crt.TimelineTile",
+					"classes": [
+						"view-element"
+					],
+					"linkedColumn": "CreatedBy",
+					"sortedByColumn": "CreatedOn",
+					"ownerColumn": "CreatedBy",
+					"iconId": null,
+					"data": {
+						"columns": [
+							{
+								"columnName": "CreatedOn",
+								"columnLayout": null
+							},
+							{
+								"columnName": "Name",
+								"columnLayout": null
+							},
+							{
+								"columnName": "Description",
+								"columnLayout": {
+									"column": 1,
+									"row": 2,
+									"colSpan": 12,
+									"rowSpan": 1
+								}
+							}
+						],
+						"schemaName": "AIInsight",
+						"schemaType": null,
+						"isDefault": true,
+						"uId": "04184833-0a7d-4c43-a6da-fcd8bdd098c5",
+						"filter": null
+					},
+					"filters": "$TimelineTile_AIInsight_7n98584_Items"
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineTile_Email_34ye0et",
+				"values": {
+					"type": "crt.TimelineTile",
+					"classes": [
+						"view-element"
+					],
+					"linkedColumn": "CreatedBy",
+					"sortedByColumn": "SendDate",
+					"ownerColumn": "SenderContact",
+					"iconId": null,
+					"data": {
+						"columns": [
+							{
+								"columnName": "Title",
+								"columnLayout": {
+									"column": 1,
+									"row": 1,
+									"colSpan": 12,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "Body",
+								"columnLayout": {
+									"column": 1,
+									"row": 2,
+									"colSpan": 12,
+									"rowSpan": 2
+								}
+							}
+						],
+						"schemaName": "Activity",
+						"schemaType": "Email",
+						"isDefault": true,
+						"uId": "c449d832-a4cc-4b01-b9d5-8a12c42a9f89",
+						"filter": {
+							"columnName": "Type",
+							"columnValue": "e2831dec-cfc0-df11-b00f-001d60e938c6",
+							"comparisonType": 3
+						}
+					},
+					"filters": "$TimelineTile_Email_34ye0et_Items"
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineTile_Activity_jmg3xc1",
+				"values": {
+					"type": "crt.TimelineTile",
+					"classes": [
+						"view-element"
+					],
+					"linkedColumn": "CreatedBy",
+					"sortedByColumn": "CreatedOn",
+					"ownerColumn": "Owner",
+					"iconId": null,
+					"data": {
+						"columns": [
+							{
+								"columnName": "Title",
+								"columnLayout": null
+							},
+							{
+								"columnName": "Status",
+								"columnLayout": {
+									"column": 1,
+									"row": 1,
+									"colSpan": 6,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "DetailedResult",
+								"columnLayout": {
+									"column": 1,
+									"row": 2,
+									"colSpan": 6,
+									"rowSpan": 1
+								}
+							}
+						],
+						"schemaName": "Activity",
+						"schemaType": "Activity",
+						"isDefault": true,
+						"uId": "c449d832-a4cc-4b01-b9d5-8a12c42a9f89",
+						"filter": {
+							"columnName": "Type",
+							"columnValue": "e2831dec-cfc0-df11-b00f-001d60e938c6",
+							"comparisonType": 4
+						}
+					},
+					"filters": "$TimelineTile_Activity_jmg3xc1_Items"
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineTile_Call_8cvfhvx",
+				"values": {
+					"type": "crt.TimelineTile",
+					"classes": [
+						"view-element"
+					],
+					"linkedColumn": "CreatedBy",
+					"sortedByColumn": "CreatedOn",
+					"ownerColumn": "Contact",
+					"iconId": null,
+					"data": {
+						"columns": [
+							{
+								"columnName": "Direction",
+								"columnLayout": {
+									"column": 1,
+									"row": 1,
+									"colSpan": 4,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "StartDate",
+								"columnLayout": {
+									"column": 5,
+									"row": 1,
+									"colSpan": 4,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "EndDate",
+								"columnLayout": {
+									"column": 9,
+									"row": 1,
+									"colSpan": 4,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "Duration",
+								"columnLayout": {
+									"column": 13,
+									"row": 1,
+									"colSpan": 4,
+									"rowSpan": 1
+								}
+							}
+						],
+						"schemaName": "Call",
+						"schemaType": null,
+						"isDefault": true,
+						"uId": "2f81fa05-11ae-400d-8e07-5ef6a620d1ad",
+						"filter": null
+					},
+					"filters": "$TimelineTile_Call_8cvfhvx_Items"
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineTile_Case_208t5cu",
+				"values": {
+					"type": "crt.TimelineTile",
+					"classes": [
+						"view-element"
+					],
+					"linkedColumn": "CreatedBy",
+					"sortedByColumn": "RegisteredOn",
+					"ownerColumn": "Owner",
+					"iconId": null,
+					"data": {
+						"columns": [
+							{
+								"columnName": "Category",
+								"columnLayout": {
+									"column": 1,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "Priority",
+								"columnLayout": {
+									"column": 4,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "Status",
+								"columnLayout": {
+									"column": 7,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "SolutionDate",
+								"columnLayout": {
+									"column": 10,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "Symptoms",
+								"columnLayout": {
+									"column": 1,
+									"row": 2,
+									"colSpan": 12,
+									"rowSpan": 1
+								}
+							}
+						],
+						"schemaName": "Case",
+						"schemaType": null,
+						"isDefault": true,
+						"uId": "117d32f9-8275-4534-8411-1c66115ce9cd",
+						"filter": null
+					},
+					"filters": "$TimelineTile_Case_208t5cu_Items"
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineTile_Contract_6t646q5",
+				"values": {
+					"type": "crt.TimelineTile",
+					"classes": [
+						"view-element"
+					],
+					"linkedColumn": "CreatedBy",
+					"sortedByColumn": "CreatedOn",
+					"ownerColumn": "CreatedBy",
+					"iconId": null,
+					"data": {
+						"columns": [
+							{
+								"columnName": "CreatedOn",
+								"columnLayout": null
+							},
+							{
+								"columnName": "Number",
+								"columnLayout": null
+							},
+							{
+								"columnName": "Account",
+								"columnLayout": {
+									"column": 1,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "Contact",
+								"columnLayout": {
+									"column": 4,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "State",
+								"columnLayout": {
+									"column": 7,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "StartDate",
+								"columnLayout": {
+									"column": 1,
+									"row": 2,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "EndDate",
+								"columnLayout": {
+									"column": 2,
+									"row": 2,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							}
+						],
+						"schemaName": "Contract",
+						"schemaType": null,
+						"isDefault": true,
+						"uId": "897be3e4-0333-467d-88e2-b7a945c0d810",
+						"filter": null
+					},
+					"filters": "$TimelineTile_Contract_6t646q5_Items"
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineTile_Document_g8gvxke",
+				"values": {
+					"type": "crt.TimelineTile",
+					"classes": [
+						"view-element"
+					],
+					"linkedColumn": "CreatedBy",
+					"sortedByColumn": "CreatedOn",
+					"ownerColumn": "CreatedBy",
+					"iconId": null,
+					"data": {
+						"columns": [
+							{
+								"columnName": "CreatedOn",
+								"columnLayout": null
+							},
+							{
+								"columnName": "Number",
+								"columnLayout": null
+							},
+							{
+								"columnName": "Type",
+								"columnLayout": {
+									"column": 1,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "State",
+								"columnLayout": {
+									"column": 4,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							}
+						],
+						"schemaName": "Document",
+						"schemaType": null,
+						"isDefault": true,
+						"uId": "8b33b6b2-19f7-4222-9161-b4054b3fbb09",
+						"filter": null
+					},
+					"filters": "$TimelineTile_Document_g8gvxke_Items"
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineTile_Invoice_40frp9u",
+				"values": {
+					"type": "crt.TimelineTile",
+					"classes": [
+						"view-element"
+					],
+					"linkedColumn": "CreatedBy",
+					"sortedByColumn": "CreatedOn",
+					"ownerColumn": "CreatedBy",
+					"iconId": null,
+					"data": {
+						"columns": [
+							{
+								"columnName": "CreatedOn",
+								"columnLayout": null
+							},
+							{
+								"columnName": "Number",
+								"columnLayout": null
+							},
+							{
+								"columnName": "Account",
+								"columnLayout": {
+									"column": 1,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "Contact",
+								"columnLayout": {
+									"column": 4,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "PaymentStatus",
+								"columnLayout": {
+									"column": 7,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "Amount",
+								"columnLayout": {
+									"column": 1,
+									"row": 2,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "DueDate",
+								"columnLayout": {
+									"column": 4,
+									"row": 2,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							}
+						],
+						"schemaName": "Invoice",
+						"schemaType": null,
+						"isDefault": true,
+						"uId": "bfb313dd-bb55-4e1b-8e42-3d346e0da7c5",
+						"filter": null
+					},
+					"filters": "$TimelineTile_Invoice_40frp9u_Items"
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "items",
+				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineTile_Lead_17ib00b",
+				"values": {
+					"type": "crt.TimelineTile",
+					"classes": [
+						"view-element"
+					],
+					"linkedColumn": "CreatedBy",
+					"sortedByColumn": "CreatedOn",
+					"ownerColumn": "CreatedBy",
+					"iconId": null,
+					"data": {
+						"columns": [
+							{
+								"columnName": "CreatedOn",
+								"columnLayout": null
+							},
+							{
+								"columnName": "LeadName",
+								"columnLayout": null
+							},
+							{
+								"columnName": "QualifiedAccount",
+								"columnLayout": {
+									"column": 1,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "QualifiedContact",
+								"columnLayout": {
+									"column": 4,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "QualifyStatus",
+								"columnLayout": {
+									"column": 1,
+									"row": 2,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							}
+						],
+						"schemaName": "Lead",
+						"schemaType": null,
+						"isDefault": true,
+						"uId": "41af89e9-750b-4ebb-8cac-ff39b64841ec",
+						"filter": null
+					},
+					"filters": "$TimelineTile_Lead_17ib00b_Items"
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "items",
+				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineTile_OmniChat_dqrzhn4",
+				"values": {
+					"type": "crt.TimelineTile",
+					"classes": [
+						"view-element"
+					],
+					"linkedColumn": "CreatedBy",
+					"sortedByColumn": "CreatedOn",
+					"ownerColumn": "Contact",
+					"iconId": null,
+					"data": {
+						"columns": [
+							{
+								"columnName": "CreatedOn",
+								"columnLayout": null
+							},
+							{
+								"columnName": "Name",
+								"columnLayout": null
+							}
+						],
+						"schemaName": "OmniChat",
+						"schemaType": null,
+						"isDefault": true,
+						"uId": "af1f685c-315b-4b44-a957-c5094417a57a",
+						"filter": null
+					},
+					"filters": "$TimelineTile_OmniChat_dqrzhn4_Items"
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "items",
+				"index": 9
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineTile_Opportunity_98t5jza",
+				"values": {
+					"type": "crt.TimelineTile",
+					"classes": [
+						"view-element"
+					],
+					"linkedColumn": "CreatedBy",
+					"sortedByColumn": "CreatedOn",
+					"ownerColumn": "CreatedBy",
+					"iconId": null,
+					"data": {
+						"columns": [
+							{
+								"columnName": "CreatedOn",
+								"columnLayout": null
+							},
+							{
+								"columnName": "Title",
+								"columnLayout": null
+							},
+							{
+								"columnName": "Account",
+								"columnLayout": {
+									"column": 1,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "Contact",
+								"columnLayout": {
+									"column": 4,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "Amount",
+								"columnLayout": {
+									"column": 1,
+									"row": 2,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "DueDate",
+								"columnLayout": {
+									"column": 4,
+									"row": 2,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							}
+						],
+						"schemaName": "Opportunity",
+						"schemaType": null,
+						"isDefault": true,
+						"uId": "ae46fb87-c02c-4ae8-ad31-a923cdd994cf",
+						"filter": null
+					},
+					"filters": "$TimelineTile_Opportunity_98t5jza_Items"
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "items",
+				"index": 10
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineTile_Order_v658o88",
+				"values": {
+					"type": "crt.TimelineTile",
+					"classes": [
+						"view-element"
+					],
+					"linkedColumn": "CreatedBy",
+					"sortedByColumn": "CreatedOn",
+					"ownerColumn": "CreatedBy",
+					"iconId": null,
+					"data": {
+						"columns": [
+							{
+								"columnName": "CreatedOn",
+								"columnLayout": null
+							},
+							{
+								"columnName": "Number",
+								"columnLayout": null
+							},
+							{
+								"columnName": "Account",
+								"columnLayout": {
+									"column": 1,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "Contact",
+								"columnLayout": {
+									"column": 4,
+									"row": 1,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "Status",
+								"columnLayout": {
+									"column": 1,
+									"row": 2,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							},
+							{
+								"columnName": "Amount",
+								"columnLayout": {
+									"column": 4,
+									"row": 2,
+									"colSpan": 3,
+									"rowSpan": 1
+								}
+							}
+						],
+						"schemaName": "Order",
+						"schemaType": null,
+						"isDefault": true,
+						"uId": "80294582-06b5-4faa-a85f-3323e5536b71",
+						"filter": null
+					},
+					"filters": "$TimelineTile_Order_v658o88_Items"
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "items",
+				"index": 11
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineTile_SysFile_vdtgf1m",
+				"values": {
+					"type": "crt.TimelineTile",
+					"classes": [
+						"view-element"
+					],
+					"sortedByColumn": "CreatedOn",
+					"data": {
+						"schemaType": "SysFile",
+						"isDefault": true
+					}
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "items",
+				"index": 12
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineTile_Feed_u6mzz4c",
+				"values": {
+					"type": "crt.TimelineTile",
+					"classes": [
+						"view-element"
+					],
+					"sortedByColumn": "CreatedOn",
+					"data": {
+						"schemaType": "Feed",
+						"isDefault": true
+					}
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "items",
+				"index": 13
+			},
+			{
+				"operation": "insert",
+				"name": "MessageComposerSelector_pin5a5y",
+				"values": {
+					"type": "crt.MessageComposerSelector",
+					"items": [],
+					"classes": [
+						"view-element"
+					]
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FeedComposer_3q0qhpi",
+				"values": {
+					"type": "crt.FeedComposer",
+					"classes": [
+						"view-element"
+					],
+					"sortedByColumn": "CreatedOn",
+					"data": {
+						"uId": "6d006667-3496-4e2d-adc0-3a42648dd97b",
+						"schemaType": "Feed",
+						"caption": "Feed",
+						"sortedByColumn": "CreatedOn",
+						"typeName": "crt.FeedComposer",
+						"icon": "feed-composer-icon"
+					},
+					"feedType": "Record",
+					"primaryColumnValue": "$Id",
+					"cardState": "$CardState",
+					"entitySchemaName": "Contact",
+					"dataSourceName": "PDS"
+				},
+				"parentName": "MessageComposerSelector_pin5a5y",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "EmailComposer_1if7xm4",
+				"values": {
+					"type": "crt.EmailComposer",
+					"classes": [
+						"view-element"
+					],
+					"sortedByColumn": "CreatedOn",
+					"data": {
+						"uId": "75aadc65-a834-42d0-b880-fac9bdee4c86",
+						"schemaType": "Email",
+						"caption": "Email",
+						"sortedByColumn": "CreatedOn",
+						"typeName": "crt.EmailComposer",
+						"icon": "email-composer-icon"
+					},
+					"recordId": "$Id",
+					"defaultSenderRequest": "crt.DefaultSenderComposerRequest",
+					"entitySchemaName": "Contact"
+				},
+				"parentName": "MessageComposerSelector_pin5a5y",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ChatComposer_z6vmu8j",
+				"values": {
+					"type": "crt.ChatComposer",
+					"classes": [
+						"view-element"
+					],
+					"sortedByColumn": "CreatedOn",
+					"data": {
+						"uId": "a1c2d3e4-f5a6-47b8-c9d0-e1f2a3b4c5d6",
+						"schemaType": "Telegram",
+						"caption": "Telegram",
+						"sortedByColumn": "CreatedOn",
+						"typeName": "crt.ChatComposer",
+						"icon": "telegram-composer-icon"
+					},
+					"items": [],
+					"providerId": "$ChatComposer_z6vmu8j_ProviderId",
+					"selectedChannelSchemaType": "$ChatComposer_z6vmu8j_SelectedChannelSchemaType",
+					"selectedChannelId": "$ChatComposer_z6vmu8j_SelectedChannelId",
+					"selectedContactId": "$ChatComposer_z6vmu8j_SelectedContactId",
+					"channels": "$ChatComposer_z6vmu8j_Channels",
+					"sendersChannels": "$ChatComposer_z6vmu8j_ActiveChannels",
+					"recipientContacts": "$ChatComposer_z6vmu8j_RecipientContacts",
+					"chatInput": "$OutboundChatInput",
+					"filesToUpload": "$FilesToUpload",
+					"selectedChannelIdChange": {
+						"request": "crt.ChangeViewModelAttributeValueRequest",
+						"params": {
+							"attributeName": "ChatComposer_z6vmu8j_SelectedChannelId",
+							"attributeValue": "@event"
+						}
+					},
+					"selectedContactIdChange": {
+						"request": "crt.ChangeViewModelAttributeValueRequest",
+						"params": {
+							"attributeName": "ChatComposer_z6vmu8j_SelectedContactId",
+							"attributeValue": "@event"
+						}
+					},
+					"chatId": "$ChatComposer_z6vmu8j_ChatId",
+					"chatIdChange": {
+						"request": "crt.ChangeViewModelAttributeValueRequest",
+						"params": {
+							"attributeName": "ChatComposer_z6vmu8j_ChatId",
+							"attributeValue": "@event"
+						}
+					},
+					"editorReadonlyChange": {
+						"request": "crt.ChangeViewModelAttributeValueRequest",
+						"params": {
+							"attributeName": "OutboundChatInputReadonly",
+							"attributeValue": "@event"
+						}
+					},
+					"editorPlaceholderKeyChange": {
+						"request": "crt.ChangeViewModelAttributeValueRequest",
+						"params": {
+							"attributeName": "OutboundChatReadonlyPlaceholderKey",
+							"attributeValue": "@event"
+						}
+					},
+					"editorTooltipChange": {
+						"request": "crt.ChangeViewModelAttributeValueRequest",
+						"params": {
+							"attributeName": "OutboundChatEditorTooltip",
+							"attributeValue": "@event"
+						}
+					},
+					"sendDisabledChange": {
+						"request": "crt.ChangeViewModelAttributeValueRequest",
+						"params": {
+							"attributeName": "OutboundChatInputDisabled",
+							"attributeValue": "@event"
+						}
+					},
+					"messageInputDisabledChange": {
+						"request": "crt.ChangeViewModelAttributeValueRequest",
+						"params": {
+							"attributeName": "OutboundChatMessageInputDisabled",
+							"attributeValue": "@event"
+						}
+					},
+					"templateSelectDisabledChange": {
+						"request": "crt.ChangeViewModelAttributeValueRequest",
+						"params": {
+							"attributeName": "OutboundChatTemplateSelectDisabled",
+							"attributeValue": "@event"
+						}
+					},
+					"chatInputChange": {
+						"request": "crt.ChangeViewModelAttributeValueRequest",
+						"params": {
+							"attributeName": "OutboundChatInput",
+							"attributeValue": "@event"
+						}
+					},
+					"filesToUploadChange": {
+						"request": "crt.ChangeViewModelAttributeValueRequest",
+						"params": {
+							"attributeName": "FilesToUpload",
+							"attributeValue": "@event"
+						}
+					},
+					"recordIdDataSourceName": "PDS",
+					"sendMessage": {
+						"request": "crt.SendOutboundChatRequest",
+						"params": {
+							"composerName": "ChatComposer_z6vmu8j",
+							"recordIdDataSourceName": "PDS"
+						}
+					}
+				},
+				"parentName": "MessageComposerSelector_pin5a5y",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "OutboundChat_EditorBody",
+				"values": {
+					"type": "crt.MessageEditorBody",
+					"toolbarItems": [],
+					"inputs": [],
+					"chatInput": "$OutboundChatInput",
+					"isDisabled": "$OutboundChatInputDisabled",
+					"attachments": "$FilesToUpload",
+					"isFileUploadEnabled": "$OutboundIsFileUploadEnabled",
+					"editorTooltip": "$OutboundChatEditorTooltip",
+					"sendMessage": {
+						"request": "crt.SendOutboundChatRequest",
+						"params": {
+							"composerName": "ChatComposer_z6vmu8j",
+							"recordIdDataSourceName": "PDS"
+						}
+					}
+				},
+				"parentName": "ChatComposer_z6vmu8j",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "OutboundChat_AttachFileButton",
+				"values": {
+					"type": "crt.Button",
+					"icon": "clip-button-icon",
+					"size": "small",
+					"iconPosition": "only-icon",
+					"clicked": {
+						"request": "crt.SelectChatFilesRequest"
+					},
+					"visible": "$OutboundIsFileUploadEnabled",
+					"disabled": "$OutboundChatInputDisabled"
+				},
+				"parentName": "OutboundChat_EditorBody",
+				"propertyName": "toolbarItems",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "OutboundChat_EmojiSelect",
+				"values": {
+					"type": "crt.EmojiSelect",
+					"chatInput": "$OutboundChatInput",
+					"chatId": "$ChatComposer_z6vmu8j_ChatId",
+					"chatInputChange": {
+						"request": "crt.ChangeViewModelAttributeValueRequest",
+						"params": {
+							"attributeName": "OutboundChatInput",
+							"attributeValue": "@event"
+						}
+					},
+					"disabled": "$OutboundChatInputDisabled"
+				},
+				"parentName": "OutboundChat_EditorBody",
+				"propertyName": "toolbarItems",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "OutboundChat_TemplateSelect",
+				"values": {
+					"type": "crt.TemplateSelect",
+					"disabled": "$OutboundChatTemplateSelectDisabled",
+					"chatInput": "$OutboundChatInput",
+					"chatId": "$ChatComposer_z6vmu8j_ChatId",
+					"editorDisabled": "$OutboundChatInputDisabled",
+					"chatInputChange": {
+						"request": "crt.ChangeViewModelAttributeValueRequest",
+						"params": {
+							"attributeName": "OutboundChatInput",
+							"attributeValue": "@event"
+						}
+					}
+				},
+				"parentName": "OutboundChat_EditorBody",
+				"propertyName": "toolbarItems",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "OutboundChat_EditorInput",
+				"values": {
+					"type": "crt.MessageEditorInput",
+					"inputMode": "text",
+					"chatInput": "$OutboundChatInput",
+					"attachments": "$FilesToUpload",
+					"isFileUploadEnabled": "$OutboundIsFileUploadEnabled",
+					"isDisabled": "$OutboundChatMessageInputDisabled",
+					"readonly": "$OutboundChatInputReadonly",
+					"readonlyPlaceholderKey": "$OutboundChatReadonlyPlaceholderKey",
+					"chatInputChange": {
+						"request": "crt.ChangeViewModelAttributeValueRequest",
+						"params": {
+							"attributeName": "OutboundChatInput",
+							"attributeValue": "@event"
+						}
+					},
+					"sendMessage": {
+						"request": "crt.SendOutboundChatRequest",
+						"params": {
+							"composerName": "ChatComposer_z6vmu8j",
+							"recordIdDataSourceName": "PDS"
+						}
+					}
+				},
+				"parentName": "OutboundChat_EditorBody",
+				"propertyName": "inputs",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "TimelineFilterContainer_dtu222y",
+				"values": {
+					"type": "crt.FlexContainer",
+					"items": [],
+					"classes": [],
+					"fitContent": true,
+					"direction": "row"
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "customFilters",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Timeline_3he5r0h_TimelineFilter_Entity",
+				"values": {
+					"type": "TimelineFilter_Entity",
+					"visible": true
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "filters",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Timeline_3he5r0h_TimelineFilter_Date",
+				"values": {
+					"type": "TimelineFilter_Date",
+					"visible": true
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "filters",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Timeline_3he5r0h_TimelineFilter_Owner",
+				"values": {
+					"type": "TimelineFilter_Owner",
+					"visible": true
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "filters",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "Timeline_3he5r0h_TimelineFilter_SystemMessages",
+				"values": {
+					"type": "TimelineFilter_SystemMessages",
+					"visible": true
+				},
+				"parentName": "Timeline_3he5r0h",
+				"propertyName": "filters",
+				"index": 3
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -2590,6 +3788,92 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"modelConfig": {
 							"path": "PDS.BirthDate"
 						}
+					},
+					"OutboundChatInput": {
+						"value": ""
+					},
+					"OutboundChatInputDisabled": {
+						"value": false
+					},
+					"OutboundChatMessageInputDisabled": {
+						"value": false
+					},
+					"OutboundChatInputReadonly": {
+						"value": false
+					},
+					"OutboundChatReadonlyPlaceholderKey": {
+						"value": ""
+					},
+					"OutboundChatEditorTooltip": {
+						"value": null
+					},
+					"OutboundChatTemplateSelectDisabled": {
+						"value": false
+					},
+					"FilesToUpload": {
+						"value": []
+					},
+					"OutboundIsFileUploadEnabled": {
+						"value": true
+					},
+					"ChatComposer_z6vmu8j_SelectedChannelId": {
+						"value": ""
+					},
+					"ChatComposer_z6vmu8j_SelectedContactId": {
+						"value": ""
+					},
+					"ChatComposer_z6vmu8j_ChatId": {
+						"value": ""
+					},
+					"ChatComposer_z6vmu8j_Channels": {
+						"value": [
+							{
+								"schemaType": "Telegram",
+								"caption": "Telegram",
+								"icon": "telegram-composer-icon",
+								"providerId": "645170ab-c67a-4dcc-9def-c0e5236bdfe0"
+							},
+							{
+								"schemaType": "FacebookMessenger",
+								"caption": "Facebook messenger",
+								"icon": "messenger-composer-icon",
+								"providerId": "50491c6c-d82b-4b86-b38c-99262d11a5ac"
+							},
+							{
+								"schemaType": "SMS",
+								"caption": "SMS",
+								"icon": "sms-composer-icon",
+								"providerId": "21af0484-eee0-4f61-8822-f8789838ba66"
+							},
+							{
+								"schemaType": "WhatsApp",
+								"caption": "WhatsApp",
+								"icon": "whatsapp-composer-icon",
+								"providerId": "1398dc73-b428-4e21-b97a-c1bb6b4bc621"
+							}
+						]
+					},
+					"ChatComposer_z6vmu8j_SelectedChannelSchemaType": {
+						"value": "Telegram"
+					},
+					"ChatComposer_z6vmu8j_ProviderId": {
+						"from": [
+							"ChatComposer_z6vmu8j_SelectedChannelSchemaType",
+							"ChatComposer_z6vmu8j_Channels"
+						],
+						"converter": "crt.ToProviderIdBySchemaType"
+					},
+					"ChatComposer_z6vmu8j_ActiveChannels": {
+						"from": "ChatComposer_z6vmu8j_ProviderId",
+						"converter": "crt.ToActiveChannelsByProvider"
+					},
+					"ChatComposer_z6vmu8j_RecipientContacts": {
+						"from": "ChatComposer_z6vmu8j_ProviderId",
+						"converter": "crt.ToRecipientsByProvider"
+					},
+					"Timeline_3he5r0h_AllTileFilters": {
+						"from": [],
+						"converter": "crt.ToTileFilterGroup"
 					}
 				}
 			},
@@ -2897,6 +4181,90 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 									"path": "Priority"
 								}
 							}
+						}
+					},
+					"TimelineTile_AIInsight_7n98584DS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "AIInsight"
+						}
+					},
+					"TimelineTile_Email_34ye0etDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "Activity"
+						}
+					},
+					"TimelineTile_Activity_jmg3xc1DS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "Activity"
+						}
+					},
+					"TimelineTile_Call_8cvfhvxDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "Call"
+						}
+					},
+					"TimelineTile_Case_208t5cuDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "Case"
+						}
+					},
+					"TimelineTile_Contract_6t646q5DS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "Contract"
+						}
+					},
+					"TimelineTile_Document_g8gvxkeDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "Document"
+						}
+					},
+					"TimelineTile_Invoice_40frp9uDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "Invoice"
+						}
+					},
+					"TimelineTile_Lead_17ib00bDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "Lead"
+						}
+					},
+					"TimelineTile_OmniChat_dqrzhn4DS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "OmniChat"
+						}
+					},
+					"TimelineTile_Opportunity_98t5jzaDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "Opportunity"
+						}
+					},
+					"TimelineTile_Order_v658o88DS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "Order"
 						}
 					}
 				}

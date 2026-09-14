@@ -192,7 +192,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"name": "AddressExpansionPanel",
 				"parentName": "TabContainer_Competitor",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "merge",
@@ -284,6 +284,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"name": "ContactsExpansionPanel",
 				"values": {
 					"toggleType": "material",
+					"expanded": false,
 					"alignItems": "stretch"
 				}
 			},
@@ -403,7 +404,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"dataValueType": 28,
 							"width": 489
 						}
-					]
+					],
+					"visible": true,
+					"fitContent": true
 				}
 			},
 			{
@@ -517,23 +520,60 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
-				"name": "MultiSelect_unyiz66",
+				"name": "FlexContainer_AccountTypeBooleans",
 				"values": {
-					"type": "crt.MultiSelect",
-					"label": "#ResourceString(MultiSelect_unyiz66_label)#",
-					"recordId": "$Id",
-					"recordRelationColumnName": "PgrAccount",
-					"selectSchemaName": "PgrAccountTypesInAccount",
-					"selectColumnName": "PgrAccountType",
-					"visible": true,
-					"labelPosition": "auto",
-					"placeholder": "#ResourceString(MultiSelect_unyiz66_placeholder)#",
-					"tooltip": "",
-					"required": false
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true,
+					"visible": false
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
 				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "Checkbox_uz0j0d7",
+				"values": {
+					"type": "crt.Checkbox",
+					"value": true,
+					"disabled": false,
+					"inversed": false,
+					"label": "$Resources.Strings.PDS_PgrIsCustomer_tquys6s",
+					"ariaLabel": "",
+					"labelPosition": "above",
+					"tooltip": "",
+					"control": "$PDS_PgrIsCustomer_tquys6s",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "FlexContainer_AccountTypeBooleans",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Checkbox_j2as9hc",
+				"values": {
+					"type": "crt.Checkbox",
+					"value": true,
+					"disabled": false,
+					"inversed": false,
+					"label": "$Resources.Strings.PDS_PgrIsCompetitor_4mi43f2",
+					"ariaLabel": "",
+					"labelPosition": "above",
+					"tooltip": "",
+					"control": "$PDS_PgrIsCompetitor_4mi43f2",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "FlexContainer_AccountTypeBooleans",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -604,6 +644,213 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
 				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_yr8wbxf",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "primary",
+					"borderRadius": "medium",
+					"padding": {
+						"top": "medium",
+						"bottom": "medium",
+						"right": "medium",
+						"left": "medium"
+					}
+				},
+				"parentName": "SideContainer",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "Label_5vawjee",
+				"values": {
+					"type": "crt.Label",
+					"caption": "#MacrosTemplateString(#ResourceString(Label_5vawjee_caption)#)#",
+					"labelType": "headline-3",
+					"labelThickness": "default",
+					"labelEllipsis": false,
+					"labelColor": "auto",
+					"labelBackgroundColor": "transparent",
+					"labelTextAlign": "start",
+					"headingLevel": "label",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"visible": true
+				},
+				"parentName": "GridContainer_yr8wbxf",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "IndicatorWidget_4cj4zub",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.IndicatorWidget",
+					"config": {
+						"title": "#ResourceString(IndicatorWidget_4cj4zub_title)#",
+						"theme": "without-fill",
+						"layout": {
+							"color": "dark-blue",
+							"border": {
+								"hidden": true
+							}
+						},
+						"text": {
+							"template": "#ResourceString(IndicatorWidget_4cj4zub_config_text_template)#",
+							"metricMacros": "{0}",
+							"labelPosition": "above-under",
+							"fontSizeMode": "medium"
+						},
+						"data": {
+							"formatting": {
+								"type": "number",
+								"decimalPrecision": 0,
+								"decimalSeparator": ".",
+								"thousandSeparator": ","
+							},
+							"providing": {
+								"attribute": "IndicatorWidget_4cj4zub_Data",
+								"schemaName": "PgrVwAccountMetricSnapshot",
+								"filters": null,
+								"aggregation": {
+									"column": {
+										"orderDirection": 0,
+										"orderPosition": -1,
+										"isVisible": true,
+										"expression": {
+											"expressionType": 1,
+											"functionArgument": {
+												"expressionType": 0,
+												"columnPath": "PgrBudgetValue"
+											},
+											"functionType": 2,
+											"aggregationType": 5,
+											"aggregationEvalType": 0
+										}
+									}
+								},
+								"dependencies": [
+									{
+										"attributePath": "PgrAccount",
+										"relationPath": "PDS.Id"
+									}
+								]
+							}
+						},
+						"comparison": {
+							"type": null,
+							"text": ""
+						},
+						"hint": "#ResourceString(IndicatorWidget_4cj4zub_hint)#"
+					},
+					"visible": true
+				},
+				"parentName": "GridContainer_yr8wbxf",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "IndicatorWidget_8lgvs2m",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"rowSpan": 1,
+						"row": 3
+					},
+					"type": "crt.IndicatorWidget",
+					"config": {
+						"title": "#ResourceString(IndicatorWidget_8lgvs2m_title)#",
+						"theme": "without-fill",
+						"layout": {
+							"color": "dark-blue",
+							"border": {
+								"hidden": true
+							}
+						},
+						"text": {
+							"template": "#ResourceString(IndicatorWidget_8lgvs2m_config_text_template)#",
+							"metricMacros": "{0}",
+							"labelPosition": "before-after",
+							"fontSizeMode": "extra-small"
+						},
+						"data": {
+							"formatting": {
+								"type": "datetime",
+								"date": {
+									"display": true
+								},
+								"time": {
+									"display": false
+								}
+							},
+							"providing": {
+								"attribute": "IndicatorWidget_8lgvs2m_Data",
+								"schemaName": "PgrVwAccountMetricSnapshot",
+								"filters": null,
+								"aggregation": {
+									"column": {
+										"orderDirection": 0,
+										"orderPosition": -1,
+										"isVisible": true,
+										"expression": {
+											"expressionType": 1,
+											"functionArgument": {
+												"expressionType": 0,
+												"columnPath": "PgrBudgetMonth"
+											},
+											"functionType": 2,
+											"aggregationType": 5,
+											"aggregationEvalType": 0
+										}
+									}
+								},
+								"dependencies": [
+									{
+										"attributePath": "PgrAccount",
+										"relationPath": "PDS.Id"
+									}
+								]
+							}
+						},
+						"comparison": {
+							"type": null,
+							"text": ""
+						},
+						"hint": "#ResourceString(IndicatorWidget_8lgvs2m_hint)#",
+						"hideTitle": true
+					},
+					"visible": true
+				},
+				"parentName": "GridContainer_yr8wbxf",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -860,12 +1107,22 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					],
 					"gap": {
 						"columnGap": "large",
-						"rowGap": 0
+						"rowGap": null
 					},
 					"styles": {
 						"overflow-x": "hidden"
 					},
-					"items": []
+					"items": [],
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
 				},
 				"parentName": "ExpansionPanel_ovpkb8a",
 				"propertyName": "items",
@@ -1074,34 +1331,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_39a215k",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_PgrServiceTeamLead_jjhhd6x",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_PgrServiceTeamLead_jjhhd6x",
-					"visible": true,
-					"readonly": false,
-					"placeholder": ""
-				},
-				"parentName": "GridContainer_6shj6h0",
-				"propertyName": "items",
-				"index": 4
-			},
-			{
-				"operation": "insert",
 				"name": "ComboBox_y36l020",
 				"values": {
 					"layoutConfig": {
@@ -1120,6 +1349,34 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"listActions": [],
 					"tooltip": "",
 					"control": "$PDS_PgrCustomerServiceName_e6z07su",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "GridContainer_6shj6h0",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_39a215k",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrServiceTeamLead_jjhhd6x",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrServiceTeamLead_jjhhd6x",
 					"visible": true,
 					"readonly": false,
 					"placeholder": ""
@@ -1186,7 +1443,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
-				"name": "Input_k3m2ucs",
+				"name": "Checkbox_of59b86",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
@@ -1194,14 +1451,15 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 						"row": 5,
 						"rowSpan": 1
 					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrEori_xp4lirj",
-					"control": "$PDS_PgrEori_xp4lirj",
-					"placeholder": "",
+					"type": "crt.Checkbox",
+					"value": true,
+					"disabled": false,
+					"inversed": false,
+					"label": "$Resources.Strings.PDS_PgrIsFsc_iqdgiac",
+					"ariaLabel": "",
+					"labelPosition": "auto",
 					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
+					"control": "$PDS_PgrIsFsc_iqdgiac"
 				},
 				"parentName": "GridContainer_6shj6h0",
 				"propertyName": "items",
@@ -1230,30 +1488,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"parentName": "GridContainer_6shj6h0",
 				"propertyName": "items",
 				"index": 10
-			},
-			{
-				"operation": "insert",
-				"name": "Checkbox_of59b86",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 6,
-						"rowSpan": 1
-					},
-					"type": "crt.Checkbox",
-					"value": true,
-					"disabled": false,
-					"inversed": false,
-					"label": "$Resources.Strings.PDS_PgrIsFsc_iqdgiac",
-					"ariaLabel": "",
-					"labelPosition": "auto",
-					"tooltip": "",
-					"control": "$PDS_PgrIsFsc_iqdgiac"
-				},
-				"parentName": "GridContainer_6shj6h0",
-				"propertyName": "items",
-				"index": 11
 			},
 			{
 				"operation": "insert",
@@ -2000,12 +2234,62 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
+				"name": "Input_ryv5x8h",
+				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrVatNumber_31l5fjn",
+					"control": "$PDS_PgrVatNumber_31l5fjn",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto",
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_4naivbq",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Checkbox_56z210h",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.Checkbox",
+					"value": true,
+					"disabled": false,
+					"inversed": false,
+					"label": "$Resources.Strings.PDS_PgrHasInvoiceMailprocess_1okroik",
+					"ariaLabel": "",
+					"labelPosition": "auto",
+					"tooltip": "#ResourceString(Checkbox_56z210h_tooltip)#",
+					"control": "$PDS_PgrHasInvoiceMailprocess_1okroik",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "GridContainer_4naivbq",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
 				"name": "GridContainer_yixwr59",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
-						"row": 1,
+						"row": 2,
 						"rowSpan": 1
 					},
 					"type": "crt.GridContainer",
@@ -2032,7 +2316,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_4naivbq",
 				"propertyName": "items",
-				"index": 1
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -2051,82 +2335,15 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"label": "$Resources.Strings.PDS_PgrHasEInvoicing_0k60l4b",
 					"ariaLabel": "",
 					"labelPosition": "auto",
-					"tooltip": "",
-					"control": "$PDS_PgrHasEInvoicing_0k60l4b"
+					"tooltip": "#ResourceString(Checkbox_isdbwb4_tooltip)#",
+					"control": "$PDS_PgrHasEInvoicing_0k60l4b",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
 				},
 				"parentName": "GridContainer_yixwr59",
 				"propertyName": "items",
 				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Input_ryv5x8h",
-				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrVatNumber_31l5fjn",
-					"control": "$PDS_PgrVatNumber_31l5fjn",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto",
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "GridContainer_4naivbq",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "Checkbox_56z210h",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.Checkbox",
-					"value": true,
-					"disabled": false,
-					"inversed": false,
-					"label": "$Resources.Strings.PDS_PgrHasInvoiceMailprocess_1okroik",
-					"ariaLabel": "",
-					"labelPosition": "auto",
-					"tooltip": "",
-					"control": "$PDS_PgrHasInvoiceMailprocess_1okroik"
-				},
-				"parentName": "GridContainer_4naivbq",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "Input_st0yau0",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrDuns_shscakz",
-					"control": "$PDS_PgrDuns_shscakz",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
-				},
-				"parentName": "GridContainer_4naivbq",
-				"propertyName": "items",
-				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -2971,7 +3188,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"type": "crt.NumberInput",
 					"label": "#ResourceString(NumberInput_84ghcah_label)#",
 					"control": "$PDS_Pgr369ThresholdPercentage_45pvsdl",
-					"readonly": false,
+					"readonly": true,
 					"placeholder": "",
 					"labelPosition": "auto",
 					"tooltip": "",
@@ -3096,7 +3313,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"type": "crt.NumberInput",
 					"label": "#ResourceString(NumberInput_08fq2bk_label)#",
 					"control": "$PDS_Pgr369ThresholdAbsolute_3jso02f",
-					"readonly": false,
+					"readonly": true,
 					"placeholder": "",
 					"labelPosition": "auto",
 					"tooltip": "",
@@ -3119,10 +3336,11 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"type": "crt.NumberInput",
 					"label": "$Resources.Strings.PDS_PgrOrderIntakeDayCounter_yux7ecs",
 					"control": "$PDS_PgrOrderIntakeDayCounter_yux7ecs",
-					"readonly": false,
+					"readonly": true,
 					"placeholder": "",
 					"labelPosition": "auto",
-					"tooltip": ""
+					"tooltip": "",
+					"visible": true
 				},
 				"parentName": "GridContainer_8plbcqj",
 				"propertyName": "items",
@@ -3134,7 +3352,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"values": {
 					"layoutConfig": {
 						"column": 1,
-						"colSpan": 2,
+						"colSpan": 1,
 						"row": 4,
 						"rowSpan": 1
 					},
@@ -3182,9 +3400,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"name": "PgrSuspensionReason",
 				"values": {
 					"layoutConfig": {
-						"column": 2,
+						"column": 1,
 						"colSpan": 1,
-						"row": 5,
+						"row": 6,
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
@@ -4041,12 +4259,96 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
-				"name": "NumberInput_1devo8k",
+				"name": "ComboBox_0wgr2uq",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
 						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_Parent_clcreb4",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_Parent_clcreb4"
+				},
+				"parentName": "GridContainer_hx3nlo3",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_huaaytt",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_huaaytt_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_0wgr2uq",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_ji85srz",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrIsVertIntegrated_735q8uq",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrIsVertIntegrated_735q8uq"
+				},
+				"parentName": "GridContainer_hx3nlo3",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_j5wjvzc",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_j5wjvzc_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_ji85srz",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "NumberInput_1devo8k",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 2,
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
@@ -4059,39 +4361,16 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_hx3nlo3",
 				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "Input_rbduqdg",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrProductionCapacity_37qxny8",
-					"control": "$PDS_PgrProductionCapacity_37qxny8",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
-				},
-				"parentName": "GridContainer_hx3nlo3",
-				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
 				"name": "Input_i2c1tlj",
 				"values": {
 					"layoutConfig": {
-						"column": 2,
+						"column": 1,
 						"colSpan": 1,
-						"row": 2,
+						"row": 3,
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
@@ -4105,7 +4384,30 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_hx3nlo3",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "Input_rbduqdg",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrProductionCapacity_37qxny8",
+					"control": "$PDS_PgrProductionCapacity_37qxny8",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "GridContainer_hx3nlo3",
+				"propertyName": "items",
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -4114,7 +4416,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 3,
+						"row": 4,
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
@@ -4129,7 +4431,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "GridContainer_hx3nlo3",
 				"propertyName": "items",
-				"index": 4
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -4146,13 +4448,317 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 4,
+						"row": 5,
 						"rowSpan": 1
 					}
 				},
 				"parentName": "GridContainer_hx3nlo3",
 				"propertyName": "items",
-				"index": 5
+				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "ExpansionPanel_vbzwo5v",
+				"values": {
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(ExpansionPanel_vbzwo5v_title)#",
+					"toggleType": "material",
+					"togglePosition": "before",
+					"expanded": true,
+					"labelColor": "#0D2E4E",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"visible": true,
+					"padding": {
+						"top": "small",
+						"bottom": "small",
+						"left": "none",
+						"right": "none"
+					},
+					"alignItems": "stretch"
+				},
+				"parentName": "TabContainer_Competitor",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_gafas52",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 24px)",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": [],
+					"visible": true,
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "ExpansionPanel_vbzwo5v",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_4fdizmt",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"gap": "none",
+					"alignItems": "center",
+					"items": [],
+					"layoutConfig": {
+						"colSpan": 1,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_gafas52",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Button_7we0gt3",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_7we0gt3_caption)#",
+					"icon": "add-button-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.CreateRecordRequest",
+						"params": {
+							"entityName": "Contact",
+							"defaultValues": [
+								{
+									"attributeName": "Account",
+									"value": "$Id"
+								}
+							]
+						}
+					},
+					"visible": true,
+					"clickMode": "default"
+				},
+				"parentName": "FlexContainer_4fdizmt",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Button_sg32b4k",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_sg32b4k_caption)#",
+					"icon": "reload-button-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.LoadDataRequest",
+						"params": {
+							"config": {
+								"loadType": "reload",
+								"useLastLoadParameters": true
+							},
+							"dataSourceName": "ContactsListDS"
+						}
+					},
+					"visible": true,
+					"clickMode": "default"
+				},
+				"parentName": "FlexContainer_4fdizmt",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Button_2voddtp",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_2voddtp_caption)#",
+					"icon": "actions-button-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clickMode": "menu",
+					"menuItems": [],
+					"visible": true
+				},
+				"parentName": "FlexContainer_4fdizmt",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "MenuItem_2o6g1eu",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_2o6g1eu_caption)#",
+					"icon": "export-button-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "ContactsList"
+						}
+					},
+					"visible": true
+				},
+				"parentName": "Button_2voddtp",
+				"propertyName": "menuItems",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "MenuItem_6dw38zl",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(MenuItem_6dw38zl_caption)#",
+					"icon": "import-button-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.ImportDataRequest",
+						"params": {
+							"entitySchemaName": "Contact"
+						}
+					},
+					"visible": true
+				},
+				"parentName": "Button_2voddtp",
+				"propertyName": "menuItems",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "SearchFilter_2y51wfx",
+				"values": {
+					"type": "crt.SearchFilter",
+					"placeholder": "#ResourceString(SearchFilter_2y51wfx_placeholder)#",
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "SearchFilter_2y51wfx_ContactsList",
+								"converters": [
+									{
+										"converter": "crt.SearchFilterAttributeConverter",
+										"args": [
+											"ContactsList"
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"SearchFilter_2y51wfx_SearchValue",
+							"SearchFilter_2y51wfx_FilteredColumnsGroups"
+						]
+					},
+					"iconOnly": true
+				},
+				"parentName": "FlexContainer_4fdizmt",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_xr4yi9p",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax( 32px, 32px)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_vbzwo5v",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_v1b8v42",
+				"values": {
+					"type": "crt.DataGrid",
+					"layoutConfig": {
+						"colSpan": 2,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 6
+					},
+					"visible": true,
+					"items": "$DataGrid_v1b8v42",
+					"primaryColumnName": "DataGrid_v1b8v42DS_Id",
+					"columns": [
+						{
+							"id": "aa188eab-ed1d-3e5a-cf8c-303a7ce304be",
+							"code": "DataGrid_v1b8v42DS_Name",
+							"caption": "#ResourceString(DataGrid_v1b8v42DS_Name)#",
+							"dataValueType": 28,
+							"width": 235
+						},
+						{
+							"id": "3f86b391-9f8d-279d-5573-58d216d53fce",
+							"code": "DataGrid_v1b8v42DS_JobTitle",
+							"caption": "#ResourceString(DataGrid_v1b8v42DS_JobTitle)#",
+							"dataValueType": 28,
+							"width": 183
+						},
+						{
+							"id": "0d41d5da-9dac-7e76-d323-fa5f217eaa28",
+							"code": "DataGrid_v1b8v42DS_MobilePhone",
+							"caption": "#ResourceString(DataGrid_v1b8v42DS_MobilePhone)#",
+							"dataValueType": 42,
+							"width": 185
+						},
+						{
+							"id": "f95ebbaf-50e4-7e10-1877-764589382d87",
+							"code": "DataGrid_v1b8v42DS_Email",
+							"caption": "#ResourceString(DataGrid_v1b8v42DS_Email)#",
+							"dataValueType": 45,
+							"width": 242
+						}
+					],
+					"features": {
+						"editable": {
+							"enable": true,
+							"itemsCreation": false
+						}
+					},
+					"fitContent": true
+				},
+				"parentName": "GridContainer_xr4yi9p",
+				"propertyName": "items",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -4164,7 +4770,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"title": "#ResourceString(AccountCompetitorsExpansionPanel_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": true,
+					"expanded": false,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -4180,7 +4786,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "TabContainer_Competitor",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -8474,7 +9080,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"sortingConfig": {
 								"default": [
 									{
-										"columnName": "Name",
+										"columnName": "Position",
 										"direction": "asc"
 									}
 								]
@@ -8527,16 +9133,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"PDS_PgrHasInvoiceMailprocess_1okroik": {
 						"modelConfig": {
 							"path": "PDS.PgrHasInvoiceMailprocess"
-						}
-					},
-					"PDS_PgrDuns_shscakz": {
-						"modelConfig": {
-							"path": "PDS.PgrDuns"
-						}
-					},
-					"PDS_PgrEori_xp4lirj": {
-						"modelConfig": {
-							"path": "PDS.PgrEori"
 						}
 					},
 					"PDS_PgrDeliveryBl_bxvb9ez": {
@@ -9182,9 +9778,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							}
 						}
 					},
-					"MultiSelect_unyiz66_List_Items_Predefined_Filter": {
-						"value": null
-					},
 					"PDS_PgrWepaformCustomerId_pn3f9ob": {
 						"modelConfig": {
 							"path": "PDS.PgrWepaformCustomerId"
@@ -9201,7 +9794,13 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 										"columnName": "Description"
 									}
 								]
-							}
+							},
+							"filterAttributes": [
+								{
+									"loadOnChange": true,
+									"name": "CompetitorsGrid_PredefinedFilter"
+								}
+							]
 						},
 						"viewModelConfig": {
 							"attributes": {
@@ -9560,6 +10159,108 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								}
 							}
 						}
+					},
+					"CompetitorsGrid_PredefinedFilter": {
+						"value": {
+							"items": {},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "AccountCompetitor"
+						}
+					},
+					"PDS_PgrIsCustomer_tquys6s": {
+						"modelConfig": {
+							"path": "PDS.PgrIsCustomer"
+						}
+					},
+					"PDS_PgrIsCompetitor_4mi43f2": {
+						"modelConfig": {
+							"path": "PDS.PgrIsCompetitor"
+						}
+					},
+					"PDS_PgrIsVertIntegrated_735q8uq": {
+						"modelConfig": {
+							"path": "PDS.PgrIsVertIntegrated"
+						}
+					},
+					"PDS_PgrIsVertIntegrated_735q8uq_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_Parent_clcreb4": {
+						"modelConfig": {
+							"path": "PDS.Parent"
+						}
+					},
+					"PDS_Parent_clcreb4_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"DataGrid_v1b8v42": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "DataGrid_v1b8v42DS",
+							"pagingConfig": {
+								"rowCount": 30,
+								"rowsLimit": null
+							},
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "desc",
+										"columnName": "Name"
+									}
+								]
+							}
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"DataGrid_v1b8v42DS_Name": {
+									"modelConfig": {
+										"path": "DataGrid_v1b8v42DS.Name"
+									}
+								},
+								"DataGrid_v1b8v42DS_JobTitle": {
+									"modelConfig": {
+										"path": "DataGrid_v1b8v42DS.JobTitle"
+									}
+								},
+								"DataGrid_v1b8v42DS_MobilePhone": {
+									"modelConfig": {
+										"path": "DataGrid_v1b8v42DS.MobilePhone"
+									}
+								},
+								"DataGrid_v1b8v42DS_Email": {
+									"modelConfig": {
+										"path": "DataGrid_v1b8v42DS.Email"
+									}
+								},
+								"DataGrid_v1b8v42DS_Id": {
+									"modelConfig": {
+										"path": "DataGrid_v1b8v42DS.Id"
+									}
+								}
+							}
+						}
 					}
 				}
 			},
@@ -9600,6 +10301,42 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 						"modelConfig": {
 							"path": "AddressListDS.PgrWepaformAddressName"
 						}
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"ContactsList",
+					"modelConfig"
+				],
+				"values": {
+					"filterAttributes": [
+						{
+							"name": "ContactsList_PredefinedFilter",
+							"loadOnChange": true
+						},
+						{
+							"name": "ContactsSearchFilter_ContactsList",
+							"loadOnChange": true
+						},
+						{
+							"name": "SearchFilter_2y51wfx_ContactsList",
+							"loadOnChange": true
+						}
+					],
+					"sortingConfig": {
+						"default": [
+							{
+								"direction": "desc",
+								"columnName": "Name"
+							}
+						]
+					},
+					"pagingConfig": {
+						"rowCount": 30,
+						"rowsLimit": null
 					}
 				}
 			},
@@ -10071,30 +10808,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							}
 						}
 					},
-					"PgrAccountTypesInAccountDS": {
-						"type": "crt.EntityDataSource",
-						"scope": "page",
-						"config": {
-							"entitySchemaName": "PgrAccountTypesInAccount",
-							"loadParameters": {
-								"options": {
-									"pagingConfig": {
-										"rowCount": 1,
-										"rowsOffset": -1
-									},
-									"sortingConfig": {
-										"columns": [
-											{
-												"columnName": "CreatedOn",
-												"direction": "desc"
-											}
-										]
-									}
-								}
-							},
-							"allowCopyingRecords": true
-						}
-					},
 					"CompetitorsGridDS": {
 						"type": "crt.EntityDataSource",
 						"scope": "viewElement",
@@ -10235,6 +10948,27 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								},
 								"PgrReceivedOn": {
 									"path": "PgrReceivedOn"
+								}
+							}
+						}
+					},
+					"DataGrid_v1b8v42DS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "Contact",
+							"attributes": {
+								"Name": {
+									"path": "Name"
+								},
+								"JobTitle": {
+									"path": "JobTitle"
+								},
+								"MobilePhone": {
+									"path": "MobilePhone"
+								},
+								"Email": {
+									"path": "Email"
 								}
 							}
 						}
@@ -10389,12 +11123,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"relationPath": "GridDetail_tziba2dDS.Id"
 						}
 					],
-					"PgrAccountTypesInAccountDS": [
-						{
-							"attributePath": "PgrAccount",
-							"relationPath": "PDS.Id"
-						}
-					],
 					"CompetitorsGridDS": [
 						{
 							"attributePath": "Account",
@@ -10432,6 +11160,12 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"GridDetail_0zv2biyDS": [
 						{
 							"attributePath": "PgrAccountId",
+							"relationPath": "PDS.Id"
+						}
+					],
+					"DataGrid_v1b8v42DS": [
+						{
+							"attributePath": "Account",
 							"relationPath": "PDS.Id"
 						}
 					]

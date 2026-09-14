@@ -29,6 +29,7 @@
 			<Item Name="LocalizableStrings.InvoicesRefreshButton_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.InvoicesSearchFilter_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.InvoicesSettingsButton_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.MeddpiccTab_caption.Value" Value="MEDDPICC" />
 			<Item Name="LocalizableStrings.OpportunityHistoryDS_EntityChangeType.Value" Value="Change Type" />
 			<Item Name="LocalizableStrings.OpportunityHistoryExpansionPanel_title.Value" Value="History of changes" />
 			<Item Name="LocalizableStrings.OpportunityHistoryExportDataBtn_caption.Value" Value="Export to Excel" />
@@ -50,6 +51,7 @@
 			<Item Name="LocalizableStrings.QuickFilterShowAllOrders_config_caption.Value" Value="Show all orders by customer" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
 			<Item Name="LocalizableStrings.addRecord_c4z34vo_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_c7lwd4z_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_ih4zcqj_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_mu4m9oi_caption.Value" Value="Add new" />
 		</Items>

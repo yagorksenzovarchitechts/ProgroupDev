@@ -7,6 +7,7 @@
 			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.ComboBox_yygvlvc_label.Value" Value="Schichtmodell" />
 			<Item Name="LocalizableStrings.ExpansionPanel_c87buvw_title.Value" Value="Notizen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_d77p5tn_title.Value" Value="Adresse" />
 			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="Allgemeine Info" />

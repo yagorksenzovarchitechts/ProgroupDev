@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "3c04b11d-2496-41b0-a0ae-859a702025b8",
+    "Name": "PgrWorkShiftModel",
+    "ModifiedOnUtc": "\/Date(1788787932000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Work shift modell",
+    "DependsOn": []
+  }
+}

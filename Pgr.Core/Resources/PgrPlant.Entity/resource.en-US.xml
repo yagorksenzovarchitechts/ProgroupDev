@@ -6,13 +6,15 @@
 			<Item Name="Columns.PgrAccount.Caption" Value="Packaging park customer (delete)" />
 			<Item Name="Columns.PgrAddress.Caption" Value="Street address" />
 			<Item Name="Columns.PgrCity.Caption" Value="City" />
+			<Item Name="Columns.PgrColumn27.Caption" Value="Data sheets" />
 			<Item Name="Columns.PgrCountry.Caption" Value="Country" />
 			<Item Name="Columns.PgrFlute.Caption" Value="Flute" />
 			<Item Name="Columns.PgrHighRack.Caption" Value="High rack storage" />
 			<Item Name="Columns.PgrIsActive.Caption" Value="Active" />
 			<Item Name="Columns.PgrName.Caption" Value="Plant name" />
 			<Item Name="Columns.PgrNotes.Caption" Value="Notes" />
-			<Item Name="Columns.PgrNumberOfWalls.Caption" Value="Number of walls" />
+			<Item Name="Columns.PgrNrOfWalls.Caption" Value="Number of walls" />
+			<Item Name="Columns.PgrNumberOfWalls.Caption" Value="Number of walls (delete)" />
 			<Item Name="Columns.PgrOrderNumber.Caption" Value="Order" />
 			<Item Name="Columns.PgrPackagingParkCustomer1.Caption" Value="Packaging park customer (1)" />
 			<Item Name="Columns.PgrPackagingParkCustomer2.Caption" Value="Packaging park customer (2)" />
@@ -20,6 +22,7 @@
 			<Item Name="Columns.PgrSpecialFeatures.Caption" Value="Special features" />
 			<Item Name="Columns.PgrStateProvince.Caption" Value="State/province" />
 			<Item Name="Columns.PgrTargetNumberOfEmployees.Caption" Value="Target number of employes" />
+			<Item Name="Columns.PgrWorkShiftModel.Caption" Value="Work shift model" />
 			<Item Name="Columns.PgrWorkingWidth.Caption" Value="Working width" />
 			<Item Name="Columns.PgrYear.Caption" Value="Year of commissioning" />
 			<Item Name="Columns.PgrZip.Caption" Value="ZIP/Postal code" />

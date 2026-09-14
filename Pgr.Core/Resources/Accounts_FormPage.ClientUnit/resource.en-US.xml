@@ -2,13 +2,18 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
-			<Item Name="LocalizableStrings.AccountCompetitorsExpansionPanel_title.Value" Value="Account competitors" />
+			<Item Name="LocalizableStrings.AccountCompetitorsExpansionPanel_title.Value" Value="Customers" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Attachments" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Attachments" />
+			<Item Name="LocalizableStrings.Button_2voddtp_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.Button_4v2hyhs_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.Button_7we0gt3_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.Button_h41prxx_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.Button_sg32b4k_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.Button_wzoi3mp_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancel" />
+			<Item Name="LocalizableStrings.Checkbox_56z210h_tooltip.Value" Value="Mail with PDF attachment" />
+			<Item Name="LocalizableStrings.Checkbox_isdbwb4_tooltip.Value" Value="legal requirement (EN 16931)" />
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Close" />
 			<Item Name="LocalizableStrings.ComboBox_rztcyul_label.Value" Value="Number of employees" />
 			<Item Name="LocalizableStrings.ComboBox_tuutgko_label.Value" Value="Select Country" />
@@ -24,7 +29,7 @@
 			<Item Name="LocalizableStrings.DataGrid_dr7ln3cDS_Value.Value" Value="Latest value" />
 			<Item Name="LocalizableStrings.ExpansionPanel_0hsju2s_title.Value" Value="Account info" />
 			<Item Name="LocalizableStrings.ExpansionPanel_1mbln9s_title.Value" Value="Addresses" />
-			<Item Name="LocalizableStrings.ExpansionPanel_3jtu7p2_title.Value" Value="Sales block status" />
+			<Item Name="LocalizableStrings.ExpansionPanel_3jtu7p2_title.Value" Value="SAP block status" />
 			<Item Name="LocalizableStrings.ExpansionPanel_4r2mr5k_title.Value" Value="Visit reports" />
 			<Item Name="LocalizableStrings.ExpansionPanel_br1488r_title.Value" Value="3-6-9 Parameters" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ezmuytd_title.Value" Value="Account metrics" />
@@ -36,6 +41,7 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_ovpkb8a_title.Value" Value="Overview" />
 			<Item Name="LocalizableStrings.ExpansionPanel_pa1hlbi_title.Value" Value="Delivery" />
 			<Item Name="LocalizableStrings.ExpansionPanel_udydmkf_title.Value" Value="Interfaces" />
+			<Item Name="LocalizableStrings.ExpansionPanel_vbzwo5v_title.Value" Value="Contacts" />
 			<Item Name="LocalizableStrings.ExpansionPanel_vthgzr6_title.Value" Value="Tasks" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_3fohkij_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_409pmzl_caption.Value" Value="New" />
@@ -90,12 +96,20 @@
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_o98i8bf_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_pfp47bp_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_tpry203_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.GridDetail_0zv2biyDS_PgrValue.Value" Value="Value " />
 			<Item Name="LocalizableStrings.GridDetail_c3c1pioDS_ActivityCategory.Value" Value="Category" />
 			<Item Name="LocalizableStrings.GridDetail_c3c1pioDS_UserEmailAddress.Value" Value="Email" />
 			<Item Name="LocalizableStrings.GridDetail_fwd4w3aDS_Name.Value" Value="Account name" />
 			<Item Name="LocalizableStrings.GridDetail_nzg1cklDS_PgrOpportunityStartDate.Value" Value="Start date" />
 			<Item Name="LocalizableStrings.GridDetail_nzg1cklDS_Title.Value" Value="Project" />
 			<Item Name="LocalizableStrings.HowTheyMakeMoney_placeholder.Value" Value="Enter how the company generates revenue" />
+			<Item Name="LocalizableStrings.IndicatorWidget_4cj4zub_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.IndicatorWidget_4cj4zub_hint.Value" Value="Components.IndicatorWidget.Hint" />
+			<Item Name="LocalizableStrings.IndicatorWidget_4cj4zub_title.Value" Value="Latest budget" />
+			<Item Name="LocalizableStrings.IndicatorWidget_8lgvs2m_config_text_template.Value" Value="{0} date" />
+			<Item Name="LocalizableStrings.IndicatorWidget_8lgvs2m_hint.Value" Value="Components.IndicatorWidget.Hint" />
+			<Item Name="LocalizableStrings.IndicatorWidget_8lgvs2m_title.Value" Value="Date" />
+			<Item Name="LocalizableStrings.Label_5vawjee_caption.Value" Value="KPIs" />
 			<Item Name="LocalizableStrings.Label_HowTheyMakeMoney_caption.Value" Value="How they make money" />
 			<Item Name="LocalizableStrings.Label_ProductsOffered_caption.Value" Value="Products offered" />
 			<Item Name="LocalizableStrings.LeadAddButton_caption.Value" Value="New" />
@@ -109,10 +123,10 @@
 			<Item Name="LocalizableStrings.ListWidget_6k17ufuDS_PgrCategory.Value" Value="Classification" />
 			<Item Name="LocalizableStrings.ListWidget_6k17ufuDS_PgrPercentage.Value" Value="%" />
 			<Item Name="LocalizableStrings.ListWidget_6k17ufu_title.Value" Value="Threshold for Classification &amp; Region" />
+			<Item Name="LocalizableStrings.MenuItem_2o6g1eu_caption.Value" Value="Export to Excel" />
 			<Item Name="LocalizableStrings.MenuItem_5sivz5r_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.MenuItem_6dw38zl_caption.Value" Value="Data import" />
 			<Item Name="LocalizableStrings.MenuItem_hgmncrh_caption.Value" Value="Data import" />
-			<Item Name="LocalizableStrings.MultiSelect_unyiz66_label.Value" Value="Account type/s" />
-			<Item Name="LocalizableStrings.MultiSelect_unyiz66_placeholder.Value" Value="Select the relevant type/s" />
 			<Item Name="LocalizableStrings.NumberInput_08fq2bk_label.Value" Value="3-6-9 threshold (TQM/WD)" />
 			<Item Name="LocalizableStrings.NumberInput_16huvt7_label.Value" Value="Over-delivery from quantity (% 1)" />
 			<Item Name="LocalizableStrings.NumberInput_63qzwaj_label.Value" Value="Over-delivery from quantity (value 1)" />
@@ -156,11 +170,12 @@
 			<Item Name="LocalizableStrings.SalesTab_caption.Value" Value="Sales" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
 			<Item Name="LocalizableStrings.SearchFilter_2pozl4n_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.SearchFilter_2y51wfx_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.ShareTotalErrorString.Value" Value="The total of all share values must equal 100%. Current total: " />
 			<Item Name="LocalizableStrings.TabContainer_0nkic4p_caption.Value" Value="Activities &amp; Visit reports" />
 			<Item Name="LocalizableStrings.TabContainer_Account_caption.Value" Value="Dashboard" />
-			<Item Name="LocalizableStrings.TabContainer_Competitor_caption.Value" Value="Competitor info" />
-			<Item Name="LocalizableStrings.TabContainer_Customer_caption.Value" Value="Customer info" />
+			<Item Name="LocalizableStrings.TabContainer_Competitor_caption.Value" Value="Competitor" />
+			<Item Name="LocalizableStrings.TabContainer_Customer_caption.Value" Value="Customer" />
 			<Item Name="LocalizableStrings.TabContainer_cyno10d_caption.Value" Value="Bonuses &amp; Agreements" />
 			<Item Name="LocalizableStrings.TabContainer_e0ncjlq_caption.Value" Value="Account Metrics" />
 			<Item Name="LocalizableStrings.TabContainer_jigo54h_caption.Value" Value="Projects pipeline" />
@@ -179,6 +194,8 @@
 			<Item Name="LocalizableStrings.addRecord_bgjrj6r_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_chpzvsk_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_d20d15x_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_huaaytt_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_j5wjvzc_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_kn4usgd_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_moevcxh_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_nfssvjv_caption.Value" Value="Add new" />

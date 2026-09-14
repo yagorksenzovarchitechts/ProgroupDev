@@ -32,6 +32,8 @@
 			<Item Name="Columns.PgrHasInvoiceMailprocess.Caption" Value="PDF Rechnung Prozess" />
 			<Item Name="Columns.PgrInvoiceMailAddress.Caption" Value="Rechnungs-E-Mail-Adresse" />
 			<Item Name="Columns.PgrIsActive.Caption" Value="Aktiv" />
+			<Item Name="Columns.PgrIsCompetitor.Caption" Value="ist Wettbewerber" />
+			<Item Name="Columns.PgrIsCustomer.Caption" Value="ist Kunde" />
 			<Item Name="Columns.PgrIsFsc.Caption" Value="FSC" />
 			<Item Name="Columns.PgrIsTestCustomer.Caption" Value="Testkunde" />
 			<Item Name="Columns.PgrIsVertIntegrated.Caption" Value="Integriert" />
@@ -58,9 +60,9 @@
 			<Item Name="Columns.PgrWorkingWidth.Caption" Value="Arbeitsbreite" />
 			<Item Name="Columns.PgrYearOfCommissioning.Caption" Value="Inbetriebnahme" />
 			<Item Name="Columns.Phone.Caption" Value="Telefonnumer" />
-			<Item Name="Columns.Territory.Caption" Value="Gebiet" />
+			<Item Name="Columns.Territory.Caption" Value="Region" />
 			<Item Name="Columns.Type.Caption" Value="Accountart" />
-			<Item Name="Columns.Web.Caption" Value="Webseites" />
+			<Item Name="Columns.Web.Caption" Value="Webseite" />
 		</Items>
 	</Group>
 </Resources>

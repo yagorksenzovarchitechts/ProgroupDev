@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "3743e18f-196e-4e99-9599-a539152a1bf7",
+    "Name": "PgrWeeklySalesReportRelatedPage",
+    "ModifiedOnUtc": "\/Date(1788787676000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Weekly Sales Report (Page settings)",
+    "DependsOn": []
+  }
+}

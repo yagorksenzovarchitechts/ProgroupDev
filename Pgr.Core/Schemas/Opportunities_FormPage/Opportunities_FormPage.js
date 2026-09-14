@@ -27,6 +27,20 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"name": "RequeueQueueItemButton"
 			},
 			{
+				"operation": "merge",
+				"name": "CreateOrderButton",
+				"values": {
+					"visible": false
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "PrintButton",
+				"values": {
+					"visible": false
+				}
+			},
+			{
 				"operation": "remove",
 				"name": "PostponeQueueItemButton"
 			},
@@ -37,6 +51,10 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"caption": "#ResourceString(CloseButton_caption)#",
 					"clickMode": "default"
 				}
+			},
+			{
+				"operation": "remove",
+				"name": "ForecastCategory"
 			},
 			{
 				"operation": "merge",
@@ -56,15 +74,15 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "remove",
+				"name": "Territory"
+			},
+			{
+				"operation": "remove",
 				"name": "DecisionMaker"
 			},
 			{
 				"operation": "remove",
 				"name": "addRecord_0hxbi4r"
-			},
-			{
-				"operation": "remove",
-				"name": "Territory"
 			},
 			{
 				"operation": "remove",
@@ -181,7 +199,10 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"operation": "merge",
 				"name": "Tabs",
 				"values": {
-					"allowToggleClose": true
+					"underlineSelectedTabColor": "crt-color-coral",
+					"allowToggleClose": true,
+					"visible": true,
+					"stretch": true
 				}
 			},
 			{
@@ -249,6 +270,34 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				}
 			},
 			{
+				"operation": "merge",
+				"name": "Account",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 1,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"tooltip": "",
+					"secondaryDisplayValue": "PgrWepaformName"
+				}
+			},
+			{
+				"operation": "move",
+				"name": "Account",
+				"parentName": "OverviewFieldsContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "remove",
+				"name": "addRecord_4fhxgqr"
+			},
+			{
 				"operation": "remove",
 				"name": "Title",
 				"properties": [
@@ -263,6 +312,13 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"index": 0
 			},
 			{
+				"operation": "merge",
+				"name": "Title",
+				"values": {
+					"multiline": false
+				}
+			},
+			{
 				"operation": "remove",
 				"name": "OpportunityType"
 			},
@@ -271,16 +327,12 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"name": "Group"
 			},
 			{
-				"operation": "merge",
-				"name": "Owner",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"row": 3,
-						"colSpan": 1,
-						"rowSpan": 1
-					}
-				}
+				"operation": "remove",
+				"name": "Owner"
+			},
+			{
+				"operation": "remove",
+				"name": "addRecord_b045nw6"
 			},
 			{
 				"operation": "remove",
@@ -406,6 +458,13 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 							"width": 480
 						}
 					]
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "MeddpiccTab",
+				"values": {
+					"visible": false
 				}
 			},
 			{
@@ -1045,6 +1104,42 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
+				"name": "Category",
+				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_Category_u6yq2u9",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_Category_u6yq2u9"
+				},
+				"parentName": "SideAreaProfileFieldFlexContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_mu4m9oi",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_mu4m9oi_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "Category",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "Stage",
 				"values": {
 					"type": "crt.ComboBox",
@@ -1081,48 +1176,6 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
-				"name": "Category",
-				"values": {
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_Category_u6yq2u9",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_Category_u6yq2u9",
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "OverviewFieldsContainer",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_mu4m9oi",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_mu4m9oi_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "Category",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
 				"name": "PgrEstimatedVolume",
 				"values": {
 					"layoutConfig": {
@@ -1143,6 +1196,52 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"parentName": "OverviewFieldsContainer",
 				"propertyName": "items",
 				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_onnkyeu",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrProjectProbability_58cpdjn",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrProjectProbability_58cpdjn",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null
+				},
+				"parentName": "OverviewFieldsContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_c7lwd4z",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_c7lwd4z_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_onnkyeu",
+				"propertyName": "listActions",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -1168,75 +1267,6 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
-				"name": "Probability",
-				"values": {
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_Probability_4u9wdw6",
-					"control": "$PDS_Probability_4u9wdw6",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": "",
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 4,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "OverviewFieldsContainer",
-				"propertyName": "items",
-				"index": 6
-			},
-			{
-				"operation": "insert",
-				"name": "Notes",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 4,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_Notes_p4ncqcs",
-					"control": "$PDS_Notes_p4ncqcs",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": true,
-					"labelPosition": "auto",
-					"visible": true
-				},
-				"parentName": "OverviewFieldsContainer",
-				"propertyName": "items",
-				"index": 7
-			},
-			{
-				"operation": "insert",
-				"name": "DateTimePicker_o1ojcb7",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 5,
-						"rowSpan": 1
-					},
-					"type": "crt.DateTimePicker",
-					"label": "$Resources.Strings.PDS_PgrOpportunityStartDate_elix56k",
-					"placeholder": "",
-					"readonly": false,
-					"labelPosition": "auto",
-					"tooltip": "",
-					"pickerType": "date",
-					"control": "$PDS_PgrOpportunityStartDate_elix56k"
-				},
-				"parentName": "OverviewFieldsContainer",
-				"propertyName": "items",
-				"index": 8
-			},
-			{
-				"operation": "insert",
 				"name": "PgrFollowUpDate",
 				"values": {
 					"type": "crt.DateTimePicker",
@@ -1251,13 +1281,54 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
-						"row": 5,
+						"row": 3,
 						"rowSpan": 1
 					}
 				},
 				"parentName": "OverviewFieldsContainer",
 				"propertyName": "items",
-				"index": 9
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_o1ojcb7",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_PgrOpportunityStartDate_elix56k",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "date",
+					"control": "$PDS_PgrOpportunityStartDate_elix56k"
+				},
+				"parentName": "OverviewFieldsContainer",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "Notes",
+				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_Notes_p4ncqcs",
+					"control": "$PDS_Notes_p4ncqcs",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": true,
+					"labelPosition": "auto",
+					"visible": true
+				},
+				"parentName": "OverviewFieldsFlexContainer",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -1552,6 +1623,7 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"attributes"
 				],
 				"properties": [
+					"PDS_ForecastCategory_List",
 					"PDS_Territory_List"
 				]
 			},
@@ -1605,19 +1677,6 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 							}
 						}
 					},
-					"LookupAttribute_85sj3qr_List": {
-						"isCollection": true,
-						"modelConfig": {
-							"sortingConfig": {
-								"default": [
-									{
-										"columnName": "Name",
-										"direction": "asc"
-									}
-								]
-							}
-						}
-					},
 					"PDS_PgrFollowUpDate_b5idy35": {
 						"modelConfig": {
 							"path": "PDS.PgrFollowUpDate"
@@ -1644,11 +1703,6 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 									}
 								]
 							}
-						}
-					},
-					"PDS_Probability_4u9wdw6": {
-						"modelConfig": {
-							"path": "PDS.Probability"
 						}
 					},
 					"PDS_Category_u6yq2u9": {
@@ -1728,6 +1782,24 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"PDS_PgrOpportunityStartDate_elix56k": {
 						"modelConfig": {
 							"path": "PDS.PgrOpportunityStartDate"
+						}
+					},
+					"PDS_PgrProjectProbability_58cpdjn": {
+						"modelConfig": {
+							"path": "PDS.PgrProjectProbability"
+						}
+					},
+					"PDS_PgrProjectProbability_58cpdjn_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
 						}
 					}
 				}

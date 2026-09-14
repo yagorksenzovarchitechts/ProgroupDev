@@ -180,51 +180,6 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 			},
 			{
 				"operation": "insert",
-				"name": "Input_g23wa4d",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrName_z9ufq5b",
-					"control": "$PDS_PgrName_z9ufq5b",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "NumberInput_drnsqbk",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_PgrProjectPriceId_f5avvxl",
-					"control": "$PDS_PgrProjectPriceId_f5avvxl",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "auto",
-					"tooltip": ""
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
 				"name": "ComboBox_nwnzqmj",
 				"values": {
 					"type": "crt.ComboBox",
@@ -240,9 +195,59 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"secondaryDisplayValue": "PgrWepaformName"
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_ps5rhp1",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_PgrStartDate_ogzx09b",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "date",
+					"control": "$PDS_PgrStartDate_ogzx09b"
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Input_faugvgq",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
 						"row": 2,
 						"rowSpan": 1
-					}
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.AccountDS_PgrWepaformName_se5o88n",
+					"control": "$AccountDS_PgrWepaformName_se5o88n",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -250,20 +255,49 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 			},
 			{
 				"operation": "insert",
-				"name": "addRecord_d3uxr1j",
+				"name": "DateTimePicker_609xhxu",
 				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_d3uxr1j_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_PgrEndDate_244nkez",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "date",
+					"control": "$PDS_PgrEndDate_244nkez"
 				},
-				"parentName": "ComboBox_nwnzqmj",
-				"propertyName": "listActions",
-				"index": 0
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "Input_g23wa4d",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrName_z9ufq5b",
+					"control": "$PDS_PgrName_z9ufq5b",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -272,7 +306,7 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
-						"row": 2,
+						"row": 3,
 						"rowSpan": 1
 					},
 					"type": "crt.Checkbox",
@@ -290,53 +324,29 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 3
+				"index": 5
 			},
 			{
 				"operation": "insert",
-				"name": "DateTimePicker_ps5rhp1",
+				"name": "NumberInput_drnsqbk",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 3,
+						"row": 4,
 						"rowSpan": 1
 					},
-					"type": "crt.DateTimePicker",
-					"label": "$Resources.Strings.PDS_PgrStartDate_ogzx09b",
-					"placeholder": "",
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_PgrProjectPriceId_f5avvxl",
+					"control": "$PDS_PgrProjectPriceId_f5avvxl",
 					"readonly": false,
+					"placeholder": "",
 					"labelPosition": "auto",
-					"tooltip": "",
-					"pickerType": "date",
-					"control": "$PDS_PgrStartDate_ogzx09b"
+					"tooltip": ""
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 4
-			},
-			{
-				"operation": "insert",
-				"name": "DateTimePicker_609xhxu",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.DateTimePicker",
-					"label": "$Resources.Strings.PDS_PgrEndDate_244nkez",
-					"placeholder": "",
-					"readonly": false,
-					"labelPosition": "auto",
-					"tooltip": "",
-					"pickerType": "date",
-					"control": "$PDS_PgrEndDate_244nkez"
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 5
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -1104,6 +1114,11 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 								}
 							}
 						}
+					},
+					"AccountDS_PgrWepaformName_se5o88n": {
+						"modelConfig": {
+							"path": "AccountDS.PgrWepaformName"
+						}
 					}
 				}
 			},
@@ -1137,8 +1152,15 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 								"attributePath": "PgrProjectPriceId",
 								"relationPath": "PDS.Id"
 							}
+						],
+						"AccountDS": [
+							{
+								"attributePath": "Id",
+								"relationPath": "PDS.PgrAccount"
+							}
 						]
-					}
+					},
+					"loadingConfig": {}
 				}
 			},
 			{
@@ -1194,6 +1216,31 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 									"path": "PgrNote"
 								}
 							}
+						}
+					},
+					"AccountDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "page",
+						"config": {
+							"entitySchemaName": "Account",
+							"loadParameters": {
+								"options": {
+									"pagingConfig": {
+										"rowCount": 1,
+										"rowsOffset": -1
+									},
+									"sortingConfig": {
+										"columns": []
+									}
+								},
+								"parameters": [
+									{
+										"type": "filter",
+										"value": null
+									}
+								]
+							},
+							"allowCopyingRecords": false
 						}
 					}
 				}

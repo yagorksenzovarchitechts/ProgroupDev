@@ -314,6 +314,26 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
   "S2": "90b65bf8-0ffc-4141-8779-2420877af907"
 }
++ MetaData.Schema.D2 {
+  "UId": "bff3da98-b0a7-4f87-a7c5-7eeb1740f0cc",
+  "A2": "PgrWeeklyReportId",
+  "A3": "84c92193-3a76-4c34-81e7-f588516da67e",
+  "A4": "84c92193-3a76-4c34-81e7-f588516da67e",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
+  "E5": false,
+  "E17": "PgrWeeklyReportIdId",
+  "E18": "PgrWeeklyReportIdPgrName"
+}
++ MetaData.Schema.D2 {
+  "UId": "f9f73d7f-9ef1-060d-fea8-8063d3cb34c8",
+  "A2": "PgrActualMTD",
+  "A3": "84c92193-3a76-4c34-81e7-f588516da67e",
+  "A4": "84c92193-3a76-4c34-81e7-f588516da67e",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "5cc8060d-6d10-4773-89fc-8c12d6f659a6"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -349,7 +369,9 @@
   "47c1a6b0-b517-6d13-b9da-c6efcd7d63eb",
   "2fda8f2d-ea3c-8c3e-6cae-998cf2ef7264",
   "e86c3579-79de-9979-bcd9-847387e500a1",
-  "7f2ea919-ca0b-5dd7-8d9c-cc018fc417d2"
+  "7f2ea919-ca0b-5dd7-8d9c-cc018fc417d2",
+  "bff3da98-b0a7-4f87-a7c5-7eeb1740f0cc",
+  "f9f73d7f-9ef1-060d-fea8-8063d3cb34c8"
 ]
 = MetaData.Schema.D20.A2 "PgrVisitReportEvents"
 + MetaData.Schema.D20.FA1 false

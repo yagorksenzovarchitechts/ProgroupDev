@@ -3,6 +3,8 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Bonusliste" />
+			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Datenimport" />
 		</Items>
 	</Group>
 </Resources>

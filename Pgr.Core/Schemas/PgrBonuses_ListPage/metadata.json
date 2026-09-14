@@ -1,6 +1,20 @@
 = MetaData.Schema.UId "574fbf45-931c-46a0-b265-8293b879bdf2"
 = MetaData.Schema.A2 "PgrBonuses_ListPage"
 = MetaData.Schema.A5 "6f71e54c-1960-40c9-94f6-073fd67699ab"
++ MetaData.Schema.B2 {
+  "UId": "a5bcbc4f-a033-9c48-4257-3f9d71c18fa7",
+  "A2": "DataImportButton_caption",
+  "A3": "574fbf45-931c-46a0-b265-8293b879bdf2",
+  "A4": "574fbf45-931c-46a0-b265-8293b879bdf2",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "cbcbc98d-6ea9-37e5-e735-501fcdd35eca",
+  "A2": "AddButton_caption",
+  "A3": "574fbf45-931c-46a0-b265-8293b879bdf2",
+  "A4": "574fbf45-931c-46a0-b265-8293b879bdf2",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
 = MetaData.Schema.B2.["dad6907c-fd30-c781-3680-4546c3fd73f9"].A4 "574fbf45-931c-46a0-b265-8293b879bdf2"
 = MetaData.Schema.B2.["e7ae710e-6562-fbc2-ba24-ac93d8e2c076"].A4 "574fbf45-931c-46a0-b265-8293b879bdf2"
 = MetaData.Schema.B2.["31e1cae9-bf6b-bb43-e922-ac61fdc10520"].A4 "574fbf45-931c-46a0-b265-8293b879bdf2"
@@ -20,6 +34,8 @@
 = MetaData.Schema.B2.["5ffa1509-5337-5131-c81d-62c2b05764f8"].A4 "574fbf45-931c-46a0-b265-8293b879bdf2"
 = MetaData.Schema.B2.["e4787142-5b79-ba75-8318-a0b4cefc3a6a"].A4 "574fbf45-931c-46a0-b265-8293b879bdf2"
 ~ MetaData.Schema.B2 [
+  "a5bcbc4f-a033-9c48-4257-3f9d71c18fa7",
+  "cbcbc98d-6ea9-37e5-e735-501fcdd35eca",
   "dad6907c-fd30-c781-3680-4546c3fd73f9",
   "e7ae710e-6562-fbc2-ba24-ac93d8e2c076",
   "31e1cae9-bf6b-bb43-e922-ac61fdc10520",

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Weekly Sales Report list page" />
+			<Item Name="LocalizableStrings.PDS_PgrVisitReportPgrWeeklyReportId_Id_2jg1vxo.Value" Value="Service &amp; Delivery check marks" />
+			<Item Name="LocalizableStrings.PDS_PgrVisitReportPgrWeeklyReportId_Id_yd2y0x9.Value" Value="Quality check marks" />
+		</Items>
+	</Group>
+</Resources>

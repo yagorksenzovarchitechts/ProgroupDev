@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "cda30833-91f9-427c-8c8f-b5ea606d9d19",
+    "Name": "PgrWeeklySalesReport_Detail",
+    "ModifiedOnUtc": "\/Date(1788787676000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Weekly Sales Report detail",
+    "DependsOn": []
+  }
+}

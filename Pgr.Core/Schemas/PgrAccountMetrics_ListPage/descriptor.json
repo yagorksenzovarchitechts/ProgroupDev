@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "7223fc55-6a27-4d52-82c4-5d81b72a6890",
+    "Name": "PgrAccountMetrics_ListPage",
+    "ModifiedOnUtc": "\/Date(1788784746000)\/",
+    "Parent": {
+      "UId": "b7b898d0-8c77-4953-c097-23fa6800da02",
+      "Name": "ListPageV3Template"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Account metrics list page",
+    "DependsOn": []
+  }
+}

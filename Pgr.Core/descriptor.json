@@ -31,6 +31,12 @@
         "InstallBehavior": 1
       },
       {
+        "UId": "18c3a820-dd54-4dbe-8500-c0984e40766e",
+        "Name": "CrtMeddpiccInLeadOppMgmt",
+        "Type": 1,
+        "InstallBehavior": 1
+      },
+      {
         "UId": "3f8d4a5e-a1cd-625a-8143-d26ec18bb188",
         "PackageVersion": "7.8.0",
         "Name": "CrtLeadOppMgmtInC360",
