@@ -11,15 +11,6 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 			validFromColumn: "CompetitorsGridDS_PgrValidFrom",
 			competitorColumn: "CompetitorsGridDS_PgrCompetitor",
 			dataSourceName: "CompetitorsGridDS"
-		},
-		GridDetail: {
-			itemsAttr: "GridDetail",
-			selectionAttr: "GridDetail_SelectionState",
-			shareColumn: "GridDetailDS_PgrShare",
-			idColumn: "GridDetailDS_Id",
-			validFromColumn: "GridDetailDS_PgrValidFrom",
-			competitorColumn: "GridDetailDS_PgrCompetitor",
-			dataSourceName: "GridDetailDS"
 		}
 	};
 

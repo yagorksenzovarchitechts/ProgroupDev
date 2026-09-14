@@ -77,40 +77,16 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 			},
 			{
 				"operation": "insert",
-				"name": "Input_akiv7vi",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 3,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.AccountAddressDS_Address_diesqny",
-					"control": "$AccountAddressDS_Address_diesqny",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "left",
-					"visible": true
-				},
-				"parentName": "TopAreaProfileContainer",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "ComboBox_uz0l71e",
+				"name": "ComboBox_ln6zops",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 2,
+						"row": 1,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.AccountAddressDS_Region_lh86k5e",
+					"label": "$Resources.Strings.AccountAddressDS_Account_9h2l09a",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
@@ -118,169 +94,44 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$AccountAddressDS_Region_lh86k5e"
+					"control": "$AccountAddressDS_Account_9h2l09a",
+					"visible": true,
+					"readonly": true,
+					"placeholder": "",
+					"secondaryDisplayValue": null,
+					"mode": "List",
+					"valueDetails": "$ComboBox_ln6zops_ValueDetails"
+				},
+				"parentName": "TopAreaProfileContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Checkbox_m6u1gdg",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.Checkbox",
+					"value": true,
+					"disabled": false,
+					"inversed": false,
+					"label": "$Resources.Strings.AccountAddressDS_Primary_5t8s0bg",
+					"ariaLabel": "",
+					"labelPosition": "left",
+					"tooltip": "",
+					"control": "$AccountAddressDS_Primary_5t8s0bg",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
 				},
 				"parentName": "TopAreaProfileContainer",
 				"propertyName": "items",
 				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_7lxfka2",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_7lxfka2_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_uz0l71e",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "ComboBox_aodhml8",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.AccountAddressDS_Country_xxebp21",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": false,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$AccountAddressDS_Country_xxebp21",
-					"visible": true,
-					"readonly": false,
-					"placeholder": ""
-				},
-				"parentName": "TopAreaProfileContainer",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_9lhedb6",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_9lhedb6_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_aodhml8",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "ComboBox_0bey5z8",
-				"values": {
-					"layoutConfig": {
-						"column": 3,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.AccountAddressDS_City_ajr19vx",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": false,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$AccountAddressDS_City_ajr19vx",
-					"visible": true,
-					"readonly": false,
-					"placeholder": ""
-				},
-				"parentName": "TopAreaProfileContainer",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_fm1ygcv",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_fm1ygcv_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_0bey5z8",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Input_agm1koj",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.AccountAddressDS_Zip_itvhzsn",
-					"control": "$AccountAddressDS_Zip_itvhzsn",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
-				},
-				"parentName": "TopAreaProfileContainer",
-				"propertyName": "items",
-				"index": 4
-			},
-			{
-				"operation": "insert",
-				"name": "ComboBox_5la5k4n",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.AccountAddressDS_AddressType_9nu05tf",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$AccountAddressDS_AddressType_9nu05tf",
-					"visible": true,
-					"readonly": false,
-					"placeholder": ""
-				},
-				"parentName": "TopAreaProfileContainer",
-				"propertyName": "items",
-				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -289,7 +140,7 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"layoutConfig": {
 						"column": 3,
 						"colSpan": 1,
-						"row": 3,
+						"row": 1,
 						"rowSpan": 1
 					},
 					"type": "crt.GridContainer",
@@ -316,7 +167,35 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				},
 				"parentName": "TopAreaProfileContainer",
 				"propertyName": "items",
-				"index": 6
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_5la5k4n",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.AccountAddressDS_AddressType_9nu05tf",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$AccountAddressDS_AddressType_9nu05tf",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "GridContainer_1ggl9c3",
+				"propertyName": "items",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -325,7 +204,7 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 4,
+						"row": 2,
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
@@ -340,7 +219,7 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				},
 				"parentName": "TopAreaProfileContainer",
 				"propertyName": "items",
-				"index": 7
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -349,7 +228,7 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
-						"row": 4,
+						"row": 2,
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
@@ -363,34 +242,330 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				},
 				"parentName": "TopAreaProfileContainer",
 				"propertyName": "items",
-				"index": 8
+				"index": 4
 			},
 			{
 				"operation": "insert",
-				"name": "Checkbox_m6u1gdg",
+				"name": "Checkbox_h3bcsqu",
 				"values": {
 					"layoutConfig": {
 						"column": 3,
 						"colSpan": 1,
-						"row": 4,
+						"row": 2,
 						"rowSpan": 1
 					},
 					"type": "crt.Checkbox",
 					"value": true,
 					"disabled": false,
 					"inversed": false,
-					"label": "$Resources.Strings.AccountAddressDS_Primary_5t8s0bg",
+					"label": "$Resources.Strings.AccountAddressDS_PgrReverseUnloading_plc23jp",
 					"ariaLabel": "",
 					"labelPosition": "left",
 					"tooltip": "",
-					"control": "$AccountAddressDS_Primary_5t8s0bg",
+					"control": "$AccountAddressDS_PgrReverseUnloading_plc23jp",
 					"visible": true,
 					"readonly": false,
 					"placeholder": ""
 				},
 				"parentName": "TopAreaProfileContainer",
 				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "Input_akiv7vi",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.AccountAddressDS_Address_diesqny",
+					"control": "$AccountAddressDS_Address_diesqny",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "left",
+					"visible": true
+				},
+				"parentName": "TopAreaProfileContainer",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_ccemeuw",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.AccountAddressDS_PgrValidFrom_7ons7ox",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "left",
+					"tooltip": "",
+					"pickerType": "datetime",
+					"control": "$AccountAddressDS_PgrValidFrom_7ons7ox",
+					"visible": true
+				},
+				"parentName": "TopAreaProfileContainer",
+				"propertyName": "items",
+				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "Input_agm1koj",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.AccountAddressDS_Zip_itvhzsn",
+					"control": "$AccountAddressDS_Zip_itvhzsn",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "TopAreaProfileContainer",
+				"propertyName": "items",
+				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_pccif6v",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.AccountAddressDS_PgrValidTo_lridfk8",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "left",
+					"tooltip": "",
+					"pickerType": "datetime",
+					"control": "$AccountAddressDS_PgrValidTo_lridfk8",
+					"visible": true
+				},
+				"parentName": "TopAreaProfileContainer",
+				"propertyName": "items",
 				"index": 9
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_0bey5z8",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.AccountAddressDS_City_ajr19vx",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$AccountAddressDS_City_ajr19vx",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "TopAreaProfileContainer",
+				"propertyName": "items",
+				"index": 10
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_fm1ygcv",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_fm1ygcv_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_0bey5z8",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "NumberInput_2dbtdqa",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.AccountAddressDS_PgrMaxStackWeight_yyfik64",
+					"control": "$AccountAddressDS_PgrMaxStackWeight_yyfik64",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "left",
+					"tooltip": "",
+					"visible": true
+				},
+				"parentName": "TopAreaProfileContainer",
+				"propertyName": "items",
+				"index": 11
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_aodhml8",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 6,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.AccountAddressDS_Country_xxebp21",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$AccountAddressDS_Country_xxebp21",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "TopAreaProfileContainer",
+				"propertyName": "items",
+				"index": 12
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_9lhedb6",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_9lhedb6_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_aodhml8",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "NumberInput_cqgkanz",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 6,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.AccountAddressDS_PgrMaxStackHeight_tdd0lwk",
+					"control": "$AccountAddressDS_PgrMaxStackHeight_tdd0lwk",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "left",
+					"tooltip": "",
+					"visible": true
+				},
+				"parentName": "TopAreaProfileContainer",
+				"propertyName": "items",
+				"index": 13
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_517a1dj",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 7,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.AccountAddressDS_PgrPalletManagementContact_u7641u7",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$AccountAddressDS_PgrPalletManagementContact_u7641u7"
+				},
+				"parentName": "TopAreaProfileContainer",
+				"propertyName": "items",
+				"index": 14
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_dhxtf7i",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_dhxtf7i_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_517a1dj",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "NumberInput_50xft4s",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 7,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.AccountAddressDS_PgrLoadingSillHeight_eev1ymh",
+					"control": "$AccountAddressDS_PgrLoadingSillHeight_eev1ymh",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "left",
+					"tooltip": "",
+					"visible": true
+				},
+				"parentName": "TopAreaProfileContainer",
+				"propertyName": "items",
+				"index": 15
 			},
 			{
 				"operation": "insert",
@@ -999,239 +1174,6 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				"parentName": "GridContainer_shn2eng",
 				"propertyName": "items",
 				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "TabContainer_wuleg2y",
-				"values": {
-					"type": "crt.TabContainer",
-					"items": [],
-					"caption": "#ResourceString(TabContainer_wuleg2y_caption)#",
-					"iconPosition": "only-text",
-					"visible": true
-				},
-				"parentName": "Tabs",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "GridContainer_k4twbm7",
-				"values": {
-					"type": "crt.GridContainer",
-					"columns": [
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)"
-					],
-					"rows": "minmax(max-content, 32px)",
-					"gap": {
-						"columnGap": "large",
-						"rowGap": "none"
-					},
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"alignItems": "stretch",
-					"color": "transparent",
-					"borderRadius": "none",
-					"padding": {
-						"top": "none",
-						"right": "none",
-						"bottom": "none",
-						"left": "none"
-					}
-				},
-				"parentName": "TabContainer_wuleg2y",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DateTimePicker_ccemeuw",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.DateTimePicker",
-					"label": "$Resources.Strings.AccountAddressDS_PgrValidFrom_7ons7ox",
-					"placeholder": "",
-					"readonly": false,
-					"labelPosition": "left",
-					"tooltip": "",
-					"pickerType": "datetime",
-					"control": "$AccountAddressDS_PgrValidFrom_7ons7ox",
-					"visible": true
-				},
-				"parentName": "GridContainer_k4twbm7",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DateTimePicker_pccif6v",
-				"values": {
-					"layoutConfig": {
-						"column": 3,
-						"colSpan": 2,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.DateTimePicker",
-					"label": "$Resources.Strings.AccountAddressDS_PgrValidTo_lridfk8",
-					"placeholder": "",
-					"readonly": false,
-					"labelPosition": "left",
-					"tooltip": "",
-					"pickerType": "datetime",
-					"control": "$AccountAddressDS_PgrValidTo_lridfk8",
-					"visible": true
-				},
-				"parentName": "GridContainer_k4twbm7",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "NumberInput_2dbtdqa",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.AccountAddressDS_PgrMaxStackWeight_yyfik64",
-					"control": "$AccountAddressDS_PgrMaxStackWeight_yyfik64",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "left",
-					"tooltip": "",
-					"visible": true
-				},
-				"parentName": "GridContainer_k4twbm7",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "NumberInput_cqgkanz",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.AccountAddressDS_PgrMaxStackHeight_tdd0lwk",
-					"control": "$AccountAddressDS_PgrMaxStackHeight_tdd0lwk",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "left",
-					"tooltip": "",
-					"visible": true
-				},
-				"parentName": "GridContainer_k4twbm7",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "NumberInput_50xft4s",
-				"values": {
-					"layoutConfig": {
-						"column": 3,
-						"colSpan": 2,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.AccountAddressDS_PgrLoadingSillHeight_eev1ymh",
-					"control": "$AccountAddressDS_PgrLoadingSillHeight_eev1ymh",
-					"readonly": false,
-					"placeholder": "",
-					"labelPosition": "left",
-					"tooltip": "",
-					"visible": true
-				},
-				"parentName": "GridContainer_k4twbm7",
-				"propertyName": "items",
-				"index": 4
-			},
-			{
-				"operation": "insert",
-				"name": "ComboBox_517a1dj",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.AccountAddressDS_PgrPalletManagementContact_u7641u7",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$AccountAddressDS_PgrPalletManagementContact_u7641u7"
-				},
-				"parentName": "GridContainer_k4twbm7",
-				"propertyName": "items",
-				"index": 5
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_dhxtf7i",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_dhxtf7i_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_517a1dj",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Checkbox_h3bcsqu",
-				"values": {
-					"layoutConfig": {
-						"column": 3,
-						"colSpan": 2,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.Checkbox",
-					"value": true,
-					"disabled": false,
-					"inversed": false,
-					"label": "$Resources.Strings.AccountAddressDS_PgrReverseUnloading_plc23jp",
-					"ariaLabel": "",
-					"labelPosition": "left",
-					"tooltip": "",
-					"control": "$AccountAddressDS_PgrReverseUnloading_plc23jp",
-					"visible": true,
-					"readonly": false,
-					"placeholder": ""
-				},
-				"parentName": "GridContainer_k4twbm7",
-				"propertyName": "items",
-				"index": 6
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -1387,24 +1329,6 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							}
 						}
 					},
-					"AccountAddressDS_Region_lh86k5e": {
-						"modelConfig": {
-							"path": "AccountAddressDS.Region"
-						}
-					},
-					"AccountAddressDS_Region_lh86k5e_List": {
-						"isCollection": true,
-						"modelConfig": {
-							"sortingConfig": {
-								"default": [
-									{
-										"columnName": "Name",
-										"direction": "asc"
-									}
-								]
-							}
-						}
-					},
 					"AccountAddressDS_City_ajr19vx": {
 						"modelConfig": {
 							"path": "AccountAddressDS.City"
@@ -1480,6 +1404,29 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 						"modelConfig": {
 							"path": "AccountAddressDS.PgrWepaformAddressName"
 						}
+					},
+					"AccountAddressDS_Account_9h2l09a": {
+						"modelConfig": {
+							"path": "AccountAddressDS.Account"
+						}
+					},
+					"AccountAddressDS_Account_9h2l09a_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"ComboBox_ln6zops_ValueDetails": {
+						"modelConfig": {
+							"path": "AccountAddressDS.AccountPgrWepaformName"
+						}
 					}
 				}
 			}
@@ -1506,7 +1453,13 @@ define("PgrAccountAddressFormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 										}
 									}
 								},
-								"allowCopyingRecords": false
+								"allowCopyingRecords": false,
+								"attributes": {
+									"AccountPgrWepaformName": {
+										"path": "Account.PgrWepaformName",
+										"type": "ForwardReference"
+									}
+								}
 							}
 						},
 						"GridDetail_bzmq35rDS": {

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Weekly Sales Report form page" />
+			<Item Name="LocalizableStrings.Button_56o32ha_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.Button_dkqi4mp_caption.Value" Value="View report" />
+			<Item Name="LocalizableStrings.Button_s34uw4b_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.ChartWidget_wqxpdh4_series_0.Value" Value="Budget [TQM]" />
+			<Item Name="LocalizableStrings.ChartWidget_wqxpdh4_series_1.Value" Value="Order intake [TQM]" />
+			<Item Name="LocalizableStrings.ChartWidget_wqxpdh4_title.Value" Value="Top 5 Customers by Budget" />
+			<Item Name="LocalizableStrings.ComboBox_802hh3f_ariaLabel.Value" Value="Dropdown" />
+			<Item Name="LocalizableStrings.ComboBox_802hh3f_label.Value" Value="Dropdown" />
+			<Item Name="LocalizableStrings.DataGrid_6y6mb4lDS_PgrAccount.Value" Value="Customer" />
+			<Item Name="LocalizableStrings.DataGrid_p9ugu6aDS_PgrAccount.Value" Value="Customer" />
+			<Item Name="LocalizableStrings.ExpansionPanel_7crmuco_title.Value" Value="Customer situation" />
+			<Item Name="LocalizableStrings.ExpansionPanel_eki7qua_title.Value" Value="Open 3-6-9 tasks" />
+			<Item Name="LocalizableStrings.ExpansionPanel_fvqh9lp_title.Value" Value="Planned Visits (Next week)" />
+			<Item Name="LocalizableStrings.ExpansionPanel_ihwyode_title.Value" Value="Open Measures" />
+			<Item Name="LocalizableStrings.ExpansionPanel_m66prs5_title.Value" Value="Related Visit reports" />
+			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="Overview" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_6xgltjn_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_9jn4v4f_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_hf5ya0h_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrAccount.Value" Value="Customer" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrVisitDidNotTakePlace.Value" Value="No visit" />
+			<Item Name="LocalizableStrings.GridDetail_zcqdktnDS_PgrAccount.Value" Value="Customer" />
+			<Item Name="LocalizableStrings.GridDetail_zcqdktnDS_PgrAccount_PgrVwAccountMetricSnapshotPgrAccount_PgrBudgetValue_oapmttf.Value" Value="Budget value Sum of values" />
+			<Item Name="LocalizableStrings.GridDetail_zcqdktnDS_PgrAccount_PgrVwAccountMetricSnapshotPgrAccount_PgrDeviationPctBudget_mpql2zj.Value" Value="Deviation % of budget Maximum value" />
+			<Item Name="LocalizableStrings.GridDetail_zcqdktnDS_PgrAccount_PgrVwAccountMetricSnapshotPgrAccount_PgrOrderIntakeValue_4ee76a7.Value" Value="Order intake value Sum of values" />
+			<Item Name="LocalizableStrings.GridDetail_zcqdktnDS_PgrDeliveryShare.Value" Value="PG Share" />
+			<Item Name="LocalizableStrings.GridDetail_zcqdktnDS_PgrNineDayAvg.Value" Value="9-day avg order intake" />
+			<Item Name="LocalizableStrings.GridDetail_zcqdktnDS_PgrVisitBudget.Value" Value="Budget" />
+			<Item Name="LocalizableStrings.GridDetail_zcqdktnDS_PgrVisitDeviation.Value" Value="Deviation %" />
+			<Item Name="LocalizableStrings.GridDetail_zs3al7lDS_Account_Pgr369BudgetCalculationPgrAccount_PgrToleranceAdjustedBudget_w1apktm.Value" Value="Tolerance-adjusted budget" />
+			<Item Name="LocalizableStrings.GridDetail_zs3al7lDS_PgrAccount.Value" Value="Customer" />
+			<Item Name="LocalizableStrings.GridDetail_zs3al7lDS_PgrAccount_PgrOrderIntakeDayCounter.Value" Value="Order intake day counter" />
+			<Item Name="LocalizableStrings.IndicatorWidget_626yo4g_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.IndicatorWidget_626yo4g_hint.Value" Value="Components.IndicatorWidget.Hint" />
+			<Item Name="LocalizableStrings.IndicatorWidget_626yo4g_title.Value" Value="Order intake [TQM]" />
+			<Item Name="LocalizableStrings.IndicatorWidget_har31n7_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.IndicatorWidget_har31n7_hint.Value" Value="Components.IndicatorWidget.Hint" />
+			<Item Name="LocalizableStrings.IndicatorWidget_har31n7_title.Value" Value="Quality check marks" />
+			<Item Name="LocalizableStrings.IndicatorWidget_jvd5tfw_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.IndicatorWidget_jvd5tfw_hint.Value" Value="Components.IndicatorWidget.Hint" />
+			<Item Name="LocalizableStrings.IndicatorWidget_jvd5tfw_title.Value" Value="9 Day avg Order Intake [TQM]" />
+			<Item Name="LocalizableStrings.IndicatorWidget_s6es0ld_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.IndicatorWidget_s6es0ld_hint.Value" Value="Components.IndicatorWidget.Hint" />
+			<Item Name="LocalizableStrings.IndicatorWidget_s6es0ld_title.Value" Value="Service &amp; Delivery check marks" />
+			<Item Name="LocalizableStrings.IndicatorWidget_ta5uugn_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.IndicatorWidget_ta5uugn_hint.Value" Value="Components.IndicatorWidget.Hint" />
+			<Item Name="LocalizableStrings.IndicatorWidget_ta5uugn_title.Value" Value="Budget [TQM]" />
+			<Item Name="LocalizableStrings.IndicatorWidget_vdwd3qa_config_text_template.Value" Value="{0}" />
+			<Item Name="LocalizableStrings.IndicatorWidget_vdwd3qa_hint.Value" Value="Components.IndicatorWidget.Hint" />
+			<Item Name="LocalizableStrings.IndicatorWidget_vdwd3qa_title.Value" Value="Deviation [%]" />
+			<Item Name="LocalizableStrings.NumberInput_vpi4hk8_label.Value" Value="Week nr" />
+			<Item Name="LocalizableStrings.TabContainer_6k84kcz_caption.Value" Value="Visits &amp; Activities" />
+			<Item Name="LocalizableStrings.TabContainer_9wi9cfc_caption.Value" Value="Audit log" />
+			<Item Name="LocalizableStrings.TabContainer_ovp5q9m_caption.Value" Value="Report comments" />
+			<Item Name="LocalizableStrings.TabContainer_vlwl5fh_caption.Value" Value="Report info" />
+			<Item Name="LocalizableStrings.addRecord_66hk99h_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_6npx3e4_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_7dex4gt_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_aua9fgq_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_p7ysrsm_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_u20e7cd_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_xxhriw2_caption.Value" Value="Add new" />
+		</Items>
+	</Group>
+</Resources>

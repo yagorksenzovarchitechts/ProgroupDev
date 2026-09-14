@@ -12,6 +12,19 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "merge",
+				"name": "MenuItem_ExportToExcel",
+				"values": {
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "DataGrid_0kcsg12",
+							"filters": "$DataGrid_0kcsg12 | crt.ToCollectionFilters : 'DataGrid_0kcsg12' : $DataGrid_0kcsg12_SelectionState"
+						}
+					}
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "MainFilterContainer",
 				"values": {
 					"alignItems": "stretch"
@@ -28,7 +41,8 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"iconPosition": "left-icon",
 						"defaultValue": [],
 						"entitySchemaName": "Territory",
-						"recordsFilter": null
+						"recordsFilter": null,
+						"defaultValueListSorting": null
 					},
 					"_filterOptions": {
 						"expose": [
@@ -81,14 +95,34 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"hint": "#ResourceString(LookupQuickFilterByTag_config_hint)#",
 						"icon": "tag-icon",
 						"iconPosition": "left-icon",
-						"entitySchemaName": null,
+						"entitySchemaName": "Tag_Virtual_Schema",
 						"defaultValue": [],
-						"recordsFilter": null
+						"recordsFilter": null,
+						"defaultValueListSorting": null
 					},
 					"_filterOptions": {
-						"expose": [],
+						"expose": [
+							{
+								"attribute": "LookupQuickFilterByTag_DataGrid_0kcsg12",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "DataGrid_0kcsg12",
+													"filterColumn": "Tag_Virtual_Column"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							}
+						],
 						"from": "LookupQuickFilterByTag_Value"
-					}
+					},
+					"visible": true
 				}
 			},
 			{
@@ -128,6 +162,15 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"FolderTree_active_folder_id"
 						]
 					}
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "Filters",
+				"values": {
+					"schemaName": "Account",
+					"visible": true,
+					"headerTemplate": ""
 				}
 			},
 			{
@@ -181,6 +224,10 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							{
 								"attribute": "QuickFilter_iihiiel_Dashboards",
 								"loadOnChange": true
+							},
+							{
+								"attribute": "Filters_Filter",
+								"loadOnChange": true
 							}
 						]
 					}
@@ -203,7 +250,8 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							}
 						],
 						"entitySchemaName": "AccountType",
-						"recordsFilter": null
+						"recordsFilter": null,
+						"defaultValueListSorting": null
 					},
 					"_filterOptions": {
 						"expose": [
@@ -263,7 +311,49 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"iconPosition": "left-icon",
 						"defaultValue": [],
 						"entitySchemaName": "Contact",
-						"recordsFilter": null,
+						"recordsFilter": {
+							"items": {
+								"c5e86263-74c6-49d5-8671-c46e0a1c89d8": {
+									"filterType": 1,
+									"comparisonType": 4,
+									"isEnabled": true,
+									"trimDateTimeParameterToDate": true,
+									"leftExpression": {
+										"expressionType": 3,
+										"functionType": 2,
+										"aggregationType": 5,
+										"columnPath": "[Account:PgrSalesDirector].CreatedOn",
+										"subFilters": {
+											"items": {},
+											"logicalOperation": 0,
+											"isEnabled": true,
+											"filterType": 6,
+											"rootSchemaName": "Account",
+											"key": "da101954-e751-4456-a825-c452ef95c1e4"
+										}
+									},
+									"isAggregative": true,
+									"dataValueType": 7,
+									"rightExpression": {
+										"expressionType": 1,
+										"functionType": 1,
+										"macrosType": 5
+									},
+									"subFilters": {
+										"items": {},
+										"logicalOperation": 0,
+										"isEnabled": true,
+										"filterType": 6,
+										"rootSchemaName": "Account",
+										"key": "da101954-e751-4456-a825-c452ef95c1e4"
+									}
+								}
+							},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "Contact"
+						},
 						"defaultValueListSorting": null
 					},
 					"_filterOptions": {
@@ -329,27 +419,53 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							}
 						],
 						"entitySchemaName": "Contact",
-						"recordsFilter": null
+						"recordsFilter": {
+							"items": {
+								"288e2f78-bce7-480d-bd88-1c9bb1c50c74": {
+									"filterType": 1,
+									"comparisonType": 4,
+									"isEnabled": true,
+									"trimDateTimeParameterToDate": true,
+									"leftExpression": {
+										"expressionType": 3,
+										"functionType": 2,
+										"aggregationType": 5,
+										"columnPath": "[Account:PgrSalesManager].CreatedOn",
+										"subFilters": {
+											"items": {},
+											"logicalOperation": 0,
+											"isEnabled": true,
+											"filterType": 6,
+											"rootSchemaName": "Account",
+											"key": "99c9e1e9-8ad1-4614-8d6d-76aaa83490a4"
+										}
+									},
+									"isAggregative": true,
+									"dataValueType": 7,
+									"rightExpression": {
+										"expressionType": 1,
+										"functionType": 1,
+										"macrosType": 5
+									},
+									"subFilters": {
+										"items": {},
+										"logicalOperation": 0,
+										"isEnabled": true,
+										"filterType": 6,
+										"rootSchemaName": "Account",
+										"key": "99c9e1e9-8ad1-4614-8d6d-76aaa83490a4"
+									}
+								}
+							},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "Contact"
+						},
+						"defaultValueListSorting": null
 					},
 					"_filterOptions": {
 						"expose": [
-							{
-								"attribute": "QuickFilter_iihiiel_Dashboards",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "Dashboards",
-													"filterColumn": "Owner"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
 							{
 								"attribute": "QuickFilter_iihiiel_DataGrid_0kcsg12",
 								"converters": [
@@ -359,7 +475,7 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 											{
 												"target": {
 													"viewAttributeName": "DataGrid_0kcsg12",
-													"filterColumn": "Owner"
+													"filterColumn": "PgrSalesManager"
 												},
 												"quickFilterType": "lookup"
 											}
@@ -467,9 +583,9 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							}
 						},
 						"editable": {
-							"enable": false,
-							"itemsCreation": false,
-							"floatingEditPanel": false
+							"enable": true,
+							"itemsCreation": true,
+							"floatingEditPanel": true
 						}
 					},
 					"items": "$DataGrid_0kcsg12",
@@ -530,7 +646,11 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					],
 					"placeholder": false,
 					"visible": true,
-					"fitContent": true
+					"fitContent": true,
+					"selectionState": "$DataGrid_0kcsg12_SelectionState",
+					"_selectionOptions": {
+						"attribute": "DataGrid_0kcsg12_SelectionState"
+					}
 				},
 				"parentName": "ListContainer",
 				"propertyName": "items",
@@ -571,6 +691,14 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 								},
 								{
 									"name": "PgrSuspendedAt369QuickFilter_DataGrid_0kcsg12",
+									"loadOnChange": true
+								},
+								{
+									"name": "Filters_Filter",
+									"loadOnChange": true
+								},
+								{
+									"name": "LookupQuickFilterByTag_DataGrid_0kcsg12",
 									"loadOnChange": true
 								}
 							]

@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "dbb24303-c3da-4127-9e4f-66b270b2e5fc",
+    "Name": "PgrWeeklySalesReport_FormPage",
+    "ModifiedOnUtc": "\/Date(1789127034000)\/",
+    "Parent": {
+      "UId": "3b2e117f-8c6b-4ca5-80a2-7ebb497cddf9",
+      "Name": "PageWithTabsFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Weekly Sales Report form page",
+    "DependsOn": []
+  }
+}

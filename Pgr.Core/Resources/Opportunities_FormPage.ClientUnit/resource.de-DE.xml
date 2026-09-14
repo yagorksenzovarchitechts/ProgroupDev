@@ -8,25 +8,45 @@
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
 			<Item Name="LocalizableStrings.CloseReason_label.Value" Value="Abschlussgrund" />
-			<Item Name="LocalizableStrings.CompetitorsExpansionPanel_title.Value" Value="Wettbewerber" />
-			<Item Name="LocalizableStrings.CompetitorsListDS_Competitor.Value" Value="Wettbewerber" />
 			<Item Name="LocalizableStrings.ContactLabel_caption.Value" Value="Ansprechpartner" />
-			<Item Name="LocalizableStrings.DaysAtCurrentStageNewMetric_title.Value" Value="Tage in Phase" />
-			<Item Name="LocalizableStrings.DaysInFunnelNewMetric_title.Value" Value="Tage im Trichter" />
+			<Item Name="LocalizableStrings.CreateOrderButton_caption.Value" Value="Create new order" />
+			<Item Name="LocalizableStrings.DocumentsAddButton_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.DocumentsExpansionPanel_title.Value" Value="Dokumente" />
+			<Item Name="LocalizableStrings.DocumentsExportDataButton_caption.Value" Value="Exportieren nach Excel" />
+			<Item Name="LocalizableStrings.DocumentsImportDataButton_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.DocumentsRefreshButton_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.DocumentsSearchFilter_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.DocumentsSettingsButton_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.EmailsSentNewMetric_title.Value" Value="Gesendete E-Mails" />
 			<Item Name="LocalizableStrings.HistoryTab_caption.Value" Value="Verlauf" />
-			<Item Name="LocalizableStrings.NextStepsTabContainerHeaderLabel_caption.Value" Value="Nächste Schritte" />
-			<Item Name="LocalizableStrings.NextStepsTabContainer_caption.Value" Value="Nächste Schritte" />
+			<Item Name="LocalizableStrings.InvoicesAddButton_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.InvoicesExpansionPanel_title.Value" Value="Rechnungen" />
+			<Item Name="LocalizableStrings.InvoicesExportDataButton_caption.Value" Value="Exportieren nach Excel" />
+			<Item Name="LocalizableStrings.InvoicesImportDataButton_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.InvoicesRefreshButton_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.InvoicesSearchFilter_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.InvoicesSettingsButton_caption.Value" Value="Aktionen" />
+			<Item Name="LocalizableStrings.OpportunityHistoryDS_EntityChangeType.Value" Value="Typ ändern" />
 			<Item Name="LocalizableStrings.OpportunityHistoryExpansionPanel_title.Value" Value="Änderungshistorie" />
+			<Item Name="LocalizableStrings.OpportunityHistoryExportDataBtn_caption.Value" Value="Excel-Export" />
+			<Item Name="LocalizableStrings.OpportunityHistoryRefreshBtn_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.OpportunityHistorySearchFilter_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.OpportunityHistorySettingsBtn_caption.Value" Value="Aktionen" />
+			<Item Name="LocalizableStrings.OrdersAddButton_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.OrdersExpansionPanel_title.Value" Value="Bestellungen" />
+			<Item Name="LocalizableStrings.OrdersExportDataButton_caption.Value" Value="Exportieren nach Excel" />
+			<Item Name="LocalizableStrings.OrdersImportDataButton_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.OrdersRefreshButton_caption.Value" Value="Aktualisieren" />
+			<Item Name="LocalizableStrings.OrdersSearchFilter_placeholder.Value" Value="Suche" />
+			<Item Name="LocalizableStrings.OrdersSettingsButton_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.OutgoingCallsNewMetric_title.Value" Value="Ausgehende Anrufe" />
 			<Item Name="LocalizableStrings.OverviewTab_caption.Value" Value="Übersicht" />
-			<Item Name="LocalizableStrings.PredictiveProbabilityMetric_title.Value" Value="Wahrscheinlichkeit" />
-			<Item Name="LocalizableStrings.ProcessingTab_caption.Value" Value="In Bearbeitung" />
 			<Item Name="LocalizableStrings.ProductSuggestions_placeholder.Value" Value="Geben Sie die Produkte an, die dem Kunden angeboten werden können." />
-			<Item Name="LocalizableStrings.ProductsExpansionPanel_title.Value" Value="Produkte" />
-			<Item Name="LocalizableStrings.ProductsTab_caption.Value" Value="Produkte" />
+			<Item Name="LocalizableStrings.QuickFilterShowAllDocuments_config_caption.Value" Value="Show all documents by customer" />
+			<Item Name="LocalizableStrings.QuickFilterShowAllInvoices_config_caption.Value" Value="Show all invoices by customer" />
+			<Item Name="LocalizableStrings.QuickFilterShowAllOrders_config_caption.Value" Value="Show all orders by customer" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
-			<Item Name="LocalizableStrings.StageHistoryExpansionPanel_title.Value" Value="Phasenverlauf" />
+			<Item Name="LocalizableStrings.addRecord_ih4zcqj_caption.Value" Value="Neu hinzufügen" />
 		</Items>
 	</Group>
 </Resources>

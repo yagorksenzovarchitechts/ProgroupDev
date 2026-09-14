@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "b5e8f928-3084-470b-b7f9-71f24ff196fe",
+    "Name": "PgrAccountMetricsRelatedPage",
+    "ModifiedOnUtc": "\/Date(1788783793000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Account metrics (Page settings)",
+    "DependsOn": []
+  }
+}

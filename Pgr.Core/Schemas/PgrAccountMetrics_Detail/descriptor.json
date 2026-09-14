@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "c974feb1-ef67-41d0-8509-cd00aeafd062",
+    "Name": "PgrAccountMetrics_Detail",
+    "ModifiedOnUtc": "\/Date(1788783793000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Account metrics detail",
+    "DependsOn": []
+  }
+}

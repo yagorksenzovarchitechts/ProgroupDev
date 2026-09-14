@@ -136,6 +136,34 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 			},
 			{
 				"operation": "insert",
+				"name": "Button_1hzou43",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_1hzou43_caption)#",
+					"color": "default",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "left-icon",
+					"visible": true,
+					"icon": "reload-icon",
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "PgrGetVisitReportData",
+							"processRunType": "ForTheSelectedPage",
+							"saveAtProcessStart": true,
+							"showNotification": true,
+							"recordIdProcessParameterName": "ParameterVisitReportID"
+						}
+					},
+					"clickMode": "default"
+				},
+				"parentName": "ActionButtonsContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
 				"name": "Label_qoozpze",
 				"values": {
 					"layoutConfig": {
@@ -182,28 +210,11 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"visible": true,
 					"readonly": false,
 					"placeholder": "",
-					"secondaryDisplayValue": "PgrWFName"
+					"secondaryDisplayValue": "PgrWepaformName"
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
 				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_g7igl2j",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_g7igl2j_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_xv0k1x0",
-				"propertyName": "listActions",
-				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -272,12 +283,40 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_tfw8gs8",
+				"name": "ComboBox_ovm1ift",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "#ResourceString(ComboBox_ovm1ift_label)#",
+					"ariaLabel": "#ResourceString(ComboBox_ovm1ift_ariaLabel)#",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"readonly": true,
+					"control": "$PDS_PgrAccountPgrSalesManager_9r48zfn",
+					"visible": true,
+					"placeholder": ""
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_tfw8gs8",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 6,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -289,11 +328,14 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_PgrOwner_7r0x4b8"
+					"control": "$PDS_PgrOwner_7r0x4b8",
+					"visible": false,
+					"readonly": false,
+					"placeholder": ""
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -1215,19 +1257,37 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 			},
 			{
 				"operation": "insert",
+				"name": "NumberInput_iu2t9qj",
+				"values": {
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_PgrActualMTD_cqxrcej",
+					"control": "$PDS_PgrActualMTD_cqxrcej",
+					"readonly": true,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": "",
+					"visible": true
+				},
+				"parentName": "FlexContainer_rg696p6",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "NumberInput_xt3vqgj",
 				"values": {
 					"type": "crt.NumberInput",
 					"label": "$Resources.Strings.PDS_PgrNineDayAvg_htg5jr3",
 					"control": "$PDS_PgrNineDayAvg_htg5jr3",
-					"readonly": false,
+					"readonly": true,
 					"placeholder": "",
 					"labelPosition": "auto",
-					"tooltip": ""
+					"tooltip": "",
+					"visible": true
 				},
 				"parentName": "FlexContainer_rg696p6",
 				"propertyName": "items",
-				"index": 0
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -1236,14 +1296,15 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"type": "crt.NumberInput",
 					"label": "$Resources.Strings.PDS_PgrVisitBudget_9lyfccw",
 					"control": "$PDS_PgrVisitBudget_9lyfccw",
-					"readonly": false,
+					"readonly": true,
 					"placeholder": "",
 					"labelPosition": "auto",
-					"tooltip": ""
+					"tooltip": "",
+					"visible": true
 				},
 				"parentName": "FlexContainer_rg696p6",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -1252,14 +1313,15 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"type": "crt.NumberInput",
 					"label": "$Resources.Strings.PDS_PgrVisitDeviation_nc4objw",
 					"control": "$PDS_PgrVisitDeviation_nc4objw",
-					"readonly": false,
+					"readonly": true,
 					"placeholder": "",
 					"labelPosition": "auto",
-					"tooltip": ""
+					"tooltip": "",
+					"visible": true
 				},
 				"parentName": "FlexContainer_rg696p6",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -2535,6 +2597,29 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 						"modelConfig": {
 							"path": "PDS.PgrTopicSpecial"
 						}
+					},
+					"PDS_PgrAccountPgrSalesManager_9r48zfn": {
+						"modelConfig": {
+							"path": "PDS.PgrAccountPgrSalesManager_9r48zfn"
+						}
+					},
+					"PDS_PgrAccountPgrSalesManager_9r48zfn_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_PgrActualMTD_cqxrcej": {
+						"modelConfig": {
+							"path": "PDS.PgrActualMTD"
+						}
 					}
 				}
 			},
@@ -2581,7 +2666,13 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"PDS": {
 						"type": "crt.EntityDataSource",
 						"config": {
-							"entitySchemaName": "PgrVisitReport"
+							"entitySchemaName": "PgrVisitReport",
+							"attributes": {
+								"PgrAccountPgrSalesManager_9r48zfn": {
+									"path": "PgrAccount.PgrSalesManager",
+									"type": "ForwardReference"
+								}
+							}
 						},
 						"scope": "page"
 					},

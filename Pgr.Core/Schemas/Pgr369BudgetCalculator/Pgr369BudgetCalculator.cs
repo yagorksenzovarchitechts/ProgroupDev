@@ -57,9 +57,10 @@ namespace Pgr.Core
         public Pgr369DailyCalculation CalculateDaily(Guid accountId)
         {
             var dailyBudget = GetLatestMetricValue(
-                accountId, PgrConstants.PgrMetricType.Budget, PgrConstants.PgrPeriodUnit.Month);
+                accountId, PgrConstants.PgrMetricType.Budget, PgrConstants.PgrPeriodUnit.Month, DateTime.Today);
             var orderIntakeAvg = GetLatestMetricValue(
-                accountId, PgrConstants.PgrMetricType.AvgOrderIntake3Days, PgrConstants.PgrPeriodUnit.Day);
+                accountId, PgrConstants.PgrMetricType.AvgOrderIntake3Days, PgrConstants.PgrPeriodUnit.Day,
+                DateTime.Today);
             if (!dailyBudget.HasValue || !orderIntakeAvg.HasValue)
             {
                 return null;
@@ -81,7 +82,7 @@ namespace Pgr.Core
                 calculation.WindowFrom = window.Min();
                 calculation.WindowTo = window.Max();
                 calculation.BudgetCompareValue = GetBudgetCompareValue(
-                    accountId, window, dailyBudget.Value, tolerance);
+                    accountId, window, tolerance, dailyBudget.Value);
                 calculation.OrderIntakeAvg = orderIntakeAvg.Value;
                 calculation.IsDeviation = calculation.OrderIntakeAvg < calculation.BudgetCompareValue;
             }
@@ -159,27 +160,28 @@ namespace Pgr.Core
             };
         }
 
-        /// <summary>
-        ///     Budget compare value (CMVP-194): the 3-day rolling average of the calendar-adjusted
-        ///     daily threshold over the supplied trailing working-day window.
-        ///     Full day → daily threshold as-is; half day → daily threshold / 2 (non-working days
-        ///     are never in <paramref name="window" />, so they are neither counted nor averaged).
-        ///     Each day keeps the threshold of the period it actually occurred in, so a window that
-        ///     spans a period boundary is averaged as-is (period boundary handling, CMVP-194).
-        /// </summary>
         private decimal GetBudgetCompareValue(
-            Guid accountId, List<DateTime> window, decimal dailyBudget, Pgr369Tolerance tolerance)
+            Guid accountId, List<DateTime> window, Pgr369Tolerance tolerance, decimal fallbackBudget)
         {
             var sum = 0m;
+            var count = 0;
             foreach (var day in window)
             {
-                var dailyThreshold = ResolveDailyThreshold(dailyBudget, tolerance);
+                var dayBudget = GetLatestMetricValue(
+                    accountId, PgrConstants.PgrMetricType.Budget, PgrConstants.PgrPeriodUnit.Month, day);
+                if (!dayBudget.HasValue)
+                {
+                    continue;
+                }
+
+                var dailyThreshold = ResolveDailyThreshold(dayBudget.Value, tolerance);
                 sum += GetDayType(day, accountId) == Pgr369DayType.Half
                     ? dailyThreshold / 2m
                     : dailyThreshold;
+                count++;
             }
 
-            return sum / window.Count;
+            return count == 0 ? ResolveDailyThreshold(fallbackBudget, tolerance) : sum / count;
         }
 
         private decimal ResolveDailyThreshold(decimal dailyBudget, Pgr369Tolerance tolerance)
@@ -264,7 +266,7 @@ namespace Pgr.Core
                 rows[0].GetTypedColumnValue<decimal>(percentageColumn));
         }
 
-        private decimal? GetLatestMetricValue(Guid accountId, Guid metricTypeId, Guid periodUnitId)
+        private decimal? GetLatestMetricValue(Guid accountId, Guid metricTypeId, Guid periodUnitId, DateTime asOfDate)
         {
             var esq = CreateQuery(MetricValueEntityName);
             var valueColumn = esq.AddColumn("PgrValue").Name;
@@ -275,7 +277,7 @@ namespace Pgr.Core
             esq.Filters.Add(esq.CreateFilterWithParameters(
                 FilterComparisonType.Equal, "PgrPeriodUnitId", periodUnitId));
             esq.Filters.Add(esq.CreateFilterWithParameters(
-                FilterComparisonType.LessOrEqual, "PgrDate", DateTime.Today));
+                FilterComparisonType.LessOrEqual, "PgrDate", asOfDate));
             var dateColumn = esq.AddColumn("PgrDate");
             dateColumn.OrderDirection = OrderDirection.Descending;
             dateColumn.OrderPosition = 0;

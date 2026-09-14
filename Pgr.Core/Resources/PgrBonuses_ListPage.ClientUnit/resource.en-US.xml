@@ -3,6 +3,9 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Bonuses list page" />
+			<Item Name="LocalizableStrings.ActionButton_caption.Value" Value="Export" />
+			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Import" />
 		</Items>
 	</Group>
 </Resources>

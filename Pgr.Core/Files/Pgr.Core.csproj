@@ -351,6 +351,11 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
+		<Reference Include="CrtMeddpiccInLeadOppMgmt">
+			<HintPath>$(RelativePkgFolderPath)/CrtMeddpiccInLeadOppMgmt/$(StandalonePackageAssemblyPath)/CrtMeddpiccInLeadOppMgmt.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
 		<Reference Include="CrtMeetingInsights">
 			<HintPath>$(RelativePkgFolderPath)/CrtMeetingInsights/$(StandalonePackageAssemblyPath)/CrtMeetingInsights.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
@@ -435,6 +440,7 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrGroupAffiliation/PgrGroupAffiliation.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrGroupAffiliation/PgrGroupAffiliation.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrIsVertIntegrated/PgrIsVertIntegrated.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrIsVertIntegrated/PgrIsVertIntegrated.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrMetricType/PgrMetricType.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrMetricType/PgrMetricType.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrNumberOfWalls/PgrNumberOfWalls.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrNumberOfWalls/PgrNumberOfWalls.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrOdataLog/PgrOdataLog.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrOdataLog/PgrOdataLog.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPerformance/PgrPerformance.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPerformance/PgrPerformance.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPeriodUnit/PgrPeriodUnit.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPeriodUnit/PgrPeriodUnit.cs')" />
@@ -447,10 +453,14 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPowerBiUserFilter/PgrPowerBiUserFilter.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrPowerBiUserFilter/PgrPowerBiUserFilter.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrProjectPrice/PgrProjectPrice.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrProjectPrice/PgrProjectPrice.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrProjectPriceRule/PgrProjectPriceRule.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrProjectPriceRule/PgrProjectPriceRule.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrProjectProbabilty/PgrProjectProbabilty.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrProjectProbabilty/PgrProjectProbabilty.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrTeam/PgrTeam.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrTeam/PgrTeam.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitReason/PgrVisitReason.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitReason/PgrVisitReason.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitReport/PgrVisitReport.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitReport/PgrVisitReport.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitType/PgrVisitType.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitType/PgrVisitType.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportStatus/PgrWeeklyReportStatus.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportStatus/PgrWeeklyReportStatus.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklySalesReport/PgrWeeklySalesReport.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklySalesReport/PgrWeeklySalesReport.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWorkShiftModel/PgrWorkShiftModel.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWorkShiftModel/PgrWorkShiftModel.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrYear/PgrYear.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrYear/PgrYear.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/Product/Product.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/Product/Product.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/SocialMessage/SocialMessage.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/SocialMessage/SocialMessage.cs')" />

@@ -161,12 +161,77 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
-				"name": "Checkbox_wn5rt2b",
+				"name": "Input_vl9o75i",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrCity_8nz2n3r",
+					"control": "$PDS_PgrCity_8nz2n3r",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_hiv3tn6",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrCountry_u8uqnpx",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrCountry_u8uqnpx"
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_s2ht2be",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_s2ht2be_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_hiv3tn6",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Checkbox_wn5rt2b",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
 						"rowSpan": 1
 					},
 					"type": "crt.Checkbox",
@@ -184,7 +249,49 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 1
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_ibf37b3",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrYear_9zmxmlb",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrYear_9zmxmlb"
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_rrt5y2s",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_rrt5y2s_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_ibf37b3",
+				"propertyName": "listActions",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -211,7 +318,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
-				"name": "Input_yd75vpr",
+				"name": "ComboBox_tlgjrdo",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
@@ -219,18 +326,41 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						"row": 1,
 						"rowSpan": 1
 					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrNumberOfWalls_t2dpfp3",
-					"control": "$PDS_PgrNumberOfWalls_t2dpfp3",
-					"placeholder": "",
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrColumn29_q8yyg0t",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
 					"tooltip": "",
+					"control": "$PDS_PgrColumn29_q8yyg0t",
+					"visible": true,
 					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
+					"placeholder": "",
+					"valueDetails": null
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_skmaixe",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_skmaixe_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_tlgjrdo",
+				"propertyName": "listActions",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -257,49 +387,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_ibf37b3",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_PgrYear_9zmxmlb",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_PgrYear_9zmxmlb"
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_rrt5y2s",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_rrt5y2s_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_ibf37b3",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Input_e3gk9xg",
+				"name": "ComboBox_yygvlvc",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -307,18 +395,41 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						"row": 3,
 						"rowSpan": 1
 					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrTargetNumberOfEmployees_yam70z4",
-					"control": "$PDS_PgrTargetNumberOfEmployees_yam70z4",
-					"placeholder": "",
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrWorkShiftModel_0yob3hm",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
 					"tooltip": "",
+					"control": "$PDS_PgrWorkShiftModel_0yob3hm",
+					"visible": true,
 					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
+					"placeholder": "",
+					"valueDetails": null
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 4
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_zhvkupt",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_zhvkupt_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_yygvlvc",
+				"propertyName": "listActions",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -327,7 +438,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
-						"row": 3,
+						"row": 2,
 						"rowSpan": 1
 					},
 					"type": "crt.Checkbox",
@@ -342,30 +453,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 5
-			},
-			{
-				"operation": "insert",
-				"name": "Input_yb2mlxw",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 4,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrSpecialFeatures_ephezd4",
-					"control": "$PDS_PgrSpecialFeatures_ephezd4",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 6
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -374,7 +462,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 5,
+						"row": 4,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -390,7 +478,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 7
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -411,12 +499,35 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
+				"name": "Input_e3gk9xg",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrTargetNumberOfEmployees_yam70z4",
+					"control": "$PDS_PgrTargetNumberOfEmployees_yam70z4",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
 				"name": "ComboBox_a00zb9w",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
-						"row": 5,
+						"row": 4,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -432,7 +543,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 8
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -450,6 +561,39 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				"parentName": "ComboBox_a00zb9w",
 				"propertyName": "listActions",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Input_yb2mlxw",
+				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrSpecialFeatures_ephezd4",
+					"control": "$PDS_PgrSpecialFeatures_ephezd4",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "WebInput_u1n8zj3",
+				"values": {
+					"type": "crt.WebInput",
+					"label": "$Resources.Strings.PDS_PgrColumn27_dmatrfu",
+					"control": "$PDS_PgrColumn27_dmatrfu",
+					"labelPosition": "auto",
+					"placeholder": "",
+					"tooltip": "",
+					"needHandleSave": false
+				},
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -477,7 +621,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 1
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -694,7 +838,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 2
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -846,11 +990,6 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"path": "PDS.PgrWorkingWidth"
 						}
 					},
-					"PDS_PgrNumberOfWalls_t2dpfp3": {
-						"modelConfig": {
-							"path": "PDS.PgrNumberOfWalls"
-						}
-					},
 					"PDS_PgrFlute_ny0kxdj": {
 						"modelConfig": {
 							"path": "PDS.PgrFlute"
@@ -913,6 +1052,70 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						}
 					},
 					"PDS_PgrPackagingParkCustomer2_j0p4ms4_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_PgrCountry_u8uqnpx": {
+						"modelConfig": {
+							"path": "PDS.PgrCountry"
+						}
+					},
+					"PDS_PgrCountry_u8uqnpx_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_PgrCity_8nz2n3r": {
+						"modelConfig": {
+							"path": "PDS.PgrCity"
+						}
+					},
+					"PDS_PgrColumn27_dmatrfu": {
+						"modelConfig": {
+							"path": "PDS.PgrColumn27"
+						}
+					},
+					"PDS_PgrWorkShiftModel_0yob3hm": {
+						"modelConfig": {
+							"path": "PDS.PgrWorkShiftModel"
+						}
+					},
+					"PDS_PgrWorkShiftModel_0yob3hm_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_PgrColumn29_q8yyg0t": {
+						"modelConfig": {
+							"path": "PDS.PgrNrOfWalls"
+						}
+					},
+					"PDS_PgrColumn29_q8yyg0t_List": {
 						"isCollection": true,
 						"modelConfig": {
 							"sortingConfig": {

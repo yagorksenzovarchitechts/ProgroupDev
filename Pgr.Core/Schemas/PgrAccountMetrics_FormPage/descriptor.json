@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "57abdf53-427a-42be-9b37-183e02ce3dcd",
+    "Name": "PgrAccountMetrics_FormPage",
+    "ModifiedOnUtc": "\/Date(1789040257000)\/",
+    "Parent": {
+      "UId": "3b2e117f-8c6b-4ca5-80a2-7ebb497cddf9",
+      "Name": "PageWithTabsFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Account metrics form page",
+    "DependsOn": []
+  }
+}
