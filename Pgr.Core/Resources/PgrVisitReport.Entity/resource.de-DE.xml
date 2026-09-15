@@ -16,6 +16,10 @@
 			<Item Name="Columns.PgrPerformance.Caption" Value="Performance" />
 			<Item Name="Columns.PgrPerformanceText.Caption" Value="Freitext Performance" />
 			<Item Name="Columns.PgrSummary.Caption" Value="Sonstiges / private Anmerkungen" />
+			<Item Name="Columns.PgrTopicCommercial.Caption" Value="Kommerziell &amp; Preise" />
+			<Item Name="Columns.PgrTopicProjectsOpportunities.Caption" Value="Projekte &amp; Verkaufschancen" />
+			<Item Name="Columns.PgrTopicQuality.Caption" Value="Qualität" />
+			<Item Name="Columns.PgrTopicSpecial.Caption" Value="spezielle Themen" />
 			<Item Name="Columns.PgrVisitBudget.Caption" Value="Budget" />
 			<Item Name="Columns.PgrVisitDate.Caption" Value="Besuchsdatum" />
 			<Item Name="Columns.PgrVisitDeviation.Caption" Value="Abweichung %" />

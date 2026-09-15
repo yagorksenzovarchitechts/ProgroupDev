@@ -15,7 +15,7 @@
 			<Item Name="Columns.PgrBestPlantLinked.Caption" Value="Bestwerk" />
 			<Item Name="Columns.PgrBoardConnect.Caption" Value="Board Connect" />
 			<Item Name="Columns.PgrCompetitorNotes.Caption" Value="Notiz" />
-			<Item Name="Columns.PgrCustomerServiceName.Caption" Value="Innendienstmitarbeiter" />
+			<Item Name="Columns.PgrCustomerServiceName.Caption" Value="Customer Support Name" />
 			<Item Name="Columns.PgrCustomerlabel.Caption" Value="Kundenkennzeichen" />
 			<Item Name="Columns.PgrDateBl.Caption" Value="Sperrdatum" />
 			<Item Name="Columns.PgrDeliveryBl.Caption" Value="SAP Liefersperre" />
@@ -50,8 +50,8 @@
 			<Item Name="Columns.PgrPlanningBl.Caption" Value="SAP Planungssperre" />
 			<Item Name="Columns.PgrProductionCapacity.Caption" Value="Produktionskapazität" />
 			<Item Name="Columns.PgrSalesDirector.Caption" Value="Sales Director" />
-			<Item Name="Columns.PgrSensitiveToOverDelivery.Caption" Value="Überlieferungssensibel" />
-			<Item Name="Columns.PgrServiceTeamLead.Caption" Value="ID Teamleiter" />
+			<Item Name="Columns.PgrSensitiveToOverDelivery.Caption" Value="sensibel hinsichtl. Überlieferungen" />
+			<Item Name="Columns.PgrServiceTeamLead.Caption" Value="CS Teamleiter" />
 			<Item Name="Columns.PgrSpecialFeatures.Caption" Value="Besonderheiten" />
 			<Item Name="Columns.PgrSuspensionEndDate.Caption" Value="Aussetzung Enddatum" />
 			<Item Name="Columns.PgrSuspensionReason.Caption" Value="Aussetzungsgrund" />

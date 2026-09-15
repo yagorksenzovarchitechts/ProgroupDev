@@ -193,8 +193,59 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				"name": "FlexContainer_3zwk0zu"
 			},
 			{
-				"operation": "remove",
-				"name": "Notes"
+				"operation": "merge",
+				"name": "Notes",
+				"values": {
+					"label": "$Resources.Strings.PDS_Notes_ivz0y09",
+					"labelPosition": "hidden",
+					"control": "$PDS_Notes_ivz0y09",
+					"placeholder": "",
+					"filesStorage": {
+						"masterRecordColumnValue": "$Id",
+						"entitySchemaName": "ActivityFile",
+						"recordColumnName": "Activity"
+					}
+				}
+			},
+			{
+				"operation": "insert",
+				"name": "ExpansionPanel_Notes",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(PDS_Notes_ivz0y09)#",
+					"toggleType": "default",
+					"togglePosition": "before",
+					"expanded": true,
+					"labelColor": "auto",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"padding": {
+						"top": "small",
+						"bottom": "small",
+						"left": "none",
+						"right": "none"
+					},
+					"fitContent": true,
+					"visible": true
+				},
+				"parentName": "GridContainer_1qargav",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "move",
+				"name": "Notes",
+				"parentName": "ExpansionPanel_Notes",
+				"propertyName": "items",
+				"index": 0
 			},
 			{
 				"operation": "merge",
@@ -300,30 +351,6 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				"parentName": "GridContainer_1qargav",
 				"propertyName": "items",
 				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Input_7octqgt",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_Notes_ivz0y09",
-					"control": "$PDS_Notes_ivz0y09",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": true,
-					"labelPosition": "auto",
-					"visible": true
-				},
-				"parentName": "GridContainer_1qargav",
-				"propertyName": "items",
-				"index": 1
 			},
 			{
 				"operation": "insert",

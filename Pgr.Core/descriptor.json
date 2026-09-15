@@ -3,7 +3,7 @@
     "UId": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
     "Name": "Pgr.Core",
     "Type": 1,
-    "ModifiedOnUtc": "\/Date(1782917556000)\/",
+    "ModifiedOnUtc": "\/Date(1788354896000)\/",
     "Maintainer": "ProGroup",
     "ProjectPath": "Files/Pgr.Core.csproj",
     "DependsOn": [
@@ -53,12 +53,6 @@
         "UId": "70dba663-02da-75c9-d7cd-7c0590bb4591",
         "PackageVersion": "7.8.0",
         "Name": "CrtDigitalAdsInLeadGen",
-        "Type": 1,
-        "InstallBehavior": 1
-      },
-      {
-        "UId": "90858294-4f2b-60a6-6032-33639e964dfe",
-        "Name": "CrtAICases",
         "Type": 1,
         "InstallBehavior": 1
       },

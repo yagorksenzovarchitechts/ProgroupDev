@@ -1340,7 +1340,7 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"title": "#ResourceString(ExpansionPanel_lmmvc10_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": true,
+					"expanded": false,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,

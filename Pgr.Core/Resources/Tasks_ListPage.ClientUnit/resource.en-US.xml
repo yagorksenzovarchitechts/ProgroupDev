@@ -8,9 +8,11 @@
 			<Item Name="LocalizableStrings.QuickFilter_07b11xi_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.QuickFilter_07b11xi_config_caption.Value" Value="Account" />
 			<Item Name="LocalizableStrings.QuickFilter_3hurnbj_config_caption.Value" Value="Overdue tasks" />
-			<Item Name="LocalizableStrings.QuickFilter_CanceledTasks_config_caption.Value" Value="Show canceled/closed tasks" />
+			<Item Name="LocalizableStrings.QuickFilter_CanceledTasks_config_caption.Value" Value="Show cancelled/closed tasks" />
+			<Item Name="LocalizableStrings.QuickFilter_Employee_config_caption.Value" Value="Employees" />
 			<Item Name="LocalizableStrings.QuickFilter_MyTasks_config_caption.Value" Value="Only my tasks" />
 			<Item Name="LocalizableStrings.QuickFilter_PgrIsEscalated_config_caption.Value" Value="Escalated" />
+			<Item Name="LocalizableStrings.QuickFilter_j33tq6q_config_caption.Value" Value="Show Outlook activities" />
 			<Item Name="LocalizableStrings.QuickFilter_ndarf4i_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.QuickFilter_ndarf4i_config_caption.Value" Value="Category" />
 			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Search" />

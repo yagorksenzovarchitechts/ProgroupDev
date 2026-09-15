@@ -13,7 +13,8 @@
 			<Item Name="Columns.PgrDiscount.Caption" Value="Rabatt, %" />
 			<Item Name="Columns.PgrEstimatedVolume.Caption" Value="Gesch. Volumen" />
 			<Item Name="Columns.PgrFollowUpDate.Caption" Value="Follow up Datum" />
-			<Item Name="Columns.PgrProjectProbability.Caption" Value="Wahrscheinlichkeit" />
+			<Item Name="Columns.PgrOpportunityStartDate.Caption" Value="Startdatum Verkaufschance" />
+			<Item Name="Columns.PgrProjectProbability.Caption" Value="Wahrscheinlichkeit [in %]" />
 			<Item Name="Columns.Title.Caption" Value="Projekt Pipeline Name" />
 			<Item Name="Columns.Winner.Caption" Value="Gewinner" />
 		</Items>

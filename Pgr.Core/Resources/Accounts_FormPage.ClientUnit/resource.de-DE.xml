@@ -46,6 +46,10 @@
 			<Item Name="LocalizableStrings.MenuItem_5sivz5r_caption.Value" Value="Exportieren nach Excel" />
 			<Item Name="LocalizableStrings.MenuItem_6dw38zl_caption.Value" Value="Datenimport" />
 			<Item Name="LocalizableStrings.MenuItem_hgmncrh_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.NumberInput_16huvt7_label.Value" Value="Überlieferung Menge  (% 1)" />
+			<Item Name="LocalizableStrings.NumberInput_63qzwaj_label.Value" Value="Überlieferung Menge [Wert 1)" />
+			<Item Name="LocalizableStrings.NumberInput_9wk64ol_label.Value" Value="Überlieferung Menge (%2)" />
+			<Item Name="LocalizableStrings.NumberInput_g4pyp3s_label.Value" Value="Überlieferung Menge (Wert 2)" />
 			<Item Name="LocalizableStrings.OpportunityAddButton_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.OpportunityExpansionPanel_title.Value" Value="Verkaufschancen" />
 			<Item Name="LocalizableStrings.OpportunityExportDataButton_caption.Value" Value="Excel-Export" />
@@ -72,7 +76,7 @@
 			<Item Name="LocalizableStrings.SearchFilter_2y51wfx_placeholder.Value" Value="Suche" />
 			<Item Name="LocalizableStrings.TabContainer_0nkic4p_caption.Value" Value="Aktivitäten &amp; Besuchsberichte" />
 			<Item Name="LocalizableStrings.TabContainer_Competitor_caption.Value" Value="Wettbewerber" />
-			<Item Name="LocalizableStrings.TabContainer_Customer_caption.Value" Value="Kunde" />
+			<Item Name="LocalizableStrings.TabContainer_Customer_caption.Value" Value="Kundendaten" />
 			<Item Name="LocalizableStrings.TabContainer_cyno10d_caption.Value" Value="Bonus &amp; Vereinbarungen" />
 			<Item Name="LocalizableStrings.TabContainer_rn66zaz_caption.Value" Value="Projektpreise" />
 			<Item Name="LocalizableStrings.Territory_placeholder.Value" Value="Region auswählen" />

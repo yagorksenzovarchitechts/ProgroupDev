@@ -15,7 +15,7 @@
 			<Item Name="Columns.PgrBestPlantLinked.Caption" Value="Best plant" />
 			<Item Name="Columns.PgrBoardConnect.Caption" Value="Board connect" />
 			<Item Name="Columns.PgrCompetitorNotes.Caption" Value="Notes" />
-			<Item Name="Columns.PgrCustomerServiceName.Caption" Value="Customer service name" />
+			<Item Name="Columns.PgrCustomerServiceName.Caption" Value="Customer support name" />
 			<Item Name="Columns.PgrCustomerlabel.Caption" Value="Customer label" />
 			<Item Name="Columns.PgrDateBl.Caption" Value="Blocking date" />
 			<Item Name="Columns.PgrDeliveryBl.Caption" Value="Delivery blocked" />
@@ -53,7 +53,7 @@
 			<Item Name="Columns.PgrSalesManager.Caption" Value="Sales Manager" />
 			<Item Name="Columns.PgrSapCustomerId.Caption" Value="SAP Customer ID" />
 			<Item Name="Columns.PgrSensitiveToOverDelivery.Caption" Value="Sensitive to over-delivery" />
-			<Item Name="Columns.PgrServiceTeamLead.Caption" Value="Customer service team lead name" />
+			<Item Name="Columns.PgrServiceTeamLead.Caption" Value="Customer support team lead name" />
 			<Item Name="Columns.PgrSpecialFeatures.Caption" Value="Special features" />
 			<Item Name="Columns.PgrSuspensionEndDate.Caption" Value="Suspension end date" />
 			<Item Name="Columns.PgrSuspensionReason.Caption" Value="Suspension reason" />
