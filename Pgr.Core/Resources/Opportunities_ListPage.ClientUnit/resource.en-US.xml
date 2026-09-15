@@ -2,6 +2,7 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="Caption" Value="Project pipeline list page" />
 			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.AmountDecreaseLabel_caption.Value" Value="• Amount Decrease:" />
 			<Item Name="LocalizableStrings.AmountDecreaseTextLabel_caption.Value" Value="Opportunities still closing in the selected close date period where the Amount decreased in the change period." />
@@ -33,13 +34,72 @@
 			<Item Name="LocalizableStrings.PulledInTextLabel_caption.Value" Value="Opportunities that entered the selected close date period from a later period during the change period. (Eg Viewing June | change period last 7 days: Jul → Jun)." />
 			<Item Name="LocalizableStrings.PushedInLabel_caption.Value" Value="• Pushed In:" />
 			<Item Name="LocalizableStrings.PushedInTextLabel_caption.Value" Value="During the change period, opportunities whose Close Date moved into the selected close date period from an earlier period - often from cleanup of overdue deals from a prior period. (Eg Viewing June | change period last 7 days: May → Jun after pipeline hygiene)." />
+			<Item Name="LocalizableStrings.QuickFilterByOwner_config_caption.Value" Value="Owner of Task" />
 			<Item Name="LocalizableStrings.QuickFilter_a3irnn8_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.SalesWaterfallWidget_title.Value" Value="Sales waterfall pipeline" />
+			<Item Name="LocalizableStrings.SankeyHelpChangePeriodText_caption.Value" Value="The time window during which changes are tracked (for example, last 7 days)." />
+			<Item Name="LocalizableStrings.SankeyHelpChangePeriod_caption.Value" Value="• Change Period" />
+			<Item Name="LocalizableStrings.SankeyHelpFiscalPeriodText_caption.Value" Value="The Close Date period you are analyzing (for example, June or Current Quarter). You can select it at the top of the page." />
+			<Item Name="LocalizableStrings.SankeyHelpFiscalPeriod_caption.Value" Value="• Fiscal Period" />
+			<Item Name="LocalizableStrings.SankeyHelpHistorical_caption.Value" Value="All calculations use historical values, not current ones, so the chart reflects the state of each opportunity at the start and end of the change period." />
+			<Item Name="LocalizableStrings.SankeyHelpImportantText_caption.Value" Value="For the chart to calculate correctly, both date-range filters must be filled in:" />
+			<Item Name="LocalizableStrings.SankeyHelpImportant_caption.Value" Value="Set up the required periods" />
+			<Item Name="LocalizableStrings.SankeyHelpOutDowngradedLabel_caption.Value" Value="• Downgraded" />
+			<Item Name="LocalizableStrings.SankeyHelpOutDowngradedTextLabel_caption.Value" Value="Open deals that regressed to an earlier forecast category. Example: Commit → Best Case." />
+			<Item Name="LocalizableStrings.SankeyHelpOutIdleLabel_caption.Value" Value="• Idle" />
+			<Item Name="LocalizableStrings.SankeyHelpOutIdleTextLabel_caption.Value" Value="Open deals that stayed in the same forecast category from start to end of the period." />
+			<Item Name="LocalizableStrings.SankeyHelpOutLostLabel_caption.Value" Value="• Lost" />
+			<Item Name="LocalizableStrings.SankeyHelpOutLostTextLabel_caption.Value" Value="Deals marked Closed Lost during the period." />
+			<Item Name="LocalizableStrings.SankeyHelpOutSlippedLabel_caption.Value" Value="• Slipped" />
+			<Item Name="LocalizableStrings.SankeyHelpOutSlippedTextLabel_caption.Value" Value="Open deals whose Close Date moved out of the current period into a future one. Example: Q3 → Q4." />
+			<Item Name="LocalizableStrings.SankeyHelpOutUpgradedLabel_caption.Value" Value="• Upgraded" />
+			<Item Name="LocalizableStrings.SankeyHelpOutUpgradedTextLabel_caption.Value" Value="Open deals that progressed to a later forecast category. Example: Pipeline → Best Case." />
+			<Item Name="LocalizableStrings.SankeyHelpOutWonLabel_caption.Value" Value="• Won" />
+			<Item Name="LocalizableStrings.SankeyHelpOutWonTextLabel_caption.Value" Value="Deals marked Closed Won during the period." />
+			<Item Name="LocalizableStrings.SankeyHelpOutcomeHead_caption.Value" Value="Outcome categories (right side)" />
+			<Item Name="LocalizableStrings.SankeyHelpOverview1_caption.Value" Value="The Sankey chart shows how your open pipeline moved between two points in time." />
+			<Item Name="LocalizableStrings.SankeyHelpOverview2_caption.Value" Value="It displays each opportunity as a proportional flow from its starting forecast category (on the left) to its end-of-period outcome (on the right), so the largest movements stand out at a glance." />
+			<Item Name="LocalizableStrings.SankeyHelpOverview3_caption.Value" Value="If you also use the Waterfall chart, the two are complementary: Waterfall answers how much your pipeline changed, while Sankey answers what moved, and from where to where. Both read from the same historical data and use the same period model." />
+			<Item Name="LocalizableStrings.SankeyHelpReadHead_caption.Value" Value="How to read the chart" />
+			<Item Name="LocalizableStrings.SankeyHelpReadLeft_caption.Value" Value="Left side — where each deal stood at the start of the change period." />
+			<Item Name="LocalizableStrings.SankeyHelpReadRight_caption.Value" Value="Right side — where it ended up by the end of the change period." />
+			<Item Name="LocalizableStrings.SankeyHelpReadWidth_caption.Value" Value="Width of every node and flow is proportional to the opportunity amount: the left side uses the amount at the start, the right side uses the amount at the end, so a flow that widens or narrows reflects a change in amount." />
+			<Item Name="LocalizableStrings.SankeyHelpSourceHead_caption.Value" Value="Source categories (left side)" />
+			<Item Name="LocalizableStrings.SankeyHelpSourceIntro_caption.Value" Value="Open deals are grouped by the Forecast Category they held at the start of the period; deals that entered the period during the window go into a dedicated entry category. Pipeline, Best Case, and Commit are Forecast Category values on the opportunity." />
+			<Item Name="LocalizableStrings.SankeyHelpSrcBestCaseLabel_caption.Value" Value="• Best Case" />
+			<Item Name="LocalizableStrings.SankeyHelpSrcBestCaseTextLabel_caption.Value" Value="Open deals that are fully qualified with an embedded close plan but still have work to do." />
+			<Item Name="LocalizableStrings.SankeyHelpSrcCommitLabel_caption.Value" Value="• Commit" />
+			<Item Name="LocalizableStrings.SankeyHelpSrcCommitTextLabel_caption.Value" Value="Open deals going well and expected to close successfully; they slip only in exceptional cases." />
+			<Item Name="LocalizableStrings.SankeyHelpSrcNewLabel_caption.Value" Value="• New" />
+			<Item Name="LocalizableStrings.SankeyHelpSrcNewTextLabel_caption.Value" Value="Deals newly added to the selected period during the change period: created within the window with a Close Date in the period, or reopened within the current period." />
+			<Item Name="LocalizableStrings.SankeyHelpSrcPipelineLabel_caption.Value" Value="• Pipeline" />
+			<Item Name="LocalizableStrings.SankeyHelpSrcPipelineTextLabel_caption.Value" Value="Open deals in the early stages that still need development." />
+			<Item Name="LocalizableStrings.SankeyHelpSrcPulledInLabel_caption.Value" Value="• Pulled In" />
+			<Item Name="LocalizableStrings.SankeyHelpSrcPulledInTextLabel_caption.Value" Value="Deals whose Close Date moved from a later period into the selected period. Example: forecast for Q4, moved into Q3." />
+			<Item Name="LocalizableStrings.SankeyHelpSrcPushedInLabel_caption.Value" Value="• Pushed In" />
+			<Item Name="LocalizableStrings.SankeyHelpSrcPushedInTextLabel_caption.Value" Value="Deals whose Close Date moved from an earlier period into the selected period, often cleanup of overdue deals. Also includes deals reopened from a past period." />
+			<Item Name="LocalizableStrings.SankeyHelpTab_caption.Value" Value="Sankey" />
+			<Item Name="LocalizableStrings.SankeyHelpTitle_caption.Value" Value="See how your pipeline moved across forecast categories with the Sankey chart" />
+			<Item Name="LocalizableStrings.SankeyHelpWorkDrilldownLabel_caption.Value" Value="• Drill down to records" />
+			<Item Name="LocalizableStrings.SankeyHelpWorkDrilldownTextLabel_caption.Value" Value="A focused node shows a tooltip with a View data button. Click View data to filter the opportunity grid below the chart to the records related to that node or flow. The grid shows the current details of those opportunities, not the historical values used to build the chart." />
+			<Item Name="LocalizableStrings.SankeyHelpWorkHead_caption.Value" Value="Work with the chart" />
+			<Item Name="LocalizableStrings.SankeyHelpWorkHighlightLabel_caption.Value" Value="• Highlight related flows" />
+			<Item Name="LocalizableStrings.SankeyHelpWorkHighlightTextLabel_caption.Value" Value="Click any node or flow to focus it and highlight the related flows on the opposite side, so you can see where a category moved." />
+			<Item Name="LocalizableStrings.SankeyPipelineWidget_title.Value" Value="Sales pipeline movement (Sankey)" />
 			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.SlippedLabel_caption.Value" Value="• Slipped:" />
 			<Item Name="LocalizableStrings.SlippedTextLabel_caption.Value" Value="Opportunities that were in the selected close date period, but their Close Date moved to a out of this period during the change period. (Eg Viewing June | change window last 7 days: Jun → Jul)." />
 			<Item Name="LocalizableStrings.TerritoryQuickFilter_caption.Value" Value="Territory" />
 			<Item Name="LocalizableStrings.TerritoryQuickFilter_config_caption.Value" Value="Territory" />
+			<Item Name="LocalizableStrings.WaterfallHelpColumnsHead_caption.Value" Value="What each column means" />
+			<Item Name="LocalizableStrings.WaterfallHelpCountingHead_caption.Value" Value="How opportunities are counted" />
+			<Item Name="LocalizableStrings.WaterfallHelpCountingIntro_caption.Value" Value="When an opportunity has more than one movement in the same change period (for example, it was created and its Amount also changed), the chart decides which column it belongs to using this priority order:" />
+			<Item Name="LocalizableStrings.WaterfallHelpCountingNote_caption.Value" Value="Most opportunities land in a single column this way. The exception is a deal that both entered and left the period within the same window — for example, created as New and then marked Closed Won. It is counted in two columns, its entry column (New) and its exit column (Won), so that the start and end totals reconcile." />
+			<Item Name="LocalizableStrings.WaterfallHelpDecreaseHead_caption.Value" Value="Columns that reduce the period's open pipeline:" />
+			<Item Name="LocalizableStrings.WaterfallHelpIncreaseHead_caption.Value" Value="Columns that increase the period's open pipeline:" />
+			<Item Name="LocalizableStrings.WaterfallHelpPriorityOrder_caption.Value" Value="1. Lost, 2. Won, 3. Slipped, 4. New, 5. Pulled In, 6. Pushed In, 7. Amount Increase, 8. Amount Decrease." />
+			<Item Name="LocalizableStrings.WaterfallHelpTab_caption.Value" Value="Waterfall" />
+			<Item Name="LocalizableStrings.WaterfallHelpTitle_caption.Value" Value="See what changed your pipeline value with the Waterfall chart" />
 			<Item Name="LocalizableStrings.WonLabel_caption.Value" Value="• Won:" />
 			<Item Name="LocalizableStrings.WonTextLabel_caption.Value" Value="Opportunities in the selected close date period that were marked Closed Won in the change period (they exit open pipeline as booked)." />
 		</Items>

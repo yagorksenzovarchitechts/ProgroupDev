@@ -18,6 +18,7 @@
 			<Item Name="LocalizableStrings.DocumentsSearchFilter_placeholder.Value" Value="Suche" />
 			<Item Name="LocalizableStrings.DocumentsSettingsButton_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.EmailsSentNewMetric_title.Value" Value="Gesendete E-Mails" />
+			<Item Name="LocalizableStrings.ExpansionPanel_lmmvc10_title.Value" Value="Aufgaben" />
 			<Item Name="LocalizableStrings.HistoryTab_caption.Value" Value="Verlauf" />
 			<Item Name="LocalizableStrings.InvoicesAddButton_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.InvoicesExpansionPanel_title.Value" Value="Rechnungen" />
@@ -41,6 +42,7 @@
 			<Item Name="LocalizableStrings.OrdersSettingsButton_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.OutgoingCallsNewMetric_title.Value" Value="Ausgehende Anrufe" />
 			<Item Name="LocalizableStrings.OverviewTab_caption.Value" Value="Übersicht" />
+			<Item Name="LocalizableStrings.PgrEstimatedVolume_label.Value" Value="geschätztes Volumen [in TQM]" />
 			<Item Name="LocalizableStrings.ProductSuggestions_placeholder.Value" Value="Geben Sie die Produkte an, die dem Kunden angeboten werden können." />
 			<Item Name="LocalizableStrings.QuickFilterShowAllDocuments_config_caption.Value" Value="Show all documents by customer" />
 			<Item Name="LocalizableStrings.QuickFilterShowAllInvoices_config_caption.Value" Value="Show all invoices by customer" />

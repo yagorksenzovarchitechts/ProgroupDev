@@ -32,7 +32,7 @@
 			<Item Name="LocalizableStrings.Input_1snwgmj_tooltip.Value" Value="What was discussed? Outcome? Opportunities/risks?" />
 			<Item Name="LocalizableStrings.Input_az70u84_tooltip.Value" Value="Use when 'Other' is selected" />
 			<Item Name="LocalizableStrings.Input_s875dfr_tooltip.Value" Value="Optional additional note" />
-			<Item Name="LocalizableStrings.Label_Measure_caption.Value" Value="The person in charge receives measure notifications in Creatio. Non-Creatio users receive the task by email instead (owner defaults to the sales rep). Make sure their email is filled in on the contact page." />
+			<Item Name="LocalizableStrings.Label_Measure_caption.Value" Value="The person in charge receives measure notifications in Creatio. Non-Creatio users receive the task by email instead (owner defaults to the sales manager). Make sure their email is filled in on the contact page." />
 			<Item Name="LocalizableStrings.Label_qoozpze_caption.Value" Value=" Visit report Info" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
 			<Item Name="LocalizableStrings.TabContainer_widjyyt_caption.Value" Value="Report detail" />

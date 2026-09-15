@@ -2,14 +2,49 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
+			<Item Name="Caption" Value="Projektpipeline Auflistung" />
 			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.AmountDecreaseLabel_caption.Value" Value="• Verringerung des Betrags:" />
+			<Item Name="LocalizableStrings.AmountDecreaseTextLabel_caption.Value" Value="Verkaufschancen, die im ausgewählten Abschlusszeitraum noch geschlossen werden und bei denen sich der Betrag im Änderungszeitraum verringert hat." />
+			<Item Name="LocalizableStrings.AmountIncreaseLabel_caption.Value" Value="• Erhöhung des Betrags:" />
+			<Item Name="LocalizableStrings.AmountIncreaseTextLabel_caption.Value" Value="Verkaufschancen, die im ausgewählten Abschlusszeitraum noch geschlossen werden und bei denen sich der Betrag im Änderungszeitraum erhöht hat." />
+			<Item Name="LocalizableStrings.ChangePeriodHelpLabel_caption.Value" Value="• Änderungszeitraum" />
+			<Item Name="LocalizableStrings.ChangePeriodHelpTextLabel_caption.Value" Value="Legt das Zeitfenster fest, in dem Änderungen nachverfolgt werden (z. B. die letzten 7 Tage)." />
+			<Item Name="LocalizableStrings.ChangePeriodLabel_caption.Value" Value="Wie hat sich meine Pipeline für den ausgewählten Zeitraum geändert?" />
+			<Item Name="LocalizableStrings.ChangesPeriodQuickFilter_config_caption.Value" Value="Zeitraum ändern" />
 			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Importieren" />
+			<Item Name="LocalizableStrings.FiscalPeriodLabel_caption.Value" Value="• Fiskalperiode" />
+			<Item Name="LocalizableStrings.FiscalPeriodTextLabel_caption.Value" Value="Definiert den Abschlusszeitraum, den Sie analysieren (z.B. Juni oder Aktuelles Quartal). Kann oben auf der Seite ausgewählt werden." />
+			<Item Name="LocalizableStrings.HelpTabContainer_caption.Value" Value="Hilfe" />
+			<Item Name="LocalizableStrings.HelpToggleContentDescriptionLabel1_caption.Value" Value="Das Wasserfall-Diagramm zeigt, wie sich der Wert Ihrer Pipeline im Laufe der Zeit ändert." />
+			<Item Name="LocalizableStrings.HelpToggleContentDescriptionLabel2_caption.Value" Value="Es erläutert, was den Wert der Pipeline zwischen zwei Zeitpunkten erhöht oder verringert hat, indem die Gesamtveränderung in die wesentlichen Faktoren aufgeschlüsselt wird." />
+			<Item Name="LocalizableStrings.HelpToggleContentDescriptionLabel3_caption.Value" Value="Im Folgenden finden Sie eine Erläuterung jeder Spalte im Wasserfalldiagramm:" />
+			<Item Name="LocalizableStrings.HelpToggleContentDescriptionLabel4_caption.Value" Value="Um eine korrekte Berechnung des Wasserfalldiagramms sicherzustellen, werden Verkaufschancen-Filter für Abschlussdatum und Phase, die über Schnellfilter oder Ordner angewendet werden, ignoriert." />
+			<Item Name="LocalizableStrings.HelpToggleHeaderLabel_caption.Value" Value="Hilfe" />
+			<Item Name="LocalizableStrings.ImportantLabel_caption.Value" Value="Wichtig" />
+			<Item Name="LocalizableStrings.ImportantTextLabel_caption.Value" Value="Damit das Diagramm korrekt funktioniert, müssen beide Datumsbereichsfilter ausgefüllt sein:" />
+			<Item Name="LocalizableStrings.LostLabel_caption.Value" Value="• Verloren:" />
+			<Item Name="LocalizableStrings.LostTextLabel_caption.Value" Value="Verkaufschancen im ausgewählten Abschlusszeitraum, die im Änderungszeitraum als &quot;Abgeschlossen und Verloren&quot; markiert wurden und somit aus der offenen Pipeline herausfallen." />
 			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value="Excel-Export" />
+			<Item Name="LocalizableStrings.NewLabel_caption.Value" Value="• Neu:" />
+			<Item Name="LocalizableStrings.NewTextLabel_caption.Value" Value="Verkaufschancen, die während des Änderungszeitraums erstellt wurden und ein Abschlussdatum im ausgewählten Abschlussdatenzeitraum haben." />
 			<Item Name="LocalizableStrings.PDS_DueDate.Value" Value="Abschlussdatum" />
+			<Item Name="LocalizableStrings.PipelineAnalyticsTabContainer_caption.Value" Value="Pipeline-Analyse" />
+			<Item Name="LocalizableStrings.PulledInLabel_caption.Value" Value="• Pulled-in:" />
+			<Item Name="LocalizableStrings.PulledInTextLabel_caption.Value" Value="Verkaufschancen, die während des Änderungszeitraums aus einem späteren Zeitraum in den ausgewählten Abschlusszeitraum verschoben wurden. (Z. B. Anzeige Juni | Änderungszeitraum letzte 7 Tage: Jul → Jun)." />
+			<Item Name="LocalizableStrings.PushedInLabel_caption.Value" Value="• Pushed-in:" />
+			<Item Name="LocalizableStrings.PushedInTextLabel_caption.Value" Value="Verkaufschancen, bei denen sich das Abschlussdatum aus einem früheren Zeitraum in den ausgewählten Zeitraum verschoben hat – häufig durch das Bereinigen überfälliger Deals aus einem früheren Zeitraum. (Beispiel: Anzeige Juni | Änderungszeitraum letzte 7 Tage: Mai → Juni nach Pipeline-Bereinigung)." />
 			<Item Name="LocalizableStrings.QuickFilterByDate_config_caption.Value" Value="Zeitraum auswählen" />
 			<Item Name="LocalizableStrings.QuickFilterByOwner_config_caption.Value" Value="Verantwortlicher" />
+			<Item Name="LocalizableStrings.QuickFilter_a3irnn8_caption.Value" Value="Schnellfilter" />
+			<Item Name="LocalizableStrings.SalesWaterfallWidget_title.Value" Value="Sales-Waterfall-Pipeline" />
 			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Suche..." />
-			<Item Name="LocalizableStrings.TerritoryQuickFilter_config_caption.Value" Value="Vertriebsregion" />
+			<Item Name="LocalizableStrings.SlippedLabel_caption.Value" Value="• Slipped:" />
+			<Item Name="LocalizableStrings.SlippedTextLabel_caption.Value" Value="Verkaufschancen, die sich im ausgewählten Abschlusszeitraum befanden, deren Abschlussdatum aber während des Änderungszeitraums auf einen Zeitraum außerhalb dieses Zeitraums verschoben wurde. (Z. B. Anzeige Juni | Änderungszeitraum letzte 7 Tage: Jun → Jul)." />
+			<Item Name="LocalizableStrings.TerritoryQuickFilter_caption.Value" Value="Territorium" />
+			<Item Name="LocalizableStrings.TerritoryQuickFilter_config_caption.Value" Value="Vertriebsgebiet" />
+			<Item Name="LocalizableStrings.WonLabel_caption.Value" Value="• Gewonnen:" />
+			<Item Name="LocalizableStrings.WonTextLabel_caption.Value" Value="Verkaufschancen im ausgewählten Abschlusszeitraum, die im Änderungszeitraum als &quot;Abgeschlossen und Gewonnen&quot; markiert wurden (sie verlassen als gebucht die offene Pipeline)." />
 		</Items>
 	</Group>
 </Resources>

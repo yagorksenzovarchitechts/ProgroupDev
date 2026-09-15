@@ -28,6 +28,33 @@ define("Opportunities_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"operation": "merge",
 				"name": "QuickFilterByOwner",
 				"values": {
+					"config": {
+						"caption": "#ResourceString(QuickFilterByOwner_config_caption)#",
+						"hint": "",
+						"icon": "person-button-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": [],
+						"entitySchemaName": "Contact",
+						"recordsFilter": null,
+						"defaultValueListSorting": null
+					},
+					"visible": true
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "TerritoryQuickFilter",
+				"values": {
+					"config": {
+						"caption": "#ResourceString(TerritoryQuickFilter_config_caption)#",
+						"hint": "",
+						"icon": "filter-column-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": [],
+						"entitySchemaName": "Territory",
+						"recordsFilter": null,
+						"defaultValueListSorting": null
+					},
 					"visible": true
 				}
 			},
@@ -44,13 +71,6 @@ define("Opportunities_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 						"defaultValue": null,
 						"recordsFilter": null
 					}
-				}
-			},
-			{
-				"operation": "merge",
-				"name": "TerritoryQuickFilter",
-				"values": {
-					"visible": true
 				}
 			},
 			{
@@ -119,6 +139,50 @@ define("Opportunities_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"path": [
 					"attributes",
 					"Items",
+					"modelConfig"
+				],
+				"values": {
+					"filterAttributes": [
+						{
+							"loadOnChange": true,
+							"name": "FolderTree_active_folder_filter"
+						},
+						{
+							"name": "Items_PredefinedFilter",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilterByDate_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilterByOwner_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "SearchFilter_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "LookupQuickFilterByTag_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "TerritoryQuickFilter_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "Filters_Filter",
+							"loadOnChange": true
+						}
+					]
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"Items",
 					"modelConfig",
 					"sortingConfig"
 				],
@@ -126,20 +190,13 @@ define("Opportunities_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"default": [
 						{
 							"direction": "asc",
-							"columnName": "DueDate"
+							"columnName": "Title"
 						}
 					]
 				}
 			}
 		]/**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/,
 		modelConfigDiff: /**SCHEMA_MODEL_CONFIG_DIFF*/[
-			{
-				"operation": "remove",
-				"path": [],
-				"properties": [
-					"dependencies"
-				]
-			},
 			{
 				"operation": "remove",
 				"path": [

@@ -340,6 +340,13 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "merge",
+				"name": "ServiceTab",
+				"values": {
+					"visible": false
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "SalesTab",
 				"values": {
 					"visible": false
@@ -471,13 +478,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"width": 220
 						}
 					]
-				}
-			},
-			{
-				"operation": "merge",
-				"name": "ServiceTab",
-				"values": {
-					"visible": false
 				}
 			},
 			{

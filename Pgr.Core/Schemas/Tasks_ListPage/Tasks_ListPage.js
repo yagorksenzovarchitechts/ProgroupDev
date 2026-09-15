@@ -21,6 +21,87 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"operation": "merge",
 				"name": "QuickFilter_Employee",
 				"values": {
+					"config": {
+						"caption": "#ResourceString(QuickFilter_Employee_config_caption)#",
+						"hint": "#ResourceString(QuickFilter_Employee_config_hint)#",
+						"icon": "person-button-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": [
+							{
+								"value": "[#currentUserContact#]",
+								"checkedState": true
+							}
+						],
+						"entitySchemaName": "Contact",
+						"recordsFilter": {
+							"items": {
+								"b9affa61-7616-4547-8947-59c6d082b3bf": {
+									"filterType": 5,
+									"comparisonType": 15,
+									"isEnabled": true,
+									"trimDateTimeParameterToDate": false,
+									"leftExpression": {
+										"expressionType": 0,
+										"columnPath": "[SysAdminUnit:Contact].Id"
+									},
+									"isAggregative": true,
+									"dataValueType": 0,
+									"subFilters": {
+										"items": {
+											"c1ad0d42-aaea-4648-b50f-f00390c9e33f": {
+												"filterType": 1,
+												"comparisonType": 3,
+												"isEnabled": true,
+												"trimDateTimeParameterToDate": false,
+												"leftExpression": {
+													"expressionType": 0,
+													"columnPath": "Active"
+												},
+												"isAggregative": false,
+												"dataValueType": 12,
+												"rightExpression": {
+													"expressionType": 2,
+													"parameter": {
+														"dataValueType": 12,
+														"value": true
+													}
+												}
+											},
+											"378a3b13-dd51-418c-a529-a641184e46e7": {
+												"filterType": 1,
+												"comparisonType": 3,
+												"isEnabled": true,
+												"trimDateTimeParameterToDate": false,
+												"leftExpression": {
+													"expressionType": 0,
+													"columnPath": "ConnectionType"
+												},
+												"isAggregative": false,
+												"dataValueType": 4,
+												"rightExpression": {
+													"expressionType": 2,
+													"parameter": {
+														"dataValueType": 4,
+														"value": 0
+													}
+												}
+											}
+										},
+										"logicalOperation": 0,
+										"isEnabled": true,
+										"filterType": 6,
+										"rootSchemaName": "SysAdminUnit",
+										"key": "577be22a-a525-4d4f-8549-ad3eef608308"
+									}
+								}
+							},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "Contact"
+						},
+						"defaultValueListSorting": null
+					},
 					"visible": true
 				}
 			},
@@ -28,6 +109,14 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"operation": "merge",
 				"name": "QuickFilter_CanceledTasks",
 				"values": {
+					"config": {
+						"caption": "#ResourceString(QuickFilter_CanceledTasks_config_caption)#",
+						"hint": "",
+						"defaultValue": false,
+						"approachState": false,
+						"icon": "settings-button-icon",
+						"iconPosition": "left-icon"
+					},
 					"_filterOptions": {
 						"expose": [
 							{
@@ -75,6 +164,18 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 																				"Id": "4bdbb88f-58e6-df11-971b-001d60e938c6",
 																				"value": "4bdbb88f-58e6-df11-971b-001d60e938c6",
 																				"displayValue": "Done"
+																			}
+																		}
+																	},
+																	{
+																		"expressionType": 2,
+																		"parameter": {
+																			"dataValueType": 10,
+																			"value": {
+																				"Name": "Closed by system",
+																				"Id": "de886b4e-c4c5-462f-bd85-ae1694a655ae",
+																				"value": "de886b4e-c4c5-462f-bd85-ae1694a655ae",
+																				"displayValue": "Closed by system"
 																			}
 																		}
 																	}
@@ -243,7 +344,8 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 						"iconPosition": "left-icon",
 						"defaultValue": [],
 						"entitySchemaName": "ActivityCategory",
-						"recordsFilter": null
+						"recordsFilter": null,
+						"defaultValueListSorting": null
 					},
 					"_filterOptions": {
 						"expose": [
@@ -284,7 +386,8 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 						],
 						"from": "QuickFilter_ndarf4i_Value"
 					},
-					"filterType": "lookup"
+					"filterType": "lookup",
+					"visible": true
 				},
 				"parentName": "LeftFilterContainerInner",
 				"propertyName": "items",
@@ -338,6 +441,88 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"parentName": "LeftFilterContainerInner",
 				"propertyName": "items",
 				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_j33tq6q",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_j33tq6q_config_caption)#",
+						"hint": "",
+						"defaultValue": false,
+						"approachState": false,
+						"icon": "settings-button-icon",
+						"iconPosition": "left-icon"
+					},
+					"filterType": "custom",
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_j33tq6q_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"customFilter": {
+														"items": {
+															"0539259e-6222-4e74-b5cb-1a72aba8322c": {
+																"filterType": 4,
+																"comparisonType": 4,
+																"isEnabled": true,
+																"trimDateTimeParameterToDate": false,
+																"leftExpression": {
+																	"expressionType": 0,
+																	"columnPath": "ActivityCategory"
+																},
+																"isAggregative": false,
+																"dataValueType": 10,
+																"referenceSchemaName": "ActivityCategory",
+																"rightExpressions": [
+																	{
+																		"expressionType": 2,
+																		"parameter": {
+																			"dataValueType": 10,
+																			"value": {
+																				"Name": "Outlook activities",
+																				"Id": "5ae4fa0f-6ab6-41e2-b1dd-b2350d1fd9ab",
+																				"value": "5ae4fa0f-6ab6-41e2-b1dd-b2350d1fd9ab",
+																				"displayValue": "Outlook activities"
+																			}
+																		}
+																	}
+																]
+															}
+														},
+														"logicalOperation": 0,
+														"isEnabled": true,
+														"filterType": 6,
+														"rootSchemaName": "Activity"
+													},
+													"dependencyFilters": null
+												},
+												"quickFilterType": "custom",
+												"config": {
+													"approachState": false
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"QuickFilter_j33tq6q_Value"
+						]
+					},
+					"visible": true
+				},
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -411,7 +596,7 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				},
 				"parentName": "LeftFilterContainerInner",
 				"propertyName": "items",
-				"index": 6
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -485,7 +670,7 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				},
 				"parentName": "LeftFilterContainerInner",
 				"propertyName": "items",
-				"index": 7
+				"index": 8
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -596,6 +781,10 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 						},
 						{
 							"name": "Filters_Filter",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_j33tq6q_Items",
 							"loadOnChange": true
 						}
 					]

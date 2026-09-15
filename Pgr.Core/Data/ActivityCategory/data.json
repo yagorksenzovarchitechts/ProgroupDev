@@ -21,8 +21,21 @@
         },
         {
           "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
-          "Value": "e1831dec-cfc0-df11-b00f-001d60e938c6",
-          "DisplayValue": "Call"
+          "Value": "e3831dec-cfc0-df11-b00f-001d60e938c6",
+          "DisplayValue": "Visit"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "5ae4fa0f-6ab6-41e2-b1dd-b2350d1fd9ab"
+        },
+        {
+          "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
+          "Value": "fbe0acdc-cfc0-df11-b00f-001d60e938c6",
+          "DisplayValue": "Task"
         }
       ]
     },
