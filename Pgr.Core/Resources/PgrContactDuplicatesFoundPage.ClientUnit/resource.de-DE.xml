@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Kontaktdubletten gefunden" />
+			<Item Name="LocalizableStrings.PgrCancelButtonCaption.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.PgrDuplicateCreatedOnColumnCaption.Value" Value="Erstellt am" />
+			<Item Name="LocalizableStrings.PgrDuplicateEmailColumnCaption.Value" Value="E-Mail" />
+			<Item Name="LocalizableStrings.PgrDuplicateNameColumnCaption.Value" Value="Vollständiger Name" />
+			<Item Name="LocalizableStrings.PgrDuplicatesHintCaption.Value" Value="Der grün markierte Datensatz bleibt nach dem Zusammenführen erhalten; die anderen werden entfernt." />
+			<Item Name="LocalizableStrings.PgrFoundRecordsCaption.Value" Value="Gefundene Datensätze:" />
+			<Item Name="LocalizableStrings.PgrMergeButtonCaption.Value" Value="Zusammenführen" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmButton.Value" Value="Zusammenführen" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmCancelButton.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmMessagePrefix.Value" Value="Folgender Datensatz bleibt erhalten: " />
+			<Item Name="LocalizableStrings.PgrMergeConfirmMessageSuffix.Value" Value=". Folgende Datensätze werden damit zusammengeführt und entfernt: " />
+			<Item Name="LocalizableStrings.PgrMergeNewRecordLabel.Value" Value="der gerade erstellte neue Datensatz" />
+			<Item Name="LocalizableStrings.PgrPageTitle_caption.Value" Value="Mögliche Dubletten gefunden" />
+			<Item Name="LocalizableStrings.PgrSaveAnywayButtonCaption.Value" Value="Trotzdem speichern" />
+			<Item Name="LocalizableStrings.PgrSetAsMainButtonCaption.Value" Value="Als Haupt festlegen" />
+			<Item Name="LocalizableStrings.PgrSetAsMainConfirmationMessagePrefix.Value" Value="Als Hauptdatensatz festgelegt. Dieser Datensatz bleibt nach dem Zusammenführen erhalten; die anderen ausgewählten Datensätze werden entfernt." />
+			<Item Name="LocalizableStrings.PgrSetAsMainOkButtonCaption.Value" Value="OK" />
+			<Item Name="Parameters.2bf30d73-e6a3-4bd4-a2f0-b51f0c28b9ec.Caption" Value="PgrDuplicatesData" />
+			<Item Name="Parameters.71c90cd4-f64a-48e3-93cd-b20d58f0ef1a.Caption" Value="DialogId" />
+		</Items>
+	</Group>
+</Resources>

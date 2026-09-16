@@ -1,4 +1,4 @@
-define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule", "PgrClientConsts"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(duplicatesSearchModule, consts)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -8,7 +8,13 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"caption": "#ResourceString(SaveButton_caption)#",
 					"size": "large",
 					"iconPosition": "only-text",
-					"clickMode": "default"
+					"clickMode": "default",
+					"clicked": {
+						"request": "crt.SaveRecordRequest",
+						"params": {
+							"pgrCheckDuplicates": true
+						}
+					}
 				}
 			},
 			{
@@ -3425,6 +3431,26 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"attributes"
 				],
 				"values": {
+					"PgrDuplicatesFoundData": {
+						"value": null,
+						"change": {
+							"request": "usr.PgrOpenDuplicatesDialog"
+						}
+					},
+					"PgrDuplicatesListener": {
+						"value": null
+					},
+					"PgrOriginalSaveRequestParams": {
+						"value": null
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes"
+				],
+				"values": {
 					"Account_List": {
 						"isCollection": true,
 						"modelConfig": {
@@ -4302,7 +4328,74 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[
+			{
+				request: "crt.SaveRecordRequest",
+				handler: async (request, next) => {
+					const mode = await request.$context.PrimaryModelMode;
+					const isCreateMode = mode === "create" || mode === "copy";
+					if (request.pgrCheckDuplicates !== true || !isCreateMode) {
+						return await next?.handle(request);
+					}
+					const duplicates = await duplicatesSearchModule.findDuplicates(request.$context);
+					if (!duplicates.length) {
+						return await next?.handle(request);
+					}
+					request.$context.PgrOriginalSaveRequestParams = duplicatesSearchModule.getSaveRequestParams(request);
+					request.$context.PgrDuplicatesFoundData = duplicates;
+				}
+			},
+			{
+				request: "usr.PgrOpenDuplicatesDialog",
+				handler: async (request, next) => {
+					await duplicatesSearchModule.openDuplicatesDialog(request.$context);
+					return await next?.handle(request);
+				}
+			},
+			{
+				request: "crt.HandleViewModelDestroyRequest",
+				handler: async (request, next) => {
+					await duplicatesSearchModule.removeDialogListener(request.$context);
+					return await next?.handle(request);
+				}
+			},
+			{
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				handler: async (request, next) => {
+					if (request.attributeName === "CommunicationOptions_558wj6f") {
+						const phoneTypeIds = [
+							consts.CommunicationType.BusinessPhone,
+							consts.CommunicationType.MobilePhone
+						];
+						const control = request.$context.getControl("CommunicationOptions_558wj6f");
+						if (control && control.formControl) {
+							const invalidPhoneMessage = await request.$context.Resources.Strings.PgrInvalidPhoneFormat;
+							control.formControl.addValidators((formControl) => {
+								debugger;
+								const row = formControl.value;
+								if (!row) {
+									return null;
+								}
+								const communicationTypeId = (row.CommunicationType && row.CommunicationType.value)
+									|| row.CommunicationType;
+								if (!phoneTypeIds.includes(communicationTypeId)) {
+									return null;
+								}
+								if (row.Number && !/^[0-9+\-]+$/.test(row.Number)) {
+									return {
+										"pgrInvalidPhoneFormat": {
+											message: invalidPhoneMessage
+										}
+									};
+								}
+								return null;
+							});
+						}
+					}
+					return await next?.handle(request);
+				}
+			}
+		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
 	};

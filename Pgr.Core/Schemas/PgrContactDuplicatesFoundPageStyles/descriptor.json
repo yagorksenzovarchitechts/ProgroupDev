@@ -1,0 +1,10 @@
+{
+  "Descriptor": {
+    "UId": "7f620036-6f3d-411f-a23e-28462d829712",
+    "Name": "PgrContactDuplicatesFoundPageStyles",
+    "ModifiedOnUtc": "\/Date(1789575800000)\/",
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Pgr contact duplicates found page styles",
+    "DependsOn": []
+  }
+}

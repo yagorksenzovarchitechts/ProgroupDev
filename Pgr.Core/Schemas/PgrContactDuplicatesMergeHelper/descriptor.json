@@ -1,0 +1,10 @@
+{
+  "Descriptor": {
+    "UId": "9dfcc80b-1b7e-491a-8528-7bd476e426f3",
+    "Name": "PgrContactDuplicatesMergeHelper",
+    "ModifiedOnUtc": "\/Date(1789544000000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "Pgr contact duplicates merge helper",
+    "DependsOn": []
+  }
+}

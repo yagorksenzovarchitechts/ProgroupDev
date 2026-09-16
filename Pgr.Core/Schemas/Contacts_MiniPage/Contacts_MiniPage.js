@@ -1,4 +1,4 @@
-define("Contacts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("Contacts_MiniPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(duplicatesSearchModule)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -71,7 +71,13 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"operation": "merge",
 				"name": "SaveButton",
 				"values": {
-					"caption": "#ResourceString(SaveButton_caption)#"
+					"caption": "#ResourceString(SaveButton_caption)#",
+					"clicked": {
+						"request": "crt.SaveRecordRequest",
+						"params": {
+							"pgrCheckDuplicates": true
+						}
+					}
 				}
 			},
 			{
@@ -128,6 +134,26 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"attributes"
 				],
 				"values": {
+					"PgrDuplicatesFoundData": {
+						"value": null,
+						"change": {
+							"request": "usr.PgrOpenDuplicatesDialog"
+						}
+					},
+					"PgrDuplicatesListener": {
+						"value": null
+					},
+					"PgrOriginalSaveRequestParams": {
+						"value": null
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes"
+				],
+				"values": {
 					"LookupAttribute_sa5uaxw_List": {
 						"isCollection": true,
 						"modelConfig": {
@@ -168,7 +194,38 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			}
 		]/**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/,
 		modelConfigDiff: /**SCHEMA_MODEL_CONFIG_DIFF*/[]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[
+			{
+				request: "crt.SaveRecordRequest",
+				handler: async (request, next) => {
+					const mode = await request.$context.PrimaryModelMode;
+					const isCreateMode = mode === "create" || mode === "copy";
+					if (request.pgrCheckDuplicates !== true || !isCreateMode) {
+						return await next?.handle(request);
+					}
+					const duplicates = await duplicatesSearchModule.findDuplicates(request.$context);
+					if (!duplicates.length) {
+						return await next?.handle(request);
+					}
+					request.$context.PgrOriginalSaveRequestParams = duplicatesSearchModule.getSaveRequestParams(request);
+					request.$context.PgrDuplicatesFoundData = duplicates;
+				}
+			},
+			{
+				request: "usr.PgrOpenDuplicatesDialog",
+				handler: async (request, next) => {
+					await duplicatesSearchModule.openDuplicatesDialog(request.$context);
+					return await next?.handle(request);
+				}
+			},
+			{
+				request: "crt.HandleViewModelDestroyRequest",
+				handler: async (request, next) => {
+					await duplicatesSearchModule.removeDialogListener(request.$context);
+					return await next?.handle(request);
+				}
+			}
+		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
 	};

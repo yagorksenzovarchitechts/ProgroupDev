@@ -578,6 +578,55 @@
 - MetaData.Schema.B2.["e00a856d-26bf-1458-b29c-744959bf4d6b"]
 - MetaData.Schema.B2.["c465325f-4ebf-f0d9-b6de-37b197ad8fa7"]
 - MetaData.Schema.B2.["0b9e4efe-88ec-0ab0-eb77-e4512e3bfb2b"]
++ MetaData.Schema.B2 {
+  "UId": "a4f122a4-0565-4b77-b9da-ba6e920f6c97",
+  "A2": "PgrInvalidPhoneFormat",
+  "A3": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A5": "9cc3e637-c51e-4997-9525-85a9fff769db"
+}
++ MetaData.Schema.B2 {
+  "UId": "024aba27-8112-40d7-8c73-5a1dbc4b7721",
+  "A2": "PgrMergeConfirmMessagePrefix",
+  "A3": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A5": "9cc3e637-c51e-4997-9525-85a9fff769db"
+}
++ MetaData.Schema.B2 {
+  "UId": "a452091e-50b3-439e-8da6-89195699cf3a",
+  "A2": "PgrMergeConfirmMessageSuffix",
+  "A3": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A5": "9cc3e637-c51e-4997-9525-85a9fff769db"
+}
++ MetaData.Schema.B2 {
+  "UId": "367a78fa-9d00-4c95-a0a2-094cc9104cd4",
+  "A2": "PgrMergeConfirmButton",
+  "A3": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A5": "9cc3e637-c51e-4997-9525-85a9fff769db"
+}
++ MetaData.Schema.B2 {
+  "UId": "572828d2-02dd-4803-beb6-1dcdbdc7e618",
+  "A2": "PgrMergeConfirmCancelButton",
+  "A3": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A5": "9cc3e637-c51e-4997-9525-85a9fff769db"
+}
++ MetaData.Schema.B2 {
+  "UId": "76220db0-6f79-4544-a79a-91c472a6b52a",
+  "A2": "PgrMergeErrorMessage",
+  "A3": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A5": "9cc3e637-c51e-4997-9525-85a9fff769db"
+}
++ MetaData.Schema.B2 {
+  "UId": "7f50cd96-a04b-4462-8bad-b6b2f96efc94",
+  "A2": "PgrMergeErrorOkButton",
+  "A3": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A5": "9cc3e637-c51e-4997-9525-85a9fff769db"
+}
 ~ MetaData.Schema.B2 [
   "ba55b57a-a43a-7514-5104-716ff2f7784c",
   "381ddb19-13b4-e633-fd9b-4eb4e72d65ce",
@@ -810,7 +859,14 @@
   "003e3c7d-fa79-2cc8-0c5e-5bd4dfbd9e21",
   "233160b9-6428-71c8-4198-7a61ecb1c761",
   "a0cfb441-2c6b-0010-9b8a-b57267f8333b",
-  "d4d5327c-2e51-b628-6f09-b0ee1d4cc103"
+  "d4d5327c-2e51-b628-6f09-b0ee1d4cc103",
+  "a4f122a4-0565-4b77-b9da-ba6e920f6c97",
+  "024aba27-8112-40d7-8c73-5a1dbc4b7721",
+  "a452091e-50b3-439e-8da6-89195699cf3a",
+  "367a78fa-9d00-4c95-a0a2-094cc9104cd4",
+  "572828d2-02dd-4803-beb6-1dcdbdc7e618",
+  "76220db0-6f79-4544-a79a-91c472a6b52a",
+  "7f50cd96-a04b-4462-8bad-b6b2f96efc94"
 ]
 = MetaData.Schema.B6 "655ac62c-1e4a-cc32-6e65-323f197c68e0"
 = MetaData.Schema.B8 "8.3.4.2753"

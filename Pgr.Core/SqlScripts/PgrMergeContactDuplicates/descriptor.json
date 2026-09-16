@@ -1,0 +1,11 @@
+{
+  "SqlScript": {
+    "UId": "57ddabdf-c6e5-4d49-a4d6-81e49f9189e4",
+    "Name": "PgrMergeContactDuplicates",
+    "DBEngineType": 2,
+    "InstallType": 0,
+    "ModifiedOnUtc": "\/Date(1789572000000)\/",
+    "BackwardCompatibilityConfirmed": false,
+    "DependsOn": []
+  }
+}

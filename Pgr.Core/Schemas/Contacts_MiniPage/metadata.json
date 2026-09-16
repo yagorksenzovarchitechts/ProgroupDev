@@ -14,6 +14,48 @@
   "A4": "89483c24-0c78-4b53-a0d0-24add2e8a930",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
++ MetaData.Schema.B2 {
+  "UId": "887af2d1-30e1-4e89-b974-08421b24c261",
+  "A2": "PgrMergeConfirmMessagePrefix",
+  "A3": "89483c24-0c78-4b53-a0d0-24add2e8a930",
+  "A4": "89483c24-0c78-4b53-a0d0-24add2e8a930",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "683e501d-3a0a-4310-aa45-4d746bf7f908",
+  "A2": "PgrMergeConfirmMessageSuffix",
+  "A3": "89483c24-0c78-4b53-a0d0-24add2e8a930",
+  "A4": "89483c24-0c78-4b53-a0d0-24add2e8a930",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "44d7fe7b-c56f-4376-af4b-77f7478d25ad",
+  "A2": "PgrMergeConfirmButton",
+  "A3": "89483c24-0c78-4b53-a0d0-24add2e8a930",
+  "A4": "89483c24-0c78-4b53-a0d0-24add2e8a930",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "9c844014-b501-43ed-8740-f0f7fd79dfa3",
+  "A2": "PgrMergeConfirmCancelButton",
+  "A3": "89483c24-0c78-4b53-a0d0-24add2e8a930",
+  "A4": "89483c24-0c78-4b53-a0d0-24add2e8a930",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "cad007c3-ae53-43f8-a6a3-dc71199da213",
+  "A2": "PgrMergeErrorMessage",
+  "A3": "89483c24-0c78-4b53-a0d0-24add2e8a930",
+  "A4": "89483c24-0c78-4b53-a0d0-24add2e8a930",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "8d2bc18d-c0c2-4670-914f-3f1fa7467f3e",
+  "A2": "PgrMergeErrorOkButton",
+  "A3": "89483c24-0c78-4b53-a0d0-24add2e8a930",
+  "A4": "89483c24-0c78-4b53-a0d0-24add2e8a930",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
 = MetaData.Schema.B2.["32e9c192-1c1a-a607-1cea-439c001e6e6e"].A4 "89483c24-0c78-4b53-a0d0-24add2e8a930"
 = MetaData.Schema.B2.["7e533290-c9c9-6926-58fc-20351bc9c0ee"].A4 "89483c24-0c78-4b53-a0d0-24add2e8a930"
 = MetaData.Schema.B2.["3e977072-67fa-588e-d554-1d5c45e71ae9"].A4 "89483c24-0c78-4b53-a0d0-24add2e8a930"
@@ -46,7 +88,13 @@
   "67995f5e-d70a-e2a3-5494-a22737ff9c44",
   "be578da5-5d7d-ab2f-1e20-3e60b2942dd8",
   "5644fc3c-d579-3e1c-2f09-50b10539661c",
-  "31e7c66b-26ad-74a6-e059-92fc1f384234"
+  "31e7c66b-26ad-74a6-e059-92fc1f384234",
+  "887af2d1-30e1-4e89-b974-08421b24c261",
+  "683e501d-3a0a-4310-aa45-4d746bf7f908",
+  "44d7fe7b-c56f-4376-af4b-77f7478d25ad",
+  "9c844014-b501-43ed-8740-f0f7fd79dfa3",
+  "cad007c3-ae53-43f8-a6a3-dc71199da213",
+  "8d2bc18d-c0c2-4670-914f-3f1fa7467f3e"
 ]
 = MetaData.Schema.B6 "655ac62c-1e4a-cc32-6e65-323f197c68e0"
 = MetaData.Schema.B7 true

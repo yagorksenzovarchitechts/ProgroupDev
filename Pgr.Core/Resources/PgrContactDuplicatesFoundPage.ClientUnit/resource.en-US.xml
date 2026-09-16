@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Contact duplicates found" />
+			<Item Name="LocalizableStrings.PgrCancelButtonCaption.Value" Value="Cancel" />
+			<Item Name="LocalizableStrings.PgrDuplicateCreatedOnColumnCaption.Value" Value="Created on" />
+			<Item Name="LocalizableStrings.PgrDuplicateEmailColumnCaption.Value" Value="Email" />
+			<Item Name="LocalizableStrings.PgrDuplicateNameColumnCaption.Value" Value="Full name" />
+			<Item Name="LocalizableStrings.PgrDuplicatesHintCaption.Value" Value="The record highlighted in green will remain after merging; the others will be removed." />
+			<Item Name="LocalizableStrings.PgrFoundRecordsCaption.Value" Value="Found records:" />
+			<Item Name="LocalizableStrings.PgrMergeButtonCaption.Value" Value="Merge" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmButton.Value" Value="Merge" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmCancelButton.Value" Value="Cancel" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmMessagePrefix.Value" Value="The following record will remain: " />
+			<Item Name="LocalizableStrings.PgrMergeConfirmMessageSuffix.Value" Value=". These records will be merged into it and removed: " />
+			<Item Name="LocalizableStrings.PgrMergeNewRecordLabel.Value" Value="the new record you are creating" />
+			<Item Name="LocalizableStrings.PgrPageTitle_caption.Value" Value="Potential duplicates found" />
+			<Item Name="LocalizableStrings.PgrSaveAnywayButtonCaption.Value" Value="Save anyway" />
+			<Item Name="LocalizableStrings.PgrSetAsMainButtonCaption.Value" Value="Set as main" />
+			<Item Name="LocalizableStrings.PgrSetAsMainConfirmationMessagePrefix.Value" Value="Set as main. This record will remain after merging; the other selected records will be removed." />
+			<Item Name="LocalizableStrings.PgrSetAsMainOkButtonCaption.Value" Value="OK" />
+			<Item Name="Parameters.2bf30d73-e6a3-4bd4-a2f0-b51f0c28b9ec.Caption" Value="PgrDuplicatesData" />
+			<Item Name="Parameters.71c90cd4-f64a-48e3-93cd-b20d58f0ef1a.Caption" Value="DialogId" />
+		</Items>
+	</Group>
+</Resources>
