@@ -37,7 +37,8 @@ namespace Pgr.Core
 			}
 			StoredProcedure storedProcedure = new StoredProcedure(_userConnection, "PgrMergeContactDuplicates")
 				.WithParameter("PrimaryEntityId", primaryContactId)
-				.WithParameter("EntitiesToMerge", entitiesToMerge) as StoredProcedure;
+				.WithParameter("EntitiesToMerge", entitiesToMerge)
+				.WithParameter("CurrentUserId", _userConnection.CurrentUser.ContactId) as StoredProcedure;
 			storedProcedure.Execute();
 		}
 

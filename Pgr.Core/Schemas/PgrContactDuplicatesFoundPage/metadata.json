@@ -65,41 +65,6 @@
   "A5": "54e3a384-1924-4247-a51e-9c90e3cdcc19"
 }
 + MetaData.Schema.B2 {
-  "UId": "daea8d0f-aca4-4859-96f8-a0f9ad6f9dc0",
-  "A2": "PgrMergeConfirmMessagePrefix",
-  "A3": "c5c37aff-8a14-419c-ad57-a53414f10b69",
-  "A4": "c5c37aff-8a14-419c-ad57-a53414f10b69",
-  "A5": "54e3a384-1924-4247-a51e-9c90e3cdcc19"
-}
-+ MetaData.Schema.B2 {
-  "UId": "8f467f6b-47be-48f5-933b-fbf2b19f315c",
-  "A2": "PgrMergeConfirmMessageSuffix",
-  "A3": "c5c37aff-8a14-419c-ad57-a53414f10b69",
-  "A4": "c5c37aff-8a14-419c-ad57-a53414f10b69",
-  "A5": "54e3a384-1924-4247-a51e-9c90e3cdcc19"
-}
-+ MetaData.Schema.B2 {
-  "UId": "aa173c57-c2f4-436d-8e55-f87e90c85dfe",
-  "A2": "PgrMergeNewRecordLabel",
-  "A3": "c5c37aff-8a14-419c-ad57-a53414f10b69",
-  "A4": "c5c37aff-8a14-419c-ad57-a53414f10b69",
-  "A5": "54e3a384-1924-4247-a51e-9c90e3cdcc19"
-}
-+ MetaData.Schema.B2 {
-  "UId": "ab925afc-5f09-4499-9dc2-95add5986431",
-  "A2": "PgrMergeConfirmButton",
-  "A3": "c5c37aff-8a14-419c-ad57-a53414f10b69",
-  "A4": "c5c37aff-8a14-419c-ad57-a53414f10b69",
-  "A5": "54e3a384-1924-4247-a51e-9c90e3cdcc19"
-}
-+ MetaData.Schema.B2 {
-  "UId": "d4a68197-a941-497a-85fd-902bbcd832f6",
-  "A2": "PgrMergeConfirmCancelButton",
-  "A3": "c5c37aff-8a14-419c-ad57-a53414f10b69",
-  "A4": "c5c37aff-8a14-419c-ad57-a53414f10b69",
-  "A5": "54e3a384-1924-4247-a51e-9c90e3cdcc19"
-}
-+ MetaData.Schema.B2 {
   "UId": "40f9707f-d2b0-4fd0-8ea1-dc69b296e468",
   "A2": "PgrSetAsMainButtonCaption",
   "A3": "c5c37aff-8a14-419c-ad57-a53414f10b69",
@@ -144,11 +109,6 @@
   "67995f5e-d70a-e2a3-5494-a22737ff9c44",
   "be578da5-5d7d-ab2f-1e20-3e60b2942dd8",
   "eb06fb08-cda2-4fcc-9641-75ea9c4546d7",
-  "daea8d0f-aca4-4859-96f8-a0f9ad6f9dc0",
-  "8f467f6b-47be-48f5-933b-fbf2b19f315c",
-  "aa173c57-c2f4-436d-8e55-f87e90c85dfe",
-  "ab925afc-5f09-4499-9dc2-95add5986431",
-  "d4a68197-a941-497a-85fd-902bbcd832f6",
   "40f9707f-d2b0-4fd0-8ea1-dc69b296e468",
   "718ad893-74ea-41d6-a30d-d815fafcce7c",
   "96cf2f27-29b4-4c18-8f41-4687f61779d4"

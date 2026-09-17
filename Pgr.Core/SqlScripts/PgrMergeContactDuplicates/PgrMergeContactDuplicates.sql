@@ -10,7 +10,8 @@
 DROP FUNCTION IF EXISTS "public"."PgrMergeContactDuplicates";
 CREATE FUNCTION "public"."PgrMergeContactDuplicates"(
 	"PrimaryEntityId" uuid,
-	"EntitiesToMerge" text
+	"EntitiesToMerge" text,
+	"CurrentUserId" uuid
 )
 RETURNS void
 AS $BODY$
@@ -54,7 +55,9 @@ BEGIN
 			SELECT d."AccountId" FROM "Contact" d
 			WHERE d."Id" = ANY(mergeIds) AND d."AccountId" IS NOT NULL
 			ORDER BY array_position(mergeIds, d."Id") LIMIT 1
-		))
+		)),
+		"ModifiedOn" = now(),
+		"ModifiedById" = "CurrentUserId"
 	WHERE p."Id" = "PrimaryEntityId";
 
 	FOR r IN
@@ -90,6 +93,21 @@ BEGIN
 		);
 		EXECUTE sql USING "PrimaryEntityId", mergeIds;
 	END LOOP;
+
+	/* Dedup ContactCommunication by (ContactId, Number, CommunicationTypeId): keep the Primary one if any, else the oldest */
+	DELETE FROM "ContactCommunication"
+	WHERE "Id" IN (
+		SELECT "Id" FROM (
+			SELECT "Id",
+				row_number() OVER (
+					PARTITION BY "ContactId", "Number", "CommunicationTypeId"
+					ORDER BY "Primary" DESC, "CreatedOn"
+				) AS rn
+			FROM "ContactCommunication"
+			WHERE "ContactId" = "PrimaryEntityId"
+		) tmp
+		WHERE tmp.rn > 1
+	);
 
 	/* tsp_MergeFolders: dedup ContactInFolder by (ContactId, FolderId) */
 	DELETE FROM "ContactInFolder"

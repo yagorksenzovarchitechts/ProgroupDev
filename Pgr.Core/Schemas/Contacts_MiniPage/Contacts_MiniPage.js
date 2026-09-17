@@ -198,9 +198,7 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule"]
 			{
 				request: "crt.SaveRecordRequest",
 				handler: async (request, next) => {
-					const mode = await request.$context.PrimaryModelMode;
-					const isCreateMode = mode === "create" || mode === "copy";
-					if (request.pgrCheckDuplicates !== true || !isCreateMode) {
+					if (request.pgrCheckDuplicates !== true) {
 						return await next?.handle(request);
 					}
 					const duplicates = await duplicatesSearchModule.findDuplicates(request.$context);

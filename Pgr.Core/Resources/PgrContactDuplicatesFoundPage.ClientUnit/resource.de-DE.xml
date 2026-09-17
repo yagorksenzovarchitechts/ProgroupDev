@@ -10,11 +10,6 @@
 			<Item Name="LocalizableStrings.PgrDuplicatesHintCaption.Value" Value="Der grün markierte Datensatz bleibt nach dem Zusammenführen erhalten; die anderen werden entfernt." />
 			<Item Name="LocalizableStrings.PgrFoundRecordsCaption.Value" Value="Gefundene Datensätze:" />
 			<Item Name="LocalizableStrings.PgrMergeButtonCaption.Value" Value="Zusammenführen" />
-			<Item Name="LocalizableStrings.PgrMergeConfirmButton.Value" Value="Zusammenführen" />
-			<Item Name="LocalizableStrings.PgrMergeConfirmCancelButton.Value" Value="Abbrechen" />
-			<Item Name="LocalizableStrings.PgrMergeConfirmMessagePrefix.Value" Value="Folgender Datensatz bleibt erhalten: " />
-			<Item Name="LocalizableStrings.PgrMergeConfirmMessageSuffix.Value" Value=". Folgende Datensätze werden damit zusammengeführt und entfernt: " />
-			<Item Name="LocalizableStrings.PgrMergeNewRecordLabel.Value" Value="der gerade erstellte neue Datensatz" />
 			<Item Name="LocalizableStrings.PgrPageTitle_caption.Value" Value="Mögliche Dubletten gefunden" />
 			<Item Name="LocalizableStrings.PgrSaveAnywayButtonCaption.Value" Value="Trotzdem speichern" />
 			<Item Name="LocalizableStrings.PgrSetAsMainButtonCaption.Value" Value="Als Haupt festlegen" />

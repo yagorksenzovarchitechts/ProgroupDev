@@ -1,5 +1,18 @@
 define("PgrContactDuplicatesFoundPage", /**SCHEMA_DEPS*/["@creatio-devkit/common", "PgrContactDuplicatesFoundPageStyles"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk, stylesModule)/**SCHEMA_ARGS*/ {
 
+	async function resolveSelectedIds(context, selectionState) {
+		if (!selectionState) {
+			return [];
+		}
+		if (selectionState.type === "all") {
+			const rows = (await context.PgrDuplicatesRows) || [];
+			const ids = await Promise.all(rows.map((row) => row.PgrDuplicatesRowsDS_Id));
+			const unselected = selectionState.unselected || [];
+			return ids.filter((id) => !unselected.includes(id));
+		}
+		return selectionState.selected || [];
+	}
+
 	async function loadContactRows(ids) {
 		const loadedRows = await Promise.all(ids.map(async (id) => {
 			const contactModel = await sdk.Model.create("Contact");
@@ -364,9 +377,10 @@ define("PgrContactDuplicatesFoundPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 			{
 				request: "usr.PgrUpdateMergeButtonState",
 				handler: async (request, next) => {
-					const selectionState = await request.$context.PgrDuplicatesRows_SelectionState;
-					const selectedIds = (selectionState && selectionState.selected) || [];
-					request.$context.PgrMergeDisabled = selectedIds.length === 0;
+					const context = request.$context;
+					const selectionState = await context.PgrDuplicatesRows_SelectionState;
+					const selectedIds = await resolveSelectedIds(context, selectionState);
+					context.PgrMergeDisabled = selectedIds.length === 0;
 					return await next?.handle(request);
 				}
 			},
@@ -440,7 +454,7 @@ define("PgrContactDuplicatesFoundPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 				handler: async (request, next) => {
 					const context = request.$context;
 					const selectionState = await context.PgrDuplicatesRows_SelectionState;
-					const selectedIds = (selectionState && selectionState.selected) || [];
+					const selectedIds = await resolveSelectedIds(context, selectionState);
 					if (!selectedIds.length) {
 						return await next?.handle(request);
 					}
@@ -460,36 +474,6 @@ define("PgrContactDuplicatesFoundPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 							new Date(a.CreatedOn).getTime() - new Date(b.CreatedOn).getTime());
 						primary = sortedRows[0];
 						others = sortedRows.slice(1);
-					}
-
-					const formatRow = (row) => {
-						const createdOnLabel = row.CreatedOn ? new Date(row.CreatedOn).toLocaleString() : "";
-						return createdOnLabel ? `${row.Name} (${createdOnLabel})` : row.Name;
-					};
-					const prefix = await context.Resources.Strings.PgrMergeConfirmMessagePrefix;
-					const suffix = await context.Resources.Strings.PgrMergeConfirmMessageSuffix;
-					const newRecordLabel = await context.Resources.Strings.PgrMergeNewRecordLabel;
-					const confirmCaption = await context.Resources.Strings.PgrMergeConfirmButton;
-					const cancelCaption = await context.Resources.Strings.PgrMergeConfirmCancelButton;
-					const removedLabels = others.map(formatRow);
-					removedLabels.push(newRecordLabel);
-					const message = `${prefix}${formatRow(primary)}${suffix}${removedLabels.join("; ")}`;
-
-					const actionKey = await context.executeRequest({
-						type: "crt.ShowDialogRequest",
-						$context: context,
-						dialogConfig: {
-							data: {
-								message: message,
-								actions: [
-									{key: "confirm", config: {color: "primary", caption: confirmCaption}},
-									{key: "cancel", config: {caption: cancelCaption}}
-								]
-							}
-						}
-					});
-					if (actionKey !== "confirm") {
-						return await next?.handle(request);
 					}
 
 					await sdk.HandlerChainService.instance.process({

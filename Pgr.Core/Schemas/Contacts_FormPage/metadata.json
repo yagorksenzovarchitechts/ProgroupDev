@@ -627,6 +627,20 @@
   "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
   "A5": "9cc3e637-c51e-4997-9525-85a9fff769db"
 }
++ MetaData.Schema.B2 {
+  "UId": "5667029f-18e0-46ff-b25d-fba69824e7b8",
+  "A2": "PgrInvalidPhoneNumbersMessage",
+  "A3": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A5": "9cc3e637-c51e-4997-9525-85a9fff769db"
+}
++ MetaData.Schema.B2 {
+  "UId": "1d42873f-98e9-416e-9c47-a5862321e3d0",
+  "A2": "PgrInvalidPhoneNumbersOkButton",
+  "A3": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A5": "9cc3e637-c51e-4997-9525-85a9fff769db"
+}
 ~ MetaData.Schema.B2 [
   "ba55b57a-a43a-7514-5104-716ff2f7784c",
   "381ddb19-13b4-e633-fd9b-4eb4e72d65ce",
@@ -866,7 +880,9 @@
   "367a78fa-9d00-4c95-a0a2-094cc9104cd4",
   "572828d2-02dd-4803-beb6-1dcdbdc7e618",
   "76220db0-6f79-4544-a79a-91c472a6b52a",
-  "7f50cd96-a04b-4462-8bad-b6b2f96efc94"
+  "7f50cd96-a04b-4462-8bad-b6b2f96efc94",
+  "5667029f-18e0-46ff-b25d-fba69824e7b8",
+  "1d42873f-98e9-416e-9c47-a5862321e3d0"
 ]
 = MetaData.Schema.B6 "655ac62c-1e4a-cc32-6e65-323f197c68e0"
 = MetaData.Schema.B8 "8.3.4.2753"

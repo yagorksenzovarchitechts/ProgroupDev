@@ -122,6 +122,8 @@
 			<Item Name="LocalizableStrings.OrderSearchFilter_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.OrderSettingsButton_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.PgrInvalidPhoneFormat.Value" Value="Invalid phone format" />
+			<Item Name="LocalizableStrings.PgrInvalidPhoneNumbersMessage.Value" Value="Invalid phone number format: " />
+			<Item Name="LocalizableStrings.PgrInvalidPhoneNumbersOkButton.Value" Value="OK" />
 			<Item Name="LocalizableStrings.PgrMergeConfirmButton.Value" Value="Merge" />
 			<Item Name="LocalizableStrings.PgrMergeConfirmCancelButton.Value" Value="Cancel" />
 			<Item Name="LocalizableStrings.PgrMergeConfirmMessagePrefix.Value" Value="The following record will remain: " />

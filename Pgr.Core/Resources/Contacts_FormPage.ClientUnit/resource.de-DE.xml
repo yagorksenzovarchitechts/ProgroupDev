@@ -108,6 +108,8 @@
 			<Item Name="LocalizableStrings.OrderSearchFilter_placeholder.Value" Value="Suche" />
 			<Item Name="LocalizableStrings.OrderSettingsButton_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.PgrInvalidPhoneFormat.Value" Value="Ungültiges Telefonformat" />
+			<Item Name="LocalizableStrings.PgrInvalidPhoneNumbersMessage.Value" Value="Ungültiges Telefonnummernformat: " />
+			<Item Name="LocalizableStrings.PgrInvalidPhoneNumbersOkButton.Value" Value="OK" />
 			<Item Name="LocalizableStrings.PgrMergeConfirmButton.Value" Value="Zusammenführen" />
 			<Item Name="LocalizableStrings.PgrMergeConfirmCancelButton.Value" Value="Abbrechen" />
 			<Item Name="LocalizableStrings.PgrMergeConfirmMessagePrefix.Value" Value="Folgender Datensatz bleibt erhalten: " />
