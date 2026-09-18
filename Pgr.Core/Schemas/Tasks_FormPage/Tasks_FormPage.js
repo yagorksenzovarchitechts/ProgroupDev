@@ -197,7 +197,6 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				"name": "Notes",
 				"values": {
 					"label": "$Resources.Strings.PDS_Notes_ivz0y09",
-					"labelPosition": "hidden",
 					"control": "$PDS_Notes_ivz0y09",
 					"placeholder": "",
 					"filesStorage": {
@@ -206,39 +205,6 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 						"recordColumnName": "Activity"
 					}
 				}
-			},
-			{
-				"operation": "insert",
-				"name": "ExpansionPanel_Notes",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.ExpansionPanel",
-					"tools": [],
-					"items": [],
-					"title": "#ResourceString(PDS_Notes_ivz0y09)#",
-					"toggleType": "default",
-					"togglePosition": "before",
-					"expanded": true,
-					"labelColor": "auto",
-					"fullWidthHeader": false,
-					"titleWidth": 20,
-					"padding": {
-						"top": "small",
-						"bottom": "small",
-						"left": "none",
-						"right": "none"
-					},
-					"fitContent": true,
-					"visible": true
-				},
-				"parentName": "GridContainer_1qargav",
-				"propertyName": "items",
-				"index": 1
 			},
 			{
 				"operation": "move",
@@ -351,6 +317,40 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				"parentName": "GridContainer_1qargav",
 				"propertyName": "items",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ExpansionPanel_Notes",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(ExpansionPanel_Notes_title)#",
+					"toggleType": "material",
+					"togglePosition": "before",
+					"expanded": true,
+					"labelColor": "auto",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"padding": {
+						"top": "small",
+						"bottom": "small",
+						"left": "none",
+						"right": "none"
+					},
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch"
+				},
+				"parentName": "GridContainer_1qargav",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "insert",
