@@ -22,6 +22,7 @@
 			<Item Name="LocalizableStrings.ExpansionPanelMeetingTranscripts_title.Value" Value="Meeting transcripts" />
 			<Item Name="LocalizableStrings.ExpansionPanel_17p0x4t_title.Value" Value="Measure task" />
 			<Item Name="LocalizableStrings.ExpansionPanel_369ReasonDetails_title.Value" Value="369 Reason details" />
+			<Item Name="LocalizableStrings.ExpansionPanel_Notes_title.Value" Value="Description" />
 			<Item Name="LocalizableStrings.ExpansionPanel_luhcskb_title.Value" Value="Sub-tasks" />
 			<Item Name="LocalizableStrings.ExpansionPanel_wxaphav_title.Value" Value="Linked visit report" />
 			<Item Name="LocalizableStrings.GridDetailAddBtnNewTranscript_caption.Value" Value="New" />

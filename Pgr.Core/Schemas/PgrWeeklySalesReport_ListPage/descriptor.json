@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "423ff867-6540-4c69-948a-4b3542d7fed1",
     "Name": "PgrWeeklySalesReport_ListPage",
-    "ModifiedOnUtc": "\/Date(1788866397000)\/",
+    "ModifiedOnUtc": "\/Date(1789726674000)\/",
     "Parent": {
       "UId": "b7b898d0-8c77-4953-c097-23fa6800da02",
       "Name": "ListPageV3Template"

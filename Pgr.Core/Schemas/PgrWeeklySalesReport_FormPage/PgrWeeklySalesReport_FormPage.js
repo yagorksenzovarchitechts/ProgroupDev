@@ -1,4 +1,4 @@
-define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -157,21 +157,17 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 			},
 			{
 				"operation": "insert",
-				"name": "Button_dkqi4mp",
+				"name": "Button_eyjvkji",
 				"values": {
 					"type": "crt.Button",
-					"caption": "#ResourceString(Button_dkqi4mp_caption)#",
+					"caption": "#ResourceString(Button_eyjvkji_caption)#",
 					"color": "accent",
 					"disabled": false,
 					"size": "large",
 					"iconPosition": "left-icon",
 					"visible": true,
 					"clicked": {
-						"request": "crt.PrintablesRequest",
-						"params": {
-							"dataSourceName": "PDS",
-							"filters": null
-						}
+						"request": "usr.PgrGenerateAndPrintReportRequest"
 					},
 					"clickMode": "default",
 					"icon": "document-button-icon"
@@ -943,7 +939,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 								"data": {
 									"providing": {
 										"attribute": "ChartWidget_wqxpdh4_SeriesData_ryfpvkn",
-										"schemaName": "PgrVwTopAccountsByBudget",
+										"schemaName": "PgrVwAccountBudgetRank",
 										"filters": {
 											"filter": {
 												"items": {
@@ -957,12 +953,29 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 															"expressionType": 0,
 															"columnPath": "PgrAccount"
 														}
+													},
+													"rankFilter": {
+														"filterType": 1,
+														"comparisonType": 6,
+														"isEnabled": true,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "PgrRankBySalesManager"
+														},
+														"rightExpression": {
+															"expressionType": 2,
+															"parameter": {
+																"dataValueType": 4,
+																"value": 5
+															}
+														}
 													}
 												},
 												"logicalOperation": 0,
 												"isEnabled": true,
 												"filterType": 6,
-												"rootSchemaName": "PgrVwTopAccountsByBudget"
+												"rootSchemaName": "PgrVwAccountBudgetRank"
 											},
 											"filterAttributes": []
 										},
@@ -985,7 +998,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 										},
 										"dependencies": [
 											{
-												"attributePath": "PgrAccount.PgrSalesManager",
+												"attributePath": "PgrSalesManager",
 												"relationPath": "PDS.PgrSalesManagerId"
 											}
 										],
@@ -1024,7 +1037,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 								"data": {
 									"providing": {
 										"attribute": "ChartWidget_wqxpdh4_SeriesData_s0f8nai",
-										"schemaName": "PgrVwTopAccountsByBudget",
+										"schemaName": "PgrVwAccountBudgetRank",
 										"filters": {
 											"filter": {
 												"items": {
@@ -1038,12 +1051,29 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 															"expressionType": 0,
 															"columnPath": "PgrAccount"
 														}
+													},
+													"rankFilter": {
+														"filterType": 1,
+														"comparisonType": 6,
+														"isEnabled": true,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "PgrRankBySalesManager"
+														},
+														"rightExpression": {
+															"expressionType": 2,
+															"parameter": {
+																"dataValueType": 4,
+																"value": 5
+															}
+														}
 													}
 												},
 												"logicalOperation": 0,
 												"isEnabled": true,
 												"filterType": 6,
-												"rootSchemaName": "PgrVwTopAccountsByBudget"
+												"rootSchemaName": "PgrVwAccountBudgetRank"
 											},
 											"filterAttributes": []
 										},
@@ -1066,7 +1096,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 										},
 										"dependencies": [
 											{
-												"attributePath": "PgrAccount.PgrSalesManager",
+												"attributePath": "PgrSalesManager",
 												"relationPath": "PDS.PgrSalesManagerId"
 											}
 										],
@@ -1097,8 +1127,9 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 							}
 						],
 						"seriesOrder": {
-							"type": "by-grouping-value",
-							"direction": 1
+							"type": "by-aggregation-value",
+							"direction": 2,
+							"seriesIndex": 0
 						},
 						"layout": {}
 					},
@@ -1108,7 +1139,8 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 						"colSpan": 3,
 						"row": 2,
 						"rowSpan": 1
-					}
+					},
+					"visible": true
 				},
 				"parentName": "GridContainer_c8imne8",
 				"propertyName": "items",
@@ -1163,37 +1195,8 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 							},
 							"providing": {
 								"attribute": "IndicatorWidget_har31n7_Data",
-								"schemaName": "PgrVisitReport",
-								"filters": {
-									"filter": {
-										"items": {
-											"4c3d115f-a220-4218-a47e-d33506ca60ff": {
-												"filterType": 1,
-												"comparisonType": 3,
-												"isEnabled": true,
-												"trimDateTimeParameterToDate": false,
-												"leftExpression": {
-													"expressionType": 0,
-													"columnPath": "PgrTopicQuality"
-												},
-												"isAggregative": false,
-												"dataValueType": 12,
-												"rightExpression": {
-													"expressionType": 2,
-													"parameter": {
-														"dataValueType": 12,
-														"value": true
-													}
-												}
-											}
-										},
-										"logicalOperation": 0,
-										"isEnabled": true,
-										"filterType": 6,
-										"rootSchemaName": "PgrVisitReport"
-									},
-									"filterAttributes": []
-								},
+								"schemaName": "PgrWeeklySalesReport",
+								"filters": null,
 								"aggregation": {
 									"column": {
 										"orderDirection": 0,
@@ -1203,11 +1206,11 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 											"expressionType": 1,
 											"functionArgument": {
 												"expressionType": 0,
-												"columnPath": "Id"
+												"columnPath": "PgrQualityCheckCount"
 											},
 											"functionType": 2,
-											"aggregationType": 1,
-											"aggregationEvalType": 2
+											"aggregationType": 2,
+											"aggregationEvalType": 0
 										}
 									}
 								},
@@ -1255,37 +1258,8 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 							},
 							"providing": {
 								"attribute": "IndicatorWidget_s6es0ld_Data",
-								"schemaName": "PgrVisitReport",
-								"filters": {
-									"filter": {
-										"items": {
-											"4c3d115f-a220-4218-a47e-d33506ca60ff": {
-												"filterType": 1,
-												"comparisonType": 3,
-												"isEnabled": true,
-												"trimDateTimeParameterToDate": false,
-												"leftExpression": {
-													"expressionType": 0,
-													"columnPath": "PgrTopicServiceDelivery"
-												},
-												"isAggregative": false,
-												"dataValueType": 12,
-												"rightExpression": {
-													"expressionType": 2,
-													"parameter": {
-														"dataValueType": 12,
-														"value": true
-													}
-												}
-											}
-										},
-										"logicalOperation": 0,
-										"isEnabled": true,
-										"filterType": 6,
-										"rootSchemaName": "PgrVisitReport"
-									},
-									"filterAttributes": []
-								},
+								"schemaName": "PgrWeeklySalesReport",
+								"filters": null,
 								"aggregation": {
 									"column": {
 										"orderDirection": 0,
@@ -1295,11 +1269,11 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 											"expressionType": 1,
 											"functionArgument": {
 												"expressionType": 0,
-												"columnPath": "Id"
+												"columnPath": "PgrServiceDeliveryCheckCount"
 											},
 											"functionType": 2,
-											"aggregationType": 1,
-											"aggregationEvalType": 2
+											"aggregationType": 2,
+											"aggregationEvalType": 0
 										}
 									}
 								},
@@ -1400,7 +1374,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 					"title": "#ResourceString(ExpansionPanel_m66prs5_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": true,
+					"expanded": false,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -1651,7 +1625,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 					"title": "#ResourceString(ExpansionPanel_7crmuco_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": true,
+					"expanded": false,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -1861,7 +1835,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 					"title": "#ResourceString(ExpansionPanel_eki7qua_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": true,
+					"expanded": false,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -2037,7 +2011,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 					"title": "#ResourceString(ExpansionPanel_ihwyode_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": true,
+					"expanded": false,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -2212,7 +2186,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 					"title": "#ResourceString(ExpansionPanel_fvqh9lp_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": true,
+					"expanded": false,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -2479,7 +2453,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 					"placeholder": "",
 					"tooltip": "",
 					"readonly": false,
-					"multiline": true,
+					"multiline": false,
 					"labelPosition": "auto",
 					"visible": true,
 					"layoutConfig": {
@@ -2503,7 +2477,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 					"placeholder": "",
 					"tooltip": "",
 					"readonly": false,
-					"multiline": true,
+					"multiline": false,
 					"labelPosition": "auto",
 					"visible": true,
 					"layoutConfig": {
@@ -2527,7 +2501,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 					"placeholder": "",
 					"tooltip": "",
 					"readonly": false,
-					"multiline": true,
+					"multiline": false,
 					"labelPosition": "auto",
 					"visible": true,
 					"layoutConfig": {
@@ -3794,7 +3768,33 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[
+			{
+				request: "usr.PgrGenerateAndPrintReportRequest",
+				handler: async (request, next) => {
+					await sdk.HandlerChainService.instance.process({
+						type: "crt.RunBusinessProcessRequest",
+						processName: "PgrWeeklyReportData",
+						processRunType: "ForTheSelectedPage",
+						saveAtProcessStart: true,
+						showNotification: true,
+						recordIdProcessParameterName: "ParameterReportID",
+						$context: request.$context,
+						scopes: [...request.scopes]
+					});
+					await sdk.HandlerChainService.instance.process({
+						type: "crt.PrintablesRequest",
+						dataSourceName: "PDS",
+						templateId: "fac82928-2a73-5569-fe8b-baf7d7c23974",
+						printableCaption: "Weekly Sales Report",
+						filters: null,
+						$context: request.$context,
+						scopes: [...request.scopes]
+					});
+					return next?.handle(request);
+				}
+			}
+		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
 	};

@@ -121,6 +121,15 @@
 			<Item Name="LocalizableStrings.OrderRefreshButton_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.OrderSearchFilter_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.OrderSettingsButton_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.PgrInvalidPhoneFormat.Value" Value="Invalid phone format" />
+			<Item Name="LocalizableStrings.PgrInvalidPhoneNumbersMessage.Value" Value="Invalid phone number format: " />
+			<Item Name="LocalizableStrings.PgrInvalidPhoneNumbersOkButton.Value" Value="OK" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmButton.Value" Value="Merge" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmCancelButton.Value" Value="Cancel" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmMessagePrefix.Value" Value="The following record will remain: " />
+			<Item Name="LocalizableStrings.PgrMergeConfirmMessageSuffix.Value" Value=". These records will be merged into it and removed: " />
+			<Item Name="LocalizableStrings.PgrMergeErrorMessage.Value" Value="Merge failed:" />
+			<Item Name="LocalizableStrings.PgrMergeErrorOkButton.Value" Value="OK" />
 			<Item Name="LocalizableStrings.RecommendedProductExpansionPanel_title.Value" Value="Recommended products" />
 			<Item Name="LocalizableStrings.RecommendedProductExportDataButton_caption.Value" Value="Export to Excel" />
 			<Item Name="LocalizableStrings.RecommendedProductRefreshButton_caption.Value" Value="Refresh" />

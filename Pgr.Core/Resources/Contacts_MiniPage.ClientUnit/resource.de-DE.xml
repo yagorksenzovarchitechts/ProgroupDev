@@ -3,6 +3,12 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmButton.Value" Value="Zusammenführen" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmCancelButton.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmMessagePrefix.Value" Value="Folgender Datensatz bleibt erhalten: " />
+			<Item Name="LocalizableStrings.PgrMergeConfirmMessageSuffix.Value" Value=". Folgende Datensätze werden damit zusammengeführt und entfernt: " />
+			<Item Name="LocalizableStrings.PgrMergeErrorMessage.Value" Value="Zusammenführung fehlgeschlagen:" />
+			<Item Name="LocalizableStrings.PgrMergeErrorOkButton.Value" Value="OK" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
 		</Items>
 	</Group>

@@ -19,6 +19,7 @@
 			<Item Name="Columns.PgrTopicCommercial.Caption" Value="Kommerziell &amp; Preise" />
 			<Item Name="Columns.PgrTopicProjectsOpportunities.Caption" Value="Projekte &amp; Verkaufschancen" />
 			<Item Name="Columns.PgrTopicQuality.Caption" Value="Qualität" />
+			<Item Name="Columns.PgrTopicServiceDelivery.Caption" Value="Service &amp; Lieferung" />
 			<Item Name="Columns.PgrTopicSpecial.Caption" Value="spezielle Themen" />
 			<Item Name="Columns.PgrVisitBudget.Caption" Value="Budget" />
 			<Item Name="Columns.PgrVisitDate.Caption" Value="Besuchsdatum" />

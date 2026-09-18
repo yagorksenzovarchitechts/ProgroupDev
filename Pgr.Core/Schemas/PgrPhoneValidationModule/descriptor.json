@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "1a515522-37c0-4b14-98c3-d5bc77909428",
+    "Name": "PgrPhoneValidationModule",
+    "ModifiedOnUtc": "\/Date(1789630655000)\/",
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Pgr phone validation module",
+    "DependsOn": []
+  }
+}

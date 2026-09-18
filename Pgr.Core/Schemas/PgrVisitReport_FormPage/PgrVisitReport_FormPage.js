@@ -1,4 +1,4 @@
-define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -147,14 +147,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 					"visible": true,
 					"icon": "reload-icon",
 					"clicked": {
-						"request": "crt.RunBusinessProcessRequest",
-						"params": {
-							"processName": "PgrGetVisitReportData",
-							"processRunType": "ForTheSelectedPage",
-							"saveAtProcessStart": true,
-							"showNotification": true,
-							"recordIdProcessParameterName": "ParameterVisitReportID"
-						}
+						"request": "usr.PgrRefreshAccountDataRequest"
 					},
 					"clickMode": "default"
 				},
@@ -2709,7 +2702,32 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/*
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[
+			{
+				request: "usr.PgrRefreshAccountDataRequest",
+				handler: async (request, next) => {
+					await sdk.HandlerChainService.instance.process({
+						type: "crt.RunBusinessProcessRequest",
+						processName: "PgrGetVisitReportData",
+						processRunType: "ForTheSelectedPage",
+						saveAtProcessStart: true,
+						showNotification: true,
+						recordIdProcessParameterName: "ParameterVisitReportID",
+						$context: request.$context,
+						scopes: [...request.scopes]
+					});
+					await sdk.HandlerChainService.instance.process({
+						type: "crt.LoadDataRequest",
+						refreshDataConfig: {
+							mode: "RefreshAll"
+						},
+						$context: request.$context,
+						scopes: [...request.scopes]
+					});
+					return next?.handle(request);
+				}
+			}
+		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
 	};

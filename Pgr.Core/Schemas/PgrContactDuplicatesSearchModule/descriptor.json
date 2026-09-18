@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "8c213f4a-3627-48ea-9e2d-4dda2f79c15f",
+    "Name": "PgrContactDuplicatesSearchModule",
+    "ModifiedOnUtc": "\/Date(1789574000000)\/",
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Pgr contact duplicates search module",
+    "DependsOn": []
+  }
+}

@@ -5,10 +5,11 @@
 			<Item Name="Caption" Value="Weekly Sales Report form page" />
 			<Item Name="LocalizableStrings.Button_56o32ha_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.Button_dkqi4mp_caption.Value" Value="View report" />
+			<Item Name="LocalizableStrings.Button_eyjvkji_caption.Value" Value="Generate &amp; View report" />
 			<Item Name="LocalizableStrings.Button_s34uw4b_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.ChartWidget_wqxpdh4_series_0.Value" Value="Budget [TQM]" />
 			<Item Name="LocalizableStrings.ChartWidget_wqxpdh4_series_1.Value" Value="Order intake [TQM]" />
-			<Item Name="LocalizableStrings.ChartWidget_wqxpdh4_title.Value" Value="Top 5 Customers by Budget" />
+			<Item Name="LocalizableStrings.ChartWidget_wqxpdh4_title.Value" Value="Top 5 Customers by Budget [TSM/xxx]" />
 			<Item Name="LocalizableStrings.ComboBox_802hh3f_ariaLabel.Value" Value="Dropdown" />
 			<Item Name="LocalizableStrings.ComboBox_802hh3f_label.Value" Value="Dropdown" />
 			<Item Name="LocalizableStrings.DataGrid_6y6mb4lDS_PgrAccount.Value" Value="Customer" />
@@ -37,22 +38,22 @@
 			<Item Name="LocalizableStrings.GridDetail_zs3al7lDS_PgrAccount_PgrOrderIntakeDayCounter.Value" Value="Order intake day counter" />
 			<Item Name="LocalizableStrings.IndicatorWidget_626yo4g_config_text_template.Value" Value="{0}" />
 			<Item Name="LocalizableStrings.IndicatorWidget_626yo4g_hint.Value" Value="Components.IndicatorWidget.Hint" />
-			<Item Name="LocalizableStrings.IndicatorWidget_626yo4g_title.Value" Value="Order intake [TQM]" />
+			<Item Name="LocalizableStrings.IndicatorWidget_626yo4g_title.Value" Value="Order intake [TSM/WD]" />
 			<Item Name="LocalizableStrings.IndicatorWidget_har31n7_config_text_template.Value" Value="{0}" />
 			<Item Name="LocalizableStrings.IndicatorWidget_har31n7_hint.Value" Value="Components.IndicatorWidget.Hint" />
-			<Item Name="LocalizableStrings.IndicatorWidget_har31n7_title.Value" Value="Quality check marks" />
+			<Item Name="LocalizableStrings.IndicatorWidget_har31n7_title.Value" Value="No. Quality check marks" />
 			<Item Name="LocalizableStrings.IndicatorWidget_jvd5tfw_config_text_template.Value" Value="{0}" />
 			<Item Name="LocalizableStrings.IndicatorWidget_jvd5tfw_hint.Value" Value="Components.IndicatorWidget.Hint" />
-			<Item Name="LocalizableStrings.IndicatorWidget_jvd5tfw_title.Value" Value="9 Day avg Order Intake [TQM]" />
+			<Item Name="LocalizableStrings.IndicatorWidget_jvd5tfw_title.Value" Value="9 Day avg Order Intake [TQM Ø 9 Days}" />
 			<Item Name="LocalizableStrings.IndicatorWidget_s6es0ld_config_text_template.Value" Value="{0}" />
 			<Item Name="LocalizableStrings.IndicatorWidget_s6es0ld_hint.Value" Value="Components.IndicatorWidget.Hint" />
-			<Item Name="LocalizableStrings.IndicatorWidget_s6es0ld_title.Value" Value="Service &amp; Delivery check marks" />
+			<Item Name="LocalizableStrings.IndicatorWidget_s6es0ld_title.Value" Value="No. Service &amp; Delivery check marks" />
 			<Item Name="LocalizableStrings.IndicatorWidget_ta5uugn_config_text_template.Value" Value="{0}" />
 			<Item Name="LocalizableStrings.IndicatorWidget_ta5uugn_hint.Value" Value="Components.IndicatorWidget.Hint" />
-			<Item Name="LocalizableStrings.IndicatorWidget_ta5uugn_title.Value" Value="Budget [TQM]" />
+			<Item Name="LocalizableStrings.IndicatorWidget_ta5uugn_title.Value" Value="BU [TSM/WD]" />
 			<Item Name="LocalizableStrings.IndicatorWidget_vdwd3qa_config_text_template.Value" Value="{0}" />
 			<Item Name="LocalizableStrings.IndicatorWidget_vdwd3qa_hint.Value" Value="Components.IndicatorWidget.Hint" />
-			<Item Name="LocalizableStrings.IndicatorWidget_vdwd3qa_title.Value" Value="Deviation [%]" />
+			<Item Name="LocalizableStrings.IndicatorWidget_vdwd3qa_title.Value" Value="Dev. OI vs. BU / WD [%]" />
 			<Item Name="LocalizableStrings.NumberInput_vpi4hk8_label.Value" Value="Week nr" />
 			<Item Name="LocalizableStrings.TabContainer_6k84kcz_caption.Value" Value="Visits &amp; Activities" />
 			<Item Name="LocalizableStrings.TabContainer_9wi9cfc_caption.Value" Value="Audit log" />

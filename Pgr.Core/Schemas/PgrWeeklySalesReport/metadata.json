@@ -53,15 +53,6 @@
   "E5": false
 }
 + MetaData.Schema.D2 {
-  "UId": "39c28cd7-05ec-4cb1-974c-12c757501be7",
-  "A2": "PgrYear",
-  "A3": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
-  "A4": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0",
-  "E5": false
-}
-+ MetaData.Schema.D2 {
   "UId": "b669b401-3632-44d4-99af-f0a23c75f708",
   "A2": "PgrPeriodStart",
   "A3": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
@@ -140,7 +131,7 @@
   "A3": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
   "A4": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+  "S2": "60532cfd-8645-4a54-be81-bef507aa2339",
   "E5": false
 }
 + MetaData.Schema.D2 {
@@ -149,7 +140,7 @@
   "A3": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
   "A4": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+  "S2": "60532cfd-8645-4a54-be81-bef507aa2339",
   "E5": false
 }
 + MetaData.Schema.D2 {
@@ -158,7 +149,7 @@
   "A3": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
   "A4": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+  "S2": "60532cfd-8645-4a54-be81-bef507aa2339",
   "E5": false
 }
 + MetaData.Schema.D2 {
@@ -167,7 +158,7 @@
   "A3": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
   "A4": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
-  "S2": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+  "S2": "60532cfd-8645-4a54-be81-bef507aa2339",
   "E5": false
 }
 + MetaData.Schema.D2 {
@@ -241,6 +232,24 @@
   "E17": "PgrYearLookupId",
   "E18": "PgrYearLookupName"
 }
++ MetaData.Schema.D2 {
+  "UId": "8ca78cbb-daf9-4868-ac9e-24c4e8449d08",
+  "A2": "PgrQualityCheckCount",
+  "A3": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
+  "A4": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0",
+  "E5": false
+}
++ MetaData.Schema.D2 {
+  "UId": "21208db9-39c5-4b89-bac7-d0108dd89da2",
+  "A2": "PgrServiceDeliveryCheckCount",
+  "A3": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
+  "A4": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0",
+  "E5": false
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -250,7 +259,6 @@
   "3fabd836-6a53-4d8d-9069-6df88d9dae1e",
   "08495968-0bf0-4218-9d11-e4c187c4ef0f",
   "0de0336d-44b4-4b72-8436-fc2a9a4ec2ad",
-  "39c28cd7-05ec-4cb1-974c-12c757501be7",
   "b669b401-3632-44d4-99af-f0a23c75f708",
   "82b3ebb1-2ed7-4fe3-bb17-3c5d64718c37",
   "5dbdb221-a845-4691-b940-7e9aafa901e1",
@@ -268,7 +276,9 @@
   "55c968cb-074e-4ded-8371-c4e2d3858f2f",
   "755500ee-fb05-42f2-b892-877ef0477e07",
   "91d99708-6676-4f1b-bc5d-a9eb7144ed0a",
-  "d94e1c47-1dbb-1fda-ee7f-ba2c8c94dbb2"
+  "d94e1c47-1dbb-1fda-ee7f-ba2c8c94dbb2",
+  "8ca78cbb-daf9-4868-ac9e-24c4e8449d08",
+  "21208db9-39c5-4b89-bac7-d0108dd89da2"
 ]
 = MetaData.Schema.D20.A2 "PgrWeeklySalesReportEvents"
 + MetaData.Schema.D20.FA1 false

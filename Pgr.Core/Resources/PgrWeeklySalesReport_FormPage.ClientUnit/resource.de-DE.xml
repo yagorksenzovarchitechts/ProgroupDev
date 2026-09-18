@@ -3,6 +3,23 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Weekly Sales Report form page" />
+			<Item Name="LocalizableStrings.Button_eyjvkji_caption.Value" Value="Bericht genierieren &amp; sehen" />
+			<Item Name="LocalizableStrings.ChartWidget_wqxpdh4_title.Value" Value="Top 5 Kunden nach BU [TQM/xxx]" />
+			<Item Name="LocalizableStrings.ExpansionPanel_7crmuco_title.Value" Value="Kundensituation" />
+			<Item Name="LocalizableStrings.ExpansionPanel_eki7qua_title.Value" Value="offene 3-6-9 Aufgaben" />
+			<Item Name="LocalizableStrings.ExpansionPanel_fvqh9lp_title.Value" Value="geplante Besuche (nächste Woche)" />
+			<Item Name="LocalizableStrings.ExpansionPanel_ihwyode_title.Value" Value="offene Maßnahmen" />
+			<Item Name="LocalizableStrings.ExpansionPanel_m66prs5_title.Value" Value="zugehörige Besuchsberichte" />
+			<Item Name="LocalizableStrings.IndicatorWidget_626yo4g_title.Value" Value="AE [TQM/AT]" />
+			<Item Name="LocalizableStrings.IndicatorWidget_har31n7_title.Value" Value="Anz. Auswahl Qualität" />
+			<Item Name="LocalizableStrings.IndicatorWidget_jvd5tfw_title.Value" Value="9-TageØ OI [TQM Ø 9 Tage}" />
+			<Item Name="LocalizableStrings.IndicatorWidget_s6es0ld_title.Value" Value="Anz. Auswahl Service &amp; Logistik" />
+			<Item Name="LocalizableStrings.IndicatorWidget_ta5uugn_title.Value" Value="BU [TQM/AT]" />
+			<Item Name="LocalizableStrings.IndicatorWidget_vdwd3qa_title.Value" Value="Abw.  AE vs. BU / AT [%]" />
+			<Item Name="LocalizableStrings.NumberInput_vpi4hk8_label.Value" Value="Kalenderwoche" />
+			<Item Name="LocalizableStrings.TabContainer_6k84kcz_caption.Value" Value="Besuche &amp; Aktivitäten" />
+			<Item Name="LocalizableStrings.TabContainer_ovp5q9m_caption.Value" Value="Kommentare zum Bericht" />
+			<Item Name="LocalizableStrings.TabContainer_vlwl5fh_caption.Value" Value="Bericht Info" />
 		</Items>
 	</Group>
 </Resources>

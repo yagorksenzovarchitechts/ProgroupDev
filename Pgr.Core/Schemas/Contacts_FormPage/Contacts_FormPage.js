@@ -1,4 +1,4 @@
-define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule", "PgrPhoneValidationModule", "PgrClientConsts"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(duplicatesSearchModule, phoneValidationModule, consts)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -8,7 +8,13 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"caption": "#ResourceString(SaveButton_caption)#",
 					"size": "large",
 					"iconPosition": "only-text",
-					"clickMode": "default"
+					"clickMode": "default",
+					"clicked": {
+						"request": "crt.SaveRecordRequest",
+						"params": {
+							"pgrCheckDuplicates": true
+						}
+					}
 				}
 			},
 			{
@@ -1320,7 +1326,15 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"tooltip": "",
 					"needHandleSave": false,
 					"visible": false,
-					"readonly": false
+					"readonly": false,
+					"validators": {
+						"phoneFormat": {
+							"type": "Pgr.PhoneFormat",
+							"params": {
+								"message": "#ResourceString(PgrInvalidPhoneFormat)#"
+							}
+						}
+					}
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
@@ -3425,6 +3439,26 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"attributes"
 				],
 				"values": {
+					"PgrDuplicatesFoundData": {
+						"value": null,
+						"change": {
+							"request": "usr.PgrOpenDuplicatesDialog"
+						}
+					},
+					"PgrDuplicatesListener": {
+						"value": null
+					},
+					"PgrOriginalSaveRequestParams": {
+						"value": null
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes"
+				],
+				"values": {
 					"Account_List": {
 						"isCollection": true,
 						"modelConfig": {
@@ -4302,8 +4336,79 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[
+			{
+				request: "crt.SaveRecordRequest",
+				handler: async (request, next) => {
+					const context = request.$context;
+					if (request.pgrCheckDuplicates === true) {
+						const phoneValue = await context.PDS_Phone_g0l1r5a;
+						const communicationRows = (await context.CommunicationOptions_558wj6f) || [];
+						const phoneTypeIds = [consts.CommunicationType.BusinessPhone, consts.CommunicationType.MobilePhone];
+						const invalidNumbers = await phoneValidationModule.getInvalidPhoneNumbers(communicationRows, phoneTypeIds);
+						if (phoneValue && !phoneValidationModule.isValidPhoneNumber(phoneValue)) {
+							invalidNumbers.push(phoneValue);
+						}
+						if (invalidNumbers.length) {
+							const uniqueInvalidNumbers = Array.from(new Set(invalidNumbers));
+							const prefix = await context.Resources.Strings.PgrInvalidPhoneNumbersMessage;
+							const okCaption = await context.Resources.Strings.PgrInvalidPhoneNumbersOkButton;
+							await context.executeRequest({
+								type: "crt.ShowDialogRequest",
+								$context: context,
+								dialogConfig: {
+									data: {
+										message: `${prefix}${uniqueInvalidNumbers.join(", ")}`,
+										actions: [
+											{key: "ok", config: {color: "primary", caption: okCaption}}
+										]
+									}
+								}
+							});
+							return;
+						}
+					}
+					if (request.pgrCheckDuplicates !== true) {
+						return await next?.handle(request);
+					}
+					const duplicates = await duplicatesSearchModule.findDuplicates(context);
+					if (!duplicates.length) {
+						return await next?.handle(request);
+					}
+					context.PgrOriginalSaveRequestParams = duplicatesSearchModule.getSaveRequestParams(request);
+					context.PgrDuplicatesFoundData = duplicates;
+				}
+			},
+			{
+				request: "usr.PgrOpenDuplicatesDialog",
+				handler: async (request, next) => {
+					await duplicatesSearchModule.openDuplicatesDialog(request.$context);
+					return await next?.handle(request);
+				}
+			},
+			{
+				request: "crt.HandleViewModelDestroyRequest",
+				handler: async (request, next) => {
+					await duplicatesSearchModule.removeDialogListener(request.$context);
+					return await next?.handle(request);
+				}
+			}
+		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
-		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
+		validators: /**SCHEMA_VALIDATORS*/{
+			"Pgr.PhoneFormat": {
+				"validator": function(config) {
+					return function(control) {
+						return phoneValidationModule.isValidPhoneNumber(control.value)
+							? null
+							: { "Pgr.PhoneFormat": { message: config.message } };
+					};
+				},
+				"params": [
+					{ "name": "message" }
+				],
+				"async": false
+			}
+		}/**SCHEMA_VALIDATORS*/
 	};
 });

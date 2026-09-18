@@ -4,4 +4,67 @@
 + MetaData.Schema.B7 true
 = MetaData.Schema.B8 "8.3.4.2753"
 = MetaData.Schema.AD5 "fba8e901-5a6e-41cf-b721-8b88c68d1f37"
++ MetaData.Schema.AD4.BRS1 {
+  "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+  "UId": "e7e9d514-0aa0-9fc7-6b1c-be2788d2feb6",
+  "BR1": [
+    {
+      "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+      "UId": "0d9bd243-bec1-e857-326b-8706eef60a63",
+      "BRC1": {
+        "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleGroupCondition",
+        "UId": "f0f2de95-44a6-9f11-c0a1-1f8c1d711315",
+        "BGC1": 1,
+        "BGC2": [
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+            "UId": "c89f2e29-39fb-302f-71a1-629fa3cfe9dc",
+            "BCO1": {
+              "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+              "UId": "25522d3e-5c03-d6cf-2bfe-704da1c991b9",
+              "BRE1": "Lookup",
+              "BRE2": "AttributeValue",
+              "BRX1": "ActivityCategory",
+              "BRX2": "ActivityDS"
+            },
+            "BCO2": {
+              "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+              "UId": "9eb21d05-56d8-4314-9fc6-aa9e39eefaba",
+              "BRE1": "Lookup",
+              "BRE3": "ActivityCategory",
+              "BVE1": "5ae4fa0f-6ab6-41e2-b1dd-b2350d1fd9ab"
+            },
+            "BCO3": 2
+          }
+        ]
+      },
+      "BRC2": [
+        {
+          "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionHideElement",
+          "UId": "9bee622c-f756-a6c0-ab15-9f82d78fdf6a",
+          "BRA4": "Input_3cjy7ef"
+        }
+      ]
+    }
+  ],
+  "BR2": [
+    {
+      "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+      "UId": "394df4eb-568d-208e-ef11-80de13e87ecf",
+      "BRT1": "ActivityDS",
+      "BRT2": 2
+    },
+    {
+      "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+      "UId": "91073578-3813-2135-e644-b7d0dbddaa1e",
+      "BRT1": "ActivityCategory",
+      "BRT3": "ActivityDS"
+    }
+  ],
+  "BR3": "BusinessRule_1e88e0a"
+}
+~ MetaData.Schema.AD4.BRS1 [
+  "d84140c1-e33c-7631-a2a1-3397231d7bc7",
+  "e7e9d514-0aa0-9fc7-6b1c-be2788d2feb6"
+]
 + MetaData.Schema.B7 true

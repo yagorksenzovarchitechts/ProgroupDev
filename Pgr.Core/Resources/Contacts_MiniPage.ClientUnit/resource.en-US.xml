@@ -3,6 +3,12 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancel" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmButton.Value" Value="Merge" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmCancelButton.Value" Value="Cancel" />
+			<Item Name="LocalizableStrings.PgrMergeConfirmMessagePrefix.Value" Value="The following record will remain: " />
+			<Item Name="LocalizableStrings.PgrMergeConfirmMessageSuffix.Value" Value=". These records will be merged into it and removed: " />
+			<Item Name="LocalizableStrings.PgrMergeErrorMessage.Value" Value="Merge failed:" />
+			<Item Name="LocalizableStrings.PgrMergeErrorOkButton.Value" Value="OK" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
 		</Items>
 	</Group>
