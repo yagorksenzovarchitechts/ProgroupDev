@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+    "Name": "PgrWeeklySalesReport_AttachOnApproval",
+    "ModifiedOnUtc": "\/Date(1789910409000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Pgr: Attach Approved Weekly Report",
+    "DependsOn": []
+  }
+}

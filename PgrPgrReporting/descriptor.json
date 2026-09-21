@@ -3,7 +3,7 @@
     "UId": "79407b15-c164-4a99-9c5b-36fb13835f0d",
     "Name": "PgrPgrReporting",
     "Type": 1,
-    "ModifiedOnUtc": "\/Date(1787215990000)\/",
+    "ModifiedOnUtc": "\/Date(1789907238000)\/",
     "Maintainer": "ProGroup",
     "ProjectPath": "Files/PgrPgrReporting.csproj",
     "DependsOn": [
@@ -11,6 +11,17 @@
         "UId": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
         "Name": "Pgr.Core",
         "Type": 1
+      },
+      {
+        "UId": "67ec18bb-622d-4160-b0a1-b05b0903e363",
+        "Name": "CrtForecastMgmtApp",
+        "Type": 1,
+        "InstallBehavior": 1
+      },
+      {
+        "UId": "b349edb3-5bd4-47cf-8269-e9d4145aa896",
+        "PackageVersion": "7.8.0",
+        "Name": "WordReporting"
       }
     ]
   }

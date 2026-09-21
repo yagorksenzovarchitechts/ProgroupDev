@@ -1,0 +1,187 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ProcessSchemaManager",
+      "UId": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+      "A2": "PgrWeeklySalesReport_AttachOnApproval",
+      "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "79407b15-c164-4a99-9c5b-36fb13835f0d",
+      "B8": "10.0.0.858",
+      "FJ1": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "87744bc9-468d-4770-8cfd-e5523b2c6cc8",
+          "A2": "TriggerRecordId",
+          "A3": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "A4": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "IL2": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "L1": "23018567-a13c-4320-8687-fd6f9e3699bd",
+          "L8": {
+            "GS1": 3,
+            "GS2": "[#[IsOwnerSchema:false].[IsSchema:false].[Element:{3ffc6cf0-bd6d-4a3c-81f7-6fbfd0a790c3}].[Parameter:{3fe57c7c-b975-42e9-9f28-dbab45d84db8}]#]",
+            "GS5": "516ca73d-d84e-4242-9dbc-f9e159c65b75"
+          }
+        }
+      ],
+      "IJ1": true,
+      "BK8": "bb4d6607-026b-4b27-b640-8f5c77c1e89d",
+      "BK15": [],
+      "BK37": {
+        "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+        "UId": "cdd58be7-2dba-4a5e-869b-1ad5d6d7513a",
+        "A2": "NotificationCaption",
+        "A3": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+        "A4": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+        "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+        "L8": {
+          "GS1": 3,
+          "GS2": "[#[PropertyValue:Caption]#]",
+          "GS5": "516ca73d-d84e-4242-9dbc-f9e159c65b75"
+        }
+      },
+      "BK1": "FFFFFFFF",
+      "BK2": "FFBBBBBB",
+      "BK3": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaLaneSet",
+          "UId": "3c635e3f-b712-46a5-8e89-952dce5d99ce",
+          "A2": "LaneSet1",
+          "A3": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "A4": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
+          "BL7": "3c635e3f-b712-46a5-8e89-952dce5d99ce",
+          "BM1": 0,
+          "BM4": [
+            {
+              "BL1": "Terrasoft.Core.Process.ProcessSchemaLane",
+              "UId": "13ed076f-ed90-4ede-8e78-af4eca5d41af",
+              "A2": "Lane1",
+              "A3": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+              "A4": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+              "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
+              "IL2": "3c635e3f-b712-46a5-8e89-952dce5d99ce",
+              "CD1": [],
+              "CD2": [],
+              "CD4": "3c635e3f-b712-46a5-8e89-952dce5d99ce",
+              "CD7": []
+            }
+          ]
+        }
+      ],
+      "BK5": [],
+      "BK4": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaStartSignalEvent",
+          "UId": "3ffc6cf0-bd6d-4a3c-81f7-6fbfd0a790c3",
+          "A2": "SignalStart1",
+          "A3": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "A4": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
+          "IL2": "13ed076f-ed90-4ede-8e78-af4eca5d41af",
+          "BL3": "60;185",
+          "BL7": "1129e72f-0e8c-445a-b2ea-463517e86395",
+          "BN2": "31;31",
+          "BO3": true,
+          "FC1": [
+            {
+              "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+              "UId": "3fe57c7c-b975-42e9-9f28-dbab45d84db8",
+              "A2": "RecordId",
+              "A3": "3ffc6cf0-bd6d-4a3c-81f7-6fbfd0a790c3",
+              "A4": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+              "IL2": "3ffc6cf0-bd6d-4a3c-81f7-6fbfd0a790c3",
+              "L1": "23018567-a13c-4320-8687-fd6f9e3699bd",
+              "L8": {},
+              "L13": true
+            }
+          ],
+          "FC2": "f0eae67f-f127-47f0-a6be-59ffe20539ba",
+          "ED1": false,
+          "DZ1": "null",
+          "DZ2": false,
+          "DZ3": true,
+          "DZ5": 2,
+          "DZ8": true,
+          "DZ11": true,
+          "DZ12": "[\"5dbdb221-a845-4691-b940-7e9aafa901e1\"]",
+          "DZ13": "{\"className\":\"Terrasoft.FilterGroup\",\"serializedFilterEditData\":\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{\\\"1284afdb-388f-428a-845e-08f89b355391\\\":{\\\"className\\\":\\\"Terrasoft.InFilter\\\",\\\"filterType\\\":4,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrStatusId\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"1284afdb-388f-428a-845e-08f89b355391\\\",\\\"dataValueType\\\":10,\\\"leftExpressionCaption\\\":\\\"Status\\\",\\\"referenceSchemaName\\\":\\\"PgrWeeklyReportStatus\\\",\\\"rightExpressions\\\":[{\\\"className\\\":\\\"Terrasoft.ParameterExpression\\\",\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"className\\\":\\\"Terrasoft.Parameter\\\",\\\"dataValueType\\\":10,\\\"value\\\":{\\\"Name\\\":\\\"Approved by Sales Manager\\\",\\\"Id\\\":\\\"6479d6b9-ff04-4cab-b013-85a3a226f830\\\",\\\"value\\\":\\\"6479d6b9-ff04-4cab-b013-85a3a226f830\\\",\\\"displayValue\\\":\\\"Approved by Sales Manager\\\"}}}]}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrWeeklySalesReport\\\",\\\"key\\\":\\\"\\\"}\",\"dataSourceFilters\":\"{\\\"items\\\":{\\\"1284afdb-388f-428a-845e-08f89b355391\\\":{\\\"filterType\\\":4,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrStatusId\\\"},\\\"rightExpressions\\\":[{\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"dataValueType\\\":10,\\\"value\\\":\\\"6479d6b9-ff04-4cab-b013-85a3a226f830\\\"}}]}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrWeeklySalesReport\\\"}\"}"
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaTerminateEvent",
+          "UId": "9354dd69-88c2-4267-b321-e661dd4b6c4a",
+          "A2": "EndEvent1",
+          "A3": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "A4": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
+          "IL2": "13ed076f-ed90-4ede-8e78-af4eca5d41af",
+          "BL3": "420;185",
+          "BL7": "1bd93619-0574-454e-bb4e-cf53b9eb9470",
+          "BN2": "31;31",
+          "BO3": true,
+          "FC1": []
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaScriptTask",
+          "UId": "034558dc-4788-49a5-9571-a84b24222cdd",
+          "A2": "ScriptTask1",
+          "A3": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "A4": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "A5": "79407b15-c164-4a99-9c5b-36fb13835f0d",
+          "IL2": "13ed076f-ed90-4ede-8e78-af4eca5d41af",
+          "BL3": "240;173",
+          "BL7": "0e490dda-e140-4441-b600-6f5c64d024df",
+          "BL8": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "BN2": "69;55",
+          "BO3": true,
+          "BP2": [],
+          "CL2": "FFFFFFFF",
+          "CH1": "// IMPORTANT: When implementing\r\n// long-running operations,\r\n// it is crucial to enable timely and\r\n// responsive cancellation. To achieve\r\n// this, ensure that your code\r\n// is designed to respond appropriately\r\n// to cancellation requests using\r\n// the context.CancellationToken\r\n// mechanism. For more detailed\r\n// information and examples,\r\n// please, refer to our documentation.\r\nGuid reportId = Get<Guid>(\"TriggerRecordId\");\r\n\r\nvar select = new Terrasoft.Core.DB.Select(UserConnection)\r\n    .Column(\"PgrName\")\r\n    .From(\"PgrWeeklySalesReport\")\r\n    .Where(\"Id\").IsEqual(Terrasoft.Core.DB.Column.Parameter(reportId)) as Terrasoft.Core.DB.Select;\r\n\r\nstring reportName = string.Empty;\r\nusing (var dbExecutor = UserConnection.EnsureDBConnection()) {\r\n    using (var reader = select.ExecuteReader(dbExecutor)) {\r\n        if (reader.Read()) {\r\n            reportName = reader.GetColumnValue<string>(\"PgrName\");\r\n        }\r\n    }\r\n}\r\n\r\nstring safeName = System.Text.RegularExpressions.Regex.Replace(reportName, @\"[^a-zA-Z0-9]+\", \"_\").Trim('_');\r\nstring timestamp = DateTime.Now.ToString(\"yyyyMMdd_HHmmss\");\r\nstring fileName = \"WeeklySalesReport_\" + safeName + \"_\" + timestamp + \".docx\";\r\n\r\nvar reportService = new Terrasoft.Configuration.ReportService.ReportService();\r\nTerrasoft.Configuration.ReportService.ReportData report =\r\n    reportService.GenerateMSWordReport(\"fac82928-2a73-5569-fe8b-baf7d7c23974\", reportId.ToString(), false);\r\n\r\nvar fileSchema = UserConnection.EntitySchemaManager.GetInstanceByName(\"SysFile\");\r\nvar fileEntity = fileSchema.CreateEntity(UserConnection);\r\nfileEntity.SetDefColumnValues();\r\nfileEntity.SetColumnValue(\"RecordId\", reportId);\r\nfileEntity.SetColumnValue(\"RecordSchemaName\", \"PgrWeeklySalesReport\");\r\nfileEntity.SetColumnValue(\"Name\", fileName);\r\nfileEntity.SetColumnValue(\"TypeId\", new Guid(\"529bc2f8-0ee0-df11-971b-001d60e938c6\"));\r\nfileEntity.SetColumnValue(\"Data\", report.Data);\r\nfileEntity.Save();\r\n\r\nreturn true;",
+          "CH2": true
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
+          "UId": "273fa72e-04f6-490f-bae5-3e93e9f784fc",
+          "A2": "SequenceFlow_SignalStart1_EndEvent1",
+          "A3": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "A4": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
+          "BL7": "0d8351f6-c2f4-4737-bdd9-6fbfe0837fec",
+          "CI1": "3ffc6cf0-bd6d-4a3c-81f7-6fbfd0a790c3",
+          "CI2": "034558dc-4788-49a5-9571-a84b24222cdd",
+          "CI3": "null",
+          "CI5": "FF939598",
+          "CI6": 1,
+          "CI11": "91;201",
+          "CI12": "202;201"
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
+          "UId": "be96cb23-ee46-4c12-92c7-17a949b5afb6",
+          "A2": "SequenceFlow1",
+          "A3": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "A4": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "A5": "79407b15-c164-4a99-9c5b-36fb13835f0d",
+          "BL7": "0d8351f6-c2f4-4737-bdd9-6fbfe0837fec",
+          "BL8": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
+          "CI1": "034558dc-4788-49a5-9571-a84b24222cdd",
+          "CI2": "9354dd69-88c2-4267-b321-e661dd4b6c4a",
+          "CI3": "null",
+          "CI5": "FF939598",
+          "CI6": 1,
+          "CI11": "271;201",
+          "CI12": "395;201"
+        }
+      ],
+      "BK9": [],
+      "BK18": "Business Process",
+      "BK29": true,
+      "BK30": true,
+      "BK34": "en-US",
+      "Labels": [],
+      "BK24": []
+    }
+  }
+}

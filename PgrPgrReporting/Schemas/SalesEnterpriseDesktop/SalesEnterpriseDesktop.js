@@ -272,6 +272,23 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 										]
 									}
 								]
+							},
+							{
+								"attribute": "QuickFilter_CurrentContact_DataGrid_fwpbspp",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "DataGrid_fwpbspp",
+													"filterColumn": "Owner"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
 							}
 						],
 						"from": "QuickFilter_CurrentContact_Value"
@@ -326,23 +343,6 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											{
 												"target": {
 													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_g09hdv9",
-													"filterColumn": "PgrAccount.Territory"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_Territory_ChartWidget_vpvvd4s_SeriesData_oi7f3k2",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_oi7f3k2",
 													"filterColumn": "PgrAccount.Territory"
 												},
 												"quickFilterType": "lookup"
@@ -418,23 +418,6 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 										]
 									}
 								]
-							},
-							{
-								"attribute": "QuickFilter_Territory_IndicatorWidget_jzvgr6l_Data",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "IndicatorWidget_jzvgr6l_Data",
-													"filterColumn": "PgrAccount.Territory"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
 							}
 						],
 						"from": "QuickFilter_Territory_Value"
@@ -448,174 +431,6 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
-				"name": "QuickFilter_SalesDirector",
-				"values": {
-					"type": "crt.QuickFilter",
-					"config": {
-						"caption": "#ResourceString(QuickFilter_SalesDirector_config_caption)#",
-						"hint": "",
-						"icon": "segments-icon",
-						"iconPosition": "left-icon",
-						"defaultValue": [
-							{
-								"value": "[#currentUserContact#]",
-								"checkedState": true
-							}
-						],
-						"entitySchemaName": "Contact",
-						"recordsFilter": null,
-						"defaultValueListSorting": null
-					},
-					"_filterOptions": {
-						"expose": [
-							{
-								"attribute": "QuickFilter_SalesDirector_ChartWidget_vpvvd4s_SeriesData_g09hdv9",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_g09hdv9",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_ChartWidget_vpvvd4s_SeriesData_oi7f3k2",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_oi7f3k2",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_1i78h71_Data",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "IndicatorWidget_1i78h71_Data",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_zc3tqqa",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_zc3tqqa",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_9z8sadx",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_9z8sadx",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_fa2aur9_Data",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "IndicatorWidget_fa2aur9_Data",
-													"filterColumn": "PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_h8gyel3_Data",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "IndicatorWidget_h8gyel3_Data",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_jzvgr6l_Data",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "IndicatorWidget_jzvgr6l_Data",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							}
-						],
-						"from": "QuickFilter_SalesDirector_Value"
-					},
-					"filterType": "lookup",
-					"visible": true
-				},
-				"parentName": "FlexContainer_2t3lqd2",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
 				"name": "QuickFilter_SalesManager",
 				"values": {
 					"type": "crt.QuickFilter",
@@ -624,14 +439,51 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 						"hint": "",
 						"icon": "consultation-icon",
 						"iconPosition": "left-icon",
-						"defaultValue": [
-							{
-								"value": "[#currentUserContact#]",
-								"checkedState": true
-							}
-						],
+						"defaultValue": [],
 						"entitySchemaName": "Contact",
-						"recordsFilter": null,
+						"recordsFilter": {
+							"items": {
+								"39454c3c-ab66-460e-95e4-95ab723d7e23": {
+									"filterType": 1,
+									"comparisonType": 4,
+									"isEnabled": true,
+									"trimDateTimeParameterToDate": true,
+									"leftExpression": {
+										"expressionType": 3,
+										"functionType": 2,
+										"aggregationType": 5,
+										"columnPath": "[Account:PgrSalesManager].CreatedOn",
+										"subFilters": {
+											"items": {},
+											"logicalOperation": 0,
+											"isEnabled": true,
+											"filterType": 6,
+											"rootSchemaName": "Account",
+											"key": "f54ef9dc-1b13-4e0f-b014-36c084954d89"
+										}
+									},
+									"isAggregative": true,
+									"dataValueType": 7,
+									"rightExpression": {
+										"expressionType": 1,
+										"functionType": 1,
+										"macrosType": 5
+									},
+									"subFilters": {
+										"items": {},
+										"logicalOperation": 0,
+										"isEnabled": true,
+										"filterType": 6,
+										"rootSchemaName": "Account",
+										"key": "f54ef9dc-1b13-4e0f-b014-36c084954d89"
+									}
+								}
+							},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "Contact"
+						},
 						"defaultValueListSorting": null
 					},
 					"_filterOptions": {
@@ -645,23 +497,6 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											{
 												"target": {
 													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_g09hdv9",
-													"filterColumn": "PgrAccount.PgrSalesManager"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesManager_ChartWidget_vpvvd4s_SeriesData_oi7f3k2",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_oi7f3k2",
 													"filterColumn": "PgrAccount.PgrSalesManager"
 												},
 												"quickFilterType": "lookup"
@@ -754,17 +589,171 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 										]
 									}
 								]
+							}
+						],
+						"from": "QuickFilter_SalesManager_Value"
+					},
+					"filterType": "lookup",
+					"visible": true
+				},
+				"parentName": "FlexContainer_2t3lqd2",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_SalesDirector",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_SalesDirector_config_caption)#",
+						"hint": "",
+						"icon": "segments-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": [],
+						"entitySchemaName": "Contact",
+						"recordsFilter": {
+							"items": {
+								"b3170f3d-c60e-4776-b568-e2cd093d16f0": {
+									"filterType": 1,
+									"comparisonType": 4,
+									"isEnabled": true,
+									"trimDateTimeParameterToDate": true,
+									"leftExpression": {
+										"expressionType": 3,
+										"functionType": 2,
+										"aggregationType": 5,
+										"columnPath": "[Account:PgrSalesDirector].CreatedOn",
+										"subFilters": {
+											"items": {},
+											"logicalOperation": 0,
+											"isEnabled": true,
+											"filterType": 6,
+											"rootSchemaName": "Account",
+											"key": "78ed3c43-25dd-4fa5-98cd-27e34a899148"
+										}
+									},
+									"isAggregative": true,
+									"dataValueType": 7,
+									"rightExpression": {
+										"expressionType": 1,
+										"functionType": 1,
+										"macrosType": 5
+									},
+									"subFilters": {
+										"items": {},
+										"logicalOperation": 0,
+										"isEnabled": true,
+										"filterType": 6,
+										"rootSchemaName": "Account",
+										"key": "78ed3c43-25dd-4fa5-98cd-27e34a899148"
+									}
+								}
 							},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "Contact"
+						},
+						"defaultValueListSorting": null
+					},
+					"_filterOptions": {
+						"expose": [
 							{
-								"attribute": "QuickFilter_SalesManager_IndicatorWidget_jzvgr6l_Data",
+								"attribute": "QuickFilter_SalesDirector_ChartWidget_vpvvd4s_SeriesData_g09hdv9",
 								"converters": [
 									{
 										"converter": "crt.QuickFilterAttributeConverter",
 										"args": [
 											{
 												"target": {
-													"viewAttributeName": "IndicatorWidget_jzvgr6l_Data",
-													"filterColumn": "PgrAccount.PgrSalesManager"
+													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_g09hdv9",
+													"filterColumn": "PgrAccount.PgrSalesDirector"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_1i78h71_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_1i78h71_Data",
+													"filterColumn": "PgrAccount.PgrSalesDirector"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_zc3tqqa",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_zc3tqqa",
+													"filterColumn": "PgrAccount.PgrSalesDirector"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_9z8sadx",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_9z8sadx",
+													"filterColumn": "PgrAccount.PgrSalesDirector"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_fa2aur9_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_fa2aur9_Data",
+													"filterColumn": "PgrSalesDirector"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_h8gyel3_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_h8gyel3_Data",
+													"filterColumn": "PgrAccount.PgrSalesDirector"
 												},
 												"quickFilterType": "lookup"
 											}
@@ -773,7 +762,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 								]
 							}
 						],
-						"from": "QuickFilter_SalesManager_Value"
+						"from": "QuickFilter_SalesDirector_Value"
 					},
 					"filterType": "lookup",
 					"visible": true
@@ -865,14 +854,40 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
-				"name": "GridContainer_y4hn2gq",
+				"name": "FlexContainer_3xtypsc",
 				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "column",
+					"wrap": "nowrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "medium",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch",
+					"justifyContent": "start",
+					"gap": "small",
 					"layoutConfig": {
-						"column": 2,
+						"column": 1,
 						"colSpan": 1,
 						"row": 1,
 						"rowSpan": 1
-					},
+					}
+				},
+				"parentName": "GridContainer_ng7r8z8",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_zp2172z",
+				"values": {
 					"type": "crt.GridContainer",
 					"columns": [
 						"minmax(32px, 1fr)"
@@ -895,9 +910,1221 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 						"left": "none"
 					}
 				},
-				"parentName": "GridContainer_ng7r8z8",
+				"parentName": "FlexContainer_3xtypsc",
 				"propertyName": "items",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_do4icls",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "none",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "small",
+						"right": "medium",
+						"bottom": "small",
+						"left": "medium"
+					}
+				},
+				"parentName": "GridContainer_zp2172z",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_3zquehw",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "center",
+					"justifyContent": "start",
+					"gap": "small"
+				},
+				"parentName": "GridContainer_do4icls",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Icon_w48ygoq",
+				"values": {
+					"type": "crt.Icon",
+					"iconName": "catalog-icon",
+					"size": "16",
+					"color": "#0D2E4E",
+					"backgroundType": "circle",
+					"backgroundColor": "#E3D9FC",
+					"padding": "l",
+					"visible": true,
+					"ariaLabel": "",
+					"tooltip": ""
+				},
+				"parentName": "FlexContainer_3zquehw",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Label_gy2c3xl",
+				"values": {
+					"type": "crt.Label",
+					"caption": "#MacrosTemplateString(#ResourceString(Label_gy2c3xl_caption)#)#",
+					"labelType": "headline-3",
+					"labelThickness": "semibold",
+					"labelEllipsis": false,
+					"labelColor": "auto",
+					"labelBackgroundColor": "transparent",
+					"labelTextAlign": "start",
+					"headingLevel": "label",
+					"visible": true
+				},
+				"parentName": "FlexContainer_3zquehw",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_sprjmsi",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 2,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "medium",
+						"right": "none",
+						"bottom": "small",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "center",
+					"justifyContent": "end",
+					"gap": "small"
+				},
+				"parentName": "GridContainer_do4icls",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ButtonToggleGroup_b4rutg0",
+				"values": {
+					"for": "TabPanel_6quibyh",
+					"fitContent": true,
+					"toggleViewMode": "button",
+					"type": "crt.ButtonToggleGroup"
+				},
+				"parentName": "FlexContainer_sprjmsi",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_vaaa4oj",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "GridContainer_zp2172z",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "TabPanel_6quibyh",
+				"values": {
+					"type": "crt.TabPanel",
+					"items": [],
+					"mode": "toggle",
+					"fitContent": true,
+					"visible": true,
+					"styleType": "default",
+					"bodyBackgroundColor": "primary-contrast-500",
+					"selectedTabTitleColor": "auto",
+					"tabTitleColor": "auto",
+					"underlineSelectedTabColor": "auto",
+					"headerBackgroundColor": "auto",
+					"stretch": true,
+					"selectedTab": {
+						"value": "TabContainer_mvhf4la"
+					},
+					"allowToggleClose": true,
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"selectedTabIndex": 0
+				},
+				"parentName": "GridContainer_vaaa4oj",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "TabContainer_mvhf4la",
+				"values": {
+					"type": "crt.TabContainer",
+					"tools": [],
+					"items": [],
+					"caption": "#ResourceString(TabContainer_mvhf4la_caption)#",
+					"iconPosition": "only-text",
+					"visible": true
+				},
+				"parentName": "TabPanel_6quibyh",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_rw7wjc1",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"alignItems": "center",
+					"items": []
+				},
+				"parentName": "TabContainer_mvhf4la",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Label_xibhisv",
+				"values": {
+					"type": "crt.Label",
+					"caption": "#MacrosTemplateString(#ResourceString(Label_xibhisv_caption)#)#",
+					"labelType": "headline-3",
+					"labelThickness": "default",
+					"labelEllipsis": false,
+					"labelColor": "#0D2E4E",
+					"labelBackgroundColor": "transparent",
+					"labelTextAlign": "start",
+					"visible": true,
+					"headingLevel": "label"
+				},
+				"parentName": "FlexContainer_rw7wjc1",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_imwrguh",
+				"values": {
+					"type": "crt.FlexContainer",
+					"items": [],
+					"direction": "column"
+				},
+				"parentName": "TabContainer_mvhf4la",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_TasksDue7Days",
+				"values": {
+					"type": "crt.DataGrid",
+					"features": {
+						"rows": {
+							"selection": false,
+							"numeration": false
+						},
+						"editable": {
+							"enable": false,
+							"itemsCreation": false,
+							"floatingEditPanel": false
+						}
+					},
+					"items": "$DataGrid_mff7gl1",
+					"primaryColumnName": "DataGrid_mff7gl1DS_Id",
+					"columns": [
+						{
+							"id": "3b53ec72-abe4-9846-463e-fb170be47244",
+							"code": "DataGrid_mff7gl1DS_Title",
+							"caption": "#ResourceString(DataGrid_mff7gl1DS_Title)#",
+							"dataValueType": 28,
+							"width": 169
+						},
+						{
+							"id": "9d397206-1fee-06d6-bea3-0c47fc4b64cf",
+							"code": "DataGrid_mff7gl1DS_Account",
+							"caption": "#ResourceString(DataGrid_mff7gl1DS_Account)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "6510d8e8-7793-c153-f017-facd9b7a987b",
+							"code": "DataGrid_mff7gl1DS_ActivityCategory",
+							"caption": "#ResourceString(DataGrid_mff7gl1DS_ActivityCategory)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "3752ed2d-14cd-a3f1-de33-86c34168180a",
+							"code": "DataGrid_mff7gl1DS_Status",
+							"caption": "#ResourceString(DataGrid_mff7gl1DS_Status)#",
+							"dataValueType": 10,
+							"width": 101
+						},
+						{
+							"id": "aa0b75c4-9718-4280-0be0-b6e1f11c830d",
+							"code": "DataGrid_mff7gl1DS_DueDate",
+							"caption": "#ResourceString(DataGrid_mff7gl1DS_DueDate)#",
+							"dataValueType": 7,
+							"width": 178
+						}
+					],
+					"visible": true,
+					"fitContent": true,
+					"activeRow": "$DataGrid_mff7gl1_ActiveRow",
+					"selectionState": "$DataGrid_mff7gl1_SelectionState",
+					"_selectionOptions": {
+						"attribute": "DataGrid_mff7gl1_SelectionState"
+					},
+					"bulkActions": []
+				},
+				"parentName": "FlexContainer_imwrguh",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_mff7gl1_AddTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Add tag",
+					"icon": "tag-icon",
+					"clicked": {
+						"request": "crt.AddTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_mff7gl1DS",
+							"filters": "$DataGrid_mff7gl1 | crt.ToCollectionFilters : 'DataGrid_mff7gl1' : $DataGrid_mff7gl1_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_mff7gl1_SelectionState"
+						}
+					},
+					"items": []
+				},
+				"parentName": "DataGrid_TasksDue7Days",
+				"propertyName": "bulkActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_mff7gl1_RemoveTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Remove tag",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.RemoveTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_mff7gl1DS",
+							"filters": "$DataGrid_mff7gl1 | crt.ToCollectionFilters : 'DataGrid_mff7gl1' : $DataGrid_mff7gl1_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_mff7gl1_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_mff7gl1_AddTagsBulkAction",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_mff7gl1_ExportToExcelBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Export to Excel",
+					"icon": "export-button-icon",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "DataGrid_TasksDue7Days",
+							"filters": "$DataGrid_mff7gl1 | crt.ToCollectionFilters : 'DataGrid_mff7gl1' : $DataGrid_mff7gl1_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_mff7gl1_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_TasksDue7Days",
+				"propertyName": "bulkActions",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_mff7gl1_MergeBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Merge",
+					"icon": "merge-icon",
+					"clicked": {
+						"request": "crt.MergeRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_mff7gl1DS",
+							"selectionState": "$DataGrid_mff7gl1_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_TasksDue7Days",
+				"propertyName": "bulkActions",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_mff7gl1_DeleteBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Delete",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.DeleteRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_mff7gl1DS",
+							"filters": "$DataGrid_mff7gl1 | crt.ToCollectionFilters : 'DataGrid_mff7gl1' : $DataGrid_mff7gl1_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_mff7gl1_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_TasksDue7Days",
+				"propertyName": "bulkActions",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "TabContainer_1jc1xxr",
+				"values": {
+					"type": "crt.TabContainer",
+					"tools": [],
+					"items": [],
+					"caption": "#ResourceString(TabContainer_1jc1xxr_caption)#",
+					"iconPosition": "only-text",
+					"visible": true
+				},
+				"parentName": "TabPanel_6quibyh",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_kg0xdfr",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"alignItems": "center",
+					"items": []
+				},
+				"parentName": "TabContainer_1jc1xxr",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Label_ievcl1k",
+				"values": {
+					"type": "crt.Label",
+					"caption": "#MacrosTemplateString(#ResourceString(Label_ievcl1k_caption)#)#",
+					"labelType": "headline-3",
+					"labelThickness": "default",
+					"labelEllipsis": false,
+					"labelColor": "#0D2E4E",
+					"labelBackgroundColor": "transparent",
+					"labelTextAlign": "start",
+					"visible": true,
+					"headingLevel": "label"
+				},
+				"parentName": "FlexContainer_kg0xdfr",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_tewpupn",
+				"values": {
+					"type": "crt.FlexContainer",
+					"items": [],
+					"direction": "column"
+				},
+				"parentName": "TabContainer_1jc1xxr",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_TasksStarted",
+				"values": {
+					"type": "crt.DataGrid",
+					"features": {
+						"rows": {
+							"selection": false,
+							"numeration": false
+						},
+						"editable": {
+							"enable": false,
+							"itemsCreation": false,
+							"floatingEditPanel": false
+						}
+					},
+					"items": "$DataGrid_w7fcc7z",
+					"primaryColumnName": "DataGrid_w7fcc7zDS_Id",
+					"columns": [
+						{
+							"id": "e1cbadd4-d708-35ee-2223-4a99abf269a4",
+							"code": "DataGrid_w7fcc7zDS_Title",
+							"caption": "#ResourceString(DataGrid_w7fcc7zDS_Title)#",
+							"dataValueType": 28,
+							"width": 201
+						},
+						{
+							"id": "5e7f088f-bcad-fbac-40bd-617009204d7c",
+							"code": "DataGrid_w7fcc7zDS_Account",
+							"caption": "#ResourceString(DataGrid_w7fcc7zDS_Account)#",
+							"dataValueType": 10,
+							"width": 170
+						},
+						{
+							"id": "600ff017-641f-6ee2-e985-1763b7504926",
+							"code": "DataGrid_w7fcc7zDS_ActivityCategory",
+							"caption": "#ResourceString(DataGrid_w7fcc7zDS_ActivityCategory)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "80dd9ca5-bc85-78ec-3458-2545f9075695",
+							"code": "DataGrid_w7fcc7zDS_Status",
+							"caption": "#ResourceString(DataGrid_w7fcc7zDS_Status)#",
+							"dataValueType": 10,
+							"width": 101
+						},
+						{
+							"id": "f66f7cd9-2a28-1909-603f-4db5ea16669a",
+							"code": "DataGrid_w7fcc7zDS_DueDate",
+							"caption": "#ResourceString(DataGrid_w7fcc7zDS_DueDate)#",
+							"dataValueType": 7
+						}
+					],
+					"visible": true,
+					"fitContent": true,
+					"activeRow": "$DataGrid_w7fcc7z_ActiveRow",
+					"selectionState": "$DataGrid_w7fcc7z_SelectionState",
+					"_selectionOptions": {
+						"attribute": "DataGrid_w7fcc7z_SelectionState"
+					},
+					"bulkActions": []
+				},
+				"parentName": "FlexContainer_tewpupn",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_w7fcc7z_AddTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Add tag",
+					"icon": "tag-icon",
+					"clicked": {
+						"request": "crt.AddTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_w7fcc7zDS",
+							"filters": "$DataGrid_w7fcc7z | crt.ToCollectionFilters : 'DataGrid_w7fcc7z' : $DataGrid_w7fcc7z_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_w7fcc7z_SelectionState"
+						}
+					},
+					"items": []
+				},
+				"parentName": "DataGrid_TasksStarted",
+				"propertyName": "bulkActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_w7fcc7z_RemoveTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Remove tag",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.RemoveTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_w7fcc7zDS",
+							"filters": "$DataGrid_w7fcc7z | crt.ToCollectionFilters : 'DataGrid_w7fcc7z' : $DataGrid_w7fcc7z_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_w7fcc7z_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_w7fcc7z_AddTagsBulkAction",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_w7fcc7z_ExportToExcelBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Export to Excel",
+					"icon": "export-button-icon",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "DataGrid_TasksStarted",
+							"filters": "$DataGrid_w7fcc7z | crt.ToCollectionFilters : 'DataGrid_w7fcc7z' : $DataGrid_w7fcc7z_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_w7fcc7z_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_TasksStarted",
+				"propertyName": "bulkActions",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_w7fcc7z_MergeBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Merge",
+					"icon": "merge-icon",
+					"clicked": {
+						"request": "crt.MergeRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_w7fcc7zDS",
+							"selectionState": "$DataGrid_w7fcc7z_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_TasksStarted",
+				"propertyName": "bulkActions",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_w7fcc7z_DeleteBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Delete",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.DeleteRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_w7fcc7zDS",
+							"filters": "$DataGrid_w7fcc7z | crt.ToCollectionFilters : 'DataGrid_w7fcc7z' : $DataGrid_w7fcc7z_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_w7fcc7z_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_TasksStarted",
+				"propertyName": "bulkActions",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "TabContainer_0zl56x2",
+				"values": {
+					"type": "crt.TabContainer",
+					"tools": [],
+					"items": [],
+					"caption": "#ResourceString(TabContainer_0zl56x2_caption)#",
+					"iconPosition": "only-text",
+					"visible": true
+				},
+				"parentName": "TabPanel_6quibyh",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_1d15ygi",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"alignItems": "center",
+					"items": []
+				},
+				"parentName": "TabContainer_0zl56x2",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Label_rt9u18e",
+				"values": {
+					"type": "crt.Label",
+					"caption": "#MacrosTemplateString(#ResourceString(Label_rt9u18e_caption)#)#",
+					"labelType": "headline-3",
+					"labelThickness": "default",
+					"labelEllipsis": false,
+					"labelColor": "#0D2E4E",
+					"labelBackgroundColor": "transparent",
+					"labelTextAlign": "start",
+					"visible": true,
+					"headingLevel": "label"
+				},
+				"parentName": "FlexContainer_1d15ygi",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_3m41u2f",
+				"values": {
+					"type": "crt.FlexContainer",
+					"items": [],
+					"direction": "column"
+				},
+				"parentName": "TabContainer_0zl56x2",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_TasksAll",
+				"values": {
+					"type": "crt.DataGrid",
+					"features": {
+						"rows": {
+							"selection": false,
+							"numeration": false
+						},
+						"editable": {
+							"enable": false,
+							"itemsCreation": false,
+							"floatingEditPanel": false
+						}
+					},
+					"items": "$DataGrid_ja4jylx",
+					"primaryColumnName": "DataGrid_ja4jylxDS_Id",
+					"columns": [
+						{
+							"id": "0c841fa9-3ba9-3958-5952-3d12ab1fdc47",
+							"code": "DataGrid_ja4jylxDS_Title",
+							"caption": "#ResourceString(DataGrid_ja4jylxDS_Title)#",
+							"dataValueType": 28,
+							"width": 175
+						},
+						{
+							"id": "b29002d7-f5a8-6bf6-7911-bf78d8494c6a",
+							"code": "DataGrid_ja4jylxDS_Account",
+							"caption": "#ResourceString(DataGrid_ja4jylxDS_Account)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "51d492c2-076f-acb0-48e8-e357a812c832",
+							"code": "DataGrid_ja4jylxDS_ActivityCategory",
+							"caption": "#ResourceString(DataGrid_ja4jylxDS_ActivityCategory)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "a30c857f-737f-af4b-94e4-2dcb17f490c7",
+							"code": "DataGrid_ja4jylxDS_Status",
+							"caption": "#ResourceString(DataGrid_ja4jylxDS_Status)#",
+							"dataValueType": 10,
+							"width": 101
+						},
+						{
+							"id": "26ce5dd1-69bd-c523-002f-937bd7cc756a",
+							"code": "DataGrid_ja4jylxDS_DueDate",
+							"caption": "#ResourceString(DataGrid_ja4jylxDS_DueDate)#",
+							"dataValueType": 7
+						}
+					],
+					"placeholder": false,
+					"visible": true,
+					"fitContent": true,
+					"activeRow": "$DataGrid_ja4jylx_ActiveRow",
+					"selectionState": "$DataGrid_ja4jylx_SelectionState",
+					"_selectionOptions": {
+						"attribute": "DataGrid_ja4jylx_SelectionState"
+					},
+					"bulkActions": []
+				},
+				"parentName": "FlexContainer_3m41u2f",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_ja4jylx_AddTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Add tag",
+					"icon": "tag-icon",
+					"clicked": {
+						"request": "crt.AddTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_ja4jylxDS",
+							"filters": "$DataGrid_ja4jylx | crt.ToCollectionFilters : 'DataGrid_ja4jylx' : $DataGrid_ja4jylx_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_ja4jylx_SelectionState"
+						}
+					},
+					"items": []
+				},
+				"parentName": "DataGrid_TasksAll",
+				"propertyName": "bulkActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_ja4jylx_RemoveTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Remove tag",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.RemoveTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_ja4jylxDS",
+							"filters": "$DataGrid_ja4jylx | crt.ToCollectionFilters : 'DataGrid_ja4jylx' : $DataGrid_ja4jylx_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_ja4jylx_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_ja4jylx_AddTagsBulkAction",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_ja4jylx_ExportToExcelBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Export to Excel",
+					"icon": "export-button-icon",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "DataGrid_TasksAll",
+							"filters": "$DataGrid_ja4jylx | crt.ToCollectionFilters : 'DataGrid_ja4jylx' : $DataGrid_ja4jylx_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_ja4jylx_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_TasksAll",
+				"propertyName": "bulkActions",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_ja4jylx_MergeBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Merge",
+					"icon": "merge-icon",
+					"clicked": {
+						"request": "crt.MergeRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_ja4jylxDS",
+							"selectionState": "$DataGrid_ja4jylx_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_TasksAll",
+				"propertyName": "bulkActions",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_ja4jylx_DeleteBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Delete",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.DeleteRecordsRequest",
+						"params": {
+							"dataSourceName": "DataGrid_ja4jylxDS",
+							"filters": "$DataGrid_ja4jylx | crt.ToCollectionFilters : 'DataGrid_ja4jylx' : $DataGrid_ja4jylx_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_ja4jylx_SelectionState"
+						}
+					}
+				},
+				"parentName": "DataGrid_TasksAll",
+				"propertyName": "bulkActions",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_pgm8jad",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.FlexContainer",
+					"direction": "column",
+					"wrap": "nowrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch",
+					"justifyContent": "start",
+					"gap": "medium"
+				},
+				"parentName": "GridContainer_ng7r8z8",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_u3zbey1",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "primary",
+					"borderRadius": "small",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "FlexContainer_pgm8jad",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_hk0uorj",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "none",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "small",
+						"right": "medium",
+						"bottom": "small",
+						"left": "medium"
+					}
+				},
+				"parentName": "GridContainer_u3zbey1",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_necbkfw",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 2,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "medium",
+						"right": "none",
+						"bottom": "small",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "center",
+					"justifyContent": "end",
+					"gap": "small"
+				},
+				"parentName": "GridContainer_hk0uorj",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_d8o29gb",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "center",
+					"justifyContent": "start",
+					"gap": "small"
+				},
+				"parentName": "GridContainer_hk0uorj",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Icon_bhhh7mx",
+				"values": {
+					"type": "crt.Icon",
+					"iconName": "flag-icon",
+					"size": "16",
+					"color": "#0D2E4E",
+					"backgroundType": "circle",
+					"backgroundColor": "#E3D9FC",
+					"padding": "l",
+					"visible": true,
+					"ariaLabel": "",
+					"tooltip": ""
+				},
+				"parentName": "FlexContainer_d8o29gb",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Label_gjt8g2n",
+				"values": {
+					"type": "crt.Label",
+					"caption": "#MacrosTemplateString(#ResourceString(Label_gjt8g2n_caption)#)#",
+					"labelType": "headline-3",
+					"labelThickness": "semibold",
+					"labelEllipsis": false,
+					"labelColor": "auto",
+					"labelBackgroundColor": "transparent",
+					"labelTextAlign": "start",
+					"headingLevel": "label",
+					"visible": true
+				},
+				"parentName": "FlexContainer_d8o29gb",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_q5h64ro",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "GridContainer_u3zbey1",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_fwpbspp",
+				"values": {
+					"type": "crt.DataGrid",
+					"features": {
+						"rows": {
+							"selection": false,
+							"numeration": false
+						},
+						"editable": {
+							"enable": false,
+							"itemsCreation": false,
+							"floatingEditPanel": false
+						}
+					},
+					"items": "$DataGrid_fwpbspp",
+					"primaryColumnName": "DataGrid_fwpbsppDS_Id",
+					"columns": [
+						{
+							"id": "062429a9-a14c-1a4f-8468-828d87ea89d1",
+							"code": "DataGrid_fwpbsppDS_Account",
+							"caption": "#ResourceString(DataGrid_fwpbsppDS_Account)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "0185dcb6-8c3b-7e41-d32b-005b86edc529",
+							"code": "DataGrid_fwpbsppDS_ActivityCategory",
+							"caption": "#ResourceString(DataGrid_fwpbsppDS_ActivityCategory)#",
+							"dataValueType": 10,
+							"width": 131
+						},
+						{
+							"id": "d6ac70c4-5b5f-b410-0ca0-596ca1c1522a",
+							"code": "DataGrid_fwpbsppDS_Status",
+							"caption": "#ResourceString(DataGrid_fwpbsppDS_Status)#",
+							"dataValueType": 10,
+							"width": 101
+						},
+						{
+							"id": "50ad1ec8-152c-9bb4-4b3c-aa8d829381dd",
+							"code": "DataGrid_fwpbsppDS_DueDate",
+							"caption": "#ResourceString(DataGrid_fwpbsppDS_DueDate)#",
+							"dataValueType": 7,
+							"width": 178
+						}
+					],
+					"visible": true,
+					"fitContent": true,
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_q5h64ro",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_y4hn2gq",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "primary",
+					"borderRadius": "small",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "FlexContainer_pgm8jad",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -1522,196 +2749,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
-				"name": "GridContainer_zp2172z",
-				"values": {
-					"type": "crt.GridContainer",
-					"columns": [
-						"minmax(32px, 1fr)"
-					],
-					"rows": "minmax(max-content, 32px)",
-					"gap": {
-						"columnGap": "large",
-						"rowGap": "none"
-					},
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"alignItems": "stretch",
-					"color": "primary",
-					"borderRadius": "small",
-					"padding": {
-						"top": "none",
-						"right": "none",
-						"bottom": "none",
-						"left": "none"
-					},
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "GridContainer_ng7r8z8",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "GridContainer_do4icls",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.GridContainer",
-					"columns": [
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)"
-					],
-					"rows": "minmax(max-content, 32px)",
-					"gap": {
-						"columnGap": "none",
-						"rowGap": "none"
-					},
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"alignItems": "stretch",
-					"color": "transparent",
-					"borderRadius": "none",
-					"padding": {
-						"top": "small",
-						"right": "medium",
-						"bottom": "small",
-						"left": "medium"
-					}
-				},
-				"parentName": "GridContainer_zp2172z",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_3zquehw",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.FlexContainer",
-					"direction": "row",
-					"wrap": "wrap",
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"padding": {
-						"top": "none",
-						"right": "none",
-						"bottom": "none",
-						"left": "none"
-					},
-					"color": "transparent",
-					"borderRadius": "none",
-					"alignItems": "center",
-					"justifyContent": "start",
-					"gap": "small"
-				},
-				"parentName": "GridContainer_do4icls",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Icon_w48ygoq",
-				"values": {
-					"type": "crt.Icon",
-					"iconName": "catalog-icon",
-					"size": "16",
-					"color": "#0D2E4E",
-					"backgroundType": "circle",
-					"backgroundColor": "#E3D9FC",
-					"padding": "l",
-					"visible": true,
-					"ariaLabel": "",
-					"tooltip": ""
-				},
-				"parentName": "FlexContainer_3zquehw",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Label_gy2c3xl",
-				"values": {
-					"type": "crt.Label",
-					"caption": "#MacrosTemplateString(#ResourceString(Label_gy2c3xl_caption)#)#",
-					"labelType": "headline-3",
-					"labelThickness": "semibold",
-					"labelEllipsis": false,
-					"labelColor": "auto",
-					"labelBackgroundColor": "transparent",
-					"labelTextAlign": "start",
-					"headingLevel": "label",
-					"visible": true
-				},
-				"parentName": "FlexContainer_3zquehw",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_sprjmsi",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 2,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.FlexContainer",
-					"direction": "row",
-					"wrap": "wrap",
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"padding": {
-						"top": "medium",
-						"right": "none",
-						"bottom": "small",
-						"left": "none"
-					},
-					"color": "transparent",
-					"borderRadius": "none",
-					"alignItems": "center",
-					"justifyContent": "end",
-					"gap": "small"
-				},
-				"parentName": "GridContainer_do4icls",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "ButtonToggleGroup_b4rutg0",
-				"values": {
-					"for": "TabPanel_6quibyh",
-					"fitContent": true,
-					"toggleViewMode": "button",
-					"type": "crt.ButtonToggleGroup"
-				},
-				"parentName": "FlexContainer_sprjmsi",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "GridContainer_vaaa4oj",
+				"name": "FlexContainer_0xymx4d",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -1719,839 +2757,27 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 						"row": 2,
 						"rowSpan": 1
 					},
-					"type": "crt.GridContainer",
-					"columns": [
-						"minmax(32px, 1fr)"
-					],
-					"rows": "minmax(max-content, 32px)",
-					"gap": {
-						"columnGap": "large",
-						"rowGap": "none"
-					},
+					"type": "crt.FlexContainer",
+					"direction": "column",
+					"wrap": "nowrap",
 					"items": [],
 					"fitContent": true,
 					"visible": true,
-					"alignItems": "stretch",
-					"color": "transparent",
-					"borderRadius": "none",
 					"padding": {
 						"top": "none",
 						"right": "none",
 						"bottom": "none",
 						"left": "none"
-					}
-				},
-				"parentName": "GridContainer_zp2172z",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "TabPanel_6quibyh",
-				"values": {
-					"type": "crt.TabPanel",
-					"items": [],
-					"mode": "toggle",
-					"fitContent": true,
-					"visible": true,
-					"styleType": "default",
-					"bodyBackgroundColor": "primary-contrast-500",
-					"selectedTabTitleColor": "auto",
-					"tabTitleColor": "auto",
-					"underlineSelectedTabColor": "auto",
-					"headerBackgroundColor": "auto",
-					"stretch": true,
-					"selectedTab": {
-						"value": "TabContainer_mvhf4la"
 					},
-					"allowToggleClose": true,
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"selectedTabIndex": 0
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch",
+					"justifyContent": "start",
+					"gap": "small"
 				},
-				"parentName": "GridContainer_vaaa4oj",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "TabContainer_mvhf4la",
-				"values": {
-					"type": "crt.TabContainer",
-					"tools": [],
-					"items": [],
-					"caption": "#ResourceString(TabContainer_mvhf4la_caption)#",
-					"iconPosition": "only-text",
-					"visible": true
-				},
-				"parentName": "TabPanel_6quibyh",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_rw7wjc1",
-				"values": {
-					"type": "crt.FlexContainer",
-					"direction": "row",
-					"alignItems": "center",
-					"items": []
-				},
-				"parentName": "TabContainer_mvhf4la",
-				"propertyName": "tools",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Label_xibhisv",
-				"values": {
-					"type": "crt.Label",
-					"caption": "#MacrosTemplateString(#ResourceString(Label_xibhisv_caption)#)#",
-					"labelType": "headline-3",
-					"labelThickness": "default",
-					"labelEllipsis": false,
-					"labelColor": "#0D2E4E",
-					"labelBackgroundColor": "transparent",
-					"labelTextAlign": "start",
-					"visible": true,
-					"headingLevel": "label"
-				},
-				"parentName": "FlexContainer_rw7wjc1",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_imwrguh",
-				"values": {
-					"type": "crt.FlexContainer",
-					"items": [],
-					"direction": "column"
-				},
-				"parentName": "TabContainer_mvhf4la",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_TasksDue7Days",
-				"values": {
-					"type": "crt.DataGrid",
-					"features": {
-						"rows": {
-							"selection": false,
-							"numeration": false
-						},
-						"editable": {
-							"enable": false,
-							"itemsCreation": false,
-							"floatingEditPanel": false
-						}
-					},
-					"items": "$DataGrid_mff7gl1",
-					"primaryColumnName": "DataGrid_mff7gl1DS_Id",
-					"columns": [
-						{
-							"id": "3b53ec72-abe4-9846-463e-fb170be47244",
-							"code": "DataGrid_mff7gl1DS_Title",
-							"caption": "#ResourceString(DataGrid_mff7gl1DS_Title)#",
-							"dataValueType": 28,
-							"width": 169
-						},
-						{
-							"id": "9d397206-1fee-06d6-bea3-0c47fc4b64cf",
-							"code": "DataGrid_mff7gl1DS_Account",
-							"caption": "#ResourceString(DataGrid_mff7gl1DS_Account)#",
-							"dataValueType": 10
-						},
-						{
-							"id": "6510d8e8-7793-c153-f017-facd9b7a987b",
-							"code": "DataGrid_mff7gl1DS_ActivityCategory",
-							"caption": "#ResourceString(DataGrid_mff7gl1DS_ActivityCategory)#",
-							"dataValueType": 10
-						},
-						{
-							"id": "3752ed2d-14cd-a3f1-de33-86c34168180a",
-							"code": "DataGrid_mff7gl1DS_Status",
-							"caption": "#ResourceString(DataGrid_mff7gl1DS_Status)#",
-							"dataValueType": 10,
-							"width": 101
-						},
-						{
-							"id": "aa0b75c4-9718-4280-0be0-b6e1f11c830d",
-							"code": "DataGrid_mff7gl1DS_DueDate",
-							"caption": "#ResourceString(DataGrid_mff7gl1DS_DueDate)#",
-							"dataValueType": 7,
-							"width": 178
-						}
-					],
-					"visible": true,
-					"fitContent": true,
-					"activeRow": "$DataGrid_mff7gl1_ActiveRow",
-					"selectionState": "$DataGrid_mff7gl1_SelectionState",
-					"_selectionOptions": {
-						"attribute": "DataGrid_mff7gl1_SelectionState"
-					},
-					"bulkActions": []
-				},
-				"parentName": "FlexContainer_imwrguh",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_mff7gl1_AddTagsBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Add tag",
-					"icon": "tag-icon",
-					"clicked": {
-						"request": "crt.AddTagsInRecordsRequest",
-						"params": {
-							"dataSourceName": "DataGrid_mff7gl1DS",
-							"filters": "$DataGrid_mff7gl1 | crt.ToCollectionFilters : 'DataGrid_mff7gl1' : $DataGrid_mff7gl1_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_mff7gl1_SelectionState"
-						}
-					},
-					"items": []
-				},
-				"parentName": "DataGrid_TasksDue7Days",
-				"propertyName": "bulkActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_mff7gl1_RemoveTagsBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Remove tag",
-					"icon": "delete-button-icon",
-					"clicked": {
-						"request": "crt.RemoveTagsInRecordsRequest",
-						"params": {
-							"dataSourceName": "DataGrid_mff7gl1DS",
-							"filters": "$DataGrid_mff7gl1 | crt.ToCollectionFilters : 'DataGrid_mff7gl1' : $DataGrid_mff7gl1_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_mff7gl1_SelectionState"
-						}
-					}
-				},
-				"parentName": "DataGrid_mff7gl1_AddTagsBulkAction",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_mff7gl1_ExportToExcelBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Export to Excel",
-					"icon": "export-button-icon",
-					"clicked": {
-						"request": "crt.ExportDataGridToExcelRequest",
-						"params": {
-							"viewName": "DataGrid_TasksDue7Days",
-							"filters": "$DataGrid_mff7gl1 | crt.ToCollectionFilters : 'DataGrid_mff7gl1' : $DataGrid_mff7gl1_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_mff7gl1_SelectionState"
-						}
-					}
-				},
-				"parentName": "DataGrid_TasksDue7Days",
-				"propertyName": "bulkActions",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_mff7gl1_MergeBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Merge",
-					"icon": "merge-icon",
-					"clicked": {
-						"request": "crt.MergeRecordsRequest",
-						"params": {
-							"dataSourceName": "DataGrid_mff7gl1DS",
-							"selectionState": "$DataGrid_mff7gl1_SelectionState"
-						}
-					}
-				},
-				"parentName": "DataGrid_TasksDue7Days",
-				"propertyName": "bulkActions",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_mff7gl1_DeleteBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Delete",
-					"icon": "delete-button-icon",
-					"clicked": {
-						"request": "crt.DeleteRecordsRequest",
-						"params": {
-							"dataSourceName": "DataGrid_mff7gl1DS",
-							"filters": "$DataGrid_mff7gl1 | crt.ToCollectionFilters : 'DataGrid_mff7gl1' : $DataGrid_mff7gl1_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_mff7gl1_SelectionState"
-						}
-					}
-				},
-				"parentName": "DataGrid_TasksDue7Days",
-				"propertyName": "bulkActions",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "TabContainer_b42gima",
-				"values": {
-					"type": "crt.TabContainer",
-					"tools": [],
-					"items": [],
-					"caption": "#ResourceString(TabContainer_b42gima_caption)#",
-					"iconPosition": "only-text",
-					"visible": true
-				},
-				"parentName": "TabPanel_6quibyh",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_zpe8yp9",
-				"values": {
-					"type": "crt.FlexContainer",
-					"direction": "row",
-					"alignItems": "center",
-					"items": []
-				},
-				"parentName": "TabContainer_b42gima",
-				"propertyName": "tools",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Label_i68gv4j",
-				"values": {
-					"type": "crt.Label",
-					"caption": "#MacrosTemplateString(#ResourceString(Label_i68gv4j_caption)#)#",
-					"labelType": "headline-3",
-					"labelThickness": "default",
-					"labelEllipsis": false,
-					"labelColor": "#0D2E4E",
-					"labelBackgroundColor": "transparent",
-					"labelTextAlign": "start",
-					"visible": true,
-					"headingLevel": "label"
-				},
-				"parentName": "FlexContainer_zpe8yp9",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_pmeb3rp",
-				"values": {
-					"type": "crt.FlexContainer",
-					"items": [],
-					"direction": "column"
-				},
-				"parentName": "TabContainer_b42gima",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_gkncvkj",
-				"values": {
-					"type": "crt.DataGrid",
-					"features": {
-						"rows": {
-							"selection": false,
-							"numeration": false
-						},
-						"editable": {
-							"enable": false,
-							"itemsCreation": false,
-							"floatingEditPanel": false
-						}
-					},
-					"items": "$DataGrid_gkncvkj",
-					"primaryColumnName": "DataGrid_gkncvkjDS_Id",
-					"columns": [
-						{
-							"id": "b96e1117-ca70-d2bc-fdc5-5d5abb53eee2",
-							"code": "DataGrid_gkncvkjDS_Account",
-							"caption": "#ResourceString(DataGrid_gkncvkjDS_Account)#",
-							"dataValueType": 10
-						},
-						{
-							"id": "ba4b2fd7-81f1-0d5f-8e4d-fd95597a2332",
-							"code": "DataGrid_gkncvkjDS_ActivityCategory",
-							"caption": "#ResourceString(DataGrid_gkncvkjDS_ActivityCategory)#",
-							"dataValueType": 10,
-							"width": 131
-						},
-						{
-							"id": "5aa98ea4-23ca-ccf2-d03d-ecb869ed4a43",
-							"code": "DataGrid_gkncvkjDS_Status",
-							"caption": "#ResourceString(DataGrid_gkncvkjDS_Status)#",
-							"dataValueType": 10,
-							"width": 101
-						},
-						{
-							"id": "9b6966c3-7e84-4447-9a48-1313367696f8",
-							"code": "DataGrid_gkncvkjDS_DueDate",
-							"caption": "#ResourceString(DataGrid_gkncvkjDS_DueDate)#",
-							"dataValueType": 7,
-							"width": 178
-						}
-					],
-					"visible": true,
-					"fitContent": true
-				},
-				"parentName": "FlexContainer_pmeb3rp",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "TabContainer_1jc1xxr",
-				"values": {
-					"type": "crt.TabContainer",
-					"tools": [],
-					"items": [],
-					"caption": "#ResourceString(TabContainer_1jc1xxr_caption)#",
-					"iconPosition": "only-text",
-					"visible": true
-				},
-				"parentName": "TabPanel_6quibyh",
+				"parentName": "GridContainer_ng7r8z8",
 				"propertyName": "items",
 				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_kg0xdfr",
-				"values": {
-					"type": "crt.FlexContainer",
-					"direction": "row",
-					"alignItems": "center",
-					"items": []
-				},
-				"parentName": "TabContainer_1jc1xxr",
-				"propertyName": "tools",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Label_ievcl1k",
-				"values": {
-					"type": "crt.Label",
-					"caption": "#MacrosTemplateString(#ResourceString(Label_ievcl1k_caption)#)#",
-					"labelType": "headline-3",
-					"labelThickness": "default",
-					"labelEllipsis": false,
-					"labelColor": "#0D2E4E",
-					"labelBackgroundColor": "transparent",
-					"labelTextAlign": "start",
-					"visible": true,
-					"headingLevel": "label"
-				},
-				"parentName": "FlexContainer_kg0xdfr",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_tewpupn",
-				"values": {
-					"type": "crt.FlexContainer",
-					"items": [],
-					"direction": "column"
-				},
-				"parentName": "TabContainer_1jc1xxr",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_TasksStarted",
-				"values": {
-					"type": "crt.DataGrid",
-					"features": {
-						"rows": {
-							"selection": false,
-							"numeration": false
-						},
-						"editable": {
-							"enable": false,
-							"itemsCreation": false,
-							"floatingEditPanel": false
-						}
-					},
-					"items": "$DataGrid_w7fcc7z",
-					"primaryColumnName": "DataGrid_w7fcc7zDS_Id",
-					"columns": [
-						{
-							"id": "e1cbadd4-d708-35ee-2223-4a99abf269a4",
-							"code": "DataGrid_w7fcc7zDS_Title",
-							"caption": "#ResourceString(DataGrid_w7fcc7zDS_Title)#",
-							"dataValueType": 28,
-							"width": 201
-						},
-						{
-							"id": "5e7f088f-bcad-fbac-40bd-617009204d7c",
-							"code": "DataGrid_w7fcc7zDS_Account",
-							"caption": "#ResourceString(DataGrid_w7fcc7zDS_Account)#",
-							"dataValueType": 10,
-							"width": 170
-						},
-						{
-							"id": "600ff017-641f-6ee2-e985-1763b7504926",
-							"code": "DataGrid_w7fcc7zDS_ActivityCategory",
-							"caption": "#ResourceString(DataGrid_w7fcc7zDS_ActivityCategory)#",
-							"dataValueType": 10
-						},
-						{
-							"id": "80dd9ca5-bc85-78ec-3458-2545f9075695",
-							"code": "DataGrid_w7fcc7zDS_Status",
-							"caption": "#ResourceString(DataGrid_w7fcc7zDS_Status)#",
-							"dataValueType": 10,
-							"width": 101
-						},
-						{
-							"id": "f66f7cd9-2a28-1909-603f-4db5ea16669a",
-							"code": "DataGrid_w7fcc7zDS_DueDate",
-							"caption": "#ResourceString(DataGrid_w7fcc7zDS_DueDate)#",
-							"dataValueType": 7
-						}
-					],
-					"visible": true,
-					"fitContent": true,
-					"activeRow": "$DataGrid_w7fcc7z_ActiveRow",
-					"selectionState": "$DataGrid_w7fcc7z_SelectionState",
-					"_selectionOptions": {
-						"attribute": "DataGrid_w7fcc7z_SelectionState"
-					},
-					"bulkActions": []
-				},
-				"parentName": "FlexContainer_tewpupn",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_w7fcc7z_AddTagsBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Add tag",
-					"icon": "tag-icon",
-					"clicked": {
-						"request": "crt.AddTagsInRecordsRequest",
-						"params": {
-							"dataSourceName": "DataGrid_w7fcc7zDS",
-							"filters": "$DataGrid_w7fcc7z | crt.ToCollectionFilters : 'DataGrid_w7fcc7z' : $DataGrid_w7fcc7z_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_w7fcc7z_SelectionState"
-						}
-					},
-					"items": []
-				},
-				"parentName": "DataGrid_TasksStarted",
-				"propertyName": "bulkActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_w7fcc7z_RemoveTagsBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Remove tag",
-					"icon": "delete-button-icon",
-					"clicked": {
-						"request": "crt.RemoveTagsInRecordsRequest",
-						"params": {
-							"dataSourceName": "DataGrid_w7fcc7zDS",
-							"filters": "$DataGrid_w7fcc7z | crt.ToCollectionFilters : 'DataGrid_w7fcc7z' : $DataGrid_w7fcc7z_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_w7fcc7z_SelectionState"
-						}
-					}
-				},
-				"parentName": "DataGrid_w7fcc7z_AddTagsBulkAction",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_w7fcc7z_ExportToExcelBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Export to Excel",
-					"icon": "export-button-icon",
-					"clicked": {
-						"request": "crt.ExportDataGridToExcelRequest",
-						"params": {
-							"viewName": "DataGrid_TasksStarted",
-							"filters": "$DataGrid_w7fcc7z | crt.ToCollectionFilters : 'DataGrid_w7fcc7z' : $DataGrid_w7fcc7z_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_w7fcc7z_SelectionState"
-						}
-					}
-				},
-				"parentName": "DataGrid_TasksStarted",
-				"propertyName": "bulkActions",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_w7fcc7z_MergeBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Merge",
-					"icon": "merge-icon",
-					"clicked": {
-						"request": "crt.MergeRecordsRequest",
-						"params": {
-							"dataSourceName": "DataGrid_w7fcc7zDS",
-							"selectionState": "$DataGrid_w7fcc7z_SelectionState"
-						}
-					}
-				},
-				"parentName": "DataGrid_TasksStarted",
-				"propertyName": "bulkActions",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_w7fcc7z_DeleteBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Delete",
-					"icon": "delete-button-icon",
-					"clicked": {
-						"request": "crt.DeleteRecordsRequest",
-						"params": {
-							"dataSourceName": "DataGrid_w7fcc7zDS",
-							"filters": "$DataGrid_w7fcc7z | crt.ToCollectionFilters : 'DataGrid_w7fcc7z' : $DataGrid_w7fcc7z_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_w7fcc7z_SelectionState"
-						}
-					}
-				},
-				"parentName": "DataGrid_TasksStarted",
-				"propertyName": "bulkActions",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "TabContainer_0zl56x2",
-				"values": {
-					"type": "crt.TabContainer",
-					"tools": [],
-					"items": [],
-					"caption": "#ResourceString(TabContainer_0zl56x2_caption)#",
-					"iconPosition": "only-text",
-					"visible": true
-				},
-				"parentName": "TabPanel_6quibyh",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_1d15ygi",
-				"values": {
-					"type": "crt.FlexContainer",
-					"direction": "row",
-					"alignItems": "center",
-					"items": []
-				},
-				"parentName": "TabContainer_0zl56x2",
-				"propertyName": "tools",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Label_rt9u18e",
-				"values": {
-					"type": "crt.Label",
-					"caption": "#MacrosTemplateString(#ResourceString(Label_rt9u18e_caption)#)#",
-					"labelType": "headline-3",
-					"labelThickness": "default",
-					"labelEllipsis": false,
-					"labelColor": "#0D2E4E",
-					"labelBackgroundColor": "transparent",
-					"labelTextAlign": "start",
-					"visible": true,
-					"headingLevel": "label"
-				},
-				"parentName": "FlexContainer_1d15ygi",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_3m41u2f",
-				"values": {
-					"type": "crt.FlexContainer",
-					"items": [],
-					"direction": "column"
-				},
-				"parentName": "TabContainer_0zl56x2",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_TasksAll",
-				"values": {
-					"type": "crt.DataGrid",
-					"features": {
-						"rows": {
-							"selection": false,
-							"numeration": false
-						},
-						"editable": {
-							"enable": false,
-							"itemsCreation": false,
-							"floatingEditPanel": false
-						}
-					},
-					"items": "$DataGrid_ja4jylx",
-					"primaryColumnName": "DataGrid_ja4jylxDS_Id",
-					"columns": [
-						{
-							"id": "0c841fa9-3ba9-3958-5952-3d12ab1fdc47",
-							"code": "DataGrid_ja4jylxDS_Title",
-							"caption": "#ResourceString(DataGrid_ja4jylxDS_Title)#",
-							"dataValueType": 28,
-							"width": 175
-						},
-						{
-							"id": "b29002d7-f5a8-6bf6-7911-bf78d8494c6a",
-							"code": "DataGrid_ja4jylxDS_Account",
-							"caption": "#ResourceString(DataGrid_ja4jylxDS_Account)#",
-							"dataValueType": 10
-						},
-						{
-							"id": "51d492c2-076f-acb0-48e8-e357a812c832",
-							"code": "DataGrid_ja4jylxDS_ActivityCategory",
-							"caption": "#ResourceString(DataGrid_ja4jylxDS_ActivityCategory)#",
-							"dataValueType": 10
-						},
-						{
-							"id": "a30c857f-737f-af4b-94e4-2dcb17f490c7",
-							"code": "DataGrid_ja4jylxDS_Status",
-							"caption": "#ResourceString(DataGrid_ja4jylxDS_Status)#",
-							"dataValueType": 10,
-							"width": 101
-						},
-						{
-							"id": "26ce5dd1-69bd-c523-002f-937bd7cc756a",
-							"code": "DataGrid_ja4jylxDS_DueDate",
-							"caption": "#ResourceString(DataGrid_ja4jylxDS_DueDate)#",
-							"dataValueType": 7
-						}
-					],
-					"placeholder": false,
-					"visible": true,
-					"fitContent": true,
-					"activeRow": "$DataGrid_ja4jylx_ActiveRow",
-					"selectionState": "$DataGrid_ja4jylx_SelectionState",
-					"_selectionOptions": {
-						"attribute": "DataGrid_ja4jylx_SelectionState"
-					},
-					"bulkActions": []
-				},
-				"parentName": "FlexContainer_3m41u2f",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_ja4jylx_AddTagsBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Add tag",
-					"icon": "tag-icon",
-					"clicked": {
-						"request": "crt.AddTagsInRecordsRequest",
-						"params": {
-							"dataSourceName": "DataGrid_ja4jylxDS",
-							"filters": "$DataGrid_ja4jylx | crt.ToCollectionFilters : 'DataGrid_ja4jylx' : $DataGrid_ja4jylx_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_ja4jylx_SelectionState"
-						}
-					},
-					"items": []
-				},
-				"parentName": "DataGrid_TasksAll",
-				"propertyName": "bulkActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_ja4jylx_RemoveTagsBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Remove tag",
-					"icon": "delete-button-icon",
-					"clicked": {
-						"request": "crt.RemoveTagsInRecordsRequest",
-						"params": {
-							"dataSourceName": "DataGrid_ja4jylxDS",
-							"filters": "$DataGrid_ja4jylx | crt.ToCollectionFilters : 'DataGrid_ja4jylx' : $DataGrid_ja4jylx_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_ja4jylx_SelectionState"
-						}
-					}
-				},
-				"parentName": "DataGrid_ja4jylx_AddTagsBulkAction",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_ja4jylx_ExportToExcelBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Export to Excel",
-					"icon": "export-button-icon",
-					"clicked": {
-						"request": "crt.ExportDataGridToExcelRequest",
-						"params": {
-							"viewName": "DataGrid_TasksAll",
-							"filters": "$DataGrid_ja4jylx | crt.ToCollectionFilters : 'DataGrid_ja4jylx' : $DataGrid_ja4jylx_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_ja4jylx_SelectionState"
-						}
-					}
-				},
-				"parentName": "DataGrid_TasksAll",
-				"propertyName": "bulkActions",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_ja4jylx_MergeBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Merge",
-					"icon": "merge-icon",
-					"clicked": {
-						"request": "crt.MergeRecordsRequest",
-						"params": {
-							"dataSourceName": "DataGrid_ja4jylxDS",
-							"selectionState": "$DataGrid_ja4jylx_SelectionState"
-						}
-					}
-				},
-				"parentName": "DataGrid_TasksAll",
-				"propertyName": "bulkActions",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_ja4jylx_DeleteBulkAction",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "Delete",
-					"icon": "delete-button-icon",
-					"clicked": {
-						"request": "crt.DeleteRecordsRequest",
-						"params": {
-							"dataSourceName": "DataGrid_ja4jylxDS",
-							"filters": "$DataGrid_ja4jylx | crt.ToCollectionFilters : 'DataGrid_ja4jylx' : $DataGrid_ja4jylx_SelectionState | crt.SkipIfSelectionEmpty : $DataGrid_ja4jylx_SelectionState"
-						}
-					}
-				},
-				"parentName": "DataGrid_TasksAll",
-				"propertyName": "bulkActions",
-				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -2707,7 +2933,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 								"data": {
 									"providing": {
 										"attribute": "ChartWidget_l52twdo_SeriesData_zc3tqqa",
-										"schemaName": "PgrVwTopAccountsByBudget",
+										"schemaName": "PgrVwAccountBudgetRank",
 										"filters": {
 											"filter": {
 												"items": {
@@ -2726,7 +2952,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 												"logicalOperation": 0,
 												"isEnabled": true,
 												"filterType": 6,
-												"rootSchemaName": "PgrVwTopAccountsByBudget"
+												"rootSchemaName": "PgrVwAccountBudgetRank"
 											},
 											"filterAttributes": [
 												{
@@ -2734,100 +2960,11 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 													"loadOnChange": true
 												},
 												{
-													"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_zc3tqqa",
-													"loadOnChange": true
-												},
-												{
 													"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_zc3tqqa",
 													"loadOnChange": true
-												}
-											]
-										},
-										"aggregation": {
-											"column": {
-												"orderDirection": 0,
-												"orderPosition": -1,
-												"isVisible": true,
-												"expression": {
-													"expressionType": 1,
-													"functionArgument": {
-														"expressionType": 0,
-														"columnPath": "PgrOrderIntakeValue"
-													},
-													"functionType": 2,
-													"aggregationType": 5,
-													"aggregationEvalType": 0
-												}
-											}
-										},
-										"dependencies": [],
-										"rowCount": 50,
-										"grouping": {
-											"type": "by-value",
-											"column": {
-												"orderDirection": 0,
-												"orderPosition": -1,
-												"isVisible": true,
-												"expression": {
-													"expressionType": 0,
-													"columnPath": "PgrAccount"
-												}
-											}
-										}
-									},
-									"formatting": {
-										"type": "number",
-										"decimalSeparator": ".",
-										"decimalPrecision": 2,
-										"thousandSeparator": ","
-									}
-								},
-								"dataLabel": {
-									"display": true
-								}
-							},
-							{
-								"color": "purple",
-								"type": "bar",
-								"label": "#ResourceString(ChartWidget_l52twdo_series_1)#",
-								"legend": {
-									"enabled": true
-								},
-								"data": {
-									"providing": {
-										"attribute": "ChartWidget_l52twdo_SeriesData_9z8sadx",
-										"schemaName": "PgrVwTopAccountsByBudget",
-										"filters": {
-											"filter": {
-												"items": {
-													"columnIsNotNullFilter": {
-														"comparisonType": 2,
-														"filterType": 2,
-														"isEnabled": true,
-														"isNull": false,
-														"trimDateTimeParameterToDate": false,
-														"leftExpression": {
-															"expressionType": 0,
-															"columnPath": "PgrAccount"
-														}
-													}
-												},
-												"logicalOperation": 0,
-												"isEnabled": true,
-												"filterType": 6,
-												"rootSchemaName": "PgrVwTopAccountsByBudget"
-											},
-											"filterAttributes": [
-												{
-													"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_9z8sadx",
-													"loadOnChange": true
 												},
 												{
-													"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_9z8sadx",
-													"loadOnChange": true
-												},
-												{
-													"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_9z8sadx",
+													"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_zc3tqqa",
 													"loadOnChange": true
 												}
 											]
@@ -2867,7 +3004,96 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 									"formatting": {
 										"type": "number",
 										"decimalSeparator": ".",
-										"decimalPrecision": 2,
+										"decimalPrecision": 0,
+										"thousandSeparator": ","
+									}
+								},
+								"dataLabel": {
+									"display": true
+								}
+							},
+							{
+								"color": "purple",
+								"type": "bar",
+								"label": "#ResourceString(ChartWidget_l52twdo_series_1)#",
+								"legend": {
+									"enabled": true
+								},
+								"data": {
+									"providing": {
+										"attribute": "ChartWidget_l52twdo_SeriesData_9z8sadx",
+										"schemaName": "PgrVwAccountBudgetRank",
+										"filters": {
+											"filter": {
+												"items": {
+													"columnIsNotNullFilter": {
+														"comparisonType": 2,
+														"filterType": 2,
+														"isEnabled": true,
+														"isNull": false,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "PgrAccount"
+														}
+													}
+												},
+												"logicalOperation": 0,
+												"isEnabled": true,
+												"filterType": 6,
+												"rootSchemaName": "PgrVwAccountBudgetRank"
+											},
+											"filterAttributes": [
+												{
+													"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_9z8sadx",
+													"loadOnChange": true
+												},
+												{
+													"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_9z8sadx",
+													"loadOnChange": true
+												},
+												{
+													"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_9z8sadx",
+													"loadOnChange": true
+												}
+											]
+										},
+										"aggregation": {
+											"column": {
+												"orderDirection": 0,
+												"orderPosition": -1,
+												"isVisible": true,
+												"expression": {
+													"expressionType": 1,
+													"functionArgument": {
+														"expressionType": 0,
+														"columnPath": "PgrOrderIntakeValue"
+													},
+													"functionType": 2,
+													"aggregationType": 5,
+													"aggregationEvalType": 0
+												}
+											}
+										},
+										"dependencies": [],
+										"rowCount": 50,
+										"grouping": {
+											"type": "by-value",
+											"column": {
+												"orderDirection": 0,
+												"orderPosition": -1,
+												"isVisible": true,
+												"expression": {
+													"expressionType": 0,
+													"columnPath": "PgrAccount"
+												}
+											}
+										}
+									},
+									"formatting": {
+										"type": "number",
+										"decimalSeparator": ".",
+										"decimalPrecision": 0,
 										"thousandSeparator": ","
 									}
 								},
@@ -2877,8 +3103,9 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 							}
 						],
 						"seriesOrder": {
-							"type": "by-grouping-value",
-							"direction": 1
+							"type": "by-aggregation-value",
+							"direction": 2,
+							"seriesIndex": 1
 						},
 						"layout": {}
 					},
@@ -2941,7 +3168,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 								"data": {
 									"providing": {
 										"attribute": "ChartWidget_vpvvd4s_SeriesData_g09hdv9",
-										"schemaName": "PgrVwTopNegativeDeviation",
+										"schemaName": "PgrVwAccountBudgetRank",
 										"filters": {
 											"filter": {
 												"items": {
@@ -2960,9 +3187,22 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 												"logicalOperation": 0,
 												"isEnabled": true,
 												"filterType": 6,
-												"rootSchemaName": "PgrVwTopNegativeDeviation"
+												"rootSchemaName": "PgrVwAccountBudgetRank"
 											},
-											"filterAttributes": []
+											"filterAttributes": [
+												{
+													"attribute": "QuickFilter_Territory_ChartWidget_vpvvd4s_SeriesData_g09hdv9",
+													"loadOnChange": true
+												},
+												{
+													"attribute": "QuickFilter_SalesManager_ChartWidget_vpvvd4s_SeriesData_g09hdv9",
+													"loadOnChange": true
+												},
+												{
+													"attribute": "QuickFilter_SalesDirector_ChartWidget_vpvvd4s_SeriesData_g09hdv9",
+													"loadOnChange": true
+												}
+											]
 										},
 										"aggregation": {
 											"column": {
@@ -2999,83 +3239,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 									"formatting": {
 										"type": "number",
 										"decimalSeparator": ".",
-										"decimalPrecision": 1,
-										"thousandSeparator": ","
-									}
-								},
-								"dataLabel": {
-									"display": true
-								}
-							},
-							{
-								"color": "purple",
-								"type": "bar",
-								"label": "#ResourceString(ChartWidget_vpvvd4s_series_1)#",
-								"legend": {
-									"enabled": true
-								},
-								"data": {
-									"providing": {
-										"attribute": "ChartWidget_vpvvd4s_SeriesData_oi7f3k2",
-										"schemaName": "PgrVwTopNegativeDeviation",
-										"filters": {
-											"filter": {
-												"items": {
-													"columnIsNotNullFilter": {
-														"comparisonType": 2,
-														"filterType": 2,
-														"isEnabled": true,
-														"isNull": false,
-														"trimDateTimeParameterToDate": false,
-														"leftExpression": {
-															"expressionType": 0,
-															"columnPath": "PgrAccount"
-														}
-													}
-												},
-												"logicalOperation": 0,
-												"isEnabled": true,
-												"filterType": 6,
-												"rootSchemaName": "PgrVwTopNegativeDeviation"
-											},
-											"filterAttributes": []
-										},
-										"aggregation": {
-											"column": {
-												"orderDirection": 0,
-												"orderPosition": -1,
-												"isVisible": true,
-												"expression": {
-													"expressionType": 1,
-													"functionArgument": {
-														"expressionType": 0,
-														"columnPath": "PgrDeviationPctOrderIntake"
-													},
-													"functionType": 2,
-													"aggregationType": 4,
-													"aggregationEvalType": 0
-												}
-											}
-										},
-										"dependencies": [],
-										"rowCount": 50,
-										"grouping": {
-											"type": "by-value",
-											"column": {
-												"orderDirection": 0,
-												"orderPosition": -1,
-												"isVisible": true,
-												"expression": {
-													"expressionType": 0,
-													"columnPath": "PgrAccount"
-												}
-											}
-										}
-									},
-									"formatting": {
-										"type": "number",
-										"decimalSeparator": ".",
-										"decimalPrecision": 1,
+										"decimalPrecision": 0,
 										"thousandSeparator": ","
 									}
 								},
@@ -3235,7 +3399,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					},
 					"visible": true,
 					"layoutConfig": {
-						"width": 155
+						"width": 314
 					}
 				},
 				"parentName": "FlexContainer_zjkpii5",
@@ -3270,7 +3434,22 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 							"providing": {
 								"attribute": "IndicatorWidget_1i78h71_Data",
 								"schemaName": "PgrVwAccountMetricSnapshot",
-								"filters": null,
+								"filters": {
+									"filterAttributes": [
+										{
+											"attribute": "QuickFilter_Territory_IndicatorWidget_1i78h71_Data",
+											"loadOnChange": true
+										},
+										{
+											"attribute": "QuickFilter_SalesDirector_IndicatorWidget_1i78h71_Data",
+											"loadOnChange": true
+										},
+										{
+											"attribute": "QuickFilter_SalesManager_IndicatorWidget_1i78h71_Data",
+											"loadOnChange": true
+										}
+									]
+								},
 								"aggregation": {
 									"column": {
 										"orderDirection": 0,
@@ -3298,7 +3477,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 						"hint": "#ResourceString(IndicatorWidget_1i78h71_hint)#",
 						"hideTitle": true
 					},
-					"visible": true
+					"visible": true,
+					"layoutConfig": {
+						"height": 70
+					}
 				},
 				"parentName": "FlexContainer_mkso5rv",
 				"propertyName": "items",
@@ -3408,41 +3590,135 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 							"comparisonProviding": null,
 							"providing": {
 								"attribute": "IndicatorWidget_jzvgr6l_Data",
-								"schemaName": "PgrVwAccountMetricSnapshot",
-								"filters": {
-									"filterAttributes": [
+								"expressionSchema": {
+									"typeName": "Terrasoft.Core.ExpressionEngine.Schema.ExpressionSchema",
+									"uId": "7410c564-e723-4ef6-835d-f1414746c58e",
+									"name": "IndicatorWidget_jzvgr6l_Data",
+									"engineType": "PowerFx",
+									"resultDataValueType": "Float",
+									"expression": "(#jzvgr6l_DevAgg#.sumDeviation / #jzvgr6l_BudAgg#.sumBudget) * 100",
+									"parameters": [],
+									"expressionVariables": [
 										{
-											"attribute": "QuickFilter_Territory_IndicatorWidget_jzvgr6l_Data",
-											"loadOnChange": true
+											"typeName": "Terrasoft.Core.ExpressionEngine.Schema.Variables.ExpressionSchemaVariable",
+											"uId": "a768b6b5-ad94-44ac-a797-6cf73a57e010",
+											"name": "jzvgr6l_DevAgg",
+											"dataValueType": "Text",
+											"variableType": "EsqAggregation",
+											"config": {
+												"typeName": "Terrasoft.Core.ExpressionEngine.Schema.Variables.ExpressionSchemaAggregationVariableConfig",
+												"uId": "fea45d45-46b0-41db-bcfe-135db708af29",
+												"name": "VariableConfig",
+												"value": "PgrVwAccountMetricSnapshot",
+												"expressions": [
+													{
+														"name": "sumDeviation",
+														"aggregationType": "Sum",
+														"expression": {
+															"type": "SchemaColumn",
+															"columnPath": "PgrDeviationValue"
+														}
+													}
+												],
+												"filters": {
+													"items": {
+														"budgetNotNullFilter": {
+															"comparisonType": 2,
+															"filterType": 2,
+															"isEnabled": true,
+															"isNull": false,
+															"trimDateTimeParameterToDate": false,
+															"leftExpression": {
+																"expressionType": 0,
+																"columnPath": "PgrBudgetValue"
+															}
+														},
+														"deviationNotNullFilter": {
+															"comparisonType": 2,
+															"filterType": 2,
+															"isEnabled": true,
+															"isNull": false,
+															"trimDateTimeParameterToDate": false,
+															"leftExpression": {
+																"expressionType": 0,
+																"columnPath": "PgrDeviationValue"
+															}
+														}
+													},
+													"logicalOperation": 0,
+													"isEnabled": true,
+													"filterType": 6,
+													"rootSchemaName": "PgrVwAccountMetricSnapshot"
+												},
+												"filterAttributes": [
+													{
+														"attribute": "VariableConfig_fea45d45_46b0_41db_bcfe_135db708af29",
+														"loadOnChange": true
+													}
+												]
+											}
 										},
 										{
-											"attribute": "QuickFilter_SalesDirector_IndicatorWidget_jzvgr6l_Data",
-											"loadOnChange": true
-										},
-										{
-											"attribute": "QuickFilter_SalesManager_IndicatorWidget_jzvgr6l_Data",
-											"loadOnChange": true
+											"typeName": "Terrasoft.Core.ExpressionEngine.Schema.Variables.ExpressionSchemaVariable",
+											"uId": "65f00c9a-139c-49fc-a140-de2dbd7be528",
+											"name": "jzvgr6l_BudAgg",
+											"dataValueType": "Text",
+											"variableType": "EsqAggregation",
+											"config": {
+												"typeName": "Terrasoft.Core.ExpressionEngine.Schema.Variables.ExpressionSchemaAggregationVariableConfig",
+												"uId": "35aacb0a-3458-4997-9122-7dd866dab3ab",
+												"name": "VariableConfig",
+												"value": "PgrVwAccountMetricSnapshot",
+												"expressions": [
+													{
+														"name": "sumBudget",
+														"aggregationType": "Sum",
+														"expression": {
+															"type": "SchemaColumn",
+															"columnPath": "PgrBudgetValue"
+														}
+													}
+												],
+												"filters": {
+													"items": {
+														"budgetNotNullFilter": {
+															"comparisonType": 2,
+															"filterType": 2,
+															"isEnabled": true,
+															"isNull": false,
+															"trimDateTimeParameterToDate": false,
+															"leftExpression": {
+																"expressionType": 0,
+																"columnPath": "PgrBudgetValue"
+															}
+														},
+														"deviationNotNullFilter": {
+															"comparisonType": 2,
+															"filterType": 2,
+															"isEnabled": true,
+															"isNull": false,
+															"trimDateTimeParameterToDate": false,
+															"leftExpression": {
+																"expressionType": 0,
+																"columnPath": "PgrDeviationValue"
+															}
+														}
+													},
+													"logicalOperation": 0,
+													"isEnabled": true,
+													"filterType": 6,
+													"rootSchemaName": "PgrVwAccountMetricSnapshot"
+												},
+												"filterAttributes": [
+													{
+														"attribute": "VariableConfig_35aacb0a_3458_4997_9122_7dd866dab3ab",
+														"loadOnChange": true
+													}
+												]
+											}
 										}
 									]
-								},
-								"aggregation": {
-									"column": {
-										"orderDirection": 0,
-										"orderPosition": -1,
-										"isVisible": true,
-										"expression": {
-											"expressionType": 1,
-											"functionArgument": {
-												"expressionType": 0,
-												"columnPath": "PgrDeviationValue"
-											},
-											"functionType": 2,
-											"aggregationType": 2,
-											"aggregationEvalType": 0
-										}
-									}
-								},
-								"dependencies": []
+								}
 							}
 						},
 						"comparison": {
@@ -3452,7 +3728,29 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 						"hint": "#ResourceString(IndicatorWidget_jzvgr6l_hint)#",
 						"hideTitle": true
 					},
-					"visible": true
+					"visible": true,
+					"_filterableOptions": [
+						{
+							"filterAttributeName": "VariableConfig_fea45d45_46b0_41db_bcfe_135db708af29",
+							"entitySchemaName": "PgrVwAccountMetricSnapshot",
+							"caption": "#ResourceString(IndicatorWidget_jzvgr6l_title_ratio)# | PgrVwAccountMetricSnapshot.PgrDeviationValue",
+							"filterAttributes": [
+								"QuickFilter_Territory_jzvgr6l_DevAgg",
+								"QuickFilter_SalesDirector_jzvgr6l_DevAgg",
+								"QuickFilter_SalesManager_jzvgr6l_DevAgg"
+							]
+						},
+						{
+							"filterAttributeName": "VariableConfig_35aacb0a_3458_4997_9122_7dd866dab3ab",
+							"entitySchemaName": "PgrVwAccountMetricSnapshot",
+							"caption": "#ResourceString(IndicatorWidget_jzvgr6l_title_ratio)# | PgrVwAccountMetricSnapshot.PgrBudgetValue",
+							"filterAttributes": [
+								"QuickFilter_Territory_jzvgr6l_BudAgg",
+								"QuickFilter_SalesDirector_jzvgr6l_BudAgg",
+								"QuickFilter_SalesManager_jzvgr6l_BudAgg"
+							]
+						}
+					]
 				},
 				"parentName": "FlexContainer_mkso5rv",
 				"propertyName": "items",
@@ -3549,6 +3847,18 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											"parameter": {
 												"dataValueType": 10,
 												"value": {
+													"Name": "Cancelled",
+													"Id": "201cfba8-58e6-df11-971b-001d60e938c6",
+													"value": "201cfba8-58e6-df11-971b-001d60e938c6",
+													"displayValue": "Cancelled"
+												}
+											}
+										},
+										{
+											"expressionType": 2,
+											"parameter": {
+												"dataValueType": 10,
+												"value": {
 													"Name": "Done",
 													"Id": "4bdbb88f-58e6-df11-971b-001d60e938c6",
 													"value": "4bdbb88f-58e6-df11-971b-001d60e938c6",
@@ -3561,10 +3871,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											"parameter": {
 												"dataValueType": 10,
 												"value": {
-													"Name": "Cancelled",
-													"Id": "201cfba8-58e6-df11-971b-001d60e938c6",
-													"value": "201cfba8-58e6-df11-971b-001d60e938c6",
-													"displayValue": "Cancelled"
+													"Name": "Closed by system",
+													"Id": "de886b4e-c4c5-462f-bd85-ae1694a655ae",
+													"value": "de886b4e-c4c5-462f-bd85-ae1694a655ae",
+													"displayValue": "Closed by system"
 												}
 											}
 										}
@@ -3572,7 +3882,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 								},
 								"0c8c7fa0-17af-41db-b49a-39629328552c": {
 									"filterType": 4,
-									"comparisonType": 4,
+									"comparisonType": 3,
 									"isEnabled": true,
 									"trimDateTimeParameterToDate": false,
 									"leftExpression": {
@@ -3588,10 +3898,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											"parameter": {
 												"dataValueType": 10,
 												"value": {
-													"Name": "Visit",
-													"Id": "fbef561a-c041-4bf7-9715-38123ec86789",
-													"value": "fbef561a-c041-4bf7-9715-38123ec86789",
-													"displayValue": "Visit"
+													"Name": "Measure",
+													"Id": "bee620f7-f3f7-47e4-81a3-5b2a9a030413",
+													"value": "bee620f7-f3f7-47e4-81a3-5b2a9a030413",
+													"displayValue": "Measure"
 												}
 											}
 										},
@@ -3600,10 +3910,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											"parameter": {
 												"dataValueType": 10,
 												"value": {
-													"Name": "Visit call",
-													"Id": "543d0f02-c32e-45ae-8427-365a5fa5ea43",
-													"value": "543d0f02-c32e-45ae-8427-365a5fa5ea43",
-													"displayValue": "Visit call"
+													"Name": "Customer Visit Overdue",
+													"Id": "8452bb92-4000-4c3c-8850-c391f45f05f8",
+													"value": "8452bb92-4000-4c3c-8850-c391f45f05f8",
+													"displayValue": "Customer Visit Overdue"
 												}
 											}
 										},
@@ -3612,10 +3922,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											"parameter": {
 												"dataValueType": 10,
 												"value": {
-													"Name": "369",
-													"Id": "8038a396-7825-e011-8165-00155d043204",
-													"value": "8038a396-7825-e011-8165-00155d043204",
-													"displayValue": "369"
+													"Name": "Tasks",
+													"Id": "f51c4643-58e6-df11-971b-001d60e938c6",
+													"value": "f51c4643-58e6-df11-971b-001d60e938c6",
+													"displayValue": "Tasks"
 												}
 											}
 										}
@@ -3722,7 +4032,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 								},
 								"02503424-3f7c-4023-93a7-e949a2578386": {
 									"filterType": 4,
-									"comparisonType": 4,
+									"comparisonType": 3,
 									"isEnabled": true,
 									"trimDateTimeParameterToDate": false,
 									"leftExpression": {
@@ -3738,10 +4048,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											"parameter": {
 												"dataValueType": 10,
 												"value": {
-													"Name": "Visit",
-													"Id": "fbef561a-c041-4bf7-9715-38123ec86789",
-													"value": "fbef561a-c041-4bf7-9715-38123ec86789",
-													"displayValue": "Visit"
+													"Name": "Customer Visit Overdue",
+													"Id": "8452bb92-4000-4c3c-8850-c391f45f05f8",
+													"value": "8452bb92-4000-4c3c-8850-c391f45f05f8",
+													"displayValue": "Customer Visit Overdue"
 												}
 											}
 										},
@@ -3750,10 +4060,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											"parameter": {
 												"dataValueType": 10,
 												"value": {
-													"Name": "Visit call",
-													"Id": "543d0f02-c32e-45ae-8427-365a5fa5ea43",
-													"value": "543d0f02-c32e-45ae-8427-365a5fa5ea43",
-													"displayValue": "Visit call"
+													"Name": "Measure",
+													"Id": "bee620f7-f3f7-47e4-81a3-5b2a9a030413",
+													"value": "bee620f7-f3f7-47e4-81a3-5b2a9a030413",
+													"displayValue": "Measure"
 												}
 											}
 										},
@@ -3762,10 +4072,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											"parameter": {
 												"dataValueType": 10,
 												"value": {
-													"Name": "369",
-													"Id": "8038a396-7825-e011-8165-00155d043204",
-													"value": "8038a396-7825-e011-8165-00155d043204",
-													"displayValue": "369"
+													"Name": "Tasks",
+													"Id": "f51c4643-58e6-df11-971b-001d60e938c6",
+													"value": "f51c4643-58e6-df11-971b-001d60e938c6",
+													"displayValue": "Tasks"
 												}
 											}
 										}
@@ -3879,6 +4189,18 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 													"displayValue": "Done"
 												}
 											}
+										},
+										{
+											"expressionType": 2,
+											"parameter": {
+												"dataValueType": 10,
+												"value": {
+													"Name": "Closed by system",
+													"Id": "de886b4e-c4c5-462f-bd85-ae1694a655ae",
+													"value": "de886b4e-c4c5-462f-bd85-ae1694a655ae",
+													"displayValue": "Closed by system"
+												}
+											}
 										}
 									]
 								},
@@ -3908,7 +4230,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 								},
 								"6fc2ef7c-dd78-4dc9-ab27-8332e816d246": {
 									"filterType": 4,
-									"comparisonType": 4,
+									"comparisonType": 3,
 									"isEnabled": true,
 									"trimDateTimeParameterToDate": false,
 									"leftExpression": {
@@ -3924,10 +4246,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											"parameter": {
 												"dataValueType": 10,
 												"value": {
-													"Name": "Visit",
-													"Id": "fbef561a-c041-4bf7-9715-38123ec86789",
-													"value": "fbef561a-c041-4bf7-9715-38123ec86789",
-													"displayValue": "Visit"
+													"Name": "Customer Visit Overdue",
+													"Id": "8452bb92-4000-4c3c-8850-c391f45f05f8",
+													"value": "8452bb92-4000-4c3c-8850-c391f45f05f8",
+													"displayValue": "Customer Visit Overdue"
 												}
 											}
 										},
@@ -3936,10 +4258,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											"parameter": {
 												"dataValueType": 10,
 												"value": {
-													"Name": "Visit call",
-													"Id": "543d0f02-c32e-45ae-8427-365a5fa5ea43",
-													"value": "543d0f02-c32e-45ae-8427-365a5fa5ea43",
-													"displayValue": "Visit call"
+													"Name": "Measure",
+													"Id": "bee620f7-f3f7-47e4-81a3-5b2a9a030413",
+													"value": "bee620f7-f3f7-47e4-81a3-5b2a9a030413",
+													"displayValue": "Measure"
 												}
 											}
 										},
@@ -3948,10 +4270,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											"parameter": {
 												"dataValueType": 10,
 												"value": {
-													"Name": "369",
-													"Id": "8038a396-7825-e011-8165-00155d043204",
-													"value": "8038a396-7825-e011-8165-00155d043204",
-													"displayValue": "369"
+													"Name": "Tasks",
+													"Id": "f51c4643-58e6-df11-971b-001d60e938c6",
+													"value": "f51c4643-58e6-df11-971b-001d60e938c6",
+													"displayValue": "Tasks"
 												}
 											}
 										}
@@ -4275,10 +4597,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 							"rootSchemaName": "Activity"
 						}
 					},
-					"DataGrid_gkncvkj": {
+					"DataGrid_fwpbspp": {
 						"isCollection": true,
 						"modelConfig": {
-							"path": "DataGrid_gkncvkjDS",
+							"path": "DataGrid_fwpbsppDS",
 							"pagingConfig": {
 								"rowCount": 30,
 								"rowsLimit": 15
@@ -4287,51 +4609,55 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 								"default": [
 									{
 										"direction": "asc",
-										"columnName": "DueDate"
+										"columnName": "ActivityCategory"
 									}
 								]
 							},
 							"filterAttributes": [
 								{
 									"loadOnChange": true,
-									"name": "DataGrid_gkncvkj_PredefinedFilter"
+									"name": "DataGrid_fwpbspp_PredefinedFilter"
+								},
+								{
+									"name": "QuickFilter_CurrentContact_DataGrid_fwpbspp",
+									"loadOnChange": true
 								}
 							]
 						},
 						"viewModelConfig": {
 							"attributes": {
-								"DataGrid_gkncvkjDS_Account": {
+								"DataGrid_fwpbsppDS_Account": {
 									"modelConfig": {
-										"path": "DataGrid_gkncvkjDS.Account"
+										"path": "DataGrid_fwpbsppDS.Account"
 									}
 								},
-								"DataGrid_gkncvkjDS_ActivityCategory": {
+								"DataGrid_fwpbsppDS_ActivityCategory": {
 									"modelConfig": {
-										"path": "DataGrid_gkncvkjDS.ActivityCategory"
+										"path": "DataGrid_fwpbsppDS.ActivityCategory"
 									}
 								},
-								"DataGrid_gkncvkjDS_Status": {
+								"DataGrid_fwpbsppDS_Status": {
 									"modelConfig": {
-										"path": "DataGrid_gkncvkjDS.Status"
+										"path": "DataGrid_fwpbsppDS.Status"
 									}
 								},
-								"DataGrid_gkncvkjDS_DueDate": {
+								"DataGrid_fwpbsppDS_DueDate": {
 									"modelConfig": {
-										"path": "DataGrid_gkncvkjDS.DueDate"
+										"path": "DataGrid_fwpbsppDS.DueDate"
 									}
 								},
-								"DataGrid_gkncvkjDS_Id": {
+								"DataGrid_fwpbsppDS_Id": {
 									"modelConfig": {
-										"path": "DataGrid_gkncvkjDS.Id"
+										"path": "DataGrid_fwpbsppDS.Id"
 									}
 								}
 							}
 						}
 					},
-					"DataGrid_gkncvkj_PredefinedFilter": {
+					"DataGrid_fwpbspp_PredefinedFilter": {
 						"value": {
 							"items": {
-								"0a067aa1-999f-4152-a6f0-2c7f577cc665": {
+								"64673c98-1647-4c70-94fb-d794938277c1": {
 									"filterType": 4,
 									"comparisonType": 3,
 									"isEnabled": true,
@@ -4358,7 +4684,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 										}
 									]
 								},
-								"8bc6c69e-f979-4031-9c51-ea19d74b00ef": {
+								"6a886c37-a8a4-4219-9b96-a7c714cb992f": {
 									"filterType": 4,
 									"comparisonType": 4,
 									"isEnabled": true,
@@ -4388,10 +4714,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											"parameter": {
 												"dataValueType": 10,
 												"value": {
-													"Name": "Closed by system",
-													"Id": "de886b4e-c4c5-462f-bd85-ae1694a655ae",
-													"value": "de886b4e-c4c5-462f-bd85-ae1694a655ae",
-													"displayValue": "Closed by system"
+													"Name": "Done",
+													"Id": "4bdbb88f-58e6-df11-971b-001d60e938c6",
+													"value": "4bdbb88f-58e6-df11-971b-001d60e938c6",
+													"displayValue": "Done"
 												}
 											}
 										},
@@ -4400,10 +4726,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											"parameter": {
 												"dataValueType": 10,
 												"value": {
-													"Name": "Done",
-													"Id": "4bdbb88f-58e6-df11-971b-001d60e938c6",
-													"value": "4bdbb88f-58e6-df11-971b-001d60e938c6",
-													"displayValue": "Done"
+													"Name": "Closed by system",
+													"Id": "de886b4e-c4c5-462f-bd85-ae1694a655ae",
+													"value": "de886b4e-c4c5-462f-bd85-ae1694a655ae",
+													"displayValue": "Closed by system"
 												}
 											}
 										}
@@ -4527,7 +4853,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 								}
 							}
 						},
-						"DataGrid_gkncvkjDS": {
+						"DataGrid_fwpbsppDS": {
 							"type": "crt.EntityDataSource",
 							"scope": "viewElement",
 							"config": {

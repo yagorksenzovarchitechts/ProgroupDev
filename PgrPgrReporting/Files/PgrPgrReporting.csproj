@@ -316,17 +316,27 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup Label="Package References">
+		<Reference Include="CrtForecastMgmtApp">
+			<HintPath>$(RelativePkgFolderPath)/CrtForecastMgmtApp/$(StandalonePackageAssemblyPath)/CrtForecastMgmtApp.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
 		<Reference Include="Pgr.Core">
 			<HintPath>$(RelativePkgFolderPath)/Pgr.Core/$(StandalonePackageAssemblyPath)/Pgr.Core.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Terrasoft.Configuration">
+			<HintPath>$(RelativePkgFolderPath)/../bin/Terrasoft.Configuration.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
 	</ItemGroup>
 	<ItemGroup Label="Standalone package external assembly references" />
 	<ItemGroup Label="Entity Files">
+		<Compile Remove="$(RelativePkgFolderPath)/PgrPgrReporting/Schemas/PgrVwAccountBudgetRank/PgrVwAccountBudgetRank.cs" Condition="Exists('$(RelativePkgFolderPath)/PgrPgrReporting/Schemas/PgrVwAccountBudgetRank/PgrVwAccountBudgetRank.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/PgrPgrReporting/Schemas/PgrVwAccountMetricSnapshot/PgrVwAccountMetricSnapshot.cs" Condition="Exists('$(RelativePkgFolderPath)/PgrPgrReporting/Schemas/PgrVwAccountMetricSnapshot/PgrVwAccountMetricSnapshot.cs')" />
-		<Compile Remove="$(RelativePkgFolderPath)/PgrPgrReporting/Schemas/PgrVwTopAccountsByBudget/PgrVwTopAccountsByBudget.cs" Condition="Exists('$(RelativePkgFolderPath)/PgrPgrReporting/Schemas/PgrVwTopAccountsByBudget/PgrVwTopAccountsByBudget.cs')" />
-		<Compile Remove="$(RelativePkgFolderPath)/PgrPgrReporting/Schemas/PgrVwTopNegativeDeviation/PgrVwTopNegativeDeviation.cs" Condition="Exists('$(RelativePkgFolderPath)/PgrPgrReporting/Schemas/PgrVwTopNegativeDeviation/PgrVwTopNegativeDeviation.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/PgrPgrReporting/Schemas/PgrVwSalesManagerMetricSnapshot/PgrVwSalesManagerMetricSnapshot.cs" Condition="Exists('$(RelativePkgFolderPath)/PgrPgrReporting/Schemas/PgrVwSalesManagerMetricSnapshot/PgrVwSalesManagerMetricSnapshot.cs')" />
 	</ItemGroup>
 	<ItemGroup Label="3rd Party References"></ItemGroup>
 	<Target Name="Paths" BeforeTargets="BeforeCompile">

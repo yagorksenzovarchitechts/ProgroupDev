@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "e1641ffc-f8d9-4197-9526-b3aa7c26655c",
+    "Name": "PgrGetVisitReportData",
+    "ModifiedOnUtc": "\/Date(1789467497000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Pgr: Get Visit Report data",
+    "DependsOn": []
+  }
+}

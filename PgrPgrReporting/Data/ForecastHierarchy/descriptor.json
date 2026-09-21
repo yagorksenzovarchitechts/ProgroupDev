@@ -1,0 +1,42 @@
+﻿{
+  "Descriptor": {
+    "UId": "3d66c84c-0cea-419a-9107-d0e62415cb14",
+    "Name": "ForecastHierarchy",
+    "ModifiedOnUtc": "\/Date(1788773262000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "cb889039-c706-4460-a5ed-d8e7b6c66088",
+      "Name": "ForecastHierarchy"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "84f0c0e9-d9da-0aba-5e34-45257ec79bcd",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "EntitySchema",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "907a53a5-0cdd-476a-adc2-1b31d62e4bef",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "HierarchyColumnName",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "af234836-b092-f793-925a-ca9332a1ccf6",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Name",
+        "DataTypeValueUId": "5ca35f10-a101-4c67-a96a-383da6afacfc"
+      }
+    ]
+  }
+}

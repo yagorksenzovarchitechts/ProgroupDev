@@ -1,0 +1,25 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "2c40065d-df80-4b9e-9d47-36218d80166f"
+        },
+        {
+          "SchemaColumnUId": "84f0c0e9-d9da-0aba-5e34-45257ec79bcd",
+          "Value": "25d7c1ab-1de0-4501-b402-02e0e5a72d6e",
+          "DisplayValue": "Account"
+        },
+        {
+          "SchemaColumnUId": "907a53a5-0cdd-476a-adc2-1b31d62e4bef",
+          "Value": "Parent"
+        },
+        {
+          "SchemaColumnUId": "af234836-b092-f793-925a-ca9332a1ccf6",
+          "Value": "Account"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.AddWeeklyReport.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.AddWeeklyReport.Parameters.DataSourceFilters.Caption" Value="Filter Datenquelle" />
+			<Item Name="BaseElements.AddWeeklyReport.Parameters.EntitySchemaId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.AddWeeklyReport.Parameters.FilterEntitySchemaId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.AddWeeklyReport.Parameters.RecordAddMode.Caption" Value="Hinzuügemodus für Satz" />
+			<Item Name="BaseElements.AddWeeklyReport.Parameters.RecordDefValues.Caption" Value="Spaltenwerte setzen" />
+			<Item Name="BaseElements.AddWeeklyReport.Parameters.RecordId.Caption" Value="Erzeugte Satz-Id" />
+			<Item Name="BaseElements.LinkEntityToProcessUserTask1.Parameters.EntityId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.LinkEntityToProcessUserTask1.Parameters.EntitySchemaId.Caption" Value="Objektschema" />
+			<Item Name="BaseElements.LinkVisitReports.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.LinkVisitReports.Parameters.DataSourceFilters.Caption" Value="Filter Datenquelle" />
+			<Item Name="BaseElements.LinkVisitReports.Parameters.EntitySchemaUId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.LinkVisitReports.Parameters.IgnoreErrors.Caption" Value="Ausführung bei Fehlern fortsetzen" />
+			<Item Name="BaseElements.LinkVisitReports.Parameters.IsMatchConditions.Caption" Value="Wenn das Objekt die folgenden Bedingungen erfüllt" />
+			<Item Name="BaseElements.LinkVisitReports.Parameters.RecordColumnValues.Caption" Value="Spaltenwerte setzen" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.AggregationColumnName.Caption" Value="Name der Aggregatsfunktionsspalte" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.CanReadUncommitedData.Caption" Value="Nicht committete Daten lesen" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.DataSourceFilters.Caption" Value="Datenquelle der Filter" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.EntityColumnMetaPathes.Caption" Value="Zu lesende Spalten" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.FunctionType.Caption" Value="Aggregatesfunktionstyp" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.IgnoreDisplayValues.Caption" Value="Angezeigte Werte von Nachschlagewert-Spalten nicht lesen" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.NumberOfRecords.Caption" Value="Anzahl zu lesender Sätze" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.OrderInfo.Caption" Value="Spaltensortiierung" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.ReadSomeTopRecords.Caption" Value="Zuerst lesen" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.ResultCompositeObjectList.Caption" Value="Datensatz-Auswahl" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.ResultCount.Caption" Value="Anzahl Sätze" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.ResultDateTimeFunction.Caption" Value="Funktionsresultat (Datum/Zeit)" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.ResultEntity.Caption" Value="Erstes Item der Ergebniskollektion" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.ResultEntityCollection.Caption" Value="Ergenissammlung" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.ResultFloatFunction.Caption" Value="Funktionsresultat (Dezimal)" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.ResultIntegerFunction.Caption" Value="Funktionsresultat (Ganzzahl)" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.ResultRowsCount.Caption" Value="Anzahl gelesener Sätze" />
+			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.ResultType.Caption" Value="Ergebnistyp" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.AggregationColumnName.Caption" Value="Name der Aggregatsfunktionsspalte" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.CanReadUncommitedData.Caption" Value="Nicht committete Daten lesen" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.DataSourceFilters.Caption" Value="Datenquelle der Filter" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.EntityColumnMetaPathes.Caption" Value="Zu lesende Spalten" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.FunctionType.Caption" Value="Aggregatesfunktionstyp" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.IgnoreDisplayValues.Caption" Value="Angezeigte Werte von Nachschlagewert-Spalten nicht lesen" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.NumberOfRecords.Caption" Value="Anzahl zu lesender Sätze" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.OrderInfo.Caption" Value="Spaltensortiierung" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.ReadSomeTopRecords.Caption" Value="Zuerst lesen" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.ResultCompositeObjectList.Caption" Value="Datensatz-Auswahl" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.ResultCount.Caption" Value="Anzahl Sätze" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.ResultDateTimeFunction.Caption" Value="Funktionsresultat (Datum/Zeit)" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.ResultEntity.Caption" Value="Erstes Item der Ergebniskollektion" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.ResultEntityCollection.Caption" Value="Ergenissammlung" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.ResultFloatFunction.Caption" Value="Funktionsresultat (Dezimal)" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.ResultIntegerFunction.Caption" Value="Funktionsresultat (Ganzzahl)" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.ResultRowsCount.Caption" Value="Anzahl gelesener Sätze" />
+			<Item Name="BaseElements.ReadSalesManagerName.Parameters.ResultType.Caption" Value="Ergebnistyp" />
+			<Item Name="BaseElements.ReadYearName.Parameters.AggregationColumnName.Caption" Value="Name der Aggregatsfunktionsspalte" />
+			<Item Name="BaseElements.ReadYearName.Parameters.CanReadUncommitedData.Caption" Value="Nicht committete Daten lesen" />
+			<Item Name="BaseElements.ReadYearName.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.ReadYearName.Parameters.DataSourceFilters.Caption" Value="Datenquelle der Filter" />
+			<Item Name="BaseElements.ReadYearName.Parameters.EntityColumnMetaPathes.Caption" Value="Zu lesende Spalten" />
+			<Item Name="BaseElements.ReadYearName.Parameters.FunctionType.Caption" Value="Aggregatesfunktionstyp" />
+			<Item Name="BaseElements.ReadYearName.Parameters.IgnoreDisplayValues.Caption" Value="Angezeigte Werte von Nachschlagewert-Spalten nicht lesen" />
+			<Item Name="BaseElements.ReadYearName.Parameters.NumberOfRecords.Caption" Value="Anzahl zu lesender Sätze" />
+			<Item Name="BaseElements.ReadYearName.Parameters.OrderInfo.Caption" Value="Spaltensortiierung" />
+			<Item Name="BaseElements.ReadYearName.Parameters.ReadSomeTopRecords.Caption" Value="Zuerst lesen" />
+			<Item Name="BaseElements.ReadYearName.Parameters.ResultCompositeObjectList.Caption" Value="Datensatz-Auswahl" />
+			<Item Name="BaseElements.ReadYearName.Parameters.ResultCount.Caption" Value="Anzahl Sätze" />
+			<Item Name="BaseElements.ReadYearName.Parameters.ResultDateTimeFunction.Caption" Value="Funktionsresultat (Datum/Zeit)" />
+			<Item Name="BaseElements.ReadYearName.Parameters.ResultEntity.Caption" Value="Erstes Item der Ergebniskollektion" />
+			<Item Name="BaseElements.ReadYearName.Parameters.ResultEntityCollection.Caption" Value="Ergenissammlung" />
+			<Item Name="BaseElements.ReadYearName.Parameters.ResultFloatFunction.Caption" Value="Funktionsresultat (Dezimal)" />
+			<Item Name="BaseElements.ReadYearName.Parameters.ResultIntegerFunction.Caption" Value="Funktionsresultat (Ganzzahl)" />
+			<Item Name="BaseElements.ReadYearName.Parameters.ResultRowsCount.Caption" Value="Anzahl gelesener Sätze" />
+			<Item Name="BaseElements.ReadYearName.Parameters.ResultType.Caption" Value="Ergebnistyp" />
+			<Item Name="Caption" Value="Pgr: Create Weekly Report by Sales Manager" />
+		</Items>
+	</Group>
+</Resources>

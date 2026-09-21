@@ -1,0 +1,62 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "fc79a4ee-2dae-48f6-85e0-619ad98ae1bf"
+        },
+        {
+          "SchemaColumnUId": "0393df71-4fb9-4678-9514-fffafa34225c",
+          "Value": "74900c50-b7e7-452a-83d9-f98707756d6c"
+        },
+        {
+          "SchemaColumnUId": "0e84188f-0eb2-49e1-879c-582f2db767f3",
+          "Value": "{\"autoCalculation\":{\"isEnabled\":true,\"cronExpression\":\"0 */45 0-23 */1 * ? *\"},\"autoSnapshot\":null,\"timeZoneId\":\"8bc71d34-55d8-df11-9b2a-001d60e938c6\",\"hierarchy\":null}"
+        },
+        {
+          "SchemaColumnUId": "495329fc-5ca5-46b5-9dc1-68587bf681c1",
+          "Value": "25d7c1ab-1de0-4501-b402-02e0e5a72d6e",
+          "DisplayValue": "Account"
+        },
+        {
+          "SchemaColumnUId": "7aefb793-6042-2b10-c959-e178b0fc0e37",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "815413e8-4be3-4b4e-92f7-086226d10335",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "8e2811f5-434c-693d-d792-cd900e4d64d0",
+          "Value": "c3a2367d-77d7-4b63-af6f-cfe04d1edc71",
+          "DisplayValue": "Weekly"
+        },
+        {
+          "SchemaColumnUId": "9ffb4e38-1ec2-f031-173c-60858bb7d4d1",
+          "Value": "f8749d78-4ff8-4b84-adef-09386e7af2a7",
+          "DisplayValue": "Account metrics"
+        },
+        {
+          "SchemaColumnUId": "b1851766-fc4e-478a-a7fc-b25a5c9c25b7",
+          "Value": "83140788-d3f8-4dcc-9497-1d6ece36f2db",
+          "DisplayValue": "Month"
+        },
+        {
+          "SchemaColumnUId": "c777d6c7-f3d9-2d5b-fd55-10cca07abcd8",
+          "Value": "2c40065d-df80-4b9e-9d47-36218d80166f",
+          "DisplayValue": "Account"
+        },
+        {
+          "SchemaColumnUId": "eaf4c643-d1e5-ad45-4685-ba8f7436b58f",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "f7cce321-b898-2327-8911-1257472d44e3",
+          "Value": "424e49a3-1db9-47cb-95d2-6af06f64614f",
+          "DisplayValue": "Monday"
+        }
+      ]
+    }
+  ]
+}
