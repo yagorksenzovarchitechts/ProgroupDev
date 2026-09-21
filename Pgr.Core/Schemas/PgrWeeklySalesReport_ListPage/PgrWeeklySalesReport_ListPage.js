@@ -112,6 +112,32 @@ define("PgrWeeklySalesReport_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, func
 						"filters": []
 					}
 				}
+			},
+			{
+				"operation": "insert",
+				"name": "Button_7eauyxa",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_7eauyxa_caption)#",
+					"color": "outline",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "only-text",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "PgrWeeklySalesReport_Generate",
+							"processRunType": "RegardlessOfThePage",
+							"saveAtProcessStart": true,
+							"showNotification": true
+						}
+					},
+					"clickMode": "default"
+				},
+				"parentName": "ActionButtonsContainer",
+				"propertyName": "items",
+				"index": 0
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[

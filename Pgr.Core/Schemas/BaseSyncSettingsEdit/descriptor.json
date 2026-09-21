@@ -1,15 +1,15 @@
-{
+﻿{
   "Descriptor": {
-    "UId": "c780701e-5b07-441a-aace-362b8ecc2786",
+    "UId": "a352870b-6677-4762-a904-bf090320ca0f",
     "Name": "BaseSyncSettingsEdit",
-    "ModifiedOnUtc": "\/Date(1789977962443)\/",
+    "ModifiedOnUtc": "\/Date(1789978630000)\/",
     "Parent": {
-      "UId": "9d4ad9ea-6590-4072-8b19-5257ab867c93",
+      "UId": "0513fbe7-77bb-4531-8d76-e550d21317d3",
       "Name": "BaseSyncSettingsEdit"
     },
     "ExtendParent": true,
     "ManagerName": "ClientUnitSchemaManager",
-    "Caption": "Base sync settings edit",
+    "Caption": "BaseSyncSettingsEdit",
     "DependsOn": []
   }
 }

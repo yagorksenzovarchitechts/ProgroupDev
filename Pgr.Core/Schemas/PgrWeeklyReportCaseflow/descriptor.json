@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "ebb40b45-05d6-4f56-9c91-aedc2cafe234",
     "Name": "PgrWeeklyReportCaseflow",
-    "ModifiedOnUtc": "\/Date(1788965704000)\/",
+    "ModifiedOnUtc": "\/Date(1789905430000)\/",
     "ManagerName": "DcmSchemaManager",
     "Caption": "Weekly Report caseflow",
     "DependsOn": []

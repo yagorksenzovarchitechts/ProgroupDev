@@ -5,9 +5,21 @@
 			<Item Name="Caption" Value="Weekly Report caseflow" />
 			<Item Name="NotificationCaption.Caption" Value="Process instance caption" />
 			<Item Name="NotificationCaption.DisplayValue" Value="[#Process name#]" />
-			<Item Name="Stages.Stage1.Caption" Value="Generated" />
+			<Item Name="Stages.Stage1.Caption" Value="Approved by Sales Manager" />
 			<Item Name="Stages.Stage2.Caption" Value="Draft" />
-			<Item Name="Stages.Stage3.Caption" Value="Sent &amp; locked" />
+			<Item Name="Stages.Stage3.Caption" Value="Sent &amp; Locked" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.Caption" Value="Lock for editing" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.AddRights.Caption" Value="List of rights to add" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.AddRights.DisplayValue" Value="[{Id:&quot;4aa9adae-abf1-4d10-a42c-c4c2fb6a9301&quot;,ParameterName:&quot;Role1&quot;,Name:&quot;System administrators.83a43ebc-f36b-1410-298d-001e8c82bcad&quot;,CanRead:true,CanEdit:true,CanDelete:true,Source:&quot;3&quot;,Grantee:&quot;Role&quot;,Value:&quot;[#Lookup.84f44b9a-4bc3-4cbf-a1a8-cec02c1c029c.83a43ebc-f36b-1410-298d-001e8c82bcad#]&quot;,OperationRightLevel:&quot;1&quot;}]" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.ConsiderTimeInFilter.DisplayValue" Value="true" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.DataSourceFilters.Caption" Value="Object meets condition" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.DeleteRights.Caption" Value="List of rights to delete" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.DeleteRights.DisplayValue" Value="[{Id:&quot;200141e6-a357-4665-8118-0b39dfe9dfe9&quot;,Name:&quot;All roles and users&quot;,CanRead:true,CanEdit:false,CanDelete:true,Source:&quot;1&quot;,Grantee:&quot;AllRolesAndUsers&quot;,Value:&quot;&quot;}]" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.EntitySchemaUId.Caption" Value="Object" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.EntitySchemaUId.DisplayValue" Value="f0eae67f-f127-47f0-a6be-59ffe20539ba" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.Role1.Caption" Value="Role1" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.Role1.DisplayValue" Value="[#Lookup.System administration object.System administrators.83a43ebc-f36b-1410-298d-001e8c82bcad#]" />
 		</Items>
 	</Group>
 </Resources>

@@ -943,7 +943,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 					"tooltip": "",
 					"readonly": false,
 					"multiline": false,
-					"labelPosition": "auto",
+					"labelPosition": "left",
 					"visible": false
 				},
 				"parentName": "GridContainer_s6wr1e7",

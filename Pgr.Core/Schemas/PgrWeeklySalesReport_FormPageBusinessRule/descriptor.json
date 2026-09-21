@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "34c7e087-8d62-4a03-a653-e175633c5999",
+    "Name": "PgrWeeklySalesReport_FormPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1789907370000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Weekly Sales Report form page (Business rules)",
+    "DependsOn": []
+  }
+}

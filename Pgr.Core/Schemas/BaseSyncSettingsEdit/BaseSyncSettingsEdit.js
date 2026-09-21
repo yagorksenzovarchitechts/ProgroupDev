@@ -1,4 +1,4 @@
-define("BaseSyncSettingsEdit", ["ExchangeNUIConstants"], function(ExchangeNUIConstants) {
+ define("BaseSyncSettingsEdit", ["ExchangeNUIConstants"], function(ExchangeNUIConstants) {
 	return {
 		attributes: {},
 		diff: /**SCHEMA_DIFF*/ [] /**SCHEMA_DIFF*/,
