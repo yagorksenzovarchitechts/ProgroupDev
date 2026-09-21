@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "f4273fcf-fe61-4cb7-aa6f-ebc8e41391e7",
+    "Name": "PgrWeeklyReportData",
+    "ModifiedOnUtc": "\/Date(1789471705000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Pgr: Get Weekly Report data",
+    "DependsOn": []
+  }
+}

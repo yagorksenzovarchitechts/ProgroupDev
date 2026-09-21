@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
+    "Name": "PgrWeeklyReportPerSalesManager",
+    "ModifiedOnUtc": "\/Date(1789906220000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Pgr: Create Weekly Report by Sales Manager",
+    "DependsOn": []
+  }
+}

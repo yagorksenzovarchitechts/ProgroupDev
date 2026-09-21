@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Account budget rank" />
+			<Item Name="Columns.PgrAccount.Caption" Value="Account" />
+			<Item Name="Columns.PgrBudgetMonth.Caption" Value="Budget Month" />
+			<Item Name="Columns.PgrBudgetValue.Caption" Value="Budget Value" />
+			<Item Name="Columns.PgrCustomerName.Caption" Value="Customer Name" />
+			<Item Name="Columns.PgrDeviationDate.Caption" Value="Deviation Date" />
+			<Item Name="Columns.PgrDeviationPctBudget.Caption" Value="Deviation Pct Budget" />
+			<Item Name="Columns.PgrDeviationRankBySalesDirector.Caption" Value="Deviation rank by sales director" />
+			<Item Name="Columns.PgrDeviationRankBySalesManager.Caption" Value="Deviation rank by sales manager" />
+			<Item Name="Columns.PgrDeviationRankByTerritory.Caption" Value="Deviation rank by territory" />
+			<Item Name="Columns.PgrDeviationRankCompanyWide.Caption" Value="Rank company-wide (deviation)" />
+			<Item Name="Columns.PgrDeviationValue.Caption" Value="Deviation Value" />
+			<Item Name="Columns.PgrNineDayAvgOrderIntake.Caption" Value="Nine Day Avg Order Intake" />
+			<Item Name="Columns.PgrOrderIntakeDate.Caption" Value="Order Intake Date" />
+			<Item Name="Columns.PgrOrderIntakeValue.Caption" Value="Order Intake Value" />
+			<Item Name="Columns.PgrRankBySalesDirector.Caption" Value="Rank By Sales Director" />
+			<Item Name="Columns.PgrRankBySalesManager.Caption" Value="Rank By Sales Manager" />
+			<Item Name="Columns.PgrRankByTerritory.Caption" Value="Rank By Territory" />
+			<Item Name="Columns.PgrRankCompanyWide.Caption" Value="Rank company-wide (budget)" />
+			<Item Name="Columns.PgrSalesDirector.Caption" Value="Sales Director" />
+			<Item Name="Columns.PgrSalesManager.Caption" Value="Sales Manager" />
+			<Item Name="Columns.PgrTerritory.Caption" Value="Territory" />
+		</Items>
+	</Group>
+</Resources>

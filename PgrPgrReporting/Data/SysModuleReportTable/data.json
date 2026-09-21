@@ -1,0 +1,232 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "5ef57aa3-964a-4061-bb2f-fc8aecb77967"
+        },
+        {
+          "SchemaColumnUId": "154371d2-7624-4a1b-8019-e5c202c2260d",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "1a6de7b4-2b63-4983-989c-e5f5ad91c559",
+          "Value": "Account (customer).Sales Manager"
+        },
+        {
+          "SchemaColumnUId": "1ec0aaa5-139f-e8c5-7269-e96044b51ae1",
+          "Value": "{\"className\":\"Terrasoft.FilterGroup\",\"items\":{\"866cbf9c-fd1a-4966-a295-5326bfa4641a\":{\"className\":\"Terrasoft.InFilter\",\"filterType\":4,\"comparisonType\":3,\"isEnabled\":true,\"trimDateTimeParameterToDate\":false,\"leftExpression\":{\"className\":\"Terrasoft.ColumnExpression\",\"expressionType\":0,\"columnPath\":\"ActivityCategory\"},\"isAggregative\":false,\"key\":\"866cbf9c-fd1a-4966-a295-5326bfa4641a\",\"dataValueType\":10,\"leftExpressionCaption\":\"Categories\",\"referenceSchemaName\":\"ActivityCategory\",\"rightExpressions\":[{\"className\":\"Terrasoft.ParameterExpression\",\"expressionType\":2,\"parameter\":{\"className\":\"Terrasoft.Parameter\",\"dataValueType\":10,\"value\":{\"Name\":\"Visit\",\"Id\":\"fbef561a-c041-4bf7-9715-38123ec86789\",\"value\":\"fbef561a-c041-4bf7-9715-38123ec86789\",\"displayValue\":\"Visit\"}}},{\"className\":\"Terrasoft.ParameterExpression\",\"expressionType\":2,\"parameter\":{\"className\":\"Terrasoft.Parameter\",\"dataValueType\":10,\"value\":{\"Name\":\"Visit call\",\"Id\":\"543d0f02-c32e-45ae-8427-365a5fa5ea43\",\"value\":\"543d0f02-c32e-45ae-8427-365a5fa5ea43\",\"displayValue\":\"Visit call\"}}}]},\"6e5229c8-068a-4fc8-b3f0-bc5be3777cc6\":{\"className\":\"Terrasoft.CompareFilter\",\"filterType\":1,\"comparisonType\":3,\"isEnabled\":true,\"trimDateTimeParameterToDate\":true,\"leftExpression\":{\"className\":\"Terrasoft.ColumnExpression\",\"expressionType\":0,\"columnPath\":\"StartDate\"},\"isAggregative\":false,\"key\":\"6e5229c8-068a-4fc8-b3f0-bc5be3777cc6\",\"dataValueType\":7,\"leftExpressionCaption\":\"Start date and time\",\"rightExpression\":{\"className\":\"Terrasoft.FunctionExpression\",\"expressionType\":1,\"functionType\":1,\"macrosType\":8}}},\"logicalOperation\":0,\"isEnabled\":true,\"filterType\":6,\"rootSchemaName\":\"Activity\",\"key\":\"\"}"
+        },
+        {
+          "SchemaColumnUId": "2f560358-9c67-4ddb-8ae8-e9507c0faab9",
+          "Value": "Upcoming customer visits"
+        },
+        {
+          "SchemaColumnUId": "2f929142-c949-4965-822b-718d744291fa",
+          "Value": "c449d832-a4cc-4b01-b9d5-8a12c42a9f89"
+        },
+        {
+          "SchemaColumnUId": "6e37e4a0-1c37-4475-83aa-dd218ff47173",
+          "Value": "08495968-0bf0-4218-9d11-e4c187c4ef0f"
+        },
+        {
+          "SchemaColumnUId": "79a3fa68-aef2-4ed5-86d2-5fb4dc4a7ae3",
+          "Value": "863ab759-a3a2-5df2-4dda-8ce39b65da0b.9e24e09f-9fd4-5ca0-90c3-3893474a86dc"
+        },
+        {
+          "SchemaColumnUId": "7ac8fc3b-9f5f-40d3-8918-3c18bc54cc23",
+          "Value": "Sales manager"
+        },
+        {
+          "SchemaColumnUId": "8501dbf4-1603-4e8b-b875-e1d9c8de5e8c",
+          "Value": "fac82928-2a73-5569-fe8b-baf7d7c23974",
+          "DisplayValue": "Weekly Sales Report"
+        },
+        {
+          "SchemaColumnUId": "b368f76c-1279-4700-8914-e821390edfdd",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "b54b15ab-474f-117c-f6ae-616896984747",
+          "Value": "[{caption:\"Account (customer)\",metaPath:\"863ab759-a3a2-5df2-4dda-8ce39b65da0b\",metaPathCaption:\"Account (customer)\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Start date and time\",metaPath:\"a12ca538-61b1-4907-9fdf-01969163d4dd\",metaPathCaption:\"Start date and time\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"DateTime\"}]"
+        },
+        {
+          "SchemaColumnUId": "dcbcf570-397b-4c65-bc5c-ffc91e6cc60a",
+          "Value": "Activity"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "627a6599-c60f-4eef-9f1c-5efcaf1465a2"
+        },
+        {
+          "SchemaColumnUId": "154371d2-7624-4a1b-8019-e5c202c2260d",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "1a6de7b4-2b63-4983-989c-e5f5ad91c559",
+          "Value": "Visit report.Weekly report"
+        },
+        {
+          "SchemaColumnUId": "1ec0aaa5-139f-e8c5-7269-e96044b51ae1",
+          "Value": "{\"className\":\"Terrasoft.FilterGroup\",\"items\":{\"cbee53e9-2e08-4318-9623-a534b7123dbf\":{\"className\":\"Terrasoft.InFilter\",\"filterType\":4,\"comparisonType\":4,\"isEnabled\":true,\"trimDateTimeParameterToDate\":false,\"leftExpression\":{\"className\":\"Terrasoft.ColumnExpression\",\"expressionType\":0,\"columnPath\":\"Status\"},\"isAggregative\":false,\"key\":\"cbee53e9-2e08-4318-9623-a534b7123dbf\",\"dataValueType\":10,\"leftExpressionCaption\":\"Status\",\"referenceSchemaName\":\"ActivityStatus\",\"rightExpressions\":[{\"className\":\"Terrasoft.ParameterExpression\",\"expressionType\":2,\"parameter\":{\"className\":\"Terrasoft.Parameter\",\"dataValueType\":10,\"value\":{\"Name\":\"Cancelled\",\"Id\":\"201cfba8-58e6-df11-971b-001d60e938c6\",\"value\":\"201cfba8-58e6-df11-971b-001d60e938c6\",\"displayValue\":\"Cancelled\"}}},{\"className\":\"Terrasoft.ParameterExpression\",\"expressionType\":2,\"parameter\":{\"className\":\"Terrasoft.Parameter\",\"dataValueType\":10,\"value\":{\"Name\":\"Closed by system\",\"Id\":\"de886b4e-c4c5-462f-bd85-ae1694a655ae\",\"value\":\"de886b4e-c4c5-462f-bd85-ae1694a655ae\",\"displayValue\":\"Closed by system\"}}},{\"className\":\"Terrasoft.ParameterExpression\",\"expressionType\":2,\"parameter\":{\"className\":\"Terrasoft.Parameter\",\"dataValueType\":10,\"value\":{\"Name\":\"Done\",\"Id\":\"4bdbb88f-58e6-df11-971b-001d60e938c6\",\"value\":\"4bdbb88f-58e6-df11-971b-001d60e938c6\",\"displayValue\":\"Done\"}}}]},\"b915130a-b468-421f-b342-b1a77eb7f0ea\":{\"className\":\"Terrasoft.InFilter\",\"filterType\":4,\"comparisonType\":3,\"isEnabled\":true,\"trimDateTimeParameterToDate\":false,\"leftExpression\":{\"className\":\"Terrasoft.ColumnExpression\",\"expressionType\":0,\"columnPath\":\"ActivityCategory\"},\"isAggregative\":false,\"key\":\"b915130a-b468-421f-b342-b1a77eb7f0ea\",\"dataValueType\":10,\"leftExpressionCaption\":\"Categories\",\"referenceSchemaName\":\"ActivityCategory\",\"rightExpressions\":[{\"className\":\"Terrasoft.ParameterExpression\",\"expressionType\":2,\"parameter\":{\"className\":\"Terrasoft.Parameter\",\"dataValueType\":10,\"value\":{\"Name\":\"Measure\",\"Id\":\"bee620f7-f3f7-47e4-81a3-5b2a9a030413\",\"value\":\"bee620f7-f3f7-47e4-81a3-5b2a9a030413\",\"displayValue\":\"Measure\"}}}]},\"6ffd6a8b-a1a2-4d24-a72b-cd77a4da847d\":{\"className\":\"Terrasoft.IsNullFilter\",\"filterType\":2,\"comparisonType\":2,\"isEnabled\":true,\"trimDateTimeParameterToDate\":false,\"leftExpression\":{\"className\":\"Terrasoft.ColumnExpression\",\"expressionType\":0,\"columnPath\":\"PgrVisitReport\"},\"isAggregative\":false,\"key\":\"6ffd6a8b-a1a2-4d24-a72b-cd77a4da847d\",\"dataValueType\":10,\"leftExpressionCaption\":\"Visit report\",\"referenceSchemaName\":\"PgrVisitReport\",\"isNull\":false}},\"logicalOperation\":0,\"isEnabled\":true,\"filterType\":6,\"rootSchemaName\":\"Activity\",\"key\":\"\"}"
+        },
+        {
+          "SchemaColumnUId": "2f560358-9c67-4ddb-8ae8-e9507c0faab9",
+          "Value": "Measures"
+        },
+        {
+          "SchemaColumnUId": "2f929142-c949-4965-822b-718d744291fa",
+          "Value": "c449d832-a4cc-4b01-b9d5-8a12c42a9f89"
+        },
+        {
+          "SchemaColumnUId": "6e37e4a0-1c37-4475-83aa-dd218ff47173",
+          "Value": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617"
+        },
+        {
+          "SchemaColumnUId": "79a3fa68-aef2-4ed5-86d2-5fb4dc4a7ae3",
+          "Value": "a28f7536-e0c0-ebe6-27fb-12fc859fe98d.bff3da98-b0a7-4f87-a7c5-7eeb1740f0cc"
+        },
+        {
+          "SchemaColumnUId": "7ac8fc3b-9f5f-40d3-8918-3c18bc54cc23",
+          "Value": "Id"
+        },
+        {
+          "SchemaColumnUId": "8501dbf4-1603-4e8b-b875-e1d9c8de5e8c",
+          "Value": "fac82928-2a73-5569-fe8b-baf7d7c23974",
+          "DisplayValue": "Weekly Sales Report"
+        },
+        {
+          "SchemaColumnUId": "b368f76c-1279-4700-8914-e821390edfdd",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "b54b15ab-474f-117c-f6ae-616896984747",
+          "Value": "[{caption:\"Subject\",metaPath:\"4dcf0a31-7fd7-4dba-a004-e413b1753431\",metaPathCaption:\"Subject\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Text\"},{caption:\"Categories\",metaPath:\"c814fa71-e01b-4325-ac8d-8d4a293ed138\",metaPathCaption:\"Categories\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Reason code\",metaPath:\"7a71753e-c4e5-13bc-5f0d-229d9dc45822\",metaPathCaption:\"Reason code\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Reason notes\",metaPath:\"bd43f0e4-dcc7-17df-99cc-252a7d1f017b\",metaPathCaption:\"Reason notes\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Text\"},{caption:\"Due date and time\",metaPath:\"4038ce1f-15b2-4630-abb6-0c7377ab4c9b\",metaPathCaption:\"Due date and time\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"DateTime\"},{caption:\"Is overdue\",metaPath:\"2f88df45-d021-0c17-a0a0-1aaf00ac219a\",metaPathCaption:\"Is overdue\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Boolean\"},{caption:\"Status\",metaPath:\"c8d84f9c-b48b-479b-9ac6-4412f3436ca2\",metaPathCaption:\"Status\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Account (customer)\",metaPath:\"863ab759-a3a2-5df2-4dda-8ce39b65da0b\",metaPathCaption:\"Account (customer)\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"}]"
+        },
+        {
+          "SchemaColumnUId": "dcbcf570-397b-4c65-bc5c-ffc91e6cc60a",
+          "Value": "Activity"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "91fe8587-8724-4550-b87d-47d94d95d4b1"
+        },
+        {
+          "SchemaColumnUId": "154371d2-7624-4a1b-8019-e5c202c2260d",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "1a6de7b4-2b63-4983-989c-e5f5ad91c559",
+          "Value": "Pgr Sales Manager.Id"
+        },
+        {
+          "SchemaColumnUId": "1ec0aaa5-139f-e8c5-7269-e96044b51ae1",
+          "Value": "{\"className\":\"Terrasoft.FilterGroup\",\"items\":{\"b4c2be9e-ff46-49bd-b5fa-67422377d4de\":{\"className\":\"Terrasoft.CompareFilter\",\"filterType\":1,\"comparisonType\":6,\"isEnabled\":true,\"trimDateTimeParameterToDate\":false,\"leftExpression\":{\"className\":\"Terrasoft.ColumnExpression\",\"expressionType\":0,\"columnPath\":\"PgrRankBySalesManager\"},\"isAggregative\":false,\"key\":\"b4c2be9e-ff46-49bd-b5fa-67422377d4de\",\"dataValueType\":4,\"leftExpressionCaption\":\"Pgr Rank By Sales Manager\",\"rightExpression\":{\"className\":\"Terrasoft.ParameterExpression\",\"expressionType\":2,\"parameter\":{\"className\":\"Terrasoft.Parameter\",\"dataValueType\":4,\"value\":5}}}},\"logicalOperation\":0,\"isEnabled\":true,\"filterType\":6,\"rootSchemaName\":\"PgrVwAccountBudgetRank\",\"key\":\"\"}"
+        },
+        {
+          "SchemaColumnUId": "2f560358-9c67-4ddb-8ae8-e9507c0faab9",
+          "Value": "Account rank by budget"
+        },
+        {
+          "SchemaColumnUId": "2f929142-c949-4965-822b-718d744291fa",
+          "Value": "388dd115-f257-47ea-af17-62d575c9627c"
+        },
+        {
+          "SchemaColumnUId": "6e37e4a0-1c37-4475-83aa-dd218ff47173",
+          "Value": "08495968-0bf0-4218-9d11-e4c187c4ef0f"
+        },
+        {
+          "SchemaColumnUId": "79a3fa68-aef2-4ed5-86d2-5fb4dc4a7ae3",
+          "Value": "428bf08f-b9a1-4afb-92a3-495c6cf309d0.ae0e45ca-c495-4fe7-a39d-3ab7278e1617"
+        },
+        {
+          "SchemaColumnUId": "7ac8fc3b-9f5f-40d3-8918-3c18bc54cc23",
+          "Value": "Sales manager"
+        },
+        {
+          "SchemaColumnUId": "8501dbf4-1603-4e8b-b875-e1d9c8de5e8c",
+          "Value": "fac82928-2a73-5569-fe8b-baf7d7c23974",
+          "DisplayValue": "Weekly Sales Report"
+        },
+        {
+          "SchemaColumnUId": "b368f76c-1279-4700-8914-e821390edfdd",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "b54b15ab-474f-117c-f6ae-616896984747",
+          "Value": "[{caption:\"Pgr Account\",metaPath:\"3286dc77-c077-43b8-971f-8f5f79db1c2e\",metaPathCaption:\"Pgr Account\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Pgr Budget Month\",metaPath:\"e994e740-8469-4037-8add-97053fd86d6b\",metaPathCaption:\"Pgr Budget Month\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"DateTime\"},{caption:\"Pgr Budget Value\",metaPath:\"22b2653a-ea31-457e-b600-f77619b9973d\",metaPathCaption:\"Pgr Budget Value\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Float\",sort:\"Descending\"},{caption:\"Pgr Sales Manager\",metaPath:\"428bf08f-b9a1-4afb-92a3-495c6cf309d0\",metaPathCaption:\"Pgr Sales Manager\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Pgr Order Intake Value\",metaPath:\"442c7927-9fd4-4412-893a-5ba02818562f\",metaPathCaption:\"Pgr Order Intake Value\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Float\"}]"
+        },
+        {
+          "SchemaColumnUId": "dcbcf570-397b-4c65-bc5c-ffc91e6cc60a",
+          "Value": "PgrVwAccountBudgetRank"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "f4a029d2-c1ca-4b7e-9c09-3b81e35c2cb9"
+        },
+        {
+          "SchemaColumnUId": "154371d2-7624-4a1b-8019-e5c202c2260d",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "1a6de7b4-2b63-4983-989c-e5f5ad91c559",
+          "Value": "Weekly report"
+        },
+        {
+          "SchemaColumnUId": "1ec0aaa5-139f-e8c5-7269-e96044b51ae1",
+          "Value": "{\"className\":\"Terrasoft.FilterGroup\",\"items\":{\"31a68812-56f4-4cc5-a5a4-ecd9fa22847d\":{\"className\":\"Terrasoft.CompareFilter\",\"filterType\":1,\"comparisonType\":3,\"isEnabled\":true,\"trimDateTimeParameterToDate\":false,\"leftExpression\":{\"className\":\"Terrasoft.ColumnExpression\",\"expressionType\":0,\"columnPath\":\"PgrIsRelevantForWeeklyReport\"},\"isAggregative\":false,\"key\":\"31a68812-56f4-4cc5-a5a4-ecd9fa22847d\",\"dataValueType\":12,\"leftExpressionCaption\":\"Relevant for weekly report\",\"rightExpression\":{\"className\":\"Terrasoft.ParameterExpression\",\"expressionType\":2,\"parameter\":{\"className\":\"Terrasoft.Parameter\",\"dataValueType\":12,\"value\":true}}}},\"logicalOperation\":0,\"isEnabled\":true,\"filterType\":6,\"rootSchemaName\":\"PgrVisitReport\",\"key\":\"\"}"
+        },
+        {
+          "SchemaColumnUId": "2f560358-9c67-4ddb-8ae8-e9507c0faab9",
+          "Value": "Customer situation"
+        },
+        {
+          "SchemaColumnUId": "2f929142-c949-4965-822b-718d744291fa",
+          "Value": "84c92193-3a76-4c34-81e7-f588516da67e"
+        },
+        {
+          "SchemaColumnUId": "6e37e4a0-1c37-4475-83aa-dd218ff47173",
+          "Value": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617"
+        },
+        {
+          "SchemaColumnUId": "79a3fa68-aef2-4ed5-86d2-5fb4dc4a7ae3",
+          "Value": "bff3da98-b0a7-4f87-a7c5-7eeb1740f0cc"
+        },
+        {
+          "SchemaColumnUId": "7ac8fc3b-9f5f-40d3-8918-3c18bc54cc23",
+          "Value": "Id"
+        },
+        {
+          "SchemaColumnUId": "8501dbf4-1603-4e8b-b875-e1d9c8de5e8c",
+          "Value": "fac82928-2a73-5569-fe8b-baf7d7c23974",
+          "DisplayValue": "Weekly Sales Report"
+        },
+        {
+          "SchemaColumnUId": "b368f76c-1279-4700-8914-e821390edfdd",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "b54b15ab-474f-117c-f6ae-616896984747",
+          "Value": "[{caption:\"Account (Customer)\",metaPath:\"c9a30894-7c08-b05e-79e5-86ace8d58d53\",metaPathCaption:\"Account (Customer)\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Competition\",metaPath:\"8fd53fa1-1a73-5745-402c-580def88342e\",metaPathCaption:\"Competition\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Competition remarks\",metaPath:\"5673c45f-6564-ea9f-42dd-14d7a5d80ac8\",metaPathCaption:\"Competition remarks\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Text\"},{caption:\"Performance\",metaPath:\"bd130d17-504a-9201-94ec-50363ea30409\",metaPathCaption:\"Performance\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Performance remarks\",metaPath:\"a437db7e-3ff8-78e7-bc03-6b63efc3bbd8\",metaPathCaption:\"Performance remarks\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Text\"},{caption:\"Commercial & Prices\",metaPath:\"7f2ea919-ca0b-5dd7-8d9c-cc018fc417d2\",metaPathCaption:\"Commercial & Prices\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Boolean\"},{caption:\"9-day avg order intake (auto)\",metaPath:\"a89d63cf-154f-ef36-ac69-67844de85c0c\",metaPathCaption:\"9-day avg order intake (auto)\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Float\"},{caption:\"Budget (auto)\",metaPath:\"7efb629c-ae66-227b-ec08-313c0fd2f087\",metaPathCaption:\"Budget (auto)\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Float\"},{caption:\"Deviation % (auto)\",metaPath:\"5c1a9e2b-0dbc-844d-1bcc-18cdb6366ec0\",metaPathCaption:\"Deviation % (auto)\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Float\"},{caption:\"Progroup delivery share (auto)\",metaPath:\"51eab281-89b0-b366-f607-d236d0e25c9c\",metaPathCaption:\"Progroup delivery share (auto)\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Float\"},{caption:\"Activity\",metaPath:\"af67f940-8d97-f4cb-44f2-84de70ec9ff1\",metaPathCaption:\"Activity\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Activity.Categories\",metaPath:\"af67f940-8d97-f4cb-44f2-84de70ec9ff1.c814fa71-e01b-4325-ac8d-8d4a293ed138\",metaPathCaption:\"Activity.Categories\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrVisitReport\\\",\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Activity.Status\",metaPath:\"af67f940-8d97-f4cb-44f2-84de70ec9ff1.c8d84f9c-b48b-479b-9ac6-4412f3436ca2\",metaPathCaption:\"Activity.Status\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrVisitReport\\\",\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Activity.Subject\",metaPath:\"af67f940-8d97-f4cb-44f2-84de70ec9ff1.4dcf0a31-7fd7-4dba-a004-e413b1753431\",metaPathCaption:\"Activity.Subject\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrVisitReport\\\",\\\"key\\\":\\\"\\\"}\",dataValueType:\"Text\"},{caption:\"Reason / Purpose\",metaPath:\"6a20ce4c-e1ff-23e6-a19c-91c6388636b3\",metaPathCaption:\"Reason / Purpose\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Last visit (auto)\",metaPath:\"ffb2acd5-0ea8-350b-e17a-50416b0d15f8\",metaPathCaption:\"Last visit (auto)\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Date\"},{caption:\"Reason remarks\",metaPath:\"7e604363-b2c5-bbf6-0291-e6a24d402c1f\",metaPathCaption:\"Reason remarks\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Text\"},{caption:\"Reason (no visit)\",metaPath:\"0268315a-eda0-2599-bde9-220c54041ac1\",metaPathCaption:\"Reason (no visit)\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Text\"},{caption:\"Visit type\",metaPath:\"c97372ee-a18d-8b0b-49e6-1ee4498cc8d2\",metaPathCaption:\"Visit type\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Weekly report\",metaPath:\"bff3da98-b0a7-4f87-a7c5-7eeb1740f0cc\",metaPathCaption:\"Weekly report\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Visit date\",metaPath:\"c1f169d5-9739-e7ec-4e58-6ec1cfc0a422\",metaPathCaption:\"Visit date\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Date\",sort:\"Descending\"},{caption:\"Month to date order intake\",metaPath:\"f9f73d7f-9ef1-060d-fea8-8063d3cb34c8\",metaPathCaption:\"Month to date order intake\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Float\"},{caption:\"Activity.Reason code\",metaPath:\"af67f940-8d97-f4cb-44f2-84de70ec9ff1.7a71753e-c4e5-13bc-5f0d-229d9dc45822\",metaPathCaption:\"Activity.Reason code\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrVisitReport\\\",\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Activity.Account (customer)\",metaPath:\"af67f940-8d97-f4cb-44f2-84de70ec9ff1.863ab759-a3a2-5df2-4dda-8ce39b65da0b\",metaPathCaption:\"Activity.Account (customer)\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrVisitReport\\\",\\\"key\\\":\\\"\\\"}\",dataValueType:\"Lookup\"},{caption:\"Quality\",metaPath:\"2fda8f2d-ea3c-8c3e-6cae-998cf2ef7264\",metaPathCaption:\"Quality\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Boolean\"},{caption:\"Service & Lieferung\",metaPath:\"47c1a6b0-b517-6d13-b9da-c6efcd7d63eb\",metaPathCaption:\"Service & Lieferung\",aggregationType:\"None\",subFilters:\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"key\\\":\\\"\\\"}\",dataValueType:\"Boolean\"}]"
+        },
+        {
+          "SchemaColumnUId": "dcbcf570-397b-4c65-bc5c-ffc91e6cc60a",
+          "Value": "PgrVisitReport"
+        }
+      ]
+    }
+  ]
+}

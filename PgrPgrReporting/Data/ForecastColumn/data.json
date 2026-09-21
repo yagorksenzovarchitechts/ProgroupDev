@@ -1,0 +1,214 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "6f02edcf-8df1-4ed7-8c7d-b6944467229f"
+        },
+        {
+          "SchemaColumnUId": "4e1b5056-a250-45bc-baf5-743f632644cf",
+          "Value": "{\"value\":[{\"type\":2,\"caption\":\"(\",\"value\":\"(\"},{\"type\":1,\"caption\":\"Actual\",\"value\":\"f50cf1e0-f97d-4888-9604-b2a7faa17d8d\"},{\"type\":2,\"caption\":\"−\",\"value\":\"-\"},{\"type\":1,\"caption\":\"Budget\",\"value\":\"7cc36d17-2504-4364-ba6e-189807ad9328\"},{\"type\":2,\"caption\":\")\",\"value\":\")\"},{\"type\":2,\"caption\":\"/\",\"value\":\"/\"},{\"type\":1,\"caption\":\"Budget\",\"value\":\"7cc36d17-2504-4364-ba6e-189807ad9328\"},{\"type\":2,\"caption\":\"*\",\"value\":\"*\"},{\"type\":0,\"caption\":\"1\",\"value\":\"1\"},{\"type\":0,\"caption\":\"0\",\"value\":\"0\"},{\"type\":0,\"caption\":\"0\",\"value\":\"0\"}],\"summaryValue\":[{\"type\":4,\"caption\":\"SUM\",\"value\":\"SUM\"},{\"type\":2,\"caption\":\"(\",\"value\":\"(\"},{\"type\":1,\"caption\":\"Actual vs. Budget (%)\",\"value\":\"6f02edcf-8df1-4ed7-8c7d-b6944467229f\"},{\"type\":2,\"caption\":\")\",\"value\":\")\"}],\"useInSummary\":false,\"isFractionalPartHidden\":true,\"textColor\":\"#181818\",\"color\":\"\",\"sliderSourceId\":\"7cc36d17-2504-4364-ba6e-189807ad9328\"}"
+        },
+        {
+          "SchemaColumnUId": "5157b14b-d02d-4b41-b7f6-7fbbfdf32b96",
+          "Value": "fc79a4ee-2dae-48f6-85e0-619ad98ae1bf",
+          "DisplayValue": "Order intake by Account"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 6
+        },
+        {
+          "SchemaColumnUId": "df4002ec-7efa-4d3f-8214-b42bff6def2e",
+          "Value": "1b401172-d1ce-4c75-8530-c5272b9b328d",
+          "DisplayValue": "Formula"
+        },
+        {
+          "SchemaColumnUId": "e28b7cde-7e8f-4ca5-8bea-b9a3bccb6bf7",
+          "Value": false
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "7cc36d17-2504-4364-ba6e-189807ad9328"
+        },
+        {
+          "SchemaColumnUId": "4e1b5056-a250-45bc-baf5-743f632644cf",
+          "Value": "{\"isFractionalPartHidden\":false,\"textColor\":\"#181818\",\"color\":\"#FED6E5\",\"isGroupEdit\":false,\"allowEditingForAll\":true,\"percentOperand\":100,\"sourceUId\":\"f8749d78-4ff8-4b84-adef-09386e7af2a7\",\"filter\":\"{\\\"filterType\\\":6,\\\"isEnabled\\\":true,\\\"logicalOperation\\\":0,\\\"trimDateTimeParameterToDate\\\":false,\\\"items\\\":{\\\"1ba61876-1b86-96e8-9b55-39d970143e20\\\":{\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"filterType\\\":4,\\\"comparisonType\\\":3,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrMetricTypeId\\\"},\\\"rightExpressions\\\":[{\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"dataValueType\\\":1,\\\"value\\\":{\\\"value\\\":\\\"abad9912-b6a4-4777-b445-d55d9e9a7ae1\\\",\\\"displayValue\\\":\\\"Budget\\\"}}}],\\\"dataValueType\\\":10,\\\"referenceSchemaName\\\":\\\"PgrMetricType\\\"}},\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"rootSchemaName\\\":\\\"PgrAccountMetricValue\\\",\\\"key\\\":\\\"\\\"}\",\"periodColumnPath\":\"PgrDate\",\"funcCode\":\"sum\",\"funcColumnPath\":\"PgrValue\",\"refColumnPath\":\"PgrAccountId\"}"
+        },
+        {
+          "SchemaColumnUId": "5157b14b-d02d-4b41-b7f6-7fbbfdf32b96",
+          "Value": "fc79a4ee-2dae-48f6-85e0-619ad98ae1bf",
+          "DisplayValue": "Order intake by Account"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 1
+        },
+        {
+          "SchemaColumnUId": "df4002ec-7efa-4d3f-8214-b42bff6def2e",
+          "Value": "42df643e-ac48-4e67-8f78-52d18beecf10",
+          "DisplayValue": "Value from object"
+        },
+        {
+          "SchemaColumnUId": "e28b7cde-7e8f-4ca5-8bea-b9a3bccb6bf7",
+          "Value": false
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "8a05f67a-595d-4710-933c-2b97506f73ba"
+        },
+        {
+          "SchemaColumnUId": "4e1b5056-a250-45bc-baf5-743f632644cf",
+          "Value": "{\"value\":[{\"type\":2,\"caption\":\"(\",\"value\":\"(\"},{\"type\":1,\"caption\":\"Forecast\",\"value\":\"8f36e21a-9220-4ea8-95bb-caf5342da5e2\"},{\"type\":2,\"caption\":\"−\",\"value\":\"-\"},{\"type\":1,\"caption\":\"Budget\",\"value\":\"7cc36d17-2504-4364-ba6e-189807ad9328\"},{\"type\":2,\"caption\":\")\",\"value\":\")\"},{\"type\":2,\"caption\":\"/\",\"value\":\"/\"},{\"type\":1,\"caption\":\"Budget\",\"value\":\"7cc36d17-2504-4364-ba6e-189807ad9328\"},{\"value\":\"*\",\"caption\":\"∗\",\"type\":2},{\"type\":0,\"caption\":\"1\",\"value\":\"1\"},{\"type\":0,\"caption\":\"0\",\"value\":\"0\"},{\"type\":0,\"caption\":\"0\",\"value\":\"0\"}],\"summaryValue\":[{\"type\":4,\"caption\":\"SUM\",\"value\":\"SUM\"},{\"type\":2,\"caption\":\"(\",\"value\":\"(\"},{\"type\":1,\"caption\":\"Forecast vs. Budget (%)\",\"value\":\"8a05f67a-595d-4710-933c-2b97506f73ba\"},{\"type\":2,\"caption\":\")\",\"value\":\")\"}],\"useInSummary\":false,\"isFractionalPartHidden\":true,\"textColor\":\"#181818\",\"color\":\"\",\"sliderSourceId\":\"8f36e21a-9220-4ea8-95bb-caf5342da5e2\"}"
+        },
+        {
+          "SchemaColumnUId": "5157b14b-d02d-4b41-b7f6-7fbbfdf32b96",
+          "Value": "fc79a4ee-2dae-48f6-85e0-619ad98ae1bf",
+          "DisplayValue": "Order intake by Account"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 4
+        },
+        {
+          "SchemaColumnUId": "df4002ec-7efa-4d3f-8214-b42bff6def2e",
+          "Value": "1b401172-d1ce-4c75-8530-c5272b9b328d",
+          "DisplayValue": "Formula"
+        },
+        {
+          "SchemaColumnUId": "e28b7cde-7e8f-4ca5-8bea-b9a3bccb6bf7",
+          "Value": false
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "8f36e21a-9220-4ea8-95bb-caf5342da5e2"
+        },
+        {
+          "SchemaColumnUId": "4e1b5056-a250-45bc-baf5-743f632644cf",
+          "Value": "{\"isFractionalPartHidden\":false,\"textColor\":\"#181818\",\"color\":\"#CCE9FB\"}"
+        },
+        {
+          "SchemaColumnUId": "5157b14b-d02d-4b41-b7f6-7fbbfdf32b96",
+          "Value": "fc79a4ee-2dae-48f6-85e0-619ad98ae1bf",
+          "DisplayValue": "Order intake by Account"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 2
+        },
+        {
+          "SchemaColumnUId": "df4002ec-7efa-4d3f-8214-b42bff6def2e",
+          "Value": "ce1c3120-933a-4347-9ee2-b02df18508c4",
+          "DisplayValue": "Forecast call"
+        },
+        {
+          "SchemaColumnUId": "e28b7cde-7e8f-4ca5-8bea-b9a3bccb6bf7",
+          "Value": false
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "993a1d8f-6b73-4aa6-bada-7690b10a4db7"
+        },
+        {
+          "SchemaColumnUId": "4e1b5056-a250-45bc-baf5-743f632644cf",
+          "Value": "{\"value\":[{\"type\":1,\"caption\":\"Actual\",\"value\":\"f50cf1e0-f97d-4888-9604-b2a7faa17d8d\"},{\"type\":2,\"caption\":\"−\",\"value\":\"-\"},{\"type\":1,\"caption\":\"Budget\",\"value\":\"7cc36d17-2504-4364-ba6e-189807ad9328\"}],\"summaryValue\":[{\"type\":4,\"caption\":\"SUM\",\"value\":\"SUM\"},{\"type\":2,\"caption\":\"(\",\"value\":\"(\"},{\"type\":1,\"caption\":\"Actual vs. Budget\",\"value\":\"993a1d8f-6b73-4aa6-bada-7690b10a4db7\"},{\"type\":2,\"caption\":\")\",\"value\":\")\"}],\"useInSummary\":false,\"isFractionalPartHidden\":false,\"textColor\":\"#181818\",\"color\":\"\",\"sliderSourceId\":\"7cc36d17-2504-4364-ba6e-189807ad9328\",\"allowEditingForAll\":false,\"cellAction\":null}"
+        },
+        {
+          "SchemaColumnUId": "5157b14b-d02d-4b41-b7f6-7fbbfdf32b96",
+          "Value": "fc79a4ee-2dae-48f6-85e0-619ad98ae1bf",
+          "DisplayValue": "Order intake by Account"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 5
+        },
+        {
+          "SchemaColumnUId": "df4002ec-7efa-4d3f-8214-b42bff6def2e",
+          "Value": "1b401172-d1ce-4c75-8530-c5272b9b328d",
+          "DisplayValue": "Formula"
+        },
+        {
+          "SchemaColumnUId": "e28b7cde-7e8f-4ca5-8bea-b9a3bccb6bf7",
+          "Value": false
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "f50cf1e0-f97d-4888-9604-b2a7faa17d8d"
+        },
+        {
+          "SchemaColumnUId": "4e1b5056-a250-45bc-baf5-743f632644cf",
+          "Value": "{\"percentOperand\":100,\"sourceUId\":\"f8749d78-4ff8-4b84-adef-09386e7af2a7\",\"filter\":\"{\\\"filterType\\\":6,\\\"isEnabled\\\":true,\\\"logicalOperation\\\":0,\\\"trimDateTimeParameterToDate\\\":false,\\\"items\\\":{\\\"aec9d30c-7444-3201-33d5-f42fcd55bc7c\\\":{\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"filterType\\\":4,\\\"comparisonType\\\":3,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrMetricTypeId\\\"},\\\"rightExpressions\\\":[{\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"dataValueType\\\":1,\\\"value\\\":{\\\"value\\\":\\\"e6c7bd63-bdd2-4eb8-a1cf-ecd8f0a8503d\\\",\\\"displayValue\\\":\\\"Actual Order Intake\\\"}}}],\\\"dataValueType\\\":10,\\\"referenceSchemaName\\\":\\\"PgrMetricType\\\"}},\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"rootSchemaName\\\":\\\"PgrAccountMetricValue\\\",\\\"key\\\":\\\"\\\"}\",\"periodColumnPath\":\"PgrDate\",\"funcCode\":\"sum\",\"funcColumnPath\":\"PgrValue\",\"refColumnPath\":\"PgrAccountId\",\"isFractionalPartHidden\":false,\"textColor\":\"#181818\",\"color\":\"#F1E5F5\"}"
+        },
+        {
+          "SchemaColumnUId": "5157b14b-d02d-4b41-b7f6-7fbbfdf32b96",
+          "Value": "fc79a4ee-2dae-48f6-85e0-619ad98ae1bf",
+          "DisplayValue": "Order intake by Account"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 0
+        },
+        {
+          "SchemaColumnUId": "df4002ec-7efa-4d3f-8214-b42bff6def2e",
+          "Value": "42df643e-ac48-4e67-8f78-52d18beecf10",
+          "DisplayValue": "Value from object"
+        },
+        {
+          "SchemaColumnUId": "e28b7cde-7e8f-4ca5-8bea-b9a3bccb6bf7",
+          "Value": false
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "fa777698-0190-4d05-9168-29e00e2632b8"
+        },
+        {
+          "SchemaColumnUId": "4e1b5056-a250-45bc-baf5-743f632644cf",
+          "Value": "{\"value\":[{\"type\":1,\"caption\":\"Forecast\",\"value\":\"8f36e21a-9220-4ea8-95bb-caf5342da5e2\"},{\"type\":2,\"caption\":\"−\",\"value\":\"-\"},{\"type\":1,\"caption\":\"Budget\",\"value\":\"7cc36d17-2504-4364-ba6e-189807ad9328\"}],\"summaryValue\":[{\"type\":4,\"caption\":\"SUM\",\"value\":\"SUM\"},{\"type\":2,\"caption\":\"(\",\"value\":\"(\"},{\"type\":1,\"caption\":\"Delta: Forecast - Budget\",\"value\":\"fa777698-0190-4d05-9168-29e00e2632b8\"},{\"type\":2,\"caption\":\")\",\"value\":\")\"}],\"useInSummary\":false,\"isFractionalPartHidden\":true,\"textColor\":\"#181818\",\"color\":\"\",\"allowEditingForAll\":false,\"cellAction\":null,\"sliderSourceId\":\"8f36e21a-9220-4ea8-95bb-caf5342da5e2\"}"
+        },
+        {
+          "SchemaColumnUId": "5157b14b-d02d-4b41-b7f6-7fbbfdf32b96",
+          "Value": "fc79a4ee-2dae-48f6-85e0-619ad98ae1bf",
+          "DisplayValue": "Order intake by Account"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 3
+        },
+        {
+          "SchemaColumnUId": "df4002ec-7efa-4d3f-8214-b42bff6def2e",
+          "Value": "1b401172-d1ce-4c75-8530-c5272b9b328d",
+          "DisplayValue": "Formula"
+        },
+        {
+          "SchemaColumnUId": "e28b7cde-7e8f-4ca5-8bea-b9a3bccb6bf7",
+          "Value": false
+        }
+      ]
+    }
+  ]
+}

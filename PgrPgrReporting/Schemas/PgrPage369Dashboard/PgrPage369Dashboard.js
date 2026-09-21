@@ -4592,7 +4592,12 @@ define("PgrPage369Dashboard", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 								}
 							],
 							"sortingConfig": {
-								"default": []
+								"default": [
+									{
+										"direction": "asc",
+										"columnName": "PgrOrderIntakeDayCounter"
+									}
+								]
 							}
 						},
 						"viewModelConfig": {

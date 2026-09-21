@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "e569dfe1-74c8-4794-8fb1-b07312ea00c8",
+    "Name": "PgrVwSalesManagerMetricSnapshot",
+    "ModifiedOnUtc": "\/Date(1788869132000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Sales manager metric snapshot",
+    "DependsOn": []
+  }
+}

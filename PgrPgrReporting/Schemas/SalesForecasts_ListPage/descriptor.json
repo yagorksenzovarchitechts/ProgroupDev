@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "b99cac12-56e4-45e6-9129-519c1250aefb",
+    "Name": "SalesForecasts_ListPage",
+    "ModifiedOnUtc": "\/Date(1788430757000)\/",
+    "Parent": {
+      "UId": "458af801-ff04-4d4c-83cd-39fe937a9d94",
+      "Name": "SalesForecasts_ListPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Sales Forecasts list page",
+    "DependsOn": []
+  }
+}

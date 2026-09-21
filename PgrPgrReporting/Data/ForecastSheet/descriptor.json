@@ -1,0 +1,105 @@
+﻿{
+  "Descriptor": {
+    "UId": "8962c0a1-e622-411a-b593-8591faa66eab",
+    "Name": "ForecastSheet",
+    "ModifiedOnUtc": "\/Date(1788773269000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "f97c7d7a-e614-4850-8ec4-98d8af22b3d0",
+      "Name": "ForecastSheet"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "0393df71-4fb9-4678-9514-fffafa34225c",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ForecastEntityInCellUId",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "0e84188f-0eb2-49e1-879c-582f2db767f3",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Setting",
+        "DataTypeValueUId": "c0f04627-4620-4bc0-84e5-9419dc8516b1"
+      },
+      {
+        "ColumnUId": "495329fc-5ca5-46b5-9dc1-68587bf681c1",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ForecastEntity",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "7aefb793-6042-2b10-c959-e178b0fc0e37",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "IsActive",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+      },
+      {
+        "ColumnUId": "815413e8-4be3-4b4e-92f7-086226d10335",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UseNewGrid",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+      },
+      {
+        "ColumnUId": "8e2811f5-434c-693d-d792-cd900e4d64d0",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Frequency",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "9ffb4e38-1ec2-f031-173c-60858bb7d4d1",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "HierarchyDrilldownEntity",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "b1851766-fc4e-478a-a7fc-b25a5c9c25b7",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "PeriodType",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "c777d6c7-f3d9-2d5b-fd55-10cca07abcd8",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ForecastHierarchy",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "eaf4c643-d1e5-ad45-4685-ba8f7436b58f",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "IsSubmissionStatusVisible",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+      },
+      {
+        "ColumnUId": "f502f4f8-f2e1-49ee-8768-8b93f970867c",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "f7cce321-b898-2327-8911-1257472d44e3",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "WeekStartDay",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      }
+    ]
+  }
+}

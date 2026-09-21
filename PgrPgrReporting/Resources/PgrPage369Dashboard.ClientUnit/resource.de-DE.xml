@@ -2,8 +2,8 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="369 Dashboard" />
-			<Item Name="LocalizableStrings.ChartWidget_jg9ahyn_title.Value" Value="Abweichungsentwicklung (tsqm)" />
+			<Item Name="Caption" Value="Progroup Dashboards" />
+			<Item Name="LocalizableStrings.ChartWidget_jg9ahyn_title.Value" Value="Entwicklung der Abweichung (tsqm)" />
 			<Item Name="LocalizableStrings.ChartWidget_jk2m9xb_title.Value" Value="Gründe für offene 3-6-9-Aufgaben" />
 			<Item Name="LocalizableStrings.ChartWidget_owf9zxk_title.Value" Value="Gründe für abgebrochene 3-6-9-Aufgaben" />
 			<Item Name="LocalizableStrings.ChartWidget_v0di9fu_title.Value" Value="Gesamtabweichung / wöchentlich (Alle Kunden)" />

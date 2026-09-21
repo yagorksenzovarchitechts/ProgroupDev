@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Sales manager metric snapshot" />
+			<Item Name="Columns.PgrActualMtd.Caption" Value="Actual / month to date" />
+			<Item Name="Columns.PgrBudgetMtd.Caption" Value="Budget / month to date" />
+			<Item Name="Columns.PgrDeviationPct.Caption" Value="Deviation %" />
+			<Item Name="Columns.PgrNineDayAvgOrderIntake.Caption" Value="9-day avg order intake" />
+			<Item Name="Columns.PgrSalesManagerId.Caption" Value="Sales manager" />
+			<Item Name="Columns.PgrSalesManagerName.Caption" Value="Sales manager name" />
+		</Items>
+	</Group>
+</Resources>
