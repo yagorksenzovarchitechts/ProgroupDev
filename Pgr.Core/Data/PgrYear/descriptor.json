@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "439fa0b6-672b-07de-c232-86fc09d3127f",
     "Name": "PgrYear",
-    "ModifiedOnUtc": "\/Date(1781812547000)\/",
+    "ModifiedOnUtc": "\/Date(1789735594000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "cef5a942-f218-42ae-b9f6-210d43bcaaa6",
@@ -15,6 +15,13 @@
         "IsKey": false,
         "ColumnName": "Name",
         "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "75db822a-8de0-c334-500f-a75740f1112b",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "PgrYearValue",
+        "DataTypeValueUId": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
       },
       {
         "ColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",

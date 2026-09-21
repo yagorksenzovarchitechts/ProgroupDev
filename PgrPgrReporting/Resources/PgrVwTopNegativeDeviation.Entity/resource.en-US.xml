@@ -5,6 +5,8 @@
 			<Item Name="Caption" Value="PgrVwTopNegativeDeviation" />
 			<Item Name="Columns.PgrAccount.Caption" Value="Account" />
 			<Item Name="Columns.PgrCustomerName.Caption" Value="Customer name" />
+			<Item Name="Columns.PgrDeviationPctBudget.Caption" Value="Deviation % of budget" />
+			<Item Name="Columns.PgrDeviationPctOrderIntake.Caption" Value="Deviation % of order intake" />
 			<Item Name="Columns.PgrDeviationValue.Caption" Value="Deviation value" />
 		</Items>
 	</Group>

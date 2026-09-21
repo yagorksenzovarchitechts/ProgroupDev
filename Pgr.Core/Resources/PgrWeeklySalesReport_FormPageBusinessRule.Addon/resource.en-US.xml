@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.32034121-8f21-1777-4540-813810545cff.Caption" Value="When status = Locked, hide refresh buttons" />
+			<Item Name="Caption" Value="Weekly Sales Report form page (Business rules)" />
+		</Items>
+	</Group>
+</Resources>

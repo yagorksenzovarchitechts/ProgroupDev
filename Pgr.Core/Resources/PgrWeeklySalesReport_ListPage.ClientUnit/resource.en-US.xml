@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Weekly Sales Report list page" />
+			<Item Name="LocalizableStrings.Button_7eauyxa_caption.Value" Value="Run 'Create Weekly Sales Reports process '" />
 			<Item Name="LocalizableStrings.PDS_PgrVisitReportPgrWeeklyReportId_Id_2jg1vxo.Value" Value="Service &amp; Delivery check marks" />
 			<Item Name="LocalizableStrings.PDS_PgrVisitReportPgrWeeklyReportId_Id_yd2y0x9.Value" Value="Quality check marks" />
 		</Items>

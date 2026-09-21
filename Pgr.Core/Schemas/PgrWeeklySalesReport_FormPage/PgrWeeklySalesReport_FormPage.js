@@ -181,9 +181,10 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 				"name": "EntityStageProgressBar_7z59s97",
 				"values": {
 					"type": "crt.EntityStageProgressBar",
-					"saveOnChange": false,
+					"saveOnChange": true,
 					"askUserToChangeSchema": true,
-					"entityName": "PgrWeeklySalesReport"
+					"entityName": "PgrWeeklySalesReport",
+					"visible": true
 				},
 				"parentName": "MainContainer",
 				"propertyName": "items",
@@ -1214,7 +1215,12 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 										}
 									}
 								},
-								"dependencies": []
+								"dependencies": [
+									{
+										"attributePath": "Id",
+										"relationPath": "PDS.Id"
+									}
+								]
 							}
 						},
 						"comparison": {
@@ -1277,7 +1283,12 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 										}
 									}
 								},
-								"dependencies": []
+								"dependencies": [
+									{
+										"attributePath": "Id",
+										"relationPath": "PDS.Id"
+									}
+								]
 							}
 						},
 						"comparison": {
@@ -2493,6 +2504,29 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 			},
 			{
 				"operation": "insert",
+				"name": "Input_gcfe30w",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrPriceDevelopment_0hx6gzo",
+					"control": "$PDS_PgrPriceDevelopment_0hx6gzo",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "GridContainer_ape3mla",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
 				"name": "Input_ddcwl23",
 				"values": {
 					"type": "crt.Input",
@@ -2507,13 +2541,13 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 3,
+						"row": 4,
 						"rowSpan": 1
 					}
 				},
 				"parentName": "GridContainer_ape3mla",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -3538,6 +3572,11 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 									}
 								}
 							}
+						}
+					},
+					"PDS_PgrPriceDevelopment_0hx6gzo": {
+						"modelConfig": {
+							"path": "PDS.PgrPriceDevelopment"
 						}
 					}
 				}

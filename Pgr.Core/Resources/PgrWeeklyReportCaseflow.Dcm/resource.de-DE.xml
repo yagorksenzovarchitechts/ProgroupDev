@@ -3,6 +3,11 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Weekly Report caseflow" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.AddRights.Caption" Value="Liste von hinzuzufügenden Rechten" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.DataSourceFilters.Caption" Value="Objekt erfolgt Bedingung" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.DeleteRights.Caption" Value="Liste von zu löschenden Rechten" />
+			<Item Name="Stages.Stage3.Elements.DcmElement1.ProcessFlowElement.Parameters.EntitySchemaUId.Caption" Value="Objekt" />
 		</Items>
 	</Group>
 </Resources>

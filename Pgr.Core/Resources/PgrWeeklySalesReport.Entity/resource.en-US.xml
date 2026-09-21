@@ -17,6 +17,7 @@
 			<Item Name="Columns.PgrNineDayAvgOrderIntake.Caption" Value="9-day avg order intake" />
 			<Item Name="Columns.PgrPeriodEnd.Caption" Value="Period end" />
 			<Item Name="Columns.PgrPeriodStart.Caption" Value="Period start" />
+			<Item Name="Columns.PgrPriceDevelopment.Caption" Value="Price development" />
 			<Item Name="Columns.PgrQualityCheckCount.Caption" Value="Quality check marks" />
 			<Item Name="Columns.PgrSalesManagerId.Caption" Value="Sales manager" />
 			<Item Name="Columns.PgrSentById.Caption" Value="Sent by" />
