@@ -3182,6 +3182,17 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 															"expressionType": 0,
 															"columnPath": "PgrAccount"
 														}
+													},
+													"deviationIsNotNullFilter": {
+														"comparisonType": 2,
+														"filterType": 2,
+														"isEnabled": true,
+														"isNull": false,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "PgrDeviationValue"
+														}
 													}
 												},
 												"logicalOperation": 0,
