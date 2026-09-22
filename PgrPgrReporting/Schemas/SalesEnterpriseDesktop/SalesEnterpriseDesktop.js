@@ -3191,7 +3191,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 														"trimDateTimeParameterToDate": false,
 														"leftExpression": {
 															"expressionType": 0,
-															"columnPath": "PgrDeviationValue"
+															"columnPath": "PgrDeviationPctBudget"
 														}
 													}
 												},
