@@ -2971,8 +2971,8 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 										},
 										"aggregation": {
 											"column": {
-												"orderDirection": 0,
-												"orderPosition": -1,
+												"orderDirection": 1,
+												"orderPosition": 0,
 												"isVisible": true,
 												"expression": {
 													"expressionType": 1,
@@ -2987,7 +2987,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											}
 										},
 										"dependencies": [],
-										"rowCount": 50,
+										"rowCount": 5,
 										"grouping": {
 											"type": "by-value",
 											"column": {
@@ -3060,8 +3060,8 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 										},
 										"aggregation": {
 											"column": {
-												"orderDirection": 0,
-												"orderPosition": -1,
+												"orderDirection": 1,
+												"orderPosition": 0,
 												"isVisible": true,
 												"expression": {
 													"expressionType": 1,
@@ -3076,7 +3076,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											}
 										},
 										"dependencies": [],
-										"rowCount": 50,
+										"rowCount": 5,
 										"grouping": {
 											"type": "by-value",
 											"column": {
@@ -3207,7 +3207,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 										"aggregation": {
 											"column": {
 												"orderDirection": 0,
-												"orderPosition": -1,
+												"orderPosition": 0,
 												"isVisible": true,
 												"expression": {
 													"expressionType": 1,
@@ -3222,7 +3222,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											}
 										},
 										"dependencies": [],
-										"rowCount": 50,
+										"rowCount": 5,
 										"grouping": {
 											"type": "by-value",
 											"column": {
