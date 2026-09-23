@@ -1,0 +1,10 @@
+{
+  "Descriptor": {
+    "UId": "b0baa181-9f3b-42e4-904a-6e6578e249c1",
+    "Name": "PgrChartSeriesSyncModule",
+    "ModifiedOnUtc": "\/Date(1790089296749)\/",
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Pgr chart series sync module",
+    "DependsOn": []
+  }
+}

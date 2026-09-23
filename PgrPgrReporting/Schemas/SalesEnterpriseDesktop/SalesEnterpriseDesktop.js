@@ -1,4 +1,4 @@
-define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(seriesSyncModule)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -2971,8 +2971,8 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 										},
 										"aggregation": {
 											"column": {
-												"orderDirection": 1,
-												"orderPosition": 0,
+												"orderDirection": 0,
+												"orderPosition": -1,
 												"isVisible": true,
 												"expression": {
 													"expressionType": 1,
@@ -3060,8 +3060,8 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 										},
 										"aggregation": {
 											"column": {
-												"orderDirection": 1,
-												"orderPosition": 0,
+												"orderDirection": 0,
+												"orderPosition": -1,
 												"isVisible": true,
 												"expression": {
 													"expressionType": 1,
@@ -3076,7 +3076,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 											}
 										},
 										"dependencies": [],
-										"rowCount": 5,
+										"rowCount": 50,
 										"grouping": {
 											"type": "by-value",
 											"column": {
@@ -3105,7 +3105,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 						"seriesOrder": {
 							"type": "by-aggregation-value",
 							"direction": 2,
-							"seriesIndex": 1
+							"seriesIndex": 0
 						},
 						"layout": {}
 					},
@@ -3218,7 +3218,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 										"aggregation": {
 											"column": {
 												"orderDirection": 0,
-												"orderPosition": 0,
+												"orderPosition": -1,
 												"isVisible": true,
 												"expression": {
 													"expressionType": 1,
@@ -4889,7 +4889,37 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[
+			{
+				request: "crt.HandleViewModelInitRequest",
+				handler: async (request, next) => {
+					const result = await next?.handle(request);
+					await seriesSyncModule.syncSecondarySeriesToPrimarySelection(
+						request.$context,
+						"ChartWidget_l52twdo_SeriesData_zc3tqqa",
+						"ChartWidget_l52twdo_SeriesData_9z8sadx"
+					);
+					return result;
+				}
+			},
+			{
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				handler: async (request, next) => {
+					const result = await next?.handle(request);
+					if (
+						request.attributeName === "ChartWidget_l52twdo_SeriesData_zc3tqqa" ||
+						request.attributeName === "ChartWidget_l52twdo_SeriesData_9z8sadx"
+					) {
+						await seriesSyncModule.syncSecondarySeriesToPrimarySelection(
+							request.$context,
+							"ChartWidget_l52twdo_SeriesData_zc3tqqa",
+							"ChartWidget_l52twdo_SeriesData_9z8sadx"
+						);
+					}
+					return result;
+				}
+			}
+		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
 	};
