@@ -6,7 +6,7 @@
 			<Item Name="Columns.EmployeesNumber.Caption" Value="Anzahl Mitarbeiter" />
 			<Item Name="Columns.Notes.Caption" Value="Beschreibung" />
 			<Item Name="Columns.Owner.Caption" Value="Verkaufsleiter" />
-			<Item Name="Columns.Parent.Caption" Value="Parent Account" />
+			<Item Name="Columns.Parent.Caption" Value="übergeordnetes Unternehmen" />
 			<Item Name="Columns.Pgr369ThresholdAbsolute.Caption" Value="Absoluter 369 Schwellwert" />
 			<Item Name="Columns.Pgr369ThresholdPercentage.Caption" Value="Prozentuale 369 Schwellwert" />
 			<Item Name="Columns.PgrAccountClassification.Caption" Value="Klassifizierung" />

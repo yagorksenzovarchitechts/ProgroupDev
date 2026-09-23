@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "4e29753b-d8ee-4e6e-9b5c-eb316f2cad26",
     "Name": "PgrWeeklyReportStatus",
-    "ModifiedOnUtc": "\/Date(1788786410000)\/",
+    "ModifiedOnUtc": "\/Date(1789999520000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "ccee5265-cb07-4c8e-8437-40352a4100ca",
@@ -11,7 +11,7 @@
     "Columns": [
       {
         "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
-        "IsForceUpdate": false,
+        "IsForceUpdate": true,
         "IsKey": false,
         "ColumnName": "Name",
         "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"

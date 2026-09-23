@@ -24,7 +24,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": "Generated"
+          "Value": "Approved by Sales Manager"
         }
       ]
     },
@@ -38,7 +38,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": "Sent"
+          "Value": "Sent & Locked"
         }
       ]
     }

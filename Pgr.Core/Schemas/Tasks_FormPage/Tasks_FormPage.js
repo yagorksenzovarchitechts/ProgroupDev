@@ -2574,7 +2574,15 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 									"name": "GridDetailSearchFilter_a81j6le_GridDetail_1ay6zyn",
 									"loadOnChange": true
 								}
-							]
+							],
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "desc",
+										"columnName": "ActivityCategory"
+									}
+								]
+							}
 						},
 						"viewModelConfig": {
 							"attributes": {

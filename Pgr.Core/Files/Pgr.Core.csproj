@@ -381,6 +381,11 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
+		<Reference Include="DeduplicationFreedom_Customer360App">
+			<HintPath>$(RelativePkgFolderPath)/DeduplicationFreedom_Customer360App/$(StandalonePackageAssemblyPath)/DeduplicationFreedom_Customer360App.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
 		<Reference Include="Terrasoft.Configuration">
 			<HintPath>$(RelativePkgFolderPath)/../bin/Terrasoft.Configuration.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
@@ -458,7 +463,11 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitReason/PgrVisitReason.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitReason/PgrVisitReason.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitReport/PgrVisitReport.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitReport/PgrVisitReport.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitType/PgrVisitType.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitType/PgrVisitType.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportAlertSnapshot/PgrWeeklyReportAlertSnapshot.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportAlertSnapshot/PgrWeeklyReportAlertSnapshot.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportMeasureSnapshot/PgrWeeklyReportMeasureSnapshot.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportMeasureSnapshot/PgrWeeklyReportMeasureSnapshot.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportPlannedVisitSnapshot/PgrWeeklyReportPlannedVisitSnapshot.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportPlannedVisitSnapshot/PgrWeeklyReportPlannedVisitSnapshot.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportStatus/PgrWeeklyReportStatus.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportStatus/PgrWeeklyReportStatus.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportVisitSnapshot/PgrWeeklyReportVisitSnapshot.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportVisitSnapshot/PgrWeeklyReportVisitSnapshot.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklySalesReport/PgrWeeklySalesReport.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklySalesReport/PgrWeeklySalesReport.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWorkShiftModel/PgrWorkShiftModel.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWorkShiftModel/PgrWorkShiftModel.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrYear/PgrYear.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrYear/PgrYear.cs')" />

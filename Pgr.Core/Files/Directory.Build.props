@@ -69,7 +69,11 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrVisitReason/PgrVisitReason.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrVisitReason/PgrVisitReason.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrVisitReport/PgrVisitReport.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrVisitReport/PgrVisitReport.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrVisitType/PgrVisitType.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrVisitType/PgrVisitType.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportAlertSnapshot/PgrWeeklyReportAlertSnapshot.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportAlertSnapshot/PgrWeeklyReportAlertSnapshot.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportMeasureSnapshot/PgrWeeklyReportMeasureSnapshot.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportMeasureSnapshot/PgrWeeklyReportMeasureSnapshot.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportPlannedVisitSnapshot/PgrWeeklyReportPlannedVisitSnapshot.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportPlannedVisitSnapshot/PgrWeeklyReportPlannedVisitSnapshot.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportStatus/PgrWeeklyReportStatus.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportStatus/PgrWeeklyReportStatus.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportVisitSnapshot/PgrWeeklyReportVisitSnapshot.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportVisitSnapshot/PgrWeeklyReportVisitSnapshot.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrWeeklySalesReport/PgrWeeklySalesReport.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrWeeklySalesReport/PgrWeeklySalesReport.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrWorkShiftModel/PgrWorkShiftModel.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrWorkShiftModel/PgrWorkShiftModel.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrYear/PgrYear.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrYear/PgrYear.cs')" />

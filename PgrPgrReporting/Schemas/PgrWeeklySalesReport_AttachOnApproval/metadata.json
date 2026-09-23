@@ -38,8 +38,7 @@
         "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
         "L8": {
           "GS1": 3,
-          "GS2": "[#[PropertyValue:Caption]#]",
-          "GS5": "516ca73d-d84e-4242-9dbc-f9e159c65b75"
+          "GS2": "[#[PropertyValue:Caption]#]"
         }
       },
       "BK1": "FFFFFFFF",
@@ -138,7 +137,7 @@
           "BO3": true,
           "BP2": [],
           "CL2": "FFFFFFFF",
-          "CH1": "// IMPORTANT: When implementing\r\n// long-running operations,\r\n// it is crucial to enable timely and\r\n// responsive cancellation. To achieve\r\n// this, ensure that your code\r\n// is designed to respond appropriately\r\n// to cancellation requests using\r\n// the context.CancellationToken\r\n// mechanism. For more detailed\r\n// information and examples,\r\n// please, refer to our documentation.\r\nGuid reportId = Get<Guid>(\"TriggerRecordId\");\r\n\r\nvar select = new Terrasoft.Core.DB.Select(UserConnection)\r\n    .Column(\"PgrName\")\r\n    .From(\"PgrWeeklySalesReport\")\r\n    .Where(\"Id\").IsEqual(Terrasoft.Core.DB.Column.Parameter(reportId)) as Terrasoft.Core.DB.Select;\r\n\r\nstring reportName = string.Empty;\r\nusing (var dbExecutor = UserConnection.EnsureDBConnection()) {\r\n    using (var reader = select.ExecuteReader(dbExecutor)) {\r\n        if (reader.Read()) {\r\n            reportName = reader.GetColumnValue<string>(\"PgrName\");\r\n        }\r\n    }\r\n}\r\n\r\nstring safeName = System.Text.RegularExpressions.Regex.Replace(reportName, @\"[^a-zA-Z0-9]+\", \"_\").Trim('_');\r\nstring timestamp = DateTime.Now.ToString(\"yyyyMMdd_HHmmss\");\r\nstring fileName = \"WeeklySalesReport_\" + safeName + \"_\" + timestamp + \".docx\";\r\n\r\nvar reportService = new Terrasoft.Configuration.ReportService.ReportService();\r\nTerrasoft.Configuration.ReportService.ReportData report =\r\n    reportService.GenerateMSWordReport(\"fac82928-2a73-5569-fe8b-baf7d7c23974\", reportId.ToString(), false);\r\n\r\nvar fileSchema = UserConnection.EntitySchemaManager.GetInstanceByName(\"SysFile\");\r\nvar fileEntity = fileSchema.CreateEntity(UserConnection);\r\nfileEntity.SetDefColumnValues();\r\nfileEntity.SetColumnValue(\"RecordId\", reportId);\r\nfileEntity.SetColumnValue(\"RecordSchemaName\", \"PgrWeeklySalesReport\");\r\nfileEntity.SetColumnValue(\"Name\", fileName);\r\nfileEntity.SetColumnValue(\"TypeId\", new Guid(\"529bc2f8-0ee0-df11-971b-001d60e938c6\"));\r\nfileEntity.SetColumnValue(\"Data\", report.Data);\r\nfileEntity.Save();\r\n\r\nreturn true;",
+          "CH1": "// IMPORTANT: When implementing\r\n// long-running operations,\r\n// it is crucial to enable timely and\r\n// responsive cancellation. To achieve\r\n// this, ensure that your code\r\n// is designed to respond appropriately\r\n// to cancellation requests using\r\n// the context.CancellationToken\r\n// mechanism. For more detailed\r\n// information and examples,\r\n// please, refer to our documentation.\r\nGuid reportId = Get<Guid>(\"TriggerRecordId\");\r\n\r\nvar select = new Terrasoft.Core.DB.Select(UserConnection)\r\n    .Column(\"PgrName\")\r\n    .From(\"PgrWeeklySalesReport\")\r\n    .Where(\"Id\").IsEqual(Terrasoft.Core.DB.Column.Parameter(reportId)) as Terrasoft.Core.DB.Select;\r\n\r\nstring reportName = string.Empty;\r\nusing (var dbExecutor = UserConnection.EnsureDBConnection()) {\r\n    using (var reader = select.ExecuteReader(dbExecutor)) {\r\n        if (reader.Read()) {\r\n            reportName = reader.GetColumnValue<string>(\"PgrName\");\r\n        }\r\n    }\r\n}\r\n\r\nstring safeName = System.Text.RegularExpressions.Regex.Replace(reportName, @\"[^a-zA-Z0-9]+\", \"_\").Trim('_');\r\nstring timestamp = DateTime.Now.ToString(\"yyyyMMdd_HHmmss\");\r\nstring fileName = \"WeeklySalesReport_\" + safeName + \"_\" + timestamp + \".docx\";\r\n\r\nvar reportService = new Terrasoft.Configuration.ReportService.ReportService();\r\nTerrasoft.Configuration.ReportService.ReportData report =\r\n    reportService.GenerateMSWordReport(\"fac82928-2a73-5569-fe8b-baf7d7c23974\", reportId.ToString(), false);\r\n\r\nvar fileSchema = UserConnection.EntitySchemaManager.GetInstanceByName(\"SysFile\");\r\nvar fileEntity = fileSchema.CreateEntity(UserConnection);\r\nfileEntity.SetDefColumnValues();\r\nfileEntity.SetColumnValue(\"RecordId\", reportId);\r\nfileEntity.SetColumnValue(\"RecordSchemaName\", \"PgrWeeklySalesReport\");\r\nfileEntity.SetColumnValue(\"Name\", fileName);\r\nfileEntity.SetColumnValue(\"TypeId\", new Guid(\"529bc2f8-0ee0-df11-971b-001d60e938c6\"));\r\nfileEntity.SetColumnValue(\"Data\", report.Data);\r\nfileEntity.SetColumnValue(\"Size\", report.Data.Length);\r\nfileEntity.SetColumnValue(\"TotalSize\", report.Data.Length);\r\nfileEntity.SetColumnValue(\"SysFileStorage\", new Guid(\"65e42805-0e6d-43c9-8784-32b555f08421\"));\r\nfileEntity.Save();\r\n\r\nreturn true;",
           "CH2": true
         },
         {
@@ -155,7 +154,7 @@
           "CI5": "FF939598",
           "CI6": 1,
           "CI11": "91;201",
-          "CI12": "202;201"
+          "CI12": "240;201"
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
@@ -171,8 +170,8 @@
           "CI3": "null",
           "CI5": "FF939598",
           "CI6": 1,
-          "CI11": "271;201",
-          "CI12": "395;201"
+          "CI11": "309;201",
+          "CI12": "420;201"
         }
       ],
       "BK9": [],
