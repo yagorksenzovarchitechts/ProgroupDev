@@ -477,7 +477,7 @@
           "GT4": "d3021ca7-7450-4678-a117-060171eb2976",
           "GT1": {
             "GS1": 1,
-            "GS2": "{\"className\":\"Terrasoft.FilterGroup\",\"serializedFilterEditData\":\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{\\\"662e91f9-2710-4433-b796-5965d621fdb3\\\":{\\\"className\\\":\\\"Terrasoft.InFilter\\\",\\\"filterType\\\":4,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrOwner\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"662e91f9-2710-4433-b796-5965d621fdb3\\\",\\\"dataValueType\\\":10,\\\"leftExpressionCaption\\\":\\\"Owner\\\",\\\"referenceSchemaName\\\":\\\"Contact\\\",\\\"rightExpressions\\\":[{\\\"className\\\":\\\"Terrasoft.ParameterExpression\\\",\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"className\\\":\\\"Terrasoft.Parameter\\\",\\\"dataValueType\\\":26,\\\"value\\\":{\\\"value\\\":\\\"[IsOwnerSchema:false].[IsSchema:false].[Parameter:{3de02f72-9d3f-4777-b988-b04c5dcb0f43}]\\\",\\\"displayValue\\\":\\\"Sales manager\\\",\\\"Id\\\":\\\"dacf8146-0447-4d4a-860d-43d7252cfe99\\\"}}}]},\\\"e7a40f48-bb7b-4b9a-b4ab-331758759306\\\":{\\\"className\\\":\\\"Terrasoft.CompareFilter\\\",\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrIsRelevantForWeeklyReport\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"e7a40f48-bb7b-4b9a-b4ab-331758759306\\\",\\\"dataValueType\\\":12,\\\"leftExpressionCaption\\\":\\\"Relevant for weekly report\\\",\\\"rightExpression\\\":{\\\"className\\\":\\\"Terrasoft.ParameterExpression\\\",\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"className\\\":\\\"Terrasoft.Parameter\\\",\\\"dataValueType\\\":12,\\\"value\\\":true}}},\\\"44559ca6-37c4-45b0-a840-12306cf0f960\\\":{\\\"className\\\":\\\"Terrasoft.CompareFilter\\\",\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":true,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrVisitDate\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"44559ca6-37c4-45b0-a840-12306cf0f960\\\",\\\"dataValueType\\\":8,\\\"leftExpressionCaption\\\":\\\"Visit date\\\",\\\"rightExpression\\\":{\\\"className\\\":\\\"Terrasoft.FunctionExpression\\\",\\\"expressionType\\\":1,\\\"functionType\\\":1,\\\"macrosType\\\":7}}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrVisitReport\\\",\\\"key\\\":\\\"\\\"}\",\"dataSourceFilters\":\"{\\\"items\\\":{\\\"662e91f9-2710-4433-b796-5965d621fdb3\\\":{\\\"filterType\\\":4,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrOwner\\\"},\\\"rightExpressions\\\":[{\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"dataValueType\\\":26,\\\"value\\\":{\\\"value\\\":\\\"[IsOwnerSchema:false].[IsSchema:false].[Parameter:{3de02f72-9d3f-4777-b988-b04c5dcb0f43}]\\\",\\\"Id\\\":\\\"dacf8146-0447-4d4a-860d-43d7252cfe99\\\"}}}]},\\\"e7a40f48-bb7b-4b9a-b4ab-331758759306\\\":{\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrIsRelevantForWeeklyReport\\\"},\\\"rightExpression\\\":{\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"dataValueType\\\":12,\\\"value\\\":true}}},\\\"44559ca6-37c4-45b0-a840-12306cf0f960\\\":{\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":true,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrVisitDate\\\"},\\\"rightExpression\\\":{\\\"expressionType\\\":1,\\\"functionType\\\":1,\\\"macrosType\\\":7}}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrVisitReport\\\"}\"}",
+            "GS2": "{\"className\":\"Terrasoft.FilterGroup\",\"serializedFilterEditData\":\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{\\\"662e91f9-2710-4433-b796-5965d621fdb3\\\":{\\\"className\\\":\\\"Terrasoft.InFilter\\\",\\\"filterType\\\":4,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrAccount.PgrSalesManager\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"662e91f9-2710-4433-b796-5965d621fdb3\\\",\\\"dataValueType\\\":10,\\\"leftExpressionCaption\\\":\\\"Account (Customer).Sales Manager\\\",\\\"referenceSchemaName\\\":\\\"Contact\\\",\\\"rightExpressions\\\":[{\\\"className\\\":\\\"Terrasoft.ParameterExpression\\\",\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"className\\\":\\\"Terrasoft.Parameter\\\",\\\"dataValueType\\\":26,\\\"value\\\":{\\\"value\\\":\\\"[IsOwnerSchema:false].[IsSchema:false].[Parameter:{3de02f72-9d3f-4777-b988-b04c5dcb0f43}]\\\",\\\"displayValue\\\":\\\"Sales manager\\\",\\\"Id\\\":\\\"43c34bfe-83d1-4efc-b9f3-f2f27e749662\\\"}}}]},\\\"e7a40f48-bb7b-4b9a-b4ab-331758759306\\\":{\\\"className\\\":\\\"Terrasoft.CompareFilter\\\",\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrIsRelevantForWeeklyReport\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"e7a40f48-bb7b-4b9a-b4ab-331758759306\\\",\\\"dataValueType\\\":12,\\\"leftExpressionCaption\\\":\\\"Relevant for weekly report\\\",\\\"rightExpression\\\":{\\\"className\\\":\\\"Terrasoft.ParameterExpression\\\",\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"className\\\":\\\"Terrasoft.Parameter\\\",\\\"dataValueType\\\":12,\\\"value\\\":true}}},\\\"44559ca6-37c4-45b0-a840-12306cf0f960\\\":{\\\"className\\\":\\\"Terrasoft.CompareFilter\\\",\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":true,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrVisitDate\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"44559ca6-37c4-45b0-a840-12306cf0f960\\\",\\\"dataValueType\\\":8,\\\"leftExpressionCaption\\\":\\\"Visit date\\\",\\\"rightExpression\\\":{\\\"className\\\":\\\"Terrasoft.FunctionExpression\\\",\\\"expressionType\\\":1,\\\"functionType\\\":1,\\\"macrosType\\\":7}}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrVisitReport\\\",\\\"key\\\":\\\"\\\"}\",\"dataSourceFilters\":\"{\\\"items\\\":{\\\"662e91f9-2710-4433-b796-5965d621fdb3\\\":{\\\"filterType\\\":4,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrAccount.PgrSalesManager\\\"},\\\"rightExpressions\\\":[{\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"dataValueType\\\":26,\\\"value\\\":{\\\"value\\\":\\\"[IsOwnerSchema:false].[IsSchema:false].[Parameter:{3de02f72-9d3f-4777-b988-b04c5dcb0f43}]\\\",\\\"Id\\\":\\\"43c34bfe-83d1-4efc-b9f3-f2f27e749662\\\"}}}]},\\\"e7a40f48-bb7b-4b9a-b4ab-331758759306\\\":{\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrIsRelevantForWeeklyReport\\\"},\\\"rightExpression\\\":{\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"dataValueType\\\":12,\\\"value\\\":true}}},\\\"44559ca6-37c4-45b0-a840-12306cf0f960\\\":{\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":true,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrVisitDate\\\"},\\\"rightExpression\\\":{\\\"expressionType\\\":1,\\\"functionType\\\":1,\\\"macrosType\\\":7}}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrVisitReport\\\"}\"}",
             "GS5": "a08d743d-bfc8-413d-add6-4468bd7d2aad"
           }
         },
@@ -1054,20 +1054,6 @@
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaMapping",
-          "UId": "26c5115a-0a5a-4385-886e-8dffd477b6dd",
-          "A2": "SubProcess1",
-          "A3": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
-          "A4": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
-          "GT2": "[Element:{286f58db-8048-4e76-9493-771488d4e731}].[Parameter:{b7ad87f1-5d9c-4ca8-b127-ab6bfeaa9df5}]",
-          "GT3": "b7ad87f1-5d9c-4ca8-b127-ab6bfeaa9df5",
-          "GT5": "81e314d4-1e6c-4ee2-a226-9f7d78107345",
-          "GT4": "f4273fcf-fe61-4cb7-aa6f-ebc8e41391e7",
-          "GT1": {
-            "GS5": "f4273fcf-fe61-4cb7-aa6f-ebc8e41391e7"
-          }
-        },
-        {
-          "BL1": "Terrasoft.Core.Process.ProcessSchemaMapping",
           "UId": "4999b0b5-85bb-40a1-ae7a-163e381d1ad1",
           "A2": "LinkEntityToProcessUserTask1",
           "A3": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
@@ -1094,6 +1080,20 @@
           "GT1": {
             "GS1": 1,
             "GS2": "f0eae67f-f127-47f0-a6be-59ffe20539ba"
+          }
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaMapping",
+          "UId": "27ad7d11-251e-40ec-8440-176e33ce8e99",
+          "A2": "SubProcess1",
+          "A3": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
+          "A4": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
+          "GT2": "[Element:{286f58db-8048-4e76-9493-771488d4e731}].[Parameter:{b7ad87f1-5d9c-4ca8-b127-ab6bfeaa9df5}]",
+          "GT3": "b7ad87f1-5d9c-4ca8-b127-ab6bfeaa9df5",
+          "GT5": "81e314d4-1e6c-4ee2-a226-9f7d78107345",
+          "GT4": "f4273fcf-fe61-4cb7-aa6f-ebc8e41391e7",
+          "GT1": {
+            "GS5": "f4273fcf-fe61-4cb7-aa6f-ebc8e41391e7"
           }
         }
       ],
@@ -1430,7 +1430,7 @@
           "A4": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
           "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
           "IL2": "abd3bffe-f0a8-437e-af07-58cd542e250c",
-          "BL3": "764;303",
+          "BL3": "737;303",
           "BL7": "db6abed1-0c5f-455b-8053-2665378cdb71",
           "BN2": "69;55",
           "BO2": true,
@@ -1537,7 +1537,7 @@
           "A4": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
           "A5": "79407b15-c164-4a99-9c5b-36fb13835f0d",
           "IL2": "abd3bffe-f0a8-437e-af07-58cd542e250c",
-          "BL3": "1140;303",
+          "BL3": "1193;303",
           "BL7": "49eafdbb-a89e-4bdf-a29d-7f17b1670a45",
           "BL8": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
           "BN2": "69;55",
@@ -1587,7 +1587,7 @@
           "A4": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
           "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
           "IL2": "abd3bffe-f0a8-437e-af07-58cd542e250c",
-          "BL3": "960;303",
+          "BL3": "1041;303",
           "BL7": "d3021ca7-7450-4678-a117-060171eb2976",
           "BN2": "69;55",
           "BO3": true,
@@ -1634,7 +1634,7 @@
               "L1": "394e160f-c8e0-46fa-9c0d-75d97e9e9169",
               "L8": {
                 "GS1": 1,
-                "GS2": "{\"className\":\"Terrasoft.FilterGroup\",\"serializedFilterEditData\":\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{\\\"662e91f9-2710-4433-b796-5965d621fdb3\\\":{\\\"className\\\":\\\"Terrasoft.InFilter\\\",\\\"filterType\\\":4,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrOwner\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"662e91f9-2710-4433-b796-5965d621fdb3\\\",\\\"dataValueType\\\":10,\\\"leftExpressionCaption\\\":\\\"Owner\\\",\\\"referenceSchemaName\\\":\\\"Contact\\\",\\\"rightExpressions\\\":[{\\\"className\\\":\\\"Terrasoft.ParameterExpression\\\",\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"className\\\":\\\"Terrasoft.Parameter\\\",\\\"dataValueType\\\":26,\\\"value\\\":{\\\"value\\\":\\\"[IsOwnerSchema:false].[IsSchema:false].[Parameter:{3de02f72-9d3f-4777-b988-b04c5dcb0f43}]\\\",\\\"displayValue\\\":\\\"Sales manager\\\",\\\"Id\\\":\\\"dacf8146-0447-4d4a-860d-43d7252cfe99\\\"}}}]},\\\"e7a40f48-bb7b-4b9a-b4ab-331758759306\\\":{\\\"className\\\":\\\"Terrasoft.CompareFilter\\\",\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrIsRelevantForWeeklyReport\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"e7a40f48-bb7b-4b9a-b4ab-331758759306\\\",\\\"dataValueType\\\":12,\\\"leftExpressionCaption\\\":\\\"Relevant for weekly report\\\",\\\"rightExpression\\\":{\\\"className\\\":\\\"Terrasoft.ParameterExpression\\\",\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"className\\\":\\\"Terrasoft.Parameter\\\",\\\"dataValueType\\\":12,\\\"value\\\":true}}},\\\"44559ca6-37c4-45b0-a840-12306cf0f960\\\":{\\\"className\\\":\\\"Terrasoft.CompareFilter\\\",\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":true,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrVisitDate\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"44559ca6-37c4-45b0-a840-12306cf0f960\\\",\\\"dataValueType\\\":8,\\\"leftExpressionCaption\\\":\\\"Visit date\\\",\\\"rightExpression\\\":{\\\"className\\\":\\\"Terrasoft.FunctionExpression\\\",\\\"expressionType\\\":1,\\\"functionType\\\":1,\\\"macrosType\\\":7}}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrVisitReport\\\",\\\"key\\\":\\\"\\\"}\",\"dataSourceFilters\":\"{\\\"items\\\":{\\\"662e91f9-2710-4433-b796-5965d621fdb3\\\":{\\\"filterType\\\":4,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrOwner\\\"},\\\"rightExpressions\\\":[{\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"dataValueType\\\":26,\\\"value\\\":{\\\"value\\\":\\\"[IsOwnerSchema:false].[IsSchema:false].[Parameter:{3de02f72-9d3f-4777-b988-b04c5dcb0f43}]\\\",\\\"Id\\\":\\\"dacf8146-0447-4d4a-860d-43d7252cfe99\\\"}}}]},\\\"e7a40f48-bb7b-4b9a-b4ab-331758759306\\\":{\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrIsRelevantForWeeklyReport\\\"},\\\"rightExpression\\\":{\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"dataValueType\\\":12,\\\"value\\\":true}}},\\\"44559ca6-37c4-45b0-a840-12306cf0f960\\\":{\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":true,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrVisitDate\\\"},\\\"rightExpression\\\":{\\\"expressionType\\\":1,\\\"functionType\\\":1,\\\"macrosType\\\":7}}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrVisitReport\\\"}\"}",
+                "GS2": "{\"className\":\"Terrasoft.FilterGroup\",\"serializedFilterEditData\":\"{\\\"className\\\":\\\"Terrasoft.FilterGroup\\\",\\\"items\\\":{\\\"662e91f9-2710-4433-b796-5965d621fdb3\\\":{\\\"className\\\":\\\"Terrasoft.InFilter\\\",\\\"filterType\\\":4,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrAccount.PgrSalesManager\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"662e91f9-2710-4433-b796-5965d621fdb3\\\",\\\"dataValueType\\\":10,\\\"leftExpressionCaption\\\":\\\"Account (Customer).Sales Manager\\\",\\\"referenceSchemaName\\\":\\\"Contact\\\",\\\"rightExpressions\\\":[{\\\"className\\\":\\\"Terrasoft.ParameterExpression\\\",\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"className\\\":\\\"Terrasoft.Parameter\\\",\\\"dataValueType\\\":26,\\\"value\\\":{\\\"value\\\":\\\"[IsOwnerSchema:false].[IsSchema:false].[Parameter:{3de02f72-9d3f-4777-b988-b04c5dcb0f43}]\\\",\\\"displayValue\\\":\\\"Sales manager\\\",\\\"Id\\\":\\\"43c34bfe-83d1-4efc-b9f3-f2f27e749662\\\"}}}]},\\\"e7a40f48-bb7b-4b9a-b4ab-331758759306\\\":{\\\"className\\\":\\\"Terrasoft.CompareFilter\\\",\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrIsRelevantForWeeklyReport\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"e7a40f48-bb7b-4b9a-b4ab-331758759306\\\",\\\"dataValueType\\\":12,\\\"leftExpressionCaption\\\":\\\"Relevant for weekly report\\\",\\\"rightExpression\\\":{\\\"className\\\":\\\"Terrasoft.ParameterExpression\\\",\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"className\\\":\\\"Terrasoft.Parameter\\\",\\\"dataValueType\\\":12,\\\"value\\\":true}}},\\\"44559ca6-37c4-45b0-a840-12306cf0f960\\\":{\\\"className\\\":\\\"Terrasoft.CompareFilter\\\",\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":true,\\\"leftExpression\\\":{\\\"className\\\":\\\"Terrasoft.ColumnExpression\\\",\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrVisitDate\\\"},\\\"isAggregative\\\":false,\\\"key\\\":\\\"44559ca6-37c4-45b0-a840-12306cf0f960\\\",\\\"dataValueType\\\":8,\\\"leftExpressionCaption\\\":\\\"Visit date\\\",\\\"rightExpression\\\":{\\\"className\\\":\\\"Terrasoft.FunctionExpression\\\",\\\"expressionType\\\":1,\\\"functionType\\\":1,\\\"macrosType\\\":7}}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrVisitReport\\\",\\\"key\\\":\\\"\\\"}\",\"dataSourceFilters\":\"{\\\"items\\\":{\\\"662e91f9-2710-4433-b796-5965d621fdb3\\\":{\\\"filterType\\\":4,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrAccount.PgrSalesManager\\\"},\\\"rightExpressions\\\":[{\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"dataValueType\\\":26,\\\"value\\\":{\\\"value\\\":\\\"[IsOwnerSchema:false].[IsSchema:false].[Parameter:{3de02f72-9d3f-4777-b988-b04c5dcb0f43}]\\\",\\\"Id\\\":\\\"43c34bfe-83d1-4efc-b9f3-f2f27e749662\\\"}}}]},\\\"e7a40f48-bb7b-4b9a-b4ab-331758759306\\\":{\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":false,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrIsRelevantForWeeklyReport\\\"},\\\"rightExpression\\\":{\\\"expressionType\\\":2,\\\"parameter\\\":{\\\"dataValueType\\\":12,\\\"value\\\":true}}},\\\"44559ca6-37c4-45b0-a840-12306cf0f960\\\":{\\\"filterType\\\":1,\\\"comparisonType\\\":3,\\\"isEnabled\\\":true,\\\"trimDateTimeParameterToDate\\\":true,\\\"leftExpression\\\":{\\\"expressionType\\\":0,\\\"columnPath\\\":\\\"PgrVisitDate\\\"},\\\"rightExpression\\\":{\\\"expressionType\\\":1,\\\"functionType\\\":1,\\\"macrosType\\\":7}}},\\\"logicalOperation\\\":0,\\\"isEnabled\\\":true,\\\"filterType\\\":6,\\\"rootSchemaName\\\":\\\"PgrVisitReport\\\"}\"}",
                 "GS5": "a08d743d-bfc8-413d-add6-4468bd7d2aad"
               }
             },
@@ -2190,7 +2190,7 @@
           "A4": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
           "A5": "79407b15-c164-4a99-9c5b-36fb13835f0d",
           "IL2": "abd3bffe-f0a8-437e-af07-58cd542e250c",
-          "BL3": "174;502",
+          "BL3": "882;303",
           "BL7": "fcace79b-6103-4992-8a1f-8e443114321a",
           "BL8": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
           "BN2": "69;55",
@@ -2263,7 +2263,7 @@
           "CI3": "null",
           "CI5": "FF939598",
           "CI6": 1,
-          "CI11": "1209;331",
+          "CI11": "1262;331",
           "CI12": "1320;331"
         },
         {
@@ -2293,12 +2293,12 @@
           "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
           "BL7": "0d8351f6-c2f4-4737-bdd9-6fbfe0837fec",
           "CI1": "5462bad2-f3a3-4bac-a2cc-54262657eb13",
-          "CI2": "02ab1ffc-9efa-4e90-9b27-240ff39caafb",
+          "CI2": "883cca3e-05bb-471e-bc92-4aa7eac1b9b0",
           "CI3": "null",
           "CI5": "FF939598",
           "CI6": 1,
-          "CI11": "833;331",
-          "CI12": "960;331"
+          "CI11": "806;331",
+          "CI12": "882;331"
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
@@ -2313,8 +2313,8 @@
           "CI3": "null",
           "CI5": "FF939598",
           "CI6": 1,
-          "CI11": "1029;331",
-          "CI12": "1140;331"
+          "CI11": "1110;331",
+          "CI12": "1193;331"
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaConditionalFlow",
@@ -2365,7 +2365,24 @@
           "CI5": "FF939598",
           "CI6": 1,
           "CI11": "662;331",
-          "CI12": "764;331"
+          "CI12": "737;331"
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
+          "UId": "b690ff95-d7ee-44c6-9e90-26a3ce0ca7a6",
+          "A2": "SequenceFlow2",
+          "A3": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
+          "A4": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
+          "A5": "79407b15-c164-4a99-9c5b-36fb13835f0d",
+          "BL7": "0d8351f6-c2f4-4737-bdd9-6fbfe0837fec",
+          "BL8": "a08d743d-bfc8-413d-add6-4468bd7d2aad",
+          "CI1": "883cca3e-05bb-471e-bc92-4aa7eac1b9b0",
+          "CI2": "02ab1ffc-9efa-4e90-9b27-240ff39caafb",
+          "CI3": "null",
+          "CI5": "FF939598",
+          "CI6": 1,
+          "CI11": "951;331",
+          "CI12": "1041;331"
         }
       ],
       "BK9": [],

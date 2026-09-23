@@ -23,6 +23,9 @@
 			<Item Name="Columns.PgrReasonNotes.Caption" Value="Anmerkungen zur Ursache" />
 			<Item Name="Columns.PgrReasonSetOn.Caption" Value="Ursache erfasst am" />
 			<Item Name="Columns.PgrVisitReport.Caption" Value="Besuchsbericht" />
+			<Item Name="Columns.RemindToAuthor.Caption" Value="Verfasser erinnern" />
+			<Item Name="Columns.RemindToOwner.Caption" Value="Verantwortlichen erinnern" />
+			<Item Name="Columns.RemindToOwnerDate.Caption" Value="Verantwortlichen erinnern" />
 			<Item Name="Columns.ShowInScheduler.Caption" Value="Im Kalender anzeigen" />
 			<Item Name="Columns.StartDate.Caption" Value="Startdatum und Startzeitpunkt" />
 			<Item Name="Columns.Title.Caption" Value="Titel" />

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Weekly Report Measure Snapshot" />
+			<Item Name="Columns.PgrAccountId.Caption" Value="Account (Customer)" />
+			<Item Name="Columns.PgrDueDate.Caption" Value="Due date and time" />
+			<Item Name="Columns.PgrName.Caption" Value="Name" />
+			<Item Name="Columns.PgrStatusId.Caption" Value="Status" />
+			<Item Name="Columns.PgrTitle.Caption" Value="Subject" />
+			<Item Name="Columns.PgrWeeklyReportId.Caption" Value="Weekly report" />
+			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
+		</Items>
+	</Group>
+</Resources>

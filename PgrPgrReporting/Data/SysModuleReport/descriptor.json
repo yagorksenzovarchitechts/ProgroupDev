@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "c90952af-5141-bad4-09fb-104bb416b75c",
     "Name": "SysModuleReport",
-    "ModifiedOnUtc": "\/Date(1789996053000)\/",
+    "ModifiedOnUtc": "\/Date(1790000873000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "0a62cd3d-6541-4c5c-903f-e5b0fc665297",
@@ -25,7 +25,7 @@
       },
       {
         "ColumnUId": "362bb0b0-d3da-4b01-abe6-a617e1b1257f",
-        "IsForceUpdate": false,
+        "IsForceUpdate": true,
         "IsKey": false,
         "ColumnName": "FileName",
         "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
@@ -53,7 +53,7 @@
       },
       {
         "ColumnUId": "60588e53-4a6b-ea00-a7a9-a6340b8a3288",
-        "IsForceUpdate": false,
+        "IsForceUpdate": true,
         "IsKey": false,
         "ColumnName": "MacrosSettings",
         "DataTypeValueUId": "c0f04627-4620-4bc0-84e5-9419dc8516b1"
@@ -81,7 +81,7 @@
       },
       {
         "ColumnUId": "aba36b7e-96c2-4005-a9b9-64ceee36aaac",
-        "IsForceUpdate": false,
+        "IsForceUpdate": true,
         "IsKey": false,
         "ColumnName": "MacrosList",
         "DataTypeValueUId": "c0f04627-4620-4bc0-84e5-9419dc8516b1"
@@ -95,7 +95,7 @@
       },
       {
         "ColumnUId": "b6607c22-ca01-41f0-8637-610221a869b6",
-        "IsForceUpdate": false,
+        "IsForceUpdate": true,
         "IsKey": false,
         "ColumnName": "SysModule",
         "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
@@ -109,7 +109,7 @@
       },
       {
         "ColumnUId": "cb6b495c-384d-4a40-9f93-35c6dfb79a3b",
-        "IsForceUpdate": false,
+        "IsForceUpdate": true,
         "IsKey": false,
         "ColumnName": "File",
         "DataTypeValueUId": "ba40cfc5-f554-4c26-8f57-1bb29cf43c4e"

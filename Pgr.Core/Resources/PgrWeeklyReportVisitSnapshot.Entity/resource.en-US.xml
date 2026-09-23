@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Weekly Report Visit Snapshot" />
+			<Item Name="Columns.PgrAccountId.Caption" Value="Account (Customer)" />
+			<Item Name="Columns.PgrCompetitionId.Caption" Value="Competition" />
+			<Item Name="Columns.PgrCompetitionText.Caption" Value="Competition remarks" />
+			<Item Name="Columns.PgrDeliveryShare.Caption" Value="Progroup delivery share (auto)" />
+			<Item Name="Columns.PgrKeyTopics.Caption" Value="Key topics" />
+			<Item Name="Columns.PgrName.Caption" Value="Name" />
+			<Item Name="Columns.PgrNineDayAvg.Caption" Value="9-day avg order intake" />
+			<Item Name="Columns.PgrNoVisitReason.Caption" Value="Reason (no visit)" />
+			<Item Name="Columns.PgrNumber.Caption" Value="Number" />
+			<Item Name="Columns.PgrPerformanceId.Caption" Value="Performance" />
+			<Item Name="Columns.PgrPerformanceText.Caption" Value="Performance remarks" />
+			<Item Name="Columns.PgrTopicCommercial.Caption" Value="Commercial &amp; Prices" />
+			<Item Name="Columns.PgrTopicProjectsOpportunities.Caption" Value="Projects &amp; Opportunities" />
+			<Item Name="Columns.PgrTopicQuality.Caption" Value="Quality" />
+			<Item Name="Columns.PgrTopicServiceDelivery.Caption" Value="Service &amp; Delivery" />
+			<Item Name="Columns.PgrTopicSpecial.Caption" Value="Special topics" />
+			<Item Name="Columns.PgrVisitBudget.Caption" Value="Budget" />
+			<Item Name="Columns.PgrVisitDate.Caption" Value="Visit date" />
+			<Item Name="Columns.PgrVisitDeviation.Caption" Value="Deviation %" />
+			<Item Name="Columns.PgrVisitDidNotTakePlace.Caption" Value="Visit did not take place" />
+			<Item Name="Columns.PgrVisitReasonId.Caption" Value="Reason / Purpose" />
+			<Item Name="Columns.PgrVisitTypeId.Caption" Value="Visit type" />
+			<Item Name="Columns.PgrWeeklyReportId.Caption" Value="Weekly report" />
+			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
+		</Items>
+	</Group>
+</Resources>

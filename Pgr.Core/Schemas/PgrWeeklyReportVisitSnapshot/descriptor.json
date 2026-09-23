@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "671d8f84-3b1d-4c78-b614-bbf79af8cfe6",
+    "Name": "PgrWeeklyReportVisitSnapshot",
+    "ModifiedOnUtc": "\/Date(1790084785000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Weekly Report Visit Snapshot",
+    "DependsOn": []
+  }
+}

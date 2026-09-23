@@ -71,13 +71,13 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule"]
 				"operation": "merge",
 				"name": "SaveButton",
 				"values": {
-					"caption": "#ResourceString(SaveButton_caption)#",
 					"clicked": {
 						"request": "crt.SaveRecordRequest",
 						"params": {
 							"pgrCheckDuplicates": true
 						}
-					}
+					},
+					"caption": "#ResourceString(SaveButton_caption)#"
 				}
 			},
 			{
@@ -125,6 +125,24 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule"]
 				"parentName": "MainContainer",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "EmailInput_cjzdfhy",
+				"values": {
+					"type": "crt.EmailInput",
+					"label": "$Resources.Strings.ContactDS_Email_99bsona",
+					"control": "$ContactDS_Email_99bsona",
+					"labelPosition": "above",
+					"placeholder": "#ResourceString(EmailInput_cjzdfhy_placeholder)#",
+					"tooltip": "",
+					"needHandleSave": false,
+					"visible": true,
+					"readonly": false
+				},
+				"parentName": "MainContainer",
+				"propertyName": "items",
+				"index": 5
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -145,15 +163,7 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule"]
 					},
 					"PgrOriginalSaveRequestParams": {
 						"value": null
-					}
-				}
-			},
-			{
-				"operation": "merge",
-				"path": [
-					"attributes"
-				],
-				"values": {
+					},
 					"LookupAttribute_sa5uaxw_List": {
 						"isCollection": true,
 						"modelConfig": {
@@ -188,6 +198,11 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule"]
 					"ContactDS_Surname_ugkxg4b": {
 						"modelConfig": {
 							"path": "ContactDS.Surname"
+						}
+					},
+					"ContactDS_Email_99bsona": {
+						"modelConfig": {
+							"path": "ContactDS.Email"
 						}
 					}
 				}

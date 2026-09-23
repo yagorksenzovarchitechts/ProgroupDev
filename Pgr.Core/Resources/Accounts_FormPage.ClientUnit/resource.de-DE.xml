@@ -15,6 +15,7 @@
 			<Item Name="LocalizableStrings.Checkbox_56z210h_tooltip.Value" Value="E-Mail mit PDF Anhang" />
 			<Item Name="LocalizableStrings.Checkbox_isdbwb4_tooltip.Value" Value="rechtliche Anforderung (EN 16931)" />
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
+			<Item Name="LocalizableStrings.ComboBox_rztcyul_label.Value" Value="Anzahl Mitarbeiter" />
 			<Item Name="LocalizableStrings.ComboBox_tuutgko_placeholder.Value" Value="Land auswählen" />
 			<Item Name="LocalizableStrings.CompetitorsAddButton_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.CompetitorsExpansionPanel_title.Value" Value="Wettbewerber" />
@@ -24,12 +25,14 @@
 			<Item Name="LocalizableStrings.CompetitorsRefreshButton_caption.Value" Value="Aktualisieren" />
 			<Item Name="LocalizableStrings.CompetitorsSettingsButton_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.ContractsTab_caption.Value" Value="Verträge" />
+			<Item Name="LocalizableStrings.ExpansionPanel_0hsju2s_title.Value" Value="Unternehmen Info" />
 			<Item Name="LocalizableStrings.ExpansionPanel_1mbln9s_title.Value" Value="Adressen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_3jtu7p2_title.Value" Value="&#xA;SAP" />
 			<Item Name="LocalizableStrings.ExpansionPanel_4r2mr5k_title.Value" Value="Besuchsberichte" />
 			<Item Name="LocalizableStrings.ExpansionPanel_h2q0n69_title.Value" Value="Projektpreise" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ilw1gpx_title.Value" Value="Rechnung" />
 			<Item Name="LocalizableStrings.ExpansionPanel_pa1hlbi_title.Value" Value="Überlieferung" />
+			<Item Name="LocalizableStrings.ExpansionPanel_udydmkf_title.Value" Value="Schnittstellen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_vbzwo5v_title.Value" Value="Kontakte" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_ytmu9oh_placeholder.Value" Value="Suche" />
 			<Item Name="LocalizableStrings.HowTheyMakeMoney_placeholder.Value" Value="Enter how the company generates revenue" />
