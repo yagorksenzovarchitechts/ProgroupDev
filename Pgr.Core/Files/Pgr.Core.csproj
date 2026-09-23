@@ -381,11 +381,6 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="DeduplicationFreedom_Customer360App">
-			<HintPath>$(RelativePkgFolderPath)/DeduplicationFreedom_Customer360App/$(StandalonePackageAssemblyPath)/DeduplicationFreedom_Customer360App.dll</HintPath>
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
 		<Reference Include="Terrasoft.Configuration">
 			<HintPath>$(RelativePkgFolderPath)/../bin/Terrasoft.Configuration.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
