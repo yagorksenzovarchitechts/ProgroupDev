@@ -64,6 +64,7 @@
 			<Item Name="LocalizableStrings.Pgr369RunBtn_caption.Value" Value="3-6-9 ausführen" />
 			<Item Name="LocalizableStrings.Pgr369RunBtn_clicked_params_notificationText.Value" Value="3-6-9-Prozess wird ausgeführt" />
 			<Item Name="LocalizableStrings.PgrExcludeFrom369Label.Value" Value="Von 3-6-9 ausschließen" />
+			<Item Name="LocalizableStrings.PgrExcludeFrom369_label.Value" Value="Von 3-6-9 ausschließen" />
 			<Item Name="LocalizableStrings.PgrSuspensionEndDateFutureError.Value" Value="Das Aussetzung-Enddatum muss nach dem heutigen Datum liegen." />
 			<Item Name="LocalizableStrings.PgrSuspensionEndDateLabel.Value" Value="Aussetzung Enddatum" />
 			<Item Name="LocalizableStrings.PgrSuspensionReasonLabel.Value" Value="Aussetzungsgrund" />
@@ -77,11 +78,11 @@
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
 			<Item Name="LocalizableStrings.SearchFilter_2pozl4n_placeholder.Value" Value="Suche" />
 			<Item Name="LocalizableStrings.SearchFilter_2y51wfx_placeholder.Value" Value="Suche" />
-			<Item Name="LocalizableStrings.TabContainer_0nkic4p_caption.Value" Value="Aktivitäten &amp; Besuchsberichte" />
+			<Item Name="LocalizableStrings.TabContainer_ActivitiesVisits_caption.Value" Value="Aktivitäten &amp; Besuchsberichte" />
+			<Item Name="LocalizableStrings.TabContainer_Bonuses_caption.Value" Value="Bonus &amp; Vereinbarungen" />
 			<Item Name="LocalizableStrings.TabContainer_Competitor_caption.Value" Value="Wettbewerber" />
 			<Item Name="LocalizableStrings.TabContainer_Customer_caption.Value" Value="Kundendaten" />
-			<Item Name="LocalizableStrings.TabContainer_cyno10d_caption.Value" Value="Bonus &amp; Vereinbarungen" />
-			<Item Name="LocalizableStrings.TabContainer_rn66zaz_caption.Value" Value="Projektpreise" />
+			<Item Name="LocalizableStrings.TabContainer_ProjectPrices_caption.Value" Value="Projektpreise" />
 			<Item Name="LocalizableStrings.Territory_placeholder.Value" Value="Region auswählen" />
 		</Items>
 	</Group>

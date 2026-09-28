@@ -3,6 +3,12 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Account metrics list page" />
+			<Item Name="LocalizableStrings.QuickFilter_31pcr0h_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_31pcr0h_config_caption.Value" Value="Account" />
+			<Item Name="LocalizableStrings.QuickFilter_azqsofi_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_azqsofi_config_caption.Value" Value="Metric type" />
+			<Item Name="LocalizableStrings.QuickFilter_x9puw7n_caption.Value" Value="Quick filter" />
+			<Item Name="LocalizableStrings.QuickFilter_x9puw7n_config_caption.Value" Value="Date" />
 		</Items>
 	</Group>
 </Resources>

@@ -32,6 +32,14 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "merge",
+				"name": "LeftFilterContainerInner",
+				"values": {
+					"gap": "extra-small",
+					"visible": true
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "TerritoryQuickFilter",
 				"values": {
 					"config": {
@@ -149,6 +157,13 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						]
 					}
 				}
+			},
+			{
+				"operation": "move",
+				"name": "SearchFilter",
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 8
 			},
 			{
 				"operation": "merge",
@@ -495,6 +510,80 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
+				"name": "QuickFilter_sf7xu1k",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_sf7xu1k_config_caption)#",
+						"hint": "",
+						"icon": "settings-button-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": true,
+						"approachState": true
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_sf7xu1k_DataGrid_0kcsg12",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "DataGrid_0kcsg12",
+													"customFilter": {
+														"items": {
+															"b32b98a3-545f-4ab5-94ca-95d086fa483f": {
+																"filterType": 1,
+																"comparisonType": 3,
+																"isEnabled": true,
+																"trimDateTimeParameterToDate": false,
+																"leftExpression": {
+																	"expressionType": 0,
+																	"columnPath": "PgrIsActive"
+																},
+																"isAggregative": false,
+																"dataValueType": 12,
+																"rightExpression": {
+																	"expressionType": 2,
+																	"parameter": {
+																		"dataValueType": 12,
+																		"value": true
+																	}
+																}
+															}
+														},
+														"logicalOperation": 0,
+														"isEnabled": true,
+														"filterType": 6,
+														"rootSchemaName": "Account"
+													},
+													"dependencyFilters": null
+												},
+												"quickFilterType": "custom",
+												"config": {
+													"approachState": true
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"QuickFilter_sf7xu1k_Value"
+						]
+					},
+					"filterType": "custom",
+					"visible": true
+				},
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
 				"name": "PgrSuspendedAt369QuickFilter",
 				"values": {
 					"type": "crt.QuickFilter",
@@ -699,6 +788,10 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 								},
 								{
 									"name": "LookupQuickFilterByTag_DataGrid_0kcsg12",
+									"loadOnChange": true
+								},
+								{
+									"name": "QuickFilter_sf7xu1k_DataGrid_0kcsg12",
 									"loadOnChange": true
 								}
 							]

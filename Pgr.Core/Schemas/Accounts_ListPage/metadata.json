@@ -113,6 +113,13 @@
   "A5": "c18f01ff-4f0e-4fbb-9d46-a0d146e8c848"
 }
 + MetaData.Schema.B2 {
+  "UId": "9ddecc34-a2c7-ee7b-3f31-8a38428efff2",
+  "A2": "QuickFilter_sf7xu1k_config_caption",
+  "A3": "fc1da1e2-dd2f-436f-8880-0dd326c26ae6",
+  "A4": "fc1da1e2-dd2f-436f-8880-0dd326c26ae6",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
   "UId": "dad6907c-fd30-c781-3680-4546c3fd73f9",
   "A2": "ActionButton_caption",
   "A3": "b7b898d0-8c77-4953-c097-23fa6800da02",
@@ -177,6 +184,7 @@
   "47f93c51-9369-f5bf-a5d1-d656ccae23e3",
   "633a06eb-8c70-d0a6-4c01-cbddcf754299",
   "015e3a52-43cc-dda7-2460-5434ac0f8a70",
+  "9ddecc34-a2c7-ee7b-3f31-8a38428efff2",
   "dad6907c-fd30-c781-3680-4546c3fd73f9",
   "4a1fa859-3609-3091-fee0-b90f1ee54a71",
   "5b11b26c-b03f-fd9d-e826-d01796649ea6",

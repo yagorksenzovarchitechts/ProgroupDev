@@ -1,0 +1,56 @@
+﻿{
+  "Descriptor": {
+    "UId": "4dcb7e75-80f8-46c9-b501-bc80c9b555b7",
+    "Name": "PgrSysAdminUnit_OnboardingRoles",
+    "ModifiedOnUtc": "\/Date(1790606605000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "84f44b9a-4bc3-4cbf-a1a8-cec02c1c029c",
+      "Name": "SysAdminUnit"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "48f37442-a2da-4407-9178-72073ba6b09f",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Active",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+      },
+      {
+        "ColumnUId": "61e854be-0394-4c7c-b703-cd1ded0aab45",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ConnectionType",
+        "DataTypeValueUId": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+      },
+      {
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "9fe61fde-536b-4cef-9be7-d44a23ca6dfd",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "SysAdminUnitTypeValue",
+        "DataTypeValueUId": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "fa4483b3-a2db-4651-a462-689be18351e7",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ParentRole",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      }
+    ]
+  }
+}

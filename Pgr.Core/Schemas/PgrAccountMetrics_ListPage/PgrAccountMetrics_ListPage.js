@@ -74,6 +74,140 @@ define("PgrAccountMetrics_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 						"filters": []
 					}
 				}
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_31pcr0h",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_31pcr0h_config_caption)#",
+						"hint": "",
+						"icon": "work-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": [
+							{
+								"value": "[#currentUserAccount#]",
+								"checkedState": true
+							}
+						],
+						"entitySchemaName": "Account",
+						"recordsFilter": null,
+						"defaultValueListSorting": null
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_31pcr0h_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"filterColumn": "PgrAccountId"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": "QuickFilter_31pcr0h_Value"
+					},
+					"filterType": "lookup"
+				},
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_azqsofi",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_azqsofi_config_caption)#",
+						"hint": "",
+						"icon": "filter-column-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": [],
+						"entitySchemaName": "PgrMetricType",
+						"recordsFilter": null,
+						"defaultValueListSorting": null
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_azqsofi_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"filterColumn": "PgrMetricTypeId"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": "QuickFilter_azqsofi_Value"
+					},
+					"filterType": "lookup"
+				},
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_x9puw7n",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_x9puw7n_config_caption)#",
+						"hint": "",
+						"icon": "date",
+						"iconPosition": "left-icon",
+						"defaultValue": "[#currentWeek#]",
+						"showTime": false,
+						"showFiscalPeriods": false
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_x9puw7n_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"filterColumnStart": "PgrDate",
+													"filterColumnEnd": "PgrDate"
+												},
+												"quickFilterType": "date-range"
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": "QuickFilter_x9puw7n_Value"
+					},
+					"filterType": "date-range"
+				},
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 5
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -111,6 +245,50 @@ define("PgrAccountMetrics_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 							"path": "PDS.PgrValue"
 						}
 					}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"Items",
+					"modelConfig"
+				],
+				"values": {
+					"filterAttributes": [
+						{
+							"loadOnChange": true,
+							"name": "FolderTree_active_folder_filter"
+						},
+						{
+							"name": "Items_PredefinedFilter",
+							"loadOnChange": true
+						},
+						{
+							"name": "LookupQuickFilterByTag_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "SearchFilter_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "Filters_Filter",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_31pcr0h_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_azqsofi_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_x9puw7n_Items",
+							"loadOnChange": true
+						}
+					]
 				}
 			}
 		]/**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/,

@@ -5,16 +5,16 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				"operation": "merge",
 				"name": "SaveButton",
 				"values": {
-					"caption": "#ResourceString(SaveButton_caption)#",
-					"size": "large",
-					"iconPosition": "only-text",
-					"clickMode": "default",
 					"clicked": {
 						"request": "crt.SaveRecordRequest",
 						"params": {
 							"pgrCheckDuplicates": true
 						}
-					}
+					},
+					"caption": "#ResourceString(SaveButton_caption)#",
+					"size": "large",
+					"iconPosition": "only-text",
+					"clickMode": "default"
 				}
 			},
 			{
@@ -1245,23 +1245,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 			},
 			{
 				"operation": "insert",
-				"name": "DateTimePicker_o6emyj1",
-				"values": {
-					"type": "crt.DateTimePicker",
-					"label": "$Resources.Strings.PDS_BirthDate_0v6vcrk",
-					"placeholder": "",
-					"readonly": false,
-					"labelPosition": "auto",
-					"tooltip": "",
-					"pickerType": "date",
-					"control": "$PDS_BirthDate_0v6vcrk"
-				},
-				"parentName": "SideAreaProfileFieldFlexContainer",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
 				"name": "ComboBox_cf5dsmd",
 				"values": {
 					"type": "crt.ComboBox",
@@ -1277,7 +1260,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 5
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -1312,7 +1295,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 6
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -1338,7 +1321,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 7
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -1356,7 +1339,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 8
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -3450,15 +3433,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 					},
 					"PgrOriginalSaveRequestParams": {
 						"value": null
-					}
-				}
-			},
-			{
-				"operation": "merge",
-				"path": [
-					"attributes"
-				],
-				"values": {
+					},
 					"Account_List": {
 						"isCollection": true,
 						"modelConfig": {
@@ -3816,11 +3791,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 							"isEnabled": true,
 							"filterType": 6,
 							"rootSchemaName": "Activity"
-						}
-					},
-					"PDS_BirthDate_0v6vcrk": {
-						"modelConfig": {
-							"path": "PDS.BirthDate"
 						}
 					},
 					"OutboundChatInput": {
