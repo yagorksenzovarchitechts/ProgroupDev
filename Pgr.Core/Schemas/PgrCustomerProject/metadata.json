@@ -66,6 +66,35 @@
   "E17": "PgrProjectPriceIdId",
   "E18": "PgrProjectPriceIdPgrName"
 }
++ MetaData.Schema.D2 {
+  "UId": "0e3980e1-c8f7-28e2-7049-8ef232abf431",
+  "A2": "PgrEstimatedProjectVolume",
+  "A3": "0ce7d573-8ad1-4208-b7ee-8693b741b0db",
+  "A4": "0ce7d573-8ad1-4208-b7ee-8693b741b0db",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+}
++ MetaData.Schema.D2 {
+  "UId": "0e070828-c969-d759-70ff-eca74092cb12",
+  "A2": "PgrPotentialYearlyVolume",
+  "A3": "0ce7d573-8ad1-4208-b7ee-8693b741b0db",
+  "A4": "0ce7d573-8ad1-4208-b7ee-8693b741b0db",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0"
+}
++ MetaData.Schema.D2 {
+  "UId": "6ff6b8d3-9771-38ca-e753-48946045bf61",
+  "A2": "PgrProjectPricesStatus",
+  "A3": "0ce7d573-8ad1-4208-b7ee-8693b741b0db",
+  "A4": "0ce7d573-8ad1-4208-b7ee-8693b741b0db",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "086eb702-b50e-4adb-8b90-db403735d218",
+  "E6": true,
+  "E20": true,
+  "E17": "PgrProjectPricesStatusId",
+  "E18": "PgrProjectPricesStatusName"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -76,7 +105,10 @@
   "c5c64d50-637f-3d42-1101-33b1661fad5b",
   "df8fcdc6-de85-961c-3a35-341b42f97f3e",
   "7cb670a3-6f39-8bf4-f376-c2d5c52c4b4a",
-  "8ba656a9-6791-8c9e-722e-603a699ce9dd"
+  "8ba656a9-6791-8c9e-722e-603a699ce9dd",
+  "0e3980e1-c8f7-28e2-7049-8ef232abf431",
+  "0e070828-c969-d759-70ff-eca74092cb12",
+  "6ff6b8d3-9771-38ca-e753-48946045bf61"
 ]
 = MetaData.Schema.D20.A2 "PgrCustomerProjectEvents"
 + MetaData.Schema.D20.FA1 false

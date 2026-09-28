@@ -4,10 +4,12 @@
 		<Items>
 			<Item Name="Caption" Value="Customer project" />
 			<Item Name="Columns.PgrCustomerProjectId.Caption" Value="Customer project ID" />
+			<Item Name="Columns.PgrEstimatedProjectVolume.Caption" Value="Estimated project volume (tsqm)" />
 			<Item Name="Columns.PgrName.Caption" Value="Customer project name" />
 			<Item Name="Columns.PgrNote.Caption" Value="Comment" />
+			<Item Name="Columns.PgrPotentialYearlyVolume.Caption" Value="Potential yearly volume (tsqm)" />
 			<Item Name="Columns.PgrProjectPriceId.Caption" Value="Project price ID" />
-			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
+			<Item Name="Columns.PgrProjectPricesStatus.Caption" Value="Status" />
 		</Items>
 	</Group>
 </Resources>

@@ -62,8 +62,10 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiSlicer/PgrPowerBiSlicer.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiSlicer/PgrPowerBiSlicer.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiSlicerValue/PgrPowerBiSlicerValue.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiSlicerValue/PgrPowerBiSlicerValue.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiUserFilter/PgrPowerBiUserFilter.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPowerBiUserFilter/PgrPowerBiUserFilter.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrPriceModel/PgrPriceModel.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrPriceModel/PgrPriceModel.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrProjectPrice/PgrProjectPrice.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrProjectPrice/PgrProjectPrice.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrProjectPriceRule/PgrProjectPriceRule.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrProjectPriceRule/PgrProjectPriceRule.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrProjectPricesStatus/PgrProjectPricesStatus.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrProjectPricesStatus/PgrProjectPricesStatus.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrProjectProbabilty/PgrProjectProbabilty.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrProjectProbabilty/PgrProjectProbabilty.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrTeam/PgrTeam.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrTeam/PgrTeam.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrVisitReason/PgrVisitReason.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrVisitReason/PgrVisitReason.cs')" />

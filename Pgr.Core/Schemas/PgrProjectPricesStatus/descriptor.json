@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "086eb702-b50e-4adb-8b90-db403735d218",
+    "Name": "PgrProjectPricesStatus",
+    "ModifiedOnUtc": "\/Date(1790606273000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Project Price Status",
+    "DependsOn": []
+  }
+}

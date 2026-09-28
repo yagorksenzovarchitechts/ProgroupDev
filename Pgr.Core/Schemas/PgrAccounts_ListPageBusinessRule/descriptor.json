@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "14a556f6-3340-4c43-ab25-449a6ac61284",
+    "Name": "PgrAccounts_ListPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1790347336000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Accounts list page (Business rules)",
+    "DependsOn": []
+  }
+}

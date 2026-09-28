@@ -956,13 +956,32 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"id": "d95264b5-8ae2-ece3-3ac8-34da238059a8",
 							"code": "GridDetail_x5ojh6qDS_PgrCustomerProjectId",
 							"caption": "#ResourceString(GridDetail_x5ojh6qDS_PgrCustomerProjectId)#",
-							"dataValueType": 4
+							"dataValueType": 4,
+							"width": 199
 						},
 						{
 							"id": "e010ff31-c0ca-7520-f62f-6357e8ff3ad5",
 							"code": "GridDetail_x5ojh6qDS_PgrName",
 							"caption": "#ResourceString(GridDetail_x5ojh6qDS_PgrName)#",
 							"dataValueType": 27
+						},
+						{
+							"id": "d04fcc09-a6e5-3a5d-3d75-1a30e5501c33",
+							"code": "GridDetail_x5ojh6qDS_PgrPotentialYearlyVolume",
+							"caption": "#ResourceString(GridDetail_x5ojh6qDS_PgrPotentialYearlyVolume)#",
+							"dataValueType": 4
+						},
+						{
+							"id": "1227db0d-c277-1218-d9ee-7e57ddb570f7",
+							"code": "GridDetail_x5ojh6qDS_PgrEstimatedProjectVolume",
+							"caption": "#ResourceString(GridDetail_x5ojh6qDS_PgrEstimatedProjectVolume)#",
+							"dataValueType": 4
+						},
+						{
+							"id": "31ff4cf7-7768-ba92-e629-d2e52166fb87",
+							"code": "GridDetail_x5ojh6qDS_PgrProjectPricesStatus",
+							"caption": "#ResourceString(GridDetail_x5ojh6qDS_PgrProjectPricesStatus)#",
+							"dataValueType": 10
 						},
 						{
 							"id": "bdadd1a5-7f34-f9fa-476b-171383c0db28",
@@ -1102,6 +1121,21 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 										"path": "GridDetail_x5ojh6qDS.PgrName"
 									}
 								},
+								"GridDetail_x5ojh6qDS_PgrPotentialYearlyVolume": {
+									"modelConfig": {
+										"path": "GridDetail_x5ojh6qDS.PgrPotentialYearlyVolume"
+									}
+								},
+								"GridDetail_x5ojh6qDS_PgrEstimatedProjectVolume": {
+									"modelConfig": {
+										"path": "GridDetail_x5ojh6qDS.PgrEstimatedProjectVolume"
+									}
+								},
+								"GridDetail_x5ojh6qDS_PgrProjectPricesStatus": {
+									"modelConfig": {
+										"path": "GridDetail_x5ojh6qDS.PgrProjectPricesStatus"
+									}
+								},
 								"GridDetail_x5ojh6qDS_PgrNote": {
 									"modelConfig": {
 										"path": "GridDetail_x5ojh6qDS.PgrNote"
@@ -1211,6 +1245,15 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 								},
 								"PgrName": {
 									"path": "PgrName"
+								},
+								"PgrPotentialYearlyVolume": {
+									"path": "PgrPotentialYearlyVolume"
+								},
+								"PgrEstimatedProjectVolume": {
+									"path": "PgrEstimatedProjectVolume"
+								},
+								"PgrProjectPricesStatus": {
+									"path": "PgrProjectPricesStatus"
 								},
 								"PgrNote": {
 									"path": "PgrNote"

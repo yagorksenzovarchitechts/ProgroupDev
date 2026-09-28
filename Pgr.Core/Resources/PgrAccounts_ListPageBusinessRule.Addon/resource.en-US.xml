@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.db787c42-5527-44b5-cb39-87a031da7420.Caption" Value="Hide elements: New" />
+			<Item Name="Caption" Value="Accounts list page (Business rules)" />
+		</Items>
+	</Group>
+</Resources>

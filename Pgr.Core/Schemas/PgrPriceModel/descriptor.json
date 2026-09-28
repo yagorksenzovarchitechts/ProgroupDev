@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "561baa18-93bc-4482-b828-3e444b8f020a",
+    "Name": "PgrPriceModel",
+    "ModifiedOnUtc": "\/Date(1790586448000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Price model",
+    "DependsOn": []
+  }
+}
