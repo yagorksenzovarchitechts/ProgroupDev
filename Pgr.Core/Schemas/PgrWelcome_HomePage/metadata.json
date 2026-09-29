@@ -1,0 +1,38 @@
+= MetaData.Schema.UId "f89b67ab-75f6-4b11-830e-81081fa01c56"
+= MetaData.Schema.A2 "PgrWelcome_HomePage"
+= MetaData.Schema.A5 "de82fb2d-d61c-4364-83bd-334aeb9af71c"
++ MetaData.Schema.B2 {
+  "UId": "66e9a851-b679-4e61-8217-24a784b03e0d",
+  "A2": "WelcomeHeading_caption",
+  "A3": "f89b67ab-75f6-4b11-830e-81081fa01c56",
+  "A4": "f89b67ab-75f6-4b11-830e-81081fa01c56",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "240a08e5-45f6-4a5b-b227-aa80ae3c3cf5",
+  "A2": "WelcomeMessage_caption",
+  "A3": "f89b67ab-75f6-4b11-830e-81081fa01c56",
+  "A4": "f89b67ab-75f6-4b11-830e-81081fa01c56",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "1f978303-f56a-442f-805a-ff26e46f8cb7",
+  "A2": "WelcomeHint_caption",
+  "A3": "f89b67ab-75f6-4b11-830e-81081fa01c56",
+  "A4": "f89b67ab-75f6-4b11-830e-81081fa01c56",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
+~ MetaData.Schema.B2 [
+  "66e9a851-b679-4e61-8217-24a784b03e0d",
+  "240a08e5-45f6-4a5b-b227-aa80ae3c3cf5",
+  "1f978303-f56a-442f-805a-ff26e46f8cb7"
+]
+= MetaData.Schema.B6 "655ac62c-1e4a-cc32-6e65-323f197c68e0"
+= MetaData.Schema.B8 "10.0.0.858"
+= MetaData.Schema.HD1 "0c5cfb7a-1ed9-41b8-905e-9a38c6915550"
++ MetaData.Schema.HD15 1
+= MetaData.Schema.HD6 "define('{0}Structure', ['{0}Resources'], function(resources) {{return {{schemaUId:'{2}',schemaName:'{3}',parentSchemaUId:'{4}',extendParent:{5},type:Terrasoft.SchemaType.ANGULAR_SCHEMA,entitySchema:'',name:'',extend:'Terrasoft.model.BaseViewModel',schema:{{leftPanel:[],rightPanel:[],actions:[],analytics:[]}},methods:{{}},controlsConfig:{{}},customBindings:{{}},bindings:{{}},parameters:{{}},schemaVersion:1,optionalProperties:{{}},schemaDifferences:function(){{\n{1}\n}}}};}});"
+- MetaData.Schema.HD2
+- MetaData.Schema.HD9
+- MetaData.Schema.HD10
++ MetaData.Schema.B7 false

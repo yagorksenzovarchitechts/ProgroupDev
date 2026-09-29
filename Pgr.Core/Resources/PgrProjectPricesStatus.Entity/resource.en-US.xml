@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Project Price Status" />
+			<Item Name="Columns.PgrColor.Caption" Value="Color" />
 		</Items>
 	</Group>
 </Resources>

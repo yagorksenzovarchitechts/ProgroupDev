@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Welcome" />
+			<Item Name="LocalizableStrings.WelcomeHeading_caption.Value" Value="Willkommen bei Creatio" />
+			<Item Name="LocalizableStrings.WelcomeHint_caption.Value" Value="Sie erhalten eine E-Mail, sobald Ihr Zugang bereit ist. Melden Sie sich dann ab und erneut an, um Ihre Arbeitsbereiche zu sehen" />
+			<Item Name="LocalizableStrings.WelcomeMessage_caption.Value" Value="Ihr Creatio-Konto wurde angelegt, Sie können aber noch nicht damit arbeiten. Bitte warten Sie, bis der IT Service Manager Ihnen Ihre Rollen und Berechtigungen zugewiesen hat." />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "c4d363bb-c9e7-445b-bebf-f1ba56df9e6e",
+    "Name": "PgrWelcome_Desktop",
+    "ModifiedOnUtc": "\/Date(1790611101000)\/",
+    "Parent": {
+      "UId": "fbc98c89-0691-479c-bc25-59c11ac2365f",
+      "Name": "CentralAreaDesktopTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Welcome",
+    "DependsOn": []
+  }
+}

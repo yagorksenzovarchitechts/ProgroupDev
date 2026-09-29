@@ -2,6 +2,7 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
+			<Item Name="Caption" Value="Plant" />
 			<Item Name="Columns.PgrAddress.Caption" Value="Adresse" />
 			<Item Name="Columns.PgrCity.Caption" Value="Stadt" />
 			<Item Name="Columns.PgrColumn27.Caption" Value="Datenblätter" />

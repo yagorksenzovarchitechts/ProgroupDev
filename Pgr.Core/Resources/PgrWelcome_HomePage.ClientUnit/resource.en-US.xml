@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Welcome" />
+			<Item Name="Description" Value="Landing page for users with role Pending onboarding (SSO onboarding)" />
+			<Item Name="LocalizableStrings.WelcomeHeading_caption.Value" Value="Welcome to Creatio" />
+			<Item Name="LocalizableStrings.WelcomeHint_caption.Value" Value="You will receive an email as soon as your access is ready. Then log out and log in again to see your workplaces" />
+			<Item Name="LocalizableStrings.WelcomeMessage_caption.Value" Value="Your Creatio account has been created, but you cannot start working yet. Please wait until the IT Service Manager has assigned your roles and permissions." />
+		</Items>
+	</Group>
+</Resources>

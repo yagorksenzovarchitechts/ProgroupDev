@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Welcome" />
+			<Item Name="Description" Value="Desktop for new users waiting for role assignment (SSO onboarding)" />
+			<Item Name="LocalizableStrings.Label_Greeting_caption.Value" Value="Hello, [#Current user.Recipient Name#]!" />
+			<Item Name="LocalizableStrings.Label_WelcomeHint_caption.Value" Value="You will receive an email as soon as your access is ready. Then log out and log in again to see your workplaces" />
+			<Item Name="LocalizableStrings.Label_WelcomeMessage_caption.Value" Value="Welcome to Creatio. Your account has been created, but you cannot start working yet. Please wait until the IT Service Manager has assigned your roles and permissions." />
+		</Items>
+	</Group>
+</Resources>

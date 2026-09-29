@@ -5301,27 +5301,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
-				"name": "GridDetailAddBtn_hjdjyjh",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(GridDetailAddBtn_hjdjyjh_caption)#",
-					"icon": "add-button-icon",
-					"iconPosition": "only-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.CreateRecordRequest",
-						"params": {
-							"entityName": "PgrBonus"
-						}
-					}
-				},
-				"parentName": "FlexContainer_v337qmt",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
 				"name": "GridDetailRefreshBtn_p6oyc1z",
 				"values": {
 					"type": "crt.Button",
@@ -5342,64 +5321,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "FlexContainer_v337qmt",
 				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailSettingsBtn_ehue78f",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(GridDetailSettingsBtn_ehue78f_caption)#",
-					"icon": "actions-button-icon",
-					"iconPosition": "only-icon",
-					"color": "default",
-					"size": "medium",
-					"clickMode": "menu",
-					"menuItems": []
-				},
-				"parentName": "FlexContainer_v337qmt",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailExportDataBtn_zbxckdo",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "#ResourceString(GridDetailExportDataBtn_zbxckdo_caption)#",
-					"icon": "export-button-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.ExportDataGridToExcelRequest",
-						"params": {
-							"viewName": "GridDetail_tziba2d"
-						}
-					}
-				},
-				"parentName": "GridDetailSettingsBtn_ehue78f",
-				"propertyName": "menuItems",
 				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailImportDataBtn_ajtxz0r",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "#ResourceString(GridDetailImportDataBtn_ajtxz0r_caption)#",
-					"icon": "import-button-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.ImportDataRequest",
-						"params": {
-							"entitySchemaName": "PgrBonus"
-						}
-					}
-				},
-				"parentName": "GridDetailSettingsBtn_ehue78f",
-				"propertyName": "menuItems",
-				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -5430,7 +5352,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "FlexContainer_v337qmt",
 				"propertyName": "items",
-				"index": 3
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -5464,7 +5386,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 						"colSpan": 2,
 						"column": 1,
 						"row": 1,
-						"rowSpan": 6
+						"rowSpan": 8
 					},
 					"features": {
 						"rows": {
@@ -5622,27 +5544,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
-				"name": "GridDetailAddBtn_5xe45y0",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(GridDetailAddBtn_5xe45y0_caption)#",
-					"icon": "add-button-icon",
-					"iconPosition": "only-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.CreateRecordRequest",
-						"params": {
-							"entityName": "PgrBonusThreshold"
-						}
-					}
-				},
-				"parentName": "FlexContainer_5v9kuu4",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
 				"name": "GridDetailRefreshBtn_e3slm2q",
 				"values": {
 					"type": "crt.Button",
@@ -5663,64 +5564,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "FlexContainer_5v9kuu4",
 				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailSettingsBtn_mpajj38",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(GridDetailSettingsBtn_mpajj38_caption)#",
-					"icon": "actions-button-icon",
-					"iconPosition": "only-icon",
-					"color": "default",
-					"size": "medium",
-					"clickMode": "menu",
-					"menuItems": []
-				},
-				"parentName": "FlexContainer_5v9kuu4",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailExportDataBtn_squ7nei",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "#ResourceString(GridDetailExportDataBtn_squ7nei_caption)#",
-					"icon": "export-button-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.ExportDataGridToExcelRequest",
-						"params": {
-							"viewName": "GridDetail_84xltzi"
-						}
-					}
-				},
-				"parentName": "GridDetailSettingsBtn_mpajj38",
-				"propertyName": "menuItems",
 				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailImportDataBtn_3326t1j",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "#ResourceString(GridDetailImportDataBtn_3326t1j_caption)#",
-					"icon": "import-button-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.ImportDataRequest",
-						"params": {
-							"entitySchemaName": "PgrBonusThreshold"
-						}
-					}
-				},
-				"parentName": "GridDetailSettingsBtn_mpajj38",
-				"propertyName": "menuItems",
-				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -5751,7 +5595,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "FlexContainer_5v9kuu4",
 				"propertyName": "items",
-				"index": 3
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -5785,7 +5629,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 						"colSpan": 2,
 						"column": 1,
 						"row": 1,
-						"rowSpan": 6
+						"rowSpan": 9
 					},
 					"features": {
 						"rows": {
@@ -10131,7 +9975,15 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 									"name": "GridDetailSearchFilter_uac2rdb_GridDetail_tziba2d",
 									"loadOnChange": true
 								}
-							]
+							],
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "desc",
+										"columnName": "PgrStartDate"
+									}
+								]
+							}
 						},
 						"viewModelConfig": {
 							"attributes": {
@@ -10181,7 +10033,15 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 									"name": "GridDetail_tziba2d_d9ac70e6_ExposeFilter",
 									"loadOnChange": true
 								}
-							]
+							],
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "asc",
+										"columnName": "PgrBonusPercentage"
+									}
+								]
+							}
 						},
 						"viewModelConfig": {
 							"attributes": {
