@@ -92,9 +92,11 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"bodyBackgroundColor": "primary-contrast-500",
 					"selectedTabTitleColor": "auto",
 					"tabTitleColor": "auto",
-					"underlineSelectedTabColor": "auto",
+					"underlineSelectedTabColor": "crt-color-coral",
 					"headerBackgroundColor": "auto",
-					"allowToggleClose": true
+					"allowToggleClose": true,
+					"visible": true,
+					"stretch": true
 				}
 			},
 			{
@@ -183,7 +185,7 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				"name": "ComboBox_nwnzqmj",
 				"values": {
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_PgrAccount_wkui9bw",
+					"label": "#ResourceString(ComboBox_nwnzqmj_label)#",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
@@ -487,27 +489,6 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 			},
 			{
 				"operation": "insert",
-				"name": "GridDetailAddBtn_lqwte3w",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(GridDetailAddBtn_lqwte3w_caption)#",
-					"icon": "add-button-icon",
-					"iconPosition": "only-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.CreateRecordRequest",
-						"params": {
-							"entityName": "PgrProjectPriceRule"
-						}
-					}
-				},
-				"parentName": "FlexContainer_q1gxdge",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
 				"name": "GridDetailRefreshBtn_u6esjyx",
 				"values": {
 					"type": "crt.Button",
@@ -528,95 +509,7 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				},
 				"parentName": "FlexContainer_q1gxdge",
 				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailSettingsBtn_zyrp9hx",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(GridDetailSettingsBtn_zyrp9hx_caption)#",
-					"icon": "actions-button-icon",
-					"iconPosition": "only-icon",
-					"color": "default",
-					"size": "medium",
-					"clickMode": "menu",
-					"menuItems": []
-				},
-				"parentName": "FlexContainer_q1gxdge",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailExportDataBtn_vvk9krh",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "#ResourceString(GridDetailExportDataBtn_vvk9krh_caption)#",
-					"icon": "export-button-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.ExportDataGridToExcelRequest",
-						"params": {
-							"viewName": "GridDetail_7aw16gj"
-						}
-					}
-				},
-				"parentName": "GridDetailSettingsBtn_zyrp9hx",
-				"propertyName": "menuItems",
 				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailImportDataBtn_wd16bna",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "#ResourceString(GridDetailImportDataBtn_wd16bna_caption)#",
-					"icon": "import-button-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.ImportDataRequest",
-						"params": {
-							"entitySchemaName": "PgrProjectPriceRule"
-						}
-					}
-				},
-				"parentName": "GridDetailSettingsBtn_zyrp9hx",
-				"propertyName": "menuItems",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailSearchFilter_fl1oogx",
-				"values": {
-					"type": "crt.SearchFilter",
-					"placeholder": "#ResourceString(GridDetailSearchFilter_fl1oogx_placeholder)#",
-					"iconOnly": true,
-					"_filterOptions": {
-						"expose": [
-							{
-								"attribute": "GridDetailSearchFilter_fl1oogx_GridDetail_7aw16gj",
-								"converters": [
-									{
-										"converter": "crt.SearchFilterAttributeConverter",
-										"args": [
-											"GridDetail_7aw16gj"
-										]
-									}
-								]
-							}
-						],
-						"from": [
-							"GridDetailSearchFilter_fl1oogx_SearchValue",
-							"GridDetailSearchFilter_fl1oogx_FilteredColumnsGroups"
-						]
-					}
-				},
-				"parentName": "FlexContainer_q1gxdge",
-				"propertyName": "items",
-				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -654,11 +547,17 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					},
 					"features": {
 						"rows": {
-							"selection": {
-								"enable": true,
-								"multiple": true
-							},
-							"numeration": true
+							"selection": false,
+							"numeration": false
+						},
+						"columns": {
+							"dragAndDrop": false,
+							"resizing": true
+						},
+						"editable": {
+							"enable": true,
+							"itemsCreation": false,
+							"floatingEditPanel": false
 						}
 					},
 					"items": "$GridDetail_7aw16gj",
@@ -776,27 +675,6 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 			},
 			{
 				"operation": "insert",
-				"name": "GridDetailAddBtn_v6lrc2g",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(GridDetailAddBtn_v6lrc2g_caption)#",
-					"icon": "add-button-icon",
-					"iconPosition": "only-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.CreateRecordRequest",
-						"params": {
-							"entityName": "PgrCustomerProject"
-						}
-					}
-				},
-				"parentName": "FlexContainer_wab1zwq",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
 				"name": "GridDetailRefreshBtn_xf6m1oq",
 				"values": {
 					"type": "crt.Button",
@@ -817,95 +695,7 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				},
 				"parentName": "FlexContainer_wab1zwq",
 				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailSettingsBtn_ixljdko",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(GridDetailSettingsBtn_ixljdko_caption)#",
-					"icon": "actions-button-icon",
-					"iconPosition": "only-icon",
-					"color": "default",
-					"size": "medium",
-					"clickMode": "menu",
-					"menuItems": []
-				},
-				"parentName": "FlexContainer_wab1zwq",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailExportDataBtn_8zmyasi",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "#ResourceString(GridDetailExportDataBtn_8zmyasi_caption)#",
-					"icon": "export-button-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.ExportDataGridToExcelRequest",
-						"params": {
-							"viewName": "GridDetail_x5ojh6q"
-						}
-					}
-				},
-				"parentName": "GridDetailSettingsBtn_ixljdko",
-				"propertyName": "menuItems",
 				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailImportDataBtn_69ggcj3",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "#ResourceString(GridDetailImportDataBtn_69ggcj3_caption)#",
-					"icon": "import-button-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.ImportDataRequest",
-						"params": {
-							"entitySchemaName": "PgrCustomerProject"
-						}
-					}
-				},
-				"parentName": "GridDetailSettingsBtn_ixljdko",
-				"propertyName": "menuItems",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailSearchFilter_pq1b86d",
-				"values": {
-					"type": "crt.SearchFilter",
-					"placeholder": "#ResourceString(GridDetailSearchFilter_pq1b86d_placeholder)#",
-					"iconOnly": true,
-					"_filterOptions": {
-						"expose": [
-							{
-								"attribute": "GridDetailSearchFilter_pq1b86d_GridDetail_x5ojh6q",
-								"converters": [
-									{
-										"converter": "crt.SearchFilterAttributeConverter",
-										"args": [
-											"GridDetail_x5ojh6q"
-										]
-									}
-								]
-							}
-						],
-						"from": [
-							"GridDetailSearchFilter_pq1b86d_SearchValue",
-							"GridDetailSearchFilter_pq1b86d_FilteredColumnsGroups"
-						]
-					}
-				},
-				"parentName": "FlexContainer_wab1zwq",
-				"propertyName": "items",
-				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -943,10 +733,16 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					},
 					"features": {
 						"rows": {
-							"selection": {
-								"enable": true,
-								"multiple": true
-							}
+							"selection": false,
+							"numeration": false
+						},
+						"editable": {
+							"enable": true,
+							"itemsCreation": false,
+							"floatingEditPanel": false
+						},
+						"columns": {
+							"dragAndDrop": false
 						}
 					},
 					"items": "$GridDetail_x5ojh6q",
@@ -966,19 +762,21 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"dataValueType": 27
 						},
 						{
-							"id": "d04fcc09-a6e5-3a5d-3d75-1a30e5501c33",
+							"id": "dd260dd8-3bf0-e22b-12eb-94d56a4cd041",
 							"code": "GridDetail_x5ojh6qDS_PgrPotentialYearlyVolume",
 							"caption": "#ResourceString(GridDetail_x5ojh6qDS_PgrPotentialYearlyVolume)#",
-							"dataValueType": 4
+							"dataValueType": 4,
+							"width": 260
 						},
 						{
-							"id": "1227db0d-c277-1218-d9ee-7e57ddb570f7",
+							"id": "e71c62e6-8cd7-4fe8-ece6-a54da5d01ec3",
 							"code": "GridDetail_x5ojh6qDS_PgrEstimatedProjectVolume",
 							"caption": "#ResourceString(GridDetail_x5ojh6qDS_PgrEstimatedProjectVolume)#",
-							"dataValueType": 4
+							"dataValueType": 4,
+							"width": 285
 						},
 						{
-							"id": "31ff4cf7-7768-ba92-e629-d2e52166fb87",
+							"id": "4be3dc69-e382-04f5-63ca-fcb5f3902d12",
 							"code": "GridDetail_x5ojh6qDS_PgrProjectPricesStatus",
 							"caption": "#ResourceString(GridDetail_x5ojh6qDS_PgrProjectPricesStatus)#",
 							"dataValueType": 10
@@ -990,7 +788,9 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"dataValueType": 27
 						}
 					],
-					"placeholder": false
+					"placeholder": false,
+					"visible": true,
+					"fitContent": true
 				},
 				"parentName": "GridContainer_lxe66p3",
 				"propertyName": "items",
@@ -1056,12 +856,7 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 						"isCollection": true,
 						"modelConfig": {
 							"path": "GridDetail_7aw16gjDS",
-							"filterAttributes": [
-								{
-									"name": "GridDetailSearchFilter_fl1oogx_GridDetail_7aw16gj",
-									"loadOnChange": true
-								}
-							]
+							"filterAttributes": []
 						},
 						"viewModelConfig": {
 							"attributes": {
@@ -1102,12 +897,15 @@ define("PgrProjectPrices_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 						"isCollection": true,
 						"modelConfig": {
 							"path": "GridDetail_x5ojh6qDS",
-							"filterAttributes": [
-								{
-									"name": "GridDetailSearchFilter_pq1b86d_GridDetail_x5ojh6q",
-									"loadOnChange": true
-								}
-							]
+							"filterAttributes": [],
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "asc",
+										"columnName": "PgrPotentialYearlyVolume"
+									}
+								]
+							}
 						},
 						"viewModelConfig": {
 							"attributes": {

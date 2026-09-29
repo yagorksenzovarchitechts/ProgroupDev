@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "f89b67ab-75f6-4b11-830e-81081fa01c56",
+    "Name": "PgrWelcome_HomePage",
+    "ModifiedOnUtc": "\/Date(1790609085000)\/",
+    "Parent": {
+      "UId": "0c5cfb7a-1ed9-41b8-905e-9a38c6915550",
+      "Name": "BaseHomePage"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Welcome",
+    "DependsOn": []
+  }
+}

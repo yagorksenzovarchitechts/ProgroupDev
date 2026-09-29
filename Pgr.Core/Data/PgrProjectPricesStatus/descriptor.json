@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "6e249bcc-6f7b-b703-4f40-a367fce1ad4e",
     "Name": "PgrProjectPricesStatus",
-    "ModifiedOnUtc": "\/Date(1790606422000)\/",
+    "ModifiedOnUtc": "\/Date(1790610600000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "086eb702-b50e-4adb-8b90-db403735d218",
@@ -10,8 +10,15 @@
     },
     "Columns": [
       {
-        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "ColumnUId": "114a027c-20b5-1919-ecca-dc03c4a94bd5",
         "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "PgrColor",
+        "DataTypeValueUId": "dafb71f9-ee9f-4e0b-a4d7-37aa15987155"
+      },
+      {
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "IsForceUpdate": true,
         "IsKey": false,
         "ColumnName": "Name",
         "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"

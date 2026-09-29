@@ -9,7 +9,7 @@
 			<Item Name="Columns.PgrNote.Caption" Value="Comment" />
 			<Item Name="Columns.PgrPotentialYearlyVolume.Caption" Value="Potential yearly volume (tsqm)" />
 			<Item Name="Columns.PgrProjectPriceId.Caption" Value="Project price ID" />
-			<Item Name="Columns.PgrProjectPricesStatus.Caption" Value="Status" />
+			<Item Name="Columns.PgrProjectPricesStatus.Caption" Value="Project Price Status" />
 		</Items>
 	</Group>
 </Resources>
