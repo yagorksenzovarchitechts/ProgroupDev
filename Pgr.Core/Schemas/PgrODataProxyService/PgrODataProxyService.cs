@@ -8,6 +8,7 @@ using System.ServiceModel.Web;
 using System.Text;
 using System.Web.SessionState;
 using Common.Logging;
+using Pgr.Core;
 using Terrasoft.Common;
 using Terrasoft.Core;
 using Terrasoft.Core.DB;
@@ -41,6 +42,11 @@ namespace Terrasoft.Configuration
         };
 
         private static readonly ILog ErrorLogger = LogManager.GetLogger("Error");
+
+        private static readonly IPgrProxyResponseRecoveryHandler[] ResponseRecoveryHandlers =
+        {
+            new PgrContactInsertCancelledRecoveryHandler()
+        };
 
         public Stream ProcessRequest(Stream requestBody, string path)
         {
@@ -94,7 +100,10 @@ namespace Terrasoft.Configuration
             }
             catch (WebException ex)
             {
-                return HandleWebException(ex, context, out statusCode, out responseBodyString, out errorMessage);
+                var errorStream = HandleWebException(ex, context, out statusCode, out responseBodyString, out errorMessage);
+                var recoveredStream = TryRecoverResponse(context, method, path, requestBodyString,
+                    ref statusCode, ref responseBodyString);
+                return recoveredStream ?? errorStream;
             }
             catch (Exception ex)
             {
@@ -154,6 +163,55 @@ namespace Terrasoft.Configuration
             var errorResponseStream = CreateResponseStream(errorBytes);
 
             return errorResponseStream;
+        }
+
+        private Stream TryRecoverResponse(WebOperationContext context, string method, string path,
+            string requestBodyString, ref int statusCode, ref string responseBodyString)
+        {
+            foreach (var handler in ResponseRecoveryHandlers)
+            {
+                if (!handler.CanHandle(method, path, statusCode, responseBodyString))
+                {
+                    continue;
+                }
+
+                try
+                {
+                    var recoveredBody = handler.Recover(UserConnection, requestBodyString,
+                        (requestMethod, relativePath) => SendInternalODataRequest(context, requestMethod, relativePath),
+                        out var recoveredStatusCode, out var recoveredContentType);
+                    if (recoveredBody == null)
+                    {
+                        continue;
+                    }
+
+                    statusCode = recoveredStatusCode;
+                    responseBodyString = recoveredBody;
+                    context.OutgoingResponse.StatusCode = (HttpStatusCode) recoveredStatusCode;
+                    if (!string.IsNullOrEmpty(recoveredContentType))
+                    {
+                        context.OutgoingResponse.ContentType = recoveredContentType;
+                    }
+
+                    return CreateResponseStream(Encoding.UTF8.GetBytes(responseBodyString));
+                }
+                catch (Exception ex)
+                {
+                    ErrorLogger.Error(ex);
+                }
+            }
+
+            return null;
+        }
+
+        private (int statusCode, string body, string contentType) SendInternalODataRequest(
+            WebOperationContext context, string method, string relativePath)
+        {
+            var targetUrl = GetODataBaseUrl(UserConnection).TrimEnd('/') + "/" + relativePath;
+            var timeout = GetRequestTimeout(UserConnection);
+            var webRequest = CreateWebRequest(targetUrl, method, null, timeout);
+            CopyHeaders(context.IncomingRequest, webRequest);
+            return GetWebResponseContent(webRequest);
         }
 
         private int GetRequestTimeout(UserConnection userConnection)

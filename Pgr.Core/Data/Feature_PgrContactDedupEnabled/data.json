@@ -1,0 +1,28 @@
+{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "13aad544-ec30-4e76-a373-f0cff3202e24",
+          "Value": "PgrContactDedupEnabled"
+        },
+        {
+          "SchemaColumnUId": "e04c95c8-b8d3-5e4d-c0b4-789430916f33",
+          "Value": 1
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "Value": "Enables the Contact dedup/redirect logic in PgrContactEventListener"
+        },
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "877d1540-adc9-4950-9002-73ebd4ce59d0"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "Value": "PgrContactDedupEnabled"
+        }
+      ]
+    }
+  ]
+}

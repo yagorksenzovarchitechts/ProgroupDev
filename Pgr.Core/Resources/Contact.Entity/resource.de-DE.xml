@@ -15,6 +15,7 @@
 			<Item Name="Columns.Owner.Caption" Value="Verkaufsleiter" />
 			<Item Name="Columns.PgrCreatioUser.Caption" Value="Creatio user" />
 			<Item Name="Columns.PgrIsActive.Caption" Value="aktiv" />
+			<Item Name="Columns.PgrIsManuallyCreated.Caption" Value="Manuell erstellt" />
 			<Item Name="Columns.PgrProGroupSalesPerson.Caption" Value="Mitarbeiter Kürzel" />
 			<Item Name="Columns.PgrReportsTo.Caption" Value="Vorgesetzter" />
 			<Item Name="Columns.PgrWepaformContactId.Caption" Value="Wepaform Kontaktnummer" />

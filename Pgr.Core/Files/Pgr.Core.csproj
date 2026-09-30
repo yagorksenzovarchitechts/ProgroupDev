@@ -321,8 +321,8 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup Label="Package References">
-		<Reference Include="CrtAICases">
-			<HintPath>$(RelativePkgFolderPath)/CrtAICases/$(StandalonePackageAssemblyPath)/CrtAICases.dll</HintPath>
+		<Reference Include="CrtFileImport">
+			<HintPath>$(RelativePkgFolderPath)/CrtFileImport/$(StandalonePackageAssemblyPath)/CrtFileImport.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>

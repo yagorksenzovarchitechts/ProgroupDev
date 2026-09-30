@@ -143,6 +143,23 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule"]
 				"parentName": "MainContainer",
 				"propertyName": "items",
 				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "Checkbox_PgrIsManuallyCreated",
+				"values": {
+					"type": "crt.Checkbox",
+					"value": true,
+					"disabled": false,
+					"inversed": false,
+					"label": "$Resources.Strings.ContactDS_PgrIsManuallyCreated",
+					"labelPosition": "auto",
+					"control": "$ContactDS_PgrIsManuallyCreated",
+					"visible": false
+				},
+				"parentName": "MainContainer",
+				"propertyName": "items",
+				"index": 6
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -204,6 +221,12 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule"]
 						"modelConfig": {
 							"path": "ContactDS.Email"
 						}
+					},
+					"ContactDS_PgrIsManuallyCreated": {
+						"value": true,
+						"modelConfig": {
+							"path": "ContactDS.PgrIsManuallyCreated"
+						}
 					}
 				}
 			}
@@ -213,6 +236,7 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule"]
 			{
 				request: "crt.SaveRecordRequest",
 				handler: async (request, next) => {
+					request.$context.ContactDS_PgrIsManuallyCreated = true;
 					if (request.pgrCheckDuplicates !== true) {
 						return await next?.handle(request);
 					}

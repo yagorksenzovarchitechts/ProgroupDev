@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "8f691b3a-52f9-4c65-a5b3-c5f726175fea",
+    "Name": "PgrContactEventListener",
+    "ModifiedOnUtc": "\/Date(1790759224000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "Contact event listener",
+    "DependsOn": []
+  }
+}
