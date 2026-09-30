@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.70455a0a-fe5c-5022-fd77-456a182def4e.Caption" Value="Hide elements: QuickFilter_SysAccounts" />
+			<Item Name="Caption" Value="Contacts list page (Business rules)" />
+		</Items>
+	</Group>
+</Resources>

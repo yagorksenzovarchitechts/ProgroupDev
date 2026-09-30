@@ -1,0 +1,75 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "c3f73e34-3b55-4e67-bb8c-d198a9c5bd40",
+      "A2": "PgrContacts_ListPageBusinessRule",
+      "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
+      "B8": "10.0.0.858",
+      "AD1": "9cde062d-3667-4262-b6ea-df03223992c9",
+      "AD2": "ClientUnitSchemaManager",
+      "AD3": "BusinessRule",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+        "JI0": "Terrasoft.Core.BusinessRules.BusinessRules",
+        "BRS1": [
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+            "UId": "70455a0a-fe5c-5022-fd77-456a182def4e",
+            "BR1": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+                "UId": "9c1a2ac0-be7f-0954-78e8-8d3c30d57272",
+                "BRC1": {
+                  "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleGroupCondition",
+                  "UId": "651bb4c5-e8cf-81b0-fe33-5a698f1e2b40",
+                  "BGC1": 1,
+                  "BGC2": [
+                    {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+                      "UId": "6e1d9cca-9da6-1443-2c44-defc704eb9cf",
+                      "BCO1": {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleSysValueExpression",
+                        "UId": "aa190363-732b-39ef-4402-5c43ea735d36",
+                        "BRE1": "ObjectList",
+                        "BRE2": "SysValue",
+                        "BSV1": "CurrentUserRoles"
+                      },
+                      "BCO2": {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+                        "UId": "c1398e3d-d854-75c2-cadd-a33728b3765c",
+                        "BRE1": "Lookup",
+                        "BRE3": "SysAdminUnit",
+                        "BVE1": "83a43ebc-f36b-1410-298d-001e8c82bcad"
+                      },
+                      "BCO3": 12
+                    }
+                  ]
+                },
+                "BRC2": [
+                  {
+                    "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionHideElement",
+                    "UId": "9d2b2e61-e484-bd88-b4b1-f64eb29e2b9b",
+                    "BRA4": "QuickFilter_SysAccounts"
+                  }
+                ]
+              }
+            ],
+            "BR2": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "858ebb0d-a566-4f6b-9b86-a9b653a6052e",
+                "BRT2": 2
+              }
+            ],
+            "BR3": "BusinessRule_0f2aa30"
+          }
+        ]
+      }
+    }
+  }
+}

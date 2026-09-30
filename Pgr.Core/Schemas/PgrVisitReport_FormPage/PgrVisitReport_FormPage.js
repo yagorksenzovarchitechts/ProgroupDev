@@ -182,12 +182,36 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_xv0k1x0",
+				"name": "Input_pulytkc",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "#ResourceString(Input_pulytkc_label)#",
+					"control": "$PDS_PgrName_2hl0heu",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto",
+					"visible": true
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_xv0k1x0",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -207,7 +231,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -216,7 +240,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 3,
+						"row": 4,
 						"rowSpan": 1
 					},
 					"type": "crt.DateTimePicker",
@@ -230,7 +254,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -239,7 +263,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 4,
+						"row": 5,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -255,7 +279,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -281,7 +305,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 5,
+						"row": 6,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -300,7 +324,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -309,7 +333,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 6,
+						"row": 7,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -328,7 +352,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 5
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -789,7 +813,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					"title": "#ResourceString(ExpansionPanel_0df7qhy_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": false,
+					"expanded": true,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -856,7 +880,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					"type": "crt.Button",
 					"caption": "#ResourceString(GridDetailAddBtn_jubpado_caption)#",
 					"icon": "add-button-icon",
-					"iconPosition": "only-icon",
+					"iconPosition": "left-icon",
 					"color": "default",
 					"size": "medium",
 					"clicked": {
@@ -864,7 +888,9 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 						"params": {
 							"entityName": "PgrContactsInVisitReport"
 						}
-					}
+					},
+					"visible": true,
+					"clickMode": "default"
 				},
 				"parentName": "FlexContainer_xim0qc6",
 				"propertyName": "items",
@@ -896,94 +922,6 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 			},
 			{
 				"operation": "insert",
-				"name": "GridDetailSettingsBtn_mdl0cqq",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(GridDetailSettingsBtn_mdl0cqq_caption)#",
-					"icon": "actions-button-icon",
-					"iconPosition": "only-icon",
-					"color": "default",
-					"size": "medium",
-					"clickMode": "menu",
-					"menuItems": []
-				},
-				"parentName": "FlexContainer_xim0qc6",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailExportDataBtn_c4l6di8",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "#ResourceString(GridDetailExportDataBtn_c4l6di8_caption)#",
-					"icon": "export-button-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.ExportDataGridToExcelRequest",
-						"params": {
-							"viewName": "GridDetail_7qocfn4"
-						}
-					}
-				},
-				"parentName": "GridDetailSettingsBtn_mdl0cqq",
-				"propertyName": "menuItems",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailImportDataBtn_i2jb8ab",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "#ResourceString(GridDetailImportDataBtn_i2jb8ab_caption)#",
-					"icon": "import-button-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.ImportDataRequest",
-						"params": {
-							"entitySchemaName": "PgrContactsInVisitReport"
-						}
-					}
-				},
-				"parentName": "GridDetailSettingsBtn_mdl0cqq",
-				"propertyName": "menuItems",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailSearchFilter_1gczrxv",
-				"values": {
-					"type": "crt.SearchFilter",
-					"placeholder": "#ResourceString(GridDetailSearchFilter_1gczrxv_placeholder)#",
-					"iconOnly": true,
-					"_filterOptions": {
-						"expose": [
-							{
-								"attribute": "GridDetailSearchFilter_1gczrxv_GridDetail_7qocfn4",
-								"converters": [
-									{
-										"converter": "crt.SearchFilterAttributeConverter",
-										"args": [
-											"GridDetail_7qocfn4"
-										]
-									}
-								]
-							}
-						],
-						"from": [
-							"GridDetailSearchFilter_1gczrxv_SearchValue",
-							"GridDetailSearchFilter_1gczrxv_FilteredColumnsGroups"
-						]
-					}
-				},
-				"parentName": "FlexContainer_xim0qc6",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
 				"name": "GridContainer_366v3xb",
 				"values": {
 					"type": "crt.GridContainer",
@@ -994,12 +932,22 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					],
 					"gap": {
 						"columnGap": "large",
-						"rowGap": 0
+						"rowGap": "small"
 					},
 					"styles": {
 						"overflow-x": "hidden"
 					},
-					"items": []
+					"items": [],
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
 				},
 				"parentName": "ExpansionPanel_0df7qhy",
 				"propertyName": "items",
@@ -1007,14 +955,39 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 			},
 			{
 				"operation": "insert",
-				"name": "GridDetail_7qocfn4",
+				"name": "Label_ifrkhhd",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.Label",
+					"caption": "#MacrosTemplateString(#ResourceString(Label_ifrkhhd_caption)#)#",
+					"labelType": "headline-3",
+					"labelThickness": "default",
+					"labelEllipsis": false,
+					"labelColor": "auto",
+					"labelBackgroundColor": "transparent",
+					"labelTextAlign": "start",
+					"headingLevel": "label",
+					"visible": true
+				},
+				"parentName": "GridContainer_366v3xb",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_CustomerContacts",
 				"values": {
 					"type": "crt.DataGrid",
 					"layoutConfig": {
 						"colSpan": 2,
 						"column": 1,
-						"row": 1,
-						"rowSpan": 6
+						"row": 2,
+						"rowSpan": 2
 					},
 					"features": {
 						"rows": {
@@ -1032,14 +1005,225 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 							"code": "GridDetail_7qocfn4DS_PgrContacts",
 							"caption": "#ResourceString(GridDetail_7qocfn4DS_PgrContacts)#",
 							"dataValueType": 10,
-							"width": 623
+							"width": 451
 						}
 					],
-					"placeholder": false
+					"placeholder": false,
+					"activeRow": "$GridDetail_7qocfn4_ActiveRow",
+					"selectionState": "$GridDetail_7qocfn4_SelectionState",
+					"_selectionOptions": {
+						"attribute": "GridDetail_7qocfn4_SelectionState"
+					},
+					"bulkActions": []
 				},
 				"parentName": "GridContainer_366v3xb",
 				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_7qocfn4_AddTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Add tag",
+					"icon": "tag-icon",
+					"clicked": {
+						"request": "crt.AddTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_7qocfn4DS",
+							"filters": "$GridDetail_7qocfn4 | crt.ToCollectionFilters : 'GridDetail_7qocfn4' : $GridDetail_7qocfn4_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_7qocfn4_SelectionState"
+						}
+					},
+					"items": []
+				},
+				"parentName": "GridDetail_CustomerContacts",
+				"propertyName": "bulkActions",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_7qocfn4_RemoveTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Remove tag",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.RemoveTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_7qocfn4DS",
+							"filters": "$GridDetail_7qocfn4 | crt.ToCollectionFilters : 'GridDetail_7qocfn4' : $GridDetail_7qocfn4_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_7qocfn4_SelectionState"
+						}
+					}
+				},
+				"parentName": "GridDetail_7qocfn4_AddTagsBulkAction",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_7qocfn4_ExportToExcelBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Export to Excel",
+					"icon": "export-button-icon",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "GridDetail_CustomerContacts",
+							"filters": "$GridDetail_7qocfn4 | crt.ToCollectionFilters : 'GridDetail_7qocfn4' : $GridDetail_7qocfn4_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_7qocfn4_SelectionState"
+						}
+					}
+				},
+				"parentName": "GridDetail_CustomerContacts",
+				"propertyName": "bulkActions",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_7qocfn4_MergeBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Merge",
+					"icon": "merge-icon",
+					"clicked": {
+						"request": "crt.MergeRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_7qocfn4DS",
+							"selectionState": "$GridDetail_7qocfn4_SelectionState"
+						}
+					}
+				},
+				"parentName": "GridDetail_CustomerContacts",
+				"propertyName": "bulkActions",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_7qocfn4_DeleteBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Delete",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.DeleteRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_7qocfn4DS",
+							"filters": "$GridDetail_7qocfn4 | crt.ToCollectionFilters : 'GridDetail_7qocfn4' : $GridDetail_7qocfn4_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_7qocfn4_SelectionState"
+						}
+					}
+				},
+				"parentName": "GridDetail_CustomerContacts",
+				"propertyName": "bulkActions",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "Label_kn5k638",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.Label",
+					"caption": "#MacrosTemplateString(#ResourceString(Label_kn5k638_caption)#)#",
+					"labelType": "headline-3",
+					"labelThickness": "default",
+					"labelEllipsis": false,
+					"labelColor": "auto",
+					"labelBackgroundColor": "transparent",
+					"labelTextAlign": "start",
+					"headingLevel": "label",
+					"visible": true
+				},
+				"parentName": "GridContainer_366v3xb",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_0mb3uzm",
+				"values": {
+					"type": "crt.DataGrid",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"features": {
+						"rows": {
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
+						}
+					},
+					"items": "$DataGrid_0mb3uzm",
+					"primaryColumnName": "DataGrid_0mb3uzmDS_Id",
+					"columns": [
+						{
+							"id": "2c59c902-6682-bc55-70e2-4ebdf5938cf8",
+							"code": "DataGrid_0mb3uzmDS_PgrContacts",
+							"caption": "#ResourceString(DataGrid_0mb3uzmDS_PgrContacts)#",
+							"dataValueType": 10,
+							"width": 451
+						}
+					]
+				},
+				"parentName": "GridContainer_366v3xb",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "Label_1u95lgq",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 6,
+						"rowSpan": 1
+					},
+					"type": "crt.Label",
+					"caption": "#MacrosTemplateString(#ResourceString(Label_1u95lgq_caption)#)#",
+					"labelType": "headline-3",
+					"labelThickness": "default",
+					"labelEllipsis": false,
+					"labelColor": "auto",
+					"labelBackgroundColor": "transparent",
+					"labelTextAlign": "start",
+					"headingLevel": "label",
+					"visible": true
+				},
+				"parentName": "GridContainer_366v3xb",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "Input_3nnhmxl",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 7,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrOtherContacts_oth3ctf",
+					"control": "$PDS_PgrOtherContacts_oth3ctf",
+					"placeholder": "#ResourceString(Input_3nnhmxl_placeholder)#",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": true,
+					"labelPosition": "auto",
+					"visible": true
+				},
+				"parentName": "GridContainer_366v3xb",
+				"propertyName": "items",
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -1081,7 +1265,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					"title": "#ResourceString(ExpansionPanel_9f310aw_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": false,
+					"expanded": true,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -1250,11 +1434,11 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 			},
 			{
 				"operation": "insert",
-				"name": "NumberInput_iu2t9qj",
+				"name": "NumberInput_8cotk69",
 				"values": {
 					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_PgrActualMTD_cqxrcej",
-					"control": "$PDS_PgrActualMTD_cqxrcej",
+					"label": "$Resources.Strings.PDS_PgrThreeDayAvg_fumkmhs",
+					"control": "$PDS_PgrThreeDayAvg_fumkmhs",
 					"readonly": true,
 					"placeholder": "",
 					"labelPosition": "auto",
@@ -1267,7 +1451,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 			},
 			{
 				"operation": "insert",
-				"name": "NumberInput_xt3vqgj",
+				"name": "NumberInput_tshr40e",
 				"values": {
 					"type": "crt.NumberInput",
 					"label": "$Resources.Strings.PDS_PgrNineDayAvg_htg5jr3",
@@ -1566,7 +1750,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					],
 					"gap": {
 						"columnGap": "large",
-						"rowGap": null
+						"rowGap": "none"
 					},
 					"styles": {
 						"overflow-x": "hidden"
@@ -1616,12 +1800,42 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 			},
 			{
 				"operation": "insert",
+				"name": "Input_fc9evig",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.RichTextEditor",
+					"label": "#ResourceString(Input_fc9evig_label)#",
+					"control": "$PDS_PgrCommercialTopicComment_37rgaow",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto",
+					"visible": false,
+					"filesStorage": {
+						"masterRecordColumnValue": "$Id",
+						"entitySchemaName": "SysFile",
+						"recordColumnName": "RecordId"
+					},
+					"toolbarDisplayMode": null
+				},
+				"parentName": "GridContainer_bg3nnuf",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
 				"name": "Checkbox_7fdocs4",
 				"values": {
 					"layoutConfig": {
-						"column": 2,
+						"column": 1,
 						"colSpan": 1,
-						"row": 1,
+						"row": 3,
 						"rowSpan": 1
 					},
 					"type": "crt.Checkbox",
@@ -1639,43 +1853,47 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 				},
 				"parentName": "GridContainer_bg3nnuf",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
-				"name": "Checkbox_s1dlmmb",
+				"name": "Input_d03k06p",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
-						"colSpan": 1,
-						"row": 2,
+						"colSpan": 2,
+						"row": 4,
 						"rowSpan": 1
 					},
-					"type": "crt.Checkbox",
-					"value": true,
-					"disabled": false,
-					"inversed": false,
-					"label": "$Resources.Strings.PDS_PgrTopicQuality_g8lcrih",
-					"ariaLabel": "",
-					"labelPosition": "right",
+					"type": "crt.RichTextEditor",
+					"label": "#ResourceString(Input_d03k06p_label)#",
+					"control": "$PDS_PgrProjectTopicComment_l0kw0iy",
+					"placeholder": "",
 					"tooltip": "",
-					"control": "$PDS_PgrTopicQuality_g8lcrih",
-					"visible": true,
 					"readonly": false,
-					"placeholder": ""
+					"multiline": false,
+					"labelPosition": "auto",
+					"visible": false,
+					"filesStorage": {
+						"masterRecordColumnValue": "$Id",
+						"entitySchemaName": "SysFile",
+						"recordEntitySchemaName": null,
+						"recordColumnName": "RecordId"
+					},
+					"toolbarDisplayMode": null
 				},
 				"parentName": "GridContainer_bg3nnuf",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
 				"name": "Checkbox_yn6s6f7",
 				"values": {
 					"layoutConfig": {
-						"column": 2,
+						"column": 1,
 						"colSpan": 1,
-						"row": 2,
+						"row": 5,
 						"rowSpan": 1
 					},
 					"type": "crt.Checkbox",
@@ -1693,7 +1911,95 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 				},
 				"parentName": "GridContainer_bg3nnuf",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "Input_9e3hpga",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 6,
+						"rowSpan": 1
+					},
+					"type": "crt.RichTextEditor",
+					"label": "#ResourceString(Input_9e3hpga_label)#",
+					"control": "$PDS_PgrServiceTopicComment_8h4h8yv",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto",
+					"visible": false,
+					"filesStorage": {
+						"masterRecordColumnValue": "$Id",
+						"entitySchemaName": "SysFile",
+						"recordColumnName": "RecordId"
+					},
+					"toolbarDisplayMode": null
+				},
+				"parentName": "GridContainer_bg3nnuf",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "Checkbox_s1dlmmb",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 7,
+						"rowSpan": 1
+					},
+					"type": "crt.Checkbox",
+					"value": true,
+					"disabled": false,
+					"inversed": false,
+					"label": "$Resources.Strings.PDS_PgrTopicQuality_g8lcrih",
+					"ariaLabel": "",
+					"labelPosition": "right",
+					"tooltip": "",
+					"control": "$PDS_PgrTopicQuality_g8lcrih",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "GridContainer_bg3nnuf",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "Input_9ep08np",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 8,
+						"rowSpan": 1
+					},
+					"type": "crt.RichTextEditor",
+					"label": "#ResourceString(Input_9ep08np_label)#",
+					"control": "$PDS_PgrQualityTopicComment_6kfykpz",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto",
+					"visible": false,
+					"filesStorage": {
+						"masterRecordColumnValue": "$Id",
+						"entitySchemaName": "SysFile",
+						"recordEntitySchemaName": null,
+						"recordColumnName": "RecordId"
+					},
+					"toolbarDisplayMode": null
+				},
+				"parentName": "GridContainer_bg3nnuf",
+				"propertyName": "items",
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -1702,7 +2008,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 3,
+						"row": 9,
 						"rowSpan": 1
 					},
 					"type": "crt.Checkbox",
@@ -1720,13 +2026,13 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 				},
 				"parentName": "GridContainer_bg3nnuf",
 				"propertyName": "items",
-				"index": 4
+				"index": 8
 			},
 			{
 				"operation": "insert",
 				"name": "Input_1snwgmj",
 				"values": {
-					"type": "crt.Input",
+					"type": "crt.RichTextEditor",
 					"label": "#ResourceString(Input_1snwgmj_label)#",
 					"control": "$PDS_PgrKeyTopics_xxpodb1",
 					"placeholder": "",
@@ -1734,17 +2040,24 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					"readonly": false,
 					"multiline": true,
 					"labelPosition": "auto",
-					"visible": true,
+					"visible": false,
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 4,
+						"row": 10,
 						"rowSpan": 1
-					}
+					},
+					"filesStorage": {
+						"masterRecordColumnValue": "$Id",
+						"entitySchemaName": "SysFile",
+						"recordEntitySchemaName": null,
+						"recordColumnName": "RecordId"
+					},
+					"toolbarDisplayMode": null
 				},
 				"parentName": "GridContainer_bg3nnuf",
 				"propertyName": "items",
-				"index": 5
+				"index": 9
 			},
 			{
 				"operation": "insert",
@@ -2041,7 +2354,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 							"code": "DataGrid_bhkko01DS_Title",
 							"caption": "#ResourceString(DataGrid_bhkko01DS_Title)#",
 							"dataValueType": 28,
-							"width": 483
+							"width": 231
 						},
 						{
 							"id": "e68b10fa-91d4-fa75-7589-4ae35ab6f8ae",
@@ -2054,6 +2367,24 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 							"code": "DataGrid_bhkko01DS_PgrCorrectiveMeasureAction",
 							"caption": "#ResourceString(DataGrid_bhkko01DS_PgrCorrectiveMeasureAction)#",
 							"dataValueType": 10
+						},
+						{
+							"id": "8e32281f-7dec-3b9c-5c27-35f0e5eafd96",
+							"code": "DataGrid_bhkko01DS_Owner",
+							"caption": "#ResourceString(DataGrid_bhkko01DS_Owner)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "59611103-193f-53ab-2932-87494531c29f",
+							"code": "DataGrid_bhkko01DS_StartDate",
+							"caption": "#ResourceString(DataGrid_bhkko01DS_StartDate)#",
+							"dataValueType": 7
+						},
+						{
+							"id": "ae518c7c-5ddd-c961-7e34-8b2525217b73",
+							"code": "DataGrid_bhkko01DS_DueDate",
+							"caption": "#ResourceString(DataGrid_bhkko01DS_DueDate)#",
+							"dataValueType": 7
 						}
 					],
 					"placeholder": false,
@@ -2513,7 +2844,15 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					"DataGrid_bhkko01": {
 						"isCollection": true,
 						"modelConfig": {
-							"path": "DataGrid_bhkko01DS"
+							"path": "DataGrid_bhkko01DS",
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "asc",
+										"columnName": "StartDate"
+									}
+								]
+							}
 						},
 						"viewModelConfig": {
 							"attributes": {
@@ -2532,6 +2871,21 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 										"path": "DataGrid_bhkko01DS.PgrCorrectiveMeasureAction"
 									}
 								},
+								"DataGrid_bhkko01DS_Owner": {
+									"modelConfig": {
+										"path": "DataGrid_bhkko01DS.Owner"
+									}
+								},
+								"DataGrid_bhkko01DS_StartDate": {
+									"modelConfig": {
+										"path": "DataGrid_bhkko01DS.StartDate"
+									}
+								},
+								"DataGrid_bhkko01DS_DueDate": {
+									"modelConfig": {
+										"path": "DataGrid_bhkko01DS.DueDate"
+									}
+								},
 								"DataGrid_bhkko01DS_Id": {
 									"modelConfig": {
 										"path": "DataGrid_bhkko01DS.Id"
@@ -2544,12 +2898,15 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 						"isCollection": true,
 						"modelConfig": {
 							"path": "GridDetail_7qocfn4DS",
-							"filterAttributes": [
-								{
-									"name": "GridDetailSearchFilter_1gczrxv_GridDetail_7qocfn4",
-									"loadOnChange": true
-								}
-							]
+							"filterAttributes": [],
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "desc",
+										"columnName": "PgrContacts"
+									}
+								]
+							}
 						},
 						"viewModelConfig": {
 							"attributes": {
@@ -2609,9 +2966,110 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 							}
 						}
 					},
-					"PDS_PgrActualMTD_cqxrcej": {
+					"PDS_PgrCommercialTopicComment_37rgaow": {
 						"modelConfig": {
-							"path": "PDS.PgrActualMTD"
+							"path": "PDS.PgrCommercialTopicComment"
+						}
+					},
+					"PDS_PgrProjectTopicComment_l0kw0iy": {
+						"modelConfig": {
+							"path": "PDS.PgrProjectTopicComment"
+						}
+					},
+					"PDS_PgrServiceTopicComment_8h4h8yv": {
+						"modelConfig": {
+							"path": "PDS.PgrServiceTopicComment"
+						}
+					},
+					"PDS_PgrQualityTopicComment_6kfykpz": {
+						"modelConfig": {
+							"path": "PDS.PgrQualityTopicComment"
+						}
+					},
+					"PDS_PgrOtherContacts_oth3ctf": {
+						"modelConfig": {
+							"path": "PDS.PgrOtherContacts"
+						}
+					},
+					"DataGrid_0mb3uzm": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "DataGrid_0mb3uzmDS",
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "desc",
+										"columnName": "PgrContacts"
+									}
+								]
+							},
+							"filterAttributes": [
+								{
+									"loadOnChange": true,
+									"name": "DataGrid_0mb3uzm_PredefinedFilter"
+								}
+							]
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"DataGrid_0mb3uzmDS_PgrContacts": {
+									"modelConfig": {
+										"path": "DataGrid_0mb3uzmDS.PgrContacts"
+									}
+								},
+								"DataGrid_0mb3uzmDS_Id": {
+									"modelConfig": {
+										"path": "DataGrid_0mb3uzmDS.Id"
+									}
+								}
+							}
+						}
+					},
+					"DataGrid_0mb3uzm_PredefinedFilter": {
+						"value": {
+							"items": {
+								"0e3514b7-530f-4c13-b095-b68444f9eb14": {
+									"filterType": 4,
+									"comparisonType": 3,
+									"isEnabled": true,
+									"trimDateTimeParameterToDate": false,
+									"leftExpression": {
+										"expressionType": 0,
+										"columnPath": "PgrContacts.Type"
+									},
+									"isAggregative": false,
+									"dataValueType": 10,
+									"referenceSchemaName": "ContactType",
+									"rightExpressions": [
+										{
+											"expressionType": 2,
+											"parameter": {
+												"dataValueType": 10,
+												"value": {
+													"Name": "Employee",
+													"Id": "60733efc-f36b-1410-a883-16d83cab0980",
+													"value": "60733efc-f36b-1410-a883-16d83cab0980",
+													"displayValue": "Employee"
+												}
+											}
+										}
+									]
+								}
+							},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "PgrContactsInVisitReport"
+						}
+					},
+					"PDS_PgrName_2hl0heu": {
+						"modelConfig": {
+							"path": "PDS.PgrName"
+						}
+					},
+					"PDS_PgrThreeDayAvg_fumkmhs": {
+						"modelConfig": {
+							"path": "PDS.PgrThreeDayAvg"
 						}
 					}
 				}
@@ -2642,6 +3100,16 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 							}
 						],
 						"GridDetail_7qocfn4DS": [
+							{
+								"attributePath": "PgrVisitReport",
+								"relationPath": "PDS.Id"
+							},
+							{
+								"attributePath": "PgrContacts.Account",
+								"relationPath": "PDS.PgrAccount"
+							}
+						],
+						"DataGrid_0mb3uzmDS": [
 							{
 								"attributePath": "PgrVisitReport",
 								"relationPath": "PDS.Id"
@@ -2683,11 +3151,32 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 								},
 								"PgrCorrectiveMeasureAction": {
 									"path": "PgrCorrectiveMeasureAction"
+								},
+								"Owner": {
+									"path": "Owner"
+								},
+								"StartDate": {
+									"path": "StartDate"
+								},
+								"DueDate": {
+									"path": "DueDate"
 								}
 							}
 						}
 					},
 					"GridDetail_7qocfn4DS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "PgrContactsInVisitReport",
+							"attributes": {
+								"PgrContacts": {
+									"path": "PgrContacts"
+								}
+							}
+						}
+					},
+					"DataGrid_0mb3uzmDS": {
 						"type": "crt.EntityDataSource",
 						"scope": "viewElement",
 						"config": {

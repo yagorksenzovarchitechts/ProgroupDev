@@ -287,18 +287,22 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
-				"name": "PgrName",
+				"name": "Input_7ivs1ru",
 				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PgrName",
-					"control": "$PgrName",
-					"labelPosition": "auto",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 3,
 						"rowSpan": 1
-					}
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrWepaformDescription_628qlfd",
+					"control": "$PDS_PgrWepaformDescription_628qlfd",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -329,22 +333,18 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
-				"name": "Input_0cfttbe",
+				"name": "PgrName",
 				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PgrName",
+					"control": "$PgrName",
+					"labelPosition": "auto",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 4,
 						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrBonusId_hrmxsue",
-					"control": "$PDS_PgrBonusId_hrmxsue",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
+					}
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
@@ -375,6 +375,53 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 			},
 			{
 				"operation": "insert",
+				"name": "Input_0cfttbe",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrBonusId_hrmxsue",
+					"control": "$PDS_PgrBonusId_hrmxsue",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "Checkbox_ppwcqr1",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.Checkbox",
+					"value": true,
+					"disabled": false,
+					"inversed": false,
+					"label": "$Resources.Strings.PDS_PgrBonusPaid_urb9qjf",
+					"ariaLabel": "",
+					"labelPosition": "auto",
+					"tooltip": "",
+					"control": "$PDS_PgrBonusPaid_urb9qjf"
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 9
+			},
+			{
+				"operation": "insert",
 				"name": "Input_pwn8c59",
 				"values": {
 					"type": "crt.Input",
@@ -390,6 +437,220 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ExpansionPanel_PaymentInfo",
+				"values": {
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(ExpansionPanel_PaymentInfo_title)#",
+					"toggleType": "material",
+					"togglePosition": "before",
+					"expanded": true,
+					"labelColor": "auto",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"padding": {
+						"top": "small",
+						"bottom": "small",
+						"left": "none",
+						"right": "none"
+					},
+					"fitContent": true,
+					"visible": false,
+					"alignItems": "stretch"
+				},
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_zq3q55i",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 24px)",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_PaymentInfo",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_r7v13a0",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"gap": "none",
+					"alignItems": "center",
+					"items": [],
+					"layoutConfig": {
+						"colSpan": 1,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_zq3q55i",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_qog5rxc",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 32px)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": [],
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
+				},
+				"parentName": "ExpansionPanel_PaymentInfo",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "NumberInput_fxsgx9y",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_PgrBonusPaymentAmount_43li4i4",
+					"control": "$PDS_PgrBonusPaymentAmount_43li4i4",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GridContainer_qog5rxc",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_gsn5332",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_PgrBonusPaymentDate_d4a89x7",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "date",
+					"control": "$PDS_PgrBonusPaymentDate_d4a89x7"
+				},
+				"parentName": "GridContainer_qog5rxc",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "NumberInput_wy6v41m",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_PgrDeliveredVolume_i4a5bb6",
+					"control": "$PDS_PgrDeliveredVolume_i4a5bb6",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GridContainer_qog5rxc",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "NumberInput_ti9go53",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_PgrValueDeliveredVolume_dak591i",
+					"control": "$PDS_PgrValueDeliveredVolume_dak591i",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GridContainer_qog5rxc",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "NumberInput_1e31ynf",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_PgrPercentageRevenue_79m5gop",
+					"control": "$PDS_PgrPercentageRevenue_79m5gop",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GridContainer_qog5rxc",
+				"propertyName": "items",
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -417,7 +678,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -797,7 +1058,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -1332,6 +1593,41 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"PDS_PgrAccountPgrWepaformName_sgr1s52": {
 						"modelConfig": {
 							"path": "PDS.PgrAccountPgrWepaformName_sgr1s52"
+						}
+					},
+					"PDS_PgrWepaformDescription_628qlfd": {
+						"modelConfig": {
+							"path": "PDS.PgrWepaformDescription"
+						}
+					},
+					"PDS_PgrBonusPaid_urb9qjf": {
+						"modelConfig": {
+							"path": "PDS.PgrBonusPaid"
+						}
+					},
+					"PDS_PgrBonusPaymentDate_d4a89x7": {
+						"modelConfig": {
+							"path": "PDS.PgrBonusPaymentDate"
+						}
+					},
+					"PDS_PgrBonusPaymentAmount_43li4i4": {
+						"modelConfig": {
+							"path": "PDS.PgrBonusPaymentAmount"
+						}
+					},
+					"PDS_PgrDeliveredVolume_i4a5bb6": {
+						"modelConfig": {
+							"path": "PDS.PgrDeliveredVolume"
+						}
+					},
+					"PDS_PgrValueDeliveredVolume_dak591i": {
+						"modelConfig": {
+							"path": "PDS.PgrValueDeliveredVolume"
+						}
+					},
+					"PDS_PgrPercentageRevenue_79m5gop": {
+						"modelConfig": {
+							"path": "PDS.PgrPercentageRevenue"
 						}
 					}
 				}

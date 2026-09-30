@@ -7,7 +7,7 @@ define("Opportunities_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"values": {
 					"layoutConfig": {
 						"column": 1,
-						"row": 3,
+						"row": 4,
 						"colSpan": 2,
 						"rowSpan": 1
 					}
@@ -46,7 +46,7 @@ define("Opportunities_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"values": {
 					"layoutConfig": {
 						"column": 1,
-						"row": 7,
+						"row": 8,
 						"colSpan": 2,
 						"rowSpan": 1
 					},
@@ -67,7 +67,7 @@ define("Opportunities_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"values": {
 					"layoutConfig": {
 						"column": 1,
-						"row": 8,
+						"row": 9,
 						"colSpan": 2,
 						"rowSpan": 1
 					}
@@ -93,12 +93,54 @@ define("Opportunities_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
+				"name": "ComboBox_uzxhuil",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.OpportunityDS_Category_qids76i",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "above",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$OpportunityDS_Category_qids76i"
+				},
+				"parentName": "MainContainer",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_1mdmkfq",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_1mdmkfq_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_uzxhuil",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "PgrCompetitor",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 4,
+						"row": 5,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -117,7 +159,7 @@ define("Opportunities_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				},
 				"parentName": "MainContainer",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -143,7 +185,7 @@ define("Opportunities_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 5,
+						"row": 6,
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
@@ -156,7 +198,7 @@ define("Opportunities_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				},
 				"parentName": "MainContainer",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -165,7 +207,7 @@ define("Opportunities_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 2,
-						"row": 6,
+						"row": 7,
 						"rowSpan": 1
 					},
 					"type": "crt.DateTimePicker",
@@ -179,7 +221,7 @@ define("Opportunities_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				},
 				"parentName": "MainContainer",
 				"propertyName": "items",
-				"index": 5
+				"index": 6
 			},
 			{
 				"operation": "move",
@@ -251,6 +293,24 @@ define("Opportunities_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 						}
 					},
 					"LookupAttribute_jy7bagb_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"OpportunityDS_Category_qids76i": {
+						"modelConfig": {
+							"path": "OpportunityDS.Category"
+						}
+					},
+					"OpportunityDS_Category_qids76i_List": {
 						"isCollection": true,
 						"modelConfig": {
 							"sortingConfig": {

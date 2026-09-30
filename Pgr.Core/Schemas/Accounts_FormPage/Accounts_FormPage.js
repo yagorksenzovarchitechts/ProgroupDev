@@ -6389,9 +6389,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"numeration": false
 						},
 						"editable": {
-							"enable": true,
-							"itemsCreation": true,
-							"floatingEditPanel": true
+							"enable": false,
+							"itemsCreation": false,
+							"floatingEditPanel": false
 						}
 					},
 					"items": "$GridDetail_8xx12ae",

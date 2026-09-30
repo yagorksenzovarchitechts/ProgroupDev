@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.FolderWithNoConditionWarning.Value" Value="Step {0}. Dynamic folder does not contain filter conditions. All contacts will be added to the campaign participants. It can take some time if you have large quantity of contacts in database" />
+		</Items>
+	</Group>
+</Resources>

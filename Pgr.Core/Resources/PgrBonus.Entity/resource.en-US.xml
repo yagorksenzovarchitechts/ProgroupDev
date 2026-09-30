@@ -6,11 +6,18 @@
 			<Item Name="Columns.PgrAccount.Caption" Value="Account" />
 			<Item Name="Columns.PgrBaseValueType.Caption" Value="Base value type" />
 			<Item Name="Columns.PgrBonusId.Caption" Value="Bonus ID" />
+			<Item Name="Columns.PgrBonusPaid.Caption" Value="Bonus paid" />
+			<Item Name="Columns.PgrBonusPaymentAmount.Caption" Value="Payment amount" />
+			<Item Name="Columns.PgrBonusPaymentDate.Caption" Value="Payment date" />
 			<Item Name="Columns.PgrBonusType.Caption" Value="Bonus type" />
+			<Item Name="Columns.PgrDeliveredVolume.Caption" Value="Delivered volume (TSQM)" />
 			<Item Name="Columns.PgrDescription.Caption" Value="Description" />
 			<Item Name="Columns.PgrEndDate.Caption" Value="End date" />
 			<Item Name="Columns.PgrName.Caption" Value="Name" />
+			<Item Name="Columns.PgrPercentageRevenue.Caption" Value="Percentage of revenue (%)" />
 			<Item Name="Columns.PgrStartDate.Caption" Value="Start date" />
+			<Item Name="Columns.PgrValueDeliveredVolume.Caption" Value="Value of delivered volume (TEUR)" />
+			<Item Name="Columns.PgrWepaformDescription.Caption" Value="Wepaform description" />
 		</Items>
 	</Group>
 </Resources>

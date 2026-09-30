@@ -1,0 +1,8 @@
+﻿{
+  "Properties": {
+    "AddonName": "Sidebar",
+    "CreatedInVersion": "10.0.0.858",
+    "TargetSchemaManagerName": "ClientUnitSchemaManager",
+    "TargetSchemaUId": "64757510-f700-4c91-9c8f-3051647011d4"
+  }
+}

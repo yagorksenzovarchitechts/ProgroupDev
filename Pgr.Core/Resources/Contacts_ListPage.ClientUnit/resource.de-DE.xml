@@ -5,8 +5,12 @@
 			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.Button_m8g38tz_caption.Value" Value="Vertriebsmitarbeiter-Übersicht" />
 			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Importieren" />
+			<Item Name="LocalizableStrings.DataTable_AddRecordsToStaticFolderAction_caption.Value" Value="Zu statischem Ordner hinzufügen" />
+			<Item Name="LocalizableStrings.DataTable_RemoveRecordsFromStaticFolderAction_caption.Value" Value="Remove from static folder" />
 			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_caption.Value" Value="Tag" />
 			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value="Excel-Export" />
+			<Item Name="LocalizableStrings.MenuItem_m0h6bd3_caption.Value" Value="Remove from static folder" />
+			<Item Name="LocalizableStrings.MenuItem_n15hhgi_caption.Value" Value="Zu statischem Ordner hinzufügen" />
 			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Suche..." />
 		</Items>
 	</Group>

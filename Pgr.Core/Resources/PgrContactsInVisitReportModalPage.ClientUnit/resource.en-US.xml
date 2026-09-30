@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Contacts in Visit report modal page" />
+			<Item Name="LocalizableStrings.addRecord_kr01jth_caption.Value" Value="Add new" />
+		</Items>
+	</Group>
+</Resources>

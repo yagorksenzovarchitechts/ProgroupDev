@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "a4f6b77f-800f-4dbd-b63b-09caaf8e3fac",
+    "Name": "PgrContactsInVisitReportModalPage",
+    "ModifiedOnUtc": "\/Date(1790700497000)\/",
+    "Parent": {
+      "UId": "ecdcc8ff-272c-4957-9381-7d74ce17e140",
+      "Name": "BaseMiniPageTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Contacts in Visit report modal page",
+    "DependsOn": []
+  }
+}

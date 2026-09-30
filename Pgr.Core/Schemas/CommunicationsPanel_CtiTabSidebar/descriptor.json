@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "98dab8e4-2e0f-46cc-8496-6689b817123d",
+    "Name": "CommunicationsPanel_CtiTabSidebar",
+    "ModifiedOnUtc": "\/Date(1790695170000)\/",
+    "Parent": {
+      "UId": "df275679-e7d2-4182-8668-e97b23a7b502",
+      "Name": "CommunicationsPanel_CtiTabSidebar"
+    },
+    "ExtendParent": true,
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Cti tab of the communications panel (Sidebar)",
+    "DependsOn": []
+  }
+}

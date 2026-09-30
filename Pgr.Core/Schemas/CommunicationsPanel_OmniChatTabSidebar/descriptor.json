@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "c0e178b4-ee30-46f6-8b8a-9a876698f686",
+    "Name": "CommunicationsPanel_OmniChatTabSidebar",
+    "ModifiedOnUtc": "\/Date(1790695325000)\/",
+    "Parent": {
+      "UId": "38833829-6910-4802-beec-06e3c9cfdf17",
+      "Name": "CommunicationsPanel_OmniChatTabSidebar"
+    },
+    "ExtendParent": true,
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Omni chat tab of the communications panel (Sidebar)",
+    "DependsOn": []
+  }
+}

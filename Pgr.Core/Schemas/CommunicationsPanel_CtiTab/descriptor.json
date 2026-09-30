@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "318a997d-f6a9-4a34-9c04-511996dbc3ba",
+    "Name": "CommunicationsPanel_CtiTab",
+    "ModifiedOnUtc": "\/Date(1790695162000)\/",
+    "Parent": {
+      "UId": "a11c8dac-2c4b-48ae-8b25-f37fd6c9d792",
+      "Name": "CommunicationsPanel_CtiTab"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Cti tab of the communications panel",
+    "DependsOn": []
+  }
+}

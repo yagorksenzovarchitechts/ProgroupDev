@@ -2,11 +2,13 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="Columns.Account.Caption" Value="Account name" />
 			<Item Name="Columns.LeadName.Caption" Value="Lead name" />
 			<Item Name="Columns.PgrEmployeesNumber.Caption" Value="Number of Employees" />
 			<Item Name="Columns.PgrEstimatedVolume.Caption" Value="Yearly required volume" />
 			<Item Name="Columns.PgrPGPotential.Caption" Value="Progroup potential" />
 			<Item Name="Columns.PgrSalesRegion.Caption" Value="Sales region" />
+			<Item Name="Columns.QualifiedAccount.Caption" Value="Account" />
 			<Item Name="Columns.QualifiedContact.Caption" Value="Contact name" />
 			<Item Name="Columns.QualifyStatus.Caption" Value="Lead-Phase" />
 		</Items>

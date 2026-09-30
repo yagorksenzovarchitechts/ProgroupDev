@@ -2,7 +2,12 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="AddonConfig.Rules.415a7794-e97e-0560-5061-b81b9c546999.Caption" Value="Show elements: Service (comment)" />
+			<Item Name="AddonConfig.Rules.82c94a29-fb7e-3353-16de-ffc750c44472.Caption" Value="Show elements: Other (comment)" />
+			<Item Name="AddonConfig.Rules.9848afad-386f-f3b3-6548-4faebc21c7f2.Caption" Value="Show elements: Commercial (comment)" />
 			<Item Name="AddonConfig.Rules.9e72a160-3e1b-2a19-7588-fe36504fd782.Caption" Value="Show: Measures Activity" />
+			<Item Name="AddonConfig.Rules.cb0ae083-bacd-f01a-fedf-b081a815f53b.Caption" Value="Show elements: Quality (comment)" />
+			<Item Name="AddonConfig.Rules.e7d9816c-99f5-0710-8fff-5241ee750243.Caption" Value="Show elements: Project (comment)" />
 			<Item Name="Caption" Value="Visit report form page (Business rules)" />
 		</Items>
 	</Group>

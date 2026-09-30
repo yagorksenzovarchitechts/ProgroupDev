@@ -19,6 +19,13 @@ define("Leads_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 			},
 			{
 				"operation": "merge",
+				"name": "TerritoryQuickFilter",
+				"values": {
+					"visible": true
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "LookupQuickFilterByTag",
 				"values": {
 					"config": {
@@ -30,13 +37,6 @@ define("Leads_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 						"defaultValue": null,
 						"recordsFilter": null
 					},
-					"visible": true
-				}
-			},
-			{
-				"operation": "merge",
-				"name": "TerritoryQuickFilter",
-				"values": {
 					"visible": true
 				}
 			},
@@ -58,7 +58,7 @@ define("Leads_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							"code": "PDS_QualifyStatus",
 							"caption": "#ResourceString(PDS_QualifyStatus)#",
 							"dataValueType": 10,
-							"width": 259
+							"width": 221
 						},
 						{
 							"id": "9b3af8ec-447b-88b4-21f2-e47337695031",
@@ -72,7 +72,19 @@ define("Leads_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							"code": "PDS_QualifiedAccount",
 							"caption": "#ResourceString(PDS_QualifiedAccount)#",
 							"dataValueType": 10,
-							"width": 207
+							"width": 315
+						},
+						{
+							"id": "b18109c4-aceb-2195-9e75-84b59bc7f8f2",
+							"code": "PDS_PgrSalesRegion",
+							"caption": "#ResourceString(PDS_PgrSalesRegion)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "002ad0c7-14bb-67c5-08f4-213eaac4a700",
+							"code": "PDS_Country",
+							"caption": "#ResourceString(PDS_Country)#",
+							"dataValueType": 10
 						}
 					]
 				}
@@ -142,6 +154,27 @@ define("Leads_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"path": [
 					"attributes",
 					"Items",
+					"viewModelConfig",
+					"attributes"
+				],
+				"values": {
+					"PDS_PgrSalesRegion": {
+						"modelConfig": {
+							"path": "PDS.PgrSalesRegion"
+						}
+					},
+					"PDS_Country": {
+						"modelConfig": {
+							"path": "PDS.Country"
+						}
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"Items",
 					"modelConfig"
 				],
 				"values": {
@@ -177,6 +210,27 @@ define("Leads_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 						{
 							"name": "QuickFilter_zked60v_Items",
 							"loadOnChange": true
+						},
+						{
+							"name": "Filters_Filter",
+							"loadOnChange": true
+						}
+					]
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"Items",
+					"modelConfig",
+					"sortingConfig"
+				],
+				"values": {
+					"default": [
+						{
+							"direction": "asc",
+							"columnName": "LeadName"
 						}
 					]
 				}
@@ -197,6 +251,23 @@ define("Leads_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 					"CreatedOn",
 					"Territory"
 				]
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"dataSources",
+					"PDS",
+					"config",
+					"attributes"
+				],
+				"values": {
+					"PgrSalesRegion": {
+						"path": "PgrSalesRegion"
+					},
+					"Country": {
+						"path": "Country"
+					}
+				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,

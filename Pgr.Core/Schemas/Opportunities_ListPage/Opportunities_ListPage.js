@@ -94,18 +94,18 @@ define("Opportunities_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 							"width": 266
 						},
 						{
-							"id": "757f1634-6946-5b3f-395c-069f1d213795",
-							"code": "PDS_Account",
-							"caption": "#ResourceString(PDS_Account)#",
-							"dataValueType": 10,
-							"width": 222
-						},
-						{
 							"id": "7e26c922-adf9-4ce2-6575-86b50e7d3ce5",
 							"code": "PDS_Contact",
 							"caption": "#ResourceString(PDS_Contact)#",
 							"dataValueType": 10,
 							"width": 225
+						},
+						{
+							"id": "757f1634-6946-5b3f-395c-069f1d213795",
+							"code": "PDS_Account",
+							"caption": "#ResourceString(PDS_Account)#",
+							"dataValueType": 10,
+							"width": 222
 						},
 						{
 							"id": "3d72a99e-249b-c0ba-9832-ced4c4a65673",
@@ -130,6 +130,7 @@ define("Opportunities_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"properties": [
 					"PDS_Type",
 					"PDS_Amount",
+					"PDS_MeddpiccScores",
 					"PDS_Territory",
 					"PDS_Territory_InitialListActions"
 				]
@@ -208,6 +209,7 @@ define("Opportunities_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"properties": [
 					"Type",
 					"Amount",
+					"MeddpiccScores",
 					"Territory"
 				]
 			}

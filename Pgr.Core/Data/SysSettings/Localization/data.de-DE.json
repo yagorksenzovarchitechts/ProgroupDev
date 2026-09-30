@@ -5,6 +5,25 @@
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
           "ColumnName": "Id",
+          "Value": "4c871add-2b88-4fa0-8dcc-f312d159e905"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "ColumnName": "Name",
+          "Value": "Standard erster Wochentag"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "ColumnName": "Description",
+          "Value": "Diese Einstellung legt den ersten Wochentag für neue Benutzer fest, die zu Creatio hinzugefügt werden. Benutzer können den ersten Wochentag im Benutzerprofil ändern. Der erste Wochentag beeinflusst, wie Kalender in der Creatio-Benutzeroberfläche angezeigt werden."
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
           "Value": "f080bcc4-3ae1-4edd-bd18-06287a699b45"
         },
         {

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.Button_WarningIconTranscriptEmptyTenant_caption.Value" Value="Warnungs-Button" />
+			<Item Name="LocalizableStrings.Checkbox_ImportTranscripts_label.Value" Value="AI-Meeting-Zusammenfassungen aus MS Teams-Transkriptionen erstellen" />
+			<Item Name="LocalizableStrings.Label_ImportTranscript_Description_caption.Value" Value="Wenn ein Microsoft-Team-Meeting aufgezeichnet wird, wird das Protokoll importiert und eine AI-Zusammenfassung erstellt. Eine E-Mail mit der AI-Meeeting-Zusammenfassung wird dann in Ihrem Namen an alle internen Teilnehmer gesendet – Mitarbeiter mit aktiven Benutzerkonten." />
+			<Item Name="LocalizableStrings.Label_TranscriptEmptyTenantMessage_caption.Value" Value="Die AI-Meeting-Zusammenfassung kann nicht erstellt werden, da in Microsoft OAuth eine Tenant-ID fehlt. Bitten Sie Ihren Systemadministrator, diese in den E-Mail-Anbieter-Einstellungen zu konfigurieren." />
+		</Items>
+	</Group>
+</Resources>

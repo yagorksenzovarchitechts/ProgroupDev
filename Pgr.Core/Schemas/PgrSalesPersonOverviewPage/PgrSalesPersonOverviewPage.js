@@ -225,9 +225,9 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 							"width": 275
 						},
 						{
-							"id": "d04d071d-d09a-5a0a-5faf-df4864175140",
-							"code": "DataGrid_vmm3jfpDS_PgrProGroupSalesPerson",
-							"caption": "#ResourceString(DataGrid_vmm3jfpDS_PgrProGroupSalesPerson)#",
+							"id": "80363660-d1eb-a949-e906-2b987d9e6576",
+							"code": "DataGrid_vmm3jfpDS_PgrWepaformContactId",
+							"caption": "#ResourceString(DataGrid_vmm3jfpDS_PgrWepaformContactId)#",
 							"dataValueType": 27
 						},
 						{
@@ -349,7 +349,15 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 									"name": "SearchFilter_r1hc9v3_DataGrid_vmm3jfp",
 									"loadOnChange": true
 								}
-							]
+							],
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "desc",
+										"columnName": "Name"
+									}
+								]
+							}
 						},
 						"viewModelConfig": {
 							"attributes": {
@@ -358,9 +366,9 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 										"path": "DataGrid_vmm3jfpDS.Name"
 									}
 								},
-								"DataGrid_vmm3jfpDS_PgrProGroupSalesPerson": {
+								"DataGrid_vmm3jfpDS_PgrWepaformContactId": {
 									"modelConfig": {
-										"path": "DataGrid_vmm3jfpDS.PgrProGroupSalesPerson"
+										"path": "DataGrid_vmm3jfpDS.PgrWepaformContactId"
 									}
 								},
 								"DataGrid_vmm3jfpDS_Department": {
@@ -478,8 +486,8 @@ define("PgrSalesPersonOverviewPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functio
 									"Name": {
 										"path": "Name"
 									},
-									"PgrProGroupSalesPerson": {
-										"path": "PgrProGroupSalesPerson"
+									"PgrWepaformContactId": {
+										"path": "PgrWepaformContactId"
 									},
 									"Department": {
 										"path": "Department"

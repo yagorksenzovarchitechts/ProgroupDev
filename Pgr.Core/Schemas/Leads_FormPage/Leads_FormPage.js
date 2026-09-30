@@ -230,12 +230,23 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"name": "QualifiedAccount",
 				"values": {
 					"layoutConfig": {
-						"column": 2,
-						"row": 1,
+						"column": 1,
 						"colSpan": 1,
+						"row": 4,
 						"rowSpan": 1
-					}
+					},
+					"visible": true,
+					"readonly": true,
+					"placeholder": "",
+					"tooltip": ""
 				}
+			},
+			{
+				"operation": "move",
+				"name": "QualifiedAccount",
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 3
 			},
 			{
 				"operation": "merge",
@@ -282,7 +293,7 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 3,
+						"row": 2,
 						"rowSpan": 1
 					}
 				}
@@ -292,7 +303,7 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"name": "Owner",
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 2
+				"index": 1
 			},
 			{
 				"operation": "remove",
@@ -737,35 +748,12 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 			},
 			{
 				"operation": "insert",
-				"name": "Input_a9w0eru",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_Account_yem29mk",
-					"control": "$PDS_Account_yem29mk",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
-				},
-				"parentName": "SideAreaProfileContainer",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
 				"name": "PgrSalesRegion",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 4,
+						"row": 3,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
@@ -781,7 +769,7 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 3
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -844,25 +832,27 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 			},
 			{
 				"operation": "insert",
-				"name": "PgrEstimatedVolume",
+				"name": "Input_a9w0eru",
 				"values": {
 					"layoutConfig": {
-						"column": 1,
+						"column": 2,
 						"colSpan": 1,
-						"row": 2,
+						"row": 1,
 						"rowSpan": 1
 					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_PgrEstimatedVolume_8fqkqh6",
-					"control": "$PDS_PgrEstimatedVolume_8fqkqh6",
-					"readonly": false,
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_Account_yem29mk",
+					"control": "$PDS_Account_yem29mk",
 					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
 					"labelPosition": "auto",
-					"tooltip": ""
+					"visible": true
 				},
 				"parentName": "OverviewFieldsContainer",
 				"propertyName": "items",
-				"index": 2
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -887,7 +877,7 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				},
 				"parentName": "OverviewFieldsContainer",
 				"propertyName": "items",
-				"index": 3
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -908,17 +898,17 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 			},
 			{
 				"operation": "insert",
-				"name": "PgrPGPotential",
+				"name": "PgrEstimatedVolume",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 3,
+						"row": 2,
 						"rowSpan": 1
 					},
 					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_PgrPGPotential_grey0y6",
-					"control": "$PDS_PgrPGPotential_grey0y6",
+					"label": "$Resources.Strings.PDS_PgrEstimatedVolume_8fqkqh6",
+					"control": "$PDS_PgrEstimatedVolume_8fqkqh6",
 					"readonly": false,
 					"placeholder": "",
 					"labelPosition": "auto",
@@ -926,7 +916,7 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				},
 				"parentName": "OverviewFieldsContainer",
 				"propertyName": "items",
-				"index": 4
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -951,7 +941,7 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				},
 				"parentName": "OverviewFieldsContainer",
 				"propertyName": "items",
-				"index": 5
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -969,6 +959,28 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				"parentName": "ComboBox_dfa1y30",
 				"propertyName": "listActions",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "PgrPGPotential",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_PgrPGPotential_grey0y6",
+					"control": "$PDS_PgrPGPotential_grey0y6",
+					"readonly": false,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "OverviewFieldsContainer",
+				"propertyName": "items",
+				"index": 5
 			},
 			{
 				"operation": "insert",

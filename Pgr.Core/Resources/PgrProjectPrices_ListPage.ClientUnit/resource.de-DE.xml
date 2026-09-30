@@ -5,8 +5,6 @@
 			<Item Name="Caption" Value="Project Prices list page" />
 			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Importieren" />
-			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_caption.Value" Value="Tag" />
-			<Item Name="LocalizableStrings.MenuItem_ExportToExcel_caption.Value" Value="Excel-Export" />
 			<Item Name="LocalizableStrings.QuickFilter_dsylv6x_config_caption.Value" Value="Kunde" />
 			<Item Name="LocalizableStrings.QuickFilter_t4jq17j_config_caption.Value" Value="Startdatum" />
 			<Item Name="LocalizableStrings.QuickFilter_uwqyba7_config_caption.Value" Value="Enddatum" />

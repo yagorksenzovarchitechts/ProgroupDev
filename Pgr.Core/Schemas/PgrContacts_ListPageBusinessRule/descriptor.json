@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "c3f73e34-3b55-4e67-bb8c-d198a9c5bd40",
+    "Name": "PgrContacts_ListPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1790680797000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Contacts list page (Business rules)",
+    "DependsOn": []
+  }
+}

@@ -5,6 +5,10 @@
 			<Item Name="Caption" Value="Bonusliste" />
 			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="Neu" />
 			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Datenimport" />
+			<Item Name="LocalizableStrings.PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_1qbr9c5.Value" Value="Bonushöhe der höchsten Grenzen" />
+			<Item Name="LocalizableStrings.PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_8hzzbdy.Value" Value="Bonushöhe der ersten Grenzen" />
+			<Item Name="LocalizableStrings.PDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_u01j4am.Value" Value="Höchste Grenze" />
+			<Item Name="LocalizableStrings.PDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_xheoyt4.Value" Value="Erste Eintrittsgrenze" />
 		</Items>
 	</Group>
 </Resources>
