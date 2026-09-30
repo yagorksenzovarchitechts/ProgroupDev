@@ -3,22 +3,22 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="LocalizableStrings.Button_978ivs9_caption.Value" Value="Create task" />
-			<Item Name="LocalizableStrings.ChartWidget_l52twdo_series_0.Value" Value="Actual (tsqm)" />
-			<Item Name="LocalizableStrings.ChartWidget_l52twdo_series_1.Value" Value="Budget (tsqm)" />
-			<Item Name="LocalizableStrings.ChartWidget_l52twdo_title.Value" Value="Customers by Budget" />
-			<Item Name="LocalizableStrings.ChartWidget_vpvvd4s_series_0.Value" Value="% of Budget" />
+			<Item Name="LocalizableStrings.ChartWidget_l52twdo_series_0.Value" Value="Budget [tsqm/wd]" />
+			<Item Name="LocalizableStrings.ChartWidget_l52twdo_series_1.Value" Value="Actual [tsqm/wd]" />
+			<Item Name="LocalizableStrings.ChartWidget_l52twdo_title.Value" Value="Top Customers by Budget (last day)" />
+			<Item Name="LocalizableStrings.ChartWidget_vpvvd4s_series_0.Value" Value="Deviation to budget" />
 			<Item Name="LocalizableStrings.ChartWidget_vpvvd4s_series_1.Value" Value="% of Order Intake" />
-			<Item Name="LocalizableStrings.ChartWidget_vpvvd4s_title.Value" Value="Customers by Negative Deviation (%)" />
-			<Item Name="LocalizableStrings.IndicatorWidget_1i78h71_config_text_template.Value" Value="{0} Budget (tsqm)" />
+			<Item Name="LocalizableStrings.ChartWidget_vpvvd4s_title.Value" Value="Top Customers by Negative Deviation (3 day average)" />
+			<Item Name="LocalizableStrings.IndicatorWidget_1i78h71_config_text_template.Value" Value="{0} Budget last working day (tsqm)" />
 			<Item Name="LocalizableStrings.IndicatorWidget_1i78h71_hint.Value" Value="Components.IndicatorWidget.Hint" />
-			<Item Name="LocalizableStrings.IndicatorWidget_1i78h71_title.Value" Value="Order intake (tsqm)" />
+			<Item Name="LocalizableStrings.IndicatorWidget_1i78h71_title.Value" Value="Budget" />
 			<Item Name="LocalizableStrings.IndicatorWidget_fa2aur9_config_text_template.Value" Value="{0} Customers" />
 			<Item Name="LocalizableStrings.IndicatorWidget_fa2aur9_hint.Value" Value="Components.IndicatorWidget.Hint" />
 			<Item Name="LocalizableStrings.IndicatorWidget_fa2aur9_title.Value" Value="# Customers" />
-			<Item Name="LocalizableStrings.IndicatorWidget_h8gyel3_config_text_template.Value" Value="{0} Order intake (tsqm)" />
+			<Item Name="LocalizableStrings.IndicatorWidget_h8gyel3_config_text_template.Value" Value="{0} Order intake last working day (tsqm)" />
 			<Item Name="LocalizableStrings.IndicatorWidget_h8gyel3_hint.Value" Value="Components.IndicatorWidget.Hint" />
-			<Item Name="LocalizableStrings.IndicatorWidget_h8gyel3_title.Value" Value="Order intake (tsqm)" />
-			<Item Name="LocalizableStrings.IndicatorWidget_jzvgr6l_config_text_template.Value" Value="{0}% Deviation of Budget" />
+			<Item Name="LocalizableStrings.IndicatorWidget_h8gyel3_title.Value" Value="Order intake (last working day)" />
+			<Item Name="LocalizableStrings.IndicatorWidget_jzvgr6l_config_text_template.Value" Value="{0}% Deviation to budget" />
 			<Item Name="LocalizableStrings.IndicatorWidget_jzvgr6l_config_text_template_avgpct.Value" Value="{0}% Avg Deviation of Budget" />
 			<Item Name="LocalizableStrings.IndicatorWidget_jzvgr6l_config_text_template_pct.Value" Value="{0}% Deviation of Budget" />
 			<Item Name="LocalizableStrings.IndicatorWidget_jzvgr6l_config_text_template_ratio.Value" Value="{0}% Deviation of Budget" />

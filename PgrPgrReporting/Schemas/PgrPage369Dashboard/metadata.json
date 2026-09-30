@@ -373,13 +373,6 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
 + MetaData.Schema.B2 {
-  "UId": "9c0d8f0a-1a70-93a4-9488-d8418466436e",
-  "A2": "TabContainer_fcjfvm1_caption",
-  "A3": "b8dad126-2d11-4802-9021-6ef47225523e",
-  "A4": "b8dad126-2d11-4802-9021-6ef47225523e",
-  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
-}
-+ MetaData.Schema.B2 {
   "UId": "957d0ebd-7bad-dbc8-ef92-99ecf4e64e6d",
   "A2": "TabContainer_oeg60rm_caption",
   "A3": "b8dad126-2d11-4802-9021-6ef47225523e",
@@ -461,7 +454,6 @@
   "50891fa6-f1c0-ac6f-b38f-2a30453d7447",
   "228b90d4-e656-3421-7254-8d1c066c0cbd",
   "70d5594e-8fac-dcb6-af09-b65d2df6178b",
-  "9c0d8f0a-1a70-93a4-9488-d8418466436e",
   "957d0ebd-7bad-dbc8-ef92-99ecf4e64e6d",
   "68580a49-ee19-76e1-108b-89e829c3cf16",
   "0150cb93-966f-0fd2-c1a9-eff0e65361c7",

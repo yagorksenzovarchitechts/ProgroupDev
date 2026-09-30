@@ -10,7 +10,11 @@ SELECT
   ROW_NUMBER() OVER (PARTITION BY acc."TerritoryId" ORDER BY s."PgrBudgetValue" DESC) AS "PgrRankByTerritory",
   ROW_NUMBER() OVER (PARTITION BY acc."PgrSalesManagerId" ORDER BY s."PgrDeviationValue" ASC) AS "PgrDeviationRankBySalesManager",
   ROW_NUMBER() OVER (PARTITION BY acc."PgrSalesDirectorId" ORDER BY s."PgrDeviationValue" ASC) AS "PgrDeviationRankBySalesDirector",
-  ROW_NUMBER() OVER (PARTITION BY acc."TerritoryId" ORDER BY s."PgrDeviationValue" ASC) AS "PgrDeviationRankByTerritory"
+  ROW_NUMBER() OVER (PARTITION BY acc."TerritoryId" ORDER BY s."PgrDeviationValue" ASC) AS "PgrDeviationRankByTerritory",
+  ROW_NUMBER() OVER (ORDER BY s."PgrBudgetValue" DESC) AS "PgrRankCompanyWide",
+  ROW_NUMBER() OVER (ORDER BY s."PgrDeviationValue" ASC) AS "PgrDeviationRankCompanyWide",
+  s."PgrBudgetVsThreeDayAvgDeviation",
+  s."PgrWepaformName"
 FROM "PgrVwAccountMetricSnapshot" s
 JOIN "Account" acc ON acc."Id" = s."PgrAccountId"
 WHERE s."PgrBudgetValue" IS NOT NULL OR s."PgrDeviationValue" IS NOT NULL;

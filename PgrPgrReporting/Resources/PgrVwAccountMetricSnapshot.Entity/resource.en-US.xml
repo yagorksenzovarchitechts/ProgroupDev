@@ -6,13 +6,19 @@
 			<Item Name="Columns.PgrAccount.Caption" Value="Account" />
 			<Item Name="Columns.PgrBudgetMonth.Caption" Value="Budget month" />
 			<Item Name="Columns.PgrBudgetValue.Caption" Value="Budget value" />
+			<Item Name="Columns.PgrBudgetVsThreeDayAvgDeviation.Caption" Value="Budget vs 3-day avg deviation" />
+			<Item Name="Columns.PgrBudgetVsThreeDayAvgDeviationPct.Caption" Value="3-day avg vs budget (%)" />
 			<Item Name="Columns.PgrCustomerName.Caption" Value="Account display name" />
 			<Item Name="Columns.PgrDeviationDate.Caption" Value="Deviation date" />
 			<Item Name="Columns.PgrDeviationPctBudget.Caption" Value="Deviation % of budget" />
 			<Item Name="Columns.PgrDeviationValue.Caption" Value="Deviation value" />
 			<Item Name="Columns.PgrNineDayAvgOrderIntake.Caption" Value="9-day avg order intake" />
+			<Item Name="Columns.PgrNineDayAvgOrderIntakeDate.Caption" Value="9-day avg order intake date" />
 			<Item Name="Columns.PgrOrderIntakeDate.Caption" Value="Order intake date" />
 			<Item Name="Columns.PgrOrderIntakeValue.Caption" Value="Order intake value" />
+			<Item Name="Columns.PgrThreeDayAvgOrderIntake.Caption" Value="3-day avg order intake" />
+			<Item Name="Columns.PgrThreeDayAvgOrderIntakeDate.Caption" Value="3-day avg order intake date" />
+			<Item Name="Columns.PgrWepaformName.Caption" Value="Wepaform name" />
 		</Items>
 	</Group>
 </Resources>

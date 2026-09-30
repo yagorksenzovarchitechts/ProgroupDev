@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "16d8a17f-3aae-4290-85f0-be7cff263664",
+    "Name": "PgrSalesEnterpriseDesktopBusinessRule",
+    "ModifiedOnUtc": "\/Date(1790602564000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Sales Enterprise Desktop (Business rules)",
+    "DependsOn": []
+  }
+}

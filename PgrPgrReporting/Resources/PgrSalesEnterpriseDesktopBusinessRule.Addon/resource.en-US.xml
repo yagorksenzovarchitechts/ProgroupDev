@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.3f8a6392-0098-cf1b-51b1-f8531b8f24bc.Caption" Value="Hide elements: QuickFilter_CurrentContact" />
+			<Item Name="Caption" Value="Sales Enterprise Desktop (Business rules)" />
+		</Items>
+	</Group>
+</Resources>

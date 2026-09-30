@@ -4516,38 +4516,6 @@ define("PgrPage369Dashboard", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 				"parentName": "GridContainer_42ssxrv",
 				"propertyName": "items",
 				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "TabContainer_fcjfvm1",
-				"values": {
-					"type": "crt.TabContainer",
-					"items": [],
-					"caption": "#ResourceString(TabContainer_fcjfvm1_caption)#"
-				},
-				"parentName": "TabPanel_bxuc7bg",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "GridContainer_b2ndtha",
-				"values": {
-					"type": "crt.GridContainer",
-					"items": [],
-					"rows": "minmax(32px, max-content)",
-					"columns": [
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)"
-					],
-					"gap": {
-						"columnGap": "large",
-						"rowGap": 0
-					}
-				},
-				"parentName": "TabContainer_fcjfvm1",
-				"propertyName": "items",
-				"index": 0
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
