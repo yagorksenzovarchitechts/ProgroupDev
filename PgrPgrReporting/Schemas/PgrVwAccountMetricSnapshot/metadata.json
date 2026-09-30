@@ -26,6 +26,7 @@
 + MetaData.Schema.D29 "null"
 + MetaData.Schema.D30 "null"
 + MetaData.Schema.D31 "null"
++ MetaData.Schema.D4 "e05fe2ec-7bee-4814-8c68-b95fd139a679"
 - MetaData.Schema.D2.["ae0e45ca-c495-4fe7-a39d-3ab7278e1617"].E16
 - MetaData.Schema.D2.["e80190a5-03b2-4095-90f7-a193a960adee"].E16
 - MetaData.Schema.D2.["ebf6bb93-8aa6-4a01-900d-c6ea67affe21"].E16
@@ -124,6 +125,60 @@
   "S2": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
   "E5": false
 }
++ MetaData.Schema.D2 {
+  "UId": "741462c3-5081-4d5b-b37e-d6e2a7050416",
+  "A2": "PgrThreeDayAvgOrderIntake",
+  "A3": "1bded94d-b6f7-46fa-8c7c-5f4b1414865e",
+  "A4": "1bded94d-b6f7-46fa-8c7c-5f4b1414865e",
+  "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
+  "S2": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+  "E5": false
+}
++ MetaData.Schema.D2 {
+  "UId": "60343cd3-c82d-4420-8c77-1a0b2ed172e4",
+  "A2": "PgrThreeDayAvgOrderIntakeDate",
+  "A3": "1bded94d-b6f7-46fa-8c7c-5f4b1414865e",
+  "A4": "1bded94d-b6f7-46fa-8c7c-5f4b1414865e",
+  "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
+  "S2": "d21e9ef4-c064-4012-b286-fa1a8171da44",
+  "E5": false
+}
++ MetaData.Schema.D2 {
+  "UId": "cc54e121-7747-4381-9f1c-c619e4b5902a",
+  "A2": "PgrNineDayAvgOrderIntakeDate",
+  "A3": "1bded94d-b6f7-46fa-8c7c-5f4b1414865e",
+  "A4": "1bded94d-b6f7-46fa-8c7c-5f4b1414865e",
+  "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
+  "S2": "d21e9ef4-c064-4012-b286-fa1a8171da44",
+  "E5": false
+}
++ MetaData.Schema.D2 {
+  "UId": "817015f1-619e-43dc-add3-0e53704f487c",
+  "A2": "PgrBudgetVsThreeDayAvgDeviation",
+  "A3": "1bded94d-b6f7-46fa-8c7c-5f4b1414865e",
+  "A4": "1bded94d-b6f7-46fa-8c7c-5f4b1414865e",
+  "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
+  "S2": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+  "E5": false
+}
++ MetaData.Schema.D2 {
+  "UId": "e05fe2ec-7bee-4814-8c68-b95fd139a679",
+  "A2": "PgrWepaformName",
+  "A3": "1bded94d-b6f7-46fa-8c7c-5f4b1414865e",
+  "A4": "1bded94d-b6f7-46fa-8c7c-5f4b1414865e",
+  "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
+  "S2": "325a73b8-0f47-44a0-8412-7606f78003ac",
+  "E5": false
+}
++ MetaData.Schema.D2 {
+  "UId": "6ede1244-7230-4f69-b30a-ab2249e09ac6",
+  "A2": "PgrBudgetVsThreeDayAvgDeviationPct",
+  "A3": "1bded94d-b6f7-46fa-8c7c-5f4b1414865e",
+  "A4": "1bded94d-b6f7-46fa-8c7c-5f4b1414865e",
+  "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
+  "S2": "5cc8060d-6d10-4773-89fc-8c12d6f659a6",
+  "E5": false
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -140,7 +195,13 @@
   "606c5b29-3b39-49fb-97f5-72c546be8390",
   "aef05c40-4429-dc31-c4df-235517c39d1d",
   "b6f657f8-4a4d-41d0-815a-70fe42c3cca3",
-  "ad6d2273-14a4-4549-a8e0-c365aa255cdf"
+  "ad6d2273-14a4-4549-a8e0-c365aa255cdf",
+  "741462c3-5081-4d5b-b37e-d6e2a7050416",
+  "60343cd3-c82d-4420-8c77-1a0b2ed172e4",
+  "cc54e121-7747-4381-9f1c-c619e4b5902a",
+  "817015f1-619e-43dc-add3-0e53704f487c",
+  "e05fe2ec-7bee-4814-8c68-b95fd139a679",
+  "6ede1244-7230-4f69-b30a-ab2249e09ac6"
 ]
 = MetaData.Schema.D20.A2 "PgrVwAccountMetricSnapshotEvents"
 + MetaData.Schema.D20.FA1 false

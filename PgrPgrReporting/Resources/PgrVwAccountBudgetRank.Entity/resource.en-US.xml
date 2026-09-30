@@ -6,6 +6,7 @@
 			<Item Name="Columns.PgrAccount.Caption" Value="Account" />
 			<Item Name="Columns.PgrBudgetMonth.Caption" Value="Budget Month" />
 			<Item Name="Columns.PgrBudgetValue.Caption" Value="Budget Value" />
+			<Item Name="Columns.PgrBudgetVsThreeDayAvgDeviation.Caption" Value="Budget vs 3-day avg deviation" />
 			<Item Name="Columns.PgrCustomerName.Caption" Value="Customer Name" />
 			<Item Name="Columns.PgrDeviationDate.Caption" Value="Deviation Date" />
 			<Item Name="Columns.PgrDeviationPctBudget.Caption" Value="Deviation Pct Budget" />
@@ -24,6 +25,7 @@
 			<Item Name="Columns.PgrSalesDirector.Caption" Value="Sales Director" />
 			<Item Name="Columns.PgrSalesManager.Caption" Value="Sales Manager" />
 			<Item Name="Columns.PgrTerritory.Caption" Value="Territory" />
+			<Item Name="Columns.PgrWepaformName.Caption" Value="Wepaform name" />
 		</Items>
 	</Group>
 </Resources>

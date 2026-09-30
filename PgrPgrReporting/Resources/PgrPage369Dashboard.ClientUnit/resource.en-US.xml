@@ -57,7 +57,6 @@
 			<Item Name="LocalizableStrings.QuickFilter_vhvjf03_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.SearchFilter_5j4wspu_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.SearchFilter_ble6xgu_placeholder.Value" Value="Search" />
-			<Item Name="LocalizableStrings.TabContainer_fcjfvm1_caption.Value" Value="Tab 2" />
 			<Item Name="LocalizableStrings.TabContainer_oeg60rm_caption.Value" Value="3-6-9 Dashboard" />
 		</Items>
 	</Group>

@@ -2932,95 +2932,6 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								},
 								"data": {
 									"providing": {
-										"attribute": "ChartWidget_l52twdo_SeriesData_zc3tqqa",
-										"schemaName": "PgrVwAccountBudgetRank",
-										"filters": {
-											"filter": {
-												"items": {
-													"columnIsNotNullFilter": {
-														"comparisonType": 2,
-														"filterType": 2,
-														"isEnabled": true,
-														"isNull": false,
-														"trimDateTimeParameterToDate": false,
-														"leftExpression": {
-															"expressionType": 0,
-															"columnPath": "PgrAccount"
-														}
-													}
-												},
-												"logicalOperation": 0,
-												"isEnabled": true,
-												"filterType": 6,
-												"rootSchemaName": "PgrVwAccountBudgetRank"
-											},
-											"filterAttributes": [
-												{
-													"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_zc3tqqa",
-													"loadOnChange": true
-												},
-												{
-													"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_zc3tqqa",
-													"loadOnChange": true
-												},
-												{
-													"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_zc3tqqa",
-													"loadOnChange": true
-												}
-											]
-										},
-										"aggregation": {
-											"column": {
-												"orderDirection": 0,
-												"orderPosition": -1,
-												"isVisible": true,
-												"expression": {
-													"expressionType": 1,
-													"functionArgument": {
-														"expressionType": 0,
-														"columnPath": "PgrBudgetValue"
-													},
-													"functionType": 2,
-													"aggregationType": 5,
-													"aggregationEvalType": 0
-												}
-											}
-										},
-										"dependencies": [],
-										"rowCount": 5,
-										"grouping": {
-											"type": "by-value",
-											"column": {
-												"orderDirection": 0,
-												"orderPosition": -1,
-												"isVisible": true,
-												"expression": {
-													"expressionType": 0,
-													"columnPath": "PgrAccount"
-												}
-											}
-										}
-									},
-									"formatting": {
-										"type": "number",
-										"decimalSeparator": ".",
-										"decimalPrecision": 0,
-										"thousandSeparator": ","
-									}
-								},
-								"dataLabel": {
-									"display": true
-								}
-							},
-							{
-								"color": "purple",
-								"type": "bar",
-								"label": "#ResourceString(ChartWidget_l52twdo_series_1)#",
-								"legend": {
-									"enabled": true
-								},
-								"data": {
-									"providing": {
 										"attribute": "ChartWidget_l52twdo_SeriesData_9z8sadx",
 										"schemaName": "PgrVwAccountBudgetRank",
 										"filters": {
@@ -3034,7 +2945,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 														"trimDateTimeParameterToDate": false,
 														"leftExpression": {
 															"expressionType": 0,
-															"columnPath": "PgrAccount"
+															"columnPath": "PgrAccount.PgrWepaformName"
 														}
 													}
 												},
@@ -3067,6 +2978,95 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 													"expressionType": 1,
 													"functionArgument": {
 														"expressionType": 0,
+														"columnPath": "PgrBudgetValue"
+													},
+													"functionType": 2,
+													"aggregationType": 5,
+													"aggregationEvalType": 0
+												}
+											}
+										},
+										"dependencies": [],
+										"rowCount": 5,
+										"grouping": {
+											"type": "by-value",
+											"column": {
+												"orderDirection": 0,
+												"orderPosition": -1,
+												"isVisible": true,
+												"expression": {
+													"expressionType": 0,
+													"columnPath": "PgrAccount.PgrWepaformName"
+												}
+											}
+										}
+									},
+									"formatting": {
+										"type": "number",
+										"decimalSeparator": ".",
+										"decimalPrecision": 0,
+										"thousandSeparator": ","
+									}
+								},
+								"dataLabel": {
+									"display": true
+								}
+							},
+							{
+								"color": "burnt-coral",
+								"type": "bar",
+								"label": "#ResourceString(ChartWidget_l52twdo_series_1)#",
+								"legend": {
+									"enabled": true
+								},
+								"data": {
+									"providing": {
+										"attribute": "ChartWidget_l52twdo_SeriesData_zc3tqqa",
+										"schemaName": "PgrVwAccountBudgetRank",
+										"filters": {
+											"filter": {
+												"items": {
+													"columnIsNotNullFilter": {
+														"comparisonType": 2,
+														"filterType": 2,
+														"isEnabled": true,
+														"isNull": false,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "PgrAccount.PgrWepaformName"
+														}
+													}
+												},
+												"logicalOperation": 0,
+												"isEnabled": true,
+												"filterType": 6,
+												"rootSchemaName": "PgrVwAccountBudgetRank"
+											},
+											"filterAttributes": [
+												{
+													"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_zc3tqqa",
+													"loadOnChange": true
+												},
+												{
+													"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_zc3tqqa",
+													"loadOnChange": true
+												},
+												{
+													"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_zc3tqqa",
+													"loadOnChange": true
+												}
+											]
+										},
+										"aggregation": {
+											"column": {
+												"orderDirection": 0,
+												"orderPosition": -1,
+												"isVisible": true,
+												"expression": {
+													"expressionType": 1,
+													"functionArgument": {
+														"expressionType": 0,
 														"columnPath": "PgrOrderIntakeValue"
 													},
 													"functionType": 2,
@@ -3076,7 +3076,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 											}
 										},
 										"dependencies": [],
-										"rowCount": 50,
+										"rowCount": 5,
 										"grouping": {
 											"type": "by-value",
 											"column": {
@@ -3085,7 +3085,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 												"isVisible": true,
 												"expression": {
 													"expressionType": 0,
-													"columnPath": "PgrAccount"
+													"columnPath": "PgrAccount.PgrWepaformName"
 												}
 											}
 										}
@@ -3159,11 +3159,11 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 						},
 						"series": [
 							{
-								"color": "dark-blue",
+								"color": "steel-blue",
 								"type": "bar",
 								"label": "#ResourceString(ChartWidget_vpvvd4s_series_0)#",
 								"legend": {
-									"enabled": true
+									"enabled": false
 								},
 								"data": {
 									"providing": {
@@ -3172,6 +3172,19 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 										"filters": {
 											"filter": {
 												"items": {
+													"deviationIsNotNullFilter": {
+														"filterType": 2,
+														"comparisonType": 2,
+														"isEnabled": true,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "PgrBudgetVsThreeDayAvgDeviation"
+														},
+														"isAggregative": false,
+														"dataValueType": 5,
+														"isNull": false
+													},
 													"columnIsNotNullFilter": {
 														"comparisonType": 2,
 														"filterType": 2,
@@ -3180,18 +3193,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 														"trimDateTimeParameterToDate": false,
 														"leftExpression": {
 															"expressionType": 0,
-															"columnPath": "PgrAccount"
-														}
-													},
-													"deviationIsNotNullFilter": {
-														"comparisonType": 2,
-														"filterType": 2,
-														"isEnabled": true,
-														"isNull": false,
-														"trimDateTimeParameterToDate": false,
-														"leftExpression": {
-															"expressionType": 0,
-															"columnPath": "PgrDeviationPctBudget"
+															"columnPath": "PgrAccount.PgrWepaformName"
 														}
 													}
 												},
@@ -3224,7 +3226,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 													"expressionType": 1,
 													"functionArgument": {
 														"expressionType": 0,
-														"columnPath": "PgrDeviationPctBudget"
+														"columnPath": "PgrBudgetVsThreeDayAvgDeviation"
 													},
 													"functionType": 2,
 													"aggregationType": 4,
@@ -3242,7 +3244,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 												"isVisible": true,
 												"expression": {
 													"expressionType": 0,
-													"columnPath": "PgrAccount"
+													"columnPath": "PgrAccount.PgrWepaformName"
 												}
 											}
 										}
@@ -3426,7 +3428,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 						"title": "#ResourceString(IndicatorWidget_1i78h71_title)#",
 						"theme": "full-fill",
 						"layout": {
-							"color": "purple"
+							"color": "dark-blue"
 						},
 						"text": {
 							"template": "#ResourceString(IndicatorWidget_1i78h71_config_text_template)#",
@@ -3506,7 +3508,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 						"title": "#ResourceString(IndicatorWidget_h8gyel3_title)#",
 						"theme": "full-fill",
 						"layout": {
-							"color": "dark-blue"
+							"color": "burnt-coral"
 						},
 						"text": {
 							"template": "#ResourceString(IndicatorWidget_h8gyel3_config_text_template)#",
@@ -3568,7 +3570,10 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 						"hint": "#ResourceString(IndicatorWidget_h8gyel3_hint)#",
 						"hideTitle": true
 					},
-					"visible": true
+					"visible": true,
+					"layoutConfig": {
+						"height": 72
+					}
 				},
 				"parentName": "FlexContainer_mkso5rv",
 				"propertyName": "items",
@@ -3583,7 +3588,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 						"title": "#ResourceString(IndicatorWidget_jzvgr6l_title)#",
 						"theme": "full-fill",
 						"layout": {
-							"color": "burnt-coral"
+							"color": "light-blue"
 						},
 						"text": {
 							"template": "#ResourceString(IndicatorWidget_jzvgr6l_config_text_template)#",
