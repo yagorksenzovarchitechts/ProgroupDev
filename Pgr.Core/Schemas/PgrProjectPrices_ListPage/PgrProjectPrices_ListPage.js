@@ -68,13 +68,20 @@ define("PgrProjectPrices_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"id": "430bb78c-e9ff-0135-0dbb-78418e28661b",
 							"code": "PDS_PgrProjectPriceId",
 							"caption": "#ResourceString(PDS_PgrProjectPriceId)#",
-							"dataValueType": 4
+							"dataValueType": 4,
+							"width": 165
 						},
 						{
 							"id": "777e6357-fcf8-0ce1-9409-607652038dac",
 							"code": "PDS_PgrAccount",
 							"caption": "#ResourceString(PDS_PgrAccount)#",
 							"dataValueType": 10
+						},
+						{
+							"id": "bcaa3bd9-5dd8-d0e3-36f0-752653fb81fd",
+							"code": "PDS_PgrAccount_PgrWepaformName",
+							"caption": "#ResourceString(PDS_PgrAccount_PgrWepaformName)#",
+							"dataValueType": 27
 						},
 						{
 							"id": "a20fb8bd-af03-db5b-3952-2c6972069171",
@@ -267,6 +274,11 @@ define("PgrProjectPrices_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 							"path": "PDS.PgrAccount"
 						}
 					},
+					"PDS_PgrAccount_PgrWepaformName": {
+						"modelConfig": {
+							"path": "PDS.PgrAccount_PgrWepaformName"
+						}
+					},
 					"PDS_PgrStartDate": {
 						"modelConfig": {
 							"path": "PDS.PgrStartDate"
@@ -315,6 +327,10 @@ define("PgrProjectPrices_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 						{
 							"name": "QuickFilter_uwqyba7_Items",
 							"loadOnChange": true
+						},
+						{
+							"name": "Filters_Filter",
+							"loadOnChange": true
 						}
 					]
 				}
@@ -331,7 +347,7 @@ define("PgrProjectPrices_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 					"default": [
 						{
 							"direction": "asc",
-							"columnName": "PgrName"
+							"columnName": "PgrAccount"
 						}
 					]
 				}
@@ -356,6 +372,10 @@ define("PgrProjectPrices_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 						},
 						"PgrAccount": {
 							"path": "PgrAccount"
+						},
+						"PgrAccount_PgrWepaformName": {
+							"type": "ForwardReference",
+							"path": "PgrAccount.PgrWepaformName"
 						},
 						"PgrStartDate": {
 							"path": "PgrStartDate"

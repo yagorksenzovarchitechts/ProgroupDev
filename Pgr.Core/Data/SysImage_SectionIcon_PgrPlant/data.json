@@ -1,10 +1,10 @@
-{
+﻿{
   "PackageData": [
     {
       "Row": [
         {
           "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
-          "Value": "b6d0fa74-589b-4098-a762-62eddaa13f19"
+          "Value": "0f9dfcd7-72f2-4de6-a7bb-5ac934fcd6db"
         },
         {
           "SchemaColumnUId": "1e236958-f206-4fde-8a0e-6783fc223424",
@@ -16,7 +16,7 @@
         },
         {
           "SchemaColumnUId": "d245dcaf-23bd-4b73-8718-26fdf38b443b",
-          "Value": "SectionIcon_PgrPlants.svg"
+          "Value": "SectionIcon_PgrPlant.svg"
         }
       ]
     }

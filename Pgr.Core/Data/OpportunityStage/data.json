@@ -25,7 +25,7 @@
         {
           "SchemaColumnUId": "67304155-cee3-58a8-9820-dca8e4aba8fb",
           "Value": "ed0bd055-691e-482c-8564-9ebe4b7d0572",
-          "DisplayValue": "Best Case"
+          "DisplayValue": "Best case"
         },
         {
           "SchemaColumnUId": "875d786d-74b6-4f1c-b885-5fb7da04453b",
@@ -70,7 +70,7 @@
         {
           "SchemaColumnUId": "67304155-cee3-58a8-9820-dca8e4aba8fb",
           "Value": "a5df8c8e-9486-4549-a8cd-18223af70f60",
-          "DisplayValue": "Closed Won"
+          "DisplayValue": "Closed won"
         },
         {
           "SchemaColumnUId": "875d786d-74b6-4f1c-b885-5fb7da04453b",
@@ -115,7 +115,7 @@
         {
           "SchemaColumnUId": "67304155-cee3-58a8-9820-dca8e4aba8fb",
           "Value": "6427d12b-645a-4ff4-a847-06813dae52f9",
-          "DisplayValue": "Closed Lost"
+          "DisplayValue": "Closed lost"
         },
         {
           "SchemaColumnUId": "875d786d-74b6-4f1c-b885-5fb7da04453b",

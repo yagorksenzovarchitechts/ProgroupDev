@@ -2,6 +2,7 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="AddonConfig.Rules.8b9ebf90-002a-7efe-1924-a1e658088cfd.Caption" Value="Apply static filter: Competitor" />
 			<Item Name="Caption" Value="Account competitor (Business rules)" />
 		</Items>
 	</Group>

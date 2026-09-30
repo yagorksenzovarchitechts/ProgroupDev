@@ -19,6 +19,14 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "merge",
+				"name": "LeftFilterContainerInner",
+				"values": {
+					"gap": "small",
+					"visible": true
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "LookupQuickFilterByTag",
 				"values": {
 					"config": {
@@ -28,7 +36,8 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"iconPosition": "left-icon",
 						"entitySchemaName": "ContactTag",
 						"defaultValue": null,
-						"recordsFilter": null
+						"recordsFilter": null,
+						"defaultValueListSorting": null
 					},
 					"visible": true
 				}
@@ -104,6 +113,123 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
+				"name": "QuickFilter_SysAccounts",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_SysAccounts_config_caption)#",
+						"hint": "",
+						"defaultValue": true,
+						"approachState": true,
+						"icon": "settings-button-icon",
+						"iconPosition": "left-icon"
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_SysAccounts_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"customFilter": {
+														"items": {
+															"483566b2-15ff-4322-9dd3-94f7e7e96539": {
+																"filterType": 4,
+																"comparisonType": 3,
+																"isEnabled": true,
+																"trimDateTimeParameterToDate": false,
+																"leftExpression": {
+																	"expressionType": 0,
+																	"columnPath": "Type"
+																},
+																"isAggregative": false,
+																"dataValueType": 10,
+																"referenceSchemaName": "ContactType",
+																"rightExpressions": [
+																	{
+																		"expressionType": 2,
+																		"parameter": {
+																			"dataValueType": 10,
+																			"value": {
+																				"Name": "Competitor",
+																				"Id": "806732ee-f36b-1410-a883-16d83cab0980",
+																				"value": "806732ee-f36b-1410-a883-16d83cab0980",
+																				"displayValue": "Competitor"
+																			}
+																		}
+																	},
+																	{
+																		"expressionType": 2,
+																		"parameter": {
+																			"dataValueType": 10,
+																			"value": {
+																				"Name": "Customer",
+																				"Id": "00783ef6-f36b-1410-a883-16d83cab0980",
+																				"value": "00783ef6-f36b-1410-a883-16d83cab0980",
+																				"displayValue": "Customer"
+																			}
+																		}
+																	},
+																	{
+																		"expressionType": 2,
+																		"parameter": {
+																			"dataValueType": 10,
+																			"value": {
+																				"Name": "Lead",
+																				"Id": "ac278ef3-e63f-48d9-ba34-7c52e92fecfe",
+																				"value": "ac278ef3-e63f-48d9-ba34-7c52e92fecfe",
+																				"displayValue": "Lead"
+																			}
+																		}
+																	},
+																	{
+																		"expressionType": 2,
+																		"parameter": {
+																			"dataValueType": 10,
+																			"value": {
+																				"Name": "Employee",
+																				"Id": "60733efc-f36b-1410-a883-16d83cab0980",
+																				"value": "60733efc-f36b-1410-a883-16d83cab0980",
+																				"displayValue": "Employee"
+																			}
+																		}
+																	}
+																]
+															}
+														},
+														"logicalOperation": 0,
+														"isEnabled": true,
+														"filterType": 6,
+														"rootSchemaName": "Contact"
+													},
+													"dependencyFilters": null
+												},
+												"quickFilterType": "custom",
+												"config": {
+													"approachState": true
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"QuickFilter_SysAccounts_Value"
+						]
+					},
+					"filterType": "custom"
+				},
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
 				"name": "QuickFilter_gpw24m7",
 				"values": {
 					"type": "crt.QuickFilter",
@@ -142,7 +268,7 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "LeftFilterContainerInner",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -184,7 +310,113 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "LeftFilterContainerInner",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_1h6dkw2",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_1h6dkw2_config_caption)#",
+						"hint": "",
+						"defaultValue": true,
+						"approachState": true,
+						"icon": "settings-button-icon",
+						"iconPosition": "left-icon"
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_1h6dkw2_Items",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "Items",
+													"customFilter": {
+														"items": {
+															"da66460a-6a1a-4e0f-b878-9149be03b23a": {
+																"filterType": 4,
+																"comparisonType": 3,
+																"isEnabled": true,
+																"trimDateTimeParameterToDate": false,
+																"leftExpression": {
+																	"expressionType": 0,
+																	"columnPath": "Type"
+																},
+																"isAggregative": false,
+																"dataValueType": 10,
+																"referenceSchemaName": "ContactType",
+																"rightExpressions": [
+																	{
+																		"expressionType": 2,
+																		"parameter": {
+																			"dataValueType": 10,
+																			"value": {
+																				"Name": "Competitor",
+																				"Id": "806732ee-f36b-1410-a883-16d83cab0980",
+																				"value": "806732ee-f36b-1410-a883-16d83cab0980",
+																				"displayValue": "Competitor"
+																			}
+																		}
+																	},
+																	{
+																		"expressionType": 2,
+																		"parameter": {
+																			"dataValueType": 10,
+																			"value": {
+																				"Name": "Customer",
+																				"Id": "00783ef6-f36b-1410-a883-16d83cab0980",
+																				"value": "00783ef6-f36b-1410-a883-16d83cab0980",
+																				"displayValue": "Customer"
+																			}
+																		}
+																	},
+																	{
+																		"expressionType": 2,
+																		"parameter": {
+																			"dataValueType": 10,
+																			"value": {
+																				"Name": "Lead",
+																				"Id": "ac278ef3-e63f-48d9-ba34-7c52e92fecfe",
+																				"value": "ac278ef3-e63f-48d9-ba34-7c52e92fecfe",
+																				"displayValue": "Lead"
+																			}
+																		}
+																	}
+																]
+															}
+														},
+														"logicalOperation": 0,
+														"isEnabled": true,
+														"filterType": 6,
+														"rootSchemaName": "Contact"
+													},
+													"dependencyFilters": null
+												},
+												"quickFilterType": "custom",
+												"config": {
+													"approachState": true
+												}
+											}
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"QuickFilter_1h6dkw2_Value"
+						]
+					},
+					"filterType": "custom",
+					"visible": true
+				},
+				"parentName": "LeftFilterContainerInner",
+				"propertyName": "items",
+				"index": 5
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -248,6 +480,18 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						},
 						{
 							"name": "QuickFilter_gpw24m7_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "Filters_Filter",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_1h6dkw2_Items",
+							"loadOnChange": true
+						},
+						{
+							"name": "QuickFilter_SysAccounts_Items",
 							"loadOnChange": true
 						}
 					]

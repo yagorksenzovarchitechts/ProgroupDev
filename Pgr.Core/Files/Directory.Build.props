@@ -6,6 +6,7 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/AccountForecast/AccountForecast.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/AccountForecast/AccountForecast.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Activity/Activity.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Activity/Activity.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/ActivityCategory/ActivityCategory.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/ActivityCategory/ActivityCategory.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/ActivitySyncSettings/ActivitySyncSettings.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/ActivitySyncSettings/ActivitySyncSettings.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/ActivityType/ActivityType.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/ActivityType/ActivityType.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Calendar/Calendar.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Calendar/Calendar.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/Contact/Contact.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/Contact/Contact.cs')" />

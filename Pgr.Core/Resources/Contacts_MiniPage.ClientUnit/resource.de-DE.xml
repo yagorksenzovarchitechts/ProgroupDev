@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
+			<Item Name="LocalizableStrings.ComboBox_jg9lxk5_placeholder.Value" Value="Abteilung auswählen" />
 			<Item Name="LocalizableStrings.PgrMergeConfirmButton.Value" Value="Zusammenführen" />
 			<Item Name="LocalizableStrings.PgrMergeConfirmCancelButton.Value" Value="Abbrechen" />
 			<Item Name="LocalizableStrings.PgrMergeConfirmMessagePrefix.Value" Value="Folgender Datensatz bleibt erhalten: " />

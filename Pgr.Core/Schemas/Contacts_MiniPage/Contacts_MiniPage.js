@@ -128,6 +128,51 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule"]
 			},
 			{
 				"operation": "insert",
+				"name": "ComboBox_jg9lxk5",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 6,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.ContactDS_Department_bodq837",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "above",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$ContactDS_Department_bodq837",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "#ResourceString(ComboBox_jg9lxk5_placeholder)#"
+				},
+				"parentName": "MainContainer",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_1bqgv4j",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_1bqgv4j_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_jg9lxk5",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "EmailInput_cjzdfhy",
 				"values": {
 					"type": "crt.EmailInput",
@@ -142,7 +187,7 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule"]
 				},
 				"parentName": "MainContainer",
 				"propertyName": "items",
-				"index": 5
+				"index": 6
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -203,6 +248,24 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule"]
 					"ContactDS_Email_99bsona": {
 						"modelConfig": {
 							"path": "ContactDS.Email"
+						}
+					},
+					"ContactDS_Department_bodq837": {
+						"modelConfig": {
+							"path": "ContactDS.Department"
+						}
+					},
+					"ContactDS_Department_bodq837_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
 						}
 					}
 				}

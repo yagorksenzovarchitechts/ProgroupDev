@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.Button_WarningIconTranscriptEmptyTenant_caption.Value" Value="Warning button" />
+			<Item Name="LocalizableStrings.Checkbox_ImportTranscripts_label.Value" Value="Create AI meeting summaries from MS Teams transcriptions" />
+			<Item Name="LocalizableStrings.Label_ImportTranscript_Description_caption.Value" Value="When a Microsoft Teams meeting is recorded, the transcript is imported and an AI summary is created. An email with the AI meeting summary is then sent on your behalf to all internal attendees — company employees with active user accounts." />
+			<Item Name="LocalizableStrings.Label_TranscriptEmptyTenantMessage_caption.Value" Value="AI meeting summary cannot be created due to a missing tenant ID in Microsoft OAuth. Ask your system administrator to configure it in Email provider settings." />
+		</Items>
+	</Group>
+</Resources>

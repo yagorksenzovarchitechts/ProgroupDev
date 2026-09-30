@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "fccff10b-794d-4a60-b010-c12b3f736522",
     "Name": "PgrAccountCompetitorBusinessRule",
-    "ModifiedOnUtc": "\/Date(1788785406000)\/",
+    "ModifiedOnUtc": "\/Date(1790700698000)\/",
     "ManagerName": "AddonSchemaManager",
     "Caption": "Account competitor (Business rules)",
     "DependsOn": []

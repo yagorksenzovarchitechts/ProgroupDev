@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.4fd0bd75-b4d5-ede8-5653-1bbce31bc2a9.Caption" Value="Show elements: Payment information" />
+			<Item Name="Caption" Value="Bonuses form page (Business rules)" />
+		</Items>
+	</Group>
+</Resources>

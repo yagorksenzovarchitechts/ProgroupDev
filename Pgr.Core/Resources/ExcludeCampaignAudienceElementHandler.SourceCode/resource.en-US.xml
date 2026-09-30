@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.FolderWithNoConditionError.Value" Value="Step {0}. Dynamic folder does not contain filter conditions. Please, add group with filter conditions" />
+		</Items>
+	</Group>
+</Resources>

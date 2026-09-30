@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "a9d4ec7a-bee3-4616-a160-73a6c88716c8",
+    "Name": "CommunicationsPanel_OmniChatTab",
+    "ModifiedOnUtc": "\/Date(1790695317000)\/",
+    "Parent": {
+      "UId": "64757510-f700-4c91-9c8f-3051647011d4",
+      "Name": "CommunicationsPanel_OmniChatTab"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Omni chat tab of the communications panel",
+    "DependsOn": []
+  }
+}

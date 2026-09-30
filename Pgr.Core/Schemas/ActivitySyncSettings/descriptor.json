@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "0dda78d3-24a9-4a23-adf8-c331ff3c2595",
+    "Name": "ActivitySyncSettings",
+    "ModifiedOnUtc": "\/Date(1790696638000)\/",
+    "Parent": {
+      "UId": "d21cff28-c251-48db-879f-ddc28b6f971d",
+      "Name": "ActivitySyncSettings"
+    },
+    "ExtendParent": true,
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Activities synchronization settings",
+    "DependsOn": []
+  }
+}

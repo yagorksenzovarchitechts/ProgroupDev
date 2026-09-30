@@ -213,6 +213,40 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
+				"name": "DateTimePicker_k0n2sba",
+				"values": {
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.ActivityDS_StartDate_h4hs4s7",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "above",
+					"tooltip": "",
+					"pickerType": "datetime",
+					"control": "$ActivityDS_StartDate_h4hs4s7"
+				},
+				"parentName": "FlexContainer_fhm2tjd",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_moqs71s",
+				"values": {
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.ActivityDS_DueDate_hkplpyl",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "above",
+					"tooltip": "",
+					"pickerType": "datetime",
+					"control": "$ActivityDS_DueDate_hkplpyl"
+				},
+				"parentName": "FlexContainer_fhm2tjd",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
 				"name": "ComboBox_9ipfs7n",
 				"values": {
 					"type": "crt.ComboBox",
@@ -228,7 +262,7 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				},
 				"parentName": "FlexContainer_fhm2tjd",
 				"propertyName": "items",
-				"index": 5
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -264,7 +298,7 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				},
 				"parentName": "FlexContainer_fhm2tjd",
 				"propertyName": "items",
-				"index": 6
+				"index": 8
 			},
 			{
 				"operation": "insert",
@@ -298,7 +332,7 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				},
 				"parentName": "FlexContainer_fhm2tjd",
 				"propertyName": "items",
-				"index": 7
+				"index": 9
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -411,6 +445,16 @@ define("PgrTaskMeasureMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 									}
 								]
 							}
+						}
+					},
+					"ActivityDS_StartDate_h4hs4s7": {
+						"modelConfig": {
+							"path": "ActivityDS.StartDate"
+						}
+					},
+					"ActivityDS_DueDate_hkplpyl": {
+						"modelConfig": {
+							"path": "ActivityDS.DueDate"
 						}
 					}
 				}

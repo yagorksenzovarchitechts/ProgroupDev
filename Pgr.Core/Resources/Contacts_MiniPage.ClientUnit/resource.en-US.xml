@@ -2,13 +2,10 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
-			<Item Name="LocalizableStrings.Button_EditRecord.Value" Value="Edit record" />
-			<Item Name="LocalizableStrings.Button_Save_caption.Value" Value="Save as potential duplicate" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancel" />
-			<Item Name="LocalizableStrings.DuplicatesCaption.Value" Value="Potential duplicates found" />
+			<Item Name="LocalizableStrings.ComboBox_jg9lxk5_placeholder.Value" Value="Select department" />
 			<Item Name="LocalizableStrings.EmailInput_cjzdfhy_label.Value" Value="Enter email address" />
 			<Item Name="LocalizableStrings.EmailInput_cjzdfhy_placeholder.Value" Value="Enter email address" />
-			<Item Name="LocalizableStrings.NumberOfRecords_Caption.Value" Value="Found records:" />
 			<Item Name="LocalizableStrings.PgrMergeConfirmButton.Value" Value="Merge" />
 			<Item Name="LocalizableStrings.PgrMergeConfirmCancelButton.Value" Value="Cancel" />
 			<Item Name="LocalizableStrings.PgrMergeConfirmMessagePrefix.Value" Value="The following record will remain: " />
@@ -16,6 +13,7 @@
 			<Item Name="LocalizableStrings.PgrMergeErrorMessage.Value" Value="Merge failed:" />
 			<Item Name="LocalizableStrings.PgrMergeErrorOkButton.Value" Value="OK" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
+			<Item Name="LocalizableStrings.addRecord_1bqgv4j_caption.Value" Value="Add new" />
 		</Items>
 	</Group>
 </Resources>

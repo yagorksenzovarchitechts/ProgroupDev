@@ -81,6 +81,10 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 			},
 			{
 				"operation": "remove",
+				"name": "JobTitle"
+			},
+			{
+				"operation": "remove",
 				"name": "ContactCommunicationOptions"
 			},
 			{
@@ -1245,6 +1249,42 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 			},
 			{
 				"operation": "insert",
+				"name": "ComboBox_b8zj7ns",
+				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_Job_czlbyfb",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_Job_czlbyfb"
+				},
+				"parentName": "SideAreaProfileFieldFlexContainer",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_4o3y448",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_4o3y448_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_b8zj7ns",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "ComboBox_cf5dsmd",
 				"values": {
 					"type": "crt.ComboBox",
@@ -1607,70 +1647,25 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 			},
 			{
 				"operation": "insert",
-				"name": "PgrEmployeeCode",
+				"name": "Input_01voeqc",
 				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrProGroupSalesPerson_bpuquo5",
-					"control": "$PDS_PgrProGroupSalesPerson_bpuquo5",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
 						"row": 1,
 						"rowSpan": 1
-					}
-				},
-				"parentName": "GridContainer_lrmq544",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "ComboBox_5o3vqg9",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
 					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_PgrReportsTo_q5r3mvs",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "left",
-					"controlActions": [],
-					"listActions": [],
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrWepaformContactId_5vts8pc",
+					"control": "$PDS_PgrWepaformContactId_5vts8pc",
+					"placeholder": "",
 					"tooltip": "",
-					"control": "$PDS_PgrReportsTo_q5r3mvs",
-					"visible": true,
 					"readonly": false,
-					"placeholder": ""
+					"multiline": false,
+					"labelPosition": "auto"
 				},
 				"parentName": "GridContainer_lrmq544",
 				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_0rz6p78",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_0rz6p78_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_5o3vqg9",
-				"propertyName": "listActions",
 				"index": 0
 			},
 			{
@@ -1698,50 +1693,50 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				},
 				"parentName": "GridContainer_lrmq544",
 				"propertyName": "items",
-				"index": 2
+				"index": 1
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_8hzpzs3",
+				"name": "ComboBox_5o3vqg9",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
-						"row": 2,
+						"row": 1,
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
-					"label": "#ResourceString(ComboBox_8hzpzs3_label)#",
+					"label": "$Resources.Strings.PDS_PgrReportsTo_q5r3mvs",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
-					"labelPosition": "auto",
+					"labelPosition": "left",
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_PgrCreatioUser_4t4xa0z",
+					"control": "$PDS_PgrReportsTo_q5r3mvs",
 					"visible": true,
 					"readonly": false,
 					"placeholder": ""
 				},
 				"parentName": "GridContainer_lrmq544",
 				"propertyName": "items",
-				"index": 3
+				"index": 2
 			},
 			{
 				"operation": "insert",
-				"name": "addRecord_hq33amx",
+				"name": "addRecord_0rz6p78",
 				"values": {
 					"code": "addRecord",
 					"type": "crt.ComboboxSearchTextAction",
 					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_hq33amx_caption)#",
+					"caption": "#ResourceString(addRecord_0rz6p78_caption)#",
 					"clicked": {
 						"request": "crt.CreateRecordFromLookupRequest",
 						"params": {}
 					}
 				},
-				"parentName": "ComboBox_8hzpzs3",
+				"parentName": "ComboBox_5o3vqg9",
 				"propertyName": "listActions",
 				"index": 0
 			},
@@ -1771,7 +1766,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				},
 				"parentName": "GridContainer_lrmq544",
 				"propertyName": "items",
-				"index": 4
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -1787,6 +1782,93 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 					}
 				},
 				"parentName": "Department",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_8hzpzs3",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "#ResourceString(ComboBox_8hzpzs3_label)#",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrCreatioUser_4t4xa0z",
+					"visible": true,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "GridContainer_lrmq544",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_hq33amx",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_hq33amx_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_8hzpzs3",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_9kaap0p",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrTeam_wa51w6k",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrTeam_wa51w6k"
+				},
+				"parentName": "GridContainer_lrmq544",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_mvth9pz",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_mvth9pz_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_9kaap0p",
 				"propertyName": "listActions",
 				"index": 0
 			},
@@ -1816,7 +1898,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				},
 				"parentName": "GridContainer_lrmq544",
 				"propertyName": "items",
-				"index": 5
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -1832,48 +1914,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 					}
 				},
 				"parentName": "ComboBox_hv4r0n7",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "ComboBox_9kaap0p",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 4,
-						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_PgrTeam_wa51w6k",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_PgrTeam_wa51w6k"
-				},
-				"parentName": "GridContainer_lrmq544",
-				"propertyName": "items",
-				"index": 6
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_mvth9pz",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_mvth9pz_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_9kaap0p",
 				"propertyName": "listActions",
 				"index": 0
 			},
@@ -3516,11 +3556,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 							}
 						}
 					},
-					"PDS_PgrProGroupSalesPerson_bpuquo5": {
-						"modelConfig": {
-							"path": "PDS.PgrProGroupSalesPerson"
-						}
-					},
 					"PDS_Name_l21gnrw": {
 						"modelConfig": {
 							"path": "PDS.Name"
@@ -3878,6 +3913,29 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 					"Timeline_3he5r0h_AllTileFilters": {
 						"from": [],
 						"converter": "crt.ToTileFilterGroup"
+					},
+					"PDS_Job_czlbyfb": {
+						"modelConfig": {
+							"path": "PDS.Job"
+						}
+					},
+					"PDS_Job_czlbyfb_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_PgrWepaformContactId_5vts8pc": {
+						"modelConfig": {
+							"path": "PDS.PgrWepaformContactId"
+						}
 					}
 				}
 			},

@@ -19,14 +19,21 @@ define("Contracts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"code": "PDS_Number",
 							"caption": "#ResourceString(PDS_Number)#",
 							"dataValueType": 1,
-							"width": 208
+							"width": 290
 						},
 						{
 							"id": "2ed8aa30-bbc7-a3d6-436e-1c2bc4ee4532",
 							"code": "PDS_Account",
 							"caption": "#ResourceString(PDS_Account)#",
 							"dataValueType": 10,
-							"width": 150
+							"width": 261
+						},
+						{
+							"id": "ff9114d4-38cf-2af9-a3af-40b235a69327",
+							"code": "PDS_Account_PgrWepaformName",
+							"caption": "#ResourceString(PDS_Account_PgrWepaformName)#",
+							"dataValueType": 27,
+							"width": 177
 						},
 						{
 							"id": "bd936493-b219-e13b-636c-ce455c1e079e",
@@ -49,18 +56,11 @@ define("Contracts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"width": 124
 						},
 						{
-							"id": "6cfefe20-30ee-12bd-9601-0a5f456e4a82",
-							"code": "PDS_PgrNoticePeriodDays",
-							"caption": "#ResourceString(PDS_PgrNoticePeriodDays)#",
-							"dataValueType": 4,
-							"width": 212
-						},
-						{
 							"id": "3ea73c83-f3a2-db26-7582-79811b7f3435",
 							"code": "PDS_PgrContractRenewalReminderDate",
 							"caption": "#ResourceString(PDS_PgrContractRenewalReminderDate)#",
 							"dataValueType": 8,
-							"width": 280
+							"width": 259
 						}
 					]
 				}
@@ -216,14 +216,14 @@ define("Contracts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"attributes"
 				],
 				"values": {
+					"PDS_Account_PgrWepaformName": {
+						"modelConfig": {
+							"path": "PDS.Account_PgrWepaformName"
+						}
+					},
 					"PDS_EndDate": {
 						"modelConfig": {
 							"path": "PDS.EndDate"
-						}
-					},
-					"PDS_PgrNoticePeriodDays": {
-						"modelConfig": {
-							"path": "PDS.PgrNoticePeriodDays"
 						}
 					},
 					"PDS_PgrContractRenewalReminderDate": {
@@ -269,6 +269,10 @@ define("Contracts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						{
 							"name": "ValidToQuickFilter_Items",
 							"loadOnChange": true
+						},
+						{
+							"name": "Filters_Filter",
+							"loadOnChange": true
 						}
 					]
 				}
@@ -285,7 +289,7 @@ define("Contracts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"default": [
 						{
 							"direction": "asc",
-							"columnName": "State"
+							"columnName": "Account"
 						}
 					]
 				}
@@ -314,11 +318,12 @@ define("Contracts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"attributes"
 				],
 				"values": {
+					"Account_PgrWepaformName": {
+						"type": "ForwardReference",
+						"path": "Account.PgrWepaformName"
+					},
 					"EndDate": {
 						"path": "EndDate"
-					},
-					"PgrNoticePeriodDays": {
-						"path": "PgrNoticePeriodDays"
 					},
 					"PgrContractRenewalReminderDate": {
 						"path": "PgrContractRenewalReminderDate"
@@ -326,26 +331,6 @@ define("Contracts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		modelConfig: /**SCHEMA_MODEL_CONFIG*/{
-			"dataSources": {
-				"PDS": {
-					"config": {
-						"attributes": {
-							"State": {},
-							"EndDate": {
-								"path": "EndDate"
-							},
-							"PgrNoticePeriodDays": {
-								"path": "PgrNoticePeriodDays"
-							},
-							"PgrContractRenewalReminderDate": {
-								"path": "PgrContractRenewalReminderDate"
-							}
-						}
-					}
-				}
-			}
-		}/**SCHEMA_MODEL_CONFIG*/,
 		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/

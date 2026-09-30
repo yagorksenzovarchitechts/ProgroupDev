@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "e2748af0-6a01-4aa5-80c5-b075e289148e",
+    "Name": "ActivitySyncSettingsMiniPage",
+    "ModifiedOnUtc": "\/Date(1790697293000)\/",
+    "Parent": {
+      "UId": "88fc1660-a4b9-43fe-bc51-cf42ff9c354f",
+      "Name": "ActivitySyncSettingsMiniPage"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Activity Sync Settings Mini Page",
+    "DependsOn": []
+  }
+}

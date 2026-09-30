@@ -6,6 +6,7 @@
 			<Item Name="LocalizableStrings.BonusConditionsSearchFilter_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.BonusSearchFilter_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.ExpansionPanel_2ii744k_title.Value" Value="Bonus conditions" />
+			<Item Name="LocalizableStrings.ExpansionPanel_PaymentInfo_title.Value" Value="Payment information" />
 			<Item Name="LocalizableStrings.ExpansionPanel_nggrqb0_title.Value" Value="Bonus thresholds" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_17kp2fm_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_asgflp9_caption.Value" Value="New" />
