@@ -24,6 +24,7 @@
 			<Item Name="LocalizableStrings.CompetitorsList_caption.Value" Value="Products offered" />
 			<Item Name="LocalizableStrings.CompetitorsRefreshButton_caption.Value" Value="Aktualisieren" />
 			<Item Name="LocalizableStrings.CompetitorsSettingsButton_caption.Value" Value="Aktionen" />
+			<Item Name="LocalizableStrings.ContactsListDS_Type.Value" Value="Typ" />
 			<Item Name="LocalizableStrings.ContractsTab_caption.Value" Value="Verträge" />
 			<Item Name="LocalizableStrings.ExpansionPanel_0hsju2s_title.Value" Value="Unternehmen Info" />
 			<Item Name="LocalizableStrings.ExpansionPanel_1mbln9s_title.Value" Value="Adressen" />

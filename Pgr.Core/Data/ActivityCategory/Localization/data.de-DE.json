@@ -48,7 +48,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": ""
+          "Value": "Outlook-Aktivitäten"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -67,7 +67,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": "Opportunity erinnerung"
+          "Value": "Opportunity-Erinnerung"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -86,7 +86,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": "E-Mail"
+          "Value": "369"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -105,7 +105,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": ""
+          "Value": "Kundenbesuch überfällig"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -124,7 +124,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": ""
+          "Value": "Korrekturmaßnahme"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",

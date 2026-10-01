@@ -578,7 +578,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					"title": "#ResourceString(ExpansionPanel_cmepoqk_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": false,
+					"expanded": true,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -1217,7 +1217,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					"placeholder": "#ResourceString(Input_3nnhmxl_placeholder)#",
 					"tooltip": "",
 					"readonly": false,
-					"multiline": true,
+					"multiline": false,
 					"labelPosition": "auto",
 					"visible": true
 				},
@@ -2902,7 +2902,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 							"sortingConfig": {
 								"default": [
 									{
-										"direction": "desc",
+										"direction": "asc",
 										"columnName": "PgrContacts"
 									}
 								]

@@ -296,7 +296,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"name": "ContactsExpansionPanel",
 				"values": {
 					"toggleType": "material",
-					"expanded": false,
 					"alignItems": "stretch"
 				}
 			},
@@ -339,6 +338,12 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"caption": "#ResourceString(ContactsListDS_Email)#",
 							"dataValueType": 45,
 							"width": 242
+						},
+						{
+							"id": "60e316d4-18a7-e8ce-beb0-2f7be382ea23",
+							"code": "ContactsListDS_Type",
+							"caption": "#ResourceString(ContactsListDS_Type)#",
+							"dataValueType": 10
 						}
 					]
 				}
@@ -10859,6 +10864,22 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"operation": "merge",
 				"path": [
 					"attributes",
+					"ContactsList",
+					"viewModelConfig",
+					"attributes"
+				],
+				"values": {
+					"ContactsListDS_Type": {
+						"modelConfig": {
+							"path": "ContactsListDS.Type"
+						}
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
 					"ContractList",
 					"modelConfig"
 				],
@@ -11526,6 +11547,20 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"properties": [
 					"Address"
 				]
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"dataSources",
+					"ContactsListDS",
+					"config",
+					"attributes"
+				],
+				"values": {
+					"Type": {
+						"path": "Type"
+					}
+				}
 			},
 			{
 				"operation": "remove",

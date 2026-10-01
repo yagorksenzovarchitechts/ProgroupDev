@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "abec48ac-455a-4acc-8431-64857159ee0f",
+    "Name": "PgrContactInsertCancelledRecoveryHandler",
+    "ModifiedOnUtc": "\/Date(1790757093000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "Contact Insert Cancelled Recovery Handler",
+    "DependsOn": []
+  }
+}

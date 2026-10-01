@@ -3,7 +3,7 @@
     "UId": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
     "Name": "Pgr.Core",
     "Type": 1,
-    "ModifiedOnUtc": "\/Date(1790162745000)\/",
+    "ModifiedOnUtc": "\/Date(1790690807000)\/",
     "Maintainer": "ProGroup",
     "ProjectPath": "Files/Pgr.Core.csproj",
     "DependsOn": [
@@ -57,17 +57,17 @@
         "InstallBehavior": 1
       },
       {
-        "UId": "90858294-4f2b-60a6-6032-33639e964dfe",
-        "Name": "CrtAICases",
-        "Type": 1,
-        "InstallBehavior": 1
-      },
-      {
         "UId": "99158cb9-b1b4-3a1d-beb0-7157e0414e73",
         "PackageVersion": "7.8.0",
         "Name": "CrtC360InUiV2",
         "Type": 1,
         "InstallBehavior": 1
+      },
+      {
+        "UId": "b2f7f5d6-f766-422c-7f13-970c9f7233e6",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtFileImport",
+        "Type": 1
       },
       {
         "UId": "b8b21e51-9f46-5ec8-7c53-32cbd8b5c6c1",

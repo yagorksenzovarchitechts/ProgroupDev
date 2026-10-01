@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "8efecd5a-f172-4dc1-a249-004a26986cdb",
+    "Name": "PgrContactDedupLog",
+    "ModifiedOnUtc": "\/Date(1790674949000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Contact dedup log",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Contact dedup log" />
+			<Item Name="Columns.PgrCandidate.Caption" Value="Candidate email/name" />
+			<Item Name="Columns.PgrError.Caption" Value="Error" />
+			<Item Name="Columns.PgrExistingContactId.Caption" Value="Existing contact Id" />
+			<Item Name="Columns.PgrIsManuallyCreated.Caption" Value="Is manually created" />
+			<Item Name="Columns.PgrNewContactId.Caption" Value="New contact Id" />
+			<Item Name="Columns.PgrStage.Caption" Value="Stage" />
+		</Items>
+	</Group>
+</Resources>

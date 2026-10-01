@@ -1383,6 +1383,23 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 			},
 			{
 				"operation": "insert",
+				"name": "Checkbox_PgrIsManuallyCreated",
+				"values": {
+					"type": "crt.Checkbox",
+					"value": true,
+					"disabled": false,
+					"inversed": false,
+					"label": "$Resources.Strings.PDS_PgrIsManuallyCreated",
+					"labelPosition": "auto",
+					"control": "$PDS_PgrIsManuallyCreated",
+					"visible": false
+				},
+				"parentName": "SideAreaProfileFieldFlexContainer",
+				"propertyName": "items",
+				"index": 8
+			},
+			{
+				"operation": "insert",
 				"name": "GridContainer_6qoqovy",
 				"values": {
 					"type": "crt.GridContainer",
@@ -3566,6 +3583,12 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 							"path": "PDS.PgrIsActive"
 						}
 					},
+					"PDS_PgrIsManuallyCreated": {
+						"value": true,
+						"modelConfig": {
+							"path": "PDS.PgrIsManuallyCreated"
+						}
+					},
 					"PDS_PgrReportsTo_q5r3mvs": {
 						"modelConfig": {
 							"path": "PDS.PgrReportsTo"
@@ -4369,6 +4392,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				request: "crt.SaveRecordRequest",
 				handler: async (request, next) => {
 					const context = request.$context;
+					context.PDS_PgrIsManuallyCreated = true;
 					if (request.pgrCheckDuplicates === true) {
 						const phoneValue = await context.PDS_Phone_g0l1r5a;
 						const communicationRows = (await context.CommunicationOptions_558wj6f) || [];

@@ -10,7 +10,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": ""
+          "Value": "Kundenkontakt / regulärer Besuch"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -29,7 +29,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": ""
+          "Value": "Preise / Konditionen"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -48,7 +48,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": ""
+          "Value": "Qualität / Performance"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -67,7 +67,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": ""
+          "Value": "Lieferanteil erhöhen"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -86,7 +86,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": ""
+          "Value": "Planung / Forecast"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -105,7 +105,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": ""
+          "Value": "Anderes"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -124,7 +124,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": ""
+          "Value": "Mengenentwicklung"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -143,7 +143,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": ""
+          "Value": "Neugeschäftsentwicklung"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
@@ -162,7 +162,7 @@
         {
           "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
           "ColumnName": "Name",
-          "Value": ""
+          "Value": "Projekte"
         },
         {
           "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
