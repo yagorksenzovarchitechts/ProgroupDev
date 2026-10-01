@@ -8,6 +8,7 @@
       "Name": "BaseLookup"
     },
     "ManagerName": "EntitySchemaManager",
-    "Caption": "Contact dedup log"
+    "Caption": "Contact dedup log",
+    "DependsOn": []
   }
 }

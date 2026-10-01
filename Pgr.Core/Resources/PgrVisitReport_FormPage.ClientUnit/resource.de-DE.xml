@@ -13,6 +13,7 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_0df7qhy_title.Value" Value="Teilnehmer" />
 			<Item Name="LocalizableStrings.ExpansionPanel_9f310aw_title.Value" Value="Kundensituation" />
 			<Item Name="LocalizableStrings.ExpansionPanel_cmepoqk_title.Value" Value="Grund und Ziel" />
+			<Item Name="LocalizableStrings.ExpansionPanel_kl2km0r_title.Value" Value="Anmerkungen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_qygdbl8_title.Value" Value="Maßnahmen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_v7m1ic2_title.Value" Value="Schwerpunktthemen" />
 			<Item Name="LocalizableStrings.Input_1j86543_tooltip.Value" Value="Optionaler zusätzlicher Hinweis" />
@@ -20,7 +21,10 @@
 			<Item Name="LocalizableStrings.Input_1snwgmj_tooltip.Value" Value="Was wurde besprochen? Ergebnis? Chancen/Risiken?" />
 			<Item Name="LocalizableStrings.Input_az70u84_tooltip.Value" Value="Verwenden, wenn 'Sonstiges' ausgewählt ist" />
 			<Item Name="LocalizableStrings.Input_s875dfr_tooltip.Value" Value="Optionaler zusätzlicher Hinweis" />
+			<Item Name="LocalizableStrings.Label_1u95lgq_caption.Value" Value="Andere Teilnehmer" />
 			<Item Name="LocalizableStrings.Label_Measure_caption.Value" Value="Der Verantwortliche erhält Benachrichtigungen zur Maßnahme in Creatio. Ohne Creatio-Zugang erfolgt die Benachrichtigung per E-Mail (in dem Fall bleibt der VKL verantwortlich für die Umsetzung). Maßgeblich ist eine hinterlegte E-Mail-Adresse auf der Kontaktseite." />
+			<Item Name="LocalizableStrings.Label_ifrkhhd_caption.Value" Value="Teilnehmer Kunde" />
+			<Item Name="LocalizableStrings.Label_kn5k638_caption.Value" Value="Teilnehmer Progroup" />
 			<Item Name="LocalizableStrings.Label_qoozpze_caption.Value" Value="Besuchsbericht-Info" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
 			<Item Name="LocalizableStrings.TabContainer_widjyyt_caption.Value" Value="Zielsetzung" />

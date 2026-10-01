@@ -4,6 +4,7 @@
     "Name": "PgrContactInsertCancelledRecoveryHandler",
     "ModifiedOnUtc": "\/Date(1790757093000)\/",
     "ManagerName": "SourceCodeSchemaManager",
-    "Caption": "Contact Insert Cancelled Recovery Handler"
+    "Caption": "Contact Insert Cancelled Recovery Handler",
+    "DependsOn": []
   }
 }

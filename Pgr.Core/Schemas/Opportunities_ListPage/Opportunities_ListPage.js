@@ -79,11 +79,19 @@ define("Opportunities_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"values": {
 					"columns": [
 						{
+							"id": "757f1634-6946-5b3f-395c-069f1d213795",
+							"code": "PDS_Account",
+							"caption": "#ResourceString(PDS_Account)#",
+							"dataValueType": 10,
+							"width": 261,
+							"sticky": true
+						},
+						{
 							"id": "f252f581-0ccf-44ac-b7c9-c00df2ad9919",
 							"code": "PDS_Title",
 							"caption": "#ResourceString(PDS_Title)#",
 							"dataValueType": 1,
-							"sticky": true,
+							"sticky": false,
 							"width": 369
 						},
 						{
@@ -99,13 +107,6 @@ define("Opportunities_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 							"caption": "#ResourceString(PDS_Contact)#",
 							"dataValueType": 10,
 							"width": 225
-						},
-						{
-							"id": "757f1634-6946-5b3f-395c-069f1d213795",
-							"code": "PDS_Account",
-							"caption": "#ResourceString(PDS_Account)#",
-							"dataValueType": 10,
-							"width": 222
 						},
 						{
 							"id": "3d72a99e-249b-c0ba-9832-ced4c4a65673",
@@ -190,8 +191,8 @@ define("Opportunities_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"values": {
 					"default": [
 						{
-							"direction": "asc",
-							"columnName": "Title"
+							"direction": "desc",
+							"columnName": "Account"
 						}
 					]
 				}

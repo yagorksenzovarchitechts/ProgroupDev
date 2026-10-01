@@ -170,7 +170,17 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"name": "FolderTree",
 				"values": {
 					"_filterOptions": {
-						"expose": [],
+						"expose": [
+							{
+								"attribute": "FolderTree_active_folder_filter",
+								"converters": [
+									{
+										"converter": "crt.FolderTreeActiveFilterAttributeConverter",
+										"args": []
+									}
+								]
+							}
+						],
 						"from": [
 							"FolderTree_items",
 							"FolderTree_favoriteItems",
@@ -792,6 +802,10 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 								},
 								{
 									"name": "QuickFilter_sf7xu1k_DataGrid_0kcsg12",
+									"loadOnChange": true
+								},
+								{
+									"name": "FolderTree_active_folder_filter",
 									"loadOnChange": true
 								}
 							]

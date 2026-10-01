@@ -3,6 +3,7 @@
     "UId": "451a0bfc-5df6-4df8-948d-756c60beb231",
     "Name": "PgrSsoContactCreationTestService",
     "ModifiedOnUtc": "\/Date(1790755383000)\/",
-    "ManagerName": "SourceCodeSchemaManager"
+    "ManagerName": "SourceCodeSchemaManager",
+    "DependsOn": []
   }
 }

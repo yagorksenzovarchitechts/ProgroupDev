@@ -321,11 +321,6 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup Label="Package References">
-		<Reference Include="CrtFileImport">
-			<HintPath>$(RelativePkgFolderPath)/CrtFileImport/$(StandalonePackageAssemblyPath)/CrtFileImport.dll</HintPath>
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
 		<Reference Include="CrtC360InUiV2">
 			<HintPath>$(RelativePkgFolderPath)/CrtC360InUiV2/$(StandalonePackageAssemblyPath)/CrtC360InUiV2.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
@@ -343,6 +338,11 @@
 		</Reference>
 		<Reference Include="CrtDigitalAdsInLeadGen">
 			<HintPath>$(RelativePkgFolderPath)/CrtDigitalAdsInLeadGen/$(StandalonePackageAssemblyPath)/CrtDigitalAdsInLeadGen.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="CrtFileImport">
+			<HintPath>$(RelativePkgFolderPath)/CrtFileImport/$(StandalonePackageAssemblyPath)/CrtFileImport.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -426,6 +426,7 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusType/PgrBonusType.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusType/PgrBonusType.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactDedupLog/PgrContactDedupLog.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactDedupLog/PgrContactDedupLog.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactInLead/PgrContactInLead.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactInLead/PgrContactInLead.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactsInVisitReport/PgrContactsInVisitReport.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactsInVisitReport/PgrContactsInVisitReport.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCorrectiveMeasureAction/PgrCorrectiveMeasureAction.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCorrectiveMeasureAction/PgrCorrectiveMeasureAction.cs')" />

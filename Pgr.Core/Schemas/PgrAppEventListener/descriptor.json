@@ -4,6 +4,7 @@
     "Name": "PgrAppEventListener",
     "ModifiedOnUtc": "\/Date(1790751105000)\/",
     "ManagerName": "SourceCodeSchemaManager",
-    "Caption": "Pgr App Event Listener"
+    "Caption": "Pgr App Event Listener",
+    "DependsOn": []
   }
 }

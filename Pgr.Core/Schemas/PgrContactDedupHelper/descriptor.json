@@ -4,6 +4,7 @@
     "Name": "PgrContactDedupHelper",
     "ModifiedOnUtc": "\/Date(1790759917000)\/",
     "ManagerName": "SourceCodeSchemaManager",
-    "Caption": "Pgr Contact Dedup Helper"
+    "Caption": "Pgr Contact Dedup Helper",
+    "DependsOn": []
   }
 }

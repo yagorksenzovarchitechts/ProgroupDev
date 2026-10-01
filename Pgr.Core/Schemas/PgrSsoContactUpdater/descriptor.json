@@ -4,6 +4,7 @@
     "Name": "PgrSsoContactUpdater",
     "ModifiedOnUtc": "\/Date(1790753843000)\/",
     "ManagerName": "SourceCodeSchemaManager",
-    "Caption": "SSO contact updater override"
+    "Caption": "SSO contact updater override",
+    "DependsOn": []
   }
 }
