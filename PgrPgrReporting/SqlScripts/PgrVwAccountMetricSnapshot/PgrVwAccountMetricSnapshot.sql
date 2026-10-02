@@ -1,5 +1,26 @@
 CREATE OR REPLACE VIEW "PgrVwAccountMetricSnapshot" AS
-WITH latest_budget AS (
+WITH cal_lwd AS (
+         SELECT cal."Id" AS "CalendarId", MAX(d.d::date) AS "Lwd"
+           FROM "Calendar" cal
+             CROSS JOIN generate_series(CURRENT_DATE - 21, CURRENT_DATE - 1, '1 day'::interval) d(d)
+          WHERE NOT EXISTS (SELECT 1 FROM "DayOff" o
+                  WHERE o."CalendarId" IN (cal."Id", cal."ParentId")
+                    AND o."DayTypeId" = '078c9b1e-9312-43ef-b890-e5298db62827'::uuid
+                    AND (o."Date"::date = d.d::date OR (o."IsRepeated" AND to_char(o."Date", 'MMDD') = to_char(d.d, 'MMDD'))))
+            AND NOT EXISTS (SELECT 1 FROM "DayInCalendar" dc JOIN "DayOfWeek" w ON w."Id" = dc."DayOfWeekId"
+                  WHERE dc."CalendarId" = cal."Id"
+                    AND dc."DayTypeId" = '078c9b1e-9312-43ef-b890-e5298db62827'::uuid
+                    AND w."Code" = (ARRAY['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'])[EXTRACT(dow FROM d.d)::int + 1])
+            AND (EXISTS (SELECT 1 FROM "DayInCalendar" dc2 WHERE dc2."CalendarId" = cal."Id" AND dc2."DayOfWeekId" IS NOT NULL)
+                 OR EXTRACT(dow FROM d.d)::int NOT IN (0, 6))
+          GROUP BY cal."Id"
+        ), acct_lwd AS (
+         SELECT a."Id" AS "AccountId",
+            COALESCE(cl."Lwd", CURRENT_DATE - (CASE EXTRACT(dow FROM CURRENT_DATE)::int WHEN 1 THEN 3 WHEN 0 THEN 2 ELSE 1 END)) AS "Lwd"
+           FROM "Account" a
+             LEFT JOIN "Country" c ON c."Id" = a."CountryId"
+             LEFT JOIN cal_lwd cl ON cl."CalendarId" = COALESCE(c."PgrCalendarId", 'f0ff1f0e-f46b-1410-1787-0026185bfcd3'::uuid)
+        ), latest_budget AS (
          SELECT DISTINCT ON (v."PgrAccountIdId") v."PgrAccountIdId" AS "AccountId",
             v."PgrValue" AS "BudgetValue",
             v."PgrDate" AS "BudgetDate",
@@ -8,7 +29,8 @@ WITH latest_budget AS (
             v."CreatedById" AS "BudgetCreatedById",
             v."ModifiedById" AS "BudgetModifiedById"
            FROM "PgrAccountMetricValue" v
-          WHERE v."PgrMetricTypeIdId" = 'abad9912-b6a4-4777-b445-d55d9e9a7ae1'::uuid AND v."PgrPeriodUnitIdId" = 'deda94c4-255e-4def-b4e7-d991b44d3f74'::uuid AND date_trunc('month'::text, v."PgrDate"::timestamp with time zone) = date_trunc('month'::text, CURRENT_DATE::timestamp with time zone)
+             JOIN acct_lwd l ON l."AccountId" = v."PgrAccountIdId"
+          WHERE v."PgrMetricTypeIdId" = 'abad9912-b6a4-4777-b445-d55d9e9a7ae1'::uuid AND v."PgrPeriodUnitIdId" = 'deda94c4-255e-4def-b4e7-d991b44d3f74'::uuid AND date_trunc('month'::text, v."PgrDate"::timestamp with time zone) = date_trunc('month'::text, l."Lwd"::timestamp with time zone)
           ORDER BY v."PgrAccountIdId", v."PgrDate" DESC, v."ModifiedOn" DESC
         ), latest_order_intake AS (
          SELECT DISTINCT ON (v."PgrAccountIdId") v."PgrAccountIdId" AS "AccountId",
@@ -19,7 +41,8 @@ WITH latest_budget AS (
             v."CreatedById" AS "OiCreatedById",
             v."ModifiedById" AS "OiModifiedById"
            FROM "PgrAccountMetricValue" v
-          WHERE v."PgrMetricTypeIdId" = 'e6c7bd63-bdd2-4eb8-a1cf-ecd8f0a8503d'::uuid
+             JOIN acct_lwd l ON l."AccountId" = v."PgrAccountIdId"
+          WHERE v."PgrMetricTypeIdId" = 'e6c7bd63-bdd2-4eb8-a1cf-ecd8f0a8503d'::uuid AND v."PgrDate"::date = l."Lwd"
           ORDER BY v."PgrAccountIdId", v."PgrDate" DESC, v."ModifiedOn" DESC
         ), latest_deviation AS (
          SELECT DISTINCT ON (v."PgrAccountIdId") v."PgrAccountIdId" AS "AccountId",

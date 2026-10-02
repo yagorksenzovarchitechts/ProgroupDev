@@ -1,0 +1,26 @@
+= MetaData.Schema.UId "536915cd-f9cc-4cca-9a9a-621bb249248a"
+= MetaData.Schema.A5 "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+= MetaData.Schema.B6 "655ac62c-1e4a-cc32-6e65-323f197c68e0"
++ MetaData.Schema.B7 true
+= MetaData.Schema.B8 "10.0.0.858"
++ MetaData.Schema.AD4.BRS1.["ff0ddea1-cb48-d110-dacd-e278f3c77fd2"].BR1.["b13b6da3-fc6c-1a08-230c-288020b5c4da"].BRC2.["ee31973e-c4b6-6291-eb32-e369ddd81a47"].BRA2.BRE2 "AttributeValue"
+= MetaData.Schema.AD4.BRS1.["ff0ddea1-cb48-d110-dacd-e278f3c77fd2"].BR1.["b13b6da3-fc6c-1a08-230c-288020b5c4da"].BRC2.["ee31973e-c4b6-6291-eb32-e369ddd81a47"].BRA3.BVE1 "{\"items\":{\"c0774b2b-bfb7-452e-8ca0-08a87d33af69\":{\"filterType\":1,\"comparisonType\":3,\"isEnabled\":true,\"trimDateTimeParameterToDate\":false,\"leftExpression\":{\"expressionType\":0,\"columnPath\":\"PgrIsCompetitor\"},\"isAggregative\":false,\"dataValueType\":12,\"rightExpression\":{\"expressionType\":2,\"parameter\":{\"dataValueType\":12,\"value\":true}}}},\"logicalOperation\":0,\"isEnabled\":true,\"filterType\":6,\"rootSchemaName\":\"Account\"}"
+- MetaData.Schema.AD4.BRS1.["ff0ddea1-cb48-d110-dacd-e278f3c77fd2"].BR1.["b13b6da3-fc6c-1a08-230c-288020b5c4da"].BRC2.["da86f956-b4dc-e37e-948e-f778884a3083"].BRA2
+- MetaData.Schema.AD4.BRS1.["ff0ddea1-cb48-d110-dacd-e278f3c77fd2"].BR1.["b13b6da3-fc6c-1a08-230c-288020b5c4da"].BRC2.["da86f956-b4dc-e37e-948e-f778884a3083"].BRA3
+- MetaData.Schema.AD4.BRS1.["ff0ddea1-cb48-d110-dacd-e278f3c77fd2"].BR1.["b13b6da3-fc6c-1a08-230c-288020b5c4da"].BRC2.["829f6910-8dcd-13cb-9417-dc27e8bf5b15"]
+~ MetaData.Schema.AD4.BRS1.["ff0ddea1-cb48-d110-dacd-e278f3c77fd2"].BR1.["b13b6da3-fc6c-1a08-230c-288020b5c4da"].BRC2 [
+  "ee31973e-c4b6-6291-eb32-e369ddd81a47",
+  "da86f956-b4dc-e37e-948e-f778884a3083"
+]
+- MetaData.Schema.AD4.BRS1.["ff0ddea1-cb48-d110-dacd-e278f3c77fd2"].BR2.["70225c36-0050-aac0-81e4-5d8694b2c510"].BRT1
++ MetaData.Schema.AD4.BRS1.["ff0ddea1-cb48-d110-dacd-e278f3c77fd2"].BR2 {
+  "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+  "UId": "cdebf621-aea7-8185-bd81-42736cf6e6b7",
+  "BRT1": "Competitor"
+}
+~ MetaData.Schema.AD4.BRS1.["ff0ddea1-cb48-d110-dacd-e278f3c77fd2"].BR2 [
+  "70225c36-0050-aac0-81e4-5d8694b2c510",
+  "cdebf621-aea7-8185-bd81-42736cf6e6b7"
+]
++ MetaData.Schema.B7 true
+= MetaData.Schema.AD5 "3c332b2a-9daa-4866-a91a-bdd21045ac9b"

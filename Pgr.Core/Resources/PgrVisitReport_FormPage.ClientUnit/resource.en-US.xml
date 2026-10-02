@@ -5,7 +5,7 @@
 			<Item Name="Caption" Value="Visit report form page" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Attachments" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Attachments" />
-			<Item Name="LocalizableStrings.Button_1hzou43_caption.Value" Value="Reload account data" />
+			<Item Name="LocalizableStrings.Button_1hzou43_caption.Value" Value="Reload Account data" />
 			<Item Name="LocalizableStrings.Button_AddMeasure_caption.Value" Value="Create measure task" />
 			<Item Name="LocalizableStrings.Button_AddMeasure_clicked_params_notificationText.Value" Value="Creating measure task" />
 			<Item Name="LocalizableStrings.Button_RefreshMeasure_caption.Value" Value="Refresh" />
@@ -23,10 +23,9 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_qygdbl8_title.Value" Value="Measures" />
 			<Item Name="LocalizableStrings.ExpansionPanel_v7m1ic2_title.Value" Value="Key topics" />
 			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="General info" />
-			<Item Name="LocalizableStrings.GridDetailAddBtn_jubpado_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_fnh0pp1_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.Input_1j86543_tooltip.Value" Value="Optional additional note" />
-			<Item Name="LocalizableStrings.Input_1snwgmj_label.Value" Value="Description" />
+			<Item Name="LocalizableStrings.Input_1snwgmj_label.Value" Value="Comment" />
 			<Item Name="LocalizableStrings.Input_1snwgmj_tooltip.Value" Value="What was discussed? Outcome? Opportunities/risks?" />
 			<Item Name="LocalizableStrings.Input_3nnhmxl_placeholder.Value" Value="Name all other participants" />
 			<Item Name="LocalizableStrings.Input_9e3hpga_label.Value" Value="Comment" />
@@ -42,10 +41,12 @@
 			<Item Name="LocalizableStrings.Label_kn5k638_caption.Value" Value="Progroup contacts" />
 			<Item Name="LocalizableStrings.Label_qoozpze_caption.Value" Value=" Visit report Info" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
+			<Item Name="LocalizableStrings.SetRecordRightsButton_caption.Value" Value="Set up access rights" />
 			<Item Name="LocalizableStrings.TabContainer_widjyyt_caption.Value" Value="Report detail" />
 			<Item Name="LocalizableStrings.addRecord_9ii5w3n_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_g7igl2j_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_mujnxpn_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_nhhzujs_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_rekrn1f_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_t5o0hwn_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_wuta305_caption.Value" Value="Add new" />

@@ -5,6 +5,7 @@
 			<Item Name="Caption" Value="Visit report form page" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
+			<Item Name="LocalizableStrings.Button_1hzou43_caption.Value" Value="Kontodaten neu laden" />
 			<Item Name="LocalizableStrings.Button_AddMeasure_caption.Value" Value="Maßnahmenaufgabe erstellen" />
 			<Item Name="LocalizableStrings.Button_AddMeasure_clicked_params_notificationText.Value" Value="Maßnahmenaufgabe wird erstellt" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
@@ -17,9 +18,14 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_qygdbl8_title.Value" Value="Maßnahmen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_v7m1ic2_title.Value" Value="Schwerpunktthemen" />
 			<Item Name="LocalizableStrings.Input_1j86543_tooltip.Value" Value="Optionaler zusätzlicher Hinweis" />
-			<Item Name="LocalizableStrings.Input_1snwgmj_label.Value" Value="Beschreibung" />
+			<Item Name="LocalizableStrings.Input_1snwgmj_label.Value" Value="Kommentar" />
 			<Item Name="LocalizableStrings.Input_1snwgmj_tooltip.Value" Value="Was wurde besprochen? Ergebnis? Chancen/Risiken?" />
+			<Item Name="LocalizableStrings.Input_3nnhmxl_placeholder.Value" Value="Nennen Sie alle weiteren Teilnehmer" />
+			<Item Name="LocalizableStrings.Input_9e3hpga_label.Value" Value="Kommentar" />
+			<Item Name="LocalizableStrings.Input_9ep08np_label.Value" Value="Kommentar" />
 			<Item Name="LocalizableStrings.Input_az70u84_tooltip.Value" Value="Verwenden, wenn 'Sonstiges' ausgewählt ist" />
+			<Item Name="LocalizableStrings.Input_d03k06p_label.Value" Value="Kommentar" />
+			<Item Name="LocalizableStrings.Input_fc9evig_label.Value" Value="Kommentar" />
 			<Item Name="LocalizableStrings.Input_s875dfr_tooltip.Value" Value="Optionaler zusätzlicher Hinweis" />
 			<Item Name="LocalizableStrings.Label_1u95lgq_caption.Value" Value="Andere Teilnehmer" />
 			<Item Name="LocalizableStrings.Label_Measure_caption.Value" Value="Der Verantwortliche erhält Benachrichtigungen zur Maßnahme in Creatio. Ohne Creatio-Zugang erfolgt die Benachrichtigung per E-Mail (in dem Fall bleibt der VKL verantwortlich für die Umsetzung). Maßgeblich ist eine hinterlegte E-Mail-Adresse auf der Kontaktseite." />
@@ -27,6 +33,7 @@
 			<Item Name="LocalizableStrings.Label_kn5k638_caption.Value" Value="Teilnehmer Progroup" />
 			<Item Name="LocalizableStrings.Label_qoozpze_caption.Value" Value="Besuchsbericht-Info" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
+			<Item Name="LocalizableStrings.SetRecordRightsButton_caption.Value" Value="Zugriffsrechte einrichten" />
 			<Item Name="LocalizableStrings.TabContainer_widjyyt_caption.Value" Value="Zielsetzung" />
 		</Items>
 	</Group>

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "3804cac4-ac0b-424c-aac5-b47a07eee1b6",
+    "Name": "PgrContactsInVisitReportBusinessRule",
+    "ModifiedOnUtc": "\/Date(1790863608000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Contacts in Visit report (Business rules)",
+    "DependsOn": []
+  }
+}

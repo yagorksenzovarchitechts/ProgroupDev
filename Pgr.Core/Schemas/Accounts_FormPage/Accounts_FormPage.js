@@ -389,9 +389,32 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"index": 7
 			},
 			{
+				"operation": "remove",
+				"name": "CompetitorsSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CompetitorsExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CompetitorsImportDataButton"
+			},
+			{
 				"operation": "merge",
 				"name": "CompetitorsList",
 				"values": {
+					"features": {
+						"rows": {
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
+						},
+						"columns": {
+							"resizing": false
+						}
+					},
 					"columns": [
 						{
 							"id": "7a4854a7-a8c0-9cbf-2fb7-8c82e2555f5d",
