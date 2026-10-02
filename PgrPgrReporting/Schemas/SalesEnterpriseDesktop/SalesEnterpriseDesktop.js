@@ -318,14 +318,14 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 					"_filterOptions": {
 						"expose": [
 							{
-								"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_zc3tqqa",
+								"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
 								"converters": [
 									{
 										"converter": "crt.QuickFilterAttributeConverter",
 										"args": [
 											{
 												"target": {
-													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_zc3tqqa",
+													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
 													"filterColumn": "PgrAccount.Territory"
 												},
 												"quickFilterType": "lookup"
@@ -335,14 +335,14 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								]
 							},
 							{
-								"attribute": "QuickFilter_Territory_ChartWidget_vpvvd4s_SeriesData_g09hdv9",
+								"attribute": "QuickFilter_Territory_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
 								"converters": [
 									{
 										"converter": "crt.QuickFilterAttributeConverter",
 										"args": [
 											{
 												"target": {
-													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_g09hdv9",
+													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
 													"filterColumn": "PgrAccount.Territory"
 												},
 												"quickFilterType": "lookup"
@@ -352,31 +352,14 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								]
 							},
 							{
-								"attribute": "QuickFilter_Territory_IndicatorWidget_1i78h71_Data",
+								"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_BudgetSeries",
 								"converters": [
 									{
 										"converter": "crt.QuickFilterAttributeConverter",
 										"args": [
 											{
 												"target": {
-													"viewAttributeName": "IndicatorWidget_1i78h71_Data",
-													"filterColumn": "PgrAccount.Territory"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_9z8sadx",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_9z8sadx",
+													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_BudgetSeries",
 													"filterColumn": "PgrAccount.Territory"
 												},
 												"quickFilterType": "lookup"
@@ -403,6 +386,23 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								]
 							},
 							{
+								"attribute": "QuickFilter_Territory_IndicatorWidget_1i78h71_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_1i78h71_Data",
+													"filterColumn": "PgrAccount.Territory"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
 								"attribute": "QuickFilter_Territory_IndicatorWidget_h8gyel3_Data",
 								"converters": [
 									{
@@ -411,6 +411,40 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 											{
 												"target": {
 													"viewAttributeName": "IndicatorWidget_h8gyel3_Data",
+													"filterColumn": "PgrAccount.Territory"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_Territory_jzvgr6l_DevAgg",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "jzvgr6l_DevAgg",
+													"filterColumn": "PgrAccount.Territory"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_Territory_jzvgr6l_BudAgg",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "jzvgr6l_BudAgg",
 													"filterColumn": "PgrAccount.Territory"
 												},
 												"quickFilterType": "lookup"
@@ -489,14 +523,14 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 					"_filterOptions": {
 						"expose": [
 							{
-								"attribute": "QuickFilter_SalesManager_ChartWidget_vpvvd4s_SeriesData_g09hdv9",
+								"attribute": "QuickFilter_SalesManager_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
 								"converters": [
 									{
 										"converter": "crt.QuickFilterAttributeConverter",
 										"args": [
 											{
 												"target": {
-													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_g09hdv9",
+													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
 													"filterColumn": "PgrAccount.PgrSalesManager"
 												},
 												"quickFilterType": "lookup"
@@ -506,14 +540,14 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								]
 							},
 							{
-								"attribute": "QuickFilter_SalesManager_IndicatorWidget_1i78h71_Data",
+								"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
 								"converters": [
 									{
 										"converter": "crt.QuickFilterAttributeConverter",
 										"args": [
 											{
 												"target": {
-													"viewAttributeName": "IndicatorWidget_1i78h71_Data",
+													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
 													"filterColumn": "PgrAccount.PgrSalesManager"
 												},
 												"quickFilterType": "lookup"
@@ -523,31 +557,14 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								]
 							},
 							{
-								"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_zc3tqqa",
+								"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_BudgetSeries",
 								"converters": [
 									{
 										"converter": "crt.QuickFilterAttributeConverter",
 										"args": [
 											{
 												"target": {
-													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_zc3tqqa",
-													"filterColumn": "PgrAccount.PgrSalesManager"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_9z8sadx",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_9z8sadx",
+													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_BudgetSeries",
 													"filterColumn": "PgrAccount.PgrSalesManager"
 												},
 												"quickFilterType": "lookup"
@@ -574,6 +591,23 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								]
 							},
 							{
+								"attribute": "QuickFilter_SalesManager_IndicatorWidget_1i78h71_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_1i78h71_Data",
+													"filterColumn": "PgrAccount.PgrSalesManager"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
 								"attribute": "QuickFilter_SalesManager_IndicatorWidget_h8gyel3_Data",
 								"converters": [
 									{
@@ -582,6 +616,40 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 											{
 												"target": {
 													"viewAttributeName": "IndicatorWidget_h8gyel3_Data",
+													"filterColumn": "PgrAccount.PgrSalesManager"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesManager_jzvgr6l_DevAgg",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "jzvgr6l_DevAgg",
+													"filterColumn": "PgrAccount.PgrSalesManager"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesManager_jzvgr6l_BudAgg",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "jzvgr6l_BudAgg",
 													"filterColumn": "PgrAccount.PgrSalesManager"
 												},
 												"quickFilterType": "lookup"
@@ -660,14 +728,14 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 					"_filterOptions": {
 						"expose": [
 							{
-								"attribute": "QuickFilter_SalesDirector_ChartWidget_vpvvd4s_SeriesData_g09hdv9",
+								"attribute": "QuickFilter_SalesDirector_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
 								"converters": [
 									{
 										"converter": "crt.QuickFilterAttributeConverter",
 										"args": [
 											{
 												"target": {
-													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_g09hdv9",
+													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
 													"filterColumn": "PgrAccount.PgrSalesDirector"
 												},
 												"quickFilterType": "lookup"
@@ -677,14 +745,14 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								]
 							},
 							{
-								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_1i78h71_Data",
+								"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
 								"converters": [
 									{
 										"converter": "crt.QuickFilterAttributeConverter",
 										"args": [
 											{
 												"target": {
-													"viewAttributeName": "IndicatorWidget_1i78h71_Data",
+													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
 													"filterColumn": "PgrAccount.PgrSalesDirector"
 												},
 												"quickFilterType": "lookup"
@@ -694,31 +762,14 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								]
 							},
 							{
-								"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_zc3tqqa",
+								"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_BudgetSeries",
 								"converters": [
 									{
 										"converter": "crt.QuickFilterAttributeConverter",
 										"args": [
 											{
 												"target": {
-													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_zc3tqqa",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_9z8sadx",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_9z8sadx",
+													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_BudgetSeries",
 													"filterColumn": "PgrAccount.PgrSalesDirector"
 												},
 												"quickFilterType": "lookup"
@@ -745,6 +796,23 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								]
 							},
 							{
+								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_1i78h71_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_1i78h71_Data",
+													"filterColumn": "PgrAccount.PgrSalesDirector"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
 								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_h8gyel3_Data",
 								"converters": [
 									{
@@ -753,6 +821,40 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 											{
 												"target": {
 													"viewAttributeName": "IndicatorWidget_h8gyel3_Data",
+													"filterColumn": "PgrAccount.PgrSalesDirector"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesDirector_jzvgr6l_DevAgg",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "jzvgr6l_DevAgg",
+													"filterColumn": "PgrAccount.PgrSalesDirector"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesDirector_jzvgr6l_BudAgg",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "jzvgr6l_BudAgg",
 													"filterColumn": "PgrAccount.PgrSalesDirector"
 												},
 												"quickFilterType": "lookup"
@@ -2932,11 +3034,22 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								},
 								"data": {
 									"providing": {
-										"attribute": "ChartWidget_l52twdo_SeriesData_9z8sadx",
+										"attribute": "ChartWidget_l52twdo_SeriesData_BudgetSeries",
 										"schemaName": "PgrVwAccountBudgetRank",
 										"filters": {
 											"filter": {
 												"items": {
+													"budgetIsNotNullFilter": {
+														"comparisonType": 2,
+														"filterType": 2,
+														"isEnabled": true,
+														"isNull": false,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "PgrBudgetValue"
+														}
+													},
 													"columnIsNotNullFilter": {
 														"comparisonType": 2,
 														"filterType": 2,
@@ -2956,15 +3069,15 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 											},
 											"filterAttributes": [
 												{
-													"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_9z8sadx",
+													"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_BudgetSeries",
 													"loadOnChange": true
 												},
 												{
-													"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_9z8sadx",
+													"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_BudgetSeries",
 													"loadOnChange": true
 												},
 												{
-													"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_9z8sadx",
+													"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_BudgetSeries",
 													"loadOnChange": true
 												}
 											]
@@ -3021,11 +3134,22 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								},
 								"data": {
 									"providing": {
-										"attribute": "ChartWidget_l52twdo_SeriesData_zc3tqqa",
+										"attribute": "ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
 										"schemaName": "PgrVwAccountBudgetRank",
 										"filters": {
 											"filter": {
 												"items": {
+													"orderIntakeIsNotNullFilter": {
+														"comparisonType": 2,
+														"filterType": 2,
+														"isEnabled": true,
+														"isNull": false,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "PgrOrderIntakeValue"
+														}
+													},
 													"columnIsNotNullFilter": {
 														"comparisonType": 2,
 														"filterType": 2,
@@ -3045,15 +3169,15 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 											},
 											"filterAttributes": [
 												{
-													"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_zc3tqqa",
+													"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
 													"loadOnChange": true
 												},
 												{
-													"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_zc3tqqa",
+													"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
 													"loadOnChange": true
 												},
 												{
-													"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_zc3tqqa",
+													"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
 													"loadOnChange": true
 												}
 											]
@@ -3076,7 +3200,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 											}
 										},
 										"dependencies": [],
-										"rowCount": 5,
+										"rowCount": 50,
 										"grouping": {
 											"type": "by-value",
 											"column": {
@@ -3167,7 +3291,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								},
 								"data": {
 									"providing": {
-										"attribute": "ChartWidget_vpvvd4s_SeriesData_g09hdv9",
+										"attribute": "ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
 										"schemaName": "PgrVwAccountBudgetRank",
 										"filters": {
 											"filter": {
@@ -3204,15 +3328,15 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 											},
 											"filterAttributes": [
 												{
-													"attribute": "QuickFilter_Territory_ChartWidget_vpvvd4s_SeriesData_g09hdv9",
+													"attribute": "QuickFilter_Territory_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
 													"loadOnChange": true
 												},
 												{
-													"attribute": "QuickFilter_SalesManager_ChartWidget_vpvvd4s_SeriesData_g09hdv9",
+													"attribute": "QuickFilter_SalesManager_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
 													"loadOnChange": true
 												},
 												{
-													"attribute": "QuickFilter_SalesDirector_ChartWidget_vpvvd4s_SeriesData_g09hdv9",
+													"attribute": "QuickFilter_SalesDirector_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
 													"loadOnChange": true
 												}
 											]
@@ -3448,17 +3572,38 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								"attribute": "IndicatorWidget_1i78h71_Data",
 								"schemaName": "PgrVwAccountMetricSnapshot",
 								"filters": {
+									"filter": {
+										"items": {
+											"a03d16fe-d10a-4954-8759-5dfe3ef00d05": {
+												"filterType": 2,
+												"comparisonType": 2,
+												"isEnabled": true,
+												"trimDateTimeParameterToDate": false,
+												"leftExpression": {
+													"expressionType": 0,
+													"columnPath": "PgrBudgetValue"
+												},
+												"isAggregative": false,
+												"dataValueType": 5,
+												"isNull": false
+											}
+										},
+										"logicalOperation": 0,
+										"isEnabled": true,
+										"filterType": 6,
+										"rootSchemaName": "PgrVwAccountMetricSnapshot"
+									},
 									"filterAttributes": [
 										{
 											"attribute": "QuickFilter_Territory_IndicatorWidget_1i78h71_Data",
 											"loadOnChange": true
 										},
 										{
-											"attribute": "QuickFilter_SalesDirector_IndicatorWidget_1i78h71_Data",
+											"attribute": "QuickFilter_SalesManager_IndicatorWidget_1i78h71_Data",
 											"loadOnChange": true
 										},
 										{
-											"attribute": "QuickFilter_SalesManager_IndicatorWidget_1i78h71_Data",
+											"attribute": "QuickFilter_SalesDirector_IndicatorWidget_1i78h71_Data",
 											"loadOnChange": true
 										}
 									]
@@ -3528,17 +3673,38 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 								"attribute": "IndicatorWidget_h8gyel3_Data",
 								"schemaName": "PgrVwAccountMetricSnapshot",
 								"filters": {
+									"filter": {
+										"items": {
+											"5ea1b3f1-d0bf-481b-9d58-b947f917e5bc": {
+												"filterType": 2,
+												"comparisonType": 2,
+												"isEnabled": true,
+												"trimDateTimeParameterToDate": false,
+												"leftExpression": {
+													"expressionType": 0,
+													"columnPath": "PgrOrderIntakeValue"
+												},
+												"isAggregative": false,
+												"dataValueType": 5,
+												"isNull": false
+											}
+										},
+										"logicalOperation": 0,
+										"isEnabled": true,
+										"filterType": 6,
+										"rootSchemaName": "PgrVwAccountMetricSnapshot"
+									},
 									"filterAttributes": [
 										{
 											"attribute": "QuickFilter_Territory_IndicatorWidget_h8gyel3_Data",
 											"loadOnChange": true
 										},
 										{
-											"attribute": "QuickFilter_SalesDirector_IndicatorWidget_h8gyel3_Data",
+											"attribute": "QuickFilter_SalesManager_IndicatorWidget_h8gyel3_Data",
 											"loadOnChange": true
 										},
 										{
-											"attribute": "QuickFilter_SalesManager_IndicatorWidget_h8gyel3_Data",
+											"attribute": "QuickFilter_SalesDirector_IndicatorWidget_h8gyel3_Data",
 											"loadOnChange": true
 										}
 									]
@@ -3599,7 +3765,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 						"data": {
 							"formatting": {
 								"type": "number",
-								"decimalPrecision": 0,
+								"decimalPrecision": 1,
 								"decimalSeparator": ".",
 								"thousandSeparator": ","
 							},
@@ -3612,7 +3778,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 									"name": "IndicatorWidget_jzvgr6l_Data",
 									"engineType": "PowerFx",
 									"resultDataValueType": "Float",
-									"expression": "(#jzvgr6l_DevAgg#.sumDeviation / #jzvgr6l_BudAgg#.sumBudget) * 100",
+									"expression": "((#jzvgr6l_DevAgg#.sumOrderIntake - #jzvgr6l_BudAgg#.sumBudget) / #jzvgr6l_BudAgg#.sumBudget) * 100",
 									"parameters": [],
 									"expressionVariables": [
 										{
@@ -3628,17 +3794,17 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 												"value": "PgrVwAccountMetricSnapshot",
 												"expressions": [
 													{
-														"name": "sumDeviation",
+														"name": "sumOrderIntake",
 														"aggregationType": "Sum",
 														"expression": {
 															"type": "SchemaColumn",
-															"columnPath": "PgrDeviationValue"
+															"columnPath": "PgrOrderIntakeValue"
 														}
 													}
 												],
 												"filters": {
 													"items": {
-														"budgetNotNullFilter": {
+														"orderIntakeNotNullFilter": {
 															"comparisonType": 2,
 															"filterType": 2,
 															"isEnabled": true,
@@ -3646,18 +3812,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 															"trimDateTimeParameterToDate": false,
 															"leftExpression": {
 																"expressionType": 0,
-																"columnPath": "PgrBudgetValue"
-															}
-														},
-														"deviationNotNullFilter": {
-															"comparisonType": 2,
-															"filterType": 2,
-															"isEnabled": true,
-															"isNull": false,
-															"trimDateTimeParameterToDate": false,
-															"leftExpression": {
-																"expressionType": 0,
-																"columnPath": "PgrDeviationValue"
+																"columnPath": "PgrOrderIntakeValue"
 															}
 														}
 													},
@@ -3668,7 +3823,15 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 												},
 												"filterAttributes": [
 													{
-														"attribute": "VariableConfig_fea45d45_46b0_41db_bcfe_135db708af29",
+														"attribute": "QuickFilter_Territory_jzvgr6l_DevAgg",
+														"loadOnChange": true
+													},
+													{
+														"attribute": "QuickFilter_SalesDirector_jzvgr6l_DevAgg",
+														"loadOnChange": true
+													},
+													{
+														"attribute": "QuickFilter_SalesManager_jzvgr6l_DevAgg",
 														"loadOnChange": true
 													}
 												]
@@ -3707,17 +3870,6 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 																"expressionType": 0,
 																"columnPath": "PgrBudgetValue"
 															}
-														},
-														"deviationNotNullFilter": {
-															"comparisonType": 2,
-															"filterType": 2,
-															"isEnabled": true,
-															"isNull": false,
-															"trimDateTimeParameterToDate": false,
-															"leftExpression": {
-																"expressionType": 0,
-																"columnPath": "PgrDeviationValue"
-															}
 														}
 													},
 													"logicalOperation": 0,
@@ -3727,7 +3879,15 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 												},
 												"filterAttributes": [
 													{
-														"attribute": "VariableConfig_35aacb0a_3458_4997_9122_7dd866dab3ab",
+														"attribute": "QuickFilter_Territory_jzvgr6l_BudAgg",
+														"loadOnChange": true
+													},
+													{
+														"attribute": "QuickFilter_SalesDirector_jzvgr6l_BudAgg",
+														"loadOnChange": true
+													},
+													{
+														"attribute": "QuickFilter_SalesManager_jzvgr6l_BudAgg",
 														"loadOnChange": true
 													}
 												]
@@ -3749,7 +3909,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 						{
 							"filterAttributeName": "VariableConfig_fea45d45_46b0_41db_bcfe_135db708af29",
 							"entitySchemaName": "PgrVwAccountMetricSnapshot",
-							"caption": "#ResourceString(IndicatorWidget_jzvgr6l_title_ratio)# | PgrVwAccountMetricSnapshot.PgrDeviationValue",
+							"caption": "#ResourceString(IndicatorWidget_jzvgr6l_title_ratio)# | PgrVwAccountMetricSnapshot.PgrOrderIntakeValue",
 							"filterAttributes": [
 								"QuickFilter_Territory_jzvgr6l_DevAgg",
 								"QuickFilter_SalesDirector_jzvgr6l_DevAgg",
@@ -4901,8 +5061,8 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 					const result = await next?.handle(request);
 					await seriesSyncModule.syncSecondarySeriesToPrimarySelection(
 						request.$context,
-						"ChartWidget_l52twdo_SeriesData_zc3tqqa",
-						"ChartWidget_l52twdo_SeriesData_9z8sadx"
+						"ChartWidget_l52twdo_SeriesData_BudgetSeries",
+						"ChartWidget_l52twdo_SeriesData_OrderIntakeSeries"
 					);
 					return result;
 				}
@@ -4912,13 +5072,13 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 				handler: async (request, next) => {
 					const result = await next?.handle(request);
 					if (
-						request.attributeName === "ChartWidget_l52twdo_SeriesData_zc3tqqa" ||
-						request.attributeName === "ChartWidget_l52twdo_SeriesData_9z8sadx"
+						request.attributeName === "ChartWidget_l52twdo_SeriesData_OrderIntakeSeries" ||
+						request.attributeName === "ChartWidget_l52twdo_SeriesData_BudgetSeries"
 					) {
 						await seriesSyncModule.syncSecondarySeriesToPrimarySelection(
 							request.$context,
-							"ChartWidget_l52twdo_SeriesData_zc3tqqa",
-							"ChartWidget_l52twdo_SeriesData_9z8sadx"
+							"ChartWidget_l52twdo_SeriesData_BudgetSeries",
+							"ChartWidget_l52twdo_SeriesData_OrderIntakeSeries"
 						);
 					}
 					return result;

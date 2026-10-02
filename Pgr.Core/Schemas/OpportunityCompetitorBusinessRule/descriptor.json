@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "536915cd-f9cc-4cca-9a9a-621bb249248a",
+    "Name": "OpportunityCompetitorBusinessRule",
+    "ModifiedOnUtc": "\/Date(1790860323000)\/",
+    "Parent": {
+      "UId": "3c332b2a-9daa-4866-a91a-bdd21045ac9b",
+      "Name": "OpportunityCompetitorBusinessRule"
+    },
+    "ExtendParent": true,
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Competitor (Business rules)",
+    "DependsOn": []
+  }
+}

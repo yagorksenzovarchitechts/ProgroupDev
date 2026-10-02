@@ -3,15 +3,17 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Visit report" />
-			<Item Name="Columns.PgrAccount.Caption" Value="Kunde" />
+			<Item Name="Columns.PgrAccount.Caption" Value="Kunde&#xA;&#xA;Kunde&#xA;&#xA;&#xA;Kunde&#xA;&#xA;Kunde" />
 			<Item Name="Columns.PgrCompetition.Caption" Value="Wettbewerb" />
 			<Item Name="Columns.PgrCompetitionText.Caption" Value="Freitext Wettbewerb" />
 			<Item Name="Columns.PgrDeliveryShare.Caption" Value="PG Lieferanteil" />
 			<Item Name="Columns.PgrIsRelevantForWeeklyReport.Caption" Value="&#xA;Relevant für Wochenbericht&#xA;&#xA;&#xA;Relevant für Wochenbericht&#xA;&#xA;Relevant für Wochenbericht" />
 			<Item Name="Columns.PgrKeyTopics.Caption" Value="Kernthemen" />
 			<Item Name="Columns.PgrLastVisit.Caption" Value="Letzter Besuch" />
+			<Item Name="Columns.PgrLead.Caption" Value="Bezugnehmend auf den Lead" />
 			<Item Name="Columns.PgrMeasuresRequired.Caption" Value="Maßnahmen erforderlich" />
-			<Item Name="Columns.PgrNineDayAvg.Caption" Value="AE 9 AT [TQM/AT]" />
+			<Item Name="Columns.PgrNewCustomer.Caption" Value="Neukunde" />
+			<Item Name="Columns.PgrNineDayAvg.Caption" Value="Auftragseingang 9 AT" />
 			<Item Name="Columns.PgrNoVisitReason.Caption" Value="Grund (kein Besuch)" />
 			<Item Name="Columns.PgrOtherContacts.Caption" Value="Andere Teilnehmer" />
 			<Item Name="Columns.PgrOwner.Caption" Value="Vertriebsmitarbeiter" />
@@ -24,9 +26,9 @@
 			<Item Name="Columns.PgrTopicQuality.Caption" Value="Qualität" />
 			<Item Name="Columns.PgrTopicServiceDelivery.Caption" Value="Service &amp; Lieferung" />
 			<Item Name="Columns.PgrTopicSpecial.Caption" Value="spezielle Themen" />
-			<Item Name="Columns.PgrVisitBudget.Caption" Value="Budget [TQM/AT]" />
+			<Item Name="Columns.PgrVisitBudget.Caption" Value="Budget" />
 			<Item Name="Columns.PgrVisitDate.Caption" Value="Besuchsdatum" />
-			<Item Name="Columns.PgrVisitDeviation.Caption" Value="Abweichung 3 Tage zu BU [%]" />
+			<Item Name="Columns.PgrVisitDeviation.Caption" Value="Abweichung %" />
 			<Item Name="Columns.PgrVisitDidNotTakePlace.Caption" Value="Besuch fand nicht statt" />
 			<Item Name="Columns.PgrVisitReason.Caption" Value="Grund / Zweck" />
 			<Item Name="Columns.PgrVisitReasonText.Caption" Value="Freitext Grund" />

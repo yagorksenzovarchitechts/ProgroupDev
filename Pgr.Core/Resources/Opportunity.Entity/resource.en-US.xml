@@ -6,7 +6,7 @@
 			<Item Name="Columns.DueDate.Caption" Value="Close date" />
 			<Item Name="Columns.PgrCompetitor.Caption" Value="Competitor" />
 			<Item Name="Columns.PgrDiscount.Caption" Value="Discount, %" />
-			<Item Name="Columns.PgrEstimatedVolume.Caption" Value="Estimated volume [in sqm / year.]" />
+			<Item Name="Columns.PgrEstimatedVolume.Caption" Value="Estimated volume" />
 			<Item Name="Columns.PgrFollowUpDate.Caption" Value="Follow up date" />
 			<Item Name="Columns.PgrOpportunityStartDate.Caption" Value="Opportunity start date" />
 			<Item Name="Columns.PgrProjectProbability.Caption" Value="Probability  [in %]" />

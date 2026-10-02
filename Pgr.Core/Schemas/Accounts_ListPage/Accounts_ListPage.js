@@ -63,7 +63,7 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 											{
 												"target": {
 													"viewAttributeName": "Dashboards",
-													"filterColumn": "Country.[PgrCountryTerritory:PgrCountry].PgrTerritory"
+													"filterColumn": "Territory"
 												},
 												"quickFilterType": "lookup"
 											}
@@ -80,7 +80,7 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 											{
 												"target": {
 													"viewAttributeName": "DataGrid_0kcsg12",
-													"filterColumn": "Country.[PgrCountryTerritory:PgrCountry].PgrTerritory"
+													"filterColumn": "Territory"
 												},
 												"quickFilterType": "lookup"
 											}

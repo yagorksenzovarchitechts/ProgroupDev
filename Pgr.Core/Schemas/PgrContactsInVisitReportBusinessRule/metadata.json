@@ -1,0 +1,174 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "3804cac4-ac0b-424c-aac5-b47a07eee1b6",
+      "A2": "PgrContactsInVisitReportBusinessRule",
+      "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
+      "B8": "10.0.0.858",
+      "AD1": "a2ef0519-5687-4587-b545-1d2d4522d038",
+      "AD2": "EntitySchemaManager",
+      "AD3": "BusinessRule",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+        "JI0": "Terrasoft.Core.BusinessRules.BusinessRules",
+        "BRS1": [
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+            "UId": "c95c5d9a-7ee2-47a9-73ad-e1e5845f4928",
+            "BR1": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+                "UId": "e51ca067-ed6f-f42e-35c9-b9502c6d9ad3",
+                "BRC2": [
+                  {
+                    "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionSetFilter",
+                    "UId": "853fc196-7311-0e92-2e4f-4503cdb83f59",
+                    "BRA2": {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+                      "UId": "080f881d-3140-e112-432e-973c62b9b5eb",
+                      "BRE2": "AttributeValue",
+                      "BRX1": "PgrContacts"
+                    },
+                    "BRA3": {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+                      "UId": "222a38a5-0ee0-bc2c-8416-d1dc90c6046b",
+                      "BVE1": "{\"items\":{\"b17ae381-dd51-4741-92e0-678eb70091fd\":{\"filterType\":4,\"comparisonType\":3,\"isEnabled\":true,\"trimDateTimeParameterToDate\":false,\"leftExpression\":{\"expressionType\":0,\"columnPath\":\"Type\"},\"isAggregative\":false,\"dataValueType\":10,\"referenceSchemaName\":\"ContactType\",\"rightExpressions\":[{\"expressionType\":2,\"parameter\":{\"dataValueType\":10,\"value\":{\"Name\":\"Employee\",\"Id\":\"60733efc-f36b-1410-a883-16d83cab0980\",\"value\":\"60733efc-f36b-1410-a883-16d83cab0980\",\"displayValue\":\"Employee\"}}}]}},\"logicalOperation\":0,\"isEnabled\":true,\"filterType\":6,\"rootSchemaName\":\"Contact\"}"
+                    }
+                  }
+                ]
+              }
+            ],
+            "BR2": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "ff030132-29c1-5eca-7bfe-4947261d149a",
+                "BRT2": 2
+              }
+            ],
+            "BR3": "BusinessRule_7f0da4a"
+          },
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+            "UId": "ee9699cc-0317-4102-9bb6-cde1e1d77370",
+            "BR1": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+                "UId": "88dd4c22-90a4-42a3-8081-97f1370760ab",
+                "BRC1": {
+                  "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleGroupCondition",
+                  "UId": "f459335d-cb26-4b9b-ba7d-fdd6be65e8a2",
+                  "BGC1": 1,
+                  "BGC2": []
+                },
+                "BRC2": [
+                  {
+                    "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionFilterLookup",
+                    "UId": "9e9bc6a4-b97a-4969-9274-5ddff9bde2a7",
+                    "BSFL1": {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleFilterLookupExpression",
+                      "UId": "ab5f8230-52bd-4a93-88f8-db28f0b9a709",
+                      "BRE1": "Lookup",
+                      "BRE3": "Contact",
+                      "BVP1": "PgrCustomerContacts",
+                      "BVF1": "Account"
+                    },
+                    "BSFR1": {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleFilterLookupExpression",
+                      "UId": "8fc51e16-1f8a-4fdb-a85a-761352cc9f57",
+                      "BRE1": "Lookup",
+                      "BRE3": "PgrVisitReport",
+                      "BVP1": "PgrVisitReport",
+                      "BVF1": "PgrAccount"
+                    }
+                  }
+                ]
+              }
+            ],
+            "BR2": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "acd1873d-c7fd-474d-b404-05c634c0530f",
+                "BRT2": 2
+              },
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "953971a0-3fa3-44a8-af65-01f59c2e9c4d",
+                "BRT1": "PgrVisitReport"
+              }
+            ],
+            "BR3": "BusinessRule_7a3f160"
+          },
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+            "UId": "0696699b-b56c-4a3a-965e-067ed5676012",
+            "BR1": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+                "UId": "99790b65-5687-4cc6-9e8a-e9b9acb380f5",
+                "BRC1": {
+                  "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+                  "UId": "b344af11-4bf2-46df-93c1-70c1899b81c9",
+                  "BCO1": {
+                    "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+                    "UId": "1164b796-8720-4d88-9392-c8d36c074054",
+                    "BRE2": "AttributeValue",
+                    "BRX1": "PgrVisitReport.PgrAccount"
+                  },
+                  "BCO2": {
+                    "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+                    "UId": "44e39690-d86c-437a-90e2-97db10366aa9",
+                    "BRE2": "AttributeValue",
+                    "BRX1": "PgrCustomerContacts.Account"
+                  },
+                  "BCO3": 3
+                },
+                "BRC2": [
+                  {
+                    "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionSetValues",
+                    "UId": "4a865a49-2e35-4150-9aa8-a85819d806d4",
+                    "BSVS1": [
+                      {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleSetValueItem",
+                        "UId": "7d3bea6b-f503-4819-a6a3-0b644a610f0e",
+                        "BRA2": {
+                          "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+                          "UId": "859e4111-be85-457f-baf9-53ae6667fe3a",
+                          "BRE1": "Lookup",
+                          "BRE2": "AttributeValue",
+                          "BRE3": "Contact",
+                          "BRX1": "PgrCustomerContacts"
+                        },
+                        "BRA3": {
+                          "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleEmptyValueExpression",
+                          "UId": "3a84d18c-eb51-4991-8617-8012d3502df5",
+                          "BRE1": "Lookup",
+                          "BVE1": "00000000-0000-0000-0000-000000000000"
+                        },
+                        "BVS1": "null"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "BR2": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "47389f63-19ec-4858-aa28-5188c7ce3354",
+                "BRT1": "PgrVisitReport"
+              }
+            ],
+            "BR3": "Autogenerated_ee9699cc-0317-4102-9bb6-cde1e1d77370_ClearValue",
+            "BR5": "ee9699cc-0317-4102-9bb6-cde1e1d77370",
+            "BR6": "9e9bc6a4-b97a-4969-9274-5ddff9bde2a7"
+          }
+        ]
+      }
+    }
+  }
+}

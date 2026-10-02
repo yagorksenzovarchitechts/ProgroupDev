@@ -457,7 +457,15 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 							"dataValueType": 10,
 							"width": 480
 						}
-					]
+					],
+					"features": {
+						"rows": {
+							"numeration": false
+						},
+						"columns": {
+							"dragAndDrop": false
+						}
+					}
 				}
 			},
 			{
@@ -1801,6 +1809,15 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 								]
 							}
 						}
+					},
+					"CompetitorsList_PredefinedFilter": {
+						"value": {
+							"items": {},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "OpportunityCompetitor"
+						}
 					}
 				}
 			},
@@ -1889,6 +1906,26 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				],
 				"values": {
 					"filterAttributes": []
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"CompetitorsList",
+					"modelConfig"
+				],
+				"values": {
+					"filterAttributes": [
+						{
+							"name": "CompetitorsSearchFilter_CompetitorsList",
+							"loadOnChange": true
+						},
+						{
+							"loadOnChange": true,
+							"name": "CompetitorsList_PredefinedFilter"
+						}
+					]
 				}
 			},
 			{

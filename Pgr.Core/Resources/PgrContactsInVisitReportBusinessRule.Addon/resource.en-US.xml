@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.0696699b-b56c-4a3a-965e-067ed5676012.Caption" Value="ChildRule-ee9699cc-0317-4102-9bb6-cde1e1d77370-ClearValue" />
+			<Item Name="AddonConfig.Rules.c95c5d9a-7ee2-47a9-73ad-e1e5845f4928.Caption" Value="Apply static filter: Progroup Contacts" />
+			<Item Name="AddonConfig.Rules.ee9699cc-0317-4102-9bb6-cde1e1d77370.Caption" Value="Filter customer contacts by visit report account" />
+			<Item Name="Caption" Value="Contacts in Visit report (Business rules)" />
+		</Items>
+	</Group>
+</Resources>
