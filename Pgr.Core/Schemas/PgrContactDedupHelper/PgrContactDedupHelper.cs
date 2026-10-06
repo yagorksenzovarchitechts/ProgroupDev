@@ -42,8 +42,8 @@ namespace Pgr.Core
                     .Set("Id", Column.Parameter(Guid.NewGuid()))
                     .Set("PgrStage", Column.Parameter(stage))
                     .Set("PgrCandidate", Column.Parameter(candidate ?? string.Empty))
-                    .Set("PgrNewContactId", Column.Parameter(newContactId.IsEmpty() ? (object) DBNull.Value : newContactId))
-                    .Set("PgrExistingContactId", Column.Parameter(existingContactId.IsEmpty() ? (object) DBNull.Value : existingContactId))
+                    .Set("PgrNewContactId", GetGuidParameter(newContactId))
+                    .Set("PgrExistingContactId", GetGuidParameter(existingContactId))
                     .Set("PgrIsManuallyCreated", Column.Parameter(isManuallyCreated))
                     .Set("PgrError", Column.Parameter(error ?? string.Empty))
                     .Set("CreatedOn", Column.Parameter(DateTime.UtcNow))
@@ -52,6 +52,11 @@ namespace Pgr.Core
             catch (Exception)
             {
             }
+        }
+
+        private static QueryColumnExpression GetGuidParameter(Guid value)
+        {
+            return value.IsEmpty() ? Column.Parameter(null, "Guid") : Column.Parameter(value);
         }
     }
 }
