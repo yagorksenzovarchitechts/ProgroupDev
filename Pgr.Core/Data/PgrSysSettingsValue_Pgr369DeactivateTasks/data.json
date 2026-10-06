@@ -1,0 +1,30 @@
+{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "726a3b1a-60ba-46cf-8265-3b268aa30ef0"
+        },
+        {
+          "SchemaColumnUId": "0fde6f1e-22c5-48c7-9c89-6f0031e270de",
+          "Value": "1537b81b-5a19-4b22-a053-cfe2f9e123e9",
+          "DisplayValue": "Deactivate 369 tasks"
+        },
+        {
+          "SchemaColumnUId": "297f4697-d071-4be2-8509-9090c07dfe18",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "55472376-a4dd-40da-86c6-975ce4b898fa",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "8f1984bb-7bef-4220-9b49-9a12d0ebcd68",
+          "Value": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+          "DisplayValue": "All employees"
+        }
+      ]
+    }
+  ]
+}

@@ -56,6 +56,25 @@
           "Value": "Day counter value at which an unfilled open 3-6-9 measure task is escalated to the Sales Director (default 10)."
         }
       ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "ColumnName": "Id",
+          "Value": "1537b81b-5a19-4b22-a053-cfe2f9e123e9"
+        },
+        {
+          "SchemaColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+          "ColumnName": "Name",
+          "Value": "Deactivate 369 tasks"
+        },
+        {
+          "SchemaColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+          "ColumnName": "Description",
+          "Value": "When enabled, the 3-6-9 process does not create new alert tasks."
+        }
+      ]
     }
   ]
 }

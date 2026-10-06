@@ -282,6 +282,7 @@
                 "GS2": "25d7c1ab-1de0-4501-b402-02e0e5a72d6e",
                 "GS5": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e"
               },
+              "L9": "2e155463-3ff1-4ccf-8584-4ec8d7233111",
               "L11": false
             }
           ],
@@ -371,7 +372,7 @@
           "BL8": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e",
           "CI1": "dc47ba80-826c-4979-a4ef-9f5f9db6f5c0",
           "CI2": "10d3d3ce-41c2-4930-89fe-4176ffd8c09f",
-          "CI3": "[#[IsOwnerSchema:false].[IsSchema:false].[Parameter:{52bf81ea-bcbf-4e89-b3a2-ee8ad7c89f78}]#] == 3",
+          "CI3": "[#[IsOwnerSchema:false].[IsSchema:false].[Parameter:{52bf81ea-bcbf-4e89-b3a2-ee8ad7c89f78}]#] == 3 && ![#SysSettings.PgrDeactivate369Tasks<Boolean>#]",
           "CI4": 2,
           "CI5": "FF939598",
           "CI6": 1,
