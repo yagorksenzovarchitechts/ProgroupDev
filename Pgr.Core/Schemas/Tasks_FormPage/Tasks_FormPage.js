@@ -231,7 +231,8 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				"operation": "merge",
 				"name": "ConnectionsTabContainer",
 				"values": {
-					"caption": "#ResourceString(ConnectionsTabContainer_caption)#"
+					"caption": "#ResourceString(ConnectionsTabContainer_caption)#",
+					"visible": false
 				}
 			},
 			{

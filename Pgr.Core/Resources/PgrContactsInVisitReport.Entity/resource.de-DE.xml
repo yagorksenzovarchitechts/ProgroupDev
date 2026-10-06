@@ -3,6 +3,8 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Objekt" />
+			<Item Name="Columns.PgrContacts.Caption" Value="Progroup-Kontakte" />
+			<Item Name="Columns.PgrCustomerContacts.Caption" Value="Kundenkontakte" />
 		</Items>
 	</Group>
 </Resources>

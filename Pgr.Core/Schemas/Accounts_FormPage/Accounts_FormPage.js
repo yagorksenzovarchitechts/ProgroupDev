@@ -646,6 +646,24 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
+				"name": "Input_a9bzn0g",
+				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrWepaformName_ysb7euw",
+					"control": "$PDS_PgrWepaformName_ysb7euw",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto",
+					"visible": false
+				},
+				"parentName": "SideAreaProfileFieldFlexContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
 				"name": "MultiSelect_m9ltt8m",
 				"values": {
 					"type": "crt.MultiSelect",
@@ -662,7 +680,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -684,7 +702,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 5
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -700,7 +718,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 7
+				"index": 8
 			},
 			{
 				"operation": "insert",
@@ -716,7 +734,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 8
+				"index": 9
 			},
 			{
 				"operation": "insert",
@@ -732,7 +750,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 9
+				"index": 10
 			},
 			{
 				"operation": "insert",
@@ -10792,6 +10810,11 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					},
 					"ListWidget_h0kgh75_PredefinedFilter": {
 						"value": null
+					},
+					"PDS_PgrWepaformName_ysb7euw": {
+						"modelConfig": {
+							"path": "PDS.PgrWepaformName"
+						}
 					}
 				}
 			},

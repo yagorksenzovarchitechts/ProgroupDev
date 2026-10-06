@@ -841,9 +841,9 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_Account_yem29mk",
+					"label": "#ResourceString(Input_a9w0eru_label)#",
 					"control": "$PDS_Account_yem29mk",
-					"placeholder": "",
+					"placeholder": "#ResourceString(Input_a9w0eru_placeholder)#",
 					"tooltip": "",
 					"readonly": false,
 					"multiline": false,
