@@ -889,14 +889,29 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 			},
 			{
 				"operation": "insert",
-				"name": "Button_978ivs9",
+				"name": "PgrCreateTaskButton",
 				"values": {
 					"type": "crt.Button",
-					"caption": "#ResourceString(Button_978ivs9_caption)#",
+					"caption": "#ResourceString(PgrCreateTaskButton_caption)#",
 					"color": "primary",
 					"disabled": false,
 					"size": "large",
 					"iconPosition": "left-icon",
+					"visible": true,
+					"clickMode": "menu",
+					"menuItems": [],
+					"icon": "add-button-icon"
+				},
+				"parentName": "FlexContainer_71jzh1x",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "PgrCreateTaskMenuItem",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(PgrCreateTaskMenuItem_caption)#",
 					"visible": true,
 					"clicked": {
 						"request": "crt.CreateRecordRequest",
@@ -904,18 +919,40 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 							"entityName": "Activity",
 							"defaultValues": [
 								{
-									"attributeName": "Owner",
-									"value": null
+									"attributeName": "Type",
+									"value": "fbe0acdc-cfc0-df11-b00f-001d60e938c6"
 								}
 							]
 						}
-					},
-					"clickMode": "default",
-					"icon": "add-button-icon"
+					}
 				},
-				"parentName": "FlexContainer_71jzh1x",
-				"propertyName": "items",
-				"index": 3
+				"parentName": "PgrCreateTaskButton",
+				"propertyName": "menuItems",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "PgrCreateEmailMenuItem",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(PgrCreateEmailMenuItem_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "crt.CreateRecordRequest",
+						"params": {
+							"entityName": "Activity",
+							"defaultValues": [
+								{
+									"attributeName": "Type",
+									"value": "e2831dec-cfc0-df11-b00f-001d60e938c6"
+								}
+							]
+						}
+					}
+				},
+				"parentName": "PgrCreateTaskButton",
+				"propertyName": "menuItems",
+				"index": 1
 			},
 			{
 				"operation": "insert",

@@ -2,7 +2,6 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
-			<Item Name="LocalizableStrings.Button_978ivs9_caption.Value" Value="Create task" />
 			<Item Name="LocalizableStrings.ChartWidget_l52twdo_series_0.Value" Value="Budget [tsqm/wd]" />
 			<Item Name="LocalizableStrings.ChartWidget_l52twdo_series_1.Value" Value="Actual [tsqm/wd]" />
 			<Item Name="LocalizableStrings.ChartWidget_l52twdo_title.Value" Value="Top Customers by Budget (last day)" />
@@ -35,6 +34,9 @@
 			<Item Name="LocalizableStrings.Label_xibhisv_caption.Value" Value="Tasks due in the next 2 days" />
 			<Item Name="LocalizableStrings.Label_yh979bd_caption.Value" Value="Customer visits" />
 			<Item Name="LocalizableStrings.Label_yv7lboj_caption.Value" Value="Visits in the next 7 days" />
+			<Item Name="LocalizableStrings.PgrCreateEmailMenuItem_caption.Value" Value="E-Mail" />
+			<Item Name="LocalizableStrings.PgrCreateTaskButton_caption.Value" Value="Create task" />
+			<Item Name="LocalizableStrings.PgrCreateTaskMenuItem_caption.Value" Value="Task" />
 			<Item Name="LocalizableStrings.QuickFilter_5bp9x92_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.QuickFilter_729neyc_caption.Value" Value="Quick filter" />
 			<Item Name="LocalizableStrings.QuickFilter_CurrentContact_config_caption.Value" Value="Current user contact" />
