@@ -191,20 +191,24 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule"]
 			},
 			{
 				"operation": "insert",
-				"name": "Checkbox_PgrIsManuallyCreated",
+				"name": "Checkbox_72jo21d",
 				"values": {
 					"type": "crt.Checkbox",
 					"value": true,
 					"disabled": false,
 					"inversed": false,
-					"label": "$Resources.Strings.ContactDS_PgrIsManuallyCreated",
-					"labelPosition": "auto",
-					"control": "$ContactDS_PgrIsManuallyCreated",
-					"visible": false
+					"label": "$Resources.Strings.ContactDS_PgrIsManuallyCreated_zbv3pnl",
+					"ariaLabel": "",
+					"labelPosition": "right",
+					"tooltip": "",
+					"control": "$ContactDS_PgrIsManuallyCreated_zbv3pnl",
+					"visible": false,
+					"readonly": false,
+					"placeholder": ""
 				},
-				"parentName": "MainContainer",
+				"parentName": "FooterContainer",
 				"propertyName": "items",
-				"index": 7
+				"index": 0
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -287,6 +291,11 @@ define("Contacts_MiniPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule"]
 					},
 					"ContactDS_PgrIsManuallyCreated": {
 						"value": true,
+						"modelConfig": {
+							"path": "ContactDS.PgrIsManuallyCreated"
+						}
+					},
+					"ContactDS_PgrIsManuallyCreated_zbv3pnl": {
 						"modelConfig": {
 							"path": "ContactDS.PgrIsManuallyCreated"
 						}

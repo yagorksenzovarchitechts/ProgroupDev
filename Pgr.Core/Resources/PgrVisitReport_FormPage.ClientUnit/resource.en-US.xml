@@ -24,6 +24,7 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_v7m1ic2_title.Value" Value="Key topics" />
 			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="General info" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_fnh0pp1_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetail_7qocfn4DS_PgrCustomerContacts.Value" Value="Customer Contacts" />
 			<Item Name="LocalizableStrings.Input_1j86543_tooltip.Value" Value="Optional additional note" />
 			<Item Name="LocalizableStrings.Input_1snwgmj_label.Value" Value="Comment" />
 			<Item Name="LocalizableStrings.Input_1snwgmj_tooltip.Value" Value="What was discussed? Outcome? Opportunities/risks?" />

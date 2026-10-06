@@ -330,6 +330,13 @@
   "A4": "dca3be9d-e1a0-448b-9b9f-fef594412715",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
++ MetaData.Schema.B2 {
+  "UId": "a4dbfd9d-3cba-0aac-b107-b489dbb5df71",
+  "A2": "GridDetail_7qocfn4DS_PgrCustomerContacts",
+  "A3": "dca3be9d-e1a0-448b-9b9f-fef594412715",
+  "A4": "dca3be9d-e1a0-448b-9b9f-fef594412715",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
 = MetaData.Schema.B2.["fd9e5bd2-19ad-68b5-1356-fe7b39d36f28"].A4 "dca3be9d-e1a0-448b-9b9f-fef594412715"
 = MetaData.Schema.B2.["a77180d7-a9d0-5c7d-a47b-74c0545a1774"].A4 "dca3be9d-e1a0-448b-9b9f-fef594412715"
 = MetaData.Schema.B2.["a53e6c9a-741a-21de-9293-9d87d6014595"].A4 "dca3be9d-e1a0-448b-9b9f-fef594412715"
@@ -393,6 +400,7 @@
   "ca09c6de-34eb-232c-e048-40a879a117e8",
   "5341f850-994b-3003-14d8-e4166d371abc",
   "f47dece5-e5e7-1278-8ac3-5ca4a8ee4dfc",
+  "a4dbfd9d-3cba-0aac-b107-b489dbb5df71",
   "fd9e5bd2-19ad-68b5-1356-fe7b39d36f28",
   "a77180d7-a9d0-5c7d-a47b-74c0545a1774",
   "a53e6c9a-741a-21de-9293-9d87d6014595",

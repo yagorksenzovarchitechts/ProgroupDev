@@ -6,6 +6,7 @@
 			<Item Name="Columns.DoNotUseCall.Caption" Value="Nicht anrufen" />
 			<Item Name="Columns.DoNotUseEmail.Caption" Value="Nicht über E-Mail kontaktieren" />
 			<Item Name="Columns.DoNotUseMail.Caption" Value="Nicht über E-Mail kontaktieren" />
+			<Item Name="Columns.Job.Caption" Value="Stellenbezeichnung (Suche)" />
 			<Item Name="Columns.JobTitle.Caption" Value="Berufsbezeichnung" />
 			<Item Name="Columns.Language.Caption" Value="Sprache" />
 			<Item Name="Columns.MiddleName.Caption" Value="Zwischenname" />
@@ -15,7 +16,6 @@
 			<Item Name="Columns.Owner.Caption" Value="Verkaufsleiter" />
 			<Item Name="Columns.PgrCreatioUser.Caption" Value="Creatio user" />
 			<Item Name="Columns.PgrIsActive.Caption" Value="aktiv" />
-			<Item Name="Columns.PgrIsManuallyCreated.Caption" Value="Manuell erstellt" />
 			<Item Name="Columns.PgrProGroupSalesPerson.Caption" Value="Mitarbeiter Kürzel" />
 			<Item Name="Columns.PgrReportsTo.Caption" Value="Vorgesetzter" />
 			<Item Name="Columns.PgrWepaformContactId.Caption" Value="Wepaform Kontaktnummer" />

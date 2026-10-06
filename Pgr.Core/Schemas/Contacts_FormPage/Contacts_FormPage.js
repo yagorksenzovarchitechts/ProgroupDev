@@ -1249,39 +1249,20 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_b8zj7ns",
+				"name": "Input_rzisexd",
 				"values": {
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_Job_czlbyfb",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_JobTitle_h39qse1",
+					"control": "$PDS_JobTitle_h39qse1",
+					"placeholder": "",
 					"tooltip": "",
-					"control": "$PDS_Job_czlbyfb"
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
 				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_4o3y448",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_4o3y448_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_b8zj7ns",
-				"propertyName": "listActions",
-				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -1380,23 +1361,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
 				"index": 7
-			},
-			{
-				"operation": "insert",
-				"name": "Checkbox_PgrIsManuallyCreated",
-				"values": {
-					"type": "crt.Checkbox",
-					"value": true,
-					"disabled": false,
-					"inversed": false,
-					"label": "$Resources.Strings.PDS_PgrIsManuallyCreated",
-					"labelPosition": "auto",
-					"control": "$PDS_PgrIsManuallyCreated",
-					"visible": false
-				},
-				"parentName": "SideAreaProfileFieldFlexContainer",
-				"propertyName": "items",
-				"index": 8
 			},
 			{
 				"operation": "insert",
@@ -3937,27 +3901,14 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 						"from": [],
 						"converter": "crt.ToTileFilterGroup"
 					},
-					"PDS_Job_czlbyfb": {
-						"modelConfig": {
-							"path": "PDS.Job"
-						}
-					},
-					"PDS_Job_czlbyfb_List": {
-						"isCollection": true,
-						"modelConfig": {
-							"sortingConfig": {
-								"default": [
-									{
-										"columnName": "Name",
-										"direction": "asc"
-									}
-								]
-							}
-						}
-					},
 					"PDS_PgrWepaformContactId_5vts8pc": {
 						"modelConfig": {
 							"path": "PDS.PgrWepaformContactId"
+						}
+					},
+					"PDS_JobTitle_h39qse1": {
+						"modelConfig": {
+							"path": "PDS.JobTitle"
 						}
 					}
 				}

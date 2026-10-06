@@ -210,7 +210,8 @@
                 "BRT1": "PgrIsCustomer"
               }
             ],
-            "BR3": "BusinessRule_1b71666"
+            "BR3": "BusinessRule_1b71666",
+            "BR4": false
           }
         ]
       }
