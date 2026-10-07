@@ -15,6 +15,7 @@ namespace Terrasoft.Configuration
         private const string DedupFeatureCode = "PgrContactDedupEnabled";
         private const string IdKey = "Id";
         private const string EmailKey = "Email";
+        private static readonly TimeSpan JustCreatedWindow = TimeSpan.FromMinutes(10);
 
         private readonly UserConnection _userConnection;
         private readonly SsoContactUpdater _inner;
@@ -42,7 +43,15 @@ namespace Terrasoft.Configuration
                 return;
             }
 
-            var existingContactId = _dedupHelper.FindExistingContactIdByEmail(email, newContactId);
+            var newContactCreatedOn = _dedupHelper.GetContactCreatedOn(newContactId);
+            if (newContactCreatedOn < DateTime.UtcNow.Subtract(JustCreatedWindow))
+            {
+                _inner.UpdateContact(contactValues);
+                return;
+            }
+
+            var existingContactId = _dedupHelper.FindExistingContactIdByEmail(email, newContactId,
+                newContactCreatedOn);
             if (existingContactId.IsEmpty())
             {
                 _inner.UpdateContact(contactValues);
@@ -71,11 +80,10 @@ namespace Terrasoft.Configuration
         {
             try
             {
-                RedirectSysAdminUnit(newContactId, existingContactId);
                 var redirectedValues = new Dictionary<string, string>(contactValues)
                     {[IdKey] = existingContactId.ToString()};
                 _inner.UpdateContact(redirectedValues);
-                DeleteBareContact(newContactId);
+                RedirectUserAndDeleteBareContact(newContactId, existingContactId);
                 _dedupHelper.WriteLog("Merged", newContactId, email, existingContactId);
             }
             catch (Exception exception)
@@ -86,51 +94,65 @@ namespace Terrasoft.Configuration
             }
         }
 
-        private void RedirectSysAdminUnit(Guid newContactId, Guid existingContactId)
+        private void RedirectUserAndDeleteBareContact(Guid newContactId, Guid existingContactId)
         {
-            if (HasSysAdminUnit(existingContactId))
+            using (DBExecutor dbExecutor = _userConnection.EnsureDBConnection())
             {
-                DeleteSysAdminUnit(newContactId);
-            }
-            else
-            {
-                MoveSysAdminUnitToContact(newContactId, existingContactId);
+                dbExecutor.StartTransaction();
+                try
+                {
+                    if (HasSysAdminUnit(existingContactId, dbExecutor))
+                    {
+                        DeleteSysAdminUnit(newContactId, dbExecutor);
+                    }
+                    else
+                    {
+                        MoveSysAdminUnitToContact(newContactId, existingContactId, dbExecutor);
+                    }
+                    DeleteBareContact(newContactId, dbExecutor);
+                    dbExecutor.CommitTransaction();
+                }
+                catch
+                {
+                    dbExecutor.RollbackTransaction();
+                    throw;
+                }
             }
         }
 
-        private bool HasSysAdminUnit(Guid contactId)
+        private bool HasSysAdminUnit(Guid contactId, DBExecutor dbExecutor)
         {
             var adminUnitId = (new Select(_userConnection)
                     .Top(1)
                     .Column(IdKey)
                     .From(SysAdminUnitSchemaName)
                     .Where(ContactIdColumnName).IsEqual(Column.Parameter(contactId)) as Select)
-                .ExecuteScalar<Guid>();
+                .ExecuteScalar<Guid>(dbExecutor);
             return !adminUnitId.IsEmpty();
         }
 
-        private void DeleteSysAdminUnit(Guid contactId)
+        private void DeleteSysAdminUnit(Guid contactId, DBExecutor dbExecutor)
         {
             new Delete(_userConnection)
                 .From(SysAdminUnitSchemaName)
                 .Where(ContactIdColumnName).IsEqual(Column.Parameter(contactId))
-                .Execute();
+                .Execute(dbExecutor);
         }
 
-        private void MoveSysAdminUnitToContact(Guid fromContactId, Guid toContactId)
+        private void MoveSysAdminUnitToContact(Guid fromContactId, Guid toContactId, DBExecutor dbExecutor)
         {
             new Update(_userConnection, SysAdminUnitSchemaName)
                 .Set(ContactIdColumnName, Column.Parameter(toContactId))
                 .Where(ContactIdColumnName).IsEqual(Column.Parameter(fromContactId))
-                .Execute();
+                .Execute(dbExecutor);
         }
 
-        private void DeleteBareContact(Guid contactId)
+        private void DeleteBareContact(Guid contactId, DBExecutor dbExecutor)
         {
             new Delete(_userConnection)
                 .From(ContactSchemaName)
                 .Where(IdKey).IsEqual(Column.Parameter(contactId))
-                .Execute();
+                .Execute(dbExecutor);
         }
     }
 }

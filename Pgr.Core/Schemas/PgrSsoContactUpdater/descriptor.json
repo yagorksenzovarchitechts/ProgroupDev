@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "c75fcde4-98fd-4584-81df-a4293159f2a0",
     "Name": "PgrSsoContactUpdater",
-    "ModifiedOnUtc": "\/Date(1790753843000)\/",
+    "ModifiedOnUtc": "\/Date(1791378725000)\/",
     "ManagerName": "SourceCodeSchemaManager",
     "Caption": "SSO contact updater override",
     "DependsOn": []
