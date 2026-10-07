@@ -1421,7 +1421,13 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"clicked": {
 						"request": "crt.CreateRecordRequest",
 						"params": {
-							"entityName": "Activity"
+							"entityName": "Activity",
+							"defaultValues": [
+								{
+									"attributeName": "Opportunity",
+									"value": "$Id"
+								}
+							]
 						}
 					}
 				},

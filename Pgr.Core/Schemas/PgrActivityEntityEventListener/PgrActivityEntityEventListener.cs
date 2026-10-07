@@ -1,24 +1,26 @@
 using System;
 using System.Linq;
+using Terrasoft.Common;
 using Terrasoft.Core;
 using Terrasoft.Core.Entities;
 using Terrasoft.Core.Entities.Events;
 
 namespace Pgr.Core.EntryPoints.EntityEventListeners
-{
-    /// <summary>
-    ///     CMVP-208: ends the customer's 3-6-9 cycle as soon as its alert task is closed. The Sales
-    ///     Director closes an escalated cycle by setting the 3-6-9 task to "Done" with a closure
-    ///     reason (page business rule makes <c>Pgr369ReasonForClosure</c> mandatory at that status),
-    ///     and <see cref="Pgr369Helper" /> closes it the same way when the order intake recovers —
-    ///     both go through here, so the day counter is reset to 0 and the still-open measure tasks
-    ///     are closed whichever way the cycle ended.
-    /// </summary>
+{ 
     [EntityEventListener(SchemaName = "Activity")]
     public class PgrActivityEntityEventListener : BaseEntityEventListener
     {
         private const string StatusColumn = "StatusId";
         private const string EscalatedColumn = "PgrIsEscalated";
+
+        #region Methods: Public
+
+        public override void OnInserting(object sender, EntityBeforeEventArgs e)
+        {
+            base.OnInserting(sender, e);
+
+            FillAccountFromOpportunity((Entity)sender);
+        }
 
         public override void OnUpdating(object sender, EntityBeforeEventArgs e)
         {
@@ -47,7 +49,7 @@ namespace Pgr.Core.EntryPoints.EntityEventListeners
             }
 
             var accountId = activity.GetTypedColumnValue<Guid>("AccountId");
-            if (accountId == Guid.Empty)
+            if (accountId.IsEmpty())
             {
                 return;
             }
@@ -55,6 +57,53 @@ namespace Pgr.Core.EntryPoints.EntityEventListeners
             // Set on the same entity — this is a Before-event, the value goes into the same UPDATE.
             activity.SetColumnValue(EscalatedColumn, false);
             new Pgr369Helper(userConnection).ResetCycle(accountId);
+        }
+        
+        #endregion
+
+        #region Methods: Private
+
+        private static void FillAccountFromOpportunity(Entity activity)
+        {
+            var opportunityId = activity.GetTypedColumnValue<Guid>("OpportunityId");
+            if (opportunityId.IsEmpty())
+            {
+                return;
+            }
+
+            var accountId = activity.GetTypedColumnValue<Guid>("AccountId");
+            var pgrAccountId = activity.GetTypedColumnValue<Guid>("PgrAccountId");
+            if (!accountId.IsEmpty() && !pgrAccountId.IsEmpty())
+            {
+                return;
+            }
+
+            var opportunityAccountId = GetOpportunityAccountId(activity.UserConnection, opportunityId);
+            if (opportunityAccountId.IsEmpty())
+            {
+                return;
+            }
+
+            if (accountId.IsEmpty())
+            {
+                activity.SetColumnValue("AccountId", opportunityAccountId);
+            }
+
+            if (pgrAccountId.IsEmpty())
+            {
+                activity.SetColumnValue("PgrAccountId", opportunityAccountId);
+            }
+        }
+
+        private static Guid GetOpportunityAccountId(UserConnection userConnection, Guid opportunityId)
+        {
+            var esq = new EntitySchemaQuery(userConnection.EntitySchemaManager, "Opportunity")
+            {
+                UseAdminRights = false
+            };
+            var accountColumn = esq.AddColumn("Account.Id").Name;
+            var opportunity = esq.GetEntity(userConnection, opportunityId);
+            return opportunity?.GetTypedColumnValue<Guid>(accountColumn) ?? Guid.Empty;
         }
 
         /// <summary>
@@ -76,7 +125,7 @@ namespace Pgr.Core.EntryPoints.EntityEventListeners
         /// </summary>
         private static bool IsFinalStatus(UserConnection userConnection, Guid statusId)
         {
-            if (statusId == Guid.Empty)
+            if (statusId.IsEmpty())
             {
                 return false;
             }
@@ -89,5 +138,7 @@ namespace Pgr.Core.EntryPoints.EntityEventListeners
             var status = esq.GetEntity(userConnection, statusId);
             return status != null && status.GetTypedColumnValue<bool>(finishColumn);
         }
+
+        #endregion
     }
 }
