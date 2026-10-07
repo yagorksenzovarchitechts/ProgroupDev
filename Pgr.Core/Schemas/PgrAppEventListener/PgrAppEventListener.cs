@@ -1,11 +1,11 @@
+using System;
+using Terrasoft.Core;
+using Terrasoft.Core.DB;
+using Terrasoft.Core.Factories;
+using Terrasoft.Web.Common;
+
 namespace Terrasoft.Configuration
 {
-    using System;
-    using Terrasoft.Core;
-    using Terrasoft.Core.DB;
-    using Terrasoft.Core.Factories;
-    using Terrasoft.Web.Common;
-
     public class PgrAppEventListener : AppEventListenerBase
     {
         private const string DedupLogSchemaName = "PgrContactDedupLog";
@@ -18,9 +18,7 @@ namespace Terrasoft.Configuration
             {
                 var appConnection = context.Application["AppConnection"] as AppConnection;
                 userConnection = appConnection?.SystemUserConnection;
-                WriteLog(userConnection, "AppStartFired");
                 ClassFactory.ReBind<ISsoContactUpdater, PgrSsoContactUpdater>();
-                WriteLog(userConnection, "RebindSucceeded");
             }
             catch (Exception ex)
             {
@@ -28,12 +26,13 @@ namespace Terrasoft.Configuration
             }
         }
 
-        private void WriteLog(UserConnection userConnection, string stage, string error=null)
+        private void WriteLog(UserConnection userConnection, string stage, string error = null)
         {
             if (userConnection == null)
             {
                 return;
             }
+
             try
             {
                 new Insert(userConnection)
@@ -48,6 +47,7 @@ namespace Terrasoft.Configuration
             }
             catch (Exception)
             {
+                // ignored
             }
         }
     }
