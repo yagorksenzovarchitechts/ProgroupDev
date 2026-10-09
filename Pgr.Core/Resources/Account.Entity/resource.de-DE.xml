@@ -15,7 +15,7 @@
 			<Item Name="Columns.PgrBestPlantLinked.Caption" Value="Bestwerk" />
 			<Item Name="Columns.PgrBoardConnect.Caption" Value="Board Connect" />
 			<Item Name="Columns.PgrCompetitorNotes.Caption" Value="Notiz" />
-			<Item Name="Columns.PgrCustomerServiceName.Caption" Value="Customer Support Name" />
+			<Item Name="Columns.PgrCustomerServiceName.Caption" Value="Customer Support" />
 			<Item Name="Columns.PgrCustomerlabel.Caption" Value="Kundenkennzeichen" />
 			<Item Name="Columns.PgrDateBl.Caption" Value="Sperrdatum" />
 			<Item Name="Columns.PgrDeliveryBl.Caption" Value="SAP Liefersperre" />

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "2106d6f1-86f1-4d25-92c6-41c75a140331",
+    "Name": "PgrContactAccountEntityEventListener",
+    "ModifiedOnUtc": "\/Date(1791465858000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "PgrContactAccountEntityEventListener",
+    "DependsOn": []
+  }
+}

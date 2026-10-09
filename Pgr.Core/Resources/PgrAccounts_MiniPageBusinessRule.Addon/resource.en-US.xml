@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.7e18927b-c9ef-823b-b3cc-f796a7258ec9.Caption" Value="Show elements: GridContainer_AdditionalProperties" />
+			<Item Name="Caption" Value="Accounts mini page (Business rules)" />
+		</Items>
+	</Group>
+</Resources>

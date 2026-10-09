@@ -153,8 +153,8 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					},
 					"type": "crt.MultiSelect",
 					"label": "#ResourceString(MultiSelect_7glcxqp_label)#",
-					"recordId": "",
-					"recordRelationColumnName": "",
+					"recordId": "$Id_re3yk2j",
+					"recordRelationColumnName": "PgrAccount",
 					"selectSchemaName": "PgrAccountTypesInAccount",
 					"selectColumnName": "PgrAccountType",
 					"visible": true,
@@ -250,6 +250,90 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"parentName": "MainContainer",
 				"propertyName": "items",
 				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_AdditionalProperties",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 8,
+						"rowSpan": 1
+					},
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": false,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "MainContainer",
+				"propertyName": "items",
+				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "Input_mb5cfbb",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.AccountDS_PgrWepaformName_j2jc81g",
+					"control": "$AccountDS_PgrWepaformName_j2jc81g",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "above"
+				},
+				"parentName": "GridContainer_AdditionalProperties",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Checkbox_lm9ajv4",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.Checkbox",
+					"value": true,
+					"disabled": false,
+					"inversed": false,
+					"label": "$Resources.Strings.AccountDS_PgrIsActive_jcvoesh",
+					"ariaLabel": "",
+					"labelPosition": "above",
+					"tooltip": "",
+					"control": "$AccountDS_PgrIsActive_jcvoesh"
+				},
+				"parentName": "GridContainer_AdditionalProperties",
+				"propertyName": "items",
+				"index": 1
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -355,6 +439,21 @@ define("Accounts_MiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 									}
 								]
 							}
+						}
+					},
+					"Id_re3yk2j": {
+						"modelConfig": {
+							"path": "AccountDS.Id"
+						}
+					},
+					"AccountDS_PgrIsActive_jcvoesh": {
+						"modelConfig": {
+							"path": "AccountDS.PgrIsActive"
+						}
+					},
+					"AccountDS_PgrWepaformName_j2jc81g": {
+						"modelConfig": {
+							"path": "AccountDS.PgrWepaformName"
 						}
 					}
 				}

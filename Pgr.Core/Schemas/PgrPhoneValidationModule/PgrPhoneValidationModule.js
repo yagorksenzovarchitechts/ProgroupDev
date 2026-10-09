@@ -1,6 +1,6 @@
 define("PgrPhoneValidationModule", [], function() {
 
-	const phonePattern = /^[0-9+\-]+$/;
+	const phonePattern = /^[0-9+\- ()]+$/;
 
 	function isValidPhoneNumber(value) {
 		if (!value) {

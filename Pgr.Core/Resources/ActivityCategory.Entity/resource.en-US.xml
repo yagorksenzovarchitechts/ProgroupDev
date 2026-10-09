@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Columns.PgrColor.Caption" Value="Color" />
+			<Item Name="Columns.PgrVisibleInDropdowns.Caption" Value="Visible in dropdowns" />
 		</Items>
 	</Group>
 </Resources>

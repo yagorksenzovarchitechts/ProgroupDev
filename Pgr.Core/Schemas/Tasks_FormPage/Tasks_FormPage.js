@@ -449,6 +449,29 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 			},
 			{
 				"operation": "insert",
+				"name": "DateTimePicker_am2lc3r",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_DueDate_f01kkuu",
+					"placeholder": "",
+					"readonly": false,
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "datetime",
+					"control": "$PDS_DueDate_f01kkuu"
+				},
+				"parentName": "GridContainer_1qargav",
+				"propertyName": "items",
+				"index": 5
+			},
+			{
+				"operation": "insert",
 				"name": "ComboBox_jogtsei",
 				"values": {
 					"layoutConfig": {
@@ -470,7 +493,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				},
 				"parentName": "GridContainer_1qargav",
 				"propertyName": "items",
-				"index": 5
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -488,29 +511,6 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 				"parentName": "ComboBox_jogtsei",
 				"propertyName": "listActions",
 				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DateTimePicker_am2lc3r",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 4,
-						"rowSpan": 1
-					},
-					"type": "crt.DateTimePicker",
-					"label": "$Resources.Strings.PDS_DueDate_f01kkuu",
-					"placeholder": "",
-					"readonly": false,
-					"labelPosition": "auto",
-					"tooltip": "",
-					"pickerType": "datetime",
-					"control": "$PDS_DueDate_f01kkuu"
-				},
-				"parentName": "GridContainer_1qargav",
-				"propertyName": "items",
-				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -2787,6 +2787,19 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 					"PDS_Pgr369ReasonForClosure_usvewze": {
 						"modelConfig": {
 							"path": "PDS.Pgr369ReasonForClosure"
+						}
+					},
+					"LookupAttribute_t50oz1p_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
 						}
 					}
 				}

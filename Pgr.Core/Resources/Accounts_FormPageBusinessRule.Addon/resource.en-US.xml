@@ -6,7 +6,7 @@
 			<Item Name="AddonConfig.Rules.5412db7f-68e9-4c5f-bf17-a2689c6814b1.Caption" Value="Show elements: 3-6-9 Process &amp; Calculations" />
 			<Item Name="AddonConfig.Rules.8390a7bb-e206-980d-a705-dbf157dffb3e.Caption" Value="Account &lt;&gt; Competitor; Hide elements" />
 			<Item Name="AddonConfig.Rules.86cb5023-0497-10f5-f1a6-1051ac49e5b5.Caption" Value="Show elements: FlexContainer_AccountTypeBooleans" />
-			<Item Name="AddonConfig.Rules.a53e53f4-60fe-1125-a71b-1b89ad0f4475.Caption" Value="Show elements for System Admin" />
+			<Item Name="AddonConfig.Rules.a53e53f4-60fe-1125-a71b-1b89ad0f4475.Caption" Value="Show elements: 2" />
 		</Items>
 	</Group>
 </Resources>

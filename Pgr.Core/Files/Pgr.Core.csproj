@@ -321,6 +321,11 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup Label="Package References">
+		<Reference Include="CrtAICases">
+			<HintPath>$(RelativePkgFolderPath)/CrtAICases/$(StandalonePackageAssemblyPath)/CrtAICases.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
 		<Reference Include="CrtC360InUiV2">
 			<HintPath>$(RelativePkgFolderPath)/CrtC360InUiV2/$(StandalonePackageAssemblyPath)/CrtC360InUiV2.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
@@ -426,6 +431,7 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusType/PgrBonusType.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrBonusType/PgrBonusType.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactAccount/PgrContactAccount.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactAccount/PgrContactAccount.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactDedupLog/PgrContactDedupLog.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactDedupLog/PgrContactDedupLog.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactInLead/PgrContactInLead.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactInLead/PgrContactInLead.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactsInVisitReport/PgrContactsInVisitReport.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrContactsInVisitReport/PgrContactsInVisitReport.cs')" />
@@ -462,6 +468,7 @@
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitReason/PgrVisitReason.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitReason/PgrVisitReason.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitReport/PgrVisitReport.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitReport/PgrVisitReport.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitType/PgrVisitType.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVisitType/PgrVisitType.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVpDeliveryType/PgrVpDeliveryType.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrVpDeliveryType/PgrVpDeliveryType.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportAlertSnapshot/PgrWeeklyReportAlertSnapshot.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportAlertSnapshot/PgrWeeklyReportAlertSnapshot.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportMeasureSnapshot/PgrWeeklyReportMeasureSnapshot.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportMeasureSnapshot/PgrWeeklyReportMeasureSnapshot.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportPlannedVisitSnapshot/PgrWeeklyReportPlannedVisitSnapshot.cs" Condition="Exists('$(RelativePkgFolderPath)/Pgr.Core/Schemas/PgrWeeklyReportPlannedVisitSnapshot/PgrWeeklyReportPlannedVisitSnapshot.cs')" />

@@ -19,6 +19,7 @@
 			<Item Name="Columns.PgrPackagingParkCustomer1.Caption" Value="Packaging park customer (1)" />
 			<Item Name="Columns.PgrPackagingParkCustomer2.Caption" Value="Packaging park customer (2)" />
 			<Item Name="Columns.PgrPlantNumber.Caption" Value="Plant number" />
+			<Item Name="Columns.PgrPlantsVpDeliveryType.Caption" Value="VP customer delivery type" />
 			<Item Name="Columns.PgrSpecialFeatures.Caption" Value="Special features" />
 			<Item Name="Columns.PgrStateProvince.Caption" Value="State/province" />
 			<Item Name="Columns.PgrTargetNumberOfEmployees.Caption" Value="Target number of employes" />

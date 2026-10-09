@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "f9dafaa1-eed9-4f4c-9215-cf70798d32bd",
+    "Name": "PgrAccounts_MiniPageBusinessRule",
+    "ModifiedOnUtc": "\/Date(1791281435000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Accounts mini page (Business rules)",
+    "DependsOn": []
+  }
+}

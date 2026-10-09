@@ -37,6 +37,7 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonusThreshold/PgrBonusThreshold.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrBonusType/PgrBonusType.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrBonusType/PgrBonusType.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrCompetition/PgrCompetition.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrContactAccount/PgrContactAccount.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrContactAccount/PgrContactAccount.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrContactDedupLog/PgrContactDedupLog.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrContactDedupLog/PgrContactDedupLog.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrContactInLead/PgrContactInLead.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrContactInLead/PgrContactInLead.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrContactsInVisitReport/PgrContactsInVisitReport.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrContactsInVisitReport/PgrContactsInVisitReport.cs')" />
@@ -73,6 +74,7 @@
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrVisitReason/PgrVisitReason.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrVisitReason/PgrVisitReason.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrVisitReport/PgrVisitReport.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrVisitReport/PgrVisitReport.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrVisitType/PgrVisitType.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrVisitType/PgrVisitType.cs')" />
+		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrVpDeliveryType/PgrVpDeliveryType.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrVpDeliveryType/PgrVpDeliveryType.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportAlertSnapshot/PgrWeeklyReportAlertSnapshot.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportAlertSnapshot/PgrWeeklyReportAlertSnapshot.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportMeasureSnapshot/PgrWeeklyReportMeasureSnapshot.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportMeasureSnapshot/PgrWeeklyReportMeasureSnapshot.cs')" />
 		<Compile Include="$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportPlannedVisitSnapshot/PgrWeeklyReportPlannedVisitSnapshot.cs" Condition="Exists('$(PkgPath)/Pgr.Core/Schemas/PgrWeeklyReportPlannedVisitSnapshot/PgrWeeklyReportPlannedVisitSnapshot.cs')" />

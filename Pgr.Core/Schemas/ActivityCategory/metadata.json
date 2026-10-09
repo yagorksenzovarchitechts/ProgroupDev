@@ -77,6 +77,19 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
   "S2": "dafb71f9-ee9f-4e0b-a4d7-37aa15987155"
 }
++ MetaData.Schema.D2 {
+  "UId": "f3870271-b613-4632-9be9-c0d2b6360ed6",
+  "A2": "PgrVisibleInDropdowns",
+  "A3": "c87982ba-46e3-4015-af9c-a125d2c88ecf",
+  "A4": "c87982ba-46e3-4015-af9c-a125d2c88ecf",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "90b65bf8-0ffc-4141-8779-2420877af907",
+  "E5": false,
+  "E12": {
+    "FB1": 1,
+    "FB2": "true"
+  }
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -87,7 +100,8 @@
   "9e53fd7c-dde4-4502-a64c-b9e34148108b",
   "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
   "3fabd836-6a53-4d8d-9069-6df88d9dae1e",
-  "5d5591f8-02cb-0eb6-e554-439a9b0cc448"
+  "5d5591f8-02cb-0eb6-e554-439a9b0cc448",
+  "f3870271-b613-4632-9be9-c0d2b6360ed6"
 ]
 + MetaData.Schema.D20.FA1 false
 + MetaData.Schema.D20.FA2 false

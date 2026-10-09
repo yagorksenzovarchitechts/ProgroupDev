@@ -19,7 +19,7 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_v7m1ic2_title.Value" Value="Schwerpunktthemen" />
 			<Item Name="LocalizableStrings.GridDetail_7qocfn4DS_PgrCustomerContacts.Value" Value="Kundenkontakte" />
 			<Item Name="LocalizableStrings.Input_1j86543_tooltip.Value" Value="Optionaler zusätzlicher Hinweis" />
-			<Item Name="LocalizableStrings.Input_1snwgmj_label.Value" Value="Kommentar" />
+			<Item Name="LocalizableStrings.Input_1snwgmj_label.Value" Value="Beschreibung" />
 			<Item Name="LocalizableStrings.Input_1snwgmj_tooltip.Value" Value="Was wurde besprochen? Ergebnis? Chancen/Risiken?" />
 			<Item Name="LocalizableStrings.Input_3nnhmxl_placeholder.Value" Value="Nennen Sie alle weiteren Teilnehmer" />
 			<Item Name="LocalizableStrings.Input_9e3hpga_label.Value" Value="Kommentar" />
