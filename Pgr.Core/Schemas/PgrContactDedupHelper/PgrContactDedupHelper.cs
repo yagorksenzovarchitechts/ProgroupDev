@@ -20,16 +20,31 @@ namespace Pgr.Core
             _userConnection = userConnection;
         }
 
-        public Guid FindExistingContactIdByEmail(string email, Guid excludeContactId = default)
+        public Guid FindExistingContactIdByEmail(string email, Guid excludeContactId = default,
+            DateTime? createdBefore = null)
         {
             var select = (Select) new Select(_userConnection)
                 .Top(1)
                 .Column(IdColumnName)
                 .From(ContactSchemaName)
                 .Where(Func.Upper(EmailColumnName)).IsEqual(Func.Upper(Column.Parameter(email)))
-                .And(IdColumnName).IsNotEqual(Column.Parameter(excludeContactId))
-                .OrderByAsc(CreatedOnColumnName);
+                .And(IdColumnName).IsNotEqual(Column.Parameter(excludeContactId));
+            if (createdBefore.HasValue)
+            {
+                select.And(CreatedOnColumnName).IsLess(Column.Parameter(createdBefore.Value));
+            }
+            select.OrderByAsc(CreatedOnColumnName);
             return select.ExecuteScalar<Guid>();
+        }
+
+        public DateTime GetContactCreatedOn(Guid contactId)
+        {
+            var select = (Select) new Select(_userConnection)
+                .Top(1)
+                .Column(CreatedOnColumnName)
+                .From(ContactSchemaName)
+                .Where(IdColumnName).IsEqual(Column.Parameter(contactId));
+            return select.ExecuteScalar<DateTime>();
         }
 
         public void WriteLog(string stage, Guid newContactId, string candidate = null, Guid existingContactId = default,
@@ -42,8 +57,8 @@ namespace Pgr.Core
                     .Set("Id", Column.Parameter(Guid.NewGuid()))
                     .Set("PgrStage", Column.Parameter(stage))
                     .Set("PgrCandidate", Column.Parameter(candidate ?? string.Empty))
-                    .Set("PgrNewContactId", Column.Parameter(newContactId.IsEmpty() ? (object) DBNull.Value : newContactId))
-                    .Set("PgrExistingContactId", Column.Parameter(existingContactId.IsEmpty() ? (object) DBNull.Value : existingContactId))
+                    .Set("PgrNewContactId", GetGuidParameter(newContactId))
+                    .Set("PgrExistingContactId", GetGuidParameter(existingContactId))
                     .Set("PgrIsManuallyCreated", Column.Parameter(isManuallyCreated))
                     .Set("PgrError", Column.Parameter(error ?? string.Empty))
                     .Set("CreatedOn", Column.Parameter(DateTime.UtcNow))
@@ -52,6 +67,11 @@ namespace Pgr.Core
             catch (Exception)
             {
             }
+        }
+
+        private static QueryColumnExpression GetGuidParameter(Guid value)
+        {
+            return value.IsEmpty() ? Column.Parameter(null, "Guid") : Column.Parameter(value);
         }
     }
 }

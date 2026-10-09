@@ -101,6 +101,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 						"rowSpan": 1
 					},
 					"labelPosition": "left",
+					"tooltip": "#ResourceString(AccountCategory_tooltip)#",
 					"readonly": false
 				}
 			},
@@ -292,61 +293,48 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"name": "BankingDetailsList"
 			},
 			{
-				"operation": "merge",
-				"name": "ContactsExpansionPanel",
-				"values": {
-					"toggleType": "material",
-					"alignItems": "stretch"
-				}
+				"operation": "remove",
+				"name": "ContactsExpansionPanel"
 			},
 			{
-				"operation": "move",
-				"name": "ContactsExpansionPanel",
-				"parentName": "TabContainer_Customer",
-				"propertyName": "items",
-				"index": 1
+				"operation": "remove",
+				"name": "ContactsToolsContainer"
 			},
 			{
-				"operation": "merge",
-				"name": "ContactsList",
-				"values": {
-					"columns": [
-						{
-							"id": "c1dd25a6-eb8e-e961-9345-a4e679bf5928",
-							"code": "ContactsListDS_Name",
-							"caption": "#ResourceString(ContactsListDS_Name)#",
-							"dataValueType": 28,
-							"width": 235
-						},
-						{
-							"id": "593db3fb-3bc9-5b57-df86-21d34af63600",
-							"code": "ContactsListDS_JobTitle",
-							"caption": "#ResourceString(ContactsListDS_JobTitle)#",
-							"dataValueType": 28,
-							"width": 183
-						},
-						{
-							"id": "cdea567b-2046-de92-1417-69f7e886b567",
-							"code": "ContactsListDS_MobilePhone",
-							"caption": "#ResourceString(ContactsListDS_MobilePhone)#",
-							"dataValueType": 42,
-							"width": 185
-						},
-						{
-							"id": "d7adaacb-11fa-9428-a772-672d6e192781",
-							"code": "ContactsListDS_Email",
-							"caption": "#ResourceString(ContactsListDS_Email)#",
-							"dataValueType": 45,
-							"width": 242
-						},
-						{
-							"id": "60e316d4-18a7-e8ce-beb0-2f7be382ea23",
-							"code": "ContactsListDS_Type",
-							"caption": "#ResourceString(ContactsListDS_Type)#",
-							"dataValueType": 10
-						}
-					]
-				}
+				"operation": "remove",
+				"name": "ContactsToolsFlexContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "ContactsAddButton"
+			},
+			{
+				"operation": "remove",
+				"name": "ContactsRefreshButton"
+			},
+			{
+				"operation": "remove",
+				"name": "ContactsSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "ContactsExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "ContactsImportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "ContactsSearchFilter"
+			},
+			{
+				"operation": "remove",
+				"name": "ContactsListContainer"
+			},
+			{
+				"operation": "remove",
+				"name": "ContactsList"
 			},
 			{
 				"operation": "merge",
@@ -1531,7 +1519,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 						"rowSpan": 1
 					},
 					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_PgrServiceTeamLead_jjhhd6x",
+					"label": "#ResourceString(ComboBox_39a215k_label)#",
 					"ariaLabel": "",
 					"isAddAllowed": true,
 					"showValueAsLink": true,
@@ -1539,9 +1527,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_PgrServiceTeamLead_jjhhd6x",
+					"control": "$PDS_PgrCustomerServiceNamePgrReportsTo_gbij5mo",
 					"visible": true,
-					"readonly": false,
+					"readonly": true,
 					"placeholder": ""
 				},
 				"parentName": "GridContainer_6shj6h0",
@@ -1566,7 +1554,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"labelPosition": "auto",
 					"controlActions": [],
 					"listActions": [],
-					"tooltip": "",
+					"tooltip": "#ResourceString(ComboBox_8v0lumw_tooltip)#",
 					"control": "$PDS_PgrAccountClassification_ilinsh2",
 					"visible": true,
 					"readonly": false,
@@ -1627,6 +1615,254 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"parentName": "GridContainer_6shj6h0",
 				"propertyName": "items",
 				"index": 9
+			},
+			{
+				"operation": "insert",
+				"name": "ExpansionPanel_fjwqnu7",
+				"values": {
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(ExpansionPanel_fjwqnu7_title)#",
+					"toggleType": "material",
+					"togglePosition": "before",
+					"expanded": true,
+					"labelColor": "auto",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"padding": {
+						"top": "medium",
+						"bottom": "small",
+						"left": "none",
+						"right": "none"
+					},
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch"
+				},
+				"parentName": "TabContainer_Customer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_oiipnyj",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 24px)",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_fjwqnu7",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_wnd7hs7",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"gap": "small",
+					"alignItems": "center",
+					"items": [],
+					"layoutConfig": {
+						"colSpan": 1,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"justifyContent": "start",
+					"wrap": "wrap"
+				},
+				"parentName": "GridContainer_oiipnyj",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailAddBtn_645lk21",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailAddBtn_645lk21_caption)#",
+					"icon": "add-button-icon",
+					"iconPosition": "left-icon",
+					"color": "outline",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.CreateRecordRequest",
+						"params": {
+							"entityName": "PgrContactAccount"
+						}
+					},
+					"visible": true,
+					"clickMode": "default"
+				},
+				"parentName": "FlexContainer_wnd7hs7",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailRefreshBtn_0sy9dp4",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailRefreshBtn_0sy9dp4_caption)#",
+					"icon": "reload-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.LoadDataRequest",
+						"params": {
+							"config": {
+								"loadType": "reload"
+							},
+							"dataSourceName": "GridDetail_zdc8ik1DS"
+						}
+					}
+				},
+				"parentName": "FlexContainer_wnd7hs7",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailSearchFilter_syvzmdk",
+				"values": {
+					"type": "crt.SearchFilter",
+					"placeholder": "#ResourceString(GridDetailSearchFilter_syvzmdk_placeholder)#",
+					"iconOnly": true,
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "GridDetailSearchFilter_syvzmdk_GridDetail_zdc8ik1",
+								"converters": [
+									{
+										"converter": "crt.SearchFilterAttributeConverter",
+										"args": [
+											"GridDetail_zdc8ik1"
+										]
+									}
+								]
+							}
+						],
+						"from": [
+							"GridDetailSearchFilter_syvzmdk_SearchValue",
+							"GridDetailSearchFilter_syvzmdk_FilteredColumnsGroups"
+						]
+					}
+				},
+				"parentName": "FlexContainer_wnd7hs7",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_itofw56",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 32px)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_fjwqnu7",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_zdc8ik1",
+				"values": {
+					"type": "crt.DataGrid",
+					"layoutConfig": {
+						"colSpan": 2,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 6
+					},
+					"features": {
+						"rows": {
+							"selection": false,
+							"numeration": false
+						}
+					},
+					"items": "$GridDetail_zdc8ik1",
+					"primaryColumnName": "GridDetail_zdc8ik1DS_Id",
+					"columns": [
+						{
+							"id": "2d4e2dce-74c8-13bf-f5ba-29d33b259a64",
+							"code": "GridDetail_zdc8ik1DS_PgrContact",
+							"caption": "#ResourceString(GridDetail_zdc8ik1DS_PgrContact)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "160061d7-4086-445e-69ea-db09d1d0eaa3",
+							"code": "GridDetail_zdc8ik1DS_PgrContact_JobTitle",
+							"caption": "#ResourceString(GridDetail_zdc8ik1DS_PgrContact_JobTitle)#",
+							"dataValueType": 28
+						},
+						{
+							"id": "25a8eb90-b3e3-ff8a-a733-66f14aa11639",
+							"code": "GridDetail_zdc8ik1DS_PgrContact_MobilePhone",
+							"caption": "#ResourceString(GridDetail_zdc8ik1DS_PgrContact_MobilePhone)#",
+							"dataValueType": 42
+						},
+						{
+							"id": "8ce8bea4-0022-e08b-ab69-7bf80d5178bc",
+							"code": "GridDetail_zdc8ik1DS_PgrContact_Email",
+							"caption": "#ResourceString(GridDetail_zdc8ik1DS_PgrContact_Email)#",
+							"dataValueType": 45
+						},
+						{
+							"id": "334ed1d4-044b-8dbe-4018-680039249350",
+							"code": "GridDetail_zdc8ik1DS_PgrContact_Type",
+							"caption": "#ResourceString(GridDetail_zdc8ik1DS_PgrContact_Type)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "dd9f3807-9f6a-dcb8-c4f4-e201c835c9fa",
+							"code": "GridDetail_zdc8ik1DS_PgrPrimarySales",
+							"caption": "#ResourceString(GridDetail_zdc8ik1DS_PgrPrimarySales)#",
+							"dataValueType": 12,
+							"width": 252
+						}
+					],
+					"placeholder": false,
+					"visible": true,
+					"fitContent": true
+				},
+				"parentName": "GridContainer_itofw56",
+				"propertyName": "items",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -2078,7 +2314,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"label": "$Resources.Strings.PDS_PgrNewCustomer_egpphr1",
 					"ariaLabel": "",
 					"labelPosition": "left",
-					"tooltip": "",
+					"tooltip": "#ResourceString(Checkbox_bx4u5ld_tooltip)#",
 					"control": "$PDS_PgrNewCustomer_egpphr1",
 					"visible": true,
 					"readonly": false,
@@ -2105,7 +2341,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"label": "$Resources.Strings.PDS_PgrStrategicCustomer_i8lzvlu",
 					"ariaLabel": "",
 					"labelPosition": "left",
-					"tooltip": "",
+					"tooltip": "#ResourceString(Checkbox_71powu7_tooltip)#",
 					"control": "$PDS_PgrStrategicCustomer_i8lzvlu",
 					"visible": true,
 					"readonly": false,
@@ -2126,7 +2362,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"label": "$Resources.Strings.PDS_PgrIsTestCustomer_fb0wxic",
 					"ariaLabel": "",
 					"labelPosition": "left",
-					"tooltip": "",
+					"tooltip": "#ResourceString(Checkbox_hwsk2h6_tooltip)#",
 					"control": "$PDS_PgrIsTestCustomer_fb0wxic",
 					"layoutConfig": {
 						"column": 3,
@@ -4875,19 +5111,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"type": "crt.SearchFilter",
 					"placeholder": "#ResourceString(SearchFilter_2y51wfx_placeholder)#",
 					"_filterOptions": {
-						"expose": [
-							{
-								"attribute": "SearchFilter_2y51wfx_ContactsList",
-								"converters": [
-									{
-										"converter": "crt.SearchFilterAttributeConverter",
-										"args": [
-											"ContactsList"
-										]
-									}
-								]
-							}
-						],
+						"expose": [],
 						"from": [
 							"SearchFilter_2y51wfx_SearchValue",
 							"SearchFilter_2y51wfx_FilteredColumnsGroups"
@@ -6774,7 +6998,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 						"iconPosition": "left-icon",
 						"defaultValue": [],
 						"entitySchemaName": "ActivityCategory",
-						"recordsFilter": null
+						"recordsFilter": null,
+						"defaultValueListSorting": null
 					},
 					"_filterOptions": {
 						"expose": [
@@ -6963,12 +7188,22 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					],
 					"gap": {
 						"columnGap": "large",
-						"rowGap": 0
+						"rowGap": null
 					},
 					"styles": {
 						"overflow-x": "hidden"
 					},
-					"items": []
+					"items": [],
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
 				},
 				"parentName": "ExpansionPanel_vthgzr6",
 				"propertyName": "items",
@@ -9676,24 +9911,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							}
 						}
 					},
-					"PDS_PgrServiceTeamLead_jjhhd6x": {
-						"modelConfig": {
-							"path": "PDS.PgrServiceTeamLead"
-						}
-					},
-					"PDS_PgrServiceTeamLead_jjhhd6x_List": {
-						"isCollection": true,
-						"modelConfig": {
-							"sortingConfig": {
-								"default": [
-									{
-										"columnName": "Name",
-										"direction": "asc"
-									}
-								]
-							}
-						}
-					},
 					"PDS_PgrBoardConnect_m7g7u7z": {
 						"modelConfig": {
 							"path": "PDS.PgrBoardConnect"
@@ -9960,7 +10177,15 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 									"name": "QuickFilter_hs77vju_GridDetail_c3c1pio",
 									"loadOnChange": true
 								}
-							]
+							],
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "asc",
+										"columnName": "PgrPersonInCharge"
+									}
+								]
+							}
 						},
 						"viewModelConfig": {
 							"attributes": {
@@ -10815,6 +11040,75 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 						"modelConfig": {
 							"path": "PDS.PgrWepaformName"
 						}
+					},
+					"PDS_PgrCustomerServiceNamePgrReportsTo_gbij5mo": {
+						"modelConfig": {
+							"path": "PDS.PgrCustomerServiceNamePgrReportsTo_gbij5mo"
+						}
+					},
+					"PDS_PgrCustomerServiceNamePgrReportsTo_gbij5mo_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"GridDetail_zdc8ik1": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "GridDetail_zdc8ik1DS",
+							"filterAttributes": [
+								{
+									"name": "GridDetailSearchFilter_syvzmdk_GridDetail_zdc8ik1",
+									"loadOnChange": true
+								}
+							]
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"GridDetail_zdc8ik1DS_PgrContact": {
+									"modelConfig": {
+										"path": "GridDetail_zdc8ik1DS.PgrContact"
+									}
+								},
+								"GridDetail_zdc8ik1DS_PgrContact_JobTitle": {
+									"modelConfig": {
+										"path": "GridDetail_zdc8ik1DS.PgrContact_JobTitle"
+									}
+								},
+								"GridDetail_zdc8ik1DS_PgrContact_MobilePhone": {
+									"modelConfig": {
+										"path": "GridDetail_zdc8ik1DS.PgrContact_MobilePhone"
+									}
+								},
+								"GridDetail_zdc8ik1DS_PgrContact_Email": {
+									"modelConfig": {
+										"path": "GridDetail_zdc8ik1DS.PgrContact_Email"
+									}
+								},
+								"GridDetail_zdc8ik1DS_PgrContact_Type": {
+									"modelConfig": {
+										"path": "GridDetail_zdc8ik1DS.PgrContact_Type"
+									}
+								},
+								"GridDetail_zdc8ik1DS_PgrPrimarySales": {
+									"modelConfig": {
+										"path": "GridDetail_zdc8ik1DS.PgrPrimarySales"
+									}
+								},
+								"GridDetail_zdc8ik1DS_Id": {
+									"modelConfig": {
+										"path": "GridDetail_zdc8ik1DS.Id"
+									}
+								}
+							}
+						}
 					}
 				}
 			},
@@ -10866,20 +11160,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"modelConfig"
 				],
 				"values": {
-					"filterAttributes": [
-						{
-							"name": "ContactsList_PredefinedFilter",
-							"loadOnChange": true
-						},
-						{
-							"name": "ContactsSearchFilter_ContactsList",
-							"loadOnChange": true
-						},
-						{
-							"name": "SearchFilter_2y51wfx_ContactsList",
-							"loadOnChange": true
-						}
-					],
+					"filterAttributes": [],
 					"sortingConfig": {
 						"default": [
 							{
@@ -10920,6 +11201,16 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"path": "ContactsListDS.Type"
 						}
 					}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"ContactsList_PredefinedFilter"
+				],
+				"values": {
+					"modelConfig": {}
 				}
 			},
 			{
@@ -11565,6 +11856,52 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								}
 							}
 						}
+					},
+					"GridDetail_zdc8ik1DS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "PgrContactAccount",
+							"attributes": {
+								"PgrContact": {
+									"path": "PgrContact"
+								},
+								"PgrContact_JobTitle": {
+									"type": "ForwardReference",
+									"path": "PgrContact.JobTitle"
+								},
+								"PgrContact_MobilePhone": {
+									"type": "ForwardReference",
+									"path": "PgrContact.MobilePhone"
+								},
+								"PgrContact_Email": {
+									"type": "ForwardReference",
+									"path": "PgrContact.Email"
+								},
+								"PgrContact_Type": {
+									"type": "ForwardReference",
+									"path": "PgrContact.Type"
+								},
+								"PgrPrimarySales": {
+									"path": "PgrPrimarySales"
+								}
+							}
+						}
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"path": [
+					"dataSources",
+					"PDS",
+					"config",
+					"attributes"
+				],
+				"values": {
+					"PgrCustomerServiceNamePgrReportsTo_gbij5mo": {
+						"path": "PgrCustomerServiceName.PgrReportsTo",
+						"type": "ForwardReference"
 					}
 				}
 			},
@@ -11679,6 +12016,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"dependencies"
 				],
 				"properties": [
+					"ContactsListDS",
 					"BillingInfoListDS"
 				]
 			},
@@ -11779,6 +12117,12 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"ListWidget_h0kgh75DS": [
 						{
 							"attributePath": "Id",
+							"relationPath": "PDS.Id"
+						}
+					],
+					"GridDetail_zdc8ik1DS": [
+						{
+							"attributePath": "PgrAccount",
 							"relationPath": "PDS.Id"
 						}
 					]

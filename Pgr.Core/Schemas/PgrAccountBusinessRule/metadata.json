@@ -193,7 +193,7 @@
                   {
                     "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionReadonlyElement",
                     "UId": "86383440-94e3-a965-27b2-7f4e39c0021d",
-                    "BRA4": "Name,Code,AddressType,Country,City,PgrSapCustomerId,PgrDateBl,Zip,Address,PgrVatNumber,PgrInvoiceMailAddress,PgrMainPlantLinked,PgrMaxOverDelivery,PgrMaxUnderDelivery,PgrBestPlantLinked,PgrWepaformName,PgrWepaformCustomerId,PgrSalesManager,PgrIsActive,Phone,PgrCustomerServiceName,PgrSalesDirector,PgrIsFsc,PgrExceedingCapacity,PgrSensitiveToOverDelivery,PgrOverDeliveryPercentage1,PgrOverDeliveryPercentage2,PgrOverDeliveryQuantity1,PgrOverDeliveryQuantity2,PgrBoardConnect,PgrDuns,PgrOrderBl,PgrPlanningBl"
+                    "BRA4": "Name,Code,AddressType,Country,City,PgrSapCustomerId,PgrDateBl,Zip,Address,PgrVatNumber,PgrInvoiceMailAddress,PgrMainPlantLinked,PgrMaxOverDelivery,PgrMaxUnderDelivery,PgrBestPlantLinked,PgrWepaformName,PgrWepaformCustomerId,PgrSalesManager,PgrIsActive,Phone,PgrCustomerServiceName,PgrSalesDirector,PgrIsFsc,PgrExceedingCapacity,PgrSensitiveToOverDelivery,PgrOverDeliveryPercentage1,PgrOverDeliveryPercentage2,PgrOverDeliveryQuantity1,PgrOverDeliveryQuantity2,PgrBoardConnect,PgrDuns,PgrOrderBl,PgrPlanningBl,PgrDeliveryBl"
                   }
                 ]
               }
@@ -210,8 +210,7 @@
                 "BRT1": "PgrIsCustomer"
               }
             ],
-            "BR3": "BusinessRule_1b71666",
-            "BR4": false
+            "BR3": "BusinessRule_1b71666"
           }
         ]
       }

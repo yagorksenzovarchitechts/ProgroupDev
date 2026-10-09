@@ -439,6 +439,18 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				}
 			},
 			{
+				"operation": "remove",
+				"name": "CompetitorsSettingsButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CompetitorsExportDataButton"
+			},
+			{
+				"operation": "remove",
+				"name": "CompetitorsImportDataButton"
+			},
+			{
 				"operation": "merge",
 				"name": "CompetitorsListContainer",
 				"values": {
@@ -467,6 +479,14 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 						}
 					}
 				}
+			},
+			{
+				"operation": "remove",
+				"name": "CompetitorsList",
+				"properties": [
+					"selectionState",
+					"_selectionOptions"
+				]
 			},
 			{
 				"operation": "merge",
@@ -1348,7 +1368,7 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"title": "#ResourceString(ExpansionPanel_lmmvc10_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": false,
+					"expanded": true,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -1377,12 +1397,22 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					],
 					"gap": {
 						"columnGap": "large",
-						"rowGap": 0
+						"rowGap": null
 					},
 					"styles": {
 						"overflow-x": "hidden"
 					},
-					"items": []
+					"items": [],
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
 				},
 				"parentName": "ExpansionPanel_lmmvc10",
 				"propertyName": "tools",
@@ -1421,9 +1451,25 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"clicked": {
 						"request": "crt.CreateRecordRequest",
 						"params": {
-							"entityName": "Activity"
+							"entityName": "Activity",
+							"defaultValues": [
+								{
+									"attributeName": "Opportunity",
+									"value": "$Id"
+								},
+								{
+									"attributeName": "PgrAccount",
+									"value": "$Parameter_q8l08xk"
+								},
+								{
+									"attributeName": "Account",
+									"value": "$Parameter_q8l08xk"
+								}
+							]
 						}
-					}
+					},
+					"visible": true,
+					"clickMode": "default"
 				},
 				"parentName": "FlexContainer_kkrk68p",
 				"propertyName": "items",
@@ -1455,63 +1501,6 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
-				"name": "GridDetailSettingsBtn_g8nrvem",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(GridDetailSettingsBtn_g8nrvem_caption)#",
-					"icon": "actions-button-icon",
-					"iconPosition": "only-icon",
-					"color": "default",
-					"size": "medium",
-					"clickMode": "menu",
-					"menuItems": []
-				},
-				"parentName": "FlexContainer_kkrk68p",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailExportDataBtn_gp84e5g",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "#ResourceString(GridDetailExportDataBtn_gp84e5g_caption)#",
-					"icon": "export-button-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.ExportDataGridToExcelRequest",
-						"params": {
-							"viewName": "GridDetail_yfh05mf"
-						}
-					}
-				},
-				"parentName": "GridDetailSettingsBtn_g8nrvem",
-				"propertyName": "menuItems",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "GridDetailImportDataBtn_bcm6a9x",
-				"values": {
-					"type": "crt.MenuItem",
-					"caption": "#ResourceString(GridDetailImportDataBtn_bcm6a9x_caption)#",
-					"icon": "import-button-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.ImportDataRequest",
-						"params": {
-							"entitySchemaName": "Activity"
-						}
-					}
-				},
-				"parentName": "GridDetailSettingsBtn_g8nrvem",
-				"propertyName": "menuItems",
-				"index": 1
-			},
-			{
-				"operation": "insert",
 				"name": "GridDetailSearchFilter_9iu9e6b",
 				"values": {
 					"type": "crt.SearchFilter",
@@ -1539,7 +1528,7 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				},
 				"parentName": "FlexContainer_kkrk68p",
 				"propertyName": "items",
-				"index": 3
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -1553,12 +1542,22 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					],
 					"gap": {
 						"columnGap": "large",
-						"rowGap": 0
+						"rowGap": null
 					},
 					"styles": {
 						"overflow-x": "hidden"
 					},
-					"items": []
+					"items": [],
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
 				},
 				"parentName": "ExpansionPanel_lmmvc10",
 				"propertyName": "items",
@@ -1571,10 +1570,8 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 					"type": "crt.DataGrid",
 					"features": {
 						"rows": {
-							"selection": {
-								"enable": true,
-								"multiple": true
-							}
+							"selection": false,
+							"numeration": false
 						}
 					},
 					"items": "$GridDetail_yfh05mf",
@@ -1616,8 +1613,10 @@ define("Opportunities_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 						"column": 1,
 						"colSpan": 2,
 						"row": 1,
-						"rowSpan": 2
-					}
+						"rowSpan": 6
+					},
+					"visible": true,
+					"fitContent": true
 				},
 				"parentName": "GridContainer_xrljt4u",
 				"propertyName": "items",

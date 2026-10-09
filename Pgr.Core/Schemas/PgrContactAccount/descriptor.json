@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "92c12756-e63b-4a6b-af84-58dc1e087d91",
+    "Name": "PgrContactAccount",
+    "ModifiedOnUtc": "\/Date(1791460261000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Contacts in Account",
+    "DependsOn": []
+  }
+}

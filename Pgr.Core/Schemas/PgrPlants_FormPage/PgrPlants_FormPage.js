@@ -564,6 +564,29 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 			},
 			{
 				"operation": "insert",
+				"name": "ComboBox_2t54xf9",
+				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrPlantsVpDeliveryType_3w8gag0",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": false,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrPlantsVpDeliveryType_3w8gag0",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"valueDetails": null
+				},
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
 				"name": "Input_yb2mlxw",
 				"values": {
 					"type": "crt.Input",
@@ -577,7 +600,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -593,7 +616,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -621,7 +644,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -838,7 +861,7 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 				},
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -1116,6 +1139,24 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						}
 					},
 					"PDS_PgrColumn29_q8yyg0t_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_PgrPlantsVpDeliveryType_3w8gag0": {
+						"modelConfig": {
+							"path": "PDS.PgrPlantsVpDeliveryType"
+						}
+					},
+					"PDS_PgrPlantsVpDeliveryType_3w8gag0_List": {
 						"isCollection": true,
 						"modelConfig": {
 							"sortingConfig": {

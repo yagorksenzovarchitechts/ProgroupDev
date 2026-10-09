@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "7be2854f-d82d-4369-b651-376ec2b53bd1",
+    "Name": "PgrLeadToCustomerConversionPgrCore1",
+    "ModifiedOnUtc": "\/Date(1791286008000)\/",
+    "Parent": {
+      "UId": "d042bdc0-e495-42a9-931e-74310b759530",
+      "Name": "PgrLeadToCustomerConversion"
+    },
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Lead to customer conversion",
+    "DependsOn": []
+  }
+}

@@ -253,6 +253,19 @@
   "E17": "PgrNrOfWallsId",
   "E18": "PgrNrOfWallsName"
 }
++ MetaData.Schema.D2 {
+  "UId": "f33468c4-29c0-a8d6-a9a7-72f8cc5143f2",
+  "A2": "PgrPlantsVpDeliveryType",
+  "A3": "a53ab973-0ade-4bd8-842e-2124274f0a5d",
+  "A4": "a53ab973-0ade-4bd8-842e-2124274f0a5d",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
+  "S4": "984066d5-0577-4d97-9187-4f3dbcb1aeb4",
+  "E6": true,
+  "E20": true,
+  "E17": "PgrPlantsVpDeliveryTypeId",
+  "E18": "PgrPlantsVpDeliveryTypeName"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -282,7 +295,8 @@
   "78e44fcd-e642-f573-5ca4-c09dc3535d51",
   "a63a921d-7172-3ba0-e12b-4f0716073800",
   "a415905d-3f35-a302-7859-59bdfe23beeb",
-  "28ed80d5-b436-532e-ddf5-e9c4c40e224b"
+  "28ed80d5-b436-532e-ddf5-e9c4c40e224b",
+  "f33468c4-29c0-a8d6-a9a7-72f8cc5143f2"
 ]
 = MetaData.Schema.D20.A2 "PgrPlantEvents"
 + MetaData.Schema.D20.FA1 false

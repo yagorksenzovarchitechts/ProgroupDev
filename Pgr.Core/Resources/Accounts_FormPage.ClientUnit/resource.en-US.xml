@@ -2,6 +2,7 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="LocalizableStrings.AccountCategory_tooltip.Value" Value="Can only be changed by key users" />
 			<Item Name="LocalizableStrings.AccountCompetitorsExpansionPanel_title.Value" Value="Customers" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Attachments" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Attachments" />
@@ -14,10 +15,15 @@
 			<Item Name="LocalizableStrings.Button_wzoi3mp_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancel" />
 			<Item Name="LocalizableStrings.Checkbox_56z210h_tooltip.Value" Value="Mail with PDF attachment" />
+			<Item Name="LocalizableStrings.Checkbox_71powu7_tooltip.Value" Value="Can only be changed by key users" />
+			<Item Name="LocalizableStrings.Checkbox_bx4u5ld_tooltip.Value" Value="Can only be changed by key users" />
+			<Item Name="LocalizableStrings.Checkbox_hwsk2h6_tooltip.Value" Value="Can only be changed by key users" />
 			<Item Name="LocalizableStrings.Checkbox_isdbwb4_tooltip.Value" Value="legal requirement (EN 16931)" />
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Close" />
 			<Item Name="LocalizableStrings.ComboBox_02hioj6_ariaLabel.Value" Value="Dropdown" />
 			<Item Name="LocalizableStrings.ComboBox_02hioj6_label.Value" Value="Full name" />
+			<Item Name="LocalizableStrings.ComboBox_39a215k_label.Value" Value="CS Teamlead" />
+			<Item Name="LocalizableStrings.ComboBox_8v0lumw_tooltip.Value" Value="Can only be changed by key users" />
 			<Item Name="LocalizableStrings.ComboBox_rztcyul_label.Value" Value="Number of employees" />
 			<Item Name="LocalizableStrings.ComboBox_tuutgko_label.Value" Value="Select Country" />
 			<Item Name="LocalizableStrings.ComboBox_tuutgko_placeholder.Value" Value="Select Country" />
@@ -28,7 +34,7 @@
 			<Item Name="LocalizableStrings.CompetitorsList_caption.Value" Value="Products offered" />
 			<Item Name="LocalizableStrings.CompetitorsRefreshButton_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.CompetitorsSettingsButton_caption.Value" Value="Actions" />
-			<Item Name="LocalizableStrings.ContactsListDS_Type.Value" Value="Type" />
+			<Item Name="LocalizableStrings.ContactsAddButton_caption.Value" Value="New contact" />
 			<Item Name="LocalizableStrings.ContractsTab_caption.Value" Value="Contracts" />
 			<Item Name="LocalizableStrings.ExpansionPanel_0hsju2s_title.Value" Value="Account info" />
 			<Item Name="LocalizableStrings.ExpansionPanel_1mbln9s_title.Value" Value="Addresses" />
@@ -38,6 +44,7 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_br1488r_title.Value" Value="Thresholds" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ezmuytd_title.Value" Value="Account metrics" />
 			<Item Name="LocalizableStrings.ExpansionPanel_f9i47to_title.Value" Value="Bonus thresholds" />
+			<Item Name="LocalizableStrings.ExpansionPanel_fjwqnu7_title.Value" Value="Contacts" />
 			<Item Name="LocalizableStrings.ExpansionPanel_h2q0n69_title.Value" Value="Project prices" />
 			<Item Name="LocalizableStrings.ExpansionPanel_hzgkxwg_title.Value" Value="Project pipeline" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ilw1gpx_title.Value" Value="Invoicing" />
@@ -49,6 +56,7 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_vthgzr6_title.Value" Value="Tasks" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_3fohkij_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_409pmzl_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_645lk21_caption.Value" Value="New contact" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_91b3j6t_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_9867vlj_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_h1ztdaz_caption.Value" Value="New" />
@@ -65,6 +73,7 @@
 			<Item Name="LocalizableStrings.GridDetailImportDataBtn_giwgj5f_caption.Value" Value="Data import" />
 			<Item Name="LocalizableStrings.GridDetailImportDataBtn_kqzkj9h_caption.Value" Value="Data import" />
 			<Item Name="LocalizableStrings.GridDetailImportDataBtn_pvqdq58_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_0sy9dp4_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_1tm6rqa_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_7aypmum_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_8soib8z_caption.Value" Value="Refresh" />
@@ -79,6 +88,7 @@
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_ermdvce_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_fdq0wc9_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_hockob5_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_syvzmdk_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_uac2rdb_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_y7i3jt7_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_ytmu9oh_placeholder.Value" Value="Search" />

@@ -47,7 +47,8 @@ define("PgrPlants_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"code": "PDS_PgrName",
 							"caption": "#ResourceString(PDS_PgrName)#",
 							"dataValueType": 1,
-							"width": 150
+							"width": 150,
+							"sticky": true
 						},
 						{
 							"id": "b6b069c8-1717-ce0b-5754-4c82b3500596",
@@ -59,7 +60,8 @@ define("PgrPlants_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"id": "f3d2373f-9500-446a-4602-65eb40e30aa0",
 							"code": "PDS_PgrCity",
 							"caption": "#ResourceString(PDS_PgrCity)#",
-							"dataValueType": 28
+							"dataValueType": 28,
+							"width": 175
 						},
 						{
 							"id": "5a6fd1fa-7e1b-1744-7b1f-e4adb2bb7aa2",
@@ -111,18 +113,17 @@ define("PgrPlants_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"width": 242
 						},
 						{
+							"id": "66106425-7fa1-ebf1-2d68-4a8b3bb2e351",
+							"code": "PDS_PgrPlantsVpDeliveryType",
+							"caption": "#ResourceString(PDS_PgrPlantsVpDeliveryType)#",
+							"dataValueType": 10
+						},
+						{
 							"id": "c797903c-42c2-dbab-9ed0-b0166cb50559",
 							"code": "PDS_PgrYear",
 							"caption": "#ResourceString(PDS_PgrYear)#",
 							"dataValueType": 10,
 							"width": 208
-						},
-						{
-							"id": "c555d521-a8b7-73df-5b01-2cc5b4d35326",
-							"code": "PDS_PgrPlantNumber",
-							"caption": "#ResourceString(PDS_PgrPlantNumber)#",
-							"dataValueType": 4,
-							"width": 153
 						}
 					]
 				}
@@ -204,14 +205,14 @@ define("PgrPlants_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"path": "PDS.PgrPackagingParkCustomer2"
 						}
 					},
+					"PDS_PgrPlantsVpDeliveryType": {
+						"modelConfig": {
+							"path": "PDS.PgrPlantsVpDeliveryType"
+						}
+					},
 					"PDS_PgrYear": {
 						"modelConfig": {
 							"path": "PDS.PgrYear"
-						}
-					},
-					"PDS_PgrPlantNumber": {
-						"modelConfig": {
-							"path": "PDS.PgrPlantNumber"
 						}
 					}
 				}
@@ -228,7 +229,7 @@ define("PgrPlants_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"default": [
 						{
 							"direction": "asc",
-							"columnName": "PgrName"
+							"columnName": "PgrPlantNumber"
 						}
 					]
 				}
@@ -275,11 +276,11 @@ define("PgrPlants_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						"PgrPackagingParkCustomer2": {
 							"path": "PgrPackagingParkCustomer2"
 						},
+						"PgrPlantsVpDeliveryType": {
+							"path": "PgrPlantsVpDeliveryType"
+						},
 						"PgrYear": {
 							"path": "PgrYear"
-						},
-						"PgrPlantNumber": {
-							"path": "PgrPlantNumber"
 						}
 					}
 				}

@@ -14,6 +14,10 @@
           "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
           "Value": "fbe0acdc-cfc0-df11-b00f-001d60e938c6",
           "DisplayValue": "Task"
+        },
+        {
+          "SchemaColumnUId": "f3870271-b613-4632-9be9-c0d2b6360ed6",
+          "Value": true
         }
       ]
     },
@@ -31,6 +35,10 @@
           "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
           "Value": "e3831dec-cfc0-df11-b00f-001d60e938c6",
           "DisplayValue": "Visit"
+        },
+        {
+          "SchemaColumnUId": "f3870271-b613-4632-9be9-c0d2b6360ed6",
+          "Value": true
         }
       ]
     },
@@ -48,6 +56,10 @@
           "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
           "Value": "fbe0acdc-cfc0-df11-b00f-001d60e938c6",
           "DisplayValue": "Task"
+        },
+        {
+          "SchemaColumnUId": "f3870271-b613-4632-9be9-c0d2b6360ed6",
+          "Value": false
         }
       ]
     },
@@ -65,6 +77,10 @@
           "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
           "Value": "fbe0acdc-cfc0-df11-b00f-001d60e938c6",
           "DisplayValue": "Task"
+        },
+        {
+          "SchemaColumnUId": "f3870271-b613-4632-9be9-c0d2b6360ed6",
+          "Value": false
         }
       ]
     },
@@ -82,6 +98,10 @@
           "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
           "Value": "fbe0acdc-cfc0-df11-b00f-001d60e938c6",
           "DisplayValue": "Task"
+        },
+        {
+          "SchemaColumnUId": "f3870271-b613-4632-9be9-c0d2b6360ed6",
+          "Value": false
         }
       ]
     },
@@ -99,6 +119,10 @@
           "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
           "Value": "fbe0acdc-cfc0-df11-b00f-001d60e938c6",
           "DisplayValue": "Task"
+        },
+        {
+          "SchemaColumnUId": "f3870271-b613-4632-9be9-c0d2b6360ed6",
+          "Value": false
         }
       ]
     },
@@ -116,6 +140,10 @@
           "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
           "Value": "fbe0acdc-cfc0-df11-b00f-001d60e938c6",
           "DisplayValue": "Task"
+        },
+        {
+          "SchemaColumnUId": "f3870271-b613-4632-9be9-c0d2b6360ed6",
+          "Value": true
         }
       ]
     },
@@ -133,6 +161,10 @@
           "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
           "Value": "e1831dec-cfc0-df11-b00f-001d60e938c6",
           "DisplayValue": "Call"
+        },
+        {
+          "SchemaColumnUId": "f3870271-b613-4632-9be9-c0d2b6360ed6",
+          "Value": true
         }
       ]
     },
@@ -150,6 +182,10 @@
           "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
           "Value": "fbe0acdc-cfc0-df11-b00f-001d60e938c6",
           "DisplayValue": "Task"
+        },
+        {
+          "SchemaColumnUId": "f3870271-b613-4632-9be9-c0d2b6360ed6",
+          "Value": true
         }
       ]
     },
@@ -167,6 +203,10 @@
           "SchemaColumnUId": "ca94a324-e7f1-44ab-b1b7-98cdfabd9c11",
           "Value": "e3831dec-cfc0-df11-b00f-001d60e938c6",
           "DisplayValue": "Visit"
+        },
+        {
+          "SchemaColumnUId": "f3870271-b613-4632-9be9-c0d2b6360ed6",
+          "Value": true
         }
       ]
     }

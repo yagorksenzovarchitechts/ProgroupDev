@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "88a2eaf2-ab6b-4bba-03a4-ed1898e24d2f",
     "Name": "ActivityCategory",
-    "ModifiedOnUtc": "\/Date(1790764367000)\/",
+    "ModifiedOnUtc": "\/Date(1791470076000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "961e2086-a12b-4d27-b095-40b1e64d6cc0",
@@ -43,6 +43,13 @@
         "IsKey": false,
         "ColumnName": "ActivityType",
         "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "f3870271-b613-4632-9be9-c0d2b6360ed6",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "PgrVisibleInDropdowns",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
       }
     ]
   }

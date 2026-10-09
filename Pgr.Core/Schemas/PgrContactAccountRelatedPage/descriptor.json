@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "377acb91-6bda-44a8-80e4-8cb875242f22",
+    "Name": "PgrContactAccountRelatedPage",
+    "ModifiedOnUtc": "\/Date(1791460264000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Contacts in Account (Page settings)",
+    "DependsOn": []
+  }
+}

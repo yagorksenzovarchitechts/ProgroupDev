@@ -92,13 +92,6 @@
   "A5": "d0eda435-b876-4397-94c0-4b27bf9f95db"
 }
 + MetaData.Schema.B2 {
-  "UId": "2d6d26e4-91cf-6112-98da-bb15995d615c",
-  "A2": "Button_978ivs9_caption",
-  "A3": "52a22c63-990e-4102-ab6f-0d1136d5c6e4",
-  "A4": "52a22c63-990e-4102-ab6f-0d1136d5c6e4",
-  "A5": "d0eda435-b876-4397-94c0-4b27bf9f95db"
-}
-+ MetaData.Schema.B2 {
   "UId": "2f3a5fce-b21d-dcbf-5c4a-84d209af0c32",
   "A2": "ChartWidget_l52twdo_series_0",
   "A3": "52a22c63-990e-4102-ab6f-0d1136d5c6e4",
@@ -315,6 +308,27 @@
   "A4": "52a22c63-990e-4102-ab6f-0d1136d5c6e4",
   "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0"
 }
++ MetaData.Schema.B2 {
+  "UId": "16dac220-bf3d-df5d-0b70-1e03f3e310fb",
+  "A2": "PgrCreateTaskButton_caption",
+  "A3": "52a22c63-990e-4102-ab6f-0d1136d5c6e4",
+  "A4": "52a22c63-990e-4102-ab6f-0d1136d5c6e4",
+  "A5": "f7299327-7624-41b6-b81d-bb91d7a1a838"
+}
++ MetaData.Schema.B2 {
+  "UId": "64348072-4bdb-4cb3-bf83-124b59cdd924",
+  "A2": "PgrCreateTaskMenuItem_caption",
+  "A3": "52a22c63-990e-4102-ab6f-0d1136d5c6e4",
+  "A4": "52a22c63-990e-4102-ab6f-0d1136d5c6e4",
+  "A5": "f7299327-7624-41b6-b81d-bb91d7a1a838"
+}
++ MetaData.Schema.B2 {
+  "UId": "c0e4d79e-7149-43e6-95ec-c8da98b5c8a6",
+  "A2": "PgrCreateEmailMenuItem_caption",
+  "A3": "52a22c63-990e-4102-ab6f-0d1136d5c6e4",
+  "A4": "52a22c63-990e-4102-ab6f-0d1136d5c6e4",
+  "A5": "f7299327-7624-41b6-b81d-bb91d7a1a838"
+}
 = MetaData.Schema.B2.["35af9a10-373b-78f1-09de-3236b3d2ecd1"].A4 "52a22c63-990e-4102-ab6f-0d1136d5c6e4"
 = MetaData.Schema.B2.["a394f022-6385-4275-8979-0258d91e4106"].A4 "52a22c63-990e-4102-ab6f-0d1136d5c6e4"
 = MetaData.Schema.B2.["72ebe166-ef9b-484c-dee6-2caf27030873"].A4 "52a22c63-990e-4102-ab6f-0d1136d5c6e4"
@@ -340,7 +354,6 @@
   "3a8a81ef-2370-942e-b0c6-892bb00845b4",
   "c706a152-8942-dc7c-a3ea-2ae0e22c02e5",
   "aa488c03-3d50-43fb-996e-247645fc49eb",
-  "2d6d26e4-91cf-6112-98da-bb15995d615c",
   "2f3a5fce-b21d-dcbf-5c4a-84d209af0c32",
   "30156dc1-96ae-4a91-e044-64a3914475f2",
   "c3b6f438-d7d4-a54e-d787-64e5e083fb23",
@@ -372,6 +385,9 @@
   "7697c442-6833-49a1-a2b8-6c4e3a3fbf3e",
   "25cf02d4-c257-4ee0-a796-a3bebd7e558a",
   "3535cd11-5c58-4cbf-af92-48bb95983638",
+  "16dac220-bf3d-df5d-0b70-1e03f3e310fb",
+  "64348072-4bdb-4cb3-bf83-124b59cdd924",
+  "c0e4d79e-7149-43e6-95ec-c8da98b5c8a6",
   "35af9a10-373b-78f1-09de-3236b3d2ecd1",
   "a394f022-6385-4275-8979-0258d91e4106",
   "72ebe166-ef9b-484c-dee6-2caf27030873",
