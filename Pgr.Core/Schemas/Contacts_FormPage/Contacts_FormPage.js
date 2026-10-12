@@ -1266,42 +1266,6 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 			},
 			{
 				"operation": "insert",
-				"name": "ComboBox_cf5dsmd",
-				"values": {
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_Country_8qu1qoo",
-					"ariaLabel": "",
-					"isAddAllowed": true,
-					"showValueAsLink": true,
-					"labelPosition": "auto",
-					"controlActions": [],
-					"listActions": [],
-					"tooltip": "",
-					"control": "$PDS_Country_8qu1qoo"
-				},
-				"parentName": "SideAreaProfileFieldFlexContainer",
-				"propertyName": "items",
-				"index": 4
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_zy76tmv",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_zy76tmv_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_cf5dsmd",
-				"propertyName": "listActions",
-				"index": 0
-			},
-			{
-				"operation": "insert",
 				"name": "EmailInput_vzkwr3o",
 				"values": {
 					"type": "crt.EmailInput",
@@ -1316,7 +1280,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 5
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -1342,7 +1306,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 6
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -1360,7 +1324,46 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 7
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_cf5dsmd",
+				"values": {
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_Country_8qu1qoo",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_Country_8qu1qoo",
+					"visible": false,
+					"readonly": false,
+					"placeholder": ""
+				},
+				"parentName": "SideAreaProfileFieldFlexContainer",
+				"propertyName": "items",
+				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_zy76tmv",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_zy76tmv_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_cf5dsmd",
+				"propertyName": "listActions",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -1504,6 +1507,96 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				"parentName": "ContactInfoFieldsContainer",
 				"propertyName": "items",
 				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_339zy7h",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrLanguageSecond_4lzv3zs",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrLanguageSecond_4lzv3zs",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "#ResourceString(ComboBox_339zy7h_placeholder)#"
+				},
+				"parentName": "ContactInfoFieldsContainer",
+				"propertyName": "items",
+				"index": 7
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_ecagj7b",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_ecagj7b_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_339zy7h",
+				"propertyName": "listActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_ywl2f3y",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_PgrLanguageThird_iaefqe8",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "auto",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$PDS_PgrLanguageThird_iaefqe8",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "#ResourceString(ComboBox_ywl2f3y_placeholder)#"
+				},
+				"parentName": "ContactInfoFieldsContainer",
+				"propertyName": "items",
+				"index": 9
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_24kdz1b",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_24kdz1b_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_ywl2f3y",
+				"propertyName": "listActions",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -3909,6 +4002,42 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 					"PDS_JobTitle_h39qse1": {
 						"modelConfig": {
 							"path": "PDS.JobTitle"
+						}
+					},
+					"PDS_PgrLanguageSecond_4lzv3zs": {
+						"modelConfig": {
+							"path": "PDS.PgrLanguageSecond"
+						}
+					},
+					"PDS_PgrLanguageSecond_4lzv3zs_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
+						}
+					},
+					"PDS_PgrLanguageThird_iaefqe8": {
+						"modelConfig": {
+							"path": "PDS.PgrLanguageThird"
+						}
+					},
+					"PDS_PgrLanguageThird_iaefqe8_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
 						}
 					}
 				}

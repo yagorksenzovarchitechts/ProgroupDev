@@ -36,12 +36,14 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_1mbln9s_title.Value" Value="Adressen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_3jtu7p2_title.Value" Value="&#xA;SAP" />
 			<Item Name="LocalizableStrings.ExpansionPanel_4r2mr5k_title.Value" Value="Besuchsberichte" />
+			<Item Name="LocalizableStrings.ExpansionPanel_fjwqnu7_title.Value" Value="Kontakte" />
 			<Item Name="LocalizableStrings.ExpansionPanel_h2q0n69_title.Value" Value="Projektpreise" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ilw1gpx_title.Value" Value="Rechnung" />
 			<Item Name="LocalizableStrings.ExpansionPanel_pa1hlbi_title.Value" Value="Überlieferung" />
 			<Item Name="LocalizableStrings.ExpansionPanel_udydmkf_title.Value" Value="Schnittstellen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_vbzwo5v_title.Value" Value="Kontakte" />
 			<Item Name="LocalizableStrings.ExpansionPanel_vthgzr6_title.Value" Value="Aufgaben" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_645lk21_caption.Value" Value="Neukontakt erstellen" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_ytmu9oh_placeholder.Value" Value="Suche" />
 			<Item Name="LocalizableStrings.HowTheyMakeMoney_placeholder.Value" Value="Enter how the company generates revenue" />
 			<Item Name="LocalizableStrings.Label_HowTheyMakeMoney_caption.Value" Value="Wie sie Geld verdienen" />

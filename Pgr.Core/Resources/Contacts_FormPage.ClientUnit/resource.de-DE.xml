@@ -36,7 +36,10 @@
 			<Item Name="LocalizableStrings.CasesSettingsButton_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Schließen" />
 			<Item Name="LocalizableStrings.ComboBox_268yz1f_placeholder.Value" Value="Datenquelle auswählen" />
+			<Item Name="LocalizableStrings.ComboBox_339zy7h_placeholder.Value" Value="Sprach-Auswahl" />
+			<Item Name="LocalizableStrings.ComboBox_339zy7h_tooltip.Value" Value="Sprach-Auswahl" />
 			<Item Name="LocalizableStrings.ComboBox_3zub1m3_placeholder.Value" Value="Channel auswählen" />
+			<Item Name="LocalizableStrings.ComboBox_ywl2f3y_placeholder.Value" Value="Sprach-Auswahl" />
 			<Item Name="LocalizableStrings.ContactSubscriptions_ExpansionPanel_title.Value" Value="Abonnements" />
 			<Item Name="LocalizableStrings.CustomerNeed_placeholder.Value" Value="Kundenbedarf-Auswahl" />
 			<Item Name="LocalizableStrings.Department_placeholder.Value" Value="Abteilungs-Auswahl" />

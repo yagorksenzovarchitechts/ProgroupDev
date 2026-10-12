@@ -41,9 +41,11 @@
 			<Item Name="LocalizableStrings.CasesSettingsButton_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.CloseButton_caption.Value" Value="Close" />
 			<Item Name="LocalizableStrings.ComboBox_268yz1f_placeholder.Value" Value="Select source" />
+			<Item Name="LocalizableStrings.ComboBox_339zy7h_placeholder.Value" Value="Select language" />
 			<Item Name="LocalizableStrings.ComboBox_3zub1m3_placeholder.Value" Value="Select channel" />
 			<Item Name="LocalizableStrings.ComboBox_8hzpzs3_label.Value" Value="Linked Creatio user" />
 			<Item Name="LocalizableStrings.ComboBox_qpgdsrf_label.Value" Value="Rol" />
+			<Item Name="LocalizableStrings.ComboBox_ywl2f3y_placeholder.Value" Value="Select language" />
 			<Item Name="LocalizableStrings.ContactSubscriptions_ExpansionPanel_title.Value" Value="Omnichannel subscriptions" />
 			<Item Name="LocalizableStrings.CustomerNeed_placeholder.Value" Value="Select customer need" />
 			<Item Name="LocalizableStrings.Department_placeholder.Value" Value="Select department" />
@@ -186,8 +188,10 @@
 			<Item Name="LocalizableStrings.WebSessionSearchFilter_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.WebSessionSettingsButton_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.addRecord_0rz6p78_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_24kdz1b_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_2lrvn2r_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_dl5wfrs_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_ecagj7b_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_hq33amx_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_mvth9pz_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_zy76tmv_caption.Value" Value="Add new" />

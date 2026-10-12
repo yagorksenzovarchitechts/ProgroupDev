@@ -252,6 +252,41 @@
   "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
++ MetaData.Schema.B2 {
+  "UId": "985c57f6-7579-5178-21fc-1c3214e195bf",
+  "A2": "ComboBox_ywl2f3y_placeholder",
+  "A3": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "165217b1-5d60-7382-9c1d-bcbac0fccddd",
+  "A2": "ComboBox_339zy7h_placeholder",
+  "A3": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "c835b6ff-66cd-a9f9-fd63-674dd5641faa",
+  "A2": "ComboBox_339zy7h_tooltip",
+  "A3": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "149b61bb-a302-3832-3d10-f1d26331bece",
+  "A2": "addRecord_24kdz1b_caption",
+  "A3": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "b922eefe-cb35-97fd-e8b9-58b09d8404cd",
+  "A2": "addRecord_ecagj7b_caption",
+  "A3": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A4": "92a467e8-f4d2-4b50-8a74-2e355e7660ad",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
 = MetaData.Schema.B2.["d3fd3a93-b51b-b1bd-efe0-a616ae32d0ad"].A4 "92a467e8-f4d2-4b50-8a74-2e355e7660ad"
 = MetaData.Schema.B2.["d3fd3a93-b51b-b1bd-efe0-a616ae32d0ad"].A5 "4c8480e9-b309-46f3-8fe9-5c9d6242d702"
 = MetaData.Schema.B2.["5fb585bc-830f-3a83-a0be-a14f14f4a5a5"].A4 "92a467e8-f4d2-4b50-8a74-2e355e7660ad"
@@ -685,6 +720,11 @@
   "5667029f-18e0-46ff-b25d-fba69824e7b8",
   "1d42873f-98e9-416e-9c47-a5862321e3d0",
   "05db01d4-9723-6b21-a5e4-4f70f20d8aa9",
+  "985c57f6-7579-5178-21fc-1c3214e195bf",
+  "165217b1-5d60-7382-9c1d-bcbac0fccddd",
+  "c835b6ff-66cd-a9f9-fd63-674dd5641faa",
+  "149b61bb-a302-3832-3d10-f1d26331bece",
+  "b922eefe-cb35-97fd-e8b9-58b09d8404cd",
   "d3fd3a93-b51b-b1bd-efe0-a616ae32d0ad",
   "5fb585bc-830f-3a83-a0be-a14f14f4a5a5",
   "d87a373f-ea55-0a78-5306-84322f550458",
