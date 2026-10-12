@@ -11068,7 +11068,15 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 									"name": "GridDetailSearchFilter_syvzmdk_GridDetail_zdc8ik1",
 									"loadOnChange": true
 								}
-							]
+							],
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "desc",
+										"columnName": "PgrContact"
+									}
+								]
+							}
 						},
 						"viewModelConfig": {
 							"attributes": {
