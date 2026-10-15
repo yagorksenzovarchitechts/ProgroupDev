@@ -105,6 +105,10 @@
 			<Item Name="LocalizableStrings.GridDetail_fwd4w3aDS_Name.Value" Value="Account name" />
 			<Item Name="LocalizableStrings.GridDetail_nzg1cklDS_PgrOpportunityStartDate.Value" Value="Start date" />
 			<Item Name="LocalizableStrings.GridDetail_nzg1cklDS_Title.Value" Value="Project" />
+			<Item Name="LocalizableStrings.GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_13laq06.Value" Value="Bonus for highest threshold" />
+			<Item Name="LocalizableStrings.GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_5gskgu7.Value" Value="Bonus for first threshold" />
+			<Item Name="LocalizableStrings.GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_ktxeonu.Value" Value="First entry threshold" />
+			<Item Name="LocalizableStrings.GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_v29ndqr.Value" Value="Highest threshold" />
 			<Item Name="LocalizableStrings.HowTheyMakeMoney_placeholder.Value" Value="Enter how the company generates revenue" />
 			<Item Name="LocalizableStrings.IndicatorWidget_0l0eyvd_config_text_template.Value" Value="{0} tqsm (per day)" />
 			<Item Name="LocalizableStrings.IndicatorWidget_0l0eyvd_hint.Value" Value="Components.IndicatorWidget.Hint" />

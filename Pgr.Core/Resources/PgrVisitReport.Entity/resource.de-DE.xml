@@ -6,6 +6,7 @@
 			<Item Name="Columns.PgrAccount.Caption" Value="Kunde&#xA;&#xA;Kunde&#xA;&#xA;&#xA;Kunde&#xA;&#xA;Kunde" />
 			<Item Name="Columns.PgrCompetition.Caption" Value="Wettbewerb" />
 			<Item Name="Columns.PgrCompetitionText.Caption" Value="Freitext Wettbewerb" />
+			<Item Name="Columns.PgrDateAccountMetricUpdated.Caption" Value="Letzte Aktualisierung" />
 			<Item Name="Columns.PgrDeliveryShare.Caption" Value="PG Lieferanteil" />
 			<Item Name="Columns.PgrIsRelevantForWeeklyReport.Caption" Value="&#xA;Relevant für Wochenbericht&#xA;&#xA;&#xA;Relevant für Wochenbericht&#xA;&#xA;Relevant für Wochenbericht" />
 			<Item Name="Columns.PgrKeyTopics.Caption" Value="Kernthemen" />

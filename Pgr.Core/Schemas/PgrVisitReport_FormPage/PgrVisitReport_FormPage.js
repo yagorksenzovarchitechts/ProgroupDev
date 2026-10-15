@@ -877,7 +877,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					"title": "#ResourceString(ExpansionPanel_0df7qhy_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": true,
+					"expanded": false,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -1595,6 +1595,24 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 				"parentName": "FlexContainer_rg696p6",
 				"propertyName": "items",
 				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "DateTimePicker_1ykutfv",
+				"values": {
+					"type": "crt.DateTimePicker",
+					"label": "$Resources.Strings.PDS_PgrDateAccountMetricUpdated_mo9kjno",
+					"placeholder": "",
+					"readonly": true,
+					"labelPosition": "auto",
+					"tooltip": "",
+					"pickerType": "date",
+					"control": "$PDS_PgrDateAccountMetricUpdated_mo9kjno",
+					"visible": true
+				},
+				"parentName": "FlexContainer_rg696p6",
+				"propertyName": "items",
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -3233,6 +3251,11 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 							"isEnabled": true,
 							"filterType": 6,
 							"rootSchemaName": "PgrContactsInVisitReport"
+						}
+					},
+					"PDS_PgrDateAccountMetricUpdated_mo9kjno": {
+						"modelConfig": {
+							"path": "PDS.PgrDateAccountMetricUpdated"
 						}
 					}
 				}

@@ -5708,16 +5708,34 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"dataValueType": 27
 						},
 						{
-							"id": "1dc20b9a-d91e-c29c-d553-5f68cfd409b8",
+							"id": "35ab6eb9-6d76-0104-3947-b8c1ba9b96e2",
 							"code": "GridDetail_tziba2dDS_PgrBonusType",
 							"caption": "#ResourceString(GridDetail_tziba2dDS_PgrBonusType)#",
-							"dataValueType": 27
+							"dataValueType": 10
 						},
 						{
-							"id": "1f81ca24-20c1-f58c-63ce-15e301360ac8",
-							"code": "GridDetail_tziba2dDS_PgrBaseValueType",
-							"caption": "#ResourceString(GridDetail_tziba2dDS_PgrBaseValueType)#",
-							"dataValueType": 27
+							"id": "89c40522-6178-1963-4e28-66d5c1ee24bf",
+							"code": "GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_ktxeonu",
+							"caption": "#ResourceString(GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_ktxeonu)#",
+							"dataValueType": 33
+						},
+						{
+							"id": "62eb4d8f-b827-0a18-64bb-7742b0972a3c",
+							"code": "GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_5gskgu7",
+							"caption": "#ResourceString(GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_5gskgu7)#",
+							"dataValueType": 31
+						},
+						{
+							"id": "b4dd769b-dce7-1c7f-28ef-af69a9abf1df",
+							"code": "GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_v29ndqr",
+							"caption": "#ResourceString(GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_v29ndqr)#",
+							"dataValueType": 33
+						},
+						{
+							"id": "306c0c04-4c12-c928-2baf-9d0ba5ea162e",
+							"code": "GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_13laq06",
+							"caption": "#ResourceString(GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_13laq06)#",
+							"dataValueType": 31
 						},
 						{
 							"id": "0ef2902e-0ebb-0338-42f5-158b232e24ab",
@@ -10250,8 +10268,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"sortingConfig": {
 								"default": [
 									{
-										"direction": "desc",
-										"columnName": "PgrStartDate"
+										"direction": "asc",
+										"columnName": "PgrBonusThresholdPgrBonus_PgrTierThreshold_ktxeonu"
 									}
 								]
 							}
@@ -10268,9 +10286,24 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 										"path": "GridDetail_tziba2dDS.PgrBonusType"
 									}
 								},
-								"GridDetail_tziba2dDS_PgrBaseValueType": {
+								"GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_ktxeonu": {
 									"modelConfig": {
-										"path": "GridDetail_tziba2dDS.PgrBaseValueType"
+										"path": "GridDetail_tziba2dDS.PgrBonusThresholdPgrBonus_PgrTierThreshold_ktxeonu"
+									}
+								},
+								"GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_5gskgu7": {
+									"modelConfig": {
+										"path": "GridDetail_tziba2dDS.PgrBonusThresholdPgrBonus_PgrBonusPercentage_5gskgu7"
+									}
+								},
+								"GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_v29ndqr": {
+									"modelConfig": {
+										"path": "GridDetail_tziba2dDS.PgrBonusThresholdPgrBonus_PgrTierThreshold_v29ndqr"
+									}
+								},
+								"GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_13laq06": {
+									"modelConfig": {
+										"path": "GridDetail_tziba2dDS.PgrBonusThresholdPgrBonus_PgrBonusPercentage_13laq06"
 									}
 								},
 								"GridDetail_tziba2dDS_PgrStartDate": {
@@ -11623,8 +11656,33 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								"PgrBonusType": {
 									"path": "PgrBonusType"
 								},
-								"PgrBaseValueType": {
-									"path": "PgrBaseValueType"
+								"PgrBonusThresholdPgrBonus_PgrTierThreshold_ktxeonu": {
+									"type": "Aggregation",
+									"path": "[PgrBonusThreshold:PgrBonus].PgrTierThreshold",
+									"aggregationConfig": {
+										"aggregationFunction": "Min"
+									}
+								},
+								"PgrBonusThresholdPgrBonus_PgrBonusPercentage_5gskgu7": {
+									"type": "Aggregation",
+									"path": "[PgrBonusThreshold:PgrBonus].PgrBonusPercentage",
+									"aggregationConfig": {
+										"aggregationFunction": "Min"
+									}
+								},
+								"PgrBonusThresholdPgrBonus_PgrTierThreshold_v29ndqr": {
+									"type": "Aggregation",
+									"path": "[PgrBonusThreshold:PgrBonus].PgrTierThreshold",
+									"aggregationConfig": {
+										"aggregationFunction": "Max"
+									}
+								},
+								"PgrBonusThresholdPgrBonus_PgrBonusPercentage_13laq06": {
+									"type": "Aggregation",
+									"path": "[PgrBonusThreshold:PgrBonus].PgrBonusPercentage",
+									"aggregationConfig": {
+										"aggregationFunction": "Max"
+									}
 								},
 								"PgrStartDate": {
 									"path": "PgrStartDate"

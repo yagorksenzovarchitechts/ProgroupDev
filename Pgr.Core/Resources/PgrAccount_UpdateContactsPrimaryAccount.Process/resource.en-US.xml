@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.EndPrimaryAccountsUpdated.Caption" Value="Primary accounts updated" />
+			<Item Name="BaseElements.ReadContactsInAccount.Caption" Value="Read contacts in account" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.AggregationColumnName.Caption" Value="Name of aggregate function column" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.CanReadUncommitedData.Caption" Value="Read uncommitted data" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.DataSourceFilters.Caption" Value="Data source of filters" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.EntityColumnMetaPathes.Caption" Value="Columns to read" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.FunctionType.Caption" Value="Aggregate function type" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.IgnoreDisplayValues.Caption" Value="Do not read displayed values of lookup columns" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.NumberOfRecords.Caption" Value="Number of records to read" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.OrderInfo.Caption" Value="Columns order" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.ReadSomeTopRecords.Caption" Value="Read first" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.ResultCompositeObjectList.Caption" Value="Collection of records" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.ResultCompositeObjectList.Id.Caption" Value="Id" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.ResultCount.Caption" Value="Number of records" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.ResultDateTimeFunction.Caption" Value="Function result (Date/Time)" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.ResultEntity.Caption" Value="First item of resulting collection" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.ResultEntityCollection.Caption" Value="Resulting collection" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.ResultFloatFunction.Caption" Value="Function result (Decimal)" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.ResultIntegerFunction.Caption" Value="Function result (Integer)" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
+			<Item Name="BaseElements.ReadContactsInAccount.Parameters.ResultType.Caption" Value="Type of result" />
+			<Item Name="BaseElements.RecalculationRequestedStart.Caption" Value="Recalculation requested" />
+			<Item Name="BaseElements.UpdatePrimaryAccountOfContact.Caption" Value="Update primary account of contact" />
+			<Item Name="BaseElements.UpdatePrimaryAccountOfContact.Parameters.CompletedIterationsCount.Caption" Value="Number of completed instances" />
+			<Item Name="BaseElements.UpdatePrimaryAccountOfContact.Parameters.InputRecordCollection.Caption" Value="Input record collection" />
+			<Item Name="BaseElements.UpdatePrimaryAccountOfContact.Parameters.InputRecordCollection.ContactParameter.Caption" Value="Contact" />
+			<Item Name="BaseElements.UpdatePrimaryAccountOfContact.Parameters.InputRecordCollection.ContactParameter.DisplayValue" Value="[#Read contacts in account.Collection of records:Id#]" />
+			<Item Name="BaseElements.UpdatePrimaryAccountOfContact.Parameters.InputRecordCollection.DisplayValue" Value="[#Read contacts in account.Collection of records#]" />
+			<Item Name="BaseElements.UpdatePrimaryAccountOfContact.Parameters.OutputRecordCollection.Caption" Value="Output record collection" />
+			<Item Name="BaseElements.UpdatePrimaryAccountOfContact.Parameters.TerminatedIterationsCount.Caption" Value="Number of terminated instances" />
+			<Item Name="BaseElements.UpdatePrimaryAccountOfContact.Parameters.TotalIterationsCount.Caption" Value="Total number of instances" />
+			<Item Name="Caption" Value="Update All Contacts Primary account (Parent)" />
+			<Item Name="NotificationCaption.DisplayValue" Value="[#[PropertyValue:Caption]#]" />
+			<Item Name="Parameters.AccountId.Caption" Value="Account" />
+		</Items>
+	</Group>
+</Resources>
