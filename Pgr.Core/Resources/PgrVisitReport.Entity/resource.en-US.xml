@@ -9,6 +9,7 @@
 			<Item Name="Columns.PgrCommercialTopicComment.Caption" Value="Commercial &amp; Prices (comment)" />
 			<Item Name="Columns.PgrCompetition.Caption" Value="Competition" />
 			<Item Name="Columns.PgrCompetitionText.Caption" Value="Competition remarks" />
+			<Item Name="Columns.PgrDateAccountMetricUpdated.Caption" Value="Last update" />
 			<Item Name="Columns.PgrDeliveryShare.Caption" Value="Progroup delivery share (auto)" />
 			<Item Name="Columns.PgrIsRelevantForWeeklyReport.Caption" Value="Relevant for weekly report" />
 			<Item Name="Columns.PgrKeyTopics.Caption" Value="Key topics" />

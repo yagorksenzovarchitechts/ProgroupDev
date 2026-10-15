@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Common.Logging;
 using Terrasoft.Core;
@@ -23,6 +24,7 @@ namespace Pgr.Core.EntryPoints.EntityEventListeners {
 			var entity = (Entity)sender;
 			SyncAccountTypesText(entity);
 			SyncAccountTypeFlags(entity);
+			RecalculateContactPrimaryAccounts(entity);
 		}
 
 		public override void OnDeleted(object sender, EntityAfterEventArgs e) {
@@ -30,6 +32,27 @@ namespace Pgr.Core.EntryPoints.EntityEventListeners {
 			var entity = (Entity)sender;
 			SyncAccountTypesText(entity);
 			SyncAccountTypeFlags(entity);
+			RecalculateContactPrimaryAccounts(entity);
+		}
+
+		/// <summary>
+		///     Account types decide which Contacts in Accounts link becomes the contact's Primary account
+		///     (Group first), so a type being added or removed re-runs that choice for the contacts of
+		///     this account. The deleted row is gone by the time a process signal could run, which is
+		///     why this is started from here and not from a record signal.
+		/// </summary>
+		private void RecalculateContactPrimaryAccounts(Entity entity) {
+			Guid accountId = entity.GetTypedColumnValue<Guid>("PgrAccountId");
+			if (accountId == Guid.Empty) {
+				return;
+			}
+			try {
+				entity.UserConnection.ProcessEngine.ProcessExecutor.Execute(
+					"PgrAccount_UpdateContactsPrimaryAccount",
+					new Dictionary<string, string> { { "AccountId", accountId.ToString() } });
+			} catch (Exception ex) {
+				_log.Error($"Failed to start primary account recalculation for Account {accountId}", ex);
+			}
 		}
 
 		private void SyncAccountTypesText(Entity entity) {

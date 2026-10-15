@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.ConditionalFlow_ReadGroupAccountOfContact_SetPrimaryAccountToGroupAccount.Caption" Value="Group account found" />
+			<Item Name="BaseElements.ContactInAccountAddedSignal.Caption" Value="Contact in account is added" />
+			<Item Name="BaseElements.ContactInAccountChangedSignal.Caption" Value="Contact in account is changed" />
+			<Item Name="BaseElements.EndPrimaryAccountUpdated.Caption" Value="Primary account updated" />
+			<Item Name="BaseElements.ReadContactInAccount.Caption" Value="Read contact in account" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.AggregationColumnName.Caption" Value="Name of aggregate function column" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.CanReadUncommitedData.Caption" Value="Read uncommitted data" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.DataSourceFilters.Caption" Value="Data source of filters" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.EntityColumnMetaPathes.Caption" Value="Columns to read" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.FunctionType.Caption" Value="Aggregate function type" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.IgnoreDisplayValues.Caption" Value="Do not read displayed values of lookup columns" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.NumberOfRecords.Caption" Value="Number of records to read" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.OrderInfo.Caption" Value="Columns order" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ReadSomeTopRecords.Caption" Value="Read first" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultCompositeObjectList.Caption" Value="Collection of records" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultCount.Caption" Value="Number of records" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultDateTimeFunction.Caption" Value="Function result (Date/Time)" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultEntity.Caption" Value="First item of resulting collection" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultEntityCollection.Caption" Value="Resulting collection" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultFloatFunction.Caption" Value="Function result (Decimal)" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultIntegerFunction.Caption" Value="Function result (Integer)" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultType.Caption" Value="Type of result" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Caption" Value="Read group account of contact" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.AggregationColumnName.Caption" Value="Name of aggregate function column" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.CanReadUncommitedData.Caption" Value="Read uncommitted data" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.DataSourceFilters.Caption" Value="Data source of filters" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.EntityColumnMetaPathes.Caption" Value="Columns to read" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.FunctionType.Caption" Value="Aggregate function type" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.IgnoreDisplayValues.Caption" Value="Do not read displayed values of lookup columns" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.NumberOfRecords.Caption" Value="Number of records to read" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.OrderInfo.Caption" Value="Columns order" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ReadSomeTopRecords.Caption" Value="Read first" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultCompositeObjectList.Caption" Value="Collection of records" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultCount.Caption" Value="Number of records" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultDateTimeFunction.Caption" Value="Function result (Date/Time)" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultEntity.Caption" Value="First item of resulting collection" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultEntityCollection.Caption" Value="Resulting collection" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultFloatFunction.Caption" Value="Function result (Decimal)" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultIntegerFunction.Caption" Value="Function result (Integer)" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultType.Caption" Value="Type of result" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Caption" Value="Read latest account of contact" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.AggregationColumnName.Caption" Value="Name of aggregate function column" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.CanReadUncommitedData.Caption" Value="Read uncommitted data" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.DataSourceFilters.Caption" Value="Data source of filters" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.EntityColumnMetaPathes.Caption" Value="Columns to read" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.FunctionType.Caption" Value="Aggregate function type" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.IgnoreDisplayValues.Caption" Value="Do not read displayed values of lookup columns" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.NumberOfRecords.Caption" Value="Number of records to read" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.OrderInfo.Caption" Value="Columns order" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ReadSomeTopRecords.Caption" Value="Read first" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultCompositeObjectList.Caption" Value="Collection of records" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultCount.Caption" Value="Number of records" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultDateTimeFunction.Caption" Value="Function result (Date/Time)" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultEntity.Caption" Value="First item of resulting collection" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultEntityCollection.Caption" Value="Resulting collection" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultFloatFunction.Caption" Value="Function result (Decimal)" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultIntegerFunction.Caption" Value="Function result (Integer)" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultType.Caption" Value="Type of result" />
+			<Item Name="BaseElements.SetPrimaryAccountToGroupAccount.Caption" Value="Set primary account to group account" />
+			<Item Name="BaseElements.SetPrimaryAccountToGroupAccount.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.SetPrimaryAccountToGroupAccount.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.SetPrimaryAccountToGroupAccount.Parameters.DataSourceFilters.Caption" Value="Data source filters" />
+			<Item Name="BaseElements.SetPrimaryAccountToGroupAccount.Parameters.EntitySchemaUId.Caption" Value="Object" />
+			<Item Name="BaseElements.SetPrimaryAccountToGroupAccount.Parameters.IgnoreErrors.Caption" Value="Continue execution on errors" />
+			<Item Name="BaseElements.SetPrimaryAccountToGroupAccount.Parameters.IsMatchConditions.Caption" Value="If object meets the following conditions" />
+			<Item Name="BaseElements.SetPrimaryAccountToGroupAccount.Parameters.RecordColumnValues.Caption" Value="Set column values" />
+			<Item Name="BaseElements.SetPrimaryAccountToLatestAccount.Caption" Value="Set primary account to latest account" />
+			<Item Name="BaseElements.SetPrimaryAccountToLatestAccount.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.SetPrimaryAccountToLatestAccount.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.SetPrimaryAccountToLatestAccount.Parameters.DataSourceFilters.Caption" Value="Data source filters" />
+			<Item Name="BaseElements.SetPrimaryAccountToLatestAccount.Parameters.EntitySchemaUId.Caption" Value="Object" />
+			<Item Name="BaseElements.SetPrimaryAccountToLatestAccount.Parameters.IgnoreErrors.Caption" Value="Continue execution on errors" />
+			<Item Name="BaseElements.SetPrimaryAccountToLatestAccount.Parameters.IsMatchConditions.Caption" Value="If object meets the following conditions" />
+			<Item Name="BaseElements.SetPrimaryAccountToLatestAccount.Parameters.RecordColumnValues.Caption" Value="Set column values" />
+			<Item Name="Caption" Value="Update contact primary account" />
+		</Items>
+	</Group>
+</Resources>
