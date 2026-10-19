@@ -1385,7 +1385,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 					"title": "#ResourceString(ExpansionPanel_m66prs5_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": false,
+					"expanded": true,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -1584,11 +1584,25 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 							"width": 109
 						},
 						{
+							"id": "25eaa34d-0dca-e74e-6169-cf3b6785cc66",
+							"code": "GridDetail_crlfqp1DS_PgrQualityTopicComment",
+							"caption": "#ResourceString(GridDetail_crlfqp1DS_PgrQualityTopicComment)#",
+							"dataValueType": 43,
+							"width": 177
+						},
+						{
 							"id": "aa745351-477b-99db-ad04-486a3de99bb9",
 							"code": "GridDetail_crlfqp1DS_PgrTopicServiceDelivery",
 							"caption": "#ResourceString(GridDetail_crlfqp1DS_PgrTopicServiceDelivery)#",
 							"dataValueType": 12,
 							"width": 172
+						},
+						{
+							"id": "e0367080-0f89-5f14-71e5-f75751ca6122",
+							"code": "GridDetail_crlfqp1DS_PgrServiceTopicComment",
+							"caption": "#ResourceString(GridDetail_crlfqp1DS_PgrServiceTopicComment)#",
+							"dataValueType": 43,
+							"width": 245
 						},
 						{
 							"id": "fdb82f5c-10cd-c1a3-2d79-f12da8de3d0b",
@@ -1598,18 +1612,32 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 							"width": 190
 						},
 						{
+							"id": "8d8bf8f2-cfa6-a3ef-57ec-e0a283e4693f",
+							"code": "GridDetail_crlfqp1DS_PgrCommercialTopicComment",
+							"caption": "#ResourceString(GridDetail_crlfqp1DS_PgrCommercialTopicComment)#",
+							"dataValueType": 43,
+							"width": 265
+						},
+						{
 							"id": "c270743d-9dbe-e11e-9b90-cf8215d1d9ca",
 							"code": "GridDetail_crlfqp1DS_PgrTopicProjectsOpportunities",
 							"caption": "#ResourceString(GridDetail_crlfqp1DS_PgrTopicProjectsOpportunities)#",
 							"dataValueType": 12,
-							"width": 164
+							"width": 213
 						},
 						{
-							"id": "245fd19e-8304-3a96-bdba-b343c534a497",
+							"id": "d579f6fb-c830-cef7-6ee0-02a59cab8668",
+							"code": "GridDetail_crlfqp1DS_PgrProjectTopicComment",
+							"caption": "#ResourceString(GridDetail_crlfqp1DS_PgrProjectTopicComment)#",
+							"dataValueType": 43,
+							"width": 299
+						},
+						{
+							"id": "5c606f41-3f09-c2a1-4838-55c599f38822",
 							"code": "GridDetail_crlfqp1DS_PgrTopicSpecial",
 							"caption": "#ResourceString(GridDetail_crlfqp1DS_PgrTopicSpecial)#",
 							"dataValueType": 12,
-							"width": 154
+							"width": 174
 						},
 						{
 							"id": "7d13513c-3711-e93a-e17b-c96055abef8e",
@@ -1732,12 +1760,22 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 					],
 					"gap": {
 						"columnGap": "large",
-						"rowGap": 0
+						"rowGap": null
 					},
 					"styles": {
 						"overflow-x": "hidden"
 					},
-					"items": []
+					"items": [],
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
 				},
 				"parentName": "ExpansionPanel_7crmuco",
 				"propertyName": "items",
@@ -3013,9 +3051,19 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 										"path": "GridDetail_crlfqp1DS.PgrTopicQuality"
 									}
 								},
+								"GridDetail_crlfqp1DS_PgrQualityTopicComment": {
+									"modelConfig": {
+										"path": "GridDetail_crlfqp1DS.PgrQualityTopicComment"
+									}
+								},
 								"GridDetail_crlfqp1DS_PgrTopicServiceDelivery": {
 									"modelConfig": {
 										"path": "GridDetail_crlfqp1DS.PgrTopicServiceDelivery"
+									}
+								},
+								"GridDetail_crlfqp1DS_PgrServiceTopicComment": {
+									"modelConfig": {
+										"path": "GridDetail_crlfqp1DS.PgrServiceTopicComment"
 									}
 								},
 								"GridDetail_crlfqp1DS_PgrTopicCommercial": {
@@ -3023,9 +3071,19 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 										"path": "GridDetail_crlfqp1DS.PgrTopicCommercial"
 									}
 								},
+								"GridDetail_crlfqp1DS_PgrCommercialTopicComment": {
+									"modelConfig": {
+										"path": "GridDetail_crlfqp1DS.PgrCommercialTopicComment"
+									}
+								},
 								"GridDetail_crlfqp1DS_PgrTopicProjectsOpportunities": {
 									"modelConfig": {
 										"path": "GridDetail_crlfqp1DS.PgrTopicProjectsOpportunities"
+									}
+								},
+								"GridDetail_crlfqp1DS_PgrProjectTopicComment": {
+									"modelConfig": {
+										"path": "GridDetail_crlfqp1DS.PgrProjectTopicComment"
 									}
 								},
 								"GridDetail_crlfqp1DS_PgrTopicSpecial": {
@@ -3682,14 +3740,26 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 								"PgrTopicQuality": {
 									"path": "PgrTopicQuality"
 								},
+								"PgrQualityTopicComment": {
+									"path": "PgrQualityTopicComment"
+								},
 								"PgrTopicServiceDelivery": {
 									"path": "PgrTopicServiceDelivery"
+								},
+								"PgrServiceTopicComment": {
+									"path": "PgrServiceTopicComment"
 								},
 								"PgrTopicCommercial": {
 									"path": "PgrTopicCommercial"
 								},
+								"PgrCommercialTopicComment": {
+									"path": "PgrCommercialTopicComment"
+								},
 								"PgrTopicProjectsOpportunities": {
 									"path": "PgrTopicProjectsOpportunities"
+								},
+								"PgrProjectTopicComment": {
+									"path": "PgrProjectTopicComment"
 								},
 								"PgrTopicSpecial": {
 									"path": "PgrTopicSpecial"

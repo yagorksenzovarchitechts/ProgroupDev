@@ -2107,7 +2107,6 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**S
 					"filesStorage": {
 						"masterRecordColumnValue": "$Id",
 						"entitySchemaName": "SysFile",
-						"recordEntitySchemaName": null,
 						"recordColumnName": "RecordId"
 					},
 					"toolbarDisplayMode": null
