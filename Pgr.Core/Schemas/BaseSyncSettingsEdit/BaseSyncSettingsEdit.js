@@ -6,9 +6,11 @@
 		methods: {
 			setFiltersToServerListEsq: function(esq) {
 				this.callParent(arguments);
-				var filter = esq.createColumnFilterWithParameter(Terrasoft.ComparisonType.EQUAL,
-					"Id", ExchangeNUIConstants.MailServer.Office365);
-				esq.filters.add("PgrOnlyOffice365Filter", filter);
+				if (Terrasoft.Features.getIsEnabled("PgrOnlyOffice365MailServer")) {
+					var filter = esq.createColumnFilterWithParameter(Terrasoft.ComparisonType.EQUAL,
+						"Id", ExchangeNUIConstants.MailServer.Office365);
+					esq.filters.add("PgrOnlyOffice365Filter", filter);
+				}
 			}
 		}
 	};

@@ -474,28 +474,15 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_PgrPackagingParkCustomer1_kl4fb45"
+					"control": "$PDS_PgrPackagingParkCustomer1_kl4fb45",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"secondaryDisplayValue": "PgrWepaformName"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 5
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_xaflvy3",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_xaflvy3_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_bok3yc8",
-				"propertyName": "listActions",
-				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -539,28 +526,15 @@ define("PgrPlants_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_PgrPackagingParkCustomer2_j0p4ms4"
+					"control": "$PDS_PgrPackagingParkCustomer2_j0p4ms4",
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"secondaryDisplayValue": "PgrWepaformName"
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 7
-			},
-			{
-				"operation": "insert",
-				"name": "addRecord_alr2672",
-				"values": {
-					"code": "addRecord",
-					"type": "crt.ComboboxSearchTextAction",
-					"icon": "combobox-add-new",
-					"caption": "#ResourceString(addRecord_alr2672_caption)#",
-					"clicked": {
-						"request": "crt.CreateRecordFromLookupRequest",
-						"params": {}
-					}
-				},
-				"parentName": "ComboBox_a00zb9w",
-				"propertyName": "listActions",
-				"index": 0
 			},
 			{
 				"operation": "insert",

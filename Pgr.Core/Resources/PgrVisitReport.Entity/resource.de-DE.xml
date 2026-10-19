@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Caption" Value="Visit report" />
 			<Item Name="Columns.PgrAccount.Caption" Value="Kunde&#xA;&#xA;Kunde&#xA;&#xA;&#xA;Kunde&#xA;&#xA;Kunde" />
+			<Item Name="Columns.PgrCommercialTopicComment.Caption" Value="Kommerziell &amp; Preise (kommentar)" />
 			<Item Name="Columns.PgrCompetition.Caption" Value="Wettbewerb" />
 			<Item Name="Columns.PgrCompetitionText.Caption" Value="Freitext Wettbewerb" />
 			<Item Name="Columns.PgrDateAccountMetricUpdated.Caption" Value="Letzte Aktualisierung" />

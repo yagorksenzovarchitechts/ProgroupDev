@@ -2,7 +2,6 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
-			<Item Name="LocalizableStrings.Button_978ivs9_caption.Value" Value="Create task" />
 			<Item Name="LocalizableStrings.ChartWidget_l52twdo_series_0.Value" Value="Budget [tsqm/wd]" />
 			<Item Name="LocalizableStrings.ChartWidget_l52twdo_series_1.Value" Value="Actual [tsqm/wd]" />
 			<Item Name="LocalizableStrings.ChartWidget_l52twdo_title.Value" Value="Top Customers by Budget (last day)" />
@@ -27,9 +26,11 @@
 			<Item Name="LocalizableStrings.IndicatorWidget_jzvgr6l_title_avgpct.Value" Value="Avg Deviation % of Budget" />
 			<Item Name="LocalizableStrings.IndicatorWidget_jzvgr6l_title_pct.Value" Value="Deviation % of Budget" />
 			<Item Name="LocalizableStrings.IndicatorWidget_jzvgr6l_title_ratio.Value" Value="Deviation % of Budget" />
+			<Item Name="LocalizableStrings.Label_84to7pp_caption.Value" Value="Filters:" />
 			<Item Name="LocalizableStrings.Label_gjt8g2n_caption.Value" Value="My 3-6-9 tasks" />
 			<Item Name="LocalizableStrings.Label_gy2c3xl_caption.Value" Value="My tasks" />
 			<Item Name="LocalizableStrings.Label_ievcl1k_caption.Value" Value="Started" />
+			<Item Name="LocalizableStrings.Label_owap1a6_caption.Value" Value="Filters:" />
 			<Item Name="LocalizableStrings.Label_rt9u18e_caption.Value" Value="All tasks" />
 			<Item Name="LocalizableStrings.Label_u2ka648_caption.Value" Value="All planned visits" />
 			<Item Name="LocalizableStrings.Label_xibhisv_caption.Value" Value="Tasks due in the next 2 days" />

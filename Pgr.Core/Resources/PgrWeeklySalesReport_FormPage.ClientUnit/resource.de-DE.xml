@@ -10,6 +10,14 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_fvqh9lp_title.Value" Value="geplante Besuche (nächste Woche)" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ihwyode_title.Value" Value="offene Maßnahmen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_m66prs5_title.Value" Value="zugehörige Besuchsberichte" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrCommercialTopicComment.Value" Value="Kommerziell &amp; Preise (kommentar)" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrKeyTopics.Value" Value="Sonderthemen (kommentar)" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrProjectTopicComment.Value" Value="Projekte &amp; Verkaufschancen (kommentar)" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrQualityTopicComment.Value" Value="Qualität (kommentar)" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrTopicCommercial.Value" Value="Kommerziell &amp; Preise" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrTopicProjectsOpportunities.Value" Value="Projekte &amp; Verkaufschancen" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrTopicQuality.Value" Value="Qualität" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrTopicSpecial.Value" Value="Sonderthemen" />
 			<Item Name="LocalizableStrings.IndicatorWidget_626yo4g_title.Value" Value="AE [TQM/AT]" />
 			<Item Name="LocalizableStrings.IndicatorWidget_har31n7_title.Value" Value="Anz. Auswahl Qualität" />
 			<Item Name="LocalizableStrings.IndicatorWidget_jvd5tfw_title.Value" Value="9-TageØ OI [TQM Ø 9 Tage}" />

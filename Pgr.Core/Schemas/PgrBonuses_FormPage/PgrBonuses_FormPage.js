@@ -915,11 +915,11 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"sticky": true
 						},
 						{
-							"id": "741004a2-2a17-972b-0581-af95634cd07c",
+							"id": "1f308020-97d4-5f90-523c-1292d1d4ae92",
 							"code": "GridDetail_gyzdejbDS_PgrBonusPercentage",
 							"caption": "#ResourceString(GridDetail_gyzdejbDS_PgrBonusPercentage)#",
-							"dataValueType": 31,
-							"width": 320
+							"dataValueType": 32,
+							"width": 285
 						},
 						{
 							"id": "7e8bb51b-b70c-a014-5942-0b4b5c4165f2",
@@ -1476,7 +1476,15 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 									"name": "BonusSearchFilter_GridDetail_gyzdejb",
 									"loadOnChange": true
 								}
-							]
+							],
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "desc",
+										"columnName": "PgrBonus"
+									}
+								]
+							}
 						},
 						"viewModelConfig": {
 							"attributes": {

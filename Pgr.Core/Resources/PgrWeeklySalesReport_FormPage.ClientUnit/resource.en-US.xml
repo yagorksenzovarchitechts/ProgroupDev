@@ -24,6 +24,14 @@
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_9jn4v4f_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_hf5ya0h_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrAccount.Value" Value="Customer" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrCommercialTopicComment.Value" Value="Commercial &amp; Prices (comment)" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrKeyTopics.Value" Value="Special topics (comment)" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrProjectTopicComment.Value" Value="Projects &amp; Opportunities (comment)" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrQualityTopicComment.Value" Value="Quality (comment)" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrTopicCommercial.Value" Value="Commercial &amp; Prices" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrTopicProjectsOpportunities.Value" Value="Projects &amp; Opportunities" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrTopicQuality.Value" Value="Quality" />
+			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrTopicSpecial.Value" Value="Special topics" />
 			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrVisitDidNotTakePlace.Value" Value="No visit" />
 			<Item Name="LocalizableStrings.GridDetail_zcqdktnDS_PgrAccount.Value" Value="Customer" />
 			<Item Name="LocalizableStrings.GridDetail_zcqdktnDS_PgrAccount_PgrVwAccountMetricSnapshotPgrAccount_PgrBudgetValue_oapmttf.Value" Value="Budget value Sum of values" />

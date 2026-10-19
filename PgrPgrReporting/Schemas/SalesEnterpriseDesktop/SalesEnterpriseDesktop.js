@@ -168,6 +168,1870 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 			},
 			{
 				"operation": "insert",
+				"name": "FlexContainer_d6smrj9",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true
+				},
+				"parentName": "FlexContainer_71jzh1x",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_o5jsxbx",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "small",
+						"right": "medium",
+						"bottom": "small",
+						"left": "medium"
+					},
+					"color": "#EFEFEF",
+					"borderRadius": "none",
+					"alignItems": "center",
+					"justifyContent": "start",
+					"gap": "small"
+				},
+				"parentName": "GridContainer_jpbvrp2",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Label_owap1a6",
+				"values": {
+					"type": "crt.Label",
+					"caption": "#MacrosTemplateString(#ResourceString(Label_owap1a6_caption)#)#",
+					"labelType": "headline-4",
+					"labelThickness": "default",
+					"labelEllipsis": false,
+					"labelColor": "auto",
+					"labelBackgroundColor": "transparent",
+					"labelTextAlign": "start",
+					"headingLevel": "label",
+					"visible": true
+				},
+				"parentName": "FlexContainer_o5jsxbx",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_Territory",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_Territory_config_caption)#",
+						"hint": "",
+						"icon": "webcheck-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": [],
+						"entitySchemaName": "Territory",
+						"recordsFilter": {
+							"items": {
+								"ee0ab67e-12da-4e17-a952-302decfe8f69": {
+									"filterType": 1,
+									"comparisonType": 7,
+									"isEnabled": true,
+									"trimDateTimeParameterToDate": false,
+									"leftExpression": {
+										"expressionType": 3,
+										"functionType": 2,
+										"aggregationType": 1,
+										"columnPath": "[Account:Territory].Id",
+										"subFilters": {
+											"items": {},
+											"logicalOperation": 0,
+											"isEnabled": true,
+											"filterType": 6,
+											"rootSchemaName": "Account",
+											"key": "02461689-eb42-4b94-b988-2ae2d2dc1cd3"
+										}
+									},
+									"isAggregative": true,
+									"dataValueType": 4,
+									"rightExpression": {
+										"expressionType": 2,
+										"parameter": {
+											"dataValueType": 4,
+											"value": 0
+										}
+									},
+									"subFilters": {
+										"items": {},
+										"logicalOperation": 0,
+										"isEnabled": true,
+										"filterType": 6,
+										"rootSchemaName": "Account",
+										"key": "02461689-eb42-4b94-b988-2ae2d2dc1cd3"
+									}
+								}
+							},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "Territory"
+						},
+						"defaultValueListSorting": null
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
+													"filterColumn": "PgrTerritory"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_Territory_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
+													"filterColumn": "PgrTerritory"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_BudgetSeries",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_BudgetSeries",
+													"filterColumn": "PgrTerritory"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_Territory_IndicatorWidget_fa2aur9_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_fa2aur9_Data",
+													"filterColumn": "Territory"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_Territory_IndicatorWidget_1i78h71_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_1i78h71_Data",
+													"filterColumn": "PgrAccount.Territory"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_Territory_IndicatorWidget_h8gyel3_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_h8gyel3_Data",
+													"filterColumn": "PgrAccount.Territory"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+{
+ "attribute": "QuickFilter_Territory_jzvgr6l_DevAgg",
+ "converters": [
+  {
+   "converter": "crt.QuickFilterAttributeConverter",
+   "args": [
+    {
+     "target": {
+      "viewAttributeName": "VariableConfig_fea45d45_46b0_41db_bcfe_135db708af29",
+      "filterColumn": "PgrAccount.Territory"
+     },
+     "quickFilterType": "lookup"
+    }
+   ]
+  }
+ ]
+},
+{
+ "attribute": "QuickFilter_Territory_jzvgr6l_BudAgg",
+ "converters": [
+  {
+   "converter": "crt.QuickFilterAttributeConverter",
+   "args": [
+    {
+     "target": {
+      "viewAttributeName": "VariableConfig_35aacb0a_3458_4997_9122_7dd866dab3ab",
+      "filterColumn": "PgrAccount.Territory"
+     },
+     "quickFilterType": "lookup"
+    }
+   ]
+  }
+ ]
+}
+
+						],
+						"from": "QuickFilter_Territory_Value"
+					},
+					"filterType": "lookup",
+					"visible": true
+				},
+				"parentName": "FlexContainer_o5jsxbx",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_SalesManager",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_SalesManager_config_caption)#",
+						"hint": "",
+						"icon": "consultation-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": [
+							{
+								"value": "[#currentUserContact#]",
+								"checkedState": true
+							}
+						],
+						"entitySchemaName": "Contact",
+						"recordsFilter": {
+							"items": {
+								"1314df73-f284-4a82-b61e-1437ef4da463": {
+									"filterType": 1,
+									"comparisonType": 7,
+									"isEnabled": true,
+									"trimDateTimeParameterToDate": false,
+									"leftExpression": {
+										"expressionType": 3,
+										"functionType": 2,
+										"aggregationType": 1,
+										"columnPath": "[Account:PgrSalesManager].Id",
+										"subFilters": {
+											"items": {},
+											"logicalOperation": 0,
+											"isEnabled": true,
+											"filterType": 6,
+											"rootSchemaName": "Account",
+											"key": "50103af5-e3f9-4f96-ba02-7f722b417e08"
+										}
+									},
+									"isAggregative": true,
+									"dataValueType": 4,
+									"rightExpression": {
+										"expressionType": 2,
+										"parameter": {
+											"dataValueType": 4,
+											"value": 0
+										}
+									},
+									"subFilters": {
+										"items": {},
+										"logicalOperation": 0,
+										"isEnabled": true,
+										"filterType": 6,
+										"rootSchemaName": "Account",
+										"key": "50103af5-e3f9-4f96-ba02-7f722b417e08"
+									}
+								}
+							},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "Contact"
+						},
+						"defaultValueListSorting": null
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_SalesManager_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
+													"filterColumn": "PgrAccount.PgrSalesManager"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
+													"filterColumn": "PgrAccount.PgrSalesManager"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_BudgetSeries",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_BudgetSeries",
+													"filterColumn": "PgrAccount.PgrSalesManager"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesManager_IndicatorWidget_fa2aur9_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_fa2aur9_Data",
+													"filterColumn": "PgrSalesManager"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesManager_IndicatorWidget_1i78h71_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_1i78h71_Data",
+													"filterColumn": "PgrAccount.PgrSalesManager"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesManager_IndicatorWidget_h8gyel3_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_h8gyel3_Data",
+													"filterColumn": "PgrAccount.PgrSalesManager"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+{
+ "attribute": "QuickFilter_SalesManager_jzvgr6l_DevAgg",
+ "converters": [
+  {
+   "converter": "crt.QuickFilterAttributeConverter",
+   "args": [
+    {
+     "target": {
+      "viewAttributeName": "VariableConfig_fea45d45_46b0_41db_bcfe_135db708af29",
+      "filterColumn": "PgrAccount.PgrSalesManager"
+     },
+     "quickFilterType": "lookup"
+    }
+   ]
+  }
+ ]
+},
+{
+ "attribute": "QuickFilter_SalesManager_jzvgr6l_BudAgg",
+ "converters": [
+  {
+   "converter": "crt.QuickFilterAttributeConverter",
+   "args": [
+    {
+     "target": {
+      "viewAttributeName": "VariableConfig_35aacb0a_3458_4997_9122_7dd866dab3ab",
+      "filterColumn": "PgrAccount.PgrSalesManager"
+     },
+     "quickFilterType": "lookup"
+    }
+   ]
+  }
+ ]
+}
+
+						],
+						"from": "QuickFilter_SalesManager_Value"
+					},
+					"filterType": "lookup",
+					"visible": true
+				},
+				"parentName": "FlexContainer_o5jsxbx",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "QuickFilter_SalesDirector",
+				"values": {
+					"type": "crt.QuickFilter",
+					"config": {
+						"caption": "#ResourceString(QuickFilter_SalesDirector_config_caption)#",
+						"hint": "",
+						"icon": "segments-icon",
+						"iconPosition": "left-icon",
+						"defaultValue": [
+							{
+								"value": "[#currentUserContact#]",
+								"checkedState": true
+							}
+						],
+						"entitySchemaName": "Contact",
+						"recordsFilter": {
+							"items": {
+								"18ae3950-a7a6-4b08-a25c-39a0171fbddc": {
+									"filterType": 1,
+									"comparisonType": 7,
+									"isEnabled": true,
+									"trimDateTimeParameterToDate": false,
+									"leftExpression": {
+										"expressionType": 3,
+										"functionType": 2,
+										"aggregationType": 1,
+										"columnPath": "[Account:PgrSalesDirector].Id",
+										"subFilters": {
+											"items": {},
+											"logicalOperation": 0,
+											"isEnabled": true,
+											"filterType": 6,
+											"rootSchemaName": "Account",
+											"key": "d8450a28-6f2c-4eff-a6eb-9628059f4790"
+										}
+									},
+									"isAggregative": true,
+									"dataValueType": 4,
+									"rightExpression": {
+										"expressionType": 2,
+										"parameter": {
+											"dataValueType": 4,
+											"value": 0
+										}
+									},
+									"subFilters": {
+										"items": {},
+										"logicalOperation": 0,
+										"isEnabled": true,
+										"filterType": 6,
+										"rootSchemaName": "Account",
+										"key": "d8450a28-6f2c-4eff-a6eb-9628059f4790"
+									}
+								}
+							},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "Contact"
+						},
+						"defaultValueListSorting": null
+					},
+					"_filterOptions": {
+						"expose": [
+							{
+								"attribute": "QuickFilter_SalesDirector_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
+													"filterColumn": "PgrSalesDirector"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
+													"filterColumn": "PgrSalesDirector"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_BudgetSeries",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_BudgetSeries",
+													"filterColumn": "PgrSalesDirector"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_fa2aur9_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_fa2aur9_Data",
+													"filterColumn": "PgrSalesDirector"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_1i78h71_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_1i78h71_Data",
+													"filterColumn": "PgrAccount.PgrSalesDirector"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+							{
+								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_h8gyel3_Data",
+								"converters": [
+									{
+										"converter": "crt.QuickFilterAttributeConverter",
+										"args": [
+											{
+												"target": {
+													"viewAttributeName": "IndicatorWidget_h8gyel3_Data",
+													"filterColumn": "PgrAccount.PgrSalesDirector"
+												},
+												"quickFilterType": "lookup"
+											}
+										]
+									}
+								]
+							},
+{
+ "attribute": "QuickFilter_SalesDirector_jzvgr6l_DevAgg",
+ "converters": [
+  {
+   "converter": "crt.QuickFilterAttributeConverter",
+   "args": [
+    {
+     "target": {
+      "viewAttributeName": "VariableConfig_fea45d45_46b0_41db_bcfe_135db708af29",
+      "filterColumn": "PgrAccount.PgrSalesDirector"
+     },
+     "quickFilterType": "lookup"
+    }
+   ]
+  }
+ ]
+},
+{
+ "attribute": "QuickFilter_SalesDirector_jzvgr6l_BudAgg",
+ "converters": [
+  {
+   "converter": "crt.QuickFilterAttributeConverter",
+   "args": [
+    {
+     "target": {
+      "viewAttributeName": "VariableConfig_35aacb0a_3458_4997_9122_7dd866dab3ab",
+      "filterColumn": "PgrAccount.PgrSalesDirector"
+     },
+     "quickFilterType": "lookup"
+    }
+   ]
+  }
+ ]
+}
+
+						],
+						"from": "QuickFilter_SalesDirector_Value"
+					},
+					"filterType": "lookup",
+					"visible": true
+				},
+				"parentName": "FlexContainer_o5jsxbx",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_7bocb5l",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "GridContainer_jpbvrp2",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_nlgvvop",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 3,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "medium",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "GridContainer_7bocb5l",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_30ivfl7",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 3,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "GridContainer_nlgvvop",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ChartWidget_l52twdo",
+				"values": {
+					"type": "crt.ChartWidget",
+					"config": {
+						"title": "#ResourceString(ChartWidget_l52twdo_title)#",
+						"color": "dark-blue",
+						"theme": "without-fill",
+						"scales": {
+							"stacked": false,
+							"xAxis": {
+								"name": "",
+								"formatting": {
+									"type": "string",
+									"maxLinesCount": 2,
+									"maxLineLength": 10
+								}
+							},
+							"yAxis": {
+								"name": "",
+								"formatting": {
+									"type": "number",
+									"thousandAbbreviation": {
+										"enabled": true
+									}
+								}
+							}
+						},
+						"series": [
+							{
+								"color": "dark-blue",
+								"type": "bar",
+								"label": "#ResourceString(ChartWidget_l52twdo_series_0)#",
+								"legend": {
+									"enabled": true
+								},
+								"data": {
+									"providing": {
+										"attribute": "ChartWidget_l52twdo_SeriesData_BudgetSeries",
+										"schemaName": "PgrVwAccountBudgetRank",
+										"filters": {
+											"filter": {
+												"items": {
+													"budgetIsNotNullFilter": {
+														"comparisonType": 2,
+														"filterType": 2,
+														"isEnabled": true,
+														"isNull": false,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "PgrBudgetValue"
+														}
+													},
+													"columnIsNotNullFilter": {
+														"comparisonType": 2,
+														"filterType": 2,
+														"isEnabled": true,
+														"isNull": false,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "PgrAccount.PgrWepaformName"
+														}
+													}
+												},
+												"logicalOperation": 0,
+												"isEnabled": true,
+												"filterType": 6,
+												"rootSchemaName": "PgrVwAccountBudgetRank"
+											},
+											"filterAttributes": [
+												{
+													"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_BudgetSeries",
+													"loadOnChange": true
+												},
+												{
+													"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_BudgetSeries",
+													"loadOnChange": true
+												},
+												{
+													"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_BudgetSeries",
+													"loadOnChange": true
+												}
+											]
+										},
+										"aggregation": {
+											"column": {
+												"orderDirection": 0,
+												"orderPosition": -1,
+												"isVisible": true,
+												"expression": {
+													"expressionType": 1,
+													"functionArgument": {
+														"expressionType": 0,
+														"columnPath": "PgrBudgetValue"
+													},
+													"functionType": 2,
+													"aggregationType": 5,
+													"aggregationEvalType": 0
+												}
+											}
+										},
+										"dependencies": [],
+										"rowCount": 5,
+										"grouping": {
+											"type": "by-value",
+											"column": {
+												"orderDirection": 0,
+												"orderPosition": -1,
+												"isVisible": true,
+												"expression": {
+													"expressionType": 0,
+													"columnPath": "PgrAccount.PgrWepaformName"
+												}
+											}
+										}
+									},
+									"formatting": {
+										"type": "number",
+										"decimalSeparator": ".",
+										"decimalPrecision": 0,
+										"thousandSeparator": ","
+									}
+								},
+								"dataLabel": {
+									"display": true
+								}
+							},
+							{
+								"color": "burnt-coral",
+								"type": "bar",
+								"label": "#ResourceString(ChartWidget_l52twdo_series_1)#",
+								"legend": {
+									"enabled": true
+								},
+								"data": {
+									"providing": {
+										"attribute": "ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
+										"schemaName": "PgrVwAccountBudgetRank",
+										"filters": {
+											"filter": {
+												"items": {
+													"orderIntakeIsNotNullFilter": {
+														"comparisonType": 2,
+														"filterType": 2,
+														"isEnabled": true,
+														"isNull": false,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "PgrOrderIntakeValue"
+														}
+													},
+													"columnIsNotNullFilter": {
+														"comparisonType": 2,
+														"filterType": 2,
+														"isEnabled": true,
+														"isNull": false,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "PgrAccount.PgrWepaformName"
+														}
+													}
+												},
+												"logicalOperation": 0,
+												"isEnabled": true,
+												"filterType": 6,
+												"rootSchemaName": "PgrVwAccountBudgetRank"
+											},
+											"filterAttributes": [
+												{
+													"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
+													"loadOnChange": true
+												},
+												{
+													"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
+													"loadOnChange": true
+												},
+												{
+													"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
+													"loadOnChange": true
+												}
+											]
+										},
+										"aggregation": {
+											"column": {
+												"orderDirection": 0,
+												"orderPosition": -1,
+												"isVisible": true,
+												"expression": {
+													"expressionType": 1,
+													"functionArgument": {
+														"expressionType": 0,
+														"columnPath": "PgrOrderIntakeValue"
+													},
+													"functionType": 2,
+													"aggregationType": 5,
+													"aggregationEvalType": 0
+												}
+											}
+										},
+										"dependencies": [],
+										"rowCount": 50,
+										"grouping": {
+											"type": "by-value",
+											"column": {
+												"orderDirection": 0,
+												"orderPosition": -1,
+												"isVisible": true,
+												"expression": {
+													"expressionType": 0,
+													"columnPath": "PgrAccount.PgrWepaformName"
+												}
+											}
+										}
+									},
+									"formatting": {
+										"type": "number",
+										"decimalSeparator": ".",
+										"decimalPrecision": 0,
+										"thousandSeparator": ","
+									}
+								},
+								"dataLabel": {
+									"display": true
+								}
+							}
+						],
+						"seriesOrder": {
+							"type": "by-aggregation-value",
+							"direction": 2,
+							"seriesIndex": 0
+						},
+						"layout": {}
+					},
+					"sectionBindingColumnRecordId": "$Id",
+					"visible": true,
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 9
+					}
+				},
+				"parentName": "GridContainer_30ivfl7",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ChartWidget_vpvvd4s",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 9
+					},
+					"type": "crt.ChartWidget",
+					"config": {
+						"title": "#ResourceString(ChartWidget_vpvvd4s_title)#",
+						"color": "dark-blue",
+						"theme": "without-fill",
+						"scales": {
+							"stacked": false,
+							"xAxis": {
+								"name": "",
+								"formatting": {
+									"type": "string",
+									"maxLinesCount": 2,
+									"maxLineLength": 10
+								}
+							},
+							"yAxis": {
+								"name": "",
+								"formatting": {
+									"type": "number",
+									"thousandAbbreviation": {
+										"enabled": true
+									}
+								}
+							}
+						},
+						"series": [
+							{
+								"color": "steel-blue",
+								"type": "bar",
+								"label": "#ResourceString(ChartWidget_vpvvd4s_series_0)#",
+								"legend": {
+									"enabled": false
+								},
+								"data": {
+									"providing": {
+										"attribute": "ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
+										"schemaName": "PgrVwAccountBudgetRank",
+										"filters": {
+											"filter": {
+												"items": {
+													"deviationIsNotNullFilter": {
+														"filterType": 2,
+														"comparisonType": 2,
+														"isEnabled": true,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "PgrBudgetVsThreeDayAvgDeviation"
+														},
+														"isAggregative": false,
+														"dataValueType": 5,
+														"isNull": false
+													},
+													"columnIsNotNullFilter": {
+														"comparisonType": 2,
+														"filterType": 2,
+														"isEnabled": true,
+														"isNull": false,
+														"trimDateTimeParameterToDate": false,
+														"leftExpression": {
+															"expressionType": 0,
+															"columnPath": "PgrAccount.PgrWepaformName"
+														}
+													}
+												},
+												"logicalOperation": 0,
+												"isEnabled": true,
+												"filterType": 6,
+												"rootSchemaName": "PgrVwAccountBudgetRank"
+											},
+											"filterAttributes": [
+												{
+													"attribute": "QuickFilter_Territory_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
+													"loadOnChange": true
+												},
+												{
+													"attribute": "QuickFilter_SalesManager_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
+													"loadOnChange": true
+												},
+												{
+													"attribute": "QuickFilter_SalesDirector_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
+													"loadOnChange": true
+												}
+											]
+										},
+										"aggregation": {
+											"column": {
+												"orderDirection": 0,
+												"orderPosition": -1,
+												"isVisible": true,
+												"expression": {
+													"expressionType": 1,
+													"functionArgument": {
+														"expressionType": 0,
+														"columnPath": "PgrBudgetVsThreeDayAvgDeviation"
+													},
+													"functionType": 2,
+													"aggregationType": 4,
+													"aggregationEvalType": 0
+												}
+											}
+										},
+										"dependencies": [],
+										"rowCount": 5,
+										"grouping": {
+											"type": "by-value",
+											"column": {
+												"orderDirection": 0,
+												"orderPosition": -1,
+												"isVisible": true,
+												"expression": {
+													"expressionType": 0,
+													"columnPath": "PgrAccount.PgrWepaformName"
+												}
+											}
+										}
+									},
+									"formatting": {
+										"type": "number",
+										"decimalSeparator": ".",
+										"decimalPrecision": 0,
+										"thousandSeparator": ","
+									}
+								},
+								"dataLabel": {
+									"display": true
+								}
+							}
+						],
+						"seriesOrder": {
+							"type": "by-aggregation-value",
+							"direction": 1,
+							"seriesIndex": 0
+						},
+						"layout": {}
+					},
+					"sectionBindingColumnRecordId": "$Id",
+					"visible": true
+				},
+				"parentName": "GridContainer_30ivfl7",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_mkso5rv",
+				"values": {
+					"layoutConfig": {
+						"column": 4,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.FlexContainer",
+					"direction": "column",
+					"wrap": "nowrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch",
+					"justifyContent": "start",
+					"gap": "small"
+				},
+				"parentName": "GridContainer_nlgvvop",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_zjkpii5",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "center",
+					"justifyContent": "end",
+					"gap": "small"
+				},
+				"parentName": "FlexContainer_mkso5rv",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "IndicatorWidget_fa2aur9",
+				"values": {
+					"type": "crt.IndicatorWidget",
+					"config": {
+						"title": "#ResourceString(IndicatorWidget_fa2aur9_title)#",
+						"theme": "without-fill",
+						"layout": {
+							"color": "dark-blue",
+							"icon": {
+								"iconName": "filter-column-icon"
+							},
+							"border": {
+								"hidden": true
+							}
+						},
+						"text": {
+							"template": "#ResourceString(IndicatorWidget_fa2aur9_config_text_template)#",
+							"metricMacros": "{0}",
+							"labelPosition": "before-after",
+							"fontSizeMode": "extra-small"
+						},
+						"data": {
+							"formatting": {
+								"type": "number",
+								"decimalPrecision": 0,
+								"decimalSeparator": ".",
+								"thousandSeparator": ","
+							},
+							"comparisonProviding": null,
+							"providing": {
+								"attribute": "IndicatorWidget_fa2aur9_Data",
+								"schemaName": "Account",
+								"filters": {
+									"filterAttributes": [
+										{
+											"attribute": "QuickFilter_Territory_IndicatorWidget_fa2aur9_Data",
+											"loadOnChange": true
+										},
+										{
+											"attribute": "QuickFilter_SalesDirector_IndicatorWidget_fa2aur9_Data",
+											"loadOnChange": true
+										},
+										{
+											"attribute": "QuickFilter_SalesManager_IndicatorWidget_fa2aur9_Data",
+											"loadOnChange": true
+										}
+									]
+								},
+								"aggregation": {
+									"column": {
+										"orderDirection": 0,
+										"orderPosition": -1,
+										"isVisible": true,
+										"expression": {
+											"expressionType": 1,
+											"functionArgument": {
+												"expressionType": 0,
+												"columnPath": "Id"
+											},
+											"functionType": 2,
+											"aggregationType": 1,
+											"aggregationEvalType": 2
+										}
+									}
+								},
+								"dependencies": []
+							}
+						},
+						"comparison": {
+							"type": null,
+							"text": ""
+						},
+						"hint": "#ResourceString(IndicatorWidget_fa2aur9_hint)#",
+						"hideTitle": true
+					},
+					"visible": true,
+					"layoutConfig": {
+						"width": 314
+					}
+				},
+				"parentName": "FlexContainer_zjkpii5",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "IndicatorWidget_1i78h71",
+				"values": {
+					"type": "crt.IndicatorWidget",
+					"config": {
+						"title": "#ResourceString(IndicatorWidget_1i78h71_title)#",
+						"theme": "full-fill",
+						"layout": {
+							"color": "dark-blue"
+						},
+						"text": {
+							"template": "#ResourceString(IndicatorWidget_1i78h71_config_text_template)#",
+							"metricMacros": "{0}",
+							"labelPosition": "above-under",
+							"fontSizeMode": "small"
+						},
+						"data": {
+							"formatting": {
+								"type": "number",
+								"decimalPrecision": 0,
+								"decimalSeparator": ".",
+								"thousandSeparator": ","
+							},
+							"comparisonProviding": null,
+							"providing": {
+								"attribute": "IndicatorWidget_1i78h71_Data",
+								"schemaName": "PgrVwAccountMetricSnapshot",
+								"filters": {
+									"filter": {
+										"items": {
+											"a03d16fe-d10a-4954-8759-5dfe3ef00d05": {
+												"filterType": 2,
+												"comparisonType": 2,
+												"isEnabled": true,
+												"trimDateTimeParameterToDate": false,
+												"leftExpression": {
+													"expressionType": 0,
+													"columnPath": "PgrBudgetValue"
+												},
+												"isAggregative": false,
+												"dataValueType": 5,
+												"isNull": false
+											}
+										},
+										"logicalOperation": 0,
+										"isEnabled": true,
+										"filterType": 6,
+										"rootSchemaName": "PgrVwAccountMetricSnapshot"
+									},
+									"filterAttributes": [
+										{
+											"attribute": "QuickFilter_Territory_IndicatorWidget_1i78h71_Data",
+											"loadOnChange": true
+										},
+										{
+											"attribute": "QuickFilter_SalesManager_IndicatorWidget_1i78h71_Data",
+											"loadOnChange": true
+										},
+										{
+											"attribute": "QuickFilter_SalesDirector_IndicatorWidget_1i78h71_Data",
+											"loadOnChange": true
+										}
+									]
+								},
+								"aggregation": {
+									"column": {
+										"orderDirection": 0,
+										"orderPosition": -1,
+										"isVisible": true,
+										"expression": {
+											"expressionType": 1,
+											"functionArgument": {
+												"expressionType": 0,
+												"columnPath": "PgrBudgetValue"
+											},
+											"functionType": 2,
+											"aggregationType": 2,
+											"aggregationEvalType": 0
+										}
+									}
+								},
+								"dependencies": []
+							}
+						},
+						"comparison": {
+							"type": null,
+							"text": ""
+						},
+						"hint": "#ResourceString(IndicatorWidget_1i78h71_hint)#",
+						"hideTitle": true
+					},
+					"visible": true,
+					"layoutConfig": {
+						"height": 70
+					}
+				},
+				"parentName": "FlexContainer_mkso5rv",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "IndicatorWidget_h8gyel3",
+				"values": {
+					"type": "crt.IndicatorWidget",
+					"config": {
+						"title": "#ResourceString(IndicatorWidget_h8gyel3_title)#",
+						"theme": "full-fill",
+						"layout": {
+							"color": "burnt-coral"
+						},
+						"text": {
+							"template": "#ResourceString(IndicatorWidget_h8gyel3_config_text_template)#",
+							"metricMacros": "{0}",
+							"labelPosition": "above-under",
+							"fontSizeMode": "small"
+						},
+						"data": {
+							"formatting": {
+								"type": "number",
+								"decimalPrecision": 0,
+								"decimalSeparator": ".",
+								"thousandSeparator": ","
+							},
+							"comparisonProviding": null,
+							"providing": {
+								"attribute": "IndicatorWidget_h8gyel3_Data",
+								"schemaName": "PgrVwAccountMetricSnapshot",
+								"filters": {
+									"filter": {
+										"items": {
+											"5ea1b3f1-d0bf-481b-9d58-b947f917e5bc": {
+												"filterType": 2,
+												"comparisonType": 2,
+												"isEnabled": true,
+												"trimDateTimeParameterToDate": false,
+												"leftExpression": {
+													"expressionType": 0,
+													"columnPath": "PgrOrderIntakeValue"
+												},
+												"isAggregative": false,
+												"dataValueType": 5,
+												"isNull": false
+											}
+										},
+										"logicalOperation": 0,
+										"isEnabled": true,
+										"filterType": 6,
+										"rootSchemaName": "PgrVwAccountMetricSnapshot"
+									},
+									"filterAttributes": [
+										{
+											"attribute": "QuickFilter_Territory_IndicatorWidget_h8gyel3_Data",
+											"loadOnChange": true
+										},
+										{
+											"attribute": "QuickFilter_SalesManager_IndicatorWidget_h8gyel3_Data",
+											"loadOnChange": true
+										},
+										{
+											"attribute": "QuickFilter_SalesDirector_IndicatorWidget_h8gyel3_Data",
+											"loadOnChange": true
+										}
+									]
+								},
+								"aggregation": {
+									"column": {
+										"orderDirection": 0,
+										"orderPosition": -1,
+										"isVisible": true,
+										"expression": {
+											"expressionType": 1,
+											"functionArgument": {
+												"expressionType": 0,
+												"columnPath": "PgrOrderIntakeValue"
+											},
+											"functionType": 2,
+											"aggregationType": 2,
+											"aggregationEvalType": 0
+										}
+									}
+								},
+								"dependencies": []
+							}
+						},
+						"comparison": {
+							"type": null,
+							"text": ""
+						},
+						"hint": "#ResourceString(IndicatorWidget_h8gyel3_hint)#",
+						"hideTitle": true
+					},
+					"visible": true,
+					"layoutConfig": {
+						"height": 72
+					}
+				},
+				"parentName": "FlexContainer_mkso5rv",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "IndicatorWidget_jzvgr6l",
+				"values": {
+					"type": "crt.IndicatorWidget",
+					"config": {
+						"title": "#ResourceString(IndicatorWidget_jzvgr6l_title)#",
+						"theme": "full-fill",
+						"layout": {
+							"color": "light-blue"
+						},
+						"text": {
+							"template": "#ResourceString(IndicatorWidget_jzvgr6l_config_text_template)#",
+							"metricMacros": "{0}",
+							"labelPosition": "above-under",
+							"fontSizeMode": "small"
+						},
+						"data": {
+							"formatting": {
+								"type": "number",
+								"decimalPrecision": 1,
+								"decimalSeparator": ".",
+								"thousandSeparator": ","
+							},
+							"comparisonProviding": null,
+							"providing": {
+								"attribute": "IndicatorWidget_jzvgr6l_Data",
+								"expressionSchema": {
+									"typeName": "Terrasoft.Core.ExpressionEngine.Schema.ExpressionSchema",
+									"uId": "7410c564-e723-4ef6-835d-f1414746c58e",
+									"name": "IndicatorWidget_jzvgr6l_Data",
+									"engineType": "PowerFx",
+									"resultDataValueType": "Float",
+									"expression": "If(#jzvgr6l_BudAgg#.sumBudget = 0, 0, ((#jzvgr6l_DevAgg#.sumOrderIntake - #jzvgr6l_BudAgg#.sumBudget) / #jzvgr6l_BudAgg#.sumBudget) * 100)",
+									"parameters": [],
+									"expressionVariables": [
+										{
+											"typeName": "Terrasoft.Core.ExpressionEngine.Schema.Variables.ExpressionSchemaVariable",
+											"uId": "a768b6b5-ad94-44ac-a797-6cf73a57e010",
+											"name": "jzvgr6l_DevAgg",
+											"dataValueType": "Text",
+											"variableType": "EsqAggregation",
+											"config": {
+												"typeName": "Terrasoft.Core.ExpressionEngine.Schema.Variables.ExpressionSchemaAggregationVariableConfig",
+												"uId": "fea45d45-46b0-41db-bcfe-135db708af29",
+												"name": "VariableConfig",
+												"value": "PgrVwAccountMetricSnapshot",
+												"expressions": [
+													{
+														"name": "sumOrderIntake",
+														"aggregationType": "Sum",
+														"expression": {
+															"type": "SchemaColumn",
+															"columnPath": "PgrOrderIntakeValue"
+														}
+													}
+												],
+												"filters": {
+													"items": {
+														"orderIntakeNotNullFilter": {
+															"comparisonType": 2,
+															"filterType": 2,
+															"isEnabled": true,
+															"isNull": false,
+															"trimDateTimeParameterToDate": false,
+															"leftExpression": {
+																"expressionType": 0,
+																"columnPath": "PgrOrderIntakeValue"
+															}
+														}
+													},
+													"logicalOperation": 0,
+													"isEnabled": true,
+													"filterType": 6,
+													"rootSchemaName": "PgrVwAccountMetricSnapshot"
+												},
+												"filterAttributes": [
+													{
+														"attribute": "QuickFilter_Territory_jzvgr6l_DevAgg",
+														"loadOnChange": true
+													},
+													{
+														"attribute": "QuickFilter_SalesDirector_jzvgr6l_DevAgg",
+														"loadOnChange": true
+													},
+													{
+														"attribute": "QuickFilter_SalesManager_jzvgr6l_DevAgg",
+														"loadOnChange": true
+													}
+												]
+											}
+										},
+										{
+											"typeName": "Terrasoft.Core.ExpressionEngine.Schema.Variables.ExpressionSchemaVariable",
+											"uId": "65f00c9a-139c-49fc-a140-de2dbd7be528",
+											"name": "jzvgr6l_BudAgg",
+											"dataValueType": "Text",
+											"variableType": "EsqAggregation",
+											"config": {
+												"typeName": "Terrasoft.Core.ExpressionEngine.Schema.Variables.ExpressionSchemaAggregationVariableConfig",
+												"uId": "35aacb0a-3458-4997-9122-7dd866dab3ab",
+												"name": "VariableConfig",
+												"value": "PgrVwAccountMetricSnapshot",
+												"expressions": [
+													{
+														"name": "sumBudget",
+														"aggregationType": "Sum",
+														"expression": {
+															"type": "SchemaColumn",
+															"columnPath": "PgrBudgetValue"
+														}
+													}
+												],
+												"filters": {
+													"items": {
+														"budgetNotNullFilter": {
+															"comparisonType": 2,
+															"filterType": 2,
+															"isEnabled": true,
+															"isNull": false,
+															"trimDateTimeParameterToDate": false,
+															"leftExpression": {
+																"expressionType": 0,
+																"columnPath": "PgrBudgetValue"
+															}
+														}
+													},
+													"logicalOperation": 0,
+													"isEnabled": true,
+													"filterType": 6,
+													"rootSchemaName": "PgrVwAccountMetricSnapshot"
+												},
+												"filterAttributes": [
+													{
+														"attribute": "QuickFilter_Territory_jzvgr6l_BudAgg",
+														"loadOnChange": true
+													},
+													{
+														"attribute": "QuickFilter_SalesDirector_jzvgr6l_BudAgg",
+														"loadOnChange": true
+													},
+													{
+														"attribute": "QuickFilter_SalesManager_jzvgr6l_BudAgg",
+														"loadOnChange": true
+													}
+												]
+											}
+										}
+									]
+								}
+							}
+						},
+						"comparison": {
+							"type": null,
+							"text": ""
+						},
+						"hint": "#ResourceString(IndicatorWidget_jzvgr6l_hint)#",
+						"hideTitle": true
+					},
+					"visible": true,
+					"_filterableOptions": [
+						{
+							"filterAttributeName": "VariableConfig_fea45d45_46b0_41db_bcfe_135db708af29",
+							"entitySchemaName": "PgrVwAccountMetricSnapshot",
+							"caption": "#ResourceString(IndicatorWidget_jzvgr6l_title_ratio)# | PgrVwAccountMetricSnapshot.PgrOrderIntakeValue",
+							"filterAttributes": [
+								"QuickFilter_Territory_jzvgr6l_DevAgg",
+								"QuickFilter_SalesDirector_jzvgr6l_DevAgg",
+								"QuickFilter_SalesManager_jzvgr6l_DevAgg"
+							]
+						},
+						{
+							"filterAttributeName": "VariableConfig_35aacb0a_3458_4997_9122_7dd866dab3ab",
+							"entitySchemaName": "PgrVwAccountMetricSnapshot",
+							"caption": "#ResourceString(IndicatorWidget_jzvgr6l_title_ratio)# | PgrVwAccountMetricSnapshot.PgrBudgetValue",
+							"filterAttributes": [
+								"QuickFilter_Territory_jzvgr6l_BudAgg",
+								"QuickFilter_SalesDirector_jzvgr6l_BudAgg",
+								"QuickFilter_SalesManager_jzvgr6l_BudAgg"
+							]
+						}
+					]
+				},
+				"parentName": "FlexContainer_mkso5rv",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_ng7r8z8",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "GridContainer_jpbvrp2",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_l4ssi24",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "small",
+						"right": "medium",
+						"bottom": "small",
+						"left": "medium"
+					},
+					"color": "#EFEFEF",
+					"borderRadius": "none",
+					"alignItems": "center",
+					"justifyContent": "space-between",
+					"gap": "small",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_ng7r8z8",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_wkdbs8y",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"wrap": "wrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "center",
+					"justifyContent": "start",
+					"gap": "small"
+				},
+				"parentName": "FlexContainer_l4ssi24",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Label_84to7pp",
+				"values": {
+					"type": "crt.Label",
+					"caption": "#MacrosTemplateString(#ResourceString(Label_84to7pp_caption)#)#",
+					"labelType": "headline-4",
+					"labelThickness": "default",
+					"labelEllipsis": false,
+					"labelColor": "auto",
+					"labelBackgroundColor": "transparent",
+					"labelTextAlign": "start",
+					"headingLevel": "label",
+					"visible": true
+				},
+				"parentName": "FlexContainer_wkdbs8y",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "QuickFilter_CurrentContact",
 				"values": {
 					"type": "crt.QuickFilter",
@@ -296,596 +2160,9 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 					"filterType": "lookup",
 					"visible": true
 				},
-				"parentName": "FlexContainer_2t3lqd2",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "QuickFilter_Territory",
-				"values": {
-					"type": "crt.QuickFilter",
-					"config": {
-						"caption": "#ResourceString(QuickFilter_Territory_config_caption)#",
-						"hint": "",
-						"icon": "webcheck-icon",
-						"iconPosition": "left-icon",
-						"defaultValue": [],
-						"entitySchemaName": "Territory",
-						"recordsFilter": null,
-						"defaultValueListSorting": null
-					},
-					"_filterOptions": {
-						"expose": [
-							{
-								"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
-													"filterColumn": "PgrAccount.Territory"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_Territory_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
-													"filterColumn": "PgrAccount.Territory"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_BudgetSeries",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_BudgetSeries",
-													"filterColumn": "PgrAccount.Territory"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_Territory_IndicatorWidget_fa2aur9_Data",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "IndicatorWidget_fa2aur9_Data",
-													"filterColumn": "Territory"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_Territory_IndicatorWidget_1i78h71_Data",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "IndicatorWidget_1i78h71_Data",
-													"filterColumn": "PgrAccount.Territory"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_Territory_IndicatorWidget_h8gyel3_Data",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "IndicatorWidget_h8gyel3_Data",
-													"filterColumn": "PgrAccount.Territory"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_Territory_jzvgr6l_DevAgg",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "jzvgr6l_DevAgg",
-													"filterColumn": "PgrAccount.Territory"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_Territory_jzvgr6l_BudAgg",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "jzvgr6l_BudAgg",
-													"filterColumn": "PgrAccount.Territory"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							}
-						],
-						"from": "QuickFilter_Territory_Value"
-					},
-					"filterType": "lookup",
-					"visible": true
-				},
-				"parentName": "FlexContainer_2t3lqd2",
+				"parentName": "FlexContainer_wkdbs8y",
 				"propertyName": "items",
 				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "QuickFilter_SalesManager",
-				"values": {
-					"type": "crt.QuickFilter",
-					"config": {
-						"caption": "#ResourceString(QuickFilter_SalesManager_config_caption)#",
-						"hint": "",
-						"icon": "consultation-icon",
-						"iconPosition": "left-icon",
-						"defaultValue": [],
-						"entitySchemaName": "Contact",
-						"recordsFilter": {
-							"items": {
-								"39454c3c-ab66-460e-95e4-95ab723d7e23": {
-									"filterType": 1,
-									"comparisonType": 4,
-									"isEnabled": true,
-									"trimDateTimeParameterToDate": true,
-									"leftExpression": {
-										"expressionType": 3,
-										"functionType": 2,
-										"aggregationType": 5,
-										"columnPath": "[Account:PgrSalesManager].CreatedOn",
-										"subFilters": {
-											"items": {},
-											"logicalOperation": 0,
-											"isEnabled": true,
-											"filterType": 6,
-											"rootSchemaName": "Account",
-											"key": "f54ef9dc-1b13-4e0f-b014-36c084954d89"
-										}
-									},
-									"isAggregative": true,
-									"dataValueType": 7,
-									"rightExpression": {
-										"expressionType": 1,
-										"functionType": 1,
-										"macrosType": 5
-									},
-									"subFilters": {
-										"items": {},
-										"logicalOperation": 0,
-										"isEnabled": true,
-										"filterType": 6,
-										"rootSchemaName": "Account",
-										"key": "f54ef9dc-1b13-4e0f-b014-36c084954d89"
-									}
-								}
-							},
-							"logicalOperation": 0,
-							"isEnabled": true,
-							"filterType": 6,
-							"rootSchemaName": "Contact"
-						},
-						"defaultValueListSorting": null
-					},
-					"_filterOptions": {
-						"expose": [
-							{
-								"attribute": "QuickFilter_SalesManager_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
-													"filterColumn": "PgrAccount.PgrSalesManager"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
-													"filterColumn": "PgrAccount.PgrSalesManager"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_BudgetSeries",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_BudgetSeries",
-													"filterColumn": "PgrAccount.PgrSalesManager"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesManager_IndicatorWidget_fa2aur9_Data",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "IndicatorWidget_fa2aur9_Data",
-													"filterColumn": "PgrSalesManager"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesManager_IndicatorWidget_1i78h71_Data",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "IndicatorWidget_1i78h71_Data",
-													"filterColumn": "PgrAccount.PgrSalesManager"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesManager_IndicatorWidget_h8gyel3_Data",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "IndicatorWidget_h8gyel3_Data",
-													"filterColumn": "PgrAccount.PgrSalesManager"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesManager_jzvgr6l_DevAgg",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "jzvgr6l_DevAgg",
-													"filterColumn": "PgrAccount.PgrSalesManager"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesManager_jzvgr6l_BudAgg",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "jzvgr6l_BudAgg",
-													"filterColumn": "PgrAccount.PgrSalesManager"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							}
-						],
-						"from": "QuickFilter_SalesManager_Value"
-					},
-					"filterType": "lookup",
-					"visible": true
-				},
-				"parentName": "FlexContainer_2t3lqd2",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "QuickFilter_SalesDirector",
-				"values": {
-					"type": "crt.QuickFilter",
-					"config": {
-						"caption": "#ResourceString(QuickFilter_SalesDirector_config_caption)#",
-						"hint": "",
-						"icon": "segments-icon",
-						"iconPosition": "left-icon",
-						"defaultValue": [],
-						"entitySchemaName": "Contact",
-						"recordsFilter": {
-							"items": {
-								"b3170f3d-c60e-4776-b568-e2cd093d16f0": {
-									"filterType": 1,
-									"comparisonType": 4,
-									"isEnabled": true,
-									"trimDateTimeParameterToDate": true,
-									"leftExpression": {
-										"expressionType": 3,
-										"functionType": 2,
-										"aggregationType": 5,
-										"columnPath": "[Account:PgrSalesDirector].CreatedOn",
-										"subFilters": {
-											"items": {},
-											"logicalOperation": 0,
-											"isEnabled": true,
-											"filterType": 6,
-											"rootSchemaName": "Account",
-											"key": "78ed3c43-25dd-4fa5-98cd-27e34a899148"
-										}
-									},
-									"isAggregative": true,
-									"dataValueType": 7,
-									"rightExpression": {
-										"expressionType": 1,
-										"functionType": 1,
-										"macrosType": 5
-									},
-									"subFilters": {
-										"items": {},
-										"logicalOperation": 0,
-										"isEnabled": true,
-										"filterType": 6,
-										"rootSchemaName": "Account",
-										"key": "78ed3c43-25dd-4fa5-98cd-27e34a899148"
-									}
-								}
-							},
-							"logicalOperation": 0,
-							"isEnabled": true,
-							"filterType": 6,
-							"rootSchemaName": "Contact"
-						},
-						"defaultValueListSorting": null
-					},
-					"_filterOptions": {
-						"expose": [
-							{
-								"attribute": "QuickFilter_SalesDirector_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_BudgetSeries",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "ChartWidget_l52twdo_SeriesData_BudgetSeries",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_fa2aur9_Data",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "IndicatorWidget_fa2aur9_Data",
-													"filterColumn": "PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_1i78h71_Data",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "IndicatorWidget_1i78h71_Data",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_IndicatorWidget_h8gyel3_Data",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "IndicatorWidget_h8gyel3_Data",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_jzvgr6l_DevAgg",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "jzvgr6l_DevAgg",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							},
-							{
-								"attribute": "QuickFilter_SalesDirector_jzvgr6l_BudAgg",
-								"converters": [
-									{
-										"converter": "crt.QuickFilterAttributeConverter",
-										"args": [
-											{
-												"target": {
-													"viewAttributeName": "jzvgr6l_BudAgg",
-													"filterColumn": "PgrAccount.PgrSalesDirector"
-												},
-												"quickFilterType": "lookup"
-											}
-										]
-									}
-								]
-							}
-						],
-						"from": "QuickFilter_SalesDirector_Value"
-					},
-					"filterType": "lookup",
-					"visible": true
-				},
-				"parentName": "FlexContainer_2t3lqd2",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_d6smrj9",
-				"values": {
-					"type": "crt.FlexContainer",
-					"direction": "row",
-					"wrap": "wrap",
-					"items": [],
-					"fitContent": true
-				},
-				"parentName": "FlexContainer_71jzh1x",
-				"propertyName": "items",
-				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -902,9 +2179,9 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 					"menuItems": [],
 					"icon": "add-button-icon"
 				},
-				"parentName": "FlexContainer_71jzh1x",
+				"parentName": "FlexContainer_l4ssi24",
 				"propertyName": "items",
-				"index": 3
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -956,43 +2233,6 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 			},
 			{
 				"operation": "insert",
-				"name": "GridContainer_ng7r8z8",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.GridContainer",
-					"columns": [
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)"
-					],
-					"rows": "minmax(max-content, 32px)",
-					"gap": {
-						"columnGap": "large",
-						"rowGap": "none"
-					},
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"alignItems": "stretch",
-					"color": "transparent",
-					"borderRadius": "none",
-					"padding": {
-						"top": "none",
-						"right": "none",
-						"bottom": "none",
-						"left": "none"
-					}
-				},
-				"parentName": "GridContainer_jpbvrp2",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
 				"name": "FlexContainer_3xtypsc",
 				"values": {
 					"type": "crt.FlexContainer",
@@ -1002,7 +2242,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 					"fitContent": true,
 					"visible": true,
 					"padding": {
-						"top": "none",
+						"top": "medium",
 						"right": "none",
 						"bottom": "medium",
 						"left": "none"
@@ -1015,13 +2255,13 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 1,
+						"row": 2,
 						"rowSpan": 1
 					}
 				},
 				"parentName": "GridContainer_ng7r8z8",
 				"propertyName": "items",
-				"index": 0
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -1944,7 +3184,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 					"layoutConfig": {
 						"column": 2,
 						"colSpan": 1,
-						"row": 1,
+						"row": 2,
 						"rowSpan": 1
 					},
 					"type": "crt.FlexContainer",
@@ -1954,7 +3194,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 					"fitContent": true,
 					"visible": true,
 					"padding": {
-						"top": "none",
+						"top": "medium",
 						"right": "none",
 						"bottom": "none",
 						"left": "none"
@@ -1967,7 +3207,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 				},
 				"parentName": "GridContainer_ng7r8z8",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -1989,7 +3229,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 					"color": "primary",
 					"borderRadius": "small",
 					"padding": {
-						"top": "none",
+						"top": "medium",
 						"right": "none",
 						"bottom": "none",
 						"left": "none"
@@ -2255,7 +3495,7 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 					"color": "primary",
 					"borderRadius": "small",
 					"padding": {
-						"top": "none",
+						"top": "medium",
 						"right": "none",
 						"bottom": "none",
 						"left": "none"
@@ -2884,1089 +4124,6 @@ define("SalesEnterpriseDesktop", /**SCHEMA_DEPS*/["PgrChartSeriesSyncModule"]/**
 				},
 				"parentName": "DataGrid_VisitsAll",
 				"propertyName": "bulkActions",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_0xymx4d",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.FlexContainer",
-					"direction": "column",
-					"wrap": "nowrap",
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"padding": {
-						"top": "none",
-						"right": "none",
-						"bottom": "none",
-						"left": "none"
-					},
-					"color": "transparent",
-					"borderRadius": "none",
-					"alignItems": "stretch",
-					"justifyContent": "start",
-					"gap": "small"
-				},
-				"parentName": "GridContainer_ng7r8z8",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "GridContainer_7bocb5l",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 2,
-						"rowSpan": 1
-					},
-					"type": "crt.GridContainer",
-					"columns": [
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)"
-					],
-					"rows": "minmax(max-content, 32px)",
-					"gap": {
-						"columnGap": "large",
-						"rowGap": "none"
-					},
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"alignItems": "stretch",
-					"color": "transparent",
-					"borderRadius": "none",
-					"padding": {
-						"top": "none",
-						"right": "none",
-						"bottom": "none",
-						"left": "none"
-					}
-				},
-				"parentName": "GridContainer_jpbvrp2",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "GridContainer_nlgvvop",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 3,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.GridContainer",
-					"columns": [
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)"
-					],
-					"rows": "minmax(max-content, 32px)",
-					"gap": {
-						"columnGap": "medium",
-						"rowGap": "none"
-					},
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"alignItems": "stretch",
-					"color": "transparent",
-					"borderRadius": "none",
-					"padding": {
-						"top": "none",
-						"right": "none",
-						"bottom": "none",
-						"left": "none"
-					}
-				},
-				"parentName": "GridContainer_7bocb5l",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "GridContainer_30ivfl7",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 3,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.GridContainer",
-					"columns": [
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)"
-					],
-					"rows": "minmax(max-content, 32px)",
-					"gap": {
-						"columnGap": "large",
-						"rowGap": "none"
-					},
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"alignItems": "stretch",
-					"color": "transparent",
-					"borderRadius": "none",
-					"padding": {
-						"top": "none",
-						"right": "none",
-						"bottom": "none",
-						"left": "none"
-					}
-				},
-				"parentName": "GridContainer_nlgvvop",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "ChartWidget_l52twdo",
-				"values": {
-					"type": "crt.ChartWidget",
-					"config": {
-						"title": "#ResourceString(ChartWidget_l52twdo_title)#",
-						"color": "dark-blue",
-						"theme": "without-fill",
-						"scales": {
-							"stacked": false,
-							"xAxis": {
-								"name": "",
-								"formatting": {
-									"type": "string",
-									"maxLinesCount": 2,
-									"maxLineLength": 10
-								}
-							},
-							"yAxis": {
-								"name": "",
-								"formatting": {
-									"type": "number",
-									"thousandAbbreviation": {
-										"enabled": true
-									}
-								}
-							}
-						},
-						"series": [
-							{
-								"color": "dark-blue",
-								"type": "bar",
-								"label": "#ResourceString(ChartWidget_l52twdo_series_0)#",
-								"legend": {
-									"enabled": true
-								},
-								"data": {
-									"providing": {
-										"attribute": "ChartWidget_l52twdo_SeriesData_BudgetSeries",
-										"schemaName": "PgrVwAccountBudgetRank",
-										"filters": {
-											"filter": {
-												"items": {
-													"budgetIsNotNullFilter": {
-														"comparisonType": 2,
-														"filterType": 2,
-														"isEnabled": true,
-														"isNull": false,
-														"trimDateTimeParameterToDate": false,
-														"leftExpression": {
-															"expressionType": 0,
-															"columnPath": "PgrBudgetValue"
-														}
-													},
-													"columnIsNotNullFilter": {
-														"comparisonType": 2,
-														"filterType": 2,
-														"isEnabled": true,
-														"isNull": false,
-														"trimDateTimeParameterToDate": false,
-														"leftExpression": {
-															"expressionType": 0,
-															"columnPath": "PgrAccount.PgrWepaformName"
-														}
-													}
-												},
-												"logicalOperation": 0,
-												"isEnabled": true,
-												"filterType": 6,
-												"rootSchemaName": "PgrVwAccountBudgetRank"
-											},
-											"filterAttributes": [
-												{
-													"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_BudgetSeries",
-													"loadOnChange": true
-												},
-												{
-													"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_BudgetSeries",
-													"loadOnChange": true
-												},
-												{
-													"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_BudgetSeries",
-													"loadOnChange": true
-												}
-											]
-										},
-										"aggregation": {
-											"column": {
-												"orderDirection": 0,
-												"orderPosition": -1,
-												"isVisible": true,
-												"expression": {
-													"expressionType": 1,
-													"functionArgument": {
-														"expressionType": 0,
-														"columnPath": "PgrBudgetValue"
-													},
-													"functionType": 2,
-													"aggregationType": 5,
-													"aggregationEvalType": 0
-												}
-											}
-										},
-										"dependencies": [],
-										"rowCount": 5,
-										"grouping": {
-											"type": "by-value",
-											"column": {
-												"orderDirection": 0,
-												"orderPosition": -1,
-												"isVisible": true,
-												"expression": {
-													"expressionType": 0,
-													"columnPath": "PgrAccount.PgrWepaformName"
-												}
-											}
-										}
-									},
-									"formatting": {
-										"type": "number",
-										"decimalSeparator": ".",
-										"decimalPrecision": 0,
-										"thousandSeparator": ","
-									}
-								},
-								"dataLabel": {
-									"display": true
-								}
-							},
-							{
-								"color": "burnt-coral",
-								"type": "bar",
-								"label": "#ResourceString(ChartWidget_l52twdo_series_1)#",
-								"legend": {
-									"enabled": true
-								},
-								"data": {
-									"providing": {
-										"attribute": "ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
-										"schemaName": "PgrVwAccountBudgetRank",
-										"filters": {
-											"filter": {
-												"items": {
-													"orderIntakeIsNotNullFilter": {
-														"comparisonType": 2,
-														"filterType": 2,
-														"isEnabled": true,
-														"isNull": false,
-														"trimDateTimeParameterToDate": false,
-														"leftExpression": {
-															"expressionType": 0,
-															"columnPath": "PgrOrderIntakeValue"
-														}
-													},
-													"columnIsNotNullFilter": {
-														"comparisonType": 2,
-														"filterType": 2,
-														"isEnabled": true,
-														"isNull": false,
-														"trimDateTimeParameterToDate": false,
-														"leftExpression": {
-															"expressionType": 0,
-															"columnPath": "PgrAccount.PgrWepaformName"
-														}
-													}
-												},
-												"logicalOperation": 0,
-												"isEnabled": true,
-												"filterType": 6,
-												"rootSchemaName": "PgrVwAccountBudgetRank"
-											},
-											"filterAttributes": [
-												{
-													"attribute": "QuickFilter_Territory_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
-													"loadOnChange": true
-												},
-												{
-													"attribute": "QuickFilter_SalesManager_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
-													"loadOnChange": true
-												},
-												{
-													"attribute": "QuickFilter_SalesDirector_ChartWidget_l52twdo_SeriesData_OrderIntakeSeries",
-													"loadOnChange": true
-												}
-											]
-										},
-										"aggregation": {
-											"column": {
-												"orderDirection": 0,
-												"orderPosition": -1,
-												"isVisible": true,
-												"expression": {
-													"expressionType": 1,
-													"functionArgument": {
-														"expressionType": 0,
-														"columnPath": "PgrOrderIntakeValue"
-													},
-													"functionType": 2,
-													"aggregationType": 5,
-													"aggregationEvalType": 0
-												}
-											}
-										},
-										"dependencies": [],
-										"rowCount": 50,
-										"grouping": {
-											"type": "by-value",
-											"column": {
-												"orderDirection": 0,
-												"orderPosition": -1,
-												"isVisible": true,
-												"expression": {
-													"expressionType": 0,
-													"columnPath": "PgrAccount.PgrWepaformName"
-												}
-											}
-										}
-									},
-									"formatting": {
-										"type": "number",
-										"decimalSeparator": ".",
-										"decimalPrecision": 0,
-										"thousandSeparator": ","
-									}
-								},
-								"dataLabel": {
-									"display": true
-								}
-							}
-						],
-						"seriesOrder": {
-							"type": "by-aggregation-value",
-							"direction": 2,
-							"seriesIndex": 0
-						},
-						"layout": {}
-					},
-					"sectionBindingColumnRecordId": "$Id",
-					"visible": true,
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 9
-					}
-				},
-				"parentName": "GridContainer_30ivfl7",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "ChartWidget_vpvvd4s",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 9
-					},
-					"type": "crt.ChartWidget",
-					"config": {
-						"title": "#ResourceString(ChartWidget_vpvvd4s_title)#",
-						"color": "dark-blue",
-						"theme": "without-fill",
-						"scales": {
-							"stacked": false,
-							"xAxis": {
-								"name": "",
-								"formatting": {
-									"type": "string",
-									"maxLinesCount": 2,
-									"maxLineLength": 10
-								}
-							},
-							"yAxis": {
-								"name": "",
-								"formatting": {
-									"type": "number",
-									"thousandAbbreviation": {
-										"enabled": true
-									}
-								}
-							}
-						},
-						"series": [
-							{
-								"color": "steel-blue",
-								"type": "bar",
-								"label": "#ResourceString(ChartWidget_vpvvd4s_series_0)#",
-								"legend": {
-									"enabled": false
-								},
-								"data": {
-									"providing": {
-										"attribute": "ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
-										"schemaName": "PgrVwAccountBudgetRank",
-										"filters": {
-											"filter": {
-												"items": {
-													"deviationIsNotNullFilter": {
-														"filterType": 2,
-														"comparisonType": 2,
-														"isEnabled": true,
-														"trimDateTimeParameterToDate": false,
-														"leftExpression": {
-															"expressionType": 0,
-															"columnPath": "PgrBudgetVsThreeDayAvgDeviation"
-														},
-														"isAggregative": false,
-														"dataValueType": 5,
-														"isNull": false
-													},
-													"columnIsNotNullFilter": {
-														"comparisonType": 2,
-														"filterType": 2,
-														"isEnabled": true,
-														"isNull": false,
-														"trimDateTimeParameterToDate": false,
-														"leftExpression": {
-															"expressionType": 0,
-															"columnPath": "PgrAccount.PgrWepaformName"
-														}
-													}
-												},
-												"logicalOperation": 0,
-												"isEnabled": true,
-												"filterType": 6,
-												"rootSchemaName": "PgrVwAccountBudgetRank"
-											},
-											"filterAttributes": [
-												{
-													"attribute": "QuickFilter_Territory_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
-													"loadOnChange": true
-												},
-												{
-													"attribute": "QuickFilter_SalesManager_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
-													"loadOnChange": true
-												},
-												{
-													"attribute": "QuickFilter_SalesDirector_ChartWidget_vpvvd4s_SeriesData_DeviationSeries",
-													"loadOnChange": true
-												}
-											]
-										},
-										"aggregation": {
-											"column": {
-												"orderDirection": 0,
-												"orderPosition": -1,
-												"isVisible": true,
-												"expression": {
-													"expressionType": 1,
-													"functionArgument": {
-														"expressionType": 0,
-														"columnPath": "PgrBudgetVsThreeDayAvgDeviation"
-													},
-													"functionType": 2,
-													"aggregationType": 4,
-													"aggregationEvalType": 0
-												}
-											}
-										},
-										"dependencies": [],
-										"rowCount": 5,
-										"grouping": {
-											"type": "by-value",
-											"column": {
-												"orderDirection": 0,
-												"orderPosition": -1,
-												"isVisible": true,
-												"expression": {
-													"expressionType": 0,
-													"columnPath": "PgrAccount.PgrWepaformName"
-												}
-											}
-										}
-									},
-									"formatting": {
-										"type": "number",
-										"decimalSeparator": ".",
-										"decimalPrecision": 0,
-										"thousandSeparator": ","
-									}
-								},
-								"dataLabel": {
-									"display": true
-								}
-							}
-						],
-						"seriesOrder": {
-							"type": "by-aggregation-value",
-							"direction": 1,
-							"seriesIndex": 0
-						},
-						"layout": {}
-					},
-					"sectionBindingColumnRecordId": "$Id",
-					"visible": true
-				},
-				"parentName": "GridContainer_30ivfl7",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_mkso5rv",
-				"values": {
-					"layoutConfig": {
-						"column": 4,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.FlexContainer",
-					"direction": "column",
-					"wrap": "nowrap",
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"padding": {
-						"top": "none",
-						"right": "none",
-						"bottom": "none",
-						"left": "none"
-					},
-					"color": "transparent",
-					"borderRadius": "none",
-					"alignItems": "stretch",
-					"justifyContent": "start",
-					"gap": "small"
-				},
-				"parentName": "GridContainer_nlgvvop",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_zjkpii5",
-				"values": {
-					"type": "crt.FlexContainer",
-					"direction": "row",
-					"wrap": "wrap",
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"padding": {
-						"top": "none",
-						"right": "none",
-						"bottom": "none",
-						"left": "none"
-					},
-					"color": "transparent",
-					"borderRadius": "none",
-					"alignItems": "center",
-					"justifyContent": "end",
-					"gap": "small"
-				},
-				"parentName": "FlexContainer_mkso5rv",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "IndicatorWidget_fa2aur9",
-				"values": {
-					"type": "crt.IndicatorWidget",
-					"config": {
-						"title": "#ResourceString(IndicatorWidget_fa2aur9_title)#",
-						"theme": "without-fill",
-						"layout": {
-							"color": "dark-blue",
-							"icon": {
-								"iconName": "filter-column-icon"
-							},
-							"border": {
-								"hidden": true
-							}
-						},
-						"text": {
-							"template": "#ResourceString(IndicatorWidget_fa2aur9_config_text_template)#",
-							"metricMacros": "{0}",
-							"labelPosition": "before-after",
-							"fontSizeMode": "extra-small"
-						},
-						"data": {
-							"formatting": {
-								"type": "number",
-								"decimalPrecision": 0,
-								"decimalSeparator": ".",
-								"thousandSeparator": ","
-							},
-							"comparisonProviding": null,
-							"providing": {
-								"attribute": "IndicatorWidget_fa2aur9_Data",
-								"schemaName": "Account",
-								"filters": {
-									"filterAttributes": [
-										{
-											"attribute": "QuickFilter_Territory_IndicatorWidget_fa2aur9_Data",
-											"loadOnChange": true
-										},
-										{
-											"attribute": "QuickFilter_SalesDirector_IndicatorWidget_fa2aur9_Data",
-											"loadOnChange": true
-										},
-										{
-											"attribute": "QuickFilter_SalesManager_IndicatorWidget_fa2aur9_Data",
-											"loadOnChange": true
-										}
-									]
-								},
-								"aggregation": {
-									"column": {
-										"orderDirection": 0,
-										"orderPosition": -1,
-										"isVisible": true,
-										"expression": {
-											"expressionType": 1,
-											"functionArgument": {
-												"expressionType": 0,
-												"columnPath": "Id"
-											},
-											"functionType": 2,
-											"aggregationType": 1,
-											"aggregationEvalType": 2
-										}
-									}
-								},
-								"dependencies": []
-							}
-						},
-						"comparison": {
-							"type": null,
-							"text": ""
-						},
-						"hint": "#ResourceString(IndicatorWidget_fa2aur9_hint)#",
-						"hideTitle": true
-					},
-					"visible": true,
-					"layoutConfig": {
-						"width": 314
-					}
-				},
-				"parentName": "FlexContainer_zjkpii5",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "IndicatorWidget_1i78h71",
-				"values": {
-					"type": "crt.IndicatorWidget",
-					"config": {
-						"title": "#ResourceString(IndicatorWidget_1i78h71_title)#",
-						"theme": "full-fill",
-						"layout": {
-							"color": "dark-blue"
-						},
-						"text": {
-							"template": "#ResourceString(IndicatorWidget_1i78h71_config_text_template)#",
-							"metricMacros": "{0}",
-							"labelPosition": "above-under",
-							"fontSizeMode": "small"
-						},
-						"data": {
-							"formatting": {
-								"type": "number",
-								"decimalPrecision": 0,
-								"decimalSeparator": ".",
-								"thousandSeparator": ","
-							},
-							"comparisonProviding": null,
-							"providing": {
-								"attribute": "IndicatorWidget_1i78h71_Data",
-								"schemaName": "PgrVwAccountMetricSnapshot",
-								"filters": {
-									"filter": {
-										"items": {
-											"a03d16fe-d10a-4954-8759-5dfe3ef00d05": {
-												"filterType": 2,
-												"comparisonType": 2,
-												"isEnabled": true,
-												"trimDateTimeParameterToDate": false,
-												"leftExpression": {
-													"expressionType": 0,
-													"columnPath": "PgrBudgetValue"
-												},
-												"isAggregative": false,
-												"dataValueType": 5,
-												"isNull": false
-											}
-										},
-										"logicalOperation": 0,
-										"isEnabled": true,
-										"filterType": 6,
-										"rootSchemaName": "PgrVwAccountMetricSnapshot"
-									},
-									"filterAttributes": [
-										{
-											"attribute": "QuickFilter_Territory_IndicatorWidget_1i78h71_Data",
-											"loadOnChange": true
-										},
-										{
-											"attribute": "QuickFilter_SalesManager_IndicatorWidget_1i78h71_Data",
-											"loadOnChange": true
-										},
-										{
-											"attribute": "QuickFilter_SalesDirector_IndicatorWidget_1i78h71_Data",
-											"loadOnChange": true
-										}
-									]
-								},
-								"aggregation": {
-									"column": {
-										"orderDirection": 0,
-										"orderPosition": -1,
-										"isVisible": true,
-										"expression": {
-											"expressionType": 1,
-											"functionArgument": {
-												"expressionType": 0,
-												"columnPath": "PgrBudgetValue"
-											},
-											"functionType": 2,
-											"aggregationType": 2,
-											"aggregationEvalType": 0
-										}
-									}
-								},
-								"dependencies": []
-							}
-						},
-						"comparison": {
-							"type": null,
-							"text": ""
-						},
-						"hint": "#ResourceString(IndicatorWidget_1i78h71_hint)#",
-						"hideTitle": true
-					},
-					"visible": true,
-					"layoutConfig": {
-						"height": 70
-					}
-				},
-				"parentName": "FlexContainer_mkso5rv",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "IndicatorWidget_h8gyel3",
-				"values": {
-					"type": "crt.IndicatorWidget",
-					"config": {
-						"title": "#ResourceString(IndicatorWidget_h8gyel3_title)#",
-						"theme": "full-fill",
-						"layout": {
-							"color": "burnt-coral"
-						},
-						"text": {
-							"template": "#ResourceString(IndicatorWidget_h8gyel3_config_text_template)#",
-							"metricMacros": "{0}",
-							"labelPosition": "above-under",
-							"fontSizeMode": "small"
-						},
-						"data": {
-							"formatting": {
-								"type": "number",
-								"decimalPrecision": 0,
-								"decimalSeparator": ".",
-								"thousandSeparator": ","
-							},
-							"comparisonProviding": null,
-							"providing": {
-								"attribute": "IndicatorWidget_h8gyel3_Data",
-								"schemaName": "PgrVwAccountMetricSnapshot",
-								"filters": {
-									"filter": {
-										"items": {
-											"5ea1b3f1-d0bf-481b-9d58-b947f917e5bc": {
-												"filterType": 2,
-												"comparisonType": 2,
-												"isEnabled": true,
-												"trimDateTimeParameterToDate": false,
-												"leftExpression": {
-													"expressionType": 0,
-													"columnPath": "PgrOrderIntakeValue"
-												},
-												"isAggregative": false,
-												"dataValueType": 5,
-												"isNull": false
-											}
-										},
-										"logicalOperation": 0,
-										"isEnabled": true,
-										"filterType": 6,
-										"rootSchemaName": "PgrVwAccountMetricSnapshot"
-									},
-									"filterAttributes": [
-										{
-											"attribute": "QuickFilter_Territory_IndicatorWidget_h8gyel3_Data",
-											"loadOnChange": true
-										},
-										{
-											"attribute": "QuickFilter_SalesManager_IndicatorWidget_h8gyel3_Data",
-											"loadOnChange": true
-										},
-										{
-											"attribute": "QuickFilter_SalesDirector_IndicatorWidget_h8gyel3_Data",
-											"loadOnChange": true
-										}
-									]
-								},
-								"aggregation": {
-									"column": {
-										"orderDirection": 0,
-										"orderPosition": -1,
-										"isVisible": true,
-										"expression": {
-											"expressionType": 1,
-											"functionArgument": {
-												"expressionType": 0,
-												"columnPath": "PgrOrderIntakeValue"
-											},
-											"functionType": 2,
-											"aggregationType": 2,
-											"aggregationEvalType": 0
-										}
-									}
-								},
-								"dependencies": []
-							}
-						},
-						"comparison": {
-							"type": null,
-							"text": ""
-						},
-						"hint": "#ResourceString(IndicatorWidget_h8gyel3_hint)#",
-						"hideTitle": true
-					},
-					"visible": true,
-					"layoutConfig": {
-						"height": 72
-					}
-				},
-				"parentName": "FlexContainer_mkso5rv",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "IndicatorWidget_jzvgr6l",
-				"values": {
-					"type": "crt.IndicatorWidget",
-					"config": {
-						"title": "#ResourceString(IndicatorWidget_jzvgr6l_title)#",
-						"theme": "full-fill",
-						"layout": {
-							"color": "light-blue"
-						},
-						"text": {
-							"template": "#ResourceString(IndicatorWidget_jzvgr6l_config_text_template)#",
-							"metricMacros": "{0}",
-							"labelPosition": "above-under",
-							"fontSizeMode": "small"
-						},
-						"data": {
-							"formatting": {
-								"type": "number",
-								"decimalPrecision": 1,
-								"decimalSeparator": ".",
-								"thousandSeparator": ","
-							},
-							"comparisonProviding": null,
-							"providing": {
-								"attribute": "IndicatorWidget_jzvgr6l_Data",
-								"expressionSchema": {
-									"typeName": "Terrasoft.Core.ExpressionEngine.Schema.ExpressionSchema",
-									"uId": "7410c564-e723-4ef6-835d-f1414746c58e",
-									"name": "IndicatorWidget_jzvgr6l_Data",
-									"engineType": "PowerFx",
-									"resultDataValueType": "Float",
-									"expression": "((#jzvgr6l_DevAgg#.sumOrderIntake - #jzvgr6l_BudAgg#.sumBudget) / #jzvgr6l_BudAgg#.sumBudget) * 100",
-									"parameters": [],
-									"expressionVariables": [
-										{
-											"typeName": "Terrasoft.Core.ExpressionEngine.Schema.Variables.ExpressionSchemaVariable",
-											"uId": "a768b6b5-ad94-44ac-a797-6cf73a57e010",
-											"name": "jzvgr6l_DevAgg",
-											"dataValueType": "Text",
-											"variableType": "EsqAggregation",
-											"config": {
-												"typeName": "Terrasoft.Core.ExpressionEngine.Schema.Variables.ExpressionSchemaAggregationVariableConfig",
-												"uId": "fea45d45-46b0-41db-bcfe-135db708af29",
-												"name": "VariableConfig",
-												"value": "PgrVwAccountMetricSnapshot",
-												"expressions": [
-													{
-														"name": "sumOrderIntake",
-														"aggregationType": "Sum",
-														"expression": {
-															"type": "SchemaColumn",
-															"columnPath": "PgrOrderIntakeValue"
-														}
-													}
-												],
-												"filters": {
-													"items": {
-														"orderIntakeNotNullFilter": {
-															"comparisonType": 2,
-															"filterType": 2,
-															"isEnabled": true,
-															"isNull": false,
-															"trimDateTimeParameterToDate": false,
-															"leftExpression": {
-																"expressionType": 0,
-																"columnPath": "PgrOrderIntakeValue"
-															}
-														}
-													},
-													"logicalOperation": 0,
-													"isEnabled": true,
-													"filterType": 6,
-													"rootSchemaName": "PgrVwAccountMetricSnapshot"
-												},
-												"filterAttributes": [
-													{
-														"attribute": "QuickFilter_Territory_jzvgr6l_DevAgg",
-														"loadOnChange": true
-													},
-													{
-														"attribute": "QuickFilter_SalesDirector_jzvgr6l_DevAgg",
-														"loadOnChange": true
-													},
-													{
-														"attribute": "QuickFilter_SalesManager_jzvgr6l_DevAgg",
-														"loadOnChange": true
-													}
-												]
-											}
-										},
-										{
-											"typeName": "Terrasoft.Core.ExpressionEngine.Schema.Variables.ExpressionSchemaVariable",
-											"uId": "65f00c9a-139c-49fc-a140-de2dbd7be528",
-											"name": "jzvgr6l_BudAgg",
-											"dataValueType": "Text",
-											"variableType": "EsqAggregation",
-											"config": {
-												"typeName": "Terrasoft.Core.ExpressionEngine.Schema.Variables.ExpressionSchemaAggregationVariableConfig",
-												"uId": "35aacb0a-3458-4997-9122-7dd866dab3ab",
-												"name": "VariableConfig",
-												"value": "PgrVwAccountMetricSnapshot",
-												"expressions": [
-													{
-														"name": "sumBudget",
-														"aggregationType": "Sum",
-														"expression": {
-															"type": "SchemaColumn",
-															"columnPath": "PgrBudgetValue"
-														}
-													}
-												],
-												"filters": {
-													"items": {
-														"budgetNotNullFilter": {
-															"comparisonType": 2,
-															"filterType": 2,
-															"isEnabled": true,
-															"isNull": false,
-															"trimDateTimeParameterToDate": false,
-															"leftExpression": {
-																"expressionType": 0,
-																"columnPath": "PgrBudgetValue"
-															}
-														}
-													},
-													"logicalOperation": 0,
-													"isEnabled": true,
-													"filterType": 6,
-													"rootSchemaName": "PgrVwAccountMetricSnapshot"
-												},
-												"filterAttributes": [
-													{
-														"attribute": "QuickFilter_Territory_jzvgr6l_BudAgg",
-														"loadOnChange": true
-													},
-													{
-														"attribute": "QuickFilter_SalesDirector_jzvgr6l_BudAgg",
-														"loadOnChange": true
-													},
-													{
-														"attribute": "QuickFilter_SalesManager_jzvgr6l_BudAgg",
-														"loadOnChange": true
-													}
-												]
-											}
-										}
-									]
-								}
-							}
-						},
-						"comparison": {
-							"type": null,
-							"text": ""
-						},
-						"hint": "#ResourceString(IndicatorWidget_jzvgr6l_hint)#",
-						"hideTitle": true
-					},
-					"visible": true,
-					"_filterableOptions": [
-						{
-							"filterAttributeName": "VariableConfig_fea45d45_46b0_41db_bcfe_135db708af29",
-							"entitySchemaName": "PgrVwAccountMetricSnapshot",
-							"caption": "#ResourceString(IndicatorWidget_jzvgr6l_title_ratio)# | PgrVwAccountMetricSnapshot.PgrOrderIntakeValue",
-							"filterAttributes": [
-								"QuickFilter_Territory_jzvgr6l_DevAgg",
-								"QuickFilter_SalesDirector_jzvgr6l_DevAgg",
-								"QuickFilter_SalesManager_jzvgr6l_DevAgg"
-							]
-						},
-						{
-							"filterAttributeName": "VariableConfig_35aacb0a_3458_4997_9122_7dd866dab3ab",
-							"entitySchemaName": "PgrVwAccountMetricSnapshot",
-							"caption": "#ResourceString(IndicatorWidget_jzvgr6l_title_ratio)# | PgrVwAccountMetricSnapshot.PgrBudgetValue",
-							"filterAttributes": [
-								"QuickFilter_Territory_jzvgr6l_BudAgg",
-								"QuickFilter_SalesDirector_jzvgr6l_BudAgg",
-								"QuickFilter_SalesManager_jzvgr6l_BudAgg"
-							]
-						}
-					]
-				},
-				"parentName": "FlexContainer_mkso5rv",
-				"propertyName": "items",
 				"index": 3
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
