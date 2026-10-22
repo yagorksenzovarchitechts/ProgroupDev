@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "6e5b783d-39d4-4e7e-a1b1-bef7c27f0f38",
+    "Name": "PgrAccountMetricValuePotentialEventListener",
+    "ModifiedOnUtc": "\/Date(1792654934000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "PgrAccountMetricValuePotentialEventListener",
+    "DependsOn": []
+  }
+}

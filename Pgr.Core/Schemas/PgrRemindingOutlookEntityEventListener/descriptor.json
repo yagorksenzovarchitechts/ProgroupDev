@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "2c3e720d-2511-410e-aeb9-57baa622781a",
+    "Name": "PgrRemindingOutlookEntityEventListener",
+    "ModifiedOnUtc": "\/Date(1792582172000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "PgrRemindingOutlookEntityEventListener",
+    "DependsOn": []
+  }
+}

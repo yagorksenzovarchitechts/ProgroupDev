@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "e18d82ff-93f8-46bd-9b93-9767aef76b4e",
+    "Name": "PgrAccountDisplayNameEventListener",
+    "ModifiedOnUtc": "\/Date(1792661209000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "PgrAccountDisplayNameEventListener",
+    "DependsOn": []
+  }
+}

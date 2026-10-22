@@ -7,7 +7,7 @@ define("PgrProjectPrices_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				"values": {
 					"caption": "#ResourceString(AddButton_caption)#",
 					"size": "large",
-					"visible": true,
+					"visible": false,
 					"clickMode": "default"
 				}
 			},
@@ -15,7 +15,8 @@ define("PgrProjectPrices_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function
 				"operation": "merge",
 				"name": "DataImportButton",
 				"values": {
-					"caption": "#ResourceString(DataImportButton_caption)#"
+					"caption": "#ResourceString(DataImportButton_caption)#",
+					"visible": false
 				}
 			},
 			{

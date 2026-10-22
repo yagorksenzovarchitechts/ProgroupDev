@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "bc001687-3907-46f6-a165-0f39031a976f",
+    "Name": "NotificationsPanel_AnniversaryNotificationsTabSidebar",
+    "ModifiedOnUtc": "\/Date(1792572334000)\/",
+    "Parent": {
+      "UId": "225ebd99-fc22-4f8f-8d52-68eb508d832f",
+      "Name": "NotificationsPanel_AnniversaryNotificationsTabSidebar"
+    },
+    "ExtendParent": true,
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Anniversary notifications tab of the notifications panel (Sidebar)",
+    "DependsOn": []
+  }
+}

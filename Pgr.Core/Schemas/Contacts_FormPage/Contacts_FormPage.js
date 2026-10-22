@@ -1275,7 +1275,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 					"placeholder": "",
 					"tooltip": "",
 					"needHandleSave": false,
-					"visible": false,
+					"visible": true,
 					"readonly": false
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
@@ -1293,7 +1293,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 					"placeholder": "",
 					"tooltip": "",
 					"needHandleSave": false,
-					"visible": false,
+					"visible": true,
 					"readonly": false,
 					"validators": {
 						"phoneFormat": {
@@ -1310,17 +1310,15 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 			},
 			{
 				"operation": "insert",
-				"name": "CommunicationOptions",
+				"name": "PhoneInput_uq0c3k3",
 				"values": {
-					"type": "crt.CommunicationOptions",
-					"readonly": false,
-					"columnsCount": 1,
-					"showNoDataPlaceholder": true,
-					"labelPosition": "above",
-					"masterRecordColumnValue": "$Id",
-					"masterRecordColumnName": "Contact",
-					"items": "$CommunicationOptions_558wj6f",
-					"visible": false
+					"type": "crt.PhoneInput",
+					"label": "$Resources.Strings.PDS_MobilePhone_w9af1vn",
+					"control": "$PDS_MobilePhone_w9af1vn",
+					"labelPosition": "auto",
+					"placeholder": "",
+					"tooltip": "",
+					"needHandleSave": false
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
@@ -4357,6 +4355,11 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 									}
 								}
 							}
+						}
+					},
+					"PDS_MobilePhone_w9af1vn": {
+						"modelConfig": {
+							"path": "PDS.MobilePhone"
 						}
 					}
 				}

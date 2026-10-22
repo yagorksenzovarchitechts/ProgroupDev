@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "ed2da3ab-559c-4b10-a269-0ac4ec2fc52b",
+    "Name": "PgrAccountCompetitorLatestEventListener",
+    "ModifiedOnUtc": "\/Date(1792657456000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "PgrAccountCompetitorLatestEventListener",
+    "DependsOn": []
+  }
+}

@@ -55,6 +55,18 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"sticky": true
 						},
 						{
+							"id": "58c1a0f3-4cd1-4e4e-aca7-19f8d4068d35",
+							"code": "PDS_Surname",
+							"caption": "#ResourceString(PDS_Surname)#",
+							"dataValueType": 28
+						},
+						{
+							"id": "1e71efcd-579c-00e9-4e4b-0cf4d0674ee1",
+							"code": "PDS_GivenName",
+							"caption": "#ResourceString(PDS_GivenName)#",
+							"dataValueType": 28
+						},
+						{
 							"id": "438505b8-4a87-0ac6-d1c3-1382780806cb",
 							"code": "PDS_Type",
 							"caption": "#ResourceString(PDS_Type)#",
@@ -66,6 +78,12 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"code": "PDS_Account",
 							"caption": "#ResourceString(PDS_Account)#",
 							"dataValueType": 10
+						},
+						{
+							"id": "3c44eb56-a5ee-3514-e97d-f41b3fdfac4f",
+							"code": "PDS_Email",
+							"caption": "#ResourceString(PDS_Email)#",
+							"dataValueType": 45
 						},
 						{
 							"id": "577c7ad1-cb2f-d6c2-6dcc-8f7af9f523d8",
@@ -80,10 +98,16 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"dataValueType": 42
 						},
 						{
-							"id": "3c44eb56-a5ee-3514-e97d-f41b3fdfac4f",
-							"code": "PDS_Email",
-							"caption": "#ResourceString(PDS_Email)#",
-							"dataValueType": 45
+							"id": "e272b9a5-0e02-79e0-070a-30bf19ff1e27",
+							"code": "PDS_JobTitle",
+							"caption": "#ResourceString(PDS_JobTitle)#",
+							"dataValueType": 28
+						},
+						{
+							"id": "06b1e058-be15-c130-a322-b621a163f80b",
+							"code": "PDS_Department",
+							"caption": "#ResourceString(PDS_Department)#",
+							"dataValueType": 10
 						}
 					]
 				}
@@ -442,9 +466,29 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"attributes"
 				],
 				"values": {
+					"PDS_Surname": {
+						"modelConfig": {
+							"path": "PDS.Surname"
+						}
+					},
+					"PDS_GivenName": {
+						"modelConfig": {
+							"path": "PDS.GivenName"
+						}
+					},
 					"PDS_Phone": {
 						"modelConfig": {
 							"path": "PDS.Phone"
+						}
+					},
+					"PDS_JobTitle": {
+						"modelConfig": {
+							"path": "PDS.JobTitle"
+						}
+					},
+					"PDS_Department": {
+						"modelConfig": {
+							"path": "PDS.Department"
 						}
 					}
 				}
@@ -508,8 +552,8 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"values": {
 					"default": [
 						{
-							"direction": "asc",
-							"columnName": "Name"
+							"direction": "desc",
+							"columnName": "AccountPrimaryContact_PgrSalesManager_Name_2qf8cho"
 						}
 					]
 				}
@@ -538,8 +582,20 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"attributes"
 				],
 				"values": {
+					"Surname": {
+						"path": "Surname"
+					},
+					"GivenName": {
+						"path": "GivenName"
+					},
 					"Phone": {
 						"path": "Phone"
+					},
+					"JobTitle": {
+						"path": "JobTitle"
+					},
+					"Department": {
+						"path": "Department"
 					}
 				}
 			}

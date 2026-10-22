@@ -7,6 +7,7 @@
 			<Item Name="LocalizableStrings.DataGrid_0kcsg12DS_Owner.Value" Value="Sales Person" />
 			<Item Name="LocalizableStrings.DataGrid_0kcsg12DS_PgrAccountTypesText.Value" Value="Account type/s" />
 			<Item Name="LocalizableStrings.DataGrid_0kcsg12DS_PgrCustomerServiceName.Value" Value="Customer Service" />
+			<Item Name="LocalizableStrings.DataGrid_0kcsg12DS_PgrDisplayName.Value" Value="Account Display name" />
 			<Item Name="LocalizableStrings.DataGrid_0kcsg12DS_PgrSalesDirector.Value" Value="Sales Director" />
 			<Item Name="LocalizableStrings.DataTable_AssignTerritoryBulkAction_caption.Value" Value="Assign territory" />
 			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_hint.Value" Value="Select tag" />

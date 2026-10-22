@@ -416,6 +416,14 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
   "S2": "603d4960-a1a2-45e9-b232-206a54421b01"
 }
++ MetaData.Schema.D2 {
+  "UId": "64ff2552-51d6-0362-be90-a88b750fbe23",
+  "A2": "PgrPotential",
+  "A3": "84c92193-3a76-4c34-81e7-f588516da67e",
+  "A4": "84c92193-3a76-4c34-81e7-f588516da67e",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "60532cfd-8645-4a54-be81-bef507aa2339"
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -462,7 +470,8 @@
   "75b262d1-879f-5575-371d-a04feaaed09d",
   "17dd3c19-6afd-6465-e6e7-414747bceded",
   "3bf9bf22-9b11-868a-4e9e-ab6cda8b224f",
-  "0d3d32d2-14cf-cc7d-d9eb-6e5299e01144"
+  "0d3d32d2-14cf-cc7d-d9eb-6e5299e01144",
+  "64ff2552-51d6-0362-be90-a88b750fbe23"
 ]
 = MetaData.Schema.D20.A2 "PgrVisitReportEvents"
 + MetaData.Schema.D20.FA1 false

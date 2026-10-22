@@ -99,11 +99,11 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"width": 191
 						},
 						{
-							"id": "05efc6bb-4f6c-0112-1ca4-7ef275c64a52",
-							"code": "PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_8hzzbdy",
-							"caption": "#ResourceString(PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_8hzzbdy)#",
-							"dataValueType": 31,
-							"width": 203
+							"id": "34c0c29b-9bfa-d06a-f9ac-ab5cf677cc73",
+							"code": "PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_iwmtsad",
+							"caption": "#ResourceString(PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_iwmtsad)#",
+							"dataValueType": 32,
+							"width": 289
 						},
 						{
 							"id": "27fd41ae-4e52-ea98-076d-64f38d16cdb4",
@@ -113,11 +113,11 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"width": 176
 						},
 						{
-							"id": "4f71a261-9c60-ebd1-eb5f-17b7a4df0de8",
-							"code": "PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_1qbr9c5",
-							"caption": "#ResourceString(PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_1qbr9c5)#",
-							"dataValueType": 31,
-							"width": 237
+							"id": "7ff96b78-9641-1522-1979-81c37a7d48c0",
+							"code": "PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_2msqauj",
+							"caption": "#ResourceString(PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_2msqauj)#",
+							"dataValueType": 32,
+							"width": 285
 						},
 						{
 							"id": "086e972c-5638-bc0d-0c80-af30243cc024",
@@ -389,9 +389,9 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"path": "PDS.PgrBonusThresholdPgrBonus_PgrTierThreshold_xheoyt4"
 						}
 					},
-					"PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_8hzzbdy": {
+					"PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_iwmtsad": {
 						"modelConfig": {
-							"path": "PDS.PgrBonusThresholdPgrBonus_PgrBonusPercentage_8hzzbdy"
+							"path": "PDS.PgrBonusThresholdPgrBonus_PgrBonusPercentage_iwmtsad"
 						}
 					},
 					"PDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_u01j4am": {
@@ -399,9 +399,9 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 							"path": "PDS.PgrBonusThresholdPgrBonus_PgrTierThreshold_u01j4am"
 						}
 					},
-					"PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_1qbr9c5": {
+					"PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_2msqauj": {
 						"modelConfig": {
-							"path": "PDS.PgrBonusThresholdPgrBonus_PgrBonusPercentage_1qbr9c5"
+							"path": "PDS.PgrBonusThresholdPgrBonus_PgrBonusPercentage_2msqauj"
 						}
 					},
 					"PDS_PgrStartDate": {
@@ -513,7 +513,7 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 								"aggregationFunction": "Min"
 							}
 						},
-						"PgrBonusThresholdPgrBonus_PgrBonusPercentage_8hzzbdy": {
+						"PgrBonusThresholdPgrBonus_PgrBonusPercentage_iwmtsad": {
 							"type": "Aggregation",
 							"path": "[PgrBonusThreshold:PgrBonus].PgrBonusPercentage",
 							"aggregationConfig": {
@@ -527,7 +527,7 @@ define("PgrBonuses_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 								"aggregationFunction": "Max"
 							}
 						},
-						"PgrBonusThresholdPgrBonus_PgrBonusPercentage_1qbr9c5": {
+						"PgrBonusThresholdPgrBonus_PgrBonusPercentage_2msqauj": {
 							"type": "Aggregation",
 							"path": "[PgrBonusThreshold:PgrBonus].PgrBonusPercentage",
 							"aggregationConfig": {

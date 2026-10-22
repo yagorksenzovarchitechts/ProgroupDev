@@ -163,11 +163,36 @@ define("Calendar_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"operation": "merge",
 				"name": "Calendar_Tasks",
 				"values": {
-					"colorizationType": "default"
+					"templateValuesMapping": {
+						"startColumn": "Calendar_n8j0xn9DS_StartDate",
+						"endColumn": "Calendar_n8j0xn9DS_DueDate",
+						"titleColumn": "Calendar_n8j0xn9DS_Title",
+						"Label_t6oa43h": "Calendar_n8j0xn9DS_Account",
+						"Label_11cnx3j": "Calendar_n8j0xn9DS_Location",
+						"notesColumn": "Calendar_n8j0xn9DS_Notes",
+						"colorizationColumn": "Calendar_n8j0xn9DS_ActivityCategory"
+					},
+					"colorizationType": "byField"
 				}
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
+			{
+				"operation": "merge",
+				"path": [
+					"attributes",
+					"Calendar_n8j0xn9",
+					"viewModelConfig",
+					"attributes"
+				],
+				"values": {
+					"Calendar_n8j0xn9DS_ActivityCategory": {
+						"modelConfig": {
+							"path": "Calendar_n8j0xn9DS.ActivityCategory"
+						}
+					}
+				}
+			},
 			{
 				"operation": "merge",
 				"path": [
@@ -207,7 +232,22 @@ define("Calendar_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				}
 			}
 		]/**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/,
-		modelConfigDiff: /**SCHEMA_MODEL_CONFIG_DIFF*/[]/**SCHEMA_MODEL_CONFIG_DIFF*/,
+		modelConfigDiff: /**SCHEMA_MODEL_CONFIG_DIFF*/[
+			{
+				"operation": "merge",
+				"path": [
+					"dataSources",
+					"Calendar_n8j0xn9DS",
+					"config",
+					"attributes"
+				],
+				"values": {
+					"ActivityCategory": {
+						"path": "ActivityCategory"
+					}
+				}
+			}
+		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/

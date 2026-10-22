@@ -11,6 +11,26 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 			validFromColumn: "CompetitorsGridDS_PgrValidFrom",
 			competitorColumn: "CompetitorsGridDS_PgrCompetitor",
 			dataSourceName: "CompetitorsGridDS"
+		},
+		// CMVP-338: the Share of wallet grid on the Account page (edits arrive as "GridDetail").
+		GridDetail: {
+			itemsAttr: "GridDetail",
+			selectionAttr: "GridDetail_SelectionState",
+			shareColumn: "GridDetailDS_PgrShare",
+			idColumn: "GridDetailDS_Id",
+			validFromColumn: "GridDetailDS_PgrValidFrom",
+			competitorColumn: "GridDetailDS_PgrCompetitor",
+			dataSourceName: "GridDetailDS"
+		},
+		// CMVP-338: the Share of wallet grid on the Visit report page.
+		GridDetail_lcbts36: {
+			itemsAttr: "GridDetail_lcbts36",
+			selectionAttr: "GridDetail_lcbts36_SelectionState",
+			shareColumn: "GridDetail_lcbts36DS_PgrShare",
+			idColumn: "GridDetail_lcbts36DS_Id",
+			validFromColumn: "GridDetail_lcbts36DS_PgrValidFrom",
+			competitorColumn: "GridDetail_lcbts36DS_PgrCompetitor",
+			dataSourceName: "GridDetail_lcbts36DS"
 		}
 	};
 
@@ -215,32 +235,31 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		return { dated: dated, undatedTotal: undatedTotal, rowCount: rowCount };
 	}
 
+	// CMVP-338: the grid only shows the latest entry per competitor, so validate the current picture:
+	// per competitor take the newest Valid from (undated counts as oldest) and require those shares to total 100.
 	function getInvalidCheckpoints(rows, grid) {
-		const partitioned = partitionRows(rows, grid);
-		const timelines = buildTimelines(partitioned.dated, grid);
-		const checkpoints = getCheckpoints(partitioned.dated, grid);
-		const invalid = [];
-
-		if (!checkpoints.length) {
-			if (partitioned.rowCount && partitioned.undatedTotal !== REQUIRED_TOTAL) {
-				invalid.push({ label: "no valid from date", total: partitioned.undatedTotal });
-			}
-			return invalid;
-		}
-
-		checkpoints.forEach(function(checkpoint) {
-			let total = partitioned.undatedTotal;
-			timelines.forEach(function(timeline) {
-				const share = getActiveShare(timeline, checkpoint.key);
-				if (share !== null) {
-					total += share;
+		const latest = new Map();
+		let rowCount = 0;
+		if (rows && typeof rows.forEach === "function") {
+			rows.forEach(function(row) {
+				rowCount++;
+				const competitorKey = getCompetitorKey(row, grid);
+				const dateKey = getValidFromKey(row, grid);
+				const share = Number(unwrap(row[grid.shareColumn])) || 0;
+				const current = latest.get(competitorKey);
+				if (!current || dateKey > current.dateKey) {
+					latest.set(competitorKey, { dateKey: dateKey, total: share });
+				} else if (dateKey === current.dateKey) {
+					current.total += share;
 				}
 			});
-			if (total !== REQUIRED_TOTAL) {
-				invalid.push({ label: checkpoint.label, total: total });
-			}
-		});
-		return invalid;
+		}
+		if (!rowCount) {
+			return [];
+		}
+		let total = 0;
+		latest.forEach(function(entry) { total += entry.total; });
+		return total === REQUIRED_TOTAL ? [] : [{ label: "Total", total: total }];
 	}
 
 	async function showGroupedTotalError(request, invalidGroups) {

@@ -25,6 +25,7 @@
 			<Item Name="Columns.PgrOwner.Caption" Value="Owner" />
 			<Item Name="Columns.PgrPerformance.Caption" Value="Performance" />
 			<Item Name="Columns.PgrPerformanceText.Caption" Value="Performance remarks" />
+			<Item Name="Columns.PgrPotential.Caption" Value="Potential (tsqm)" />
 			<Item Name="Columns.PgrProjectTopicComment.Caption" Value="Projects &amp; Opportunities (comment)" />
 			<Item Name="Columns.PgrQualityTopicComment.Caption" Value="Quality (comment)" />
 			<Item Name="Columns.PgrServiceTopicComment.Caption" Value="Service &amp; Delivery (comment)" />

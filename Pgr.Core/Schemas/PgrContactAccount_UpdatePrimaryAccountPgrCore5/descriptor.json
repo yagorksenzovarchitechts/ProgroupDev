@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "081fbc90-6752-4331-8c4d-4ffc4b29f891",
+    "Name": "PgrContactAccount_UpdatePrimaryAccountPgrCore5",
+    "ModifiedOnUtc": "\/Date(1792654301000)\/",
+    "Parent": {
+      "UId": "4146609f-458d-4c00-862d-68d11235903d",
+      "Name": "PgrContactAccount_UpdatePrimaryAccount"
+    },
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Update contact primary account",
+    "DependsOn": []
+  }
+}

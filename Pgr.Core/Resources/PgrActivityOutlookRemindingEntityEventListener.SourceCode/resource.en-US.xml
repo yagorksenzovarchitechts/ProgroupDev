@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="PgrActivityOutlookRemindingEntityEventListener" />
+			<Item Name="Description" Value="CMVP-303: delete reminders when activity gets Outlook category" />
+		</Items>
+	</Group>
+</Resources>

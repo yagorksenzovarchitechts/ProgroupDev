@@ -6,11 +6,9 @@
 			<Item Name="LocalizableStrings.AccountCompetitorsExpansionPanel_title.Value" Value="Kunden" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Anhänge" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Anhänge" />
-			<Item Name="LocalizableStrings.Button_2voddtp_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.Button_4v2hyhs_caption.Value" Value="Neu" />
-			<Item Name="LocalizableStrings.Button_7we0gt3_caption.Value" Value="Neu" />
+			<Item Name="LocalizableStrings.Button_8i3k7x4_caption.Value" Value="Neukontakt erstellen" />
 			<Item Name="LocalizableStrings.Button_h41prxx_caption.Value" Value="Aktualisieren" />
-			<Item Name="LocalizableStrings.Button_sg32b4k_caption.Value" Value="Aktualisieren" />
 			<Item Name="LocalizableStrings.Button_wzoi3mp_caption.Value" Value="Aktionen" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Abbrechen" />
 			<Item Name="LocalizableStrings.Checkbox_56z210h_tooltip.Value" Value="E-Mail mit PDF Anhang" />
@@ -39,9 +37,9 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_fjwqnu7_title.Value" Value="Kontakte" />
 			<Item Name="LocalizableStrings.ExpansionPanel_h2q0n69_title.Value" Value="Projektpreise" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ilw1gpx_title.Value" Value="Rechnung" />
+			<Item Name="LocalizableStrings.ExpansionPanel_kb0hm3n_title.Value" Value="Kontakte" />
 			<Item Name="LocalizableStrings.ExpansionPanel_pa1hlbi_title.Value" Value="Überlieferung" />
 			<Item Name="LocalizableStrings.ExpansionPanel_udydmkf_title.Value" Value="Schnittstellen" />
-			<Item Name="LocalizableStrings.ExpansionPanel_vbzwo5v_title.Value" Value="Kontakte" />
 			<Item Name="LocalizableStrings.ExpansionPanel_vthgzr6_title.Value" Value="Aufgaben" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_645lk21_caption.Value" Value="Neukontakt erstellen" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_ytmu9oh_placeholder.Value" Value="Suche" />
@@ -55,9 +53,7 @@
 			<Item Name="LocalizableStrings.LeadRefreshButton_caption.Value" Value="Aktualisieren" />
 			<Item Name="LocalizableStrings.LeadSearchFilter_placeholder.Value" Value="Suche" />
 			<Item Name="LocalizableStrings.LeadSettingsButton_caption.Value" Value="Aktionen" />
-			<Item Name="LocalizableStrings.MenuItem_2o6g1eu_caption.Value" Value="Exportieren nach Excel" />
 			<Item Name="LocalizableStrings.MenuItem_5sivz5r_caption.Value" Value="Exportieren nach Excel" />
-			<Item Name="LocalizableStrings.MenuItem_6dw38zl_caption.Value" Value="Datenimport" />
 			<Item Name="LocalizableStrings.MenuItem_hgmncrh_caption.Value" Value="Datenimport" />
 			<Item Name="LocalizableStrings.NumberInput_16huvt7_label.Value" Value="Überlieferung Menge  (% 1)" />
 			<Item Name="LocalizableStrings.NumberInput_63qzwaj_label.Value" Value="Überlieferung Menge [Wert 1)" />
@@ -88,7 +84,6 @@
 			<Item Name="LocalizableStrings.SalesTab_caption.Value" Value="Verkauf" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
 			<Item Name="LocalizableStrings.SearchFilter_2pozl4n_placeholder.Value" Value="Suche" />
-			<Item Name="LocalizableStrings.SearchFilter_2y51wfx_placeholder.Value" Value="Suche" />
 			<Item Name="LocalizableStrings.TabContainer_ActivitiesVisits_caption.Value" Value="Aktivitäten &amp; Besuchsberichte" />
 			<Item Name="LocalizableStrings.TabContainer_Bonuses_caption.Value" Value="Bonus &amp; Vereinbarungen" />
 			<Item Name="LocalizableStrings.TabContainer_Competitor_caption.Value" Value="Wettbewerber" />

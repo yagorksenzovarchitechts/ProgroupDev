@@ -1,0 +1,10 @@
+= MetaData.Schema.UId "bc001687-3907-46f6-a165-0f39031a976f"
+= MetaData.Schema.A5 "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+= MetaData.Schema.B6 "655ac62c-1e4a-cc32-6e65-323f197c68e0"
++ MetaData.Schema.B7 true
+= MetaData.Schema.B8 "10.0.0.858"
+= MetaData.Schema.AD4.Sidebars.["c8f59d12-762f-b16a-79ed-35f6abedbcb7"].Enabled false
++ MetaData.Schema.AD4.Sidebars.["c8f59d12-762f-b16a-79ed-35f6abedbcb7"].AllowSizeAdjustment false
++ MetaData.Schema.AD4.Sidebars.["c8f59d12-762f-b16a-79ed-35f6abedbcb7"].ContainerName null
++ MetaData.Schema.B7 true
+= MetaData.Schema.AD5 "225ebd99-fc22-4f8f-8d52-68eb508d832f"

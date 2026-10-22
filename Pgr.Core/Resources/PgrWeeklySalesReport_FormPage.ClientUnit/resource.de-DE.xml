@@ -18,6 +18,8 @@
 			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrTopicProjectsOpportunities.Value" Value="Projekte &amp; Verkaufschancen" />
 			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrTopicQuality.Value" Value="Qualität" />
 			<Item Name="LocalizableStrings.GridDetail_crlfqp1DS_PgrTopicSpecial.Value" Value="Sonderthemen" />
+			<Item Name="LocalizableStrings.Icon_24ufkr7_tooltip.Value" Value="Daten im entsprechenden Besuchsbericht aktualisieren " />
+			<Item Name="LocalizableStrings.Icon_o9bhfwe_tooltip.Value" Value="Daten im entsprechenden Besuchsbericht aktualisieren. Anschließend diese Seite neu laden." />
 			<Item Name="LocalizableStrings.IndicatorWidget_626yo4g_title.Value" Value="AE [TQM/AT]" />
 			<Item Name="LocalizableStrings.IndicatorWidget_har31n7_title.Value" Value="Anz. Auswahl Qualität" />
 			<Item Name="LocalizableStrings.IndicatorWidget_jvd5tfw_title.Value" Value="9-TageØ OI [TQM Ø 9 Tage}" />
