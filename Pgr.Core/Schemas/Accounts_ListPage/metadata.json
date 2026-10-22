@@ -120,6 +120,13 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
 + MetaData.Schema.B2 {
+  "UId": "a0c9faf3-351d-7297-92ed-de83ce9b441e",
+  "A2": "DataGrid_0kcsg12DS_PgrDisplayName",
+  "A3": "fc1da1e2-dd2f-436f-8880-0dd326c26ae6",
+  "A4": "fc1da1e2-dd2f-436f-8880-0dd326c26ae6",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
   "UId": "dad6907c-fd30-c781-3680-4546c3fd73f9",
   "A2": "ActionButton_caption",
   "A3": "b7b898d0-8c77-4953-c097-23fa6800da02",
@@ -185,6 +192,7 @@
   "633a06eb-8c70-d0a6-4c01-cbddcf754299",
   "015e3a52-43cc-dda7-2460-5434ac0f8a70",
   "9ddecc34-a2c7-ee7b-3f31-8a38428efff2",
+  "a0c9faf3-351d-7297-92ed-de83ce9b441e",
   "dad6907c-fd30-c781-3680-4546c3fd73f9",
   "4a1fa859-3609-3091-fee0-b90f1ee54a71",
   "5b11b26c-b03f-fd9d-e826-d01796649ea6",

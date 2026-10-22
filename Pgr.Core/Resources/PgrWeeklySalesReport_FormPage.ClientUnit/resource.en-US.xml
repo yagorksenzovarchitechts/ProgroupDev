@@ -44,6 +44,9 @@
 			<Item Name="LocalizableStrings.GridDetail_zs3al7lDS_Account_Pgr369BudgetCalculationPgrAccount_PgrToleranceAdjustedBudget_w1apktm.Value" Value="Tolerance-adjusted budget" />
 			<Item Name="LocalizableStrings.GridDetail_zs3al7lDS_PgrAccount.Value" Value="Customer" />
 			<Item Name="LocalizableStrings.GridDetail_zs3al7lDS_PgrAccount_PgrOrderIntakeDayCounter.Value" Value="Order intake day counter" />
+			<Item Name="LocalizableStrings.Icon_24ufkr7_ariaLabel.Value" Value="Visit report tooltip" />
+			<Item Name="LocalizableStrings.Icon_24ufkr7_tooltip.Value" Value="Go to the relevant visit report to update data" />
+			<Item Name="LocalizableStrings.Icon_o9bhfwe_tooltip.Value" Value="Go to the relevant visit report to update data. After that refresh here." />
 			<Item Name="LocalizableStrings.IndicatorWidget_626yo4g_config_text_template.Value" Value="{0}" />
 			<Item Name="LocalizableStrings.IndicatorWidget_626yo4g_hint.Value" Value="Components.IndicatorWidget.Hint" />
 			<Item Name="LocalizableStrings.IndicatorWidget_626yo4g_title.Value" Value="Order intake [TSM/WD]" />
@@ -63,9 +66,10 @@
 			<Item Name="LocalizableStrings.IndicatorWidget_vdwd3qa_hint.Value" Value="Components.IndicatorWidget.Hint" />
 			<Item Name="LocalizableStrings.IndicatorWidget_vdwd3qa_title.Value" Value="Dev. OI vs. BU / WD [%]" />
 			<Item Name="LocalizableStrings.NumberInput_vpi4hk8_label.Value" Value="Week nr" />
-			<Item Name="LocalizableStrings.TabContainer_6k84kcz_caption.Value" Value="Visits &amp; Activities" />
+			<Item Name="LocalizableStrings.TabContainer_6k84kcz_caption.Value" Value="Additional Data" />
 			<Item Name="LocalizableStrings.TabContainer_9wi9cfc_caption.Value" Value="Audit log" />
-			<Item Name="LocalizableStrings.TabContainer_ovp5q9m_caption.Value" Value="Report comments" />
+			<Item Name="LocalizableStrings.TabContainer_dvmos5d_caption.Value" Value="Data Included in Report" />
+			<Item Name="LocalizableStrings.TabContainer_ovp5q9m_caption.Value" Value="Report commentry" />
 			<Item Name="LocalizableStrings.TabContainer_vlwl5fh_caption.Value" Value="Report info" />
 			<Item Name="LocalizableStrings.addRecord_66hk99h_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_6npx3e4_caption.Value" Value="Add new" />

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.AggregationColumnName.Caption" Value="Name der Aggregatsfunktionsspalte" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.CanReadUncommitedData.Caption" Value="Nicht committete Daten lesen" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.DataSourceFilters.Caption" Value="Datenquelle der Filter" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.EntityColumnMetaPathes.Caption" Value="Zu lesende Spalten" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.FunctionType.Caption" Value="Aggregatesfunktionstyp" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.IgnoreDisplayValues.Caption" Value="Angezeigte Werte von Nachschlagewert-Spalten nicht lesen" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.NumberOfRecords.Caption" Value="Anzahl zu lesender Sätze" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.OrderInfo.Caption" Value="Spaltensortiierung" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ReadSomeTopRecords.Caption" Value="Zuerst lesen" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultCompositeObjectList.Caption" Value="Datensatz-Auswahl" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultCount.Caption" Value="Anzahl Sätze" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultDateTimeFunction.Caption" Value="Funktionsresultat (Datum/Zeit)" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultEntity.Caption" Value="Erstes Item der Ergebniskollektion" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultEntityCollection.Caption" Value="Ergenissammlung" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultFloatFunction.Caption" Value="Funktionsresultat (Dezimal)" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultIntegerFunction.Caption" Value="Funktionsresultat (Ganzzahl)" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultRowsCount.Caption" Value="Anzahl gelesener Sätze" />
+			<Item Name="BaseElements.ReadContactInAccount.Parameters.ResultType.Caption" Value="Ergebnistyp" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.AggregationColumnName.Caption" Value="Name der Aggregatsfunktionsspalte" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.CanReadUncommitedData.Caption" Value="Nicht committete Daten lesen" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.DataSourceFilters.Caption" Value="Datenquelle der Filter" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.EntityColumnMetaPathes.Caption" Value="Zu lesende Spalten" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.FunctionType.Caption" Value="Aggregatesfunktionstyp" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.IgnoreDisplayValues.Caption" Value="Angezeigte Werte von Nachschlagewert-Spalten nicht lesen" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.NumberOfRecords.Caption" Value="Anzahl zu lesender Sätze" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.OrderInfo.Caption" Value="Spaltensortiierung" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ReadSomeTopRecords.Caption" Value="Zuerst lesen" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultCompositeObjectList.Caption" Value="Datensatz-Auswahl" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultCount.Caption" Value="Anzahl Sätze" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultDateTimeFunction.Caption" Value="Funktionsresultat (Datum/Zeit)" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultEntity.Caption" Value="Erstes Item der Ergebniskollektion" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultEntityCollection.Caption" Value="Ergenissammlung" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultFloatFunction.Caption" Value="Funktionsresultat (Dezimal)" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultIntegerFunction.Caption" Value="Funktionsresultat (Ganzzahl)" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultRowsCount.Caption" Value="Anzahl gelesener Sätze" />
+			<Item Name="BaseElements.ReadGroupAccountOfContact.Parameters.ResultType.Caption" Value="Ergebnistyp" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.AggregationColumnName.Caption" Value="Name der Aggregatsfunktionsspalte" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.CanReadUncommitedData.Caption" Value="Nicht committete Daten lesen" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.DataSourceFilters.Caption" Value="Datenquelle der Filter" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.EntityColumnMetaPathes.Caption" Value="Zu lesende Spalten" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.FunctionType.Caption" Value="Aggregatesfunktionstyp" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.IgnoreDisplayValues.Caption" Value="Angezeigte Werte von Nachschlagewert-Spalten nicht lesen" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.NumberOfRecords.Caption" Value="Anzahl zu lesender Sätze" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.OrderInfo.Caption" Value="Spaltensortiierung" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ReadSomeTopRecords.Caption" Value="Zuerst lesen" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultCompositeObjectList.Caption" Value="Datensatz-Auswahl" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultCount.Caption" Value="Anzahl Sätze" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultDateTimeFunction.Caption" Value="Funktionsresultat (Datum/Zeit)" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultEntity.Caption" Value="Erstes Item der Ergebniskollektion" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultEntityCollection.Caption" Value="Ergenissammlung" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultFloatFunction.Caption" Value="Funktionsresultat (Dezimal)" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultIntegerFunction.Caption" Value="Funktionsresultat (Ganzzahl)" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultRowsCount.Caption" Value="Anzahl gelesener Sätze" />
+			<Item Name="BaseElements.ReadLatestAccountOfContact.Parameters.ResultType.Caption" Value="Ergebnistyp" />
+			<Item Name="BaseElements.SetPrimaryAccountToGroupAccount.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.SetPrimaryAccountToGroupAccount.Parameters.DataSourceFilters.Caption" Value="Filter Datenquelle" />
+			<Item Name="BaseElements.SetPrimaryAccountToGroupAccount.Parameters.EntitySchemaUId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.SetPrimaryAccountToGroupAccount.Parameters.IgnoreErrors.Caption" Value="Ausführung bei Fehlern fortsetzen" />
+			<Item Name="BaseElements.SetPrimaryAccountToGroupAccount.Parameters.IsMatchConditions.Caption" Value="Wenn das Objekt die folgenden Bedingungen erfüllt" />
+			<Item Name="BaseElements.SetPrimaryAccountToGroupAccount.Parameters.RecordColumnValues.Caption" Value="Spaltenwerte setzen" />
+			<Item Name="BaseElements.SetPrimaryAccountToLatestAccount.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.SetPrimaryAccountToLatestAccount.Parameters.DataSourceFilters.Caption" Value="Filter Datenquelle" />
+			<Item Name="BaseElements.SetPrimaryAccountToLatestAccount.Parameters.EntitySchemaUId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.SetPrimaryAccountToLatestAccount.Parameters.IgnoreErrors.Caption" Value="Ausführung bei Fehlern fortsetzen" />
+			<Item Name="BaseElements.SetPrimaryAccountToLatestAccount.Parameters.IsMatchConditions.Caption" Value="Wenn das Objekt die folgenden Bedingungen erfüllt" />
+			<Item Name="BaseElements.SetPrimaryAccountToLatestAccount.Parameters.RecordColumnValues.Caption" Value="Spaltenwerte setzen" />
+			<Item Name="Caption" Value="Update contact primary account" />
+		</Items>
+	</Group>
+</Resources>

@@ -25,6 +25,30 @@ define("AddTaskMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_
 			},
 			{
 				"operation": "merge",
+				"name": "Start",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 2,
+						"colSpan": 1,
+						"rowSpan": 1
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "End",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"row": 2,
+						"colSpan": 1,
+						"rowSpan": 1
+					}
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "GridContainer_c7lbo6c",
 				"values": {
 					"gap": {
@@ -72,6 +96,48 @@ define("AddTaskMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_
 				"parentName": "MainFlexContainer",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ComboBox_egisob8",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.ActivityDS_TimeZone_ytyqsgr",
+					"ariaLabel": "",
+					"isAddAllowed": true,
+					"showValueAsLink": true,
+					"labelPosition": "above",
+					"controlActions": [],
+					"listActions": [],
+					"tooltip": "",
+					"control": "$ActivityDS_TimeZone_ytyqsgr"
+				},
+				"parentName": "GridContainer_h9pzaab",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "addRecord_w33og11",
+				"values": {
+					"code": "addRecord",
+					"type": "crt.ComboboxSearchTextAction",
+					"icon": "combobox-add-new",
+					"caption": "#ResourceString(addRecord_w33og11_caption)#",
+					"clicked": {
+						"request": "crt.CreateRecordFromLookupRequest",
+						"params": {}
+					}
+				},
+				"parentName": "ComboBox_egisob8",
+				"propertyName": "listActions",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -210,6 +276,24 @@ define("AddTaskMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_
 					"Parameter_ilvm5h1": {
 						"modelConfig": {
 							"path": "ActivityDS.PgrAccount"
+						}
+					},
+					"ActivityDS_TimeZone_ytyqsgr": {
+						"modelConfig": {
+							"path": "ActivityDS.TimeZone"
+						}
+					},
+					"ActivityDS_TimeZone_ytyqsgr_List": {
+						"isCollection": true,
+						"modelConfig": {
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "Name",
+										"direction": "asc"
+									}
+								]
+							}
 						}
 					}
 				}

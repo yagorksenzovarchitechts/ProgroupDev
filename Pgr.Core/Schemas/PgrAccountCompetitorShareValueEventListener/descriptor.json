@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "5eaa1216-c04e-4739-af03-7250aba1d43f",
+    "Name": "PgrAccountCompetitorShareValueEventListener",
+    "ModifiedOnUtc": "\/Date(1792654923000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "PgrAccountCompetitorShareValueEventListener",
+    "DependsOn": []
+  }
+}

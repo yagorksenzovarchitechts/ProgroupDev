@@ -1305,7 +1305,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 			},
 			{
 				"operation": "insert",
-				"name": "GridContainer_90wxkg9",
+				"name": "GridContainer_e992jrs",
 				"values": {
 					"type": "crt.GridContainer",
 					"columns": [
@@ -1313,8 +1313,8 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 					],
 					"rows": "minmax(max-content, 32px)",
 					"gap": {
-						"columnGap": "medium",
-						"rowGap": "medium"
+						"columnGap": "large",
+						"rowGap": "none"
 					},
 					"items": [],
 					"fitContent": true,
@@ -1335,7 +1335,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 			},
 			{
 				"operation": "insert",
-				"name": "TabPanel_hc5ycmx",
+				"name": "TabPanel_38lv5j1",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
@@ -1357,21 +1357,228 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 					"stretch": true,
 					"allowToggleClose": true
 				},
-				"parentName": "GridContainer_90wxkg9",
+				"parentName": "GridContainer_e992jrs",
 				"propertyName": "items",
 				"index": 0
 			},
 			{
 				"operation": "insert",
-				"name": "TabContainer_6k84kcz",
+				"name": "TabContainer_ovp5q9m",
 				"values": {
 					"type": "crt.TabContainer",
 					"items": [],
-					"caption": "#ResourceString(TabContainer_6k84kcz_caption)#",
+					"caption": "#ResourceString(TabContainer_ovp5q9m_caption)#",
 					"iconPosition": "only-text",
 					"visible": true
 				},
-				"parentName": "TabPanel_hc5ycmx",
+				"parentName": "TabPanel_38lv5j1",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_ape3mla",
+				"values": {
+					"type": "crt.GridContainer",
+					"items": [],
+					"rows": "minmax(32px, max-content)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					}
+				},
+				"parentName": "TabContainer_ovp5q9m",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Input_aj4eize",
+				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrMarketOverview_76jky30",
+					"control": "$PDS_PgrMarketOverview_76jky30",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto",
+					"visible": true,
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 2,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_ape3mla",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Input_gcfe30w",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 3,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrPriceDevelopment_0hx6gzo",
+					"control": "$PDS_PgrPriceDevelopment_0hx6gzo",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto"
+				},
+				"parentName": "GridContainer_ape3mla",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Input_ddcwl23",
+				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrClosingSummary_2tpmjl5",
+					"control": "$PDS_PgrClosingSummary_2tpmjl5",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto",
+					"visible": true,
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 4,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_ape3mla",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "Input_rhhwgpi",
+				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrCompetitorBehaviour_zfvqw2n",
+					"control": "$PDS_PgrCompetitorBehaviour_zfvqw2n",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": false,
+					"labelPosition": "auto",
+					"visible": true,
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_ape3mla",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_7esv0v7",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "medium"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "primary",
+					"borderRadius": "medium",
+					"padding": {
+						"top": "medium",
+						"bottom": "medium",
+						"right": "medium",
+						"left": "medium"
+					}
+				},
+				"parentName": "MainContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "TabPanel_1ro27nf",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.TabPanel",
+					"items": [],
+					"mode": "tab",
+					"styleType": "default",
+					"bodyBackgroundColor": "primary-contrast-500",
+					"tabTitleColor": "auto",
+					"selectedTabTitleColor": "auto",
+					"headerBackgroundColor": "auto",
+					"underlineSelectedTabColor": "crt-color-coral",
+					"fitContent": true,
+					"visible": true,
+					"stretch": true,
+					"allowToggleClose": true
+				},
+				"parentName": "GridContainer_7esv0v7",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "TabContainer_dvmos5d",
+				"values": {
+					"type": "crt.TabContainer",
+					"items": [],
+					"caption": "#ResourceString(TabContainer_dvmos5d_caption)#",
+					"iconPosition": "only-text",
+					"visible": true
+				},
+				"parentName": "TabPanel_1ro27nf",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_gz3cg77",
+				"values": {
+					"type": "crt.GridContainer",
+					"items": [],
+					"rows": "minmax(32px, max-content)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					}
+				},
+				"parentName": "TabContainer_dvmos5d",
 				"propertyName": "items",
 				"index": 0
 			},
@@ -1397,9 +1604,15 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 					},
 					"fitContent": true,
 					"visible": true,
-					"alignItems": "stretch"
+					"alignItems": "stretch",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 1,
+						"rowSpan": 1
+					}
 				},
-				"parentName": "TabContainer_6k84kcz",
+				"parentName": "GridContainer_gz3cg77",
 				"propertyName": "items",
 				"index": 0
 			},
@@ -1468,6 +1681,25 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 				"parentName": "FlexContainer_nztn3cj",
 				"propertyName": "items",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Icon_24ufkr7",
+				"values": {
+					"type": "crt.Icon",
+					"iconName": "info-icon",
+					"size": "16",
+					"color": "#0D2E4E",
+					"backgroundType": "none",
+					"backgroundColor": "#E7ECFA",
+					"padding": "none",
+					"visible": true,
+					"ariaLabel": "#ResourceString(Icon_24ufkr7_ariaLabel)#",
+					"tooltip": "#ResourceString(Icon_24ufkr7_tooltip)#"
+				},
+				"parentName": "FlexContainer_nztn3cj",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -1678,7 +1910,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 					"visible": true,
 					"alignItems": "stretch"
 				},
-				"parentName": "TabContainer_6k84kcz",
+				"parentName": "TabContainer_dvmos5d",
 				"propertyName": "items",
 				"index": 1
 			},
@@ -1747,6 +1979,22 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 				"parentName": "FlexContainer_5yqsobq",
 				"propertyName": "items",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Icon_v5tqqot",
+				"values": {
+					"type": "crt.Icon",
+					"iconName": "info-icon",
+					"size": "16",
+					"color": "#0D2E4E",
+					"backgroundType": "none",
+					"backgroundColor": "#E7ECFA",
+					"padding": "none"
+				},
+				"parentName": "FlexContainer_5yqsobq",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -1876,12 +2124,12 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 			},
 			{
 				"operation": "insert",
-				"name": "ExpansionPanel_eki7qua",
+				"name": "ExpansionPanel_fvqh9lp",
 				"values": {
 					"type": "crt.ExpansionPanel",
 					"tools": [],
 					"items": [],
-					"title": "#ResourceString(ExpansionPanel_eki7qua_title)#",
+					"title": "#ResourceString(ExpansionPanel_fvqh9lp_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
 					"expanded": false,
@@ -1898,9 +2146,272 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 					"visible": true,
 					"alignItems": "stretch"
 				},
-				"parentName": "TabContainer_6k84kcz",
+				"parentName": "TabContainer_dvmos5d",
 				"propertyName": "items",
 				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_j9dfuat",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 24px)",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_fvqh9lp",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_2ei74lj",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"gap": "none",
+					"alignItems": "center",
+					"items": [],
+					"layoutConfig": {
+						"colSpan": 1,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_j9dfuat",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Button_s34uw4b",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_s34uw4b_caption)#",
+					"icon": "reload-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.LoadDataRequest",
+						"params": {
+							"config": {
+								"loadType": "reload"
+							},
+							"dataSourceName": "GridDetail_zs3al7lDS"
+						}
+					}
+				},
+				"parentName": "FlexContainer_2ei74lj",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Icon_9n0bubr",
+				"values": {
+					"type": "crt.Icon",
+					"iconName": "info-icon",
+					"size": "16",
+					"color": "#0D2E4E",
+					"backgroundType": "none",
+					"backgroundColor": "#E7ECFA",
+					"padding": "none"
+				},
+				"parentName": "FlexContainer_2ei74lj",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_ait2xex",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 32px)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_fvqh9lp",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "DataGrid_p9ugu6a",
+				"values": {
+					"type": "crt.DataGrid",
+					"layoutConfig": {
+						"colSpan": 2,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 6
+					},
+					"features": {
+						"rows": {
+							"selection": false,
+							"numeration": false
+						},
+						"editable": {
+							"enable": false,
+							"itemsCreation": false,
+							"floatingEditPanel": false
+						}
+					},
+					"items": "$DataGrid_p9ugu6a",
+					"primaryColumnName": "DataGrid_p9ugu6aDS_Id",
+					"columns": [
+						{
+							"id": "e948e192-d2ee-b621-c20a-22c46758651f",
+							"code": "DataGrid_p9ugu6aDS_Account",
+							"caption": "#ResourceString(DataGrid_p9ugu6aDS_Account)#",
+							"dataValueType": 10,
+							"sticky": true
+						},
+						{
+							"id": "042a0ae8-0ce5-f887-18d0-0a6ab8bc5140",
+							"code": "DataGrid_p9ugu6aDS_Title",
+							"caption": "#ResourceString(DataGrid_p9ugu6aDS_Title)#",
+							"dataValueType": 28
+						},
+						{
+							"id": "407a5c9d-2e40-ff78-dcb5-e9e8b6e2bd86",
+							"code": "DataGrid_p9ugu6aDS_Status",
+							"caption": "#ResourceString(DataGrid_p9ugu6aDS_Status)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "09982a07-d182-ab76-00b9-59b34b9aa0ac",
+							"code": "DataGrid_p9ugu6aDS_DueDate",
+							"caption": "#ResourceString(DataGrid_p9ugu6aDS_DueDate)#",
+							"dataValueType": 7
+						}
+					],
+					"visible": true,
+					"fitContent": true
+				},
+				"parentName": "GridContainer_ait2xex",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_90wxkg9",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "medium",
+						"rowGap": "medium"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "primary",
+					"borderRadius": "medium",
+					"padding": {
+						"top": "medium",
+						"bottom": "medium",
+						"right": "medium",
+						"left": "medium"
+					}
+				},
+				"parentName": "MainContainer",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "TabPanel_hc5ycmx",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.TabPanel",
+					"items": [],
+					"mode": "tab",
+					"styleType": "default",
+					"bodyBackgroundColor": "primary-contrast-500",
+					"tabTitleColor": "auto",
+					"selectedTabTitleColor": "auto",
+					"headerBackgroundColor": "auto",
+					"underlineSelectedTabColor": "crt-color-coral",
+					"fitContent": true,
+					"visible": true,
+					"stretch": true,
+					"allowToggleClose": true
+				},
+				"parentName": "GridContainer_90wxkg9",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "TabContainer_6k84kcz",
+				"values": {
+					"type": "crt.TabContainer",
+					"items": [],
+					"caption": "#ResourceString(TabContainer_6k84kcz_caption)#",
+					"iconPosition": "only-text",
+					"visible": true
+				},
+				"parentName": "TabPanel_hc5ycmx",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ExpansionPanel_eki7qua",
+				"values": {
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(ExpansionPanel_eki7qua_title)#",
+					"toggleType": "material",
+					"togglePosition": "before",
+					"expanded": true,
+					"labelColor": "auto",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"padding": {
+						"top": "medium",
+						"bottom": "small",
+						"left": "none",
+						"right": "none"
+					},
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch"
+				},
+				"parentName": "TabContainer_6k84kcz",
+				"propertyName": "items",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -1967,6 +2478,22 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 				"parentName": "FlexContainer_eugxxwy",
 				"propertyName": "items",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Icon_b3fuegy",
+				"values": {
+					"type": "crt.Icon",
+					"iconName": "info-icon",
+					"size": "16",
+					"color": "#0D2E4E",
+					"backgroundType": "none",
+					"backgroundColor": "#E7ECFA",
+					"padding": "none"
+				},
+				"parentName": "FlexContainer_eugxxwy",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -2060,7 +2587,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 					"title": "#ResourceString(ExpansionPanel_ihwyode_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": false,
+					"expanded": true,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -2076,7 +2603,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 				},
 				"parentName": "TabContainer_6k84kcz",
 				"propertyName": "items",
-				"index": 3
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -2143,6 +2670,25 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 				"parentName": "FlexContainer_bc2ojji",
 				"propertyName": "items",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Icon_o9bhfwe",
+				"values": {
+					"type": "crt.Icon",
+					"iconName": "info-icon",
+					"size": "16",
+					"color": "#0D2E4E",
+					"backgroundType": "none",
+					"backgroundColor": "#E7ECFA",
+					"padding": "none",
+					"visible": true,
+					"ariaLabel": "",
+					"tooltip": "#ResourceString(Icon_o9bhfwe_tooltip)#"
+				},
+				"parentName": "FlexContainer_bc2ojji",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -2227,368 +2773,6 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 			},
 			{
 				"operation": "insert",
-				"name": "ExpansionPanel_fvqh9lp",
-				"values": {
-					"type": "crt.ExpansionPanel",
-					"tools": [],
-					"items": [],
-					"title": "#ResourceString(ExpansionPanel_fvqh9lp_title)#",
-					"toggleType": "material",
-					"togglePosition": "before",
-					"expanded": false,
-					"labelColor": "auto",
-					"fullWidthHeader": false,
-					"titleWidth": 20,
-					"padding": {
-						"top": "medium",
-						"bottom": "small",
-						"left": "none",
-						"right": "none"
-					},
-					"fitContent": true,
-					"visible": true,
-					"alignItems": "stretch"
-				},
-				"parentName": "TabContainer_6k84kcz",
-				"propertyName": "items",
-				"index": 4
-			},
-			{
-				"operation": "insert",
-				"name": "GridContainer_j9dfuat",
-				"values": {
-					"type": "crt.GridContainer",
-					"rows": "minmax(max-content, 24px)",
-					"columns": [
-						"minmax(32px, 1fr)"
-					],
-					"gap": {
-						"columnGap": "large",
-						"rowGap": 0
-					},
-					"styles": {
-						"overflow-x": "hidden"
-					},
-					"items": []
-				},
-				"parentName": "ExpansionPanel_fvqh9lp",
-				"propertyName": "tools",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "FlexContainer_2ei74lj",
-				"values": {
-					"type": "crt.FlexContainer",
-					"direction": "row",
-					"gap": "none",
-					"alignItems": "center",
-					"items": [],
-					"layoutConfig": {
-						"colSpan": 1,
-						"column": 1,
-						"row": 1,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "GridContainer_j9dfuat",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Button_s34uw4b",
-				"values": {
-					"type": "crt.Button",
-					"caption": "#ResourceString(Button_s34uw4b_caption)#",
-					"icon": "reload-icon",
-					"iconPosition": "only-icon",
-					"color": "default",
-					"size": "medium",
-					"clicked": {
-						"request": "crt.LoadDataRequest",
-						"params": {
-							"config": {
-								"loadType": "reload"
-							},
-							"dataSourceName": "GridDetail_zs3al7lDS"
-						}
-					}
-				},
-				"parentName": "FlexContainer_2ei74lj",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "GridContainer_ait2xex",
-				"values": {
-					"type": "crt.GridContainer",
-					"rows": "minmax(max-content, 32px)",
-					"columns": [
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)"
-					],
-					"gap": {
-						"columnGap": "large",
-						"rowGap": 0
-					},
-					"styles": {
-						"overflow-x": "hidden"
-					},
-					"items": []
-				},
-				"parentName": "ExpansionPanel_fvqh9lp",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "DataGrid_p9ugu6a",
-				"values": {
-					"type": "crt.DataGrid",
-					"layoutConfig": {
-						"colSpan": 2,
-						"column": 1,
-						"row": 1,
-						"rowSpan": 6
-					},
-					"features": {
-						"rows": {
-							"selection": false,
-							"numeration": false
-						},
-						"editable": {
-							"enable": false,
-							"itemsCreation": false,
-							"floatingEditPanel": false
-						}
-					},
-					"items": "$DataGrid_p9ugu6a",
-					"primaryColumnName": "DataGrid_p9ugu6aDS_Id",
-					"columns": [
-						{
-							"id": "e948e192-d2ee-b621-c20a-22c46758651f",
-							"code": "DataGrid_p9ugu6aDS_Account",
-							"caption": "#ResourceString(DataGrid_p9ugu6aDS_Account)#",
-							"dataValueType": 10,
-							"sticky": true
-						},
-						{
-							"id": "042a0ae8-0ce5-f887-18d0-0a6ab8bc5140",
-							"code": "DataGrid_p9ugu6aDS_Title",
-							"caption": "#ResourceString(DataGrid_p9ugu6aDS_Title)#",
-							"dataValueType": 28
-						},
-						{
-							"id": "407a5c9d-2e40-ff78-dcb5-e9e8b6e2bd86",
-							"code": "DataGrid_p9ugu6aDS_Status",
-							"caption": "#ResourceString(DataGrid_p9ugu6aDS_Status)#",
-							"dataValueType": 10
-						},
-						{
-							"id": "09982a07-d182-ab76-00b9-59b34b9aa0ac",
-							"code": "DataGrid_p9ugu6aDS_DueDate",
-							"caption": "#ResourceString(DataGrid_p9ugu6aDS_DueDate)#",
-							"dataValueType": 7
-						}
-					],
-					"visible": true,
-					"fitContent": true
-				},
-				"parentName": "GridContainer_ait2xex",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "GridContainer_e992jrs",
-				"values": {
-					"type": "crt.GridContainer",
-					"columns": [
-						"minmax(32px, 1fr)"
-					],
-					"rows": "minmax(max-content, 32px)",
-					"gap": {
-						"columnGap": "large",
-						"rowGap": "none"
-					},
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"alignItems": "stretch",
-					"color": "primary",
-					"borderRadius": "medium",
-					"padding": {
-						"top": "medium",
-						"bottom": "medium",
-						"right": "medium",
-						"left": "medium"
-					}
-				},
-				"parentName": "MainContainer",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
-				"name": "TabPanel_38lv5j1",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.TabPanel",
-					"items": [],
-					"mode": "tab",
-					"styleType": "default",
-					"bodyBackgroundColor": "primary-contrast-500",
-					"tabTitleColor": "auto",
-					"selectedTabTitleColor": "auto",
-					"headerBackgroundColor": "auto",
-					"underlineSelectedTabColor": "crt-color-coral",
-					"fitContent": true,
-					"visible": true,
-					"stretch": true,
-					"allowToggleClose": true
-				},
-				"parentName": "GridContainer_e992jrs",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "TabContainer_ovp5q9m",
-				"values": {
-					"type": "crt.TabContainer",
-					"items": [],
-					"caption": "#ResourceString(TabContainer_ovp5q9m_caption)#",
-					"iconPosition": "only-text",
-					"visible": true
-				},
-				"parentName": "TabPanel_38lv5j1",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "GridContainer_ape3mla",
-				"values": {
-					"type": "crt.GridContainer",
-					"items": [],
-					"rows": "minmax(32px, max-content)",
-					"columns": [
-						"minmax(32px, 1fr)",
-						"minmax(32px, 1fr)"
-					],
-					"gap": {
-						"columnGap": "large",
-						"rowGap": 0
-					}
-				},
-				"parentName": "TabContainer_ovp5q9m",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Input_rhhwgpi",
-				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrCompetitorBehaviour_zfvqw2n",
-					"control": "$PDS_PgrCompetitorBehaviour_zfvqw2n",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto",
-					"visible": true,
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 1,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "GridContainer_ape3mla",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
-				"name": "Input_aj4eize",
-				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrMarketOverview_76jky30",
-					"control": "$PDS_PgrMarketOverview_76jky30",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto",
-					"visible": true,
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 2,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "GridContainer_ape3mla",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
-				"name": "Input_gcfe30w",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 3,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrPriceDevelopment_0hx6gzo",
-					"control": "$PDS_PgrPriceDevelopment_0hx6gzo",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
-				},
-				"parentName": "GridContainer_ape3mla",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
-				"name": "Input_ddcwl23",
-				"values": {
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrClosingSummary_2tpmjl5",
-					"control": "$PDS_PgrClosingSummary_2tpmjl5",
-					"placeholder": "",
-					"tooltip": "",
-					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto",
-					"visible": true,
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 4,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "GridContainer_ape3mla",
-				"propertyName": "items",
-				"index": 3
-			},
-			{
-				"operation": "insert",
 				"name": "GridContainer_Footer",
 				"values": {
 					"type": "crt.GridContainer",
@@ -2615,7 +2799,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 				},
 				"parentName": "MainContainer",
 				"propertyName": "items",
-				"index": 4
+				"index": 5
 			},
 			{
 				"operation": "insert",

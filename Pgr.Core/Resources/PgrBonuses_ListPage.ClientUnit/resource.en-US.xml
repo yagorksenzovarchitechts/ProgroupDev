@@ -7,7 +7,9 @@
 			<Item Name="LocalizableStrings.AddButton_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.DataImportButton_caption.Value" Value="Import" />
 			<Item Name="LocalizableStrings.PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_1qbr9c5.Value" Value="Bonus for highest threshold" />
+			<Item Name="LocalizableStrings.PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_2msqauj.Value" Value="Bonus for highest threshold" />
 			<Item Name="LocalizableStrings.PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_8hzzbdy.Value" Value="Bonus for first threshold" />
+			<Item Name="LocalizableStrings.PDS_PgrBonusThresholdPgrBonus_PgrBonusPercentage_iwmtsad.Value" Value="Bonus for first threshold" />
 			<Item Name="LocalizableStrings.PDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_u01j4am.Value" Value="Highest threshold" />
 			<Item Name="LocalizableStrings.PDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_xheoyt4.Value" Value="First entry threshold" />
 			<Item Name="LocalizableStrings.QuickFilter_3ezj00u_caption.Value" Value="Quick filter" />

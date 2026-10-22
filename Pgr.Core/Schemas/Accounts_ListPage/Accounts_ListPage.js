@@ -691,18 +691,12 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"primaryColumnName": "DataGrid_0kcsg12DS_Id",
 					"columns": [
 						{
-							"id": "f3185bb6-f436-b29b-262e-fd457f10df0c",
-							"code": "DataGrid_0kcsg12DS_Name",
-							"caption": "#ResourceString(DataGrid_0kcsg12DS_Name)#",
-							"dataValueType": 28,
-							"sticky": true
-						},
-						{
-							"id": "77fa6f35-d420-598e-e599-aba34e0b7e5c",
-							"code": "DataGrid_0kcsg12DS_PgrWepaformName",
-							"caption": "#ResourceString(DataGrid_0kcsg12DS_PgrWepaformName)#",
-							"dataValueType": 27,
-							"width": 192
+							"id": "609e4983-34b2-e61a-581d-460dbb90188f",
+							"code": "DataGrid_0kcsg12DS_PgrDisplayName",
+							"caption": "#ResourceString(DataGrid_0kcsg12DS_PgrDisplayName)#",
+							"dataValueType": 30,
+							"sticky": true,
+							"width": 313
 						},
 						{
 							"id": "e1038e58-791c-52ce-14ef-97afa6b53fa9",
@@ -721,7 +715,8 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"id": "b49ddccf-b083-bf8e-acb7-e7daed7467af",
 							"code": "DataGrid_0kcsg12DS_PgrMainPlantLinked",
 							"caption": "#ResourceString(DataGrid_0kcsg12DS_PgrMainPlantLinked)#",
-							"dataValueType": 10
+							"dataValueType": 10,
+							"width": 200
 						},
 						{
 							"id": "ee6d5d29-34b2-9b23-c7cb-579bae7c4bc8",
@@ -808,18 +803,21 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 									"name": "FolderTree_active_folder_filter",
 									"loadOnChange": true
 								}
-							]
+							],
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "asc",
+										"columnName": "PgrDisplayName"
+									}
+								]
+							}
 						},
 						"viewModelConfig": {
 							"attributes": {
-								"DataGrid_0kcsg12DS_Name": {
+								"DataGrid_0kcsg12DS_PgrDisplayName": {
 									"modelConfig": {
-										"path": "DataGrid_0kcsg12DS.Name"
-									}
-								},
-								"DataGrid_0kcsg12DS_PgrWepaformName": {
-									"modelConfig": {
-										"path": "DataGrid_0kcsg12DS.PgrWepaformName"
+										"path": "DataGrid_0kcsg12DS.PgrDisplayName"
 									}
 								},
 								"DataGrid_0kcsg12DS_Country": {
@@ -993,11 +991,8 @@ define("Accounts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 								}
 							},
 							"attributes": {
-								"Name": {
-									"path": "Name"
-								},
-								"PgrWepaformName": {
-									"path": "PgrWepaformName"
+								"PgrDisplayName": {
+									"path": "PgrDisplayName"
 								},
 								"Country": {
 									"path": "Country"

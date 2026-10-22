@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "04bf47ff-3565-45b1-53c1-a274450d38aa",
     "Name": "SysSettingsValue_Base_Config",
-    "ModifiedOnUtc": "\/Date(1779872203000)\/",
+    "ModifiedOnUtc": "\/Date(1792674990000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "951b2bbb-0ba3-4049-9a29-b5d4c0b6d50f",
@@ -18,7 +18,7 @@
       },
       {
         "ColumnUId": "23c7dde8-7cf5-4f18-9d76-0fa4179ee931",
-        "IsForceUpdate": false,
+        "IsForceUpdate": true,
         "IsKey": false,
         "ColumnName": "GuidValue",
         "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"

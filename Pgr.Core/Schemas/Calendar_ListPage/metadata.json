@@ -99,8 +99,5 @@
 = MetaData.Schema.B7 true
 = MetaData.Schema.B8 "8.3.4.2753"
 = MetaData.Schema.HD1 "290cbcb0-d18d-475d-8a37-75e30216497b"
-+ MetaData.Schema.HD2 "null"
 = MetaData.Schema.HD6 "define('{0}Structure', ['{0}Resources'], function(resources) {{return {{schemaUId:'{2}',schemaName:'{3}',parentSchemaUId:'{4}',extendParent:{5},type:Terrasoft.SchemaType.ANGULAR_SCHEMA,entitySchema:'',name:'',extend:'Terrasoft.model.BaseViewModel',schema:{{leftPanel:[],rightPanel:[],actions:[],analytics:[]}},methods:{{}},controlsConfig:{{}},customBindings:{{}},bindings:{{}},parameters:{{}},schemaVersion:1,optionalProperties:{{}},schemaDifferences:function(){{\n{1}\n}}}};}});"
-+ MetaData.Schema.HD9 "null"
-+ MetaData.Schema.HD10 "null"
 + MetaData.Schema.B7 true

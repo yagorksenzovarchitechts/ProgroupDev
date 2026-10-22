@@ -19,10 +19,12 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_0df7qhy_title.Value" Value="Meeting participants" />
 			<Item Name="LocalizableStrings.ExpansionPanel_9f310aw_title.Value" Value="Customer situation" />
 			<Item Name="LocalizableStrings.ExpansionPanel_cmepoqk_title.Value" Value="Reason &amp; Purpose" />
+			<Item Name="LocalizableStrings.ExpansionPanel_jgw44k6_title.Value" Value="Share of wallet" />
 			<Item Name="LocalizableStrings.ExpansionPanel_kl2km0r_title.Value" Value="Remarks" />
 			<Item Name="LocalizableStrings.ExpansionPanel_qygdbl8_title.Value" Value="Measures" />
 			<Item Name="LocalizableStrings.ExpansionPanel_v7m1ic2_title.Value" Value="Key topics" />
 			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="General info" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_cc93sts_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_fnh0pp1_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetail_7qocfn4DS_PgrCustomerContacts.Value" Value="Customer Contacts" />
 			<Item Name="LocalizableStrings.Input_1j86543_tooltip.Value" Value="Optional additional note" />
@@ -43,6 +45,7 @@
 			<Item Name="LocalizableStrings.Label_qoozpze_caption.Value" Value=" Visit report Info" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
 			<Item Name="LocalizableStrings.SetRecordRightsButton_caption.Value" Value="Set up access rights" />
+			<Item Name="LocalizableStrings.ShareTotalErrorString.Value" Value="The total of all share values must equal 100%. Current total: " />
 			<Item Name="LocalizableStrings.TabContainer_widjyyt_caption.Value" Value="Report detail" />
 			<Item Name="LocalizableStrings.addRecord_9ii5w3n_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_g7igl2j_caption.Value" Value="Add new" />

@@ -6,12 +6,11 @@
 			<Item Name="LocalizableStrings.AccountCompetitorsExpansionPanel_title.Value" Value="Customers" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainerHeaderLabel_caption.Value" Value="Attachments" />
 			<Item Name="LocalizableStrings.AttachmentsTabContainer_caption.Value" Value="Attachments" />
-			<Item Name="LocalizableStrings.Button_2voddtp_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.Button_4v2hyhs_caption.Value" Value="New" />
-			<Item Name="LocalizableStrings.Button_7we0gt3_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.Button_8i3k7x4_caption.Value" Value="create new contact" />
 			<Item Name="LocalizableStrings.Button_8smqyrh_caption.Value" Value="Button" />
 			<Item Name="LocalizableStrings.Button_h41prxx_caption.Value" Value="Refresh" />
-			<Item Name="LocalizableStrings.Button_sg32b4k_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.Button_ldjzl7b_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.Button_wzoi3mp_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancel" />
 			<Item Name="LocalizableStrings.Checkbox_56z210h_tooltip.Value" Value="Mail with PDF attachment" />
@@ -49,11 +48,11 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_h2q0n69_title.Value" Value="Project prices" />
 			<Item Name="LocalizableStrings.ExpansionPanel_hzgkxwg_title.Value" Value="Project pipeline" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ilw1gpx_title.Value" Value="Invoicing" />
+			<Item Name="LocalizableStrings.ExpansionPanel_kb0hm3n_title.Value" Value="Contacts" />
 			<Item Name="LocalizableStrings.ExpansionPanel_mdtee87_title.Value" Value="Bonuses" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ovpkb8a_title.Value" Value="Overview" />
 			<Item Name="LocalizableStrings.ExpansionPanel_pa1hlbi_title.Value" Value="Delivery" />
 			<Item Name="LocalizableStrings.ExpansionPanel_udydmkf_title.Value" Value="Interfaces" />
-			<Item Name="LocalizableStrings.ExpansionPanel_vbzwo5v_title.Value" Value="Contacts" />
 			<Item Name="LocalizableStrings.ExpansionPanel_vthgzr6_title.Value" Value="Tasks" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_3fohkij_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.GridDetailAddBtn_409pmzl_caption.Value" Value="New" />
@@ -160,9 +159,7 @@
 			<Item Name="LocalizableStrings.ListWidget_h0kgh75DS_PgrCategory.Value" Value="Classification" />
 			<Item Name="LocalizableStrings.ListWidget_h0kgh75DS_PgrPercentage.Value" Value="%" />
 			<Item Name="LocalizableStrings.ListWidget_h0kgh75_title.Value" Value="Customer threshold" />
-			<Item Name="LocalizableStrings.MenuItem_2o6g1eu_caption.Value" Value="Export to Excel" />
 			<Item Name="LocalizableStrings.MenuItem_5sivz5r_caption.Value" Value="Export to Excel" />
-			<Item Name="LocalizableStrings.MenuItem_6dw38zl_caption.Value" Value="Data import" />
 			<Item Name="LocalizableStrings.MenuItem_hgmncrh_caption.Value" Value="Data import" />
 			<Item Name="LocalizableStrings.MultiSelect_m9ltt8m_label.Value" Value="Account type/s" />
 			<Item Name="LocalizableStrings.NumberInput_16huvt7_label.Value" Value="Over-delivery from quantity (% 1)" />
@@ -206,7 +203,7 @@
 			<Item Name="LocalizableStrings.SalesTab_caption.Value" Value="Sales" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
 			<Item Name="LocalizableStrings.SearchFilter_2pozl4n_placeholder.Value" Value="Search" />
-			<Item Name="LocalizableStrings.SearchFilter_2y51wfx_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.SearchFilter_tbdhuaj_placeholder.Value" Value="Search" />
 			<Item Name="LocalizableStrings.ShareTotalErrorString.Value" Value="The total of all share values must equal 100%. Current total: " />
 			<Item Name="LocalizableStrings.TabContainer_AccountMetrics_caption.Value" Value="Account Metrics" />
 			<Item Name="LocalizableStrings.TabContainer_ActivitiesVisits_caption.Value" Value="Tasks &amp; Visit reports" />
