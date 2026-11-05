@@ -156,7 +156,7 @@ define("AddTaskMiniPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_
 					"visible": true,
 					"readonly": false,
 					"placeholder": "",
-					"secondaryDisplayValue": "PgrWepaformName"
+					"secondaryDisplayValue": null
 				},
 				"parentName": "MainFlexContainer",
 				"propertyName": "items",

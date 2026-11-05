@@ -65,6 +65,7 @@
               "CD1": [],
               "CD2": [],
               "CD4": "3c635e3f-b712-46a5-8e89-952dce5d99ce",
+              "CD6": "511;357",
               "CD7": []
             }
           ]
@@ -80,7 +81,7 @@
           "A4": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
           "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
           "IL2": "13ed076f-ed90-4ede-8e78-af4eca5d41af",
-          "BL3": "60;185",
+          "BL3": "60;184",
           "BL7": "1129e72f-0e8c-445a-b2ea-463517e86395",
           "BN2": "31;31",
           "BO3": true,
@@ -116,7 +117,7 @@
           "A4": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
           "A5": "8aa6bdfa-d3ef-48bf-b36a-49177da99cc0",
           "IL2": "13ed076f-ed90-4ede-8e78-af4eca5d41af",
-          "BL3": "420;185",
+          "BL3": "420;184",
           "BL7": "1bd93619-0574-454e-bb4e-cf53b9eb9470",
           "BN2": "31;31",
           "BO3": true,
@@ -130,14 +131,14 @@
           "A4": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
           "A5": "79407b15-c164-4a99-9c5b-36fb13835f0d",
           "IL2": "13ed076f-ed90-4ede-8e78-af4eca5d41af",
-          "BL3": "240;173",
+          "BL3": "240;172",
           "BL7": "0e490dda-e140-4441-b600-6f5c64d024df",
           "BL8": "516ca73d-d84e-4242-9dbc-f9e159c65b75",
           "BN2": "69;55",
           "BO3": true,
           "BP2": [],
           "CL2": "FFFFFFFF",
-          "CH1": "// IMPORTANT: When implementing\r\n// long-running operations,\r\n// it is crucial to enable timely and\r\n// responsive cancellation. To achieve\r\n// this, ensure that your code\r\n// is designed to respond appropriately\r\n// to cancellation requests using\r\n// the context.CancellationToken\r\n// mechanism. For more detailed\r\n// information and examples,\r\n// please, refer to our documentation.\r\nGuid reportId = Get<Guid>(\"TriggerRecordId\");\r\n\r\nvar select = new Terrasoft.Core.DB.Select(UserConnection)\r\n    .Column(\"PgrName\")\r\n    .From(\"PgrWeeklySalesReport\")\r\n    .Where(\"Id\").IsEqual(Terrasoft.Core.DB.Column.Parameter(reportId)) as Terrasoft.Core.DB.Select;\r\n\r\nstring reportName = string.Empty;\r\nusing (var dbExecutor = UserConnection.EnsureDBConnection()) {\r\n    using (var reader = select.ExecuteReader(dbExecutor)) {\r\n        if (reader.Read()) {\r\n            reportName = reader.GetColumnValue<string>(\"PgrName\");\r\n        }\r\n    }\r\n}\r\n\r\nstring safeName = System.Text.RegularExpressions.Regex.Replace(reportName, @\"[^a-zA-Z0-9]+\", \"_\").Trim('_');\r\nstring timestamp = DateTime.Now.ToString(\"yyyyMMdd_HHmmss\");\r\nstring fileName = \"WeeklySalesReport_\" + safeName + \"_\" + timestamp + \".docx\";\r\n\r\nvar reportService = new Terrasoft.Configuration.ReportService.ReportService();\r\nTerrasoft.Configuration.ReportService.ReportData report =\r\n    reportService.GenerateMSWordReport(\"fac82928-2a73-5569-fe8b-baf7d7c23974\", reportId.ToString(), false);\r\n\r\nvar fileSchema = UserConnection.EntitySchemaManager.GetInstanceByName(\"SysFile\");\r\nvar fileEntity = fileSchema.CreateEntity(UserConnection);\r\nfileEntity.SetDefColumnValues();\r\nfileEntity.SetColumnValue(\"RecordId\", reportId);\r\nfileEntity.SetColumnValue(\"RecordSchemaName\", \"PgrWeeklySalesReport\");\r\nfileEntity.SetColumnValue(\"Name\", fileName);\r\nfileEntity.SetColumnValue(\"TypeId\", new Guid(\"529bc2f8-0ee0-df11-971b-001d60e938c6\"));\r\nfileEntity.SetColumnValue(\"Data\", report.Data);\r\nfileEntity.SetColumnValue(\"Size\", report.Data.Length);\r\nfileEntity.SetColumnValue(\"TotalSize\", report.Data.Length);\r\nfileEntity.SetColumnValue(\"SysFileStorage\", new Guid(\"65e42805-0e6d-43c9-8784-32b555f08421\"));\r\nfileEntity.Save();\r\n\r\nreturn true;",
+          "CH1": "Guid reportId = Get<Guid>(\"TriggerRecordId\");\r\n\r\nvar select = new Terrasoft.Core.DB.Select(UserConnection)\r\n    .Column(\"PgrName\")\r\n    .From(\"PgrWeeklySalesReport\")\r\n    .Where(\"Id\").IsEqual(Terrasoft.Core.DB.Column.Parameter(reportId)) as Terrasoft.Core.DB.Select;\r\n\r\nstring reportName = string.Empty;\r\nusing (var dbExecutor = UserConnection.EnsureDBConnection()) {\r\n    using (var reader = select.ExecuteReader(dbExecutor)) {\r\n        if (reader.Read()) {\r\n            reportName = reader.GetColumnValue<string>(\"PgrName\");\r\n        }\r\n    }\r\n}\r\n\r\nstring safeName = System.Text.RegularExpressions.Regex.Replace(reportName, @\"[^a-zA-Z0-9]+\", \"_\").Trim('_');\r\nstring timestamp = DateTime.Now.ToString(\"yyyyMMdd_HHmmss\");\r\nstring fileName = \"WeeklySalesReport_\" + safeName + \"_\" + timestamp + \".docx\";\r\n\r\nvar reportService = new Terrasoft.Configuration.ReportService.ReportService();\r\nTerrasoft.Configuration.ReportService.ReportData report =\r\n    reportService.GenerateMSWordReport(\"fac82928-2a73-5569-fe8b-baf7d7c23974\", reportId.ToString(), false);\r\n\r\nvar fileSchema = UserConnection.EntitySchemaManager.GetInstanceByName(\"SysFile\");\r\nvar fileEntity = fileSchema.CreateEntity(UserConnection);\r\nfileEntity.SetDefColumnValues();\r\nfileEntity.SetColumnValue(\"RecordId\", reportId);\r\nfileEntity.SetColumnValue(\"RecordSchemaName\", \"PgrWeeklySalesReport\");\r\nfileEntity.SetColumnValue(\"Name\", fileName);\r\nfileEntity.SetColumnValue(\"TypeId\", new Guid(\"529bc2f8-0ee0-df11-971b-001d60e938c6\"));\r\nfileEntity.SetColumnValue(\"Data\", report.Data);\r\nfileEntity.SetColumnValue(\"Size\", report.Data.Length);\r\nfileEntity.SetColumnValue(\"TotalSize\", report.Data.Length);\r\nfileEntity.Save();\r\n\r\nreturn true;",
           "CH2": true
         },
         {
@@ -153,8 +154,10 @@
           "CI3": "null",
           "CI5": "FF939598",
           "CI6": 1,
-          "CI11": "91;201",
-          "CI12": "240;201"
+          "CI7": "1;0",
+          "CI8": "-1;0",
+          "CI11": "91;200",
+          "CI12": "240;200"
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
@@ -170,8 +173,10 @@
           "CI3": "null",
           "CI5": "FF939598",
           "CI6": 1,
-          "CI11": "309;201",
-          "CI12": "420;201"
+          "CI7": "1;0",
+          "CI8": "-1;0",
+          "CI11": "309;200",
+          "CI12": "420;200"
         }
       ],
       "BK9": [],

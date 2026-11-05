@@ -12,6 +12,7 @@
 			<Item Name="LocalizableStrings.Button_h41prxx_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.Button_ldjzl7b_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.Button_wzoi3mp_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.Button_y0wqb2f_caption.Value" Value="Add" />
 			<Item Name="LocalizableStrings.CancelButton_caption.Value" Value="Cancel" />
 			<Item Name="LocalizableStrings.Checkbox_56z210h_tooltip.Value" Value="Mail with PDF attachment" />
 			<Item Name="LocalizableStrings.Checkbox_71powu7_tooltip.Value" Value="Can only be changed by key users" />
@@ -41,10 +42,12 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_3jtu7p2_title.Value" Value="SAP block status" />
 			<Item Name="LocalizableStrings.ExpansionPanel_4r2mr5k_title.Value" Value="Visit reports" />
 			<Item Name="LocalizableStrings.ExpansionPanel_8mvky2z_title.Value" Value="3-6-9 Tasks" />
+			<Item Name="LocalizableStrings.ExpansionPanel_au6z0sw_title.Value" Value="PG potential p.a. [tsqm]" />
 			<Item Name="LocalizableStrings.ExpansionPanel_br1488r_title.Value" Value="Thresholds" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ezmuytd_title.Value" Value="Account metrics" />
 			<Item Name="LocalizableStrings.ExpansionPanel_f9i47to_title.Value" Value="Bonus thresholds" />
 			<Item Name="LocalizableStrings.ExpansionPanel_fjwqnu7_title.Value" Value="Contacts" />
+			<Item Name="LocalizableStrings.ExpansionPanel_g7t5oi7_title.Value" Value="Yearly required volume [tsqm]" />
 			<Item Name="LocalizableStrings.ExpansionPanel_h2q0n69_title.Value" Value="Project prices" />
 			<Item Name="LocalizableStrings.ExpansionPanel_hzgkxwg_title.Value" Value="Project pipeline" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ilw1gpx_title.Value" Value="Invoicing" />
@@ -77,8 +80,10 @@
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_1tm6rqa_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_7aypmum_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_8soib8z_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_9fdd7jw_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_e3slm2q_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_ksomtmb_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_mj4g4n8_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_mtxk8e9_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_odg5fng_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_p6oyc1z_caption.Value" Value="Refresh" />

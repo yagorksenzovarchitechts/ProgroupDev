@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.5655bc13-4123-33a4-2949-f1fd66ae5c62.Caption" Value="Set unit for Potential" />
+			<Item Name="AddonConfig.Rules.5d5387f3-a17a-965c-dc3f-623523ea307f.Caption" Value="Set unit for Yearly requirement" />
+			<Item Name="Caption" Value="Account metrics (Business rules)" />
+		</Items>
+	</Group>
+</Resources>

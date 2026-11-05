@@ -25,11 +25,12 @@
 			<Item Name="Columns.PgrOwner.Caption" Value="Owner" />
 			<Item Name="Columns.PgrPerformance.Caption" Value="Performance" />
 			<Item Name="Columns.PgrPerformanceText.Caption" Value="Performance remarks" />
-			<Item Name="Columns.PgrPotential.Caption" Value="Potential (tsqm)" />
+			<Item Name="Columns.PgrPotential.Caption" Value="PG potential p.a. [tsqm]" />
+			<Item Name="Columns.PgrPrivateRemarks.Caption" Value="Private remarks" />
 			<Item Name="Columns.PgrProjectTopicComment.Caption" Value="Projects &amp; Opportunities (comment)" />
 			<Item Name="Columns.PgrQualityTopicComment.Caption" Value="Quality (comment)" />
 			<Item Name="Columns.PgrServiceTopicComment.Caption" Value="Service &amp; Delivery (comment)" />
-			<Item Name="Columns.PgrSummary.Caption" Value="Miscellaneous / private remarks" />
+			<Item Name="Columns.PgrSummary.Caption" Value="Summary" />
 			<Item Name="Columns.PgrThreeDayAvg.Caption" Value="3-day avg order intake (tsqm)" />
 			<Item Name="Columns.PgrTopicCommercial.Caption" Value="Commercial &amp; Prices" />
 			<Item Name="Columns.PgrTopicProjectsOpportunities.Caption" Value="Projects &amp; Opportunities" />

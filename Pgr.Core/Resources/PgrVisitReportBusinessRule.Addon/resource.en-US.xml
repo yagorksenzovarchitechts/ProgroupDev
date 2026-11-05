@@ -6,6 +6,7 @@
 			<Item Name="AddonConfig.Rules.2f84855f-8c89-4c5b-eced-86cd831c62ed.Caption" Value="Make elements required: Related to Lead, Make elements optional: Account" />
 			<Item Name="AddonConfig.Rules.4164c114-4f92-c6e2-0686-967ce1d4180b.Caption" Value="Make elements required: Reason (no visit)" />
 			<Item Name="AddonConfig.Rules.9082548f-997f-b359-2104-99deeb44b899.Caption" Value="Make elements required: Account" />
+			<Item Name="AddonConfig.Rules.f74a1d30-ee5d-f66d-fe05-3c9664c57ec8.Caption" Value="Make elements required: Summary" />
 			<Item Name="Caption" Value="Visit report (Business rules)" />
 		</Items>
 	</Group>

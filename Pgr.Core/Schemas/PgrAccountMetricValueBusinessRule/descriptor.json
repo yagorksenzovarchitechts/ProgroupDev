@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "5a8b12e5-4c08-4a9a-bc58-d7ff696a0d8d",
+    "Name": "PgrAccountMetricValueBusinessRule",
+    "ModifiedOnUtc": "\/Date(1793276410000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Account metrics (Business rules)",
+    "DependsOn": []
+  }
+}

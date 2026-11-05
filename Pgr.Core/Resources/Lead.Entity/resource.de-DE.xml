@@ -5,6 +5,7 @@
 			<Item Name="Columns.LeadName.Caption" Value="Lead name" />
 			<Item Name="Columns.Owner.Caption" Value="Verantwortlicher" />
 			<Item Name="Columns.PgrEstimatedVolume.Caption" Value="Jahresvolumen" />
+			<Item Name="Columns.PgrLegalName.Caption" Value="Firmierung" />
 			<Item Name="Columns.PgrPGPotential.Caption" Value="PG Potential" />
 			<Item Name="Columns.PgrSalesRegion.Caption" Value="Vertriebsregion" />
 			<Item Name="Columns.QualifiedAccount.Caption" Value="Firma" />

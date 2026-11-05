@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "1b0c2285-3112-489f-806a-70ecca104f5a",
+    "Name": "PgrBonusBusinessRule",
+    "ModifiedOnUtc": "\/Date(1793190470000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Bonus (Business rules)",
+    "DependsOn": []
+  }
+}

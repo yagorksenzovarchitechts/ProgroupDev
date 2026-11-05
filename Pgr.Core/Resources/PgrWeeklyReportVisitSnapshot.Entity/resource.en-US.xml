@@ -26,7 +26,6 @@
 			<Item Name="Columns.PgrVisitReasonId.Caption" Value="Reason / Purpose" />
 			<Item Name="Columns.PgrVisitTypeId.Caption" Value="Visit type" />
 			<Item Name="Columns.PgrWeeklyReportId.Caption" Value="Weekly report" />
-			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
 		</Items>
 	</Group>
 </Resources>
