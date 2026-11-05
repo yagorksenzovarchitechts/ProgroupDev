@@ -2,7 +2,6 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Visit report" />
 			<Item Name="Columns.PgrAccount.Caption" Value="Kunde&#xA;&#xA;Kunde&#xA;&#xA;&#xA;Kunde&#xA;&#xA;Kunde" />
 			<Item Name="Columns.PgrCommercialTopicComment.Caption" Value="Kommerziell &amp; Preise (kommentar)" />
 			<Item Name="Columns.PgrCompetition.Caption" Value="Wettbewerb" />
@@ -21,7 +20,8 @@
 			<Item Name="Columns.PgrOwner.Caption" Value="Vertriebsmitarbeiter" />
 			<Item Name="Columns.PgrPerformance.Caption" Value="Performance" />
 			<Item Name="Columns.PgrPerformanceText.Caption" Value="Freitext Performance" />
-			<Item Name="Columns.PgrSummary.Caption" Value="Sonstiges / private Anmerkungen" />
+			<Item Name="Columns.PgrPrivateRemarks.Caption" Value="Private anmerkungen" />
+			<Item Name="Columns.PgrSummary.Caption" Value="Sonstiges " />
 			<Item Name="Columns.PgrThreeDayAvg.Caption" Value="AE 3 AT [TQM/AT]" />
 			<Item Name="Columns.PgrTopicCommercial.Caption" Value="Kommerziell &amp; Preise" />
 			<Item Name="Columns.PgrTopicProjectsOpportunities.Caption" Value="Projekte &amp; Verkaufschancen" />

@@ -8,6 +8,7 @@
 			<Item Name="Columns.PgrGeneratedOn.Caption" Value="generiert am" />
 			<Item Name="Columns.PgrIsManuallyGenerated.Caption" Value="manuell generiert" />
 			<Item Name="Columns.PgrMarketOverview.Caption" Value="Markteinschätzung" />
+			<Item Name="Columns.PgrMiscellaneous.Caption" Value="Verschiedenes" />
 			<Item Name="Columns.PgrSalesManagerId.Caption" Value="Sales Manager" />
 			<Item Name="Columns.PgrSentById.Caption" Value="versendet von" />
 			<Item Name="Columns.PgrSentOn.Caption" Value="versendet am" />

@@ -8,8 +8,8 @@
 			<Item Name="Columns.PgrName.Caption" Value="Name" />
 			<Item Name="Columns.PgrStatusId.Caption" Value="Status" />
 			<Item Name="Columns.PgrTitle.Caption" Value="Subject" />
+			<Item Name="Columns.PgrVisitCategoryId.Caption" Value="Visit type" />
 			<Item Name="Columns.PgrWeeklyReportId.Caption" Value="Weekly report" />
-			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
 		</Items>
 	</Group>
 </Resources>

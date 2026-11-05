@@ -357,14 +357,14 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"toggleType": "material",
 					"padding": {
 						"top": "medium",
-						"bottom": "small",
-						"left": "none",
-						"right": "none"
+						"bottom": "medium",
+						"left": "medium",
+						"right": "medium"
 					},
 					"layoutConfig": {
 						"column": 1,
-						"colSpan": 2,
-						"row": 6,
+						"colSpan": 1,
+						"row": 1,
 						"rowSpan": 1
 					}
 				}
@@ -372,9 +372,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			{
 				"operation": "move",
 				"name": "CompetitorsExpansionPanel",
-				"parentName": "GridContainer_lwk5ty1",
+				"parentName": "FlexContainer_AccMetrics",
 				"propertyName": "items",
-				"index": 7
+				"index": 1
 			},
 			{
 				"operation": "remove",
@@ -1643,7 +1643,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"titleWidth": 20,
 					"padding": {
 						"top": "medium",
-						"bottom": "small",
+						"bottom": "medium",
 						"left": "none",
 						"right": "none"
 					},
@@ -1885,14 +1885,14 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"title": "#ResourceString(ExpansionPanel_1mbln9s_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": true,
+					"expanded": false,
 					"labelColor": "#0D2E4E",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
 					"visible": true,
 					"padding": {
 						"top": "small",
-						"bottom": "small",
+						"bottom": "medium",
 						"left": "none",
 						"right": "none"
 					},
@@ -2179,6 +2179,36 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
+				"name": "GridContainer_2p6qhh0",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "TabContainer_Customer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
 				"name": "ExpansionPanel_0hsju2s",
 				"values": {
 					"type": "crt.ExpansionPanel",
@@ -2199,11 +2229,17 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					},
 					"fitContent": true,
 					"visible": true,
-					"alignItems": "stretch"
+					"alignItems": "stretch",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
 				},
-				"parentName": "TabContainer_Customer",
+				"parentName": "GridContainer_2p6qhh0",
 				"propertyName": "items",
-				"index": 3
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -2259,12 +2295,22 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					],
 					"gap": {
 						"columnGap": "large",
-						"rowGap": 0
+						"rowGap": "none"
 					},
 					"styles": {
 						"overflow-x": "hidden"
 					},
-					"items": []
+					"items": [],
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"alignItems": "stretch"
 				},
 				"parentName": "ExpansionPanel_0hsju2s",
 				"propertyName": "items",
@@ -2602,15 +2648,706 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"labelPosition": "auto",
 					"visible": true,
 					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 5,
+						"column": 2,
+						"colSpan": 1,
+						"row": 4,
 						"rowSpan": 1
 					}
 				},
 				"parentName": "GridContainer_lwk5ty1",
 				"propertyName": "items",
 				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_6vl1n41",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "small",
+						"left": "none"
+					}
+				},
+				"parentName": "GridContainer_2p6qhh0",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_AccMetrics",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "column",
+					"wrap": "nowrap",
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"padding": {
+						"top": "medium",
+						"right": "medium",
+						"bottom": "medium",
+						"left": "medium"
+					},
+					"color": "#EFEFEF",
+					"borderRadius": "none",
+					"alignItems": "stretch",
+					"justifyContent": "start",
+					"gap": "medium"
+				},
+				"parentName": "TabContainer_Customer",
+				"propertyName": "items",
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_AccMetricPanels",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "small",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					}
+				},
+				"parentName": "FlexContainer_AccMetrics",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "ExpansionPanel_g7t5oi7",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(ExpansionPanel_g7t5oi7_title)#",
+					"toggleType": "material",
+					"togglePosition": "before",
+					"expanded": true,
+					"labelColor": "auto",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"padding": {
+						"top": "medium",
+						"bottom": "medium",
+						"left": "medium",
+						"right": "medium"
+					},
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch"
+				},
+				"parentName": "GridContainer_AccMetricPanels",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_8zjt8to",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 24px)",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_g7t5oi7",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_e8qqrv9",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"gap": "none",
+					"alignItems": "center",
+					"items": [],
+					"layoutConfig": {
+						"colSpan": 1,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_8zjt8to",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailRefreshBtn_mj4g4n8",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailRefreshBtn_mj4g4n8_caption)#",
+					"icon": "reload-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.LoadDataRequest",
+						"params": {
+							"config": {
+								"loadType": "reload"
+							},
+							"dataSourceName": "GridDetail_2bm4u4kDS"
+						}
+					}
+				},
+				"parentName": "FlexContainer_e8qqrv9",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_tcgxw3i",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 32px)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_g7t5oi7",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_YearlyRequiredVolume",
+				"values": {
+					"type": "crt.DataGrid",
+					"layoutConfig": {
+						"colSpan": 2,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 6
+					},
+					"features": {
+						"rows": {
+							"selection": false,
+							"numeration": false
+						},
+						"columns": {
+							"resizing": false
+						},
+						"editable": {
+							"enable": true,
+							"itemsCreation": true,
+							"floatingEditPanel": true
+						}
+					},
+					"items": "$GridDetail_2bm4u4k",
+					"primaryColumnName": "GridDetail_2bm4u4kDS_Id",
+					"columns": [
+						{
+							"id": "349452a8-9f82-7faf-ca1b-6a351a8ff4ea",
+							"code": "GridDetail_2bm4u4kDS_PgrValue",
+							"caption": "#ResourceString(GridDetail_2bm4u4kDS_PgrValue)#",
+							"dataValueType": 32,
+							"width": 334
+						},
+						{
+							"id": "c8fffab1-95ca-a307-e33d-50c4fe505762",
+							"code": "GridDetail_2bm4u4kDS_PgrDate",
+							"caption": "#ResourceString(GridDetail_2bm4u4kDS_PgrDate)#",
+							"dataValueType": 8,
+							"width": 173
+						}
+					],
+					"placeholder": false,
+					"visible": true,
+					"fitContent": true,
+					"activeRow": "$GridDetail_2bm4u4k_ActiveRow",
+					"selectionState": "$GridDetail_2bm4u4k_SelectionState",
+					"_selectionOptions": {
+						"attribute": "GridDetail_2bm4u4k_SelectionState"
+					},
+					"bulkActions": []
+				},
+				"parentName": "GridContainer_tcgxw3i",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_2bm4u4k_AddTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Add tag",
+					"icon": "tag-icon",
+					"clicked": {
+						"request": "crt.AddTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_2bm4u4kDS",
+							"filters": "$GridDetail_2bm4u4k | crt.ToCollectionFilters : 'GridDetail_2bm4u4k' : $GridDetail_2bm4u4k_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_2bm4u4k_SelectionState"
+						}
+					},
+					"items": []
+				},
+				"parentName": "GridDetail_YearlyRequiredVolume",
+				"propertyName": "bulkActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_2bm4u4k_RemoveTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Remove tag",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.RemoveTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_2bm4u4kDS",
+							"filters": "$GridDetail_2bm4u4k | crt.ToCollectionFilters : 'GridDetail_2bm4u4k' : $GridDetail_2bm4u4k_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_2bm4u4k_SelectionState"
+						}
+					}
+				},
+				"parentName": "GridDetail_2bm4u4k_AddTagsBulkAction",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_2bm4u4k_ExportToExcelBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Export to Excel",
+					"icon": "export-button-icon",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "GridDetail_YearlyRequiredVolume",
+							"filters": "$GridDetail_2bm4u4k | crt.ToCollectionFilters : 'GridDetail_2bm4u4k' : $GridDetail_2bm4u4k_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_2bm4u4k_SelectionState"
+						}
+					}
+				},
+				"parentName": "GridDetail_YearlyRequiredVolume",
+				"propertyName": "bulkActions",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_2bm4u4k_MergeBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Merge",
+					"icon": "merge-icon",
+					"clicked": {
+						"request": "crt.MergeRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_2bm4u4kDS",
+							"selectionState": "$GridDetail_2bm4u4k_SelectionState"
+						}
+					}
+				},
+				"parentName": "GridDetail_YearlyRequiredVolume",
+				"propertyName": "bulkActions",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_2bm4u4k_DeleteBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Delete",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.DeleteRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_2bm4u4kDS",
+							"filters": "$GridDetail_2bm4u4k | crt.ToCollectionFilters : 'GridDetail_2bm4u4k' : $GridDetail_2bm4u4k_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_2bm4u4k_SelectionState"
+						}
+					}
+				},
+				"parentName": "GridDetail_YearlyRequiredVolume",
+				"propertyName": "bulkActions",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "ExpansionPanel_au6z0sw",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(ExpansionPanel_au6z0sw_title)#",
+					"toggleType": "material",
+					"togglePosition": "before",
+					"expanded": true,
+					"labelColor": "auto",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"padding": {
+						"top": "medium",
+						"bottom": "medium",
+						"left": "medium",
+						"right": "medium"
+					},
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch"
+				},
+				"parentName": "GridContainer_AccMetricPanels",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_fu41d21",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 24px)",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_au6z0sw",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_cto36zw",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"gap": "none",
+					"alignItems": "center",
+					"items": [],
+					"layoutConfig": {
+						"colSpan": 1,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_fu41d21",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailRefreshBtn_9fdd7jw",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailRefreshBtn_9fdd7jw_caption)#",
+					"icon": "reload-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.LoadDataRequest",
+						"params": {
+							"config": {
+								"loadType": "reload"
+							},
+							"dataSourceName": "GridDetail_zhh7t9sDS"
+						}
+					}
+				},
+				"parentName": "FlexContainer_cto36zw",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_x87zl9c",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 32px)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_au6z0sw",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_Potential",
+				"values": {
+					"type": "crt.DataGrid",
+					"layoutConfig": {
+						"colSpan": 2,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 6
+					},
+					"features": {
+						"rows": {
+							"selection": false,
+							"numeration": false
+						},
+						"columns": {
+							"resizing": false
+						},
+						"editable": {
+							"enable": true,
+							"itemsCreation": true,
+							"floatingEditPanel": true
+						}
+					},
+					"items": "$GridDetail_zhh7t9s",
+					"primaryColumnName": "GridDetail_zhh7t9sDS_Id",
+					"columns": [
+						{
+							"id": "8863113a-5990-c361-840d-94808d322efe",
+							"code": "GridDetail_zhh7t9sDS_PgrValue",
+							"caption": "#ResourceString(GridDetail_zhh7t9sDS_PgrValue)#",
+							"dataValueType": 32,
+							"width": 319
+						},
+						{
+							"id": "6388a1e7-b97a-90bc-24df-7da2d4312a3b",
+							"code": "GridDetail_zhh7t9sDS_PgrDate",
+							"caption": "#ResourceString(GridDetail_zhh7t9sDS_PgrDate)#",
+							"dataValueType": 8,
+							"width": 177
+						}
+					],
+					"placeholder": false,
+					"visible": true,
+					"fitContent": true,
+					"activeRow": "$GridDetail_zhh7t9s_ActiveRow",
+					"selectionState": "$GridDetail_zhh7t9s_SelectionState",
+					"_selectionOptions": {
+						"attribute": "GridDetail_zhh7t9s_SelectionState"
+					},
+					"bulkActions": []
+				},
+				"parentName": "GridContainer_x87zl9c",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_zhh7t9s_AddTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Add tag",
+					"icon": "tag-icon",
+					"clicked": {
+						"request": "crt.AddTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_zhh7t9sDS",
+							"filters": "$GridDetail_zhh7t9s | crt.ToCollectionFilters : 'GridDetail_zhh7t9s' : $GridDetail_zhh7t9s_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_zhh7t9s_SelectionState"
+						}
+					},
+					"items": []
+				},
+				"parentName": "GridDetail_Potential",
+				"propertyName": "bulkActions",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_zhh7t9s_RemoveTagsBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Remove tag",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.RemoveTagsInRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_zhh7t9sDS",
+							"filters": "$GridDetail_zhh7t9s | crt.ToCollectionFilters : 'GridDetail_zhh7t9s' : $GridDetail_zhh7t9s_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_zhh7t9s_SelectionState"
+						}
+					}
+				},
+				"parentName": "GridDetail_zhh7t9s_AddTagsBulkAction",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_zhh7t9s_ExportToExcelBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Export to Excel",
+					"icon": "export-button-icon",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "GridDetail_Potential",
+							"filters": "$GridDetail_zhh7t9s | crt.ToCollectionFilters : 'GridDetail_zhh7t9s' : $GridDetail_zhh7t9s_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_zhh7t9s_SelectionState"
+						}
+					}
+				},
+				"parentName": "GridDetail_Potential",
+				"propertyName": "bulkActions",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_zhh7t9s_MergeBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Merge",
+					"icon": "merge-icon",
+					"clicked": {
+						"request": "crt.MergeRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_zhh7t9sDS",
+							"selectionState": "$GridDetail_zhh7t9s_SelectionState"
+						}
+					}
+				},
+				"parentName": "GridDetail_Potential",
+				"propertyName": "bulkActions",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_zhh7t9s_DeleteBulkAction",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "Delete",
+					"icon": "delete-button-icon",
+					"clicked": {
+						"request": "crt.DeleteRecordsRequest",
+						"params": {
+							"dataSourceName": "GridDetail_zhh7t9sDS",
+							"filters": "$GridDetail_zhh7t9s | crt.ToCollectionFilters : 'GridDetail_zhh7t9s' : $GridDetail_zhh7t9s_SelectionState | crt.SkipIfSelectionEmpty : $GridDetail_zhh7t9s_SelectionState"
+						}
+					}
+				},
+				"parentName": "GridDetail_Potential",
+				"propertyName": "bulkActions",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "Label_ShareLatestUpdate",
+				"values": {
+					"type": "crt.Label",
+					"caption": "$PgrShareLatestUpdateText",
+					"labelType": "caption",
+					"labelThickness": "default",
+					"labelEllipsis": false,
+					"labelColor": "#5C6B7A",
+					"visible": true
+				},
+				"parentName": "CompetitorsToolsFlexContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_lcsobr1",
+				"values": {
+					"type": "crt.GridContainer",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"rows": "minmax(max-content, 32px)",
+					"gap": {
+						"columnGap": "large",
+						"rowGap": "none"
+					},
+					"items": [],
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch",
+					"color": "transparent",
+					"borderRadius": "none",
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "small",
+						"left": "none"
+					}
+				},
+				"parentName": "TabContainer_Customer",
+				"propertyName": "items",
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -2628,7 +3365,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"titleWidth": 20,
 					"padding": {
 						"top": "small",
-						"bottom": "small",
+						"bottom": "medium",
 						"left": "none",
 						"right": "none"
 					},
@@ -2638,7 +3375,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "TabContainer_Customer",
 				"propertyName": "items",
-				"index": 4
+				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -2866,7 +3603,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"titleWidth": 20,
 					"padding": {
 						"top": "small",
-						"bottom": "small",
+						"bottom": "medium",
 						"left": "none",
 						"right": "none"
 					},
@@ -2876,7 +3613,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "TabContainer_Customer",
 				"propertyName": "items",
-				"index": 5
+				"index": 7
 			},
 			{
 				"operation": "insert",
@@ -3067,7 +3804,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"titleWidth": 20,
 					"padding": {
 						"top": "small",
-						"bottom": "small",
+						"bottom": "medium",
 						"left": "none",
 						"right": "none"
 					},
@@ -3077,7 +3814,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "TabContainer_Customer",
 				"propertyName": "items",
-				"index": 6
+				"index": 8
 			},
 			{
 				"operation": "insert",
@@ -3303,7 +4040,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"titleWidth": 20,
 					"padding": {
 						"top": "small",
-						"bottom": "small",
+						"bottom": "medium",
 						"left": "none",
 						"right": "none"
 					},
@@ -3313,7 +4050,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "TabContainer_Customer",
 				"propertyName": "items",
-				"index": 7
+				"index": 9
 			},
 			{
 				"operation": "insert",
@@ -3549,36 +4286,6 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"parentName": "GridContainer_lalm3yc",
 				"propertyName": "items",
 				"index": 6
-			},
-			{
-				"operation": "insert",
-				"name": "GridContainer_2p6qhh0",
-				"values": {
-					"type": "crt.GridContainer",
-					"columns": [
-						"minmax(32px, 1fr)"
-					],
-					"rows": "minmax(max-content, 32px)",
-					"gap": {
-						"columnGap": "large",
-						"rowGap": "none"
-					},
-					"items": [],
-					"fitContent": true,
-					"visible": true,
-					"alignItems": "stretch",
-					"color": "transparent",
-					"borderRadius": "none",
-					"padding": {
-						"top": "none",
-						"right": "none",
-						"bottom": "none",
-						"left": "none"
-					}
-				},
-				"parentName": "TabContainer_Customer",
-				"propertyName": "items",
-				"index": 8
 			},
 			{
 				"operation": "insert",
@@ -11132,7 +11839,188 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								}
 							}
 						}
-					}
+					},
+					"GridDetail_2bm4u4k": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "GridDetail_2bm4u4kDS",
+							"filterAttributes": [
+								{
+									"loadOnChange": true,
+									"name": "GridDetail_2bm4u4k_PredefinedFilter"
+								}
+							],
+							"pagingConfig": {
+								"rowCount": 30,
+								"rowsLimit": 1
+							},
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "desc",
+										"columnName": "PgrDate"
+									}
+								]
+							}
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"GridDetail_2bm4u4kDS_PgrValue": {
+									"modelConfig": {
+										"path": "GridDetail_2bm4u4kDS.PgrValue"
+									}
+								},
+								"GridDetail_2bm4u4kDS_PgrDate": {
+									"modelConfig": {
+										"path": "GridDetail_2bm4u4kDS.PgrDate"
+									}
+								},
+								"GridDetail_2bm4u4kDS_Id": {
+									"modelConfig": {
+										"path": "GridDetail_2bm4u4kDS.Id"
+									}
+								},
+								"GridDetail_2bm4u4kDS_PgrAccountId": {
+									"modelConfig": {
+										"path": "GridDetail_2bm4u4kDS.PgrAccountId"
+									}
+								},
+								"GridDetail_2bm4u4kDS_PgrMetricTypeId": {
+									"modelConfig": {
+										"path": "GridDetail_2bm4u4kDS.PgrMetricTypeId"
+									}
+								}
+							}
+						}
+					},
+					"GridDetail_2bm4u4k_PredefinedFilter": {
+						"value": {
+							"items": {
+								"4e3a428b-ae6d-4a4c-85bf-a627dac0f153": {
+									"filterType": 4,
+									"comparisonType": 3,
+									"isEnabled": true,
+									"trimDateTimeParameterToDate": false,
+									"leftExpression": {
+										"expressionType": 0,
+										"columnPath": "PgrMetricTypeId"
+									},
+									"isAggregative": false,
+									"dataValueType": 10,
+									"referenceSchemaName": "PgrMetricType",
+									"rightExpressions": [
+										{
+											"expressionType": 2,
+											"parameter": {
+												"dataValueType": 10,
+												"value": {
+													"Name": "Yearly requirement in tsqm",
+													"Id": "8d02a47a-40bf-4624-b097-bec00c13ab54",
+													"value": "8d02a47a-40bf-4624-b097-bec00c13ab54",
+													"displayValue": "Yearly requirement in tsqm"
+												}
+											}
+										}
+									]
+								}
+							},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "PgrAccountMetricValue"
+						}
+					},
+					"GridDetail_zhh7t9s": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "GridDetail_zhh7t9sDS",
+							"filterAttributes": [
+								{
+									"loadOnChange": true,
+									"name": "GridDetail_zhh7t9s_PredefinedFilter"
+								}
+							],
+							"pagingConfig": {
+								"rowCount": 30,
+								"rowsLimit": 1
+							},
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "desc",
+										"columnName": "PgrDate"
+									}
+								]
+							}
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"GridDetail_zhh7t9sDS_PgrValue": {
+									"modelConfig": {
+										"path": "GridDetail_zhh7t9sDS.PgrValue"
+									}
+								},
+								"GridDetail_zhh7t9sDS_PgrDate": {
+									"modelConfig": {
+										"path": "GridDetail_zhh7t9sDS.PgrDate"
+									}
+								},
+								"GridDetail_zhh7t9sDS_Id": {
+									"modelConfig": {
+										"path": "GridDetail_zhh7t9sDS.Id"
+									}
+								},
+								"GridDetail_zhh7t9sDS_PgrAccountId": {
+									"modelConfig": {
+										"path": "GridDetail_zhh7t9sDS.PgrAccountId"
+									}
+								},
+								"GridDetail_zhh7t9sDS_PgrMetricTypeId": {
+									"modelConfig": {
+										"path": "GridDetail_zhh7t9sDS.PgrMetricTypeId"
+									}
+								}
+							}
+						}
+					},
+					"GridDetail_zhh7t9s_PredefinedFilter": {
+						"value": {
+							"items": {
+								"e4537e44-419a-4471-97f7-ae90d5c94017": {
+									"filterType": 4,
+									"comparisonType": 3,
+									"isEnabled": true,
+									"trimDateTimeParameterToDate": false,
+									"leftExpression": {
+										"expressionType": 0,
+										"columnPath": "PgrMetricTypeId"
+									},
+									"isAggregative": false,
+									"dataValueType": 10,
+									"referenceSchemaName": "PgrMetricType",
+									"rightExpressions": [
+										{
+											"expressionType": 2,
+											"parameter": {
+												"dataValueType": 10,
+												"value": {
+													"Name": "Potential in tsqm",
+													"Id": "e8e73e14-91cb-4653-b354-55e3fb2b429b",
+													"value": "e8e73e14-91cb-4653-b354-55e3fb2b429b",
+													"displayValue": "Potential in tsqm"
+												}
+											}
+										}
+									]
+								}
+							},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "PgrAccountMetricValue"
+						}
+					},
+					"PgrShareLatestUpdateText": {}
 				}
 			},
 			{
@@ -11999,6 +12887,48 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								}
 							}
 						}
+					},
+					"GridDetail_2bm4u4kDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "PgrAccountMetricValue",
+							"attributes": {
+								"PgrValue": {
+									"path": "PgrValue"
+								},
+								"PgrDate": {
+									"path": "PgrDate"
+								},
+								"PgrAccountId": {
+									"path": "PgrAccountId"
+								},
+								"PgrMetricTypeId": {
+									"path": "PgrMetricTypeId"
+								}
+							}
+						}
+					},
+					"GridDetail_zhh7t9sDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "PgrAccountMetricValue",
+							"attributes": {
+								"PgrValue": {
+									"path": "PgrValue"
+								},
+								"PgrDate": {
+									"path": "PgrDate"
+								},
+								"PgrAccountId": {
+									"path": "PgrAccountId"
+								},
+								"PgrMetricTypeId": {
+									"path": "PgrMetricTypeId"
+								}
+							}
+						}
 					}
 				}
 			},
@@ -12240,11 +13170,40 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"attributePath": "PgrAccount",
 							"relationPath": "PDS.Id"
 						}
+					],
+					"GridDetail_2bm4u4kDS": [
+						{
+							"attributePath": "PgrAccountId",
+							"relationPath": "PDS.Id"
+						}
+					],
+					"GridDetail_zhh7t9sDS": [
+						{
+							"attributePath": "PgrAccountId",
+							"relationPath": "PDS.Id"
+						}
 					]
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[
+			{
+			    request: "crt.HandleViewModelDestroyRequest",
+			    handler: async (request, next) => {
+			        const shareEntry = request.$context.PgrShareRefreshCallback;
+			        if (shareEntry) {
+			        	for (const action of shareEntry.actions) {
+			        		shareEntry.collection.unregisterOnCollectionChangeCallback(shareEntry.callback, action);
+			        	}
+			        	request.$context.PgrShareRefreshCallback = null;
+			        }
+			        for (const entry of request.$context.PgrMetricTypeCallbacks || []) {
+			            entry.collection.unregisterOnCollectionChangeCallback(entry.onAdd, sdk.ViewModelCollectionActionType.Add);
+			        }
+			        request.$context.PgrMetricTypeCallbacks = null;
+			        return next?.handle(request);
+			    }
+			},
 			{
 			    request: "crt.HandleViewModelInitRequest",
 			    handler: async (request, next) => {
@@ -12252,6 +13211,67 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					const sysValues = await new sdk.SysValuesService().loadSysValues();
 					const currentContactId = sysValues.userContact?.value;
 					request.$context.PgrCurrentUserContactId = currentContactId || "";
+
+					// Inline-added rows in the two Account metric grids get their metric type from the grid they are added in.
+					const metricGrids = [
+						{ collection: "GridDetail_2bm4u4k", typeId: "8d02a47a-40bf-4624-b097-bec00c13ab54", typeName: "Yearly requirement in tsqm" },
+						{ collection: "GridDetail_zhh7t9s", typeId: "e8e73e14-91cb-4653-b354-55e3fb2b429b", typeName: "Potential in tsqm" }
+					];
+					request.$context.PgrMetricTypeCallbacks = [];
+					for (const grid of metricGrids) {
+						const collection = await request.$context[grid.collection];
+						const attributeName = grid.collection + "DS_PgrMetricTypeId";
+						const onAdd = async changes => {
+							for (const item of changes.affectedElements) {
+								const current = await item[attributeName];
+								if (!current) {
+									await item.set(attributeName, { value: grid.typeId, displayValue: grid.typeName });
+								}
+							}
+						};
+						collection.registerOnCollectionChangeCallback(onAdd, sdk.ViewModelCollectionActionType.Add);
+						request.$context.PgrMetricTypeCallbacks.push({ collection, onAdd });
+					}
+
+					// Latest "valid from" date of the share-of-wallet rows, shown next to the grid.
+					const recordId = await request.$context.Id;
+					const refreshShareLatestUpdateUnsafe = async () => {
+						let accountId = recordId;
+						if (!accountId) {
+							request.$context.PgrShareLatestUpdateText = "";
+							return;
+						}
+						const shareModel = await sdk.Model.create("AccountCompetitor");
+						const shareFilters = new sdk.FilterGroup();
+						await shareFilters.addSchemaColumnFilterWithParameter(sdk.ComparisonType.Equal, "Account", accountId);
+						const shareRows = await shareModel.load({
+							attributes: ["PgrValidFrom"],
+							parameters: [{ type: sdk.ModelParameterType.Filter, value: shareFilters }]
+						});
+						let latest = null;
+						for (const row of shareRows || []) {
+							const validFrom = row.PgrValidFrom ? new Date(row.PgrValidFrom) : null;
+							if (validFrom && (!latest || validFrom > latest)) {
+								latest = validFrom;
+							}
+						}
+						request.$context.PgrShareLatestUpdateText = latest ? "Latest update: " + latest.toLocaleDateString("en-GB") : "";
+					};
+					// A failure here must never stop the page from opening.
+					const refreshShareLatestUpdate = async () => {
+						try {
+							await refreshShareLatestUpdateUnsafe();
+						} catch (error) {
+							console.error("Share of wallet latest update could not be read", error);
+						}
+					};
+					await refreshShareLatestUpdate();
+					const shareCollection = await request.$context["GridDetail"];
+					const shareActions = Object.values(sdk.ViewModelCollectionActionType).filter(a => typeof a === "number");
+					for (const action of shareActions) {
+						shareCollection.registerOnCollectionChangeCallback(refreshShareLatestUpdate, action);
+					}
+					request.$context.PgrShareRefreshCallback = { collection: shareCollection, callback: refreshShareLatestUpdate, actions: shareActions };
 
 					return result;
 			    }

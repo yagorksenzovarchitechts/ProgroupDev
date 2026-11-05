@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "80f0274d-b6bc-4098-8c90-db56a20d95a9",
+    "Name": "PgrAccountMetrics_MiniPage",
+    "ModifiedOnUtc": "\/Date(1793279633000)\/",
+    "Parent": {
+      "UId": "ecdcc8ff-272c-4957-9381-7d74ce17e140",
+      "Name": "BaseMiniPageTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Account metrics mini page",
+    "DependsOn": []
+  }
+}

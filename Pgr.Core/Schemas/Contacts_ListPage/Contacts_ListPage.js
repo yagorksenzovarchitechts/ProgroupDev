@@ -55,15 +55,15 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 							"sticky": true
 						},
 						{
-							"id": "58c1a0f3-4cd1-4e4e-aca7-19f8d4068d35",
-							"code": "PDS_Surname",
-							"caption": "#ResourceString(PDS_Surname)#",
-							"dataValueType": 28
-						},
-						{
 							"id": "1e71efcd-579c-00e9-4e4b-0cf4d0674ee1",
 							"code": "PDS_GivenName",
 							"caption": "#ResourceString(PDS_GivenName)#",
+							"dataValueType": 28
+						},
+						{
+							"id": "58c1a0f3-4cd1-4e4e-aca7-19f8d4068d35",
+							"code": "PDS_Surname",
+							"caption": "#ResourceString(PDS_Surname)#",
 							"dataValueType": 28
 						},
 						{
@@ -466,14 +466,14 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"attributes"
 				],
 				"values": {
-					"PDS_Surname": {
-						"modelConfig": {
-							"path": "PDS.Surname"
-						}
-					},
 					"PDS_GivenName": {
 						"modelConfig": {
 							"path": "PDS.GivenName"
+						}
+					},
+					"PDS_Surname": {
+						"modelConfig": {
+							"path": "PDS.Surname"
 						}
 					},
 					"PDS_Phone": {
@@ -582,11 +582,11 @@ define("Contacts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"attributes"
 				],
 				"values": {
-					"Surname": {
-						"path": "Surname"
-					},
 					"GivenName": {
 						"path": "GivenName"
+					},
+					"Surname": {
+						"path": "Surname"
 					},
 					"Phone": {
 						"path": "Phone"

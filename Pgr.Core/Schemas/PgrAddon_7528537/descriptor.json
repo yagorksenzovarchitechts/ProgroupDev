@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "bc37d295-fb78-49d3-8bed-1a14d58ec9bf",
+    "Name": "PgrAddon_7528537",
+    "ModifiedOnUtc": "\/Date(1793279643000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Account metrics mini page (AppearanceSettings)",
+    "DependsOn": []
+  }
+}

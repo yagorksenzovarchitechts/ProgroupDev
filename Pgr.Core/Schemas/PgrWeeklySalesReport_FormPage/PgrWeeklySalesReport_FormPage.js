@@ -1397,6 +1397,30 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 			},
 			{
 				"operation": "insert",
+				"name": "Input_rhhwgpi",
+				"values": {
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_PgrCompetitorBehaviour_zfvqw2n",
+					"control": "$PDS_PgrCompetitorBehaviour_zfvqw2n",
+					"placeholder": "",
+					"tooltip": "",
+					"readonly": false,
+					"multiline": true,
+					"labelPosition": "auto",
+					"visible": true,
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_ape3mla",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "Input_aj4eize",
 				"values": {
 					"type": "crt.Input",
@@ -1405,7 +1429,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 					"placeholder": "",
 					"tooltip": "",
 					"readonly": false,
-					"multiline": false,
+					"multiline": true,
 					"labelPosition": "auto",
 					"visible": true,
 					"layoutConfig": {
@@ -1417,7 +1441,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 				},
 				"parentName": "GridContainer_ape3mla",
 				"propertyName": "items",
-				"index": 0
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -1435,12 +1459,13 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 					"placeholder": "",
 					"tooltip": "",
 					"readonly": false,
-					"multiline": false,
-					"labelPosition": "auto"
+					"multiline": true,
+					"labelPosition": "auto",
+					"visible": true
 				},
 				"parentName": "GridContainer_ape3mla",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -1452,7 +1477,7 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 					"placeholder": "",
 					"tooltip": "",
 					"readonly": false,
-					"multiline": false,
+					"multiline": true,
 					"labelPosition": "auto",
 					"visible": true,
 					"layoutConfig": {
@@ -1464,31 +1489,30 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 				},
 				"parentName": "GridContainer_ape3mla",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
-				"name": "Input_rhhwgpi",
+				"name": "Input_ky66c99",
 				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 2,
+						"row": 5,
+						"rowSpan": 1
+					},
 					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_PgrCompetitorBehaviour_zfvqw2n",
-					"control": "$PDS_PgrCompetitorBehaviour_zfvqw2n",
+					"label": "$Resources.Strings.PDS_PgrMiscellaneous_mokrxhs",
+					"control": "$PDS_PgrMiscellaneous_mokrxhs",
 					"placeholder": "",
 					"tooltip": "",
 					"readonly": false,
 					"multiline": false,
-					"labelPosition": "auto",
-					"visible": true,
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 2,
-						"row": 1,
-						"rowSpan": 1
-					}
+					"labelPosition": "auto"
 				},
 				"parentName": "GridContainer_ape3mla",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -3626,6 +3650,10 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 								{
 									"loadOnChange": true,
 									"name": "DataGrid_p9ugu6a_PredefinedFilter"
+								},
+								{
+									"loadOnChange": true,
+									"name": "DataGrid_p9ugu6a_WeekFilter"
 								}
 							]
 						},
@@ -3700,8 +3728,18 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 											}
 										}
 									]
-								},
-								"259de205-2f5a-4543-91db-7ce2daf996e7": {
+								}
+							},
+							"logicalOperation": 0,
+							"isEnabled": true,
+							"filterType": 6,
+							"rootSchemaName": "Activity"
+						}
+					},
+					"DataGrid_p9ugu6a_WeekFilter": {
+						"value": {
+							"items": {
+								"b7d1c0de-4c6a-4f0e-9a52-3c1f6a0d9e11": {
 									"filterType": 1,
 									"comparisonType": 3,
 									"isEnabled": true,
@@ -3819,6 +3857,11 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 					"PDS_PgrPriceDevelopment_0hx6gzo": {
 						"modelConfig": {
 							"path": "PDS.PgrPriceDevelopment"
+						}
+					},
+					"PDS_PgrMiscellaneous_mokrxhs": {
+						"modelConfig": {
+							"path": "PDS.PgrMiscellaneous"
 						}
 					}
 				}
@@ -4062,6 +4105,95 @@ define("PgrWeeklySalesReport_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[
+			{
+				request: "crt.HandleViewModelInitRequest",
+				handler: async (request, next) => {
+					const result = await next?.handle(request);
+					const periodEnd = await request.$context["PDS_PgrPeriodEnd_rgrgwxm"];
+					if (!periodEnd) {
+						return result;
+					}
+					const text = periodEnd instanceof Date
+						? [periodEnd.getFullYear(), periodEnd.getMonth() + 1, periodEnd.getDate()].join("-")
+						: String(periodEnd).substring(0, 10);
+					const [y, m, d] = text.split("-").map(Number);
+					const end = new Date(Date.UTC(y, m - 1, d));
+					// Monday of the report's week, then the whole following week (Mon-Sun)
+					const nextMonday = new Date(end.getTime() - ((end.getUTCDay() + 6) % 7) * 86400000 + 7 * 86400000);
+					const nextSunday = new Date(nextMonday.getTime() + 6 * 86400000);
+					const iso = (dt) => dt.toISOString().substring(0, 10);
+					const bound = (dt) => ({
+						expressionType: 2,
+						parameter: { dataValueType: 8, value: JSON.stringify(iso(dt)) }
+					});
+					await request.$context.set("DataGrid_p9ugu6a_WeekFilter", {
+						items: {
+							"b7d1c0de-4c6a-4f0e-9a52-3c1f6a0d9e11": {
+								filterType: 3,
+								comparisonType: 0,
+								isEnabled: true,
+								trimDateTimeParameterToDate: true,
+								isAggregative: false,
+								dataValueType: 8,
+								leftExpression: { expressionType: 0, columnPath: "StartDate" },
+								rightLessExpression: bound(nextMonday),
+								rightGreaterExpression: bound(nextSunday)
+							}
+						},
+						logicalOperation: 0,
+						isEnabled: true,
+						filterType: 6,
+						rootSchemaName: "Activity"
+					});
+					return result;
+				}
+			},
+			{
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				handler: async (request, next) => {
+					if (request.attributeName !== "PDS_PgrPeriodEnd_rgrgwxm") {
+						return next?.handle(request);
+					}
+					const result = await next?.handle(request);
+					const periodEnd = request.value;
+					if (!periodEnd) {
+						return result;
+					}
+					const text = periodEnd instanceof Date
+						? [periodEnd.getFullYear(), periodEnd.getMonth() + 1, periodEnd.getDate()].join("-")
+						: String(periodEnd).substring(0, 10);
+					const [y, m, d] = text.split("-").map(Number);
+					const end = new Date(Date.UTC(y, m - 1, d));
+					// Monday of the report's week, then the whole following week (Mon-Sun)
+					const nextMonday = new Date(end.getTime() - ((end.getUTCDay() + 6) % 7) * 86400000 + 7 * 86400000);
+					const nextSunday = new Date(nextMonday.getTime() + 6 * 86400000);
+					const iso = (dt) => dt.toISOString().substring(0, 10);
+					const bound = (dt) => ({
+						expressionType: 2,
+						parameter: { dataValueType: 8, value: JSON.stringify(iso(dt)) }
+					});
+					await request.$context.set("DataGrid_p9ugu6a_WeekFilter", {
+						items: {
+							"b7d1c0de-4c6a-4f0e-9a52-3c1f6a0d9e11": {
+								filterType: 3,
+								comparisonType: 0,
+								isEnabled: true,
+								trimDateTimeParameterToDate: true,
+								isAggregative: false,
+								dataValueType: 8,
+								leftExpression: { expressionType: 0, columnPath: "StartDate" },
+								rightLessExpression: bound(nextMonday),
+								rightGreaterExpression: bound(nextSunday)
+							}
+						},
+						logicalOperation: 0,
+						isEnabled: true,
+						filterType: 6,
+						rootSchemaName: "Activity"
+					});
+					return result;
+				}
+			},
 			{
 				request: "usr.PgrGenerateAndPrintReportRequest",
 				handler: async (request, next) => {

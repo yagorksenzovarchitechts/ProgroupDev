@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.ee16c8a6-c87b-e844-e8bd-5dc2e004d459.Caption" Value="Set values: Bonus paid" />
+			<Item Name="Caption" Value="Bonus (Business rules)" />
+		</Items>
+	</Group>
+</Resources>

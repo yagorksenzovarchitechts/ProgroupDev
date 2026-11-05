@@ -1,0 +1,92 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "1b0c2285-3112-489f-806a-70ecca104f5a",
+      "A2": "PgrBonusBusinessRule",
+      "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "655ac62c-1e4a-cc32-6e65-323f197c68e0",
+      "B8": "10.0.0.858",
+      "AD1": "feb3d3e9-7b98-4658-9b26-d9dd543fcf22",
+      "AD2": "EntitySchemaManager",
+      "AD3": "BusinessRule",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+        "JI0": "Terrasoft.Core.BusinessRules.BusinessRules",
+        "BRS1": [
+          {
+            "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+            "UId": "ee16c8a6-c87b-e844-e8bd-5dc2e004d459",
+            "BR1": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+                "UId": "bd5e5c30-afd2-440b-2e19-6c973c71a37d",
+                "BRC1": {
+                  "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleGroupCondition",
+                  "UId": "b5613ac5-4c35-c34d-d854-0174749cffb3",
+                  "BGC1": 1,
+                  "BGC2": [
+                    {
+                      "JI0": "Terrasoft.Core.BusinessRules.Models.Conditions.BusinessRuleCondition",
+                      "UId": "c9d258ba-16c3-14ab-4649-38b68c96a620",
+                      "BCO1": {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+                        "UId": "4d0e6a98-5eeb-fe8c-be36-f9fab7a19665",
+                        "BRE1": "Date",
+                        "BRE2": "AttributeValue",
+                        "BRX1": "PgrBonusPaymentDate"
+                      },
+                      "BCO3": 1
+                    }
+                  ]
+                },
+                "BRC2": [
+                  {
+                    "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionSetValues",
+                    "UId": "896a1292-2e18-a592-92d6-311e75c1b647",
+                    "BSVS1": [
+                      {
+                        "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleSetValueItem",
+                        "UId": "df3601a5-756b-473c-d129-8fe541d28c2f",
+                        "BRA2": {
+                          "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+                          "UId": "b90915a6-1552-394e-e80e-a52fb9b3866c",
+                          "BRE1": "Boolean",
+                          "BRE2": "AttributeValue",
+                          "BRX1": "PgrBonusPaid",
+                          "BRX2": "null"
+                        },
+                        "BRA3": {
+                          "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+                          "UId": "b7f58bbb-7391-0bbd-e35f-fc94322531b4",
+                          "BRE1": "Boolean",
+                          "BVE1": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "BR2": [
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "46deb555-384f-ba3a-c234-6a8e0071435c",
+                "BRT2": 2
+              },
+              {
+                "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+                "UId": "b203d3eb-9eee-5d39-f544-2fdec473f361",
+                "BRT1": "PgrBonusPaymentDate"
+              }
+            ],
+            "BR3": "BusinessRule_730c520"
+          }
+        ]
+      }
+    }
+  }
+}

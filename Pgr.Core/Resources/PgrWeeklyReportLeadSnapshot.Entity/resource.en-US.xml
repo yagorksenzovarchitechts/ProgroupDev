@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Weekly Report Lead Snapshot" />
+			<Item Name="Columns.PgrAccountName.Caption" Value="Account name" />
+			<Item Name="Columns.PgrLeadCreatedOn.Caption" Value="Lead created on" />
+			<Item Name="Columns.PgrLeadSourceId.Caption" Value="Source" />
+			<Item Name="Columns.PgrName.Caption" Value="Name" />
+			<Item Name="Columns.PgrQualifyStatusId.Caption" Value="Lead phase" />
+			<Item Name="Columns.PgrWeeklyReportId.Caption" Value="Weekly report" />
+			<Item Name="EventsProcessSchema.Caption" Value="Business process" />
+		</Items>
+	</Group>
+</Resources>

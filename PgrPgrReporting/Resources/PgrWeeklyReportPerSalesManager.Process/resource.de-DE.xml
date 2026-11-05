@@ -11,12 +11,6 @@
 			<Item Name="BaseElements.AddWeeklyReport.Parameters.RecordId.Caption" Value="Erzeugte Satz-Id" />
 			<Item Name="BaseElements.LinkEntityToProcessUserTask1.Parameters.EntityId.Caption" Value="Objekt" />
 			<Item Name="BaseElements.LinkEntityToProcessUserTask1.Parameters.EntitySchemaId.Caption" Value="Objektschema" />
-			<Item Name="BaseElements.LinkVisitReports.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
-			<Item Name="BaseElements.LinkVisitReports.Parameters.DataSourceFilters.Caption" Value="Filter Datenquelle" />
-			<Item Name="BaseElements.LinkVisitReports.Parameters.EntitySchemaUId.Caption" Value="Objekt" />
-			<Item Name="BaseElements.LinkVisitReports.Parameters.IgnoreErrors.Caption" Value="Ausführung bei Fehlern fortsetzen" />
-			<Item Name="BaseElements.LinkVisitReports.Parameters.IsMatchConditions.Caption" Value="Wenn das Objekt die folgenden Bedingungen erfüllt" />
-			<Item Name="BaseElements.LinkVisitReports.Parameters.RecordColumnValues.Caption" Value="Spaltenwerte setzen" />
 			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.AggregationColumnName.Caption" Value="Name der Aggregatsfunktionsspalte" />
 			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.CanReadUncommitedData.Caption" Value="Nicht committete Daten lesen" />
 			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />

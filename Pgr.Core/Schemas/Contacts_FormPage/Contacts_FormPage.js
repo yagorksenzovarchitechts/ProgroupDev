@@ -103,10 +103,9 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 					"size": "small",
 					"clicked": {
 						"request": "crt.AddCommunicationOptionsRequest",
-						"params": {
-							"viewElementName": "CommunicationOptions"
-						}
+						"params": {}
 					},
+					"visible": false,
 					"disabled": false
 				}
 			},
@@ -1326,6 +1325,24 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 			},
 			{
 				"operation": "insert",
+				"name": "CommunicationOptions_qtiejyj",
+				"values": {
+					"type": "crt.CommunicationOptions",
+					"readonly": false,
+					"columnsCount": 1,
+					"showNoDataPlaceholder": true,
+					"labelPosition": "auto",
+					"masterRecordColumnValue": null,
+					"masterRecordColumnName": "Contact",
+					"items": "$CommunicationOptions_qtiejyj",
+					"visible": true
+				},
+				"parentName": "SideAreaProfileFieldFlexContainer",
+				"propertyName": "items",
+				"index": 7
+			},
+			{
+				"operation": "insert",
 				"name": "ComboBox_cf5dsmd",
 				"values": {
 					"type": "crt.ComboBox",
@@ -1344,7 +1361,7 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 				},
 				"parentName": "SideAreaProfileFieldFlexContainer",
 				"propertyName": "items",
-				"index": 8
+				"index": 9
 			},
 			{
 				"operation": "insert",
@@ -4361,6 +4378,64 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 						"modelConfig": {
 							"path": "PDS.MobilePhone"
 						}
+					},
+					"CommunicationOptions_qtiejyj": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "CommunicationOptions_qtiejyjDS",
+							"sortingConfig": {
+								"default": [
+									{
+										"columnName": "CreatedOn",
+										"direction": "asc"
+									}
+								]
+							}
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"CommunicationOptions_qtiejyjDS_CreatedOn": {
+									"modelConfig": {
+										"path": "CommunicationOptions_qtiejyjDS.CreatedOn"
+									}
+								},
+								"CommunicationOptions_qtiejyjDS_Number": {
+									"modelConfig": {
+										"path": "CommunicationOptions_qtiejyjDS.Number"
+									}
+								},
+								"CommunicationOptions_qtiejyjDS_Primary": {
+									"modelConfig": {
+										"path": "CommunicationOptions_qtiejyjDS.Primary"
+									}
+								},
+								"CommunicationOptions_qtiejyjDS_NonActual": {
+									"modelConfig": {
+										"path": "CommunicationOptions_qtiejyjDS.NonActual"
+									}
+								},
+								"CommunicationOptions_qtiejyjDS_CommunicationType": {
+									"modelConfig": {
+										"path": "CommunicationOptions_qtiejyjDS.CommunicationType"
+									}
+								},
+								"CommunicationOptions_qtiejyjDS_CommunicationTypeDisplayFormat": {
+									"modelConfig": {
+										"path": "CommunicationOptions_qtiejyjDS.CommunicationTypeDisplayFormat"
+									}
+								},
+								"CommunicationOptions_qtiejyjDS_CommunicationTypeName": {
+									"modelConfig": {
+										"path": "CommunicationOptions_qtiejyjDS.CommunicationTypeName"
+									}
+								},
+								"CommunicationOptions_qtiejyjDS_Id": {
+									"modelConfig": {
+										"path": "CommunicationOptions_qtiejyjDS.Id"
+									}
+								}
+							}
+						}
 					}
 				}
 			},
@@ -4773,6 +4848,38 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 								}
 							}
 						}
+					},
+					"CommunicationOptions_qtiejyjDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "ContactCommunication",
+							"attributes": {
+								"CreatedOn": {
+									"path": "CreatedOn"
+								},
+								"Number": {
+									"path": "Number"
+								},
+								"Primary": {
+									"path": "Primary"
+								},
+								"NonActual": {
+									"path": "NonActual"
+								},
+								"CommunicationType": {
+									"path": "CommunicationType"
+								},
+								"CommunicationTypeDisplayFormat": {
+									"type": "ForwardReference",
+									"path": "CommunicationType.DisplayFormat"
+								},
+								"CommunicationTypeName": {
+									"type": "ForwardReference",
+									"path": "CommunicationType.Name"
+								}
+							}
+						}
 					}
 				}
 			},
@@ -4809,6 +4916,12 @@ define("Contacts_FormPage", /**SCHEMA_DEPS*/["PgrContactDuplicatesSearchModule",
 					"GridDetail_4khgth6DS": [
 						{
 							"attributePath": "PgrContact",
+							"relationPath": "PDS.Id"
+						}
+					],
+					"CommunicationOptionsDS": [
+						{
+							"attributePath": "Contact",
 							"relationPath": "PDS.Id"
 						}
 					]

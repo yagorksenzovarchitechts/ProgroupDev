@@ -418,7 +418,7 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 					"visible": true,
 					"readonly": false,
 					"placeholder": "",
-					"secondaryDisplayValue": "PgrWepaformName"
+					"secondaryDisplayValue": null
 				},
 				"parentName": "GridContainer_1qargav",
 				"propertyName": "items",
@@ -2155,7 +2155,8 @@ define("Tasks_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEP
 					"controlActions": [],
 					"listActions": [],
 					"tooltip": "",
-					"control": "$PDS_Owner_xlkj4in"
+					"control": "$PDS_Owner_xlkj4in",
+					"mode": "List"
 				},
 				"parentName": "SideAreaProfileFlexContainer",
 				"propertyName": "items",

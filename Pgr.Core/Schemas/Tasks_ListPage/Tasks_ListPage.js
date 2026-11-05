@@ -244,7 +244,8 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							"id": "ecb5a95d-67d3-473d-a90c-0cecfbc897b2",
 							"code": "PDS_PgrIsEscalated",
 							"caption": "#ResourceString(PDS_PgrIsEscalated)#",
-							"dataValueType": 12
+							"dataValueType": 12,
+							"width": 132
 						},
 						{
 							"id": "b0b2f4ce-9f60-1a76-bcda-2da05b2f03aa",
@@ -291,6 +292,12 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							"caption": "#ResourceString(PDS_PgrOverdueDays)#",
 							"dataValueType": 4,
 							"width": 154
+						},
+						{
+							"id": "a8a0af34-1fe6-297a-2ff1-c2bf155b3284",
+							"code": "PDS_PgrPersonInCharge",
+							"caption": "#ResourceString(PDS_PgrPersonInCharge)#",
+							"dataValueType": 10
 						}
 					],
 					"features": {
@@ -701,6 +708,11 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							"path": "PDS.Status"
 						}
 					},
+					"PDS_PgrIsEscalated": {
+						"modelConfig": {
+							"path": "PDS.PgrIsEscalated"
+						}
+					},
 					"PDS_Priority": {
 						"modelConfig": {
 							"path": "PDS.Priority"
@@ -711,9 +723,9 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							"path": "PDS.PgrOverdueDays"
 						}
 					},
-					"PDS_PgrIsEscalated": {
+					"PDS_PgrPersonInCharge": {
 						"modelConfig": {
-							"path": "PDS.PgrIsEscalated"
+							"path": "PDS.PgrPersonInCharge"
 						}
 					}
 				}
@@ -828,11 +840,17 @@ define("Tasks_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 					"Status": {
 						"path": "Status"
 					},
+					"PgrIsEscalated": {
+						"path": "PgrIsEscalated"
+					},
 					"Priority": {
 						"path": "Priority"
 					},
 					"PgrOverdueDays": {
 						"path": "PgrOverdueDays"
+					},
+					"PgrPersonInCharge": {
+						"path": "PgrPersonInCharge"
 					}
 				}
 			}

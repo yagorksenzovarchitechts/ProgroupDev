@@ -231,6 +231,15 @@
   "E17": "PgrEmployeesNumberId",
   "E18": "PgrEmployeesNumberName"
 }
++ MetaData.Schema.D2 {
+  "UId": "522a08f3-eb6e-4906-6f1d-977795f6bef3",
+  "A2": "PgrLegalName",
+  "A3": "1754d773-ad30-4beb-98f4-f73b5321825c",
+  "A4": "1754d773-ad30-4beb-98f4-f73b5321825c",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c",
+  "S2": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd",
+  "E25": true
+}
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
   "e80190a5-03b2-4095-90f7-a193a960adee",
@@ -336,7 +345,8 @@
   "83de9945-5c19-aba8-920a-f837e639298d",
   "94a39bd1-443e-9335-5d25-4cb54b8508aa",
   "013ce920-e618-72c1-ba9f-7e1f67222599",
-  "6c339224-1e90-14eb-36b0-d3fd3cd08a1d"
+  "6c339224-1e90-14eb-36b0-d3fd3cd08a1d",
+  "522a08f3-eb6e-4906-6f1d-977795f6bef3"
 ]
 = MetaData.Schema.D20.FA1 false
 = MetaData.Schema.D20.FA2 false

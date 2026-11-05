@@ -18,14 +18,6 @@
 			<Item Name="BaseElements.LinkEntityToProcessUserTask1.Parameters.EntityId.DisplayValue" Value="[#Create weekly report.Created record Id#]" />
 			<Item Name="BaseElements.LinkEntityToProcessUserTask1.Parameters.EntitySchemaId.Caption" Value="Object schema" />
 			<Item Name="BaseElements.LinkEntityToProcessUserTask1.Parameters.EntitySchemaId.DisplayValue" Value="Weekly Sales Report" />
-			<Item Name="BaseElements.LinkVisitReports.Caption" Value="Link visit reports to weekly report" />
-			<Item Name="BaseElements.LinkVisitReports.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
-			<Item Name="BaseElements.LinkVisitReports.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
-			<Item Name="BaseElements.LinkVisitReports.Parameters.DataSourceFilters.Caption" Value="Data source filters" />
-			<Item Name="BaseElements.LinkVisitReports.Parameters.EntitySchemaUId.Caption" Value="Object" />
-			<Item Name="BaseElements.LinkVisitReports.Parameters.IgnoreErrors.Caption" Value="Continue execution on errors" />
-			<Item Name="BaseElements.LinkVisitReports.Parameters.IsMatchConditions.Caption" Value="If object meets the following conditions" />
-			<Item Name="BaseElements.LinkVisitReports.Parameters.RecordColumnValues.Caption" Value="Set column values" />
 			<Item Name="BaseElements.ReadExistingWeeklyReport.Caption" Value="Read existing weekly reports" />
 			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.AggregationColumnName.Caption" Value="Name of aggregate function column" />
 			<Item Name="BaseElements.ReadExistingWeeklyReport.Parameters.CanReadUncommitedData.Caption" Value="Read uncommitted data" />

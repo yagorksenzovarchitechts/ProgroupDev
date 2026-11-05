@@ -13,11 +13,19 @@
 			<Item Name="LocalizableStrings.DataGrid_bhkko01DS_PgrPersonInCharge_Email.Value" Value="E-Mail des Verantwortlichen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_0df7qhy_title.Value" Value="Teilnehmer" />
 			<Item Name="LocalizableStrings.ExpansionPanel_9f310aw_title.Value" Value="Kundensituation" />
+			<Item Name="LocalizableStrings.ExpansionPanel_VrPotential_title.Value" Value="PG Potential p.a. [TQM]" />
+			<Item Name="LocalizableStrings.ExpansionPanel_VrYearly_title.Value" Value="Jahresbedarf [TQM ]" />
 			<Item Name="LocalizableStrings.ExpansionPanel_cmepoqk_title.Value" Value="Grund und Ziel" />
+			<Item Name="LocalizableStrings.ExpansionPanel_jgw44k6_title.Value" Value="Lieferanteil (Share-of-Wallet)" />
 			<Item Name="LocalizableStrings.ExpansionPanel_kl2km0r_title.Value" Value="Anmerkungen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_qygdbl8_title.Value" Value="Maßnahmen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_v7m1ic2_title.Value" Value="Schwerpunktthemen" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_VrYearly_caption.Value" Value="Aktualisieren" />
 			<Item Name="LocalizableStrings.GridDetail_7qocfn4DS_PgrCustomerContacts.Value" Value="Kundenkontakte" />
+			<Item Name="LocalizableStrings.Icon_eftnqxy_ariaLabel.Value" Value="Das für die Eigenfertigung des Kunden relevante Volumen. Er errechnet sich aus dem Gesamtbedarf des Kunden abzüglich der Handelsware." />
+			<Item Name="LocalizableStrings.Icon_eftnqxy_tooltip.Value" Value="Das für die Eigenfertigung des Kunden relevante Volumen. Er errechnet sich aus dem Gesamtbedarf des Kunden abzüglich der Handelsware." />
+			<Item Name="LocalizableStrings.Icon_r747f03_ariaLabel.Value" Value="Das für uns realisierbare Absatzvolumen. Es entspricht dem Jahresbedarf abzüglich aller Segmente, die nicht von PG bedient werden können (z. B. einwellige offene Welle, Endloswellpappe oder Sorten mit exklusiven Spezialpapieren)" />
+			<Item Name="LocalizableStrings.Icon_r747f03_tooltip.Value" Value="Das für uns realisierbare Absatzvolumen. Es entspricht dem Jahresbedarf abzüglich aller Segmente, die nicht von PG bedient werden können (z. B. einwellige offene Welle, Endloswellpappe oder Sorten mit exklusiven Spezialpapieren)" />
 			<Item Name="LocalizableStrings.Input_1j86543_tooltip.Value" Value="Optionaler zusätzlicher Hinweis" />
 			<Item Name="LocalizableStrings.Input_1snwgmj_label.Value" Value="Beschreibung" />
 			<Item Name="LocalizableStrings.Input_1snwgmj_tooltip.Value" Value="Was wurde besprochen? Ergebnis? Chancen/Risiken?" />

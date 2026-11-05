@@ -540,6 +540,71 @@
   ],
   "BR3": "BusinessRule_60161ac"
 }
++ MetaData.Schema.AD4.BRS1 {
+  "JI0": "Terrasoft.Core.BusinessRules.BusinessRule",
+  "UId": "0b680f58-1613-0e33-5888-227cc9a0105a",
+  "BR1": [
+    {
+      "JI0": "Terrasoft.Core.BusinessRules.Models.BusinessRuleCase",
+      "UId": "ba929d44-e5f0-c5b7-1cc8-a185067c3d51",
+      "BRC2": [
+        {
+          "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionSetFilter",
+          "UId": "fb5d1825-36f5-810e-33bc-a1c28e4263a5",
+          "BRA2": {
+            "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+            "UId": "ba367035-6906-d8cd-67c2-59b3a53a0bb8",
+            "BRE2": "AttributeValue",
+            "BRX1": "Owner"
+          },
+          "BRA3": {
+            "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+            "UId": "66cd0f9b-14ba-972d-9444-e4bfea2eba39",
+            "BVE1": "{\"items\":{\"aaef4071-5a08-4463-926e-a8f37fa8a2f4\":{\"filterType\":4,\"comparisonType\":3,\"isEnabled\":true,\"trimDateTimeParameterToDate\":false,\"leftExpression\":{\"expressionType\":0,\"columnPath\":\"Type\"},\"isAggregative\":false,\"dataValueType\":10,\"referenceSchemaName\":\"ContactType\",\"rightExpressions\":[{\"expressionType\":2,\"parameter\":{\"dataValueType\":10,\"value\":{\"Name\":\"Employee\",\"Id\":\"60733efc-f36b-1410-a883-16d83cab0980\",\"value\":\"60733efc-f36b-1410-a883-16d83cab0980\",\"displayValue\":\"Employee\"}}}]}},\"logicalOperation\":0,\"isEnabled\":true,\"filterType\":6,\"rootSchemaName\":\"Contact\"}"
+          }
+        },
+        {
+          "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionSetFilter",
+          "UId": "54f294e2-0677-70f0-b734-133292719aba",
+          "BRA2": {
+            "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+            "UId": "a9a1f8b8-9fdc-8aa7-af43-c3184cb2e35a",
+            "BRE2": "AttributeValue",
+            "BRX1": "PgrPersonInCharge"
+          },
+          "BRA3": {
+            "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+            "UId": "0fec0dde-e511-82e6-77e3-2be0ba574fe4",
+            "BVE1": "{\"items\":{\"6aebdc8a-28f4-4c97-8b6a-a45d11578d2f\":{\"filterType\":4,\"comparisonType\":3,\"isEnabled\":true,\"trimDateTimeParameterToDate\":false,\"leftExpression\":{\"expressionType\":0,\"columnPath\":\"Type\"},\"isAggregative\":false,\"dataValueType\":10,\"referenceSchemaName\":\"ContactType\",\"rightExpressions\":[{\"expressionType\":2,\"parameter\":{\"dataValueType\":10,\"value\":{\"Name\":\"Employee\",\"Id\":\"60733efc-f36b-1410-a883-16d83cab0980\",\"value\":\"60733efc-f36b-1410-a883-16d83cab0980\",\"displayValue\":\"Employee\"}}}]}},\"logicalOperation\":0,\"isEnabled\":true,\"filterType\":6,\"rootSchemaName\":\"Contact\"}"
+          }
+        },
+        {
+          "JI0": "Terrasoft.Core.BusinessRules.Models.Actions.BusinessRuleActionSetFilter",
+          "UId": "66a30fc1-7a88-1673-ce29-6c187a522a2d",
+          "BRA2": {
+            "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleAttributeExpression",
+            "UId": "08a4ca2f-5fee-1ec0-014d-10dbae6c80d6",
+            "BRE2": "AttributeValue",
+            "BRX1": "Author"
+          },
+          "BRA3": {
+            "JI0": "Terrasoft.Core.BusinessRules.Models.Expressions.BusinessRuleValueExpression",
+            "UId": "ef22d93a-eaa5-a7d2-b749-d47cf40018bb",
+            "BVE1": "{\"items\":{\"316d27e6-be7f-4a34-ac4d-972d87e7cd44\":{\"filterType\":4,\"comparisonType\":3,\"isEnabled\":true,\"trimDateTimeParameterToDate\":false,\"leftExpression\":{\"expressionType\":0,\"columnPath\":\"Type\"},\"isAggregative\":false,\"dataValueType\":10,\"referenceSchemaName\":\"ContactType\",\"rightExpressions\":[{\"expressionType\":2,\"parameter\":{\"dataValueType\":10,\"value\":{\"Name\":\"Employee\",\"Id\":\"60733efc-f36b-1410-a883-16d83cab0980\",\"value\":\"60733efc-f36b-1410-a883-16d83cab0980\",\"displayValue\":\"Employee\"}}}]}},\"logicalOperation\":0,\"isEnabled\":true,\"filterType\":6,\"rootSchemaName\":\"Contact\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "BR2": [
+    {
+      "JI0": "Terrasoft.Core.BusinessRules.Models.Trigger",
+      "UId": "2fb7c440-2a34-c42b-0343-c9ff19f9005b",
+      "BRT2": 2
+    }
+  ],
+  "BR3": "BusinessRule_038e83d"
+}
 ~ MetaData.Schema.AD4.BRS1 [
   "c1e211e9-8e29-6720-9a8d-b207df730852",
   "5c876047-2562-2a90-9c03-357ba1cb1bd1",
@@ -550,6 +615,7 @@
   "d48825f6-fc06-b66b-48b1-c9851aaac8db",
   "a1099290-f698-723f-b9ed-c91011a7fb52",
   "8987a5de-2ff5-4626-5978-b2f0527251b8",
-  "5079dcb5-dd97-40cd-b38f-54328900a275"
+  "5079dcb5-dd97-40cd-b38f-54328900a275",
+  "0b680f58-1613-0e33-5888-227cc9a0105a"
 ]
 + MetaData.Schema.B7 true

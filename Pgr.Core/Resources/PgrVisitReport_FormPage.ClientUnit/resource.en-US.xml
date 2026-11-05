@@ -18,25 +18,35 @@
 			<Item Name="LocalizableStrings.DataGrid_bhkko01DS_StartDate.Value" Value="Start" />
 			<Item Name="LocalizableStrings.ExpansionPanel_0df7qhy_title.Value" Value="Meeting participants" />
 			<Item Name="LocalizableStrings.ExpansionPanel_9f310aw_title.Value" Value="Customer situation" />
+			<Item Name="LocalizableStrings.ExpansionPanel_VrPotential_title.Value" Value="PG potential p.a. [tsqm]" />
+			<Item Name="LocalizableStrings.ExpansionPanel_VrYearly_title.Value" Value="Yearly required volume [tsqm]" />
 			<Item Name="LocalizableStrings.ExpansionPanel_cmepoqk_title.Value" Value="Reason &amp; Purpose" />
 			<Item Name="LocalizableStrings.ExpansionPanel_jgw44k6_title.Value" Value="Share of wallet" />
 			<Item Name="LocalizableStrings.ExpansionPanel_kl2km0r_title.Value" Value="Remarks" />
 			<Item Name="LocalizableStrings.ExpansionPanel_qygdbl8_title.Value" Value="Measures" />
 			<Item Name="LocalizableStrings.ExpansionPanel_v7m1ic2_title.Value" Value="Key topics" />
 			<Item Name="LocalizableStrings.GeneralInfoTab_caption.Value" Value="General info" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_VrPotential_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_VrYearly_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_cc93sts_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_fnh0pp1_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetail_7qocfn4DS_PgrCustomerContacts.Value" Value="Customer Contacts" />
+			<Item Name="LocalizableStrings.Icon_eftnqxy_ariaLabel.Value" Value="Das für die Eigenfertigung des Kunden relevante Volumen. Er errechnet sich aus dem Gesamtbedarf des Kunden abzüglich der Handelsware." />
+			<Item Name="LocalizableStrings.Icon_eftnqxy_tooltip.Value" Value="Bedarf p.a. ohne Handelsware, inkl. einwelliger offener Welle, Endloswellpappe, Spezialpapiere die Progroup nicht bekommen kann (zB FRP-Welle Haribo)" />
+			<Item Name="LocalizableStrings.Icon_r747f03_ariaLabel.Value" Value="Das für uns realisierbare Absatzvolumen. Es entspricht dem Jahresbedarf abzüglich aller Segmente, die nicht von PG bedient werden können (z. B. einwellige offene Welle, Endloswellpappe oder Sorten mit exklusiven Spezialpapieren)" />
+			<Item Name="LocalizableStrings.Icon_r747f03_tooltip.Value" Value="Für PG erreichbares Potential p.a.. Der Jahresbedarf abzüglich: einwellige offene Welle, Endloswellpappe, Spezialpapiere die Progroup nicht bekommen kann (zB FRP-Welle Haribo)." />
 			<Item Name="LocalizableStrings.Input_1j86543_tooltip.Value" Value="Optional additional note" />
 			<Item Name="LocalizableStrings.Input_1snwgmj_label.Value" Value="Description" />
 			<Item Name="LocalizableStrings.Input_1snwgmj_tooltip.Value" Value="What was discussed? Outcome? Opportunities/risks?" />
 			<Item Name="LocalizableStrings.Input_3nnhmxl_placeholder.Value" Value="Name all other participants" />
+			<Item Name="LocalizableStrings.Input_8gv08v4_placeholder.Value" Value="Will be included in report" />
 			<Item Name="LocalizableStrings.Input_9e3hpga_label.Value" Value="Comment" />
 			<Item Name="LocalizableStrings.Input_9ep08np_label.Value" Value="Comment" />
 			<Item Name="LocalizableStrings.Input_az70u84_tooltip.Value" Value="Use when 'Other' is selected" />
 			<Item Name="LocalizableStrings.Input_d03k06p_label.Value" Value="Comment" />
 			<Item Name="LocalizableStrings.Input_fc9evig_label.Value" Value="Comment" />
 			<Item Name="LocalizableStrings.Input_pulytkc_label.Value" Value="Report name" />
+			<Item Name="LocalizableStrings.Input_r6ukmhz_placeholder.Value" Value="Will not be included in report" />
 			<Item Name="LocalizableStrings.Input_s875dfr_tooltip.Value" Value="Optional additional note" />
 			<Item Name="LocalizableStrings.Label_1u95lgq_caption.Value" Value="Other contacts" />
 			<Item Name="LocalizableStrings.Label_Measure_caption.Value" Value="The person in charge receives measure notifications in Creatio. Non-Creatio users receive the task by email instead (owner defaults to the sales manager). Make sure their email is filled in on the contact page." />
@@ -47,6 +57,10 @@
 			<Item Name="LocalizableStrings.SetRecordRightsButton_caption.Value" Value="Set up access rights" />
 			<Item Name="LocalizableStrings.ShareTotalErrorString.Value" Value="The total of all share values must equal 100%. Current total: " />
 			<Item Name="LocalizableStrings.TabContainer_widjyyt_caption.Value" Value="Report detail" />
+			<Item Name="LocalizableStrings.VrPotentialDS_PgrDate.Value" Value="Date" />
+			<Item Name="LocalizableStrings.VrPotentialDS_PgrValue.Value" Value="Value in [tsm/wd]" />
+			<Item Name="LocalizableStrings.VrYearlyVolumeDS_PgrDate.Value" Value="Date" />
+			<Item Name="LocalizableStrings.VrYearlyVolumeDS_PgrValue.Value" Value="Value in [tsm/wd]" />
 			<Item Name="LocalizableStrings.addRecord_9ii5w3n_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_g7igl2j_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_mujnxpn_caption.Value" Value="Add new" />
