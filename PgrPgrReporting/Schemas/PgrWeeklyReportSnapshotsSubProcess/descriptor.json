@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "27971dc6-454e-4332-895d-11ee85e355d3",
+    "Name": "PgrWeeklyReportSnapshotsSubProcess",
+    "ModifiedOnUtc": "\/Date(1793907902000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Weekly report snapshots",
+    "DependsOn": []
+  }
+}

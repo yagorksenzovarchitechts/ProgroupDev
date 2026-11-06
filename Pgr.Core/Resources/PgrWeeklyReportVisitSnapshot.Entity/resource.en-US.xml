@@ -4,6 +4,8 @@
 		<Items>
 			<Item Name="Caption" Value="Weekly Report Visit Snapshot" />
 			<Item Name="Columns.PgrAccountId.Caption" Value="Account (Customer)" />
+			<Item Name="Columns.PgrActualMTD.Caption" Value="Month to date order intake" />
+			<Item Name="Columns.PgrCommercialTopicComment.Caption" Value="Commercial &amp; Prices (comment)" />
 			<Item Name="Columns.PgrCompetitionId.Caption" Value="Competition" />
 			<Item Name="Columns.PgrCompetitionText.Caption" Value="Competition remarks" />
 			<Item Name="Columns.PgrDeliveryShare.Caption" Value="Progroup delivery share (auto)" />
@@ -14,6 +16,11 @@
 			<Item Name="Columns.PgrNumber.Caption" Value="Number" />
 			<Item Name="Columns.PgrPerformanceId.Caption" Value="Performance" />
 			<Item Name="Columns.PgrPerformanceText.Caption" Value="Performance remarks" />
+			<Item Name="Columns.PgrPotential.Caption" Value="PG potential p.a. [tsqm]" />
+			<Item Name="Columns.PgrProjectTopicComment.Caption" Value="Projects &amp; Opportunities (comment)" />
+			<Item Name="Columns.PgrQualityTopicComment.Caption" Value="Quality (comment)" />
+			<Item Name="Columns.PgrServiceTopicComment.Caption" Value="Service &amp; Delivery (comment)" />
+			<Item Name="Columns.PgrSummary.Caption" Value="Summary" />
 			<Item Name="Columns.PgrTopicCommercial.Caption" Value="Commercial &amp; Prices" />
 			<Item Name="Columns.PgrTopicProjectsOpportunities.Caption" Value="Projects &amp; Opportunities" />
 			<Item Name="Columns.PgrTopicQuality.Caption" Value="Quality" />
@@ -24,6 +31,7 @@
 			<Item Name="Columns.PgrVisitDeviation.Caption" Value="Deviation %" />
 			<Item Name="Columns.PgrVisitDidNotTakePlace.Caption" Value="Visit did not take place" />
 			<Item Name="Columns.PgrVisitReasonId.Caption" Value="Reason / Purpose" />
+			<Item Name="Columns.PgrVisitReasonText.Caption" Value="Reason remarks" />
 			<Item Name="Columns.PgrVisitTypeId.Caption" Value="Visit type" />
 			<Item Name="Columns.PgrWeeklyReportId.Caption" Value="Weekly report" />
 		</Items>

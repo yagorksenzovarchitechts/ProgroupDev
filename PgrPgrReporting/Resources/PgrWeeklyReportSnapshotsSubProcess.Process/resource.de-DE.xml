@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="de-DE">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.DataSourceFilters.Caption" Value="Filter Datenquelle" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.EntitySchemaId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.FilterEntitySchemaId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.RecordAddMode.Caption" Value="Hinzuügemodus für Satz" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.RecordDefValues.Caption" Value="Spaltenwerte setzen" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.RecordId.Caption" Value="Erzeugte Satz-Id" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.DataSourceFilters.Caption" Value="Filter Datenquelle" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.EntitySchemaId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.FilterEntitySchemaId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.RecordAddMode.Caption" Value="Hinzuügemodus für Satz" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.RecordDefValues.Caption" Value="Spaltenwerte setzen" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.RecordId.Caption" Value="Erzeugte Satz-Id" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.DataSourceFilters.Caption" Value="Filter Datenquelle" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.EntitySchemaId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.FilterEntitySchemaId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordAddMode.Caption" Value="Hinzuügemodus für Satz" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Caption" Value="Spaltenwerte setzen" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordId.Caption" Value="Erzeugte Satz-Id" />
+			<Item Name="BaseElements.DeleteLeadSnapshots.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.DeleteLeadSnapshots.Parameters.DataSourceFilters.Caption" Value="Filter Datenquelle" />
+			<Item Name="BaseElements.DeleteLeadSnapshots.Parameters.EntitySchemaId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.DeleteLeadSnapshots.Parameters.IsMatchConditions.Caption" Value="Objekt muss folgende Bedingungen erfüllen" />
+			<Item Name="BaseElements.DeletePlannedVisitSnapshots.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.DeletePlannedVisitSnapshots.Parameters.DataSourceFilters.Caption" Value="Filter Datenquelle" />
+			<Item Name="BaseElements.DeletePlannedVisitSnapshots.Parameters.EntitySchemaId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.DeletePlannedVisitSnapshots.Parameters.IsMatchConditions.Caption" Value="Objekt muss folgende Bedingungen erfüllen" />
+			<Item Name="BaseElements.DeleteVisitSnapshots.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.DeleteVisitSnapshots.Parameters.DataSourceFilters.Caption" Value="Filter Datenquelle" />
+			<Item Name="BaseElements.DeleteVisitSnapshots.Parameters.EntitySchemaId.Caption" Value="Objekt" />
+			<Item Name="BaseElements.DeleteVisitSnapshots.Parameters.IsMatchConditions.Caption" Value="Objekt muss folgende Bedingungen erfüllen" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.AggregationColumnName.Caption" Value="Name der Aggregatsfunktionsspalte" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.CanReadUncommitedData.Caption" Value="Nicht committete Daten lesen" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ConsiderTimeInFilter.Caption" Value="Zeit im Filter berücksichtigen" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.DataSourceFilters.Caption" Value="Datenquelle der Filter" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.EntityColumnMetaPathes.Caption" Value="Zu lesende Spalten" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.FunctionType.Caption" Value="Aggregatesfunktionstyp" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.IgnoreDisplayValues.Caption" Value="Angezeigte Werte von Nachschlagewert-Spalten nicht lesen" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.NumberOfRecords.Caption" Value="Anzahl zu lesender Sätze" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.OrderInfo.Caption" Value="Spaltensortiierung" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ReadSomeTopRecords.Caption" Value="Zuerst lesen" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultCompositeObjectList.Caption" Value="Datensatz-Auswahl" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultCount.Caption" Value="Anzahl Sätze" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultDateTimeFunction.Caption" Value="Funktionsresultat (Datum/Zeit)" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultEntity.Caption" Value="Erstes Item der Ergebniskollektion" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultEntityCollection.Caption" Value="Ergenissammlung" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultFloatFunction.Caption" Value="Funktionsresultat (Dezimal)" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultIntegerFunction.Caption" Value="Funktionsresultat (Ganzzahl)" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultRowsCount.Caption" Value="Anzahl gelesener Sätze" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultType.Caption" Value="Ergebnistyp" />
+			<Item Name="Caption" Value="Weekly report snapshots" />
+		</Items>
+	</Group>
+</Resources>

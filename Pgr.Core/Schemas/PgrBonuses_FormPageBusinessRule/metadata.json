@@ -70,7 +70,8 @@
                 "BRT1": "PDS_PgrBonusPaid_urb9qjf"
               }
             ],
-            "BR3": "BusinessRule_4814469"
+            "BR3": "BusinessRule_4814469",
+            "BR4": false
           }
         ]
       }

@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "956bfcd0-9f5d-4706-bfeb-1543865965b1",
+    "Name": "PgrWeeklySalesReport_GeneratePgrPgrReporting1",
+    "ModifiedOnUtc": "\/Date(1793954695000)\/",
+    "Parent": {
+      "UId": "044d9f6b-807f-4270-a34c-f4aabeb28da0",
+      "Name": "PgrWeeklySalesReport_Generate"
+    },
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Pgr: Create Weekly Report by Sales Manager Parent",
+    "DependsOn": []
+  }
+}
