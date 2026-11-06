@@ -31,6 +31,9 @@ namespace Pgr.Core
 
         #region Fields
 
+        private static readonly global::Common.Logging.ILog Log =
+            global::Common.Logging.LogManager.GetLogger("Error");
+
         private readonly UserConnection _userConnection;
 
         private readonly PgrAccountWorkingDayHelper _workingDayHelper;
@@ -56,38 +59,45 @@ namespace Pgr.Core
         /// </summary>
         public Pgr369DailyCalculation CalculateDaily(Guid accountId)
         {
-            var dailyBudget = GetLatestMetricValue(
-                accountId, PgrConstants.PgrMetricType.Budget, PgrConstants.PgrPeriodUnit.Month, DateTime.Today);
+            var window = GetLastWorkingDays(accountId, RollingWindowDays);
+            if (window.Count < RollingWindowDays)
+            {
+                LogSkipped(accountId, "the working-day window could not be built");
+                return null;
+            }
+
+            var windowTo = window.Max();
             var orderIntakeAvg = GetLatestMetricValue(
                 accountId, PgrConstants.PgrMetricType.AvgOrderIntake3Days, PgrConstants.PgrPeriodUnit.Day,
-                DateTime.Today);
-            if (!dailyBudget.HasValue || !orderIntakeAvg.HasValue)
+                windowTo, windowTo);
+            if (!orderIntakeAvg.HasValue)
             {
+                LogSkipped(accountId, $"no Avg Order Intake (3 days) metric for {windowTo:yyyy-MM-dd}");
                 return null;
             }
 
             var tolerance = ResolveTolerance(accountId);
-            var calculation = new Pgr369DailyCalculation
+            var budgetCompareValue = GetBudgetCompareValue(accountId, window, tolerance);
+            if (!budgetCompareValue.HasValue)
+            {
+                return null;
+            }
+
+            var fullBudget = (GetBudgetForDay(accountId, DateTime.Today) ?? GetBudgetForDay(accountId, windowTo))
+                .GetValueOrDefault();
+            return new Pgr369DailyCalculation
             {
                 AccountId = accountId,
                 CalculationDate = DateTime.Today,
                 CalendarId = _workingDayHelper.GetCalendarId(accountId),
-                FullBudget = dailyBudget.Value,
-                ToleranceAdjustedBudget = ResolveDailyThreshold(dailyBudget.Value, tolerance)
+                FullBudget = fullBudget,
+                ToleranceAdjustedBudget = ResolveDailyThreshold(fullBudget, tolerance),
+                WindowFrom = window.Min(),
+                WindowTo = windowTo,
+                BudgetCompareValue = budgetCompareValue.Value,
+                OrderIntakeAvg = orderIntakeAvg.Value,
+                IsDeviation = orderIntakeAvg.Value < budgetCompareValue.Value
             };
-
-            var window = GetLastWorkingDays(accountId, RollingWindowDays);
-            if (window.Count > 0)
-            {
-                calculation.WindowFrom = window.Min();
-                calculation.WindowTo = window.Max();
-                calculation.BudgetCompareValue = GetBudgetCompareValue(
-                    accountId, window, tolerance, dailyBudget.Value);
-                calculation.OrderIntakeAvg = orderIntakeAvg.Value;
-                calculation.IsDeviation = calculation.OrderIntakeAvg < calculation.BudgetCompareValue;
-            }
-
-            return calculation;
         }
 
         public Guid? SaveDailyCalculation(Guid accountId)
@@ -131,6 +141,15 @@ namespace Pgr.Core
         }
 
         /// <summary>
+        ///     Возвращает Id уже сохранённой на сегодня строки расчёта клиента, а если её нет —
+        ///     считает и сохраняет новую. Не перезаписывает существующую строку.
+        /// </summary>
+        public Guid? SaveDailyCalculationIfMissing(Guid accountId)
+        {
+            return FindTodayCalculationId(accountId) ?? SaveDailyCalculation(accountId);
+        }
+
+        /// <summary>
         ///     Today's precomputed deviation flag from Pgr369BudgetCalculation (CMVP-194), or
         ///     <c>null</c> when the nightly calculation produced no row for today.
         /// </summary>
@@ -160,28 +179,60 @@ namespace Pgr.Core
             };
         }
 
-        private decimal GetBudgetCompareValue(
-            Guid accountId, List<DateTime> window, Pgr369Tolerance tolerance, decimal fallbackBudget)
+        private decimal? GetBudgetCompareValue(Guid accountId, List<DateTime> window, Pgr369Tolerance tolerance)
         {
             var sum = 0m;
-            var count = 0;
             foreach (var day in window)
             {
-                var dayBudget = GetLatestMetricValue(
-                    accountId, PgrConstants.PgrMetricType.Budget, PgrConstants.PgrPeriodUnit.Month, day);
+                var dayBudget = GetBudgetForDay(accountId, day);
                 if (!dayBudget.HasValue)
                 {
-                    continue;
+                    LogSkipped(accountId, $"no Budget metric for the month of {day:yyyy-MM-dd}");
+                    return null;
                 }
 
                 var dailyThreshold = ResolveDailyThreshold(dayBudget.Value, tolerance);
                 sum += GetDayType(day, accountId) == Pgr369DayType.Half
                     ? dailyThreshold / 2m
                     : dailyThreshold;
-                count++;
             }
 
-            return count == 0 ? ResolveDailyThreshold(fallbackBudget, tolerance) : sum / count;
+            return sum / window.Count;
+        }
+
+        /// <summary>
+        ///     Бюджет клиента, действующий в указанный день: последняя метрика Budget, датированная
+        ///     в пределах месяца этого дня и не позже самого дня. Бюджет другого месяца не подставляется.
+        /// </summary>
+        private decimal? GetBudgetForDay(Guid accountId, DateTime day)
+        {
+            var monthStart = new DateTime(day.Year, day.Month, 1);
+            return GetLatestMetricValue(
+                accountId, PgrConstants.PgrMetricType.Budget, PgrConstants.PgrPeriodUnit.Month, day, monthStart);
+        }
+
+        /// <summary>
+        ///     Возвращает Id строки расчёта клиента на сегодня или null, если строки нет.
+        /// </summary>
+        private Guid? FindTodayCalculationId(Guid accountId)
+        {
+            var esq = CreateQuery(EntityName);
+            esq.PrimaryQueryColumn.IsAlwaysSelect = true;
+            esq.Filters.Add(esq.CreateFilterWithParameters(FilterComparisonType.Equal, "PgrAccount", accountId));
+            esq.Filters.Add(esq.CreateFilterWithParameters(
+                FilterComparisonType.Equal, "PgrCalculationDate", DateTime.Today));
+            esq.RowCount = 1;
+            var rows = esq.GetEntityCollection(_userConnection);
+            return rows.Count == 0 ? (Guid?) null : rows[0].PrimaryColumnValue;
+        }
+
+        /// <summary>
+        ///     Пишет в лог предупреждение о том, что расчёт клиента за сегодня пропущен из-за нехватки данных.
+        /// </summary>
+        private static void LogSkipped(Guid accountId, string reason)
+        {
+            Log.Warn($"Pgr369BudgetCalculator: calculation skipped for account {accountId} " +
+                     $"on {DateTime.Today:yyyy-MM-dd}: {reason}.");
         }
 
         private decimal ResolveDailyThreshold(decimal dailyBudget, Pgr369Tolerance tolerance)
@@ -266,9 +317,16 @@ namespace Pgr.Core
                 rows[0].GetTypedColumnValue<decimal>(percentageColumn));
         }
 
-        private decimal? GetLatestMetricValue(Guid accountId, Guid metricTypeId, Guid periodUnitId, DateTime asOfDate)
+        private decimal? GetLatestMetricValue(
+            Guid accountId, Guid metricTypeId, Guid periodUnitId, DateTime asOfDate, DateTime? notBeforeDate = null)
         {
             var esq = CreateQuery(MetricValueEntityName);
+            if (notBeforeDate.HasValue)
+            {
+                esq.Filters.Add(esq.CreateFilterWithParameters(
+                    FilterComparisonType.GreaterOrEqual, "PgrDate", notBeforeDate.Value));
+            }
+
             var valueColumn = esq.AddColumn("PgrValue").Name;
             esq.Filters.Add(esq.CreateFilterWithParameters(
                 FilterComparisonType.Equal, "PgrAccountId", accountId));

@@ -33,9 +33,12 @@
 			<Item Name="BaseElements.SubProcess1.Parameters.InputRecordCollection.Caption" Value="Input record collection" />
 			<Item Name="BaseElements.SubProcess1.Parameters.InputRecordCollection.DisplayValue" Value="[#Read accounts.Collection of records#]" />
 			<Item Name="BaseElements.SubProcess1.Parameters.InputRecordCollection.ResultCode.Caption" Value="Result code" />
+			<Item Name="BaseElements.SubProcess1.Parameters.InputRecordCollection.UseSavedCalculation.Caption" Value="Use saved calculation" />
+			<Item Name="BaseElements.SubProcess1.Parameters.InputRecordCollection.UseSavedCalculation.DisplayValue" Value="true" />
 			<Item Name="BaseElements.SubProcess1.Parameters.OutputRecordCollection.AccountId.Caption" Value="Account" />
 			<Item Name="BaseElements.SubProcess1.Parameters.OutputRecordCollection.Caption" Value="Output record collection" />
 			<Item Name="BaseElements.SubProcess1.Parameters.OutputRecordCollection.ResultCode.Caption" Value="Result code" />
+			<Item Name="BaseElements.SubProcess1.Parameters.OutputRecordCollection.UseSavedCalculation.Caption" Value="Use saved calculation" />
 			<Item Name="BaseElements.SubProcess1.Parameters.TerminatedIterationsCount.Caption" Value="Number of terminated instances" />
 			<Item Name="BaseElements.SubProcess1.Parameters.TotalIterationsCount.Caption" Value="Total number of instances" />
 			<Item Name="Caption" Value="369 daily process" />
