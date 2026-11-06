@@ -25,6 +25,9 @@
 			<Item Name="LocalizableStrings.EmailsSentNewMetric_template.Value" Value="{0}" />
 			<Item Name="LocalizableStrings.EmailsSentNewMetric_title.Value" Value="Gesendete E-Mails" />
 			<Item Name="LocalizableStrings.HistoryTab_caption.Value" Value="Verlauf" />
+			<Item Name="LocalizableStrings.Input_a9w0eru_label.Value" Value="Vorgeschlagener Wepaform-Name" />
+			<Item Name="LocalizableStrings.Label_wepaformAvailable_caption.Value" Value="Verfügbar" />
+			<Item Name="LocalizableStrings.Label_wepaformTaken_caption.Value" Value="Dieser Wepaform-Name wird bereits verwendet. Bitte geben Sie einen anderen vorgeschlagenen Namen ein." />
 			<Item Name="LocalizableStrings.Label_cufc9c2_caption.Value" Value="Wahrscheinlichkeit" />
 			<Item Name="LocalizableStrings.LeadDisqualifyReason_label.Value" Value="Verlustgrund" />
 			<Item Name="LocalizableStrings.LeadsByCustomerAddButton_caption.Value" Value="Neu" />

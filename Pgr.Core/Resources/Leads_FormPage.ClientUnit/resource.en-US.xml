@@ -48,8 +48,10 @@
 			<Item Name="LocalizableStrings.HistoryTab_caption.Value" Value="History" />
 			<Item Name="LocalizableStrings.IndicatorWidget_1cjn6ld_template.Value" Value="{0}" />
 			<Item Name="LocalizableStrings.IndicatorWidget_qu1xag7_template.Value" Value="{0}" />
-			<Item Name="LocalizableStrings.Input_a9w0eru_label.Value" Value="Account Wepaform name" />
+			<Item Name="LocalizableStrings.Input_a9w0eru_label.Value" Value="Proposed Wepaform name" />
 			<Item Name="LocalizableStrings.Input_a9w0eru_placeholder.Value" Value="Unique Wepaform name" />
+			<Item Name="LocalizableStrings.Label_wepaformAvailable_caption.Value" Value="Available" />
+			<Item Name="LocalizableStrings.Label_wepaformTaken_caption.Value" Value="This Wepaform name is already in use. Please enter a different proposed name." />
 			<Item Name="LocalizableStrings.Label_cufc9c2_caption.Value" Value="Probability" />
 			<Item Name="LocalizableStrings.LeadDisqualifyReason_label.Value" Value="Loss reason" />
 			<Item Name="LocalizableStrings.LeadsByCustomerAddButton_caption.Value" Value="New" />

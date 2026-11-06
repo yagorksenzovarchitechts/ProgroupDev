@@ -1,0 +1,10 @@
+{
+  "Descriptor": {
+    "UId": "863439b0-bf63-406f-ad60-fcdfb6356cbb",
+    "Name": "PgrWepaformNameService",
+    "ModifiedOnUtc": "\/Date(1794038400000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "Wepaform name service",
+    "DependsOn": []
+  }
+}

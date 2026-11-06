@@ -1,4 +1,4 @@
-define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("Leads_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -867,7 +867,7 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 			},
 			{
 				"operation": "insert",
-				"name": "Input_a9w0eru",
+				"name": "FlexContainer_wepaformName",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
@@ -875,6 +875,20 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 						"row": 1,
 						"rowSpan": 1
 					},
+					"type": "crt.FlexContainer",
+					"direction": "column",
+					"gap": "none",
+					"alignItems": "stretch",
+					"items": []
+				},
+				"parentName": "OverviewFieldsContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Input_a9w0eru",
+				"values": {
 					"type": "crt.Input",
 					"label": "#ResourceString(Input_a9w0eru_label)#",
 					"control": "$PDS_Account_yem29mk",
@@ -885,9 +899,41 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 					"labelPosition": "auto",
 					"visible": true
 				},
-				"parentName": "OverviewFieldsContainer",
+				"parentName": "FlexContainer_wepaformName",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Label_wepaformAvailable",
+				"values": {
+					"type": "crt.Label",
+					"caption": "#ResourceString(Label_wepaformAvailable_caption)#",
+					"labelType": "caption",
+					"labelThickness": "default",
+					"labelEllipsis": false,
+					"labelColor": "#2E7D32",
+					"visible": "$PgrWepaformNameAvailable"
+				},
+				"parentName": "FlexContainer_wepaformName",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Label_wepaformTaken",
+				"values": {
+					"type": "crt.Label",
+					"caption": "#ResourceString(Label_wepaformTaken_caption)#",
+					"labelType": "caption",
+					"labelThickness": "default",
+					"labelEllipsis": false,
+					"labelColor": "#C62828",
+					"visible": "$PgrWepaformNameTaken"
+				},
+				"parentName": "FlexContainer_wepaformName",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -2188,6 +2234,12 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 							"path": "PDS.Account"
 						}
 					},
+					"PgrWepaformNameAvailable": {
+						"value": false
+					},
+					"PgrWepaformNameTaken": {
+						"value": false
+					},
 					"GridDetail_uyxd43c": {
 						"isCollection": true,
 						"modelConfig": {
@@ -2475,7 +2527,40 @@ define("Leads_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_A
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[
+			{
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				handler: async (request, next) => {
+					if (request.attributeName === "PDS_Account_yem29mk") {
+						const unwrap = (v) => {
+							if (v && typeof v === "object") {
+								if ("__zone_symbol__value" in v) { return v.__zone_symbol__value; }
+								if (v.value !== undefined) { return v.value; }
+							}
+							return v;
+						};
+						const name = String(unwrap(await request.$context.PDS_Account_yem29mk) || "").trim();
+						request.$context.PgrWepaformNameAvailable = false;
+						request.$context.PgrWepaformNameTaken = false;
+						if (name) {
+							try {
+								const leadId = unwrap(await request.$context.Id);
+								const response = await new sdk.HttpClientService().post("rest/PgrWepaformNameService/IsWepaformNameTaken", {
+									name: name,
+									leadId: leadId ? String(leadId) : ""
+								});
+								const isTaken = response && response.body === true;
+								request.$context.PgrWepaformNameTaken = isTaken;
+								request.$context.PgrWepaformNameAvailable = !isTaken;
+							} catch (error) {
+								console.error("Wepaform name availability could not be checked", error);
+							}
+						}
+					}
+					return next?.handle(request);
+				}
+			}
+		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
 	};

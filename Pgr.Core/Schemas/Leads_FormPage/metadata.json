@@ -197,6 +197,20 @@
   "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
 }
 + MetaData.Schema.B2 {
+  "UId": "0e35d566-a645-4b5f-b6d9-946f30345de3",
+  "A2": "Label_wepaformAvailable_caption",
+  "A3": "2340723e-9297-4459-8181-fd362fd4b6c9",
+  "A4": "2340723e-9297-4459-8181-fd362fd4b6c9",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
+  "UId": "52c06cb4-8382-48c6-a7ae-66ea69ca2df9",
+  "A2": "Label_wepaformTaken_caption",
+  "A3": "2340723e-9297-4459-8181-fd362fd4b6c9",
+  "A4": "2340723e-9297-4459-8181-fd362fd4b6c9",
+  "A5": "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+}
++ MetaData.Schema.B2 {
   "UId": "39cd8c92-92c1-30fb-5f6e-a8107b8856cd",
   "A2": "Input_a9w0eru_label",
   "A3": "2340723e-9297-4459-8181-fd362fd4b6c9",
