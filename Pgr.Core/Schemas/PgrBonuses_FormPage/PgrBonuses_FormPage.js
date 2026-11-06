@@ -448,7 +448,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 					"title": "#ResourceString(ExpansionPanel_PaymentInfo_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": true,
+					"expanded": false,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -459,7 +459,7 @@ define("PgrBonuses_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCH
 						"right": "none"
 					},
 					"fitContent": true,
-					"visible": false,
+					"visible": true,
 					"alignItems": "stretch"
 				},
 				"parentName": "GeneralInfoTab",

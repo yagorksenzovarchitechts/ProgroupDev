@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.AddLeadSnapshots.Caption" Value="Add lead snapshots" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.DataSourceFilters.Caption" Value="Data source filters" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.EntitySchemaId.Caption" Value="Object" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.FilterEntitySchemaId.Caption" Value="Object" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.RecordAddMode.Caption" Value="Record adding mode" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.RecordDefValues.Caption" Value="Set column values" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.RecordDefValues.Value.48761772-70f8-4403-8dd2-784e411fb204.displayValue" Value="[#Selection result.Lead name#]" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.RecordDefValues.Value.48761772-70f8-4403-8dd2-784e411fb204.value" Value="d06ba9af-faf5-4741-a672-e154ae561a94" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.RecordDefValues.Value.e0e8b8a6-6f50-42f2-af47-dfd4679544c7.displayValue" Value="[#Selection result.Account name#]" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.RecordDefValues.Value.e0e8b8a6-6f50-42f2-af47-dfd4679544c7.value" Value="85e56029-bf1f-46b8-9293-a6395e7f00f9" />
+			<Item Name="BaseElements.AddLeadSnapshots.Parameters.RecordId.Caption" Value="Created record Id" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Caption" Value="Add planned visit snapshots" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.DataSourceFilters.Caption" Value="Data source filters" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.EntitySchemaId.Caption" Value="Object" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.FilterEntitySchemaId.Caption" Value="Object" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.RecordAddMode.Caption" Value="Record adding mode" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.RecordDefValues.Caption" Value="Set column values" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.RecordDefValues.Value.31d26757-c5fb-4817-9976-147c848ddd3d.displayValue" Value="[#Selection result.Subject#]" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.RecordDefValues.Value.31d26757-c5fb-4817-9976-147c848ddd3d.value" Value="4dcf0a31-7fd7-4dba-a004-e413b1753431" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.RecordDefValues.Value.a92e2ad0-41c9-4c97-a8d7-0c645b318355.displayValue" Value="[#Selection result.Subject#]" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.RecordDefValues.Value.a92e2ad0-41c9-4c97-a8d7-0c645b318355.value" Value="4dcf0a31-7fd7-4dba-a004-e413b1753431" />
+			<Item Name="BaseElements.AddPlannedVisitSnapshots.Parameters.RecordId.Caption" Value="Created record Id" />
+			<Item Name="BaseElements.AddVisitSnapshots.Caption" Value="Add visit snapshots" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.DataSourceFilters.Caption" Value="Data source filters" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.EntitySchemaId.Caption" Value="Object" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.FilterEntitySchemaId.Caption" Value="Object" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordAddMode.Caption" Value="Record adding mode" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Caption" Value="Set column values" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.013ae662-1873-4307-9141-83591fb5fd71.displayValue" Value="[#Selection result.Number#]" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.013ae662-1873-4307-9141-83591fb5fd71.value" Value="f54e4faf-96ca-8ea7-5f9b-5b8e5b219381" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.19380401-2345-4a4d-8fa7-a921468bee07.displayValue" Value="[#Selection result.Service &amp; Delivery (comment)#]" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.19380401-2345-4a4d-8fa7-a921468bee07.value" Value="480e2874-c6d2-e593-70e9-10c93c1ad25b" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.2e1ea8df-b4f5-4395-a2e4-c32f141a6c84.displayValue" Value="[#Selection result.Summary#]" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.2e1ea8df-b4f5-4395-a2e4-c32f141a6c84.value" Value="dd225088-e72c-6bcf-5d3f-edb305d930a3" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.39659108-3410-449c-8653-4226d836bc53.displayValue" Value="[#Selection result.Commercial &amp; Prices (comment)#]" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.39659108-3410-449c-8653-4226d836bc53.value" Value="f52d011b-9014-496b-e525-d7aa0a5a6dc7" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.468e9666-da2a-432e-ae73-51d56f7c371e.displayValue" Value="[#Selection result.Reason (no visit)#]" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.468e9666-da2a-432e-ae73-51d56f7c371e.value" Value="0268315a-eda0-2599-bde9-220c54041ac1" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.47825aed-8898-40a2-b9e0-bbd49656a30c.displayValue" Value="[#Selection result.Competition remarks#]" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.47825aed-8898-40a2-b9e0-bbd49656a30c.value" Value="5673c45f-6564-ea9f-42dd-14d7a5d80ac8" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.51a8da75-e146-4d02-9d97-b0433cfa1134.displayValue" Value="[#Selection result.Quality (comment)#]" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.51a8da75-e146-4d02-9d97-b0433cfa1134.value" Value="f939b6cd-aeb1-f837-e9b1-fcdcd8334ab2" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.5d751e39-734e-4686-be0f-e363bfedd7ef.displayValue" Value="[#Selection result.Reason remarks#]" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.5d751e39-734e-4686-be0f-e363bfedd7ef.value" Value="7e604363-b2c5-bbf6-0291-e6a24d402c1f" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.79ae3485-5b84-4c81-88e1-daa22358cdf7.displayValue" Value="[#Selection result.Performance remarks#]" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.79ae3485-5b84-4c81-88e1-daa22358cdf7.value" Value="a437db7e-3ff8-78e7-bc03-6b63efc3bbd8" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.d9dc95cb-ebda-4b58-ab9a-645db606d299.displayValue" Value="[#Selection result.Key topics#]" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.d9dc95cb-ebda-4b58-ab9a-645db606d299.value" Value="20e6bb71-66a8-db49-d2f0-36a073fc2843" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.ead0326f-c20f-482e-9d11-d1623c772477.displayValue" Value="[#Selection result.Name#]" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.ead0326f-c20f-482e-9d11-d1623c772477.value" Value="d48307c5-0a32-5218-259d-4de019c97f6e" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.f5849f5d-fa8a-4e79-9673-6803441eeed2.displayValue" Value="[#Selection result.Projects &amp; Opportunities (comment)#]" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordDefValues.Value.f5849f5d-fa8a-4e79-9673-6803441eeed2.value" Value="08098600-fae0-2b04-747c-fd4513632c05" />
+			<Item Name="BaseElements.AddVisitSnapshots.Parameters.RecordId.Caption" Value="Created record Id" />
+			<Item Name="BaseElements.CalculateLeadEnd.Caption" Value="Calculate lead window end" />
+			<Item Name="BaseElements.CalculateNextWeekEnd.Caption" Value="Calculate next week end" />
+			<Item Name="BaseElements.CalculateNextWeekStart.Caption" Value="Calculate next week start" />
+			<Item Name="BaseElements.DeleteLeadSnapshots.Caption" Value="Delete lead snapshots" />
+			<Item Name="BaseElements.DeleteLeadSnapshots.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.DeleteLeadSnapshots.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.DeleteLeadSnapshots.Parameters.DataSourceFilters.Caption" Value="Data source filters" />
+			<Item Name="BaseElements.DeleteLeadSnapshots.Parameters.EntitySchemaId.Caption" Value="Object" />
+			<Item Name="BaseElements.DeleteLeadSnapshots.Parameters.IsMatchConditions.Caption" Value="Object must meet the following conditions" />
+			<Item Name="BaseElements.DeletePlannedVisitSnapshots.Caption" Value="Delete planned visit snapshots" />
+			<Item Name="BaseElements.DeletePlannedVisitSnapshots.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.DeletePlannedVisitSnapshots.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.DeletePlannedVisitSnapshots.Parameters.DataSourceFilters.Caption" Value="Data source filters" />
+			<Item Name="BaseElements.DeletePlannedVisitSnapshots.Parameters.EntitySchemaId.Caption" Value="Object" />
+			<Item Name="BaseElements.DeletePlannedVisitSnapshots.Parameters.IsMatchConditions.Caption" Value="Object must meet the following conditions" />
+			<Item Name="BaseElements.DeleteVisitSnapshots.Caption" Value="Delete visit snapshots" />
+			<Item Name="BaseElements.DeleteVisitSnapshots.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.DeleteVisitSnapshots.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.DeleteVisitSnapshots.Parameters.DataSourceFilters.Caption" Value="Data source filters" />
+			<Item Name="BaseElements.DeleteVisitSnapshots.Parameters.EntitySchemaId.Caption" Value="Object" />
+			<Item Name="BaseElements.DeleteVisitSnapshots.Parameters.IsMatchConditions.Caption" Value="Object must meet the following conditions" />
+			<Item Name="BaseElements.EndSnapshotsCreated.Caption" Value="Snapshots created" />
+			<Item Name="BaseElements.ReadWeeklyReport.Caption" Value="Read weekly report" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.AggregationColumnName.Caption" Value="Name of aggregate function column" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.CanReadUncommitedData.Caption" Value="Read uncommitted data" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ConsiderTimeInFilter.Caption" Value="Consider time in the filter" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ConsiderTimeInFilter.DisplayValue" Value="false" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.DataSourceFilters.Caption" Value="Data source of filters" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.EntityColumnMetaPathes.Caption" Value="Columns to read" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.FunctionType.Caption" Value="Aggregate function type" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.IgnoreDisplayValues.Caption" Value="Do not read displayed values of lookup columns" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.NumberOfRecords.Caption" Value="Number of records to read" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.OrderInfo.Caption" Value="Columns order" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ReadSomeTopRecords.Caption" Value="Read first" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultCompositeObjectList.Caption" Value="Collection of records" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultCount.Caption" Value="Number of records" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultDateTimeFunction.Caption" Value="Function result (Date/Time)" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultEntity.Caption" Value="First item of resulting collection" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultEntityCollection.Caption" Value="Resulting collection" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultFloatFunction.Caption" Value="Function result (Decimal)" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultIntegerFunction.Caption" Value="Function result (Integer)" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
+			<Item Name="BaseElements.ReadWeeklyReport.Parameters.ResultType.Caption" Value="Type of result" />
+			<Item Name="BaseElements.SnapshotsRequestedStart.Caption" Value="Snapshots requested" />
+			<Item Name="Caption" Value="Weekly report snapshots" />
+			<Item Name="Parameters.LeadEndParameter.Caption" Value="Lead window end (exclusive)" />
+			<Item Name="Parameters.NextWeekEndParameter.Caption" Value="Next week end (exclusive)" />
+			<Item Name="Parameters.NextWeekStartParameter.Caption" Value="Next week start" />
+			<Item Name="Parameters.ReportIdParameter.Caption" Value="Report ID" />
+		</Items>
+	</Group>
+</Resources>
