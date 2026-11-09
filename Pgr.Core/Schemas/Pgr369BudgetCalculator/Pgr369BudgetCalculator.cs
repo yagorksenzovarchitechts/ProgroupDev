@@ -141,8 +141,8 @@ namespace Pgr.Core
         }
 
         /// <summary>
-        ///     Возвращает Id уже сохранённой на сегодня строки расчёта клиента, а если её нет —
-        ///     считает и сохраняет новую. Не перезаписывает существующую строку.
+        ///     Returns the Id of the customer's calculation row already saved for today; if there is
+        ///     none, calculates and saves a new one. An existing row is never overwritten.
         /// </summary>
         public Guid? SaveDailyCalculationIfMissing(Guid accountId)
         {
@@ -201,8 +201,9 @@ namespace Pgr.Core
         }
 
         /// <summary>
-        ///     Бюджет клиента, действующий в указанный день: последняя метрика Budget, датированная
-        ///     в пределах месяца этого дня и не позже самого дня. Бюджет другого месяца не подставляется.
+        ///     Budget of the customer in force on the given day: the latest Budget metric dated within
+        ///     the month of that day and not later than the day itself. A budget of another month is
+        ///     never substituted.
         /// </summary>
         private decimal? GetBudgetForDay(Guid accountId, DateTime day)
         {
@@ -212,7 +213,7 @@ namespace Pgr.Core
         }
 
         /// <summary>
-        ///     Возвращает Id строки расчёта клиента на сегодня или null, если строки нет.
+        ///     Returns the Id of the customer's calculation row for today, or null if there is none.
         /// </summary>
         private Guid? FindTodayCalculationId(Guid accountId)
         {
@@ -227,7 +228,8 @@ namespace Pgr.Core
         }
 
         /// <summary>
-        ///     Пишет в лог предупреждение о том, что расчёт клиента за сегодня пропущен из-за нехватки данных.
+        ///     Writes a warning to the log that today's calculation for the customer was skipped
+        ///     because of missing data.
         /// </summary>
         private static void LogSkipped(Guid accountId, string reason)
         {
