@@ -7,7 +7,7 @@
 			<Item Name="Columns.PgrCompetition.Caption" Value="Wettbewerb" />
 			<Item Name="Columns.PgrCompetitionText.Caption" Value="Freitext Wettbewerb" />
 			<Item Name="Columns.PgrDateAccountMetricUpdated.Caption" Value="Letzte Aktualisierung" />
-			<Item Name="Columns.PgrDeliveryShare.Caption" Value="PG Lieferanteil" />
+			<Item Name="Columns.PgrDeliveryShare.Caption" Value="PG Lieferanteil (übernommen)" />
 			<Item Name="Columns.PgrIsRelevantForWeeklyReport.Caption" Value="&#xA;Relevant für Wochenbericht&#xA;&#xA;&#xA;Relevant für Wochenbericht&#xA;&#xA;Relevant für Wochenbericht" />
 			<Item Name="Columns.PgrKeyTopics.Caption" Value="Kernthemen" />
 			<Item Name="Columns.PgrLastVisit.Caption" Value="Letzter Besuch" />
@@ -20,6 +20,7 @@
 			<Item Name="Columns.PgrOwner.Caption" Value="Vertriebsmitarbeiter" />
 			<Item Name="Columns.PgrPerformance.Caption" Value="Performance" />
 			<Item Name="Columns.PgrPerformanceText.Caption" Value="Freitext Performance" />
+			<Item Name="Columns.PgrPotential.Caption" Value="PG Potential p.a. [TQM]" />
 			<Item Name="Columns.PgrPrivateRemarks.Caption" Value="Private anmerkungen" />
 			<Item Name="Columns.PgrSummary.Caption" Value="Sonstiges " />
 			<Item Name="Columns.PgrThreeDayAvg.Caption" Value="AE 3 AT [TQM/AT]" />

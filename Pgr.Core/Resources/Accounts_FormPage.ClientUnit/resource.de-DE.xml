@@ -23,7 +23,7 @@
 			<Item Name="LocalizableStrings.ComboBox_rztcyul_label.Value" Value="Anzahl Mitarbeiter" />
 			<Item Name="LocalizableStrings.ComboBox_tuutgko_placeholder.Value" Value="Land auswählen" />
 			<Item Name="LocalizableStrings.CompetitorsAddButton_caption.Value" Value="Neu" />
-			<Item Name="LocalizableStrings.CompetitorsExpansionPanel_title.Value" Value="Wettbewerber" />
+			<Item Name="LocalizableStrings.CompetitorsExpansionPanel_title.Value" Value="Lieferanteil (Share of Wallet)" />
 			<Item Name="LocalizableStrings.CompetitorsExportDataButton_caption.Value" Value="Excel-Export" />
 			<Item Name="LocalizableStrings.CompetitorsImportDataButton_caption.Value" Value="Datenimport" />
 			<Item Name="LocalizableStrings.CompetitorsList_caption.Value" Value="Products offered" />
@@ -34,7 +34,9 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_1mbln9s_title.Value" Value="Adressen" />
 			<Item Name="LocalizableStrings.ExpansionPanel_3jtu7p2_title.Value" Value="&#xA;SAP" />
 			<Item Name="LocalizableStrings.ExpansionPanel_4r2mr5k_title.Value" Value="Besuchsberichte" />
+			<Item Name="LocalizableStrings.ExpansionPanel_au6z0sw_title.Value" Value="PG Potential p.a. [TQM]" />
 			<Item Name="LocalizableStrings.ExpansionPanel_fjwqnu7_title.Value" Value="Kontakte" />
+			<Item Name="LocalizableStrings.ExpansionPanel_g7t5oi7_title.Value" Value="Jahresbedarf [TQM]" />
 			<Item Name="LocalizableStrings.ExpansionPanel_h2q0n69_title.Value" Value="Projektpreise" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ilw1gpx_title.Value" Value="Rechnung" />
 			<Item Name="LocalizableStrings.ExpansionPanel_kb0hm3n_title.Value" Value="Kontakte" />
@@ -44,6 +46,12 @@
 			<Item Name="LocalizableStrings.GridDetailAddBtn_645lk21_caption.Value" Value="Neukontakt erstellen" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_ytmu9oh_placeholder.Value" Value="Suche" />
 			<Item Name="LocalizableStrings.HowTheyMakeMoney_placeholder.Value" Value="Enter how the company generates revenue" />
+			<Item Name="LocalizableStrings.Icon_9nx5p3b_ariaLabel.Value" Value="Wenn das PG Potential p.a. geändert wird, muss der Share of Wallet aktualisiert werden. Standardmäßig wird der Share of Wallet auf Basis der bereits vorhandenen prozentualen Anteile neu berechnet. Sollen stattdessen die bestehenden TQM-Werte für PG und die einzelnen Wettbewerber beibehalten werden, muss eine zusätzliche Zeile „Competitor Undefined“ angelegt werden. Dort wird die noch fehlende TQM-Menge manuell eingetragen und die prozentualen Anteile entsprechend angepasst.&#xA;Wichtig:&#xA;•	Die Summe aller TQM-Werte muss dem PG Potential p.a. entsprechen.&#xA;•	Die Summe aller prozentualen Anteile muss 100 % ergeben.&#xA;" />
+			<Item Name="LocalizableStrings.Icon_9nx5p3b_tooltip.Value" Value="Wenn das PG Potential p.a. geändert wird, muss der Share of Wallet aktualisiert werden. Standardmäßig wird der Share of Wallet auf Basis der bereits vorhandenen prozentualen Anteile neu berechnet. Sollen stattdessen die bestehenden TQM-Werte für PG und die einzelnen Wettbewerber beibehalten werden, muss eine zusätzliche Zeile „Competitor Undefined“ angelegt werden. Dort wird die noch fehlende TQM-Menge manuell eingetragen und die prozentualen Anteile entsprechend angepasst.&#xA;Wichtig:&#xA;•	Die Summe aller TQM-Werte muss dem PG Potential p.a. entsprechen.&#xA;•	Die Summe aller prozentualen Anteile muss 100 % ergeben.&#xA;" />
+			<Item Name="LocalizableStrings.Icon_9odr3cj_ariaLabel.Value" Value="Das für uns realisierbare Absatzvolumen in TQM p.a.. Es entspricht dem Jahresbedarf abzüglich aller Segmente, die nicht von PG bedient werden können (z. B. einwellige offene Welle, Endloswellpappe oder Sorten mit exklusiven Spezialpapieren)" />
+			<Item Name="LocalizableStrings.Icon_9odr3cj_tooltip.Value" Value="Das für uns realisierbare Absatzvolumen in TQM p.a.. Es entspricht dem Jahresbedarf abzüglich aller Segmente, die nicht von PG bedient werden können (z. B. einwellige offene Welle, Endloswellpappe oder Sorten mit exklusiven Spezialpapieren)" />
+			<Item Name="LocalizableStrings.Icon_z93i1vs_ariaLabel.Value" Value="Das für die Eigenfertigung des Kunden relevante Volumen in TQM p.a.. Er errechnet sich aus dem Gesamtbedarf des Kunden abzüglich der Handelsware." />
+			<Item Name="LocalizableStrings.Icon_z93i1vs_tooltip.Value" Value="Das für die Eigenfertigung des Kunden relevante Volumen in TQM p.a.. Er errechnet sich aus dem Gesamtbedarf des Kunden abzüglich der Handelsware." />
 			<Item Name="LocalizableStrings.Label_HowTheyMakeMoney_caption.Value" Value="Wie sie Geld verdienen" />
 			<Item Name="LocalizableStrings.Label_ProductsOffered_caption.Value" Value="Products offered" />
 			<Item Name="LocalizableStrings.LeadAddButton_caption.Value" Value="Neu" />

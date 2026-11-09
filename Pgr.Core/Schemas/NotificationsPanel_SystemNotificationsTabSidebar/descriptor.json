@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "b42e4536-ec2b-4dcb-a827-b04ca919b13a",
+    "Name": "NotificationsPanel_SystemNotificationsTabSidebar",
+    "ModifiedOnUtc": "\/Date(1794222259000)\/",
+    "Parent": {
+      "UId": "58212895-926d-4711-be59-d2af43c89261",
+      "Name": "NotificationsPanel_SystemNotificationsTabSidebar"
+    },
+    "ExtendParent": true,
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "System notifications tab of the notifications panel (Sidebar)",
+    "DependsOn": []
+  }
+}

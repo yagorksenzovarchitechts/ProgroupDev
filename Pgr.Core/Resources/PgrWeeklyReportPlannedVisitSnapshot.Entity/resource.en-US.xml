@@ -4,7 +4,7 @@
 		<Items>
 			<Item Name="Caption" Value="Weekly Report Planned Visit Snapshot" />
 			<Item Name="Columns.PgrAccountId.Caption" Value="Account (Customer)" />
-			<Item Name="Columns.PgrDueDate.Caption" Value="Due date and time" />
+			<Item Name="Columns.PgrDueDate.Caption" Value="Date and time" />
 			<Item Name="Columns.PgrName.Caption" Value="Name" />
 			<Item Name="Columns.PgrStatusId.Caption" Value="Status" />
 			<Item Name="Columns.PgrTitle.Caption" Value="Subject" />

@@ -47,7 +47,7 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_ezmuytd_title.Value" Value="Account metrics" />
 			<Item Name="LocalizableStrings.ExpansionPanel_f9i47to_title.Value" Value="Bonus thresholds" />
 			<Item Name="LocalizableStrings.ExpansionPanel_fjwqnu7_title.Value" Value="Contacts" />
-			<Item Name="LocalizableStrings.ExpansionPanel_g7t5oi7_title.Value" Value="Yearly required volume [tsqm]" />
+			<Item Name="LocalizableStrings.ExpansionPanel_g7t5oi7_title.Value" Value="Customer annual demand [tsqm]" />
 			<Item Name="LocalizableStrings.ExpansionPanel_h2q0n69_title.Value" Value="Project prices" />
 			<Item Name="LocalizableStrings.ExpansionPanel_hzgkxwg_title.Value" Value="Project pipeline" />
 			<Item Name="LocalizableStrings.ExpansionPanel_ilw1gpx_title.Value" Value="Invoicing" />
@@ -114,6 +114,12 @@
 			<Item Name="LocalizableStrings.GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_ktxeonu.Value" Value="First entry threshold" />
 			<Item Name="LocalizableStrings.GridDetail_tziba2dDS_PgrBonusThresholdPgrBonus_PgrTierThreshold_v29ndqr.Value" Value="Highest threshold" />
 			<Item Name="LocalizableStrings.HowTheyMakeMoney_placeholder.Value" Value="Enter how the company generates revenue" />
+			<Item Name="LocalizableStrings.Icon_9nx5p3b_ariaLabel.Value" Value="If you change the PG Potential p.a., refresh the Share of Wallet. By default, the Share of Wallet is recalculated based on the existing percentages. If instead you want to keep the tsqm values for PG and each competitor, add a new “Competitor Undefined” line and manually enter the missing tsqm and change the percentages accordingly. &#xA;Important: &#xA;•	The total tsqm must equal the PG Potential p.a., &#xA;•	The percentages must add up to 100%.&#xA;" />
+			<Item Name="LocalizableStrings.Icon_9nx5p3b_tooltip.Value" Value="If you change the PG Potential p.a., refresh the Share of Wallet. By default, the Share of Wallet is recalculated based on the existing percentages. If instead you want to keep the tsqm values for PG and each competitor, add a new “Competitor Undefined” line and manually enter the missing tsqm and change the percentages accordingly. &#xA;Important: &#xA;•	The total tsqm must equal the PG Potential p.a., &#xA;•	The percentages must add up to 100%.&#xA;" />
+			<Item Name="LocalizableStrings.Icon_9odr3cj_ariaLabel.Value" Value="The sales volume in tsqm p.a. realistically achievable for us. It is calculated as the customer’s annual demand minus all segments that cannot be supplied by PG (e.g. single-face corrugated board, fanfold corrugated board, or grades requiring exclusive specialty papers)." />
+			<Item Name="LocalizableStrings.Icon_9odr3cj_tooltip.Value" Value="The sales volume in tsqm p.a. realistically achievable for us. It is calculated as the customer’s annual demand minus all segments that cannot be supplied by PG (e.g. single-face corrugated board, fanfold corrugated board, or grades requiring exclusive specialty papers)." />
+			<Item Name="LocalizableStrings.Icon_z93i1vs_ariaLabel.Value" Value="Volume in tsqm p.a. relevant to the customer’s own production, calculated as total customer demand minus traded goods." />
+			<Item Name="LocalizableStrings.Icon_z93i1vs_tooltip.Value" Value="Volume in tsqm p.a. relevant to the customer’s own production, calculated as total customer demand minus traded goods." />
 			<Item Name="LocalizableStrings.IndicatorWidget_0l0eyvd_config_text_template.Value" Value="{0} tqsm (per day)" />
 			<Item Name="LocalizableStrings.IndicatorWidget_0l0eyvd_hint.Value" Value="Components.IndicatorWidget.Hint" />
 			<Item Name="LocalizableStrings.IndicatorWidget_0l0eyvd_title.Value" Value="Latest budget" />

@@ -364,7 +364,7 @@
           "BO3": true,
           "FC1": [],
           "ED1": false,
-          "PS1": "0 0 3 * * ? *",
+          "PS1": "0 50 5 * * ? *",
           "PS3": 2,
           "PS4": "null",
           "PS5": "null",
@@ -764,7 +764,8 @@
           "BL8": "1b6305ba-8f0e-4479-a193-7556c448ef4d",
           "BN2": "31;31",
           "BO3": true,
-          "FC1": []
+          "FC1": [],
+          "ED1": false
         },
         {
           "BL1": "Terrasoft.Core.Process.ProcessSchemaSequenceFlow",
@@ -845,7 +846,17 @@
       "BK29": true,
       "BK30": true,
       "BK34": "en-US",
-      "Labels": [],
+      "Labels": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaLabel",
+          "UId": "ffeadea7-479d-48b4-badc-762219c632d8",
+          "A2": "StartTimerEvent1_label1",
+          "A3": "1b6305ba-8f0e-4479-a193-7556c448ef4d",
+          "A4": "1b6305ba-8f0e-4479-a193-7556c448ef4d",
+          "ParentUId": "e66fa7e5-1700-469d-b9df-bcc129652166",
+          "X": -34
+        }
+      ],
       "BK24": []
     }
   }

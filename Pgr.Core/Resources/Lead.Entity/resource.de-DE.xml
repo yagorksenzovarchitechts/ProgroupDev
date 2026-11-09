@@ -4,9 +4,9 @@
 		<Items>
 			<Item Name="Columns.LeadName.Caption" Value="Lead name" />
 			<Item Name="Columns.Owner.Caption" Value="Verantwortlicher" />
-			<Item Name="Columns.PgrEstimatedVolume.Caption" Value="Jahresvolumen" />
+			<Item Name="Columns.PgrEstimatedVolume.Caption" Value="Jahresbedarf [TQM]" />
 			<Item Name="Columns.PgrLegalName.Caption" Value="Firmierung" />
-			<Item Name="Columns.PgrPGPotential.Caption" Value="PG Potential" />
+			<Item Name="Columns.PgrPGPotential.Caption" Value="PG Potential p.a. [TQM]" />
 			<Item Name="Columns.PgrSalesRegion.Caption" Value="Vertriebsregion" />
 			<Item Name="Columns.QualifiedAccount.Caption" Value="Firma" />
 			<Item Name="Columns.QualifiedContact.Caption" Value="Kontaktname" />

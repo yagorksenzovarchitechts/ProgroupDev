@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "98ae0a26-ef90-4f45-9148-2bd63fcbb177",
+    "Name": "NotificationsPanel_SystemNotificationsTab",
+    "ModifiedOnUtc": "\/Date(1794222244000)\/",
+    "Parent": {
+      "UId": "b3ff3aa5-2670-40c4-a659-ffcba463ddcf",
+      "Name": "NotificationsPanel_SystemNotificationsTab"
+    },
+    "ExtendParent": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "System notifications tab of the notifications panel",
+    "DependsOn": []
+  }
+}

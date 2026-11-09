@@ -304,6 +304,20 @@
           "GT1": {
             "GS5": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e"
           }
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaMapping",
+          "UId": "8e09477c-24c8-4bef-a902-b1dbfa2f107c",
+          "A2": "SubProcess1",
+          "A3": "971cefbc-26c3-4596-a5a0-8bcd0714a3ac",
+          "A4": "971cefbc-26c3-4596-a5a0-8bcd0714a3ac",
+          "GT2": "[Element:{34adb891-e261-4bb6-8818-64449774c5db}].[Parameter:{f8159b79-2148-45b2-907a-534f6bda3d09}]",
+          "GT3": "f8159b79-2148-45b2-907a-534f6bda3d09",
+          "GT5": "67e030e2-f96f-42de-ba97-961f16078698",
+          "GT4": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e",
+          "GT1": {
+            "GS5": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e"
+          }
         }
       ],
       "BK37": {
@@ -765,6 +779,20 @@
                   "L8": {
                     "GS5": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e"
                   }
+                },
+                {
+                  "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+                  "UId": "f8159b79-2148-45b2-907a-534f6bda3d09",
+                  "A2": "UseSavedCalculation",
+                  "A3": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e",
+                  "A4": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e",
+                  "IL2": "34adb891-e261-4bb6-8818-64449774c5db",
+                  "L1": "90b65bf8-0ffc-4141-8779-2420877af907",
+                  "L8": {
+                    "GS1": 1,
+                    "GS2": "true",
+                    "GS5": "971cefbc-26c3-4596-a5a0-8bcd0714a3ac"
+                  }
                 }
               ]
             },
@@ -800,6 +828,18 @@
                   "A4": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e",
                   "IL2": "34adb891-e261-4bb6-8818-64449774c5db",
                   "L1": "6b6b74e2-820d-490e-a017-2b73d4ccf2b0",
+                  "L8": {
+                    "GS5": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e"
+                  }
+                },
+                {
+                  "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+                  "UId": "b7fed1f7-7bf2-4068-89fa-ed5cf8cfd2bf",
+                  "A2": "UseSavedCalculation",
+                  "A3": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e",
+                  "A4": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e",
+                  "IL2": "34adb891-e261-4bb6-8818-64449774c5db",
+                  "L1": "90b65bf8-0ffc-4141-8779-2420877af907",
                   "L8": {
                     "GS5": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e"
                   }

@@ -42,6 +42,19 @@
           "L8": {
             "GS5": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e"
           }
+        },
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "67e030e2-f96f-42de-ba97-961f16078698",
+          "A2": "UseSavedCalculation",
+          "A3": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e",
+          "A4": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e",
+          "L1": "90b65bf8-0ffc-4141-8779-2420877af907",
+          "L8": {
+            "GS1": 1,
+            "GS2": "false",
+            "GS5": "75b6c67e-0ae8-4d8b-9bc3-5592738bad2e"
+          }
         }
       ],
       "IJ1": true,
@@ -185,7 +198,7 @@
           "BO3": true,
           "BP2": [],
           "CL2": "FFFFFFFF",
-          "CH1": "var accountId = Get<Guid>(\"AccountId\");\r\nnew Pgr369BudgetCalculator(UserConnection).SaveDailyCalculation(accountId);\r\nvar action = new Pgr369Helper(UserConnection).ProcessAccount(accountId);\r\nSet(\"ResultCode\", (int)action);\r\n\r\nreturn true;",
+          "CH1": "var accountId = Get<Guid>(\"AccountId\");\r\nvar calculator = new Pgr369BudgetCalculator(UserConnection);\r\nif (Get<bool>(\"UseSavedCalculation\"))\r\n{\r\n    calculator.SaveDailyCalculationIfMissing(accountId);\r\n}\r\nelse\r\n{\r\n    calculator.SaveDailyCalculation(accountId);\r\n}\r\n\r\nvar action = new Pgr369Helper(UserConnection).ProcessAccount(accountId);\r\nSet(\"ResultCode\", (int)action);\r\n\r\nreturn true;",
           "CH2": true
         },
         {

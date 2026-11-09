@@ -25,7 +25,7 @@
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultRowsCount.Caption" Value="Number of records read" />
 			<Item Name="BaseElements.ReadDataUserTask1.Parameters.ResultType.Caption" Value="Type of result" />
 			<Item Name="BaseElements.StartEvent1.Caption" Value="Test mode" />
-			<Item Name="BaseElements.StartTimerEvent1.Caption" Value="Every day at 3:00" />
+			<Item Name="BaseElements.StartTimerEvent1.Caption" Value="Every day at 05:50" />
 			<Item Name="BaseElements.SubProcess1.Caption" Value="369 budget calculation sub-process" />
 			<Item Name="BaseElements.SubProcess1.Parameters.CompletedIterationsCount.Caption" Value="Number of completed instances" />
 			<Item Name="BaseElements.SubProcess1.Parameters.InputRecordCollection.AccountId.Caption" Value="Account" />

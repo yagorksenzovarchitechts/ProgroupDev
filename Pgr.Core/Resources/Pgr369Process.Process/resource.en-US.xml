@@ -20,6 +20,7 @@
 			<Item Name="NotificationCaption.DisplayValue" Value="[#Process name#]" />
 			<Item Name="Parameters.AccountId.Caption" Value="Account" />
 			<Item Name="Parameters.ResultCode.Caption" Value="Result code" />
+			<Item Name="Parameters.UseSavedCalculation.Caption" Value="Use saved calculation" />
 		</Items>
 	</Group>
 </Resources>
