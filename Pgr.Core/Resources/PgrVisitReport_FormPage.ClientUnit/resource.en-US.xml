@@ -31,6 +31,8 @@
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_cc93sts_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_fnh0pp1_caption.Value" Value="Refresh" />
 			<Item Name="LocalizableStrings.GridDetail_7qocfn4DS_PgrCustomerContacts.Value" Value="Customer Contacts" />
+			<Item Name="LocalizableStrings.Icon_590njus_ariaLabel.Value" Value="If you change the PG Potential p.a., refresh the Share of Wallet. By default, the Share of Wallet is recalculated based on the existing percentages. If instead you want to keep the tsqm values for PG and each competitor, add a new “Competitor Undefined” line and manually enter the missing tsqm and change the percentages accordingly. &#xA;Important: &#xA;•	The total tsqm must equal the PG Potential p.a., &#xA;•	The percentages must add up to 100%.&#xA;" />
+			<Item Name="LocalizableStrings.Icon_590njus_tooltip.Value" Value="If you change the PG Potential p.a., refresh the Share of Wallet. By default, the Share of Wallet is recalculated based on the existing percentages. If instead you want to keep the tsqm values for PG and each competitor, add a new “Competitor Undefined” line and manually enter the missing tsqm and change the percentages accordingly. &#xA;Important: &#xA;•	The total tsqm must equal the PG Potential p.a., &#xA;•	The percentages must add up to 100%.&#xA;" />
 			<Item Name="LocalizableStrings.Icon_eftnqxy_ariaLabel.Value" Value="Volume in tsqm p.a. relevant to the customer’s own production, calculated as total customer demand minus traded goods." />
 			<Item Name="LocalizableStrings.Icon_eftnqxy_tooltip.Value" Value="Volume in tsqm p.a. relevant to the customer’s own production, calculated as total customer demand minus traded goods." />
 			<Item Name="LocalizableStrings.Icon_r747f03_ariaLabel.Value" Value="The sales volume in tsqm p.a. realistically achievable for us. It is calculated as the customer’s annual demand minus all segments that cannot be supplied by PG (e.g. single-face corrugated board, fanfold corrugated board, or grades requiring exclusive specialty papers)." />
@@ -53,6 +55,7 @@
 			<Item Name="LocalizableStrings.Label_ifrkhhd_caption.Value" Value="Customer contacts" />
 			<Item Name="LocalizableStrings.Label_kn5k638_caption.Value" Value="Progroup contacts" />
 			<Item Name="LocalizableStrings.Label_qoozpze_caption.Value" Value=" Visit report Info" />
+			<Item Name="LocalizableStrings.NumberInput_xtdgzvq_tooltip.Value" Value="Value in [%] out of Share of Wallet" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Save" />
 			<Item Name="LocalizableStrings.SetRecordRightsButton_caption.Value" Value="Set up access rights" />
 			<Item Name="LocalizableStrings.ShareTotalErrorString.Value" Value="The total of all share values must equal 100%. Current total: " />

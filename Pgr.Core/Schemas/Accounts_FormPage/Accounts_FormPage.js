@@ -377,6 +377,24 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"index": 1
 			},
 			{
+				"operation": "merge",
+				"name": "CompetitorsToolsFlexContainer",
+				"values": {
+					"gap": "small",
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"justifyContent": "start",
+					"wrap": "wrap"
+				}
+			},
+			{
 				"operation": "remove",
 				"name": "CompetitorsAddButton"
 			},
@@ -2813,7 +2831,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"values": {
 					"type": "crt.FlexContainer",
 					"direction": "row",
-					"gap": "none",
+					"gap": "small",
 					"alignItems": "center",
 					"items": [],
 					"layoutConfig": {
@@ -2821,7 +2839,18 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 						"column": 1,
 						"row": 1,
 						"rowSpan": 1
-					}
+					},
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"justifyContent": "start",
+					"wrap": "wrap"
 				},
 				"parentName": "GridContainer_8zjt8to",
 				"propertyName": "items",
@@ -2850,6 +2879,25 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"parentName": "FlexContainer_e8qqrv9",
 				"propertyName": "items",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Icon_z93i1vs",
+				"values": {
+					"type": "crt.Icon",
+					"iconName": "info-icon",
+					"size": "16",
+					"color": "#0D2E4E",
+					"backgroundType": "none",
+					"backgroundColor": "#E7ECFA",
+					"padding": "none",
+					"visible": true,
+					"ariaLabel": "#ResourceString(Icon_z93i1vs_ariaLabel)#",
+					"tooltip": "#ResourceString(Icon_z93i1vs_tooltip)#"
+				},
+				"parentName": "FlexContainer_e8qqrv9",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -3089,7 +3137,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"values": {
 					"type": "crt.FlexContainer",
 					"direction": "row",
-					"gap": "none",
+					"gap": "small",
 					"alignItems": "center",
 					"items": [],
 					"layoutConfig": {
@@ -3097,7 +3145,18 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 						"column": 1,
 						"row": 1,
 						"rowSpan": 1
-					}
+					},
+					"visible": true,
+					"padding": {
+						"top": "none",
+						"right": "none",
+						"bottom": "none",
+						"left": "none"
+					},
+					"color": "transparent",
+					"borderRadius": "none",
+					"justifyContent": "start",
+					"wrap": "wrap"
 				},
 				"parentName": "GridContainer_fu41d21",
 				"propertyName": "items",
@@ -3126,6 +3185,25 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"parentName": "FlexContainer_cto36zw",
 				"propertyName": "items",
 				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "Icon_9odr3cj",
+				"values": {
+					"type": "crt.Icon",
+					"iconName": "info-icon",
+					"size": "16",
+					"color": "#0D2E4E",
+					"backgroundType": "none",
+					"backgroundColor": "#E7ECFA",
+					"padding": "none",
+					"visible": true,
+					"ariaLabel": "#ResourceString(Icon_9odr3cj_ariaLabel)#",
+					"tooltip": "#ResourceString(Icon_9odr3cj_tooltip)#"
+				},
+				"parentName": "FlexContainer_cto36zw",
+				"propertyName": "items",
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -3305,6 +3383,25 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			},
 			{
 				"operation": "insert",
+				"name": "Icon_9nx5p3b",
+				"values": {
+					"type": "crt.Icon",
+					"iconName": "info-icon",
+					"size": "16",
+					"color": "#0D2E4E",
+					"backgroundType": "none",
+					"backgroundColor": "#E7ECFA",
+					"padding": "none",
+					"visible": true,
+					"ariaLabel": "#ResourceString(Icon_9nx5p3b_ariaLabel)#",
+					"tooltip": "#ResourceString(Icon_9nx5p3b_tooltip)#"
+				},
+				"parentName": "CompetitorsToolsFlexContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
 				"name": "Label_ShareLatestUpdate",
 				"values": {
 					"type": "crt.Label",
@@ -3317,7 +3414,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				},
 				"parentName": "CompetitorsToolsFlexContainer",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",

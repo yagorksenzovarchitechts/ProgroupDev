@@ -531,7 +531,8 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHel
 					"readonly": false,
 					"placeholder": "",
 					"labelPosition": "auto",
-					"tooltip": ""
+					"tooltip": "#ResourceString(NumberInput_xtdgzvq_tooltip)#",
+					"visible": true
 				},
 				"parentName": "GridContainer_wk48872",
 				"propertyName": "items",
@@ -1657,7 +1658,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHel
 					"title": "#ResourceString(ExpansionPanel_VrPotential_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": true,
+					"expanded": false,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -1874,7 +1875,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHel
 					"title": "#ResourceString(ExpansionPanel_jgw44k6_title)#",
 					"toggleType": "material",
 					"togglePosition": "before",
-					"expanded": false,
+					"expanded": true,
 					"labelColor": "auto",
 					"fullWidthHeader": false,
 					"titleWidth": 20,
@@ -1973,6 +1974,25 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHel
 				"parentName": "FlexContainer_hqxyvd0",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Icon_590njus",
+				"values": {
+					"type": "crt.Icon",
+					"iconName": "info-icon",
+					"size": "16",
+					"color": "#0D2E4E",
+					"backgroundType": "none",
+					"backgroundColor": "#E7ECFA",
+					"padding": "none",
+					"visible": true,
+					"ariaLabel": "#ResourceString(Icon_590njus_ariaLabel)#",
+					"tooltip": "#ResourceString(Icon_590njus_tooltip)#"
+				},
+				"parentName": "FlexContainer_hqxyvd0",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",

@@ -2,8 +2,9 @@
   "Descriptor": {
     "UId": "971cefbc-26c3-4596-a5a0-8bcd0714a3ac",
     "Name": "Pgr369DailyProcess",
-    "ModifiedOnUtc": "\/Date(1793889179769)\/",
+    "ModifiedOnUtc": "\/Date(1793889179000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "369 daily process"
+    "Caption": "369 daily process",
+    "DependsOn": []
   }
 }

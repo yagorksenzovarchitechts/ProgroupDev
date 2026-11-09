@@ -22,6 +22,8 @@
 			<Item Name="LocalizableStrings.ExpansionPanel_v7m1ic2_title.Value" Value="Schwerpunktthemen" />
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_VrYearly_caption.Value" Value="Aktualisieren" />
 			<Item Name="LocalizableStrings.GridDetail_7qocfn4DS_PgrCustomerContacts.Value" Value="Kundenkontakte" />
+			<Item Name="LocalizableStrings.Icon_590njus_ariaLabel.Value" Value="Wenn das PG Potential p.a. geändert wird, muss der Share of Wallet aktualisiert werden. Standardmäßig wird der Share of Wallet auf Basis der bereits vorhandenen prozentualen Anteile neu berechnet. Sollen stattdessen die bestehenden TQM-Werte für PG und die einzelnen Wettbewerber beibehalten werden, muss eine zusätzliche Zeile „Competitor Undefined“ angelegt werden. Dort wird die noch fehlende TQM-Menge manuell eingetragen und die prozentualen Anteile entsprechend angepasst. Wichtig: •	Die Summe aller TQM-Werte muss dem PG Potential p.a. entsprechen. •	Die Summe aller prozentualen Anteile muss 100 % ergeben." />
+			<Item Name="LocalizableStrings.Icon_590njus_tooltip.Value" Value="Wenn das PG Potential p.a. geändert wird, muss der Share of Wallet aktualisiert werden. Standardmäßig wird der Share of Wallet auf Basis der bereits vorhandenen prozentualen Anteile neu berechnet. Sollen stattdessen die bestehenden TQM-Werte für PG und die einzelnen Wettbewerber beibehalten werden, muss eine zusätzliche Zeile „Competitor Undefined“ angelegt werden. Dort wird die noch fehlende TQM-Menge manuell eingetragen und die prozentualen Anteile entsprechend angepasst.&#xA;Wichtig:&#xA;•	Die Summe aller TQM-Werte muss dem PG Potential p.a. entsprechen.&#xA;•	Die Summe aller prozentualen Anteile muss 100 % ergeben.&#xA;" />
 			<Item Name="LocalizableStrings.Icon_eftnqxy_ariaLabel.Value" Value="Das für die Eigenfertigung des Kunden relevante Volumen in TQM p.a.. Er errechnet sich aus dem Gesamtbedarf des Kunden abzüglich der Handelsware." />
 			<Item Name="LocalizableStrings.Icon_eftnqxy_tooltip.Value" Value="Das für die Eigenfertigung des Kunden relevante Volumen in TQM p.a.. Er errechnet sich aus dem Gesamtbedarf des Kunden abzüglich der Handelsware." />
 			<Item Name="LocalizableStrings.Icon_r747f03_ariaLabel.Value" Value="Das für uns realisierbare Absatzvolumen in TQM p.a. . Es entspricht dem Jahresbedarf abzüglich aller Segmente, die nicht von PG bedient werden können (z. B. einwellige offene Welle, Endloswellpappe oder Sorten mit exklusiven Spezialpapieren)" />
@@ -41,6 +43,7 @@
 			<Item Name="LocalizableStrings.Label_ifrkhhd_caption.Value" Value="Teilnehmer Kunde" />
 			<Item Name="LocalizableStrings.Label_kn5k638_caption.Value" Value="Teilnehmer Progroup" />
 			<Item Name="LocalizableStrings.Label_qoozpze_caption.Value" Value="Besuchsbericht-Info" />
+			<Item Name="LocalizableStrings.NumberInput_xtdgzvq_tooltip.Value" Value="Wert in  [%] aus Share of Wallet (Lieferanteile)" />
 			<Item Name="LocalizableStrings.SaveButton_caption.Value" Value="Speichern" />
 			<Item Name="LocalizableStrings.SetRecordRightsButton_caption.Value" Value="Zugriffsrechte einrichten" />
 			<Item Name="LocalizableStrings.TabContainer_widjyyt_caption.Value" Value="Zielsetzung" />

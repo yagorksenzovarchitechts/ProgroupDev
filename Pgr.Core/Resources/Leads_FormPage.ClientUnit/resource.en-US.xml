@@ -53,6 +53,8 @@
 			<Item Name="LocalizableStrings.Label_wepaformAvailable_caption.Value" Value="Available" />
 			<Item Name="LocalizableStrings.Label_wepaformTaken_caption.Value" Value="This Wepaform name is already in use. Please enter a different proposed name." />
 			<Item Name="LocalizableStrings.Label_cufc9c2_caption.Value" Value="Probability" />
+			<Item Name="LocalizableStrings.Label_wepaformAvailable_caption.Value" Value="Available" />
+			<Item Name="LocalizableStrings.Label_wepaformTaken_caption.Value" Value="This Wepaform name is already in use. Please enter a different proposed name." />
 			<Item Name="LocalizableStrings.LeadDisqualifyReason_label.Value" Value="Loss reason" />
 			<Item Name="LocalizableStrings.LeadsByCustomerAddButton_caption.Value" Value="New" />
 			<Item Name="LocalizableStrings.LeadsByCustomerExpansionPanel_title.Value" Value="Leads by customer" />

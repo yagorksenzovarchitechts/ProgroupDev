@@ -1,0 +1,10 @@
+= MetaData.Schema.UId "b42e4536-ec2b-4dcb-a827-b04ca919b13a"
+= MetaData.Schema.A5 "de82fb2d-d61c-4364-83bd-334aeb9af71c"
+= MetaData.Schema.B6 "655ac62c-1e4a-cc32-6e65-323f197c68e0"
++ MetaData.Schema.B7 true
+= MetaData.Schema.B8 "10.0.0.858"
+= MetaData.Schema.AD4.Sidebars.["98bab00a-945a-09db-6089-68b47864d496"].AdminOperationCode "CanViewSystemNotifications"
++ MetaData.Schema.AD4.Sidebars.["98bab00a-945a-09db-6089-68b47864d496"].AllowSizeAdjustment false
++ MetaData.Schema.AD4.Sidebars.["98bab00a-945a-09db-6089-68b47864d496"].ContainerName null
++ MetaData.Schema.B7 true
+= MetaData.Schema.AD5 "58212895-926d-4711-be59-d2af43c89261"

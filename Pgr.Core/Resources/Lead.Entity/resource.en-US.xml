@@ -4,12 +4,73 @@
 		<Items>
 			<Item Name="Columns.LeadName.Caption" Value="Lead name" />
 			<Item Name="Columns.PgrEmployeesNumber.Caption" Value="Number of Employees" />
-			<Item Name="Columns.PgrEstimatedVolume.Caption" Value="Yearly required volume" />
+			<Item Name="Columns.PgrEstimatedVolume.Caption" Value="Customer annual demand [tsqm]" />
 			<Item Name="Columns.PgrLegalName.Caption" Value="Legal name" />
-			<Item Name="Columns.PgrPGPotential.Caption" Value="Progroup potential" />
+			<Item Name="Columns.PgrPGPotential.Caption" Value="PG potential p.a. [tsqm]" />
 			<Item Name="Columns.PgrSalesRegion.Caption" Value="Sales region" />
 			<Item Name="Columns.QualifiedContact.Caption" Value="Contact name" />
 			<Item Name="Columns.QualifyStatus.Caption" Value="Lead-Phase" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEnityValidatingEventSubProcess_f0646c74f291474f9a10143ee868f1c9.Caption" Value="Validating record" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEnityValidatingScriptTask_a553628ef6dc4e09bdcf27e446fdc16f.Caption" Value="BaseEntityValidating" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEnityValidatingStartMessage_b3d5b61f7afe48b5a8cc40317ea9c428.Caption" Value="BaseEnityValidating" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntityDeletedScriptTask.Caption" Value="BaseEntityDeletedScriptTask" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntityDeletedStartMessage.Caption" Value="BaseEntityDeletedStartMessage" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntityDeletedSubProcess.Caption" Value="BaseEntityDeletedSubProcess" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntityDeletingEventSubProcess2.Caption" Value="Before deleting record" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntityDeletingStartMessage2.Caption" Value="BaseEntityDeleting" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntityEventSubProcess1.Caption" Value="After saving record" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntitySavedIndexingTask.Caption" Value="BaseEntitySavedIndexingTask" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntitySavingEventSubProcess.Caption" Value="Before saving record" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntitySavingScriptTask.Caption" Value="BaseEntitySaving" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntitySavingStartMessage.Caption" Value="BaseEntitySaving" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseEntityStartMessage1.Caption" Value="BaseEntitySaved" />
+			<Item Name="EventsProcessSchema.BaseElements.BaseInsertedEventSubProcess.Caption" Value="After adding record" />
+			<Item Name="EventsProcessSchema.BaseElements.EventSubProcess3_630a9f6510bb4e5fb862bac11e7f69f3.Caption" Value="EntitySaved" />
+			<Item Name="EventsProcessSchema.BaseElements.EventSubProcess4_3706ad88d43f42dbaa278f84d217f11b.Caption" Value="Run event sub-process before saving" />
+			<Item Name="EventsProcessSchema.BaseElements.EventSubProcess5_1db2f2dae8ab4d6d96c179398768dc4d.Caption" Value="AfterInsert" />
+			<Item Name="EventsProcessSchema.BaseElements.InsertedStartMessage1.Caption" Value="BaseEntityInserted" />
+			<Item Name="EventsProcessSchema.BaseElements.PRMPortalLeadInsertedStartMessage.Caption" Value="LeadInserted" />
+			<Item Name="EventsProcessSchema.BaseElements.ScriptTask1_d870fe5b381b4e81a5460d80276ae41e.Caption" Value="Partner grant right" />
+			<Item Name="EventsProcessSchema.BaseElements.ScriptTask3_f54686cb1e384464983aca1cc8edc9f1.Caption" Value="LeadSaved" />
+			<Item Name="EventsProcessSchema.BaseElements.ScriptTask4_92a166a193864109bc8ca1b3e1187053.Caption" Value="Execute script task before saving" />
+			<Item Name="EventsProcessSchema.BaseElements.ScriptTaskInsertedBaseEntity.Caption" Value="Initiate start signals" />
+			<Item Name="EventsProcessSchema.BaseElements.StartMessage3_67972ae3e66342d0862d0dd3febbe694.Caption" Value="LeadSaved" />
+			<Item Name="EventsProcessSchema.BaseElements.StartMessage4_138ec9872db945468d0bb10ab63d0c95.Caption" Value="LeadSaving" />
+			<Item Name="EventsProcessSchema.BaseElements.StartMessage5_37682a93668c49d2af13632daf7b1329.Caption" Value="After adding lead" />
+			<Item Name="EventsProcessSchema.BaseElements.TryProcessCompleteScriptTask1.Caption" Value="TryProcessComplete" />
+			<Item Name="EventsProcessSchema.BaseElements.TryProcessCompleteScriptTask2.Caption" Value="TryProcessComplete" />
+			<Item Name="EventsProcessSchema.Caption" Value="Lead" />
+			<Item Name="EventsProcessSchema.LaneSets.BaseEntityLaneSet1.Caption" Value="Pool 1" />
+			<Item Name="EventsProcessSchema.LaneSets.BaseEntityLaneSet1.Lanes.BaseEntityLane2.Caption" Value="Lane 2" />
+			<Item Name="EventsProcessSchema.LaneSets.CoreLeadLaneSet2.Caption" Value="CoreLeadLanePool 2" />
+			<Item Name="EventsProcessSchema.LaneSets.EventTrackerLaneSet2.Caption" Value="EventTrackerLanePool 2" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet1.Caption" Value="Pool 1" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet1.Lanes.Lane1789789797.Caption" Value="Lane 1" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet1253567487.Caption" Value="Pool 14675678567" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet2.Caption" Value="Pool 2" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet2.Lanes.Lane1.Caption" Value="Lane 1" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_099c536170394761a86eb0450930ad08.Caption" Value="LaneSet 1" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_099c536170394761a86eb0450930ad08.Lanes.Lane_f583bc29fad048bc9b68ffd61ead2cfa.Caption" Value="Lane 1" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_38cd33dc4283477d8898564e80d88885.Caption" Value="LaneSet 1" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_38cd33dc4283477d8898564e80d88885.Lanes.Lane_6250c969abd84c79ac9e66cdb04b0e03.Caption" Value="Lane 1" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_965935df7e254dbd824f668a1f2ac992.Caption" Value="LaneSet 1" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_965935df7e254dbd824f668a1f2ac992.Lanes.Lane_459a85f208a54307b9bd5a76e6ffc869.Caption" Value="Lane 1" />
+			<Item Name="EventsProcessSchema.LaneSets.MarketingCampaignLaneSet3.Caption" Value="MarketingCampaignPool 3" />
+			<Item Name="EventsProcessSchema.LaneSets.WebLeadFormLaneSet3.Caption" Value="WebLeadFormPool 3" />
+			<Item Name="EventsProcessSchema.Methods.CanInitDcmForEntity.Caption" Value="CanInitDcmForEntity" />
+			<Item Name="EventsProcessSchema.Methods.CanStartQualificationProcess.Caption" Value="CanStartQualificationProcess" />
+			<Item Name="EventsProcessSchema.Methods.CancelNotEnabledDcmProcess.Caption" Value="CancelNotEnabledDcmProcess" />
+			<Item Name="EventsProcessSchema.Methods.DisqualifyLeadOnFinalStage.Caption" Value="DisqualifyLeadOnFinalStage" />
+			<Item Name="EventsProcessSchema.Methods.IndexEntity.Caption" Value="Object Method 1" />
+			<Item Name="EventsProcessSchema.Methods.InitDcmOnEntityChanging.Caption" Value="InitDcmOnEntityChanging" />
+			<Item Name="EventsProcessSchema.Methods.IsChangedColumnsMatch.Caption" Value="IsChangedColumnsMatch" />
+			<Item Name="EventsProcessSchema.Methods.IsConditionDataMatch.Caption" Value="IsConditionDataMatch" />
+			<Item Name="EventsProcessSchema.Methods.LeadSaved.Caption" Value="LeadSaved" />
+			<Item Name="EventsProcessSchema.Methods.PartnerGrantRight.Caption" Value="Partner grant right" />
+			<Item Name="EventsProcessSchema.Methods.ProcessCompleteExecuting.Caption" Value="ProcessCompleteExecuting" />
+			<Item Name="EventsProcessSchema.Methods.StartQualificationProcess.Caption" Value="StartQualificationProcess" />
+			<Item Name="EventsProcessSchema.Methods.TryProcessComplete.Caption" Value="TryProcessComplete" />
+			<Item Name="EventsProcessSchema.Methods.UpdateLeadName.Caption" Value="UpdateLeadName" />
 		</Items>
 	</Group>
 </Resources>
