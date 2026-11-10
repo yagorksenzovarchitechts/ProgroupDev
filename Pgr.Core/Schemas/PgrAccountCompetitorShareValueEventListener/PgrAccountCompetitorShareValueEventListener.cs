@@ -55,13 +55,13 @@ namespace Terrasoft.Configuration
         }
 
         /// <summary>
-        /// Calculates the share percent from the Potential and the volume (tsqm); null when there is no Potential.
+        /// Calculates the share percent from the Potential and the volume (tsqm); 0 when there is no Potential.
         /// </summary>
-        public static decimal? CalculatePercent(decimal potential, int volume)
+        public static decimal CalculatePercent(decimal potential, int volume)
         {
             if (potential <= 0m)
             {
-                return null;
+                return 0m;
             }
             return Math.Round(volume / potential * 100m, PercentDecimals, MidpointRounding.AwayFromZero);
         }
@@ -78,8 +78,7 @@ namespace Terrasoft.Configuration
                 var update = new Update(userConnection, nameof(AccountCompetitor));
                 if (row.ManageInVolume)
                 {
-                    var percent = CalculatePercent(potential, row.Volume);
-                    update.Set(nameof(AccountCompetitor.PgrShare), percent.HasValue ? Column.Parameter(percent.Value) : Column.Const(null));
+                    update.Set(nameof(AccountCompetitor.PgrShare), Column.Parameter(CalculatePercent(potential, row.Volume)));
                 }
                 else
                 {
@@ -182,8 +181,7 @@ namespace Terrasoft.Configuration
                 var potential = PgrShareValueCalculator.GetLatestPotential(competitor.UserConnection, competitor.AccountId);
                 if (competitor.GetTypedColumnValue<bool>("PgrManageInVolume"))
                 {
-                    var percent = PgrShareValueCalculator.CalculatePercent(potential, competitor.PgrShareValue);
-                    competitor.SetColumnValue(nameof(AccountCompetitor.PgrShare), percent);
+                    competitor.PgrShare = PgrShareValueCalculator.CalculatePercent(potential, competitor.PgrShareValue);
                 }
                 else
                 {
