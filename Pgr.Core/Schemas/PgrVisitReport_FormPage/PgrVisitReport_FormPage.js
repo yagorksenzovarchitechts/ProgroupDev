@@ -1,4 +1,5 @@
-define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", "@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(PgrAccountCompetitorShareHelper, sdk)/**SCHEMA_ARGS*/ {
+define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", "@creatio-devkit/common"]/**SCHEMA_DEPS*/,
+	function/**SCHEMA_ARGS*/(PgrAccountCompetitorShareHelper, sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -2048,7 +2049,7 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHel
 							"id": "a95d4c79-0684-4737-2090-ec255f5faa11",
 							"code": "GridDetail_lcbts36DS_PgrShare",
 							"caption": "#ResourceString(GridDetail_lcbts36DS_PgrShare)#",
-							"dataValueType": 4,
+							"dataValueType": 32,
 							"width": 245
 						},
 						{
@@ -2057,6 +2058,12 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHel
 							"caption": "#ResourceString(GridDetail_lcbts36DS_PgrShareValue)#",
 							"dataValueType": 4,
 							"width": 176
+						},
+						{
+							"id": "3035a6f4-3c3a-4df2-a61b-fc3bbc857912",
+							"code": "GridDetail_lcbts36DS_PgrManageInVolume",
+							"caption": "#ResourceString(GridDetail_lcbts36DS_PgrManageInVolume)#",
+							"dataValueType": 12
 						},
 						{
 							"id": "81e63ee5-61ac-688f-1772-9b1a31786f08",
@@ -4068,6 +4075,11 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHel
 										"path": "GridDetail_lcbts36DS.PgrShareValue"
 									}
 								},
+								"GridDetail_lcbts36DS_PgrManageInVolume": {
+									"modelConfig": {
+										"path": "GridDetail_lcbts36DS.PgrManageInVolume"
+									}
+								},
 								"GridDetail_lcbts36DS_Description": {
 									"modelConfig": {
 										"path": "GridDetail_lcbts36DS.Description"
@@ -4449,6 +4461,9 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHel
 								"PgrShareValue": {
 									"path": "PgrShareValue"
 								},
+								"PgrManageInVolume": {
+									"path": "PgrManageInVolume"
+								},
 								"Description": {
 									"path": "Description"
 								},
@@ -4627,7 +4642,8 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHel
 			        let invalidGroups;
 			        try {
 			            const rows = await request.$context[grid.itemsAttr];
-			            invalidGroups = helper.getInvalidCheckpoints(rows, grid);
+			            const accountContext = await helper.loadAccountContext(request.$context, grid);
+			            invalidGroups = helper.getInvalidCheckpoints(rows, grid, accountContext);
 			        } catch (e) {
 			            console.warn("Share validation skipped:", e);
 			            return await next?.handle(request);
@@ -4664,7 +4680,8 @@ define("PgrVisitReport_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHel
 			                return await next?.handle(request);
 			            }
 
-			            invalidGroups = helper.getInvalidCheckpoints(remaining, grid);
+			            const accountContext = await helper.loadAccountContext(request.$context, grid);
+			            invalidGroups = helper.getInvalidCheckpoints(remaining, grid, accountContext);
 			        } catch (e) {
 			            console.warn("Competitor delete validation skipped:", e);
 			            return await next?.handle(request);

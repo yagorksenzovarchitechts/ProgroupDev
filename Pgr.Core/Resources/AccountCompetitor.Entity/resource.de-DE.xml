@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Columns.Description.Caption" Value="Notiz" />
 			<Item Name="Columns.PgrCompetitor.Caption" Value="Wettbewerber" />
+			<Item Name="Columns.PgrManageInVolume.Caption" Value="In Menge verwalten" />
 			<Item Name="Columns.PgrShare.Caption" Value="Lieferanteil" />
 			<Item Name="Columns.PgrValidFrom.Caption" Value="Gültig ab" />
 			<Item Name="Columns.PgrValidTo.Caption" Value="Gültig bis" />

@@ -438,21 +438,28 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"code": "GridDetailDS_PgrCompetitor",
 							"caption": "#ResourceString(GridDetailDS_PgrCompetitor)#",
 							"dataValueType": 10,
-							"width": 419
+							"width": 407.984375
 						},
 						{
-							"id": "b1b98c44-0fd3-85e1-bc1b-c10459760f7b",
+							"id": "a9be3fc4-adc0-87ce-0321-c4bc70b785a2",
 							"code": "GridDetailDS_PgrShare",
 							"caption": "#ResourceString(GridDetailDS_PgrShare)#",
-							"dataValueType": 4,
-							"width": 117
+							"dataValueType": 32,
+							"width": 113.984375
 						},
 						{
-							"id": "172f7e00-10e2-f300-778f-0a169b59b6ee",
+							"id": "70066b96-f5bb-5ec2-0778-34266bc52317",
 							"code": "GridDetailDS_PgrShareValue",
 							"caption": "#ResourceString(GridDetailDS_PgrShareValue)#",
 							"dataValueType": 4,
-							"width": 314
+							"width": 208.984375
+						},
+						{
+							"id": "c7add454-3ce9-4c5b-a4ca-93e312315e23",
+							"code": "GridDetailDS_PgrManageInVolume",
+							"caption": "#ResourceString(GridDetailDS_PgrManageInVolume)#",
+							"dataValueType": 12,
+							"width": 205.97265625
 						},
 						{
 							"id": "b6b4a7a8-15ba-6008-700f-286c31f8ba9e",
@@ -6104,7 +6111,7 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"id": "b890b765-3d26-2bc5-fc68-baf13c161db8",
 							"code": "CompetitorsGridDS_PgrShare",
 							"caption": "#ResourceString(CompetitorsGridDS_PgrShare)#",
-							"dataValueType": 4
+							"dataValueType": 32
 						},
 						{
 							"id": "789056b4-cdef-6d6d-c2fc-c55a72d322bf",
@@ -6112,6 +6119,12 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"caption": "#ResourceString(CompetitorsGridDS_PgrShareValue)#",
 							"dataValueType": 4,
 							"width": 256
+						},
+						{
+							"id": "537f1447-e62b-4871-b2d7-6a244a9f76f1",
+							"code": "CompetitorsGridDS_PgrManageInVolume",
+							"caption": "#ResourceString(CompetitorsGridDS_PgrManageInVolume)#",
+							"dataValueType": 12
 						}
 					],
 					"placeholder": false,
@@ -11176,6 +11189,11 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 										"path": "CompetitorsGridDS.PgrShareValue"
 									}
 								},
+								"CompetitorsGridDS_PgrManageInVolume": {
+									"modelConfig": {
+										"path": "CompetitorsGridDS.PgrManageInVolume"
+									}
+								},
 								"CompetitorsGridDS_Id": {
 									"modelConfig": {
 										"path": "CompetitorsGridDS.Id"
@@ -12323,8 +12341,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 				"values": {
 					"default": [
 						{
-							"direction": "desc",
-							"columnName": "PgrShare"
+							"direction": "asc",
+							"columnName": "PgrShareValue"
 						}
 					]
 				}
@@ -12366,9 +12384,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 							"path": "GridDetailDS.PgrShareValue"
 						}
 					},
-					"GridDetailDS_PgrValidFrom": {
+					"GridDetailDS_PgrManageInVolume": {
 						"modelConfig": {
-							"path": "GridDetailDS.PgrValidFrom"
+							"path": "GridDetailDS.PgrManageInVolume"
 						}
 					}
 				}
@@ -12749,6 +12767,9 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 								},
 								"PgrShareValue": {
 									"path": "PgrShareValue"
+								},
+								"PgrManageInVolume": {
+									"path": "PgrManageInVolume"
 								}
 							}
 						}
@@ -13147,8 +13168,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 					"PgrShareValue": {
 						"path": "PgrShareValue"
 					},
-					"PgrValidFrom": {
-						"path": "PgrValidFrom"
+					"PgrManageInVolume": {
+						"path": "PgrManageInVolume"
 					}
 				}
 			},
@@ -13419,7 +13440,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			        let invalidGroups;
 			        try {
 			            const rows = await request.$context[grid.itemsAttr];
-			            invalidGroups = helper.getInvalidCheckpoints(rows, grid);
+			            const accountContext = await helper.loadAccountContext(request.$context, grid);
+			            invalidGroups = helper.getInvalidCheckpoints(rows, grid, accountContext);
 			        } catch (e) {
 			            console.warn("Share validation skipped:", e);
 			            return await next?.handle(request);
@@ -13456,7 +13478,8 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/["PgrAccountCompetitorShareHelper", 
 			                return await next?.handle(request);
 			            }
 
-			            invalidGroups = helper.getInvalidCheckpoints(remaining, grid);
+			            const accountContext = await helper.loadAccountContext(request.$context, grid);
+			            invalidGroups = helper.getInvalidCheckpoints(remaining, grid, accountContext);
 			        } catch (e) {
 			            console.warn("Competitor delete validation skipped:", e);
 			            return await next?.handle(request);

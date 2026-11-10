@@ -2,6 +2,8 @@
 <Resources Culture="de-DE">
 	<Group Type="String">
 		<Items>
+			<Item Name="AddonConfig.Rules.53b358a2-7e54-40fd-90e9-cdab41132f66.Caption" Value="Schreibgeschützt Anteil %: in Menge verwaltet" />
+			<Item Name="AddonConfig.Rules.a4303de7-5099-468e-b59c-baf936f329d0.Caption" Value="Schreibgeschützt Anteil (tsqm): in % verwaltet" />
 			<Item Name="Caption" Value="Account competitor (Business rules)" />
 		</Items>
 	</Group>

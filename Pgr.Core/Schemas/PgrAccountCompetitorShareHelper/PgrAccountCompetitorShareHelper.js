@@ -1,12 +1,17 @@
-define("PgrAccountCompetitorShareHelper", [], function() {
+define("PgrAccountCompetitorShareHelper", ["@creatio-devkit/common"], function(sdk) {
 
 	const REQUIRED_TOTAL = 100;
+
+	const POTENTIAL_METRIC_TYPE_ID = "e8e73e14-91cb-4653-b354-55e3fb2b429b";
 
 	const GRIDS = {
 		CompetitorsGrid: {
 			itemsAttr: "CompetitorsGrid",
 			selectionAttr: "CompetitorsGrid_SelectionState",
 			shareColumn: "CompetitorsGridDS_PgrShare",
+			volumeColumn: "CompetitorsGridDS_PgrShareValue",
+			manageColumn: "CompetitorsGridDS_PgrManageInVolume",
+			accountAttr: "Id",
 			idColumn: "CompetitorsGridDS_Id",
 			validFromColumn: "CompetitorsGridDS_PgrValidFrom",
 			competitorColumn: "CompetitorsGridDS_PgrCompetitor",
@@ -17,6 +22,9 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 			itemsAttr: "GridDetail",
 			selectionAttr: "GridDetail_SelectionState",
 			shareColumn: "GridDetailDS_PgrShare",
+			volumeColumn: "GridDetailDS_PgrShareValue",
+			manageColumn: "GridDetailDS_PgrManageInVolume",
+			accountAttr: "Id",
 			idColumn: "GridDetailDS_Id",
 			validFromColumn: "GridDetailDS_PgrValidFrom",
 			competitorColumn: "GridDetailDS_PgrCompetitor",
@@ -27,6 +35,9 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 			itemsAttr: "GridDetail_lcbts36",
 			selectionAttr: "GridDetail_lcbts36_SelectionState",
 			shareColumn: "GridDetail_lcbts36DS_PgrShare",
+			volumeColumn: "GridDetail_lcbts36DS_PgrShareValue",
+			manageColumn: "GridDetail_lcbts36DS_PgrManageInVolume",
+			accountAttr: "PDS_PgrAccount_ap9rlrb",
 			idColumn: "GridDetail_lcbts36DS_Id",
 			validFromColumn: "GridDetail_lcbts36DS_PgrValidFrom",
 			competitorColumn: "GridDetail_lcbts36DS_PgrCompetitor",
@@ -235,9 +246,80 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		return { dated: dated, undatedTotal: undatedTotal, rowCount: rowCount };
 	}
 
-	// CMVP-338: the grid only shows the latest entry per competitor, so validate the current picture:
-	// per competitor take the newest Valid from (undated counts as oldest) and require those shares to total 100.
-	function getInvalidCheckpoints(rows, grid) {
+	function toNumber(value) {
+		const number = Number(unwrap(value));
+		return isNaN(number) ? 0 : number;
+	}
+
+	function toTime(value) {
+		const time = value ? new Date(value).getTime() : NaN;
+		return isNaN(time) ? 0 : time;
+	}
+
+	function getAccountId(context, grid) {
+		return Promise.resolve(context[grid.accountAttr]).then(function(value) {
+			const unwrapped = unwrap(value);
+			return unwrapped && typeof unwrapped === "object" ? unwrapped.value : unwrapped;
+		});
+	}
+
+	// CMVP-382: loads the latest Potential (tsqm) and the delivery share (%) of the account.
+	async function loadAccountContext(context, grid) {
+		const result = { potential: 0, deliveryShare: 0 };
+		try {
+			const accountId = await getAccountId(context, grid);
+			if (!accountId) {
+				return result;
+			}
+			const potentialModel = await sdk.Model.create("PgrAccountMetricValue");
+			const potentialFilters = new sdk.FilterGroup();
+			await potentialFilters.addSchemaColumnFilterWithParameter(sdk.ComparisonType.Equal, "PgrAccountId", accountId);
+			await potentialFilters.addSchemaColumnFilterWithParameter(sdk.ComparisonType.Equal, "PgrMetricTypeId", POTENTIAL_METRIC_TYPE_ID);
+			const potentialRows = await potentialModel.load({
+				attributes: ["PgrValue", "PgrDate", "PgrReceivedOn"],
+				parameters: [{ type: sdk.ModelParameterType.Filter, value: potentialFilters }]
+			});
+			let latestDate = null;
+			let latestReceivedOn = null;
+			for (const row of potentialRows || []) {
+				const date = toTime(row.PgrDate);
+				const receivedOn = toTime(row.PgrReceivedOn);
+				const isNewer = latestDate === null || date > latestDate ||
+					(date === latestDate && receivedOn > latestReceivedOn);
+				if (isNewer) {
+					latestDate = date;
+					latestReceivedOn = receivedOn;
+					result.potential = toNumber(row.PgrValue);
+				}
+			}
+			const accountModel = await sdk.Model.create("Account");
+			const accountFilters = new sdk.FilterGroup();
+			await accountFilters.addSchemaColumnFilterWithParameter(sdk.ComparisonType.Equal, "Id", accountId);
+			const accountRows = await accountModel.load({
+				attributes: ["PgrDeliveryShare"],
+				parameters: [{ type: sdk.ModelParameterType.Filter, value: accountFilters }]
+			});
+			if (accountRows && accountRows.length) {
+				result.deliveryShare = toNumber(accountRows[0].PgrDeliveryShare);
+			}
+		} catch (e) {
+			console.warn("Competitor share: could not load Potential / delivery share.", e);
+		}
+		return result;
+	}
+
+	function roundTo(value, decimals) {
+		const factor = Math.pow(10, decimals);
+		return Math.round(value * factor) / factor;
+	}
+
+	// CMVP-382: the grid only shows the latest entry per competitor, so validate the current picture:
+	// per competitor take the newest Valid from (undated counts as oldest). The managed field (percent or volume)
+	// is the anchor, the other one is derived from the Potential. Percent total (with the delivery share) must not
+	// exceed 100 and volume total (with the delivery share volume) must not exceed the Potential.
+	function getInvalidCheckpoints(rows, grid, accountContext) {
+		const potential = (accountContext && accountContext.potential) || 0;
+		const deliveryShare = (accountContext && accountContext.deliveryShare) || 0;
 		const latest = new Map();
 		let rowCount = 0;
 		if (rows && typeof rows.forEach === "function") {
@@ -245,34 +327,51 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 				rowCount++;
 				const competitorKey = getCompetitorKey(row, grid);
 				const dateKey = getValidFromKey(row, grid);
-				const share = Number(unwrap(row[grid.shareColumn])) || 0;
+				const manageInVolume = !!unwrap(row[grid.manageColumn]);
+				const percent = toNumber(row[grid.shareColumn]);
+				const volume = toNumber(row[grid.volumeColumn]);
+				let rowPercent = percent;
+				let rowVolume = potential > 0 ? potential * percent / 100 : 0;
+				if (manageInVolume) {
+					rowVolume = volume;
+					rowPercent = potential > 0 ? volume / potential * 100 : 0;
+				}
 				const current = latest.get(competitorKey);
 				if (!current || dateKey > current.dateKey) {
-					latest.set(competitorKey, { dateKey: dateKey, total: share });
+					latest.set(competitorKey, { dateKey: dateKey, percent: rowPercent, volume: rowVolume });
 				} else if (dateKey === current.dateKey) {
-					current.total += share;
+					current.percent += rowPercent;
+					current.volume += rowVolume;
 				}
 			});
 		}
 		if (!rowCount) {
 			return [];
 		}
-		let total = 0;
-		latest.forEach(function(entry) { total += entry.total; });
-		return total === REQUIRED_TOTAL ? [] : [{ label: "Total", total: total }];
+		let percentTotal = deliveryShare;
+		let volumeTotal = potential * deliveryShare / 100;
+		latest.forEach(function(entry) {
+			percentTotal += entry.percent;
+			volumeTotal += entry.volume;
+		});
+		const invalid = [];
+		if (roundTo(percentTotal, 2) > REQUIRED_TOTAL) {
+			invalid.push({ text: "The total of all share values cannot exceed 100%. Current total: " + roundTo(percentTotal, 2) + "%" });
+		}
+		if (potential > 0 && roundTo(volumeTotal, 0) > potential) {
+			invalid.push({ text: "The total volume of the competitors cannot exceed the Potential (" + potential + " tsqm). Current total: " + roundTo(volumeTotal, 0) + " tsqm" });
+		}
+		return invalid;
 	}
 
 	async function showGroupedTotalError(request, invalidGroups) {
-		const baseMsg = await request.$context.Resources.Strings.ShareTotalErrorString;
-		const details = invalidGroups
-			.map(function(group) { return `${group.label}: ${group.total}%`; })
-			.join("; ");
+		const message = invalidGroups.map(function(group) { return group.text; }).join("\n");
 		await request.$context.executeRequest({
 			type: "crt.ShowDialogRequest",
 			$context: request.$context,
 			dialogConfig: {
 				data: {
-					message: `${baseMsg} ${details}`,
+					message: message,
 					actions: [
 						{ key: "ok", config: { color: "primary", caption: "OK" } }
 					]
@@ -290,6 +389,7 @@ define("PgrAccountCompetitorShareHelper", [], function() {
 		resolveGridForDelete: resolveGridForDelete,
 		getDeletedIds: getDeletedIds,
 		getRemainingRows: getRemainingRows,
+		loadAccountContext: loadAccountContext,
 		getInvalidCheckpoints: getInvalidCheckpoints,
 		showGroupedTotalError: showGroupedTotalError
 	};

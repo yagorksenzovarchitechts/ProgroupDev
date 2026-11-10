@@ -5,6 +5,7 @@
 			<Item Name="Columns.Description.Caption" Value="Notes" />
 			<Item Name="Columns.PgrCompetitor.Caption" Value="Competitor" />
 			<Item Name="Columns.PgrIsLatest.Caption" Value="Is latest" />
+			<Item Name="Columns.PgrManageInVolume.Caption" Value="Manage in volume" />
 			<Item Name="Columns.PgrShare.Caption" Value="Share %" />
 			<Item Name="Columns.PgrShareValue.Caption" Value="Share (tsqm)" />
 			<Item Name="Columns.PgrValidFrom.Caption" Value="Valid from" />
